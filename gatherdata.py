@@ -7,7 +7,7 @@ ROM = sys.argv[1]
 pcnames = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
 elements = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
 
-with open(r"text\GStext.txt") as f:
+with open(r"text/GStext.txt") as f:
     text = f.read().splitlines()
     item_descriptions = text[146:607]
     items = text[607:1068]
@@ -19,7 +19,7 @@ with open(r"text\GStext.txt") as f:
     djinn = text[1747:1827]
     summons = text[1827:1860]
 
-with open(r"text\customtext.txt") as f:
+with open(r"text/customtext.txt") as f:
     text = f.read().splitlines()
     ability_effects = text[0:92]
     equipped_effects = text[92:120]
@@ -334,4 +334,4 @@ for name in [
         "djinndata", "enemydata", "itemdata", "abilitydata", "pcdata", "summondata",
         "classdata", "elementdata", "enemygroupdata", "encounterdata"
     ]:
-    with open(f"data\\{name}.json", "w") as f: json.dump(globals()[name], f, indent=4)
+    with open(f"data/{name}.json", "w") as f: json.dump(globals()[name], f, indent=4)

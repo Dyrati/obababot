@@ -32,7 +32,7 @@ def load_data():
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "enemygroupdata", "encounterdata"]:
-        with open(rf"data\{name}.json") as f:
+        with open(rf"data/{name}.json") as f:
             DataTables[name] = json.load(f)
             if name == "enemydata":
                 DataTables["enemydata-h"] = deepcopy(DataTables["enemydata"])
@@ -42,7 +42,7 @@ def load_data():
                     entry["DEF"] = int(1.25*entry["DEF"])
     for k,v in DataTables.items():
         namemaps[k] = namedict(v)
-    with open("userdata\\userdata.json") as f:
+    with open("userdata/userdata.json") as f:
         UserData = json.load(f)
     print("Loaded database    ")
 
