@@ -1,0 +1,120 @@
+Nothing
+?
+?
+Cure Poison
+Cure Stun, Sleep, Delusion, and Curse
+Revive
++25% Attack
++12.5% Attack
+-25% Attack
+-12.5% Attack
++25% Defense
++12.5% Defense
+-25% Defense
+-12.5% Defense
++40 Resistance
++20 Resistance
+-40 Resistance
+-20 Resistance
+May inflict Poison
+May inflict Venom
+Inflict Delusion
+Inflict Confusion
+Inflict Charm
+May inflict Stun
+May inflict Sleep
+May inflict Seal
+May inflict Haunt
+May inflict Death
+May inflict Death Curse
+Regenerate 60% of HP for 5 turns
+Bestow Reflect
+User may take HP from target
+User may take PP from target
+Eliminate status boosts
+May reduce HP to 1
+May ignore 50% of Defense
+?
+?
+?
+?
+?
+?
+May cause double the damage
+?
+May cause triple the damage
+(Threaten/Element Swap/Pressure)
+Decrease damage by 50% for 1 turn
+Decrease damage by 90% for 1 turn
+(Sidestep)
+Flee
+Duplicate self/foe (Speed Surge/Ally Search)
+(Battle Cry)
+(Crazy Voice)
+Paralyzes foe for 1 turn
+Target rises to the challenge
+User Dies
+Revive to 50% HP
+Revive to 80% HP
+Halve Agility
+Double Agility
+User recovers 50% of damage to HP
+Recover 60% of HP
+Recover 30% of HP
+Recover 7% of PP
+Remove all status ailments
+May cause double the damage
+Get two turns next round
+Inflicts Seal
+May cause triple the damage
+User may recover 10% of damage to PP
+Recover 50% of HP
+Recover 70% of HP
+Decrease damage by 60% for 1 turn
+Revive to 60% HP
+counter-attack for 1 turn
+May inflict Delusion on all enemies
+Recover 40% of HP
+Recover 10% of PP
+Recover 30% of PP
+Vanish into thin air
+Inflicts Death Curse
+Instantly end round
+May force target out of battle
+Lose 12% of HP and may lose next turn
+Lose 10% of PP
+May inflict Stun
+Add new monster (Mystic Call)
+Revive fallen monster (Regen Dance)
+Decrease damage by 95% for 1 turn
+May multiply damage by 1, 2, or 3
+Ignore Defense
+Trident
+No effect
++Max HP
++HP recovery
++Max PP
++PP recovery
++Agility
++Luck
+xMax HP
+xHP recovery
+xMax PP
+xPP recovery
+xAttack
+xDefense
+xAgility
+xLuck
+Venus Power
+Mercury Power
+Mars Power
+Jupiter Power
+Venus Resist
+Mercury Resist
+Mars Resist
+Jupiter Resist
+Increases Criticals
+Counterstrike rate
+Curse is removable
+Turns
+Boosts encounters

@@ -1,0 +1,539 @@
+[
+    {
+        "ID": 0,
+        "name": "Isaac",
+        "element": "Venus",
+        "HP_growths": [
+            30,
+            182,
+            334,
+            486,
+            638,
+            790
+        ],
+        "PP_growths": [
+            20,
+            80,
+            130,
+            170,
+            210,
+            250
+        ],
+        "ATK_growths": [
+            13,
+            86,
+            162,
+            237,
+            313,
+            388
+        ],
+        "DEF_growths": [
+            6,
+            38,
+            69,
+            102,
+            134,
+            166
+        ],
+        "AGI_growths": [
+            8,
+            86,
+            163,
+            241,
+            318,
+            396
+        ],
+        "LCK_growths": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "elevels": [
+            5.4,
+            0.3,
+            0.1,
+            0.2
+        ],
+        "starting_level": 28,
+        "starting_items": [
+            "Great Sword",
+            "Steel Armor",
+            "Knight's Shield",
+            "Knight's Helm"
+        ]
+    },
+    {
+        "ID": 1,
+        "name": "Garet",
+        "element": "Mars",
+        "HP_growths": [
+            33,
+            191,
+            351,
+            510,
+            670,
+            830
+        ],
+        "PP_growths": [
+            18,
+            76,
+            124,
+            162,
+            200,
+            238
+        ],
+        "ATK_growths": [
+            11,
+            83,
+            156,
+            228,
+            301,
+            373
+        ],
+        "DEF_growths": [
+            8,
+            41,
+            75,
+            110,
+            144,
+            179
+        ],
+        "AGI_growths": [
+            6,
+            76,
+            144,
+            212,
+            281,
+            349
+        ],
+        "LCK_growths": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "elevels": [
+            0.1,
+            0.2,
+            5.4,
+            0.3
+        ],
+        "starting_level": 28,
+        "starting_items": [
+            "Great Axe",
+            "Steel Armor",
+            "Knight's Shield",
+            "Knight's Helm"
+        ]
+    },
+    {
+        "ID": 2,
+        "name": "Ivan",
+        "element": "Jupiter",
+        "HP_growths": [
+            28,
+            166,
+            304,
+            442,
+            581,
+            719
+        ],
+        "PP_growths": [
+            24,
+            92,
+            150,
+            196,
+            242,
+            288
+        ],
+        "ATK_growths": [
+            8,
+            76,
+            144,
+            211,
+            277,
+            344
+        ],
+        "DEF_growths": [
+            4,
+            35,
+            65,
+            95,
+            124,
+            155
+        ],
+        "AGI_growths": [
+            11,
+            91,
+            173,
+            255,
+            337,
+            419
+        ],
+        "LCK_growths": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "elevels": [
+            0.2,
+            0.1,
+            0.3,
+            5.4
+        ],
+        "starting_level": 28,
+        "starting_items": [
+            "Master Rapier",
+            "Silver Vest",
+            "Silver Armlet",
+            "Platinum Circlet"
+        ]
+    },
+    {
+        "ID": 3,
+        "name": "Mia",
+        "element": "Mercury",
+        "HP_growths": [
+            29,
+            173,
+            317,
+            462,
+            606,
+            751
+        ],
+        "PP_growths": [
+            23,
+            90,
+            146,
+            190,
+            235,
+            280
+        ],
+        "ATK_growths": [
+            9,
+            79,
+            150,
+            220,
+            289,
+            359
+        ],
+        "DEF_growths": [
+            5,
+            37,
+            68,
+            100,
+            131,
+            163
+        ],
+        "AGI_growths": [
+            7,
+            80,
+            152,
+            224,
+            296,
+            369
+        ],
+        "LCK_growths": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "elevels": [
+            0.3,
+            5.4,
+            0.2,
+            0.1
+        ],
+        "starting_level": 28,
+        "starting_items": [
+            "War Mace",
+            "Silver Vest",
+            "Silver Armlet",
+            "Platinum Circlet"
+        ]
+    },
+    {
+        "ID": 4,
+        "name": "Felix",
+        "element": "Venus",
+        "HP_growths": [
+            32,
+            187,
+            342,
+            498,
+            654,
+            810
+        ],
+        "PP_growths": [
+            19,
+            78,
+            127,
+            166,
+            205,
+            244
+        ],
+        "ATK_growths": [
+            13,
+            87,
+            164,
+            240,
+            316,
+            392
+        ],
+        "DEF_growths": [
+            6,
+            38,
+            70,
+            103,
+            135,
+            168
+        ],
+        "AGI_growths": [
+            7,
+            83,
+            158,
+            232,
+            307,
+            382
+        ],
+        "LCK_growths": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "elevels": [
+            5.4,
+            0.3,
+            0.1,
+            0.2
+        ],
+        "starting_level": 5,
+        "starting_items": [
+            "Short Sword",
+            "Cotton Shirt",
+            "Padded Gloves",
+            "Herb",
+            "Herb",
+            "Shaman's Rod",
+            "Mythril Bag"
+        ]
+    },
+    {
+        "ID": 5,
+        "name": "Jenna",
+        "element": "Mars",
+        "HP_growths": [
+            29,
+            177,
+            326,
+            474,
+            622,
+            770
+        ],
+        "PP_growths": [
+            21,
+            85,
+            138,
+            180,
+            223,
+            265
+        ],
+        "ATK_growths": [
+            10,
+            81,
+            153,
+            224,
+            295,
+            366
+        ],
+        "DEF_growths": [
+            5,
+            37,
+            69,
+            101,
+            132,
+            165
+        ],
+        "AGI_growths": [
+            8,
+            85,
+            162,
+            238,
+            315,
+            392
+        ],
+        "LCK_growths": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "elevels": [
+            0.1,
+            0.2,
+            5.4,
+            0.3
+        ],
+        "starting_level": 5,
+        "starting_items": [
+            "Wooden Stick",
+            "One-Piece Dress",
+            "Padded Gloves",
+            "Herb",
+            "Herb",
+            "Herb"
+        ]
+    },
+    {
+        "ID": 6,
+        "name": "Sheba",
+        "element": "Jupiter",
+        "HP_growths": [
+            28,
+            169,
+            311,
+            452,
+            593,
+            735
+        ],
+        "PP_growths": [
+            24,
+            91,
+            148,
+            193,
+            238,
+            284
+        ],
+        "ATK_growths": [
+            8,
+            78,
+            147,
+            215,
+            283,
+            351
+        ],
+        "DEF_growths": [
+            4,
+            36,
+            66,
+            98,
+            128,
+            159
+        ],
+        "AGI_growths": [
+            10,
+            88,
+            168,
+            248,
+            328,
+            407
+        ],
+        "LCK_growths": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "elevels": [
+            0.2,
+            0.1,
+            0.3,
+            5.4
+        ],
+        "starting_level": 5,
+        "starting_items": [
+            "Wooden Stick",
+            "Travel Vest",
+            "Leather Armlet",
+            "Circlet",
+            "Herb"
+        ]
+    },
+    {
+        "ID": 7,
+        "name": "Piers",
+        "element": "Mercury",
+        "HP_growths": [
+            30,
+            184,
+            337,
+            491,
+            644,
+            798
+        ],
+        "PP_growths": [
+            19,
+            79,
+            129,
+            168,
+            208,
+            248
+        ],
+        "ATK_growths": [
+            11,
+            82,
+            155,
+            226,
+            298,
+            370
+        ],
+        "DEF_growths": [
+            7,
+            39,
+            72,
+            106,
+            139,
+            173
+        ],
+        "AGI_growths": [
+            6,
+            78,
+            148,
+            218,
+            289,
+            359
+        ],
+        "LCK_growths": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "elevels": [
+            0.3,
+            5.4,
+            0.2,
+            0.1
+        ],
+        "starting_level": 18,
+        "starting_items": [
+            "Battle Mace",
+            "Chain Mail",
+            "Iron Shield",
+            "Bronze Helm",
+            "Herb",
+            "Antidote",
+            "Elixir"
+        ]
+    }
+]
