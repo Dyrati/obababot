@@ -32,7 +32,7 @@ def load_data():
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "enemygroupdata", "encounterdata"]:
-        with open(f"data\\{name}.json") as f:
+        with open(rf"data\{name}.json") as f:
             DataTables[name] = json.load(f)
             if name == "enemydata":
                 DataTables["enemydata-h"] = deepcopy(DataTables["enemydata"])
