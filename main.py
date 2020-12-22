@@ -1,5 +1,6 @@
 print("Importing modules...", end="\r")
 import discord
+import os
 import sys
 import re
 import threading
@@ -9,11 +10,12 @@ from utilities import DataTables, UserData, reply, argparse, load_data
 import commands
 print("Imported modules    ")
 
-
-if len(sys.argv) < 2:
-    TOKEN = input("Input bot token: ").strip('"')
-else:
-    TOKEN = sys.argv[1]
+TOKEN = os.getenv('TOKEN')
+if TOKEN is None:
+    if len(sys.argv) < 2:
+        TOKEN = input("Input bot token: ").strip('"')
+    else:
+        TOKEN = sys.argv[1]
 
 # Terminal input
 def command_input():
