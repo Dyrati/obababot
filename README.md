@@ -1,4 +1,4 @@
-# ObabaBOT
+# Obaba BOT
 A discord utility bot for Golden Sun.
 
 ## Commands
@@ -10,13 +10,17 @@ $math:     Evaluate a mathematical expression like a calculator
 $getclass: Get the class of a character based on their djinn
 $filter:   Filters a data table based on a custom condition
 $sort:     Sorts a data table based on an attribute (may also filter)
+$damage:   Damage Calculator
 ```
 ## Syntax
 **Arguments** are space-separated words
  - `$sort enemydata HP`
+ - arguments with spaces must be enclosed with quotation marks
  
-**Keyword** arguments have the form `key=value` (no spaces, unless value is in quotes)
+**Keyword** arguments have the form `key=value` and are optional
  - `$sort enemydata HP range=30 fields="HP, PP, ATK, DEF"`
+ - no spaces, unless value is in quotes
+ - You may use the universal keyword argument `t=true` or `t=1` to view the response time
  
 Some functions accept **python expressions** as arguments, which uses python syntax
 | Input | Output |
@@ -27,16 +31,15 @@ Some functions accept **python expressions** as arguments, which uses python syn
  
 For convenience, the `$math` command may use an `=` sign in place of `$math `
 
-## Setting up the Bot to run locally
- - Download the respository, and run `main.py`
- - Input the bot token, (may instead be input as the first argument to main.py)
+## Setting up the bot to run on your system
  - To update the database, run `gatherdata.py` with the GS2 ROM as an argument
+ - In cmd, set the environment variable TOKEN equal to the bot token using the command:
+   - `set TOKEN=tokengoeshere`
+ - Download the respository, navigate to it from cmd, and run `main.py`
  
 If things worked properly, you should see this:
 ```
 Imported modules
 Loaded Database
 Bot is ready
->
 ```
-From there you can access any global variables from main.py, including a `load_data()` function that lets you reload info from the database without having to restart.
