@@ -17,29 +17,30 @@ if TOKEN is None:
     else:
         TOKEN = sys.argv[1]
 
-# Terminal input
-def command_input():
-    import traceback
-    while True:
-        try:
-            command = input("> ")
-            temp = eval(command)
-            if temp is not None: print(temp)
-        except SyntaxError:
-            try: exec(command)
-            except Exception: print(traceback.format_exc())
-        except EOFError:
-            return
-        except Exception as e:
-            print(traceback.format_exc())
-command_thread = threading.Thread(target=command_input, daemon=True)
+# # Terminal input
+# def command_input():
+#     import traceback
+#     while True:
+#         try:
+#             command = input("> ")
+#             temp = eval(command)
+#             if temp is not None: print(temp)
+#         except SyntaxError:
+#             try: exec(command)
+#             except Exception: print(traceback.format_exc())
+#         except EOFError:
+#             return
+#         except Exception as e:
+#             print(traceback.format_exc())
+# command_thread = threading.Thread(target=command_input, daemon=True)
 
 
 client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('Bot is ready ')
+    print("Connected    ")
+    print("Bot is ready ")
     # command_thread.start()
 
 @client.event

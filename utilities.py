@@ -47,21 +47,26 @@ def load_data():
     print("Loaded database    ")
 
 
-def argparse(string):
-    args = []
-    kwargs = {}
-    mquote = re.compile(r"(.*?)(\".*?\"|$)")
-    mkwarg = re.compile(r"([a-zA-Z]\w*)=([^ =]\S*)")
-    for m1, m2 in mquote.findall(string)[:-1]:
-        for k,v in mkwarg.findall(m1):
-            kwargs[k] = v
-        m1 = mkwarg.sub("", m1)
-        for arg in re.findall(r"\S+", m1):
-            args.append(arg)
-        if re.search(r"[a-zA-Z]\w*=$", m1) and m2:
-            kwargs[args.pop()[:-1]] = m2
-        elif m2:
-            args.append(m2)
+mquote = re.compile(r"\".*?\"|\'.*?\'")
+mkwarg = re.compile(r"([a-zA-Z_][a-zA-Z_0-9]*)=([^ =]\S*)")
+mtoken = re.compile(r"{(\d+)}")
+def argparse(s):
+    groups = []
+    args, kwargs = [], {}
+    def addtoken(m):
+        groups.append(m.group())
+        return f"{{{len(groups)-1}}}"
+    def addkwarg(m):
+        kwargs[m.group(1)] = m.group(2)
+    def gettoken(m):
+        return groups[int(m.group(1))]
+    s = mquote.sub(addtoken, s)
+    s = mkwarg.sub(addkwarg, s)
+    args = re.findall(r"\S+", s)
+    for i, arg in enumerate(args):
+        args[i] = mtoken.sub(gettoken, arg)
+    for k,v in kwargs.items():
+        kwargs[k] = mtoken.sub(gettoken, v)
     return args, kwargs
 
 
