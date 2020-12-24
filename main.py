@@ -1,38 +1,23 @@
 print("Importing modules...", end="\r")
 import discord
+import asyncio
 import os
 import sys
 import re
-import threading
 import time
 import traceback
-from utilities import DataTables, UserData, reply, argparse, load_data
-import commands
+import json
+import utilities
+from utilities import reply, parse, load_data
+import commands, gsfuncs
 print("Imported modules    ")
 
-TOKEN = os.getenv('TOKEN')
-if TOKEN is None:
-    if len(sys.argv) < 2:
-        TOKEN = input("Input bot token: ").strip('"')
-    else:
-        TOKEN = sys.argv[1]
 
-# # Terminal input
-# def command_input():
-#     import traceback
-#     while True:
-#         try:
-#             command = input("> ")
-#             temp = eval(command)
-#             if temp is not None: print(temp)
-#         except SyntaxError:
-#             try: exec(command)
-#             except Exception: print(traceback.format_exc())
-#         except EOFError:
-#             return
-#         except Exception as e:
-#             print(traceback.format_exc())
-# command_thread = threading.Thread(target=command_input, daemon=True)
+terminal_mode = "-t" in sys.argv
+if terminal_mode:
+    sys.argv.pop(sys.argv.index("-t"))
+else:
+    TOKEN = os.getenv('TOKEN') or input("Input bot token: ").strip('"')
 
 
 client = discord.Client()
@@ -41,7 +26,6 @@ client = discord.Client()
 async def on_ready():
     print("Connected    ")
     print("Bot is ready ")
-    # command_thread.start()
 
 @client.event
 async def on_message(message):
@@ -50,22 +34,24 @@ async def on_message(message):
     if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
         return
     text = message.content
-    for name in commands.usercommands:
+    for name in utilities.usercommands:
         if text.startswith(name):
             command, contents = name, text[len(name):]
             break
     else:
         return
-    args, kwargs = argparse(contents.replace("`",""))
+    args, kwargs = parse(contents.replace("`",""))
     try:
-        await commands.usercommands[command](message, *args, **kwargs)
+        await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
         args = f": {e.args[0]}" if e.args else ""
         await reply(message, e.__class__.__name__ + args)
     if kwargs.get("t"):
         await reply(message, f"response time: `{time.time()-timestamp}`")
 
-
 load_data()
-print("Connecting...", end="\r")
-client.run(TOKEN)
+if terminal_mode:
+    utilities.terminal(on_message)
+else:
+    print("Connecting...", end="\r")
+    client.run(TOKEN)

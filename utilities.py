@@ -3,6 +3,26 @@ import json
 from copy import deepcopy
 
 
+prefix = "$"
+usercommands = {}
+def command(f=None, alias=None, prefix=prefix):
+    def decorator(f):
+        global usercommands
+        if alias: usercommands[alias] = f
+        usercommands[prefix + f.__name__] = f
+        async def inner(*args, **kwargs):
+            f(*args, **kwargs)
+        return inner
+    if f: return decorator(f)
+    else: return decorator
+
+
+def to_async(func):
+    async def inner(*args, **kwargs):
+        return func(*args, **kwargs)
+    return inner
+
+
 async def reply(message, text):
     if len(str(text)) > 2000:
         await message.channel.send("output exceeded 2000 characters")
@@ -24,11 +44,37 @@ def namedict(jsonobj):
     return out
 
 
-DataTables, namemaps, UserData = {}, {}, {}
+def load_text():
+    text = {}
+    text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
+    text["elements"] = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
+    text["summons"] = [
+        "Venus","Mercury","Mars","Jupiter","Ramses","Nereid","Kirin","Atalanta",
+        "Cybele","Neptune","Tiamat","Procne","Judgment","Boreas","Meteor","Thor",
+        "Zagan","Megaera","Flora","Moloch","Ulysses","Haures","Eclipse","Coatlicue",
+        "Daedalus","Azul","Catastrophe","Charon","Iris"]
+    with open(r"text/GStext.txt") as f:
+        lines = f.read().splitlines()
+        text["item_descriptions"] = lines[146:607]
+        text["items"] = lines[607:1068]
+        text["items"] = [re.search(r"[^{}]*$", s).group() for s in text["items"]]
+        text["enemynames"] = lines[1068:1447]
+        text["moves"] = lines[1447:2181]
+        text["move_descriptions"] = lines[2181:2915]
+        text["classes"] = lines[2915:3159]
+        text["djinn"] = lines[1747:1827]
+    with open(r"text/customtext.txt") as f:
+        lines = f.read().splitlines()
+        text["ability_effects"] = lines[0:92]
+        text["equipped_effects"] = lines[92:120]
+    return text
+
+
+DataTables, namemaps, UserData, Text = {}, {}, {}, {}
 def load_data():
-    global DataTables, namemaps, UserData
+    global DataTables, namemaps, UserData, Text
     print("Loading database...", end="\r")
-    DataTables.clear(); namemaps.clear()
+    DataTables.clear(); namemaps.clear(); Text.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "enemygroupdata", "encounterdata"]:
@@ -42,15 +88,14 @@ def load_data():
                     entry["DEF"] = int(1.25*entry["DEF"])
     for k,v in DataTables.items():
         namemaps[k] = namedict(v)
-    with open("userdata/userdata.json") as f:
-        UserData = json.load(f)
+    Text.update(**load_text())
     print("Loaded database    ")
 
 
 mquote = re.compile(r"\".*?\"|\'.*?\'")
 mkwarg = re.compile(r"([a-zA-Z_][a-zA-Z_0-9]*)=([^ =]\S*)")
 mtoken = re.compile(r"{(\d+)}")
-def argparse(s):
+def parse(s):
     groups = []
     args, kwargs = [], {}
     def addtoken(m):
@@ -123,3 +168,31 @@ def tablestr(dictlist, fields=None, widths=None):
     for d in dictlist:
         out += "\n" + template.format(**{k:str(v) for k,v in d.items()})
     return out
+
+
+def terminal(callback):
+    import asyncio
+    import io
+    from types import SimpleNamespace as SN
+    async def send(text):
+        print(text.replace("`",""))
+    def get_attachments(text):
+        attachments = []
+        def msub(m):
+            filename = m.group(1).strip('"')
+            with open(filename, "rb") as f:
+                buffer = io.BytesIO(f.read())
+                buffer.read = to_async(buffer.read)
+            attachments.append(buffer)
+        text = re.sub(r"\sattach=(\".*?\"|\S+)", msub, text)
+        return text, attachments
+    async def loop():
+        while True:
+            try: text = input("> ")
+            except KeyboardInterrupt: return
+            text, attachments = get_attachments(text)
+            message = SN(
+                author=SN(id=0), content=text, attachments=attachments,
+                guild=SN(name=None), channel=SN(name=None, send=send))
+            await callback(message)
+    asyncio.run(loop())

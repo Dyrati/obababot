@@ -1,28 +1,13 @@
 import json
 import re
 import sys
+import utilities
 
 
 ROM = sys.argv[1]
-pcnames = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
-elements = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
+if __name__ == "__main__": utilities.Text = utilities.load_text()
+globals().update(**utilities.Text)
 
-with open(r"text/GStext.txt") as f:
-    text = f.read().splitlines()
-    item_descriptions = text[146:607]
-    items = text[607:1068]
-    items = [re.search(r"[^{}]*$", s).group() for s in items]
-    enemynames = text[1068:1447]
-    moves = text[1447:2181]
-    move_descriptions = text[2181:2915]
-    classes = text[2915:3159]
-    djinn = text[1747:1827]
-    summons = text[1827:1860]
-
-with open(r"text/customtext.txt") as f:
-    text = f.read().splitlines()
-    ability_effects = text[0:92]
-    equipped_effects = text[92:120]
 
 with open(ROM, "rb") as f:
     def read(size):
@@ -130,9 +115,8 @@ with open(ROM, "rb") as f:
 
     f.seek(0x0C150C)  # summon data
     summondata = []
-    for i in range(30):
+    for i in range(29):
         moveID = read(4)
-        if i == 25: moveID += 1
         move = abilitydata[moveID]
         summondata.append({
             "ID": i,
@@ -149,7 +133,6 @@ with open(ROM, "rb") as f:
             "hp_multiplier": None,
             "description": move["description"],
         })
-        if i == 24: f.seek(-0x8, 1)
 
     f.seek(0x0C15F4)  # class data
     classdata = []
@@ -290,9 +273,11 @@ for pc in pcdata:
 # Summons
 for summon in summondata:
     summon["hp_multiplier"] = sum(summon[k] for k in elements[0:4])*0.03
-    if summon["ID"] == 24: summon["hp_multiplier"] = 0.07
-    if summon["ID"] == 25: summon["hp_multiplier"] = 0.15
-    if summon["ID"] == 29: summon["hp_multiplier"] = 0.40
+    if summon["name"] == "Daedalus":
+        summon["hp_multiplier"] = 0.22
+        summon["power"] = 350
+    if summon["name"] == "Iris":
+        summon["hp_multiplier"] = 0.40
 
 # Classes
 classgroups = [
