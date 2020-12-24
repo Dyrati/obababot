@@ -3,14 +3,16 @@ A discord utility bot for Golden Sun.
 
 ## Commands
 ```
-$help:     Provides information about the bot and its functions
-$info:     Returns info on something, like a search engine
-$index:    Indexes a data table
-$math:     Evaluate a mathematical expression like a calculator
-$getclass: Get the class of a character based on their djinn
-$filter:   Filters a data table based on a custom condition
-$sort:     Sorts a data table based on an attribute (may also filter)
-$damage:   Damage Calculator
+$help:         Provides information about the bot and its functions
+$info:         Returns info on something, like a search engine
+$index:        Indexes a data table
+$math:         Evaluate a mathematical expression like a calculator
+$filter:       Filters a data table based on a custom condition
+$sort:         Sorts a data table based on an attribute (may also filter)
+$upload_save:  Temporarily store a battery file by uploading an attachment
+$save_preview: See a preview of your last uploaded save file
+$getclass:     Get the class of a character based on their djinn
+$damage:       Damage Calculator
 ```
 ## Syntax
 **Arguments** are space-separated words
@@ -31,8 +33,8 @@ Some functions accept **python expressions** as arguments, which uses python syn
  
 For convenience, the `$math` command may use an `=` sign in place of `$math `
 
-## Setting up the bot to run on your system
- - To update the database, run `gatherdata.py` with the GS2 ROM as an argument
+## Running the bot on your system
+ - If you need to update the database, run `gatherdata.py` with the GS2 ROM as an argument
  - In cmd, set the environment variable TOKEN equal to the bot token using the command:
    - `set TOKEN=tokengoeshere`
  - Download the respository, navigate to it from cmd, and run `main.py`
@@ -43,3 +45,8 @@ Imported modules
 Loaded Database
 Bot is ready
 ```
+### Terminal Mode
+Terminal mode is an easy way to test out the bot, without connecting to discord.
+ - Use the command `main.py -t` to start the bot in terminal mode
+ - Messages you type will behave like messages in discord, and bot replies will be in the terminal
+ - Does not require a token or internet access
