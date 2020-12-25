@@ -33,7 +33,6 @@ with open(ROM, "rb") as f:
             "unused": read(4),
             "element": elements[read(4)],
             "equipped_effects": [[read(1), read(1), read(2)] for i in range(4)],
-            "effect_values": [],
             "use_ability": read(2),
             "unused": read(2),
             "dropped_by": [],
@@ -233,8 +232,7 @@ for item in itemdata:
     item.pop("unused")
     item["item_type"] = itemtypes[item["item_type"]]
     item["unleash_ability"] = abilitydata[item["unleash_ability"]]["name"]
-    item["effect_values"] = [i[1] for i in item["equipped_effects"] if i[0]]
-    item["equipped_effects"] = [equipped_effects[i[0]]for i in item["equipped_effects"] if i[0]]
+    item["equipped_effects"] = {equipped_effects[e]: v for e,v,u in item["equipped_effects"] if e}
     item["equippable_by"] = [pcnames[i] for i in range(8) if item["equippable_by"] & 2**i]
     item["flags"] = [flagdesc[i] for i in range(6) if item["flags"] & 2**i]
     item["use_type"] = usetypes[item["use_type"]]
@@ -257,7 +255,7 @@ for move in abilitydata:
 for enemy in enemydata:
     enemy.pop("unused")
     enemy["items"] = [items[i] for i in enemy["items"] if i]
-    enemy["item_quantities"] = [i for i in enemy["item_quantities"] if i != 0]
+    enemy["items"] = dict(zip(enemy["items"], enemy.pop("item_quantities")))
     if enemy["name"] in ("Dullahan", "Serpent"): enemy["HP_regen"] *= 10
     enemy["weaknesses"] = [ability_effects[i] for i in enemy["weaknesses"] if i]
     itemID = enemy["item_drop"]

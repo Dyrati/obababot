@@ -116,42 +116,44 @@ def parse(s):
     return args, kwargs
 
 
-def dictstr(dict_, js=False, indent=0, maxwidth=77):
-    if js: return json.dumps(dict_, indent=4)
-    out = ""
-    maxlen = len(max(dict_.keys(), key=lambda x: len(x)))
-    for k,v in dict_.items():
-        if isinstance(v, dict):
-            out += " "*indent + (k + ": ").ljust(maxlen+2)
-            if not v:
-                out += "{}\n"
-            else:
-                out += "\n" + dictstr(v, indent=indent+4)
-            continue
-        out += " "*indent + (k + ": ").ljust(maxlen+2)
-        if isinstance(v, list):
-            listiter = iter(v)
-            xpos = indent + maxlen + 3
-            out += "["
-            if v:
-                entry = str(next(listiter))
-                out += entry; xpos += len(entry)
-            for entry in listiter:
-                entry = str(entry)
-                xpos += len(entry) + 2
-                if xpos >= maxwidth:
-                    xpos = indent+maxlen+3
-                    out += ",\n" + " "*xpos + entry
-                    xpos += len(entry)
-                else:
-                    out += ", " + entry
-            out += "]\n"
+def wrap(iterable, maxwidth, pos=0):
+    group = "{}" if isinstance(iterable, (dict, set)) else "[]"
+    if not iterable: return group
+    out = group[0]; pos += 1
+    initpos = pos
+    if isinstance(iterable, dict):
+        iterable = (f"{k}: {v}" for k,v in iterable.items())
+    else:
+        iterable = iter(iterable)
+    entry = str(next(iterable))
+    out += entry; pos += len(entry)
+    for entry in iterable:
+        entry = str(entry)
+        pos += len(entry) + 2
+        if pos >= maxwidth-1:
+            pos = initpos
+            out += ",\n" + " "*pos + entry
+            pos += len(entry)
         else:
-            out += str(v) + "\n"
+            out += ", " + entry
+    out += group[1]
     return out
 
 
-def tablestr(dictlist, fields=None, widths=None):
+def dictstr(dictionary, js=False, maxwidth=78):
+    if js: return json.dumps(dictionary, indent=4)
+    out = ""
+    maxlen = len(max(dictionary.keys(), key=lambda x: len(x)))
+    for k,v in dictionary.items():
+        out += f"\n{k+'  ':<{maxlen+2}}"
+        if hasattr(v, "__iter__") and not isinstance(v, (str, bytes)):
+            out += wrap(v, maxwidth, maxlen+2)
+        else:
+            out += str(v)
+    return out[1:]
+
+
+def tableH(dictlist, fields=None, widths=None):
     fields = fields or dictlist[0].keys()
     for f in fields:
         for d in dictlist:
@@ -171,12 +173,37 @@ def tablestr(dictlist, fields=None, widths=None):
     return out
 
 
+def tableV(dictlist):
+    table = {}
+    for k in dictlist[0]:
+        table[k] = [d[k] for d in dictlist]
+    keys = list(dictlist[0])
+    columns = [[]] + [[] for d in dictlist]
+    for i,d in enumerate(dictlist):
+        for k,v in d.items():
+            if hasattr(v, "__iter__") and not isinstance(v, (str, bytes)):
+                count = len(max(dictlist, key=lambda x:len(x[k]))[k])
+                v = iter(v)
+                start = True
+                for j in range(count):
+                    if start: columns[0].append(k); start = False
+                    else: columns[0].append("")
+                    try: columns[i+1].append(str(next(v)))
+                    except StopIteration: columns[i+1].append("")
+            else:
+                columns[0].append(k)
+                columns[i+1].append(str(v))
+    widths = [len(max(c, key=lambda x: len(x))) for c in columns]
+    template = "  ".join((f"{{:{w}.{w}}}" for w in widths))
+    return "\n".join(template.format(*row) for row in zip(*columns))
+
+
 def terminal(callback):
     import asyncio
     import io
     from types import SimpleNamespace as SN
     async def send(text):
-        print(text.replace("`",""))
+        print(text.replace("```","\n").replace("`",""))
     def get_attachments(text):
         attachments = []
         def msub(m):

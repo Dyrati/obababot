@@ -2,7 +2,7 @@ import re
 import io
 import json
 import utilities
-from utilities import command, DataTables, UserData, namemaps, Text, reply, dictstr, tablestr
+from utilities import command, DataTables, UserData, namemaps, Text, reply
 
 
 def readsav(data):
@@ -60,8 +60,8 @@ def readsav(data):
                     "jup_res": read(base+0x32, 2),
                 },
                 "stats": {
-                    "HP": read(base+0x34, 2),
-                    "PP": read(base+0x36, 2),
+                    "HP_max": read(base+0x34, 2),
+                    "PP_max": read(base+0x36, 2),
                     "HP_current": read(base+0x38, 2),
                     "PP_current": read(base+0x3A, 2),
                     "ATK": read(base+0x3c, 2),
@@ -107,7 +107,6 @@ def readsav(data):
             "playtime": "{:02}:{:02}:{:02}".format(*(f["framecount"]//60**i % 60 for i in range(3,0,-1))),
             "coins": f["coins"],
             "djinn": djinncounts,
-            "levels": {f["party"][i]["name"]: f["party"][i]["level"] for i in range(8)},
         })
 
     return filedata, display
@@ -130,7 +129,7 @@ async def upload_save(message, *args, **kwargs):
     if message.attachments:
         data = await message.attachments[0].read()
     else:
-        assert args[0].startswith("https://discord.com/channels/"), \
+        assert args and args[0].startswith("https://discord.com/channels/"), \
             "Expected an attachment or a link to a message with an attachment"
         ID_list = args[0].replace("https://discord.com/channels/","").split("/")
         serverID, channelID, messageID = (int(i) for i in ID_list)
@@ -150,8 +149,17 @@ async def save_preview(message, *args, **kwargs):
     data = UserData[ID].get("save")
     assert data, "Save file not found. Use $upload_save to store a save file"
     filedata, display = readsav(data)
-    out = "\n".join((dictstr(d) for d in display))
-    await reply(message, f"```{out}```")
+    for f, d in zip(filedata, display):
+        out = utilities.dictstr(d) + "\n"
+        pcdict = f["party"]
+        for pc in pcdict:
+            pc.pop("inventory")
+            pc.pop("base_stats")
+            pc["stats"] = {k:v for k,v in pc["stats"].items() if not("res" in k or "pow" in k)}
+            pc.update(**pc.pop("stats"))
+            pc["djinn"] = pc.pop("djinn")
+        out += "\n" + utilities.tableV(pcdict)
+        await reply(message, f"```{out}```")
 
 @command
 async def getclass(message, *args, **kwargs):

@@ -13,8 +13,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -38,8 +37,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword"
@@ -63,8 +61,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword"
@@ -88,8 +85,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword"
@@ -113,8 +109,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword"
@@ -140,8 +135,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Acid Bath",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Acid Bath"
@@ -167,8 +161,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Aqua Sock",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Aqua Sock"
@@ -194,8 +187,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Purgatory",
         "element": "Mars",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Purgatory"
@@ -221,8 +213,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Blizzard",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Blizzard"
@@ -248,14 +239,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Titan Blade",
         "element": "Venus",
-        "equipped_effects": [
-            "Venus Power",
-            "Venus Resist"
-        ],
-        "effect_values": [
-            20,
-            20
-        ],
+        "equipped_effects": {
+            "Venus Power": 20,
+            "Venus Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Titan Blade"
@@ -279,8 +266,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Megiddo",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Megiddo"
@@ -308,8 +294,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Demonfire",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Long Sword: Unleashes Demonfire"
@@ -328,8 +313,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -348,8 +332,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -368,8 +351,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -393,8 +375,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Used for chores"
@@ -420,8 +401,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade"
@@ -447,8 +427,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade"
@@ -474,8 +453,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade"
@@ -501,8 +479,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade"
@@ -530,8 +507,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Cyclone Slash",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Cyclone Slash"
@@ -559,12 +535,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Sonic Smash",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "Jupiter Power": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Sonic Smash"
@@ -592,8 +565,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Vorpal Slash",
         "element": "Jupiter",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Vorpal Slash"
@@ -621,8 +593,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Mortal Danger",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Mortal Danger"
@@ -650,8 +621,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Life Nourish",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Life Nourish"
@@ -679,8 +649,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Asura",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Fenrir"
@@ -710,8 +679,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Rising Dragon",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Rising Dragon"
@@ -739,8 +707,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Rapid Smash",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Bandit"
@@ -761,8 +728,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -781,8 +747,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -801,8 +766,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -826,8 +790,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe"
@@ -851,8 +814,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe"
@@ -876,8 +838,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe"
@@ -903,8 +864,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Heat Mirage",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Heat Mirage"
@@ -930,8 +890,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Meltdown",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Earth Golem"
@@ -959,8 +918,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Barrage",
         "element": "Mars",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Barrage"
@@ -986,8 +944,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Broil",
         "element": "Mars",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Broil"
@@ -1015,8 +972,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Poison Cloud",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Poison Cloud"
@@ -1035,8 +991,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1055,8 +1010,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1075,8 +1029,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1095,8 +1048,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1122,8 +1074,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace"
@@ -1149,8 +1100,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace"
@@ -1176,8 +1126,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace"
@@ -1203,8 +1152,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace"
@@ -1232,12 +1180,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Blinding Smog",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            3
-        ],
+        "equipped_effects": {
+            "+HP recovery": 3
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Blinding Smog"
@@ -1265,8 +1210,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Terra Strike",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Terra Strike"
@@ -1294,12 +1238,9 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            2
-        ],
+        "equipped_effects": {
+            "+HP recovery": 2
+        },
         "use_ability": 94,
         "dropped_by": [
             "Turtle Dragon",
@@ -1332,8 +1273,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Poison Death",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Mace: Unleashes Poison Death"
@@ -1352,8 +1292,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1372,8 +1311,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1392,8 +1330,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1412,8 +1349,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1437,8 +1373,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff"
@@ -1464,8 +1399,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Murk",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Murk"
@@ -1491,8 +1425,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Stun Voltage",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Stun Voltage"
@@ -1518,8 +1451,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Psyphon Seal",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Psyphon Seal"
@@ -1545,8 +1477,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Psy Leech",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Psy Leech"
@@ -1572,8 +1503,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Frost Bite",
         "element": "Mercury",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Frost Bite"
@@ -1599,8 +1529,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Life Leech",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Life Leech"
@@ -1628,8 +1557,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Bad Omen",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Bad Omen"
@@ -1655,8 +1583,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Drown",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Drown"
@@ -1682,8 +1609,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Shining Star",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Grand Golem"
@@ -1711,8 +1637,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff"
@@ -1731,8 +1656,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1751,8 +1675,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1771,8 +1694,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1791,8 +1713,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1811,8 +1732,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1831,8 +1751,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1851,8 +1770,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1871,8 +1789,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1891,8 +1808,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -1916,8 +1832,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor"
@@ -1941,12 +1856,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Max PP": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Boosts PP"
@@ -1970,8 +1882,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor"
@@ -1995,8 +1906,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor"
@@ -2020,8 +1930,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor"
@@ -2045,8 +1954,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor"
@@ -2072,18 +1980,12 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Resist",
-            "Mercury Resist",
-            "Mars Resist",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            15,
-            15,
-            15,
-            15
-        ],
+        "equipped_effects": {
+            "Venus Resist": 15,
+            "Mercury Resist": 15,
+            "Mars Resist": 15,
+            "Jupiter Resist": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Resists all elements"
@@ -2109,14 +2011,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            30,
-            30
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 30,
+            "Mars Resist": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Resists Water & Fire"
@@ -2144,12 +2042,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            246
-        ],
+        "equipped_effects": {
+            "Jupiter Resist": 246
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Armor: Weak against Wind"
@@ -2175,12 +2070,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            8
-        ],
+        "equipped_effects": {
+            "+HP recovery": 8
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Boosts Attack; restores HP"
@@ -2206,12 +2098,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            6
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 6
+        },
         "use_ability": 0,
         "dropped_by": [
             "Chimera Mage"
@@ -2232,8 +2121,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2252,8 +2140,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2272,8 +2159,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2301,8 +2187,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing"
@@ -2330,8 +2215,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing"
@@ -2359,12 +2243,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Resists Water"
@@ -2392,12 +2273,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            8
-        ],
+        "equipped_effects": {
+            "+Max PP": 8
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Boosts PP"
@@ -2427,12 +2305,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "xAgility"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "xAgility": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Boosts Agility"
@@ -2460,8 +2335,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing"
@@ -2491,14 +2365,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            30,
-            20
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 30,
+            "Mars Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Resists Water & Fire"
@@ -2528,16 +2398,11 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            30,
-            30,
-            30
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 30,
+            "Mars Resist": 30,
+            "Jupiter Resist": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Resists Water, Fire, & Wind"
@@ -2567,14 +2432,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mars Resist",
-            "+Agility"
-        ],
-        "effect_values": [
-            10,
-            10
-        ],
+        "equipped_effects": {
+            "Mars Resist": 10,
+            "+Agility": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Boosts Agility; resists Fire"
@@ -2604,14 +2465,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            30,
-            10
-        ],
+        "equipped_effects": {
+            "+Agility": 30,
+            "Jupiter Resist": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothing: Boosts Agility; resists Wind"
@@ -2630,8 +2487,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2650,8 +2506,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2670,8 +2525,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2690,8 +2544,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -2714,8 +2567,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe"
@@ -2739,8 +2591,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe"
@@ -2764,8 +2615,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe"
@@ -2790,8 +2640,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 488,
         "dropped_by": [],
         "description": "Robe: Drops enemy's Attack"
@@ -2815,8 +2664,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe"
@@ -2841,12 +2689,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "+Max PP": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Boosts PP"
@@ -2872,12 +2717,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "+HP recovery": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Replenishes HP"
@@ -2903,12 +2745,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+PP recovery"
-        ],
-        "effect_values": [
-            2
-        ],
+        "equipped_effects": {
+            "+PP recovery": 2
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Replenishes PP"
@@ -2934,14 +2773,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery",
-            "+PP recovery"
-        ],
-        "effect_values": [
-            20,
-            10
-        ],
+        "equipped_effects": {
+            "+HP recovery": 20,
+            "+PP recovery": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Replenishes HP and PP"
@@ -2967,16 +2802,11 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Power",
-            "Jupiter Resist",
-            "+Agility"
-        ],
-        "effect_values": [
-            20,
-            30,
-            30
-        ],
+        "equipped_effects": {
+            "Jupiter Power": 20,
+            "Jupiter Resist": 30,
+            "+Agility": 30
+        },
         "use_ability": 0,
         "dropped_by": [
             "Wild Gryphon"
@@ -3003,14 +2833,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "+HP recovery"
-        ],
-        "effect_values": [
-            40,
-            10
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 40,
+            "+HP recovery": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Boosts HP recovery"
@@ -3029,8 +2855,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3049,8 +2874,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3069,8 +2893,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3089,8 +2912,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3114,8 +2936,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield"
@@ -3139,8 +2960,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield"
@@ -3164,8 +2984,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield"
@@ -3189,8 +3008,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield"
@@ -3216,8 +3034,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 116,
         "dropped_by": [],
         "description": "Shield: Deludes enemies"
@@ -3243,12 +3060,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mars Resist"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "Mars Resist": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Resists Fire"
@@ -3274,12 +3088,9 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Resist"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "Venus Resist": 20
+        },
         "use_ability": 91,
         "dropped_by": [],
         "description": "Shield: Use to restore 150 HP"
@@ -3298,8 +3109,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3318,8 +3128,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3347,8 +3156,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves"
@@ -3376,8 +3184,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves"
@@ -3405,8 +3212,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves"
@@ -3436,8 +3242,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Boosts Attack"
@@ -3467,8 +3272,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Boosts Attack"
@@ -3498,18 +3302,12 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Power",
-            "Mercury Power",
-            "Mars Power",
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            5,
-            5,
-            5,
-            5
-        ],
+        "equipped_effects": {
+            "Venus Power": 5,
+            "Mercury Power": 5,
+            "Mars Power": 5,
+            "Jupiter Power": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Boosts Elemental pwr"
@@ -3539,8 +3337,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Boosts Attack"
@@ -3570,8 +3367,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 110,
         "dropped_by": [
             "Magicore"
@@ -3592,8 +3388,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3617,8 +3412,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet"
@@ -3642,8 +3436,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet"
@@ -3667,8 +3460,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet"
@@ -3692,8 +3484,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet"
@@ -3719,14 +3510,10 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Power",
-            "Mercury Power"
-        ],
-        "effect_values": [
-            10,
-            10
-        ],
+        "equipped_effects": {
+            "Venus Power": 10,
+            "Mercury Power": 10
+        },
         "use_ability": 100,
         "dropped_by": [],
         "description": "Bracelet: Use to cure ailments"
@@ -3752,14 +3539,10 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mars Power",
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            10,
-            10
-        ],
+        "equipped_effects": {
+            "Mars Power": 10,
+            "Jupiter Power": 10
+        },
         "use_ability": 93,
         "dropped_by": [],
         "description": "Bracelet: Use to restore 100 HP"
@@ -3785,8 +3568,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 106,
         "dropped_by": [],
         "description": "Bracelet: Use to boost Defense"
@@ -3805,8 +3587,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3825,8 +3606,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -3850,8 +3630,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm"
@@ -3875,8 +3654,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm"
@@ -3900,8 +3678,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm"
@@ -3925,8 +3702,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm"
@@ -3950,8 +3726,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm"
@@ -3975,8 +3750,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm"
@@ -4002,14 +3776,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Power",
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            10,
-            10
-        ],
+        "equipped_effects": {
+            "Venus Power": 10,
+            "Increases Criticals": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Boosts Earth pwr & Criticals"
@@ -4035,12 +3805,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "xMax PP"
-        ],
-        "effect_values": [
-            12
-        ],
+        "equipped_effects": {
+            "xMax PP": 12
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Boosts PP"
@@ -4059,8 +3826,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4079,8 +3845,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4099,8 +3864,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4128,8 +3892,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Hat"
@@ -4157,8 +3920,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Hat"
@@ -4186,8 +3948,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Hat"
@@ -4217,12 +3978,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "+Luck": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Crown: Boosts Luck"
@@ -4252,12 +4010,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Agility": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Hat: Boosts Agility"
@@ -4287,14 +4042,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals",
-            "+PP recovery"
-        ],
-        "effect_values": [
-            8,
-            2
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 8,
+            "+PP recovery": 2
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Crown: Boosts Criticals; restores PP"
@@ -4326,12 +4077,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+PP recovery"
-        ],
-        "effect_values": [
-            4
-        ],
+        "equipped_effects": {
+            "+PP recovery": 4
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Crown: Replenishes PP"
@@ -4361,8 +4109,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 123,
         "dropped_by": [
             "Dread Hound"
@@ -4394,12 +4141,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Boosts encounters"
-        ],
-        "effect_values": [
-            0
-        ],
+        "equipped_effects": {
+            "Boosts encounters": 0
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Hat: Increases random battles"
@@ -4418,8 +4162,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4443,8 +4186,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet"
@@ -4468,8 +4210,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet"
@@ -4493,8 +4234,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet"
@@ -4518,8 +4258,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet"
@@ -4545,12 +4284,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+PP recovery"
-        ],
-        "effect_values": [
-            3
-        ],
+        "equipped_effects": {
+            "+PP recovery": 3
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet: Replenishes PP"
@@ -4575,8 +4311,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 116,
         "dropped_by": [],
         "description": "Circlet: Prevents delusions"
@@ -4595,8 +4330,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4615,8 +4349,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4635,8 +4368,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4655,8 +4387,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4675,8 +4406,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4695,8 +4425,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4715,8 +4444,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4735,8 +4463,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -4757,8 +4484,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 250,
         "dropped_by": [
             "Ruffian",
@@ -4798,8 +4524,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 251,
         "dropped_by": [
             "Chestbeater",
@@ -4839,8 +4564,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 252,
         "dropped_by": [
             "King Scorpion",
@@ -4875,8 +4599,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 253,
         "dropped_by": [
             "Avimander",
@@ -4909,8 +4632,7 @@
         "use_type": "Item transforms when used",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 254,
         "dropped_by": [],
         "description": "Replenishes all HP"
@@ -4931,8 +4653,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Extracts water from a magic spring"
@@ -4954,8 +4675,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 255,
         "dropped_by": [
             "Poseidon",
@@ -4993,8 +4713,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 256,
         "dropped_by": [
             "Devil Scorpion",
@@ -5031,8 +4750,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 257,
         "dropped_by": [
             "Flash Ant",
@@ -5073,8 +4791,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 258,
         "dropped_by": [
             "Chimera Worm",
@@ -5106,8 +4823,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 259,
         "dropped_by": [
             "Ghost Army",
@@ -5132,8 +4848,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 260,
         "dropped_by": [
             "Mimic"
@@ -5157,8 +4872,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 261,
         "dropped_by": [
             "Mimic"
@@ -5182,8 +4896,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 262,
         "dropped_by": [
             "Mimic"
@@ -5207,8 +4920,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 263,
         "dropped_by": [
             "Mimic"
@@ -5232,8 +4944,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 264,
         "dropped_by": [
             "Mad Plant"
@@ -5257,8 +4968,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 265,
         "dropped_by": [
             "Mad Plant"
@@ -5279,8 +4989,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -5310,8 +5019,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 133,
         "dropped_by": [],
         "description": "Bestows Lash when equipped"
@@ -5341,8 +5049,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 134,
         "dropped_by": [],
         "description": "Bestows Pound when equipped"
@@ -5372,8 +5079,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 142,
         "dropped_by": [],
         "description": "Bestows Force when equipped"
@@ -5403,8 +5109,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 33,
         "dropped_by": [
             "Killer Ape"
@@ -5436,8 +5141,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 24,
         "dropped_by": [],
         "description": "Bestows Frost when equipped"
@@ -5467,8 +5171,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 143,
         "dropped_by": [],
         "description": "Bestows Lift when equipped"
@@ -5498,8 +5201,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 145,
         "dropped_by": [],
         "description": "Bestows Halt when equipped"
@@ -5529,8 +5231,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 146,
         "dropped_by": [],
         "description": "Bestows Cloak when equipped"
@@ -5560,8 +5261,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 147,
         "dropped_by": [],
         "description": "Bestows Carry when equipped"
@@ -5591,8 +5291,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 148,
         "dropped_by": [],
         "description": "Bestows Catch when equipped"
@@ -5622,8 +5321,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 135,
         "dropped_by": [],
         "description": "Bestows Tremor when equipped"
@@ -5653,8 +5351,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 136,
         "dropped_by": [],
         "description": "Bestows Scoop when equipped"
@@ -5684,8 +5381,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 137,
         "dropped_by": [],
         "description": "Bestows Cyclone when equipped"
@@ -5704,8 +5400,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -5724,8 +5419,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -5755,8 +5449,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 151,
         "dropped_by": [],
         "description": "Bestows Burst when equipped"
@@ -5780,8 +5473,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 152,
         "dropped_by": [],
         "description": "Bestows Grind when equipped"
@@ -5811,8 +5503,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 153,
         "dropped_by": [],
         "description": "Bestows Hover when equipped"
@@ -5831,8 +5522,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -5862,8 +5552,7 @@
         "use_type": "Bestows ability",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 156,
         "dropped_by": [],
         "description": "Bestows Teleport when equipped"
@@ -5882,8 +5571,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -5902,8 +5590,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -5929,8 +5616,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Earth Star{176}requires Mythril Bag"
@@ -5956,8 +5642,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Water Star{176}requires Mythril Bag"
@@ -5983,8 +5668,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Holds the Mars Star"
@@ -6010,8 +5694,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Holds the Jupiter Star"
@@ -6037,8 +5720,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A fine bag made of mythril"
@@ -6059,8 +5741,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A beautiful eye-shaped jewel"
@@ -6081,8 +5762,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 267,
         "dropped_by": [
             "Punch Ant",
@@ -6114,8 +5794,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 268,
         "dropped_by": [
             "Cuttle",
@@ -6148,8 +5827,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Mad Plant",
@@ -6175,8 +5853,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Mad Plant",
@@ -6203,8 +5880,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A shining red jewel with flames inside"
@@ -6223,8 +5899,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A delicious doggy treat"
@@ -6245,8 +5920,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A trinket in the shape of an anchor"
@@ -6267,8 +5941,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 270,
         "dropped_by": [],
         "description": "Replenishes 100 HP when used"
@@ -6289,8 +5962,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "The key to the cells in Lunpa Fortress"
@@ -6311,8 +5983,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A ticket needed to cross Karagol Sea"
@@ -6333,8 +6004,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 150,
         "dropped_by": [
             "Emu",
@@ -6359,8 +6029,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A strangely colored potion"
@@ -6381,8 +6050,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 47,
         "dropped_by": [
             "Fire Worm",
@@ -6413,8 +6081,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 77,
         "dropped_by": [
             "Dire Wolf",
@@ -6443,8 +6110,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 17,
         "dropped_by": [
             "Numb Ant",
@@ -6475,8 +6141,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 31,
         "dropped_by": [
             "Merman",
@@ -6506,8 +6171,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Controls the ancient ship"
@@ -6528,8 +6192,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Key to red door in Jupiter Lighthouse"
@@ -6550,8 +6213,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Key to blue door in Jupiter Lighthouse"
@@ -6577,8 +6239,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Holds the Jupiter and Mars Stars"
@@ -6604,8 +6265,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Wind Star{176}requires Mythril Bag"
@@ -6631,8 +6291,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Fire Star{176}requires Mythril Bag"
@@ -6651,8 +6310,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -6671,8 +6329,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -6702,12 +6359,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "+Max HP": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shirt: Boosts Defense & HP"
@@ -6732,12 +6386,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            1
-        ],
+        "equipped_effects": {
+            "+Luck": 1
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shirt: Boosts Defense & Luck"
@@ -6767,12 +6418,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "+Agility": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shirt: Boosts Agility"
@@ -6791,8 +6439,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -6811,8 +6458,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -6831,8 +6477,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -6862,12 +6507,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            12
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 12
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Boosts Defense & Criticals"
@@ -6897,12 +6539,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Agility": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Boosts Defense & Agility"
@@ -6932,12 +6571,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Boosts Defense; resists Water"
@@ -6967,12 +6603,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "xAgility"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "xAgility": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Boosts Defense; lowers Agility"
@@ -6991,8 +6624,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7011,8 +6643,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7042,8 +6673,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 269,
         "dropped_by": [],
         "description": "Ring: Use to restore 7 PP"
@@ -7073,8 +6703,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 102,
         "dropped_by": [],
         "description": "Ring: Use to boost Attack"
@@ -7104,8 +6733,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 120,
         "dropped_by": [],
         "description": "Ring: Use to Lull enemies to sleep"
@@ -7135,8 +6763,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 90,
         "dropped_by": [
             "Nightmare"
@@ -7168,8 +6795,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 99,
         "dropped_by": [
             "Sea Dragon",
@@ -7202,8 +6828,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 100,
         "dropped_by": [],
         "description": "Ring: Acts like an Elixir in battle"
@@ -7233,12 +6858,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Curse is removable"
-        ],
-        "effect_values": [
-            0
-        ],
+        "equipped_effects": {
+            "Curse is removable": 0
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Ring: Removes a curse's effects"
@@ -7257,8 +6879,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7277,8 +6898,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7297,8 +6917,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7324,8 +6943,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Heavy Divide",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Heavy Divide"
@@ -7351,8 +6969,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Lethe Albion",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Lethe Albion"
@@ -7378,8 +6995,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Radiant Fire",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Radiant Fire"
@@ -7407,8 +7023,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Acheron's Grief",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Sword: Unleashes Acheron's Grief"
@@ -7434,8 +7049,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Legend",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Legend"
@@ -7461,8 +7075,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Shred",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Shred"
@@ -7488,8 +7101,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Soul Shatter",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Soul Shatter"
@@ -7515,8 +7127,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Hurricane",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Hurricane"
@@ -7542,8 +7153,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Crucible Fire",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Crucible Fire"
@@ -7569,8 +7179,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Flash Edge",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Flash Edge"
@@ -7596,8 +7205,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Void Beam",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Lesser Demon"
@@ -7625,8 +7233,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Raiden's Wrath",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Unleashes Raiden's Wrath"
@@ -7645,8 +7252,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7674,8 +7280,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Mad Zephyr",
         "element": "Jupiter",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Mad Zephyr"
@@ -7703,8 +7308,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Blaze Rush",
         "element": "Mars",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Blaze Rush"
@@ -7732,8 +7336,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Dreamtide",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Dreamtide"
@@ -7761,8 +7364,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Lunar Slash",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Lunar Slash"
@@ -7790,8 +7392,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Scorpionfish",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Scorpionfish"
@@ -7819,8 +7420,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Moon Air",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Moon Air"
@@ -7848,8 +7448,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Searing Fog",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Searing Fog"
@@ -7877,8 +7476,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Light Surge",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Unleashes Light Surge"
@@ -7906,8 +7504,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Vengeance",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Cruel Dragon"
@@ -7928,8 +7525,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -7955,8 +7551,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Flare Burst",
         "element": "Mars",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Flare Burst"
@@ -7982,8 +7577,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Mother Earth",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Mother Earth"
@@ -8009,8 +7603,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Supernova",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Supernova"
@@ -8036,8 +7629,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 106,
         "dropped_by": [],
         "description": "Axe: Use to boost Defense"
@@ -8063,8 +7655,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Stun Bolt",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Stun Bolt"
@@ -8090,8 +7681,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Power Drive",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Power Drive"
@@ -8117,8 +7707,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Stone Justice",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Stone Justice"
@@ -8144,8 +7733,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Heat Smash",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Unleashes Heat Shatter"
@@ -8171,8 +7759,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Vein Tap",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Minotaurus"
@@ -8193,8 +7780,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -8222,8 +7808,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Ice Crush",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Ice Crush"
@@ -8251,8 +7836,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Hammersphere",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Hammersphere"
@@ -8280,8 +7864,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Evil Eye",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Evil Eye"
@@ -8309,8 +7892,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Wyrd Curse",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Wyrd Curse"
@@ -8338,8 +7920,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Boost Hack",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Boost Hack"
@@ -8367,8 +7948,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "High Vitals",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Blue Dragon"
@@ -8398,8 +7978,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Heartbreak",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Unleashes Heartbreak"
@@ -8418,8 +7997,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -8445,8 +8023,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Stun Cloud",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Stun Cloud"
@@ -8472,8 +8049,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Fire Dance",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Fire Dance"
@@ -8499,8 +8075,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Reverse Star",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Reverse Star"
@@ -8526,8 +8101,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Aging Gas",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Aging Gas"
@@ -8553,8 +8127,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Flash Force",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Flash Force"
@@ -8580,8 +8153,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Sargasso",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Sargasso"
@@ -8607,8 +8179,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nirvana",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Unleashes Nirvana"
@@ -8634,8 +8205,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 111,
         "dropped_by": [],
         "description": "Staff: Use to resist Elements"
@@ -8661,8 +8231,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Life Shear",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Fire Dragon"
@@ -8690,8 +8259,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Apocalypse",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Mad Demon"
@@ -8719,8 +8287,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 95,
         "dropped_by": [
             "Minos Warrior"
@@ -8748,8 +8315,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Sarcophagus",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Red Demon"
@@ -8770,8 +8336,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -8801,12 +8366,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 20
+        },
         "use_ability": 573,
         "dropped_by": [],
         "description": "A weapon with a unique purpose"
@@ -8825,8 +8387,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -8852,18 +8413,12 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Power",
-            "Mercury Power",
-            "Mars Power",
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            10,
-            10,
-            10,
-            10
-        ],
+        "equipped_effects": {
+            "Venus Power": 10,
+            "Mercury Power": 10,
+            "Mars Power": 10,
+            "Jupiter Power": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Raises elemental power"
@@ -8889,14 +8444,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            15,
-            15
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 15,
+            "Mars Resist": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Resists Water & Fire"
@@ -8922,12 +8473,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Max HP": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Raises HP"
@@ -8955,12 +8503,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Resist"
-        ],
-        "effect_values": [
-            246
-        ],
+        "equipped_effects": {
+            "Venus Resist": 246
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Armor: Weak against Earth"
@@ -8986,8 +8531,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Raises Attack"
@@ -9013,14 +8557,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            20,
-            20
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 20,
+            "Jupiter Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Resists Wind & Water"
@@ -9046,12 +8586,9 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            7
-        ],
+        "equipped_effects": {
+            "+Luck": 7
+        },
         "use_ability": 116,
         "dropped_by": [],
         "description": "Armor: Use for some magical luck"
@@ -9077,12 +8614,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            6
-        ],
+        "equipped_effects": {
+            "+HP recovery": 6
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Restores HP"
@@ -9108,12 +8642,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Armor: Raises Evade"
@@ -9132,8 +8663,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -9158,8 +8688,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 94,
         "dropped_by": [],
         "description": "Clothes: Use to restore 200 HP"
@@ -9189,12 +8718,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothes: Raises Evade"
@@ -9224,8 +8750,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothes"
@@ -9255,12 +8780,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility"
-        ],
-        "effect_values": [
-            40
-        ],
+        "equipped_effects": {
+            "+Agility": 40
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothes: Raises Speed"
@@ -9285,8 +8807,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 120,
         "dropped_by": [],
         "description": "Clothes: Use to put enemies to sleep"
@@ -9316,12 +8837,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "+Luck": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothes: Raises Luck"
@@ -9351,12 +8869,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Clothes: Raises Attack and Evade"
@@ -9386,14 +8901,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Power",
-            "Mercury Resist"
-        ],
-        "effect_values": [
-            30,
-            70
-        ],
+        "equipped_effects": {
+            "Mercury Power": 30,
+            "Mercury Resist": 70
+        },
         "use_ability": 0,
         "dropped_by": [
             "Ocean Dragon"
@@ -9414,8 +8925,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -9441,14 +8951,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            18,
-            18
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 18,
+            "Mars Resist": 18
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Resists Fire & Water"
@@ -9474,14 +8980,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mars Power",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            20,
-            40
-        ],
+        "equipped_effects": {
+            "Mars Power": 20,
+            "Mars Resist": 40
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Raises Fire Power & Resist"
@@ -9507,12 +9009,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "+HP recovery": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Restores HP"
@@ -9538,14 +9037,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Power",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            15,
-            50
-        ],
+        "equipped_effects": {
+            "Jupiter Power": 15,
+            "Jupiter Resist": 50
+        },
         "use_ability": 0,
         "dropped_by": [
             "Wyvern"
@@ -9573,16 +9068,11 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck",
-            "Mars Resist",
-            "+PP recovery"
-        ],
-        "effect_values": [
-            15,
-            30,
-            12
-        ],
+        "equipped_effects": {
+            "+Luck": 15,
+            "Mars Resist": 30,
+            "+PP recovery": 12
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Robe: Raises Luck, Restores PP"
@@ -9601,8 +9091,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -9628,12 +9117,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Resist"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "Venus Resist": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Resists Earth"
@@ -9659,14 +9145,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            15,
-            15
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 15,
+            "Mars Resist": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Resists Water & Fire"
@@ -9692,12 +9174,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mars Resist"
-        ],
-        "effect_values": [
-            60
-        ],
+        "equipped_effects": {
+            "Mars Resist": 60
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Resists Fire"
@@ -9725,8 +9204,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Shield: Raises Attack"
@@ -9752,18 +9230,12 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Resist",
-            "Mercury Resist",
-            "Mars Resist",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            20,
-            20,
-            20,
-            20
-        ],
+        "equipped_effects": {
+            "Venus Resist": 20,
+            "Mercury Resist": 20,
+            "Mars Resist": 20,
+            "Jupiter Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Resists all elements"
@@ -9789,12 +9261,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            50
-        ],
+        "equipped_effects": {
+            "Jupiter Resist": 50
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Resists Wind"
@@ -9820,12 +9289,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shield: Raises Evade"
@@ -9844,8 +9310,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -9875,14 +9340,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility",
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            30,
-            20
-        ],
+        "equipped_effects": {
+            "+Agility": 30,
+            "Jupiter Power": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Raises Speed & Wind pwr"
@@ -9912,12 +9373,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "+Max HP": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Raises HP"
@@ -9947,12 +9405,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mars Power"
-        ],
-        "effect_values": [
-            40
-        ],
+        "equipped_effects": {
+            "Mars Power": 40
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Raises Fire Power"
@@ -9982,8 +9437,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Raises Attack"
@@ -10013,12 +9467,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 20
+        },
         "use_ability": 0,
         "dropped_by": [
             "Minos Knight"
@@ -10050,12 +9501,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Max PP": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Gloves: Raises PP"
@@ -10074,8 +9522,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -10101,12 +9548,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Power"
-        ],
-        "effect_values": [
-            25
-        ],
+        "equipped_effects": {
+            "Mercury Power": 25
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet: Raises Water Power"
@@ -10132,12 +9576,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet: Raises Evade"
@@ -10163,8 +9604,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 122,
         "dropped_by": [],
         "description": "Bracelet: Use to Haunt a foe"
@@ -10190,12 +9630,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "+Max PP": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet: Raises PP"
@@ -10221,12 +9658,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "Jupiter Power": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Bracelet: Raises Wind Power"
@@ -10245,8 +9679,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -10272,14 +9705,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            20,
-            20
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 20,
+            "Mars Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Resists Water & Fire"
@@ -10305,12 +9734,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            12
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 12
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Raises Evade"
@@ -10338,8 +9764,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Helm: Raises Attack"
@@ -10365,12 +9790,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Max HP": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Raises HP"
@@ -10396,12 +9818,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Resist"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "Mercury Resist": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Resists Water"
@@ -10427,12 +9846,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "+HP recovery": 10
+        },
         "use_ability": 0,
         "dropped_by": [
             "Aka Manah"
@@ -10460,12 +9876,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Max PP": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Helm: Raises PP"
@@ -10484,8 +9897,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -10515,14 +9927,10 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "xLuck",
-            "Jupiter Resist"
-        ],
-        "effect_values": [
-            12,
-            20
-        ],
+        "equipped_effects": {
+            "xLuck": 12,
+            "Jupiter Resist": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Hat: Raises Luck, Resists Wind"
@@ -10547,8 +9955,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 90,
         "dropped_by": [],
         "description": "Cap: Use to release healing power"
@@ -10578,8 +9985,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Crown: Raises Attack"
@@ -10604,8 +10010,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 424,
         "dropped_by": [
             "Gressil"
@@ -10634,8 +10039,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 586,
         "dropped_by": [
             "Little Death"
@@ -10667,12 +10071,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+PP recovery"
-        ],
-        "effect_values": [
-            8
-        ],
+        "equipped_effects": {
+            "+PP recovery": 8
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Crown: Restores PP over time"
@@ -10702,8 +10103,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 124,
         "dropped_by": [],
         "description": "Hood: Use to Haunt a foe"
@@ -10722,8 +10122,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -10749,12 +10148,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Mercury Power"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "Mercury Power": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet: Raises Water Power"
@@ -10780,12 +10176,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max PP"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "+Max PP": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet: Raises PP"
@@ -10811,12 +10204,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+PP recovery"
-        ],
-        "effect_values": [
-            12
-        ],
+        "equipped_effects": {
+            "+PP recovery": 12
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet: Restores PP"
@@ -10844,12 +10234,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Cursed Circlet: Raises Evade"
@@ -10875,12 +10262,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Jupiter Power"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "Jupiter Power": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet: Raises Wind Power"
@@ -10906,12 +10290,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "+Luck": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Circlet: Raises Luck"
@@ -10937,8 +10318,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Druj"
@@ -10959,8 +10339,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -10985,12 +10364,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "+Luck": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shirt: Raises Defense and Luck"
@@ -11020,8 +10396,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 250,
         "dropped_by": [],
         "description": "Shirt: Reduces Defense"
@@ -11051,12 +10426,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            10
-        ],
+        "equipped_effects": {
+            "+Max HP": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shirt: Raises HP & DEF"
@@ -11083,12 +10455,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+HP recovery"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "+HP recovery": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Shirt: Restores HP & Raises DEF"
@@ -11116,8 +10485,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense"
@@ -11147,16 +10515,11 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Venus Resist",
-            "Mercury Resist",
-            "Mars Resist"
-        ],
-        "effect_values": [
-            10,
-            10,
-            10
-        ],
+        "equipped_effects": {
+            "Venus Resist": 10,
+            "Mercury Resist": 10,
+            "Mars Resist": 10
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense & Resist"
@@ -11186,12 +10549,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "xAgility"
-        ],
-        "effect_values": [
-            7
-        ],
+        "equipped_effects": {
+            "xAgility": 7
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense, lower Speed"
@@ -11221,12 +10581,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            5
-        ],
+        "equipped_effects": {
+            "+Max HP": 5
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense & HP"
@@ -11256,12 +10613,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Luck"
-        ],
-        "effect_values": [
-            4
-        ],
+        "equipped_effects": {
+            "+Luck": 4
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense & Luck"
@@ -11291,12 +10645,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "Increases Criticals"
-        ],
-        "effect_values": [
-            15
-        ],
+        "equipped_effects": {
+            "Increases Criticals": 15
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense & Evade"
@@ -11326,12 +10677,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Agility"
-        ],
-        "effect_values": [
-            30
-        ],
+        "equipped_effects": {
+            "+Agility": 30
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Boots: Raise Defense & Speed"
@@ -11361,8 +10709,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 97,
         "dropped_by": [],
         "description": "Ring: Restores 160 HP to all allies"
@@ -11392,8 +10739,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 121,
         "dropped_by": [],
         "description": "Ring: Use to seal enemy's Psynergy"
@@ -11423,8 +10769,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 88,
         "dropped_by": [],
         "description": "Ring: Restores 100 HP to all allies"
@@ -11454,8 +10799,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 116,
         "dropped_by": [],
         "description": "Ring: Deludes multiple enemies"
@@ -11485,8 +10829,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 101,
         "dropped_by": [],
         "description": "Ring: Use to raise downed ally"
@@ -11516,12 +10859,9 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [
-            "+Max HP"
-        ],
-        "effect_values": [
-            20
-        ],
+        "equipped_effects": {
+            "+Max HP": 20
+        },
         "use_ability": 0,
         "dropped_by": [],
         "description": "Ring: Increases HP"
@@ -11551,8 +10891,7 @@
         "use_type": "Can Break",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 111,
         "dropped_by": [],
         "description": "Ring: Raises elemental resistance"
@@ -11571,8 +10910,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -11600,8 +10938,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Needs to be reforged"
@@ -11627,8 +10964,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Needs to be reforged"
@@ -11656,8 +10992,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Light Blade: Needs to be reforged"
@@ -11683,8 +11018,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Long Sword: Needs to be reforged"
@@ -11710,8 +11044,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Needs to be reforged"
@@ -11737,8 +11070,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Axe: Needs to be reforged"
@@ -11766,8 +11098,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Needs to be reforged"
@@ -11795,8 +11126,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Mace: Needs to be reforged"
@@ -11822,8 +11152,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Needs to be reforged"
@@ -11849,8 +11178,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Needs to be reforged"
@@ -11876,8 +11204,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Staff: Needs to be reforged"
@@ -11896,8 +11223,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -11919,8 +11245,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Gillman Lord"
@@ -11944,8 +11269,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Sand Scorpion"
@@ -11969,8 +11293,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Great Seagull"
@@ -11994,8 +11317,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Winged Lizard"
@@ -12019,8 +11341,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Pyrodra"
@@ -12044,8 +11365,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Bombander"
@@ -12069,8 +11389,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Soul Army"
@@ -12094,8 +11413,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Karst",
@@ -12122,8 +11440,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
             "Sky Dragon"
@@ -12144,8 +11461,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -12166,8 +11482,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "The right tine of a trident"
@@ -12188,8 +11503,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "The left tine of a trident"
@@ -12210,8 +11524,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "The center piece of a trident"
@@ -12230,8 +11543,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -12261,8 +11573,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Card: Equip to change your class"
@@ -12292,8 +11603,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Whip: Equip to change your class"
@@ -12323,8 +11633,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Book: Equip to change your class"
@@ -12343,8 +11652,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Venus",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -12372,8 +11680,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "?"
@@ -12395,8 +11702,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A rare and delicious mushroom"
@@ -12417,8 +11723,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A rare and suspicious mushroom"
@@ -12439,8 +11744,7 @@
         "use_type": "Consumable",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 667,
         "dropped_by": [],
         "description": "???"
@@ -12462,8 +11766,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A sacred idol of unknown power"
@@ -12485,8 +11788,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A shining stone"
@@ -12508,8 +11810,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A fancy red scarf"
@@ -12531,8 +11832,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Nutritious, delicious fresh milk"
@@ -12554,8 +11854,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A turtle who's far from home"
@@ -12576,8 +11875,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "The stone that leads the chosen one"
@@ -12596,8 +11894,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "Nourishing bread that fights hunger"
@@ -12618,8 +11915,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A jewel from the sea god's eye"
@@ -12640,8 +11936,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A key found in the ruins under Madra"
@@ -12662,8 +11957,7 @@
         "use_type": "Multi-Use",
         "unleash_ability": "Nothing",
         "element": "Neutral",
-        "equipped_effects": [],
-        "effect_values": [],
+        "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [],
         "description": "A glowing, red ball of volcanic rock "

@@ -1,7 +1,7 @@
 import re
 import inspect
 import utilities
-from utilities import command, prefix, DataTables, UserData, namemaps, reply, dictstr, tablestr
+from utilities import command, prefix, DataTables, UserData, namemaps, reply, dictstr
 from safe_eval import safe_eval
 
 
@@ -149,7 +149,7 @@ async def filter(message, *args, **kwargs):
     if "name" in DataTables[table][0]: fields.append("name")
     if kwargs.get("fields"):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
-    if output: await reply(message, f"```{tablestr(output, fields=fields)}```")
+    if output: await reply(message, f"```{utilities.tableH(output, fields=fields)}```")
     else: await reply(message, "no match found")
 
 
@@ -190,5 +190,5 @@ async def sort(message, *args, **kwargs):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
     else:
         fields.append(key)
-    if output: await reply(message, f"```{tablestr(output, fields=fields)}```")
+    if output: await reply(message, f"```{utilities.tableH(output, fields=fields)}```")
     else: await reply(message, "no match found")

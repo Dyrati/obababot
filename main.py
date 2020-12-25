@@ -47,7 +47,7 @@ async def on_message(message):
         await reply(message, f"response time: `{time.time()-timestamp}`")
 
 load_data()
-if terminal_mode:
+if terminal_mode or True:
     utilities.terminal(on_message)
 else:
     print("Connecting...", end="\r")
