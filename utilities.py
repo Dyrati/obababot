@@ -5,6 +5,7 @@ from copy import deepcopy
 
 prefix = "$"
 usercommands = {}
+client = None
 def command(f=None, alias=None, prefix=prefix):
     def decorator(f):
         global usercommands

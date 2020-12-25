@@ -1,12 +1,8 @@
 print("Importing modules...", end="\r")
 import discord
-import asyncio
 import os
 import sys
-import re
 import time
-import traceback
-import json
 import utilities
 from utilities import reply, parse, load_data
 import commands, gsfuncs
@@ -21,6 +17,7 @@ else:
 
 
 client = discord.Client()
+utilities.client = client
 
 @client.event
 async def on_ready():

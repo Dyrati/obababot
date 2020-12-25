@@ -50,3 +50,4 @@ Terminal mode is an easy way to test out the bot, without connecting to discord.
  - Use the command `main.py -t` to start the bot in terminal mode
  - Messages you type will behave like messages in discord, and bot replies will be in the terminal
  - Does not require a token or internet access
+ - Press ctrl+C to exit
