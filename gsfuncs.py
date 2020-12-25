@@ -114,12 +114,33 @@ def readsav(data):
 
 @command
 async def upload_save(message, *args, **kwargs):
-    """Temporarily store a battery file by uploading an attachment"""
+    """Upload a battery file
+
+    Battery files (.sav) are stored per-user, and will remain in the bot's
+        memory until the bot is reset, which can happen at any time.  Some 
+        functions require that you have already called this function within
+        the most recent bot session.
+    
+    Arguments:
+        link -- (optional) a link to a message with an attached .sav file
+                if not included, you must attach a .sav file to the message
+    """
     ID = str(message.author.id)
     if not UserData.get(ID): UserData[ID] = {}
-    data = await message.attachments[0].read()
+    if message.attachments:
+        data = await message.attachments[0].read()
+    else:
+        assert args[0].startswith("https://discord.com/channels/"), \
+            "Expected an attachment or a link to a message with an attachment"
+        ID_list = args[0].replace("https://discord.com/channels/","").split("/")
+        serverID, channelID, messageID = (int(i) for i in ID_list)
+        server = utilities.client.get_guild(serverID)
+        channel = server.get_channel(channelID)
+        m = await channel.fetch_message(messageID)
+        data = await m.attachments[0].read()
     assert len(data) == 0x10000, "Expected a 64KB file"
     UserData[ID]["save"] = data
+    await reply(message, "Upload successful.  Use $save_preview to view")
 
 @command
 async def save_preview(message, *args, **kwargs):
