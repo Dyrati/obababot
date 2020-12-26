@@ -64,18 +64,13 @@ async def index(message, *args, **kwargs):
     
     Arguments:
         tablename -- the name of the data table
-        *condition -- searches data until condition is met
-                      a mathematical expression that may contain object attribute names
-                      set equal to a number to index normally
+        *condition -- grabs the *nth* element of a data table
+                      may alternatively contain a python expression, and will
+                      return the first object that satisfies the expression
     
     Keyword Arguments:
         json -- set equal to 1 or "true" to format the output as json
     """
-    if len(args) < 2:
-        await reply(message,
-            f"`{prefix}index` expects two arguments: `{prefix}index tablename condition`\n" +
-            f"valid tablenames: `{', '.join(DataTables.keys())}`")
-        return
     tablename = args[0]
     condition = " ".join(args[1:])
     if re.match(r"\d+$", condition):
@@ -92,7 +87,7 @@ async def index(message, *args, **kwargs):
 
 @command(alias="=")
 async def math(message, *args, **kwargs):
-    """Evaluate a mathematical expression like a calculator
+    """Evaluate a python expression
 
     Available functions/variables:
         abs, round, min, max, rand, pi, e, sin, cos, tan, sqrt, log, exp,
@@ -101,7 +96,8 @@ async def math(message, *args, **kwargs):
     Keyword Arguments:
         f -- format string; uses python's format-specification-mini-language
 
-    Alias: =[insert expression here]
+    Alias:
+        may use the "=" sign in place of "$math "
     """
     import math
     import random
@@ -135,7 +131,7 @@ async def filter(message, *args, **kwargs):
 
     Arguments:
         tablename -- the table to search
-        *condition -- a mathematical expression that may contain attribute names
+        *condition -- a python expression that may contain attribute names
                       example: HP>5000 and DEF<100
     
     Keyword Arguments:
@@ -161,7 +157,7 @@ async def sort(message, *args, **kwargs):
         tablename -- the table to search
         attribute -- the attribute to sort by
                      to sort from highest to lowest, place a "-" sign in front
-        *filter -- a mathematical expression that may contain attribute names
+        *filter -- a python expression that may contain attribute names
                    will only output entries that make the expression true
                    example: HP>5000 and DEF<100
 

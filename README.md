@@ -43,6 +43,7 @@ If things worked properly, you should see this:
 ```
 Imported modules
 Loaded Database
+Connected
 Bot is ready
 ```
 ### Terminal Mode

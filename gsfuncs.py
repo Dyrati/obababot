@@ -62,8 +62,8 @@ def readsav(data):
                 "stats": {
                     "HP_max": read(base+0x34, 2),
                     "PP_max": read(base+0x36, 2),
-                    "HP_current": read(base+0x38, 2),
-                    "PP_current": read(base+0x3A, 2),
+                    "HP_cur": read(base+0x38, 2),
+                    "PP_cur": read(base+0x3A, 2),
                     "ATK": read(base+0x3c, 2),
                     "DEF": read(base+0x3e, 2),
                     "AGI": read(base+0x40, 2),

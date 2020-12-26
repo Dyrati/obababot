@@ -14,6 +14,7 @@ if terminal_mode:
     sys.argv.pop(sys.argv.index("-t"))
 else:
     TOKEN = os.getenv('TOKEN') or input("Input bot token: ").strip('"')
+    if TOKEN == "terminal": terminal_mode = True
 
 
 client = discord.Client()
