@@ -85,13 +85,26 @@ async def index(message, *args, **kwargs):
     await reply(message, f"```{output}```")
 
 
+import math
+import random
+def rand(*args):
+    if len(args) == 1: return random.randint(1, *args)
+    elif args: return random.randint(*args)
+    else: return random.random()
+mfuncs = {
+    'abs':abs, 'round':round, 'min':min, 'max':max, 'rand':rand,
+    'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int,
+    'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1), 
+    'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
+    'log':math.log, 'exp':math.exp,
+}
 @command(alias="=")
 async def math(message, *args, **kwargs):
     """Evaluate a python expression
 
     Available functions/variables:
         abs, round, min, max, rand, pi, e, sin, cos, tan, sqrt, log, exp,
-        int, sum, len, bin, hex
+        int, sum, len, bin, hex, plus any tablenames from the database
 
     Keyword Arguments:
         f -- format string; uses python's format-specification-mini-language
@@ -99,23 +112,7 @@ async def math(message, *args, **kwargs):
     Alias:
         may use the "=" sign in place of "$math "
     """
-    import math
-    import random
-
-    def rand(*args):
-        if len(args) == 1: return random.randint(1, *args)
-        elif args: return random.randint(*args)
-        else: return random.random()
-
-    mfuncs = {
-        'abs':abs, 'round':round, 'min':min, 'max':max, 'rand':rand,
-        'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int,
-        'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1), 
-        'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
-        'log':math.log, 'exp':math.exp,
-    }
-
-    value = safe_eval(" ".join(args), mfuncs)
+    value = safe_eval(" ".join(args), {**mfuncs, **DataTables})
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     if frmt[4] and len(frmt[4]) > 3:
