@@ -162,8 +162,8 @@ async def sort(message, *args, **kwargs):
                    example: HP>5000 and DEF<100
 
     Keyword Arguments:
-        range -- a section of the output to display.  Default is "0,20"
-                 if you input only one number, it will display that many entries
+        range -- the number of entries to display.  Default is 20.
+                 to display a section of the output, use the syntax: "start,end"
         fields -- additional attributes to display in the output, separated by commas
     """
     table = args[0]
@@ -177,7 +177,7 @@ async def sort(message, *args, **kwargs):
         output = sorted(data, key=lambda x: x[key], reverse=True)
     else:
         output = sorted(data, key=lambda x: x[key])
-    range_ = list(map(int, kwargs.get("range", "0,20").strip('"').split(",")))
+    range_ = list(map(int, kwargs.get("range", "20").strip('"').split(",")))
     if len(range_) == 1: range_.insert(0,0)
     output = list(output)[range_[0]:range_[1]]
     fields = ["ID"]
