@@ -18,20 +18,26 @@ $damage:       Damage Calculator
 **Arguments** are space-separated words
  - `$sort enemydata HP`
  - arguments with spaces must be enclosed with quotation marks
+ - in help-strings, if you see `*argument`, that means that all of the remaining space-separated words  
+   become a part of this argument
  
 **Keyword** arguments have the form `key=value` and are optional
  - `$sort enemydata HP range=30 fields="HP, PP, ATK, DEF"`
- - no spaces, unless value is in quotes
+ - no spaces, unless `value` is in quotes
  - You may use the universal keyword argument `t=true` or `t=1` to view the response time
- 
-Some functions accept **python expressions** as arguments, which uses python syntax
+
+### Python Expressions
+Some functions accept **python expressions** as arguments, which uses python syntax.  
+Depending on the context, you may use the attributes of objects by name.  
+
 | Input | Output |
 |---|---|
 |$math `e**pi > pi**e` | `True`|
 |$filter `enemydata HP>5000`|  a list of all the enemies with HP>5000 |
 |$filter `djinndata HP>10 and element=="Venus"` | a list of all djinn that satisfy the expression |
  
-For convenience, the `$math` command may use an `=` sign in place of `$math `
+An easy way to view the attributes of objects in a data table is to use `$index [table] 0`,  
+which prints out all of the attributes and values of the first item in `[table]`.
 
 ## Running the bot on your system
  - If you need to update the database, run `gatherdata.py` with the GS2 ROM as an argument
