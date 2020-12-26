@@ -108,18 +108,29 @@ async def math(message, *args, **kwargs):
 
     Keyword Arguments:
         f -- format string; uses python's format-specification-mini-language
+        set -- a variable name to assign the output to.  Variables are stored
+               per-user, and will be reset whenever the bot is reset, which
+               can happen at any time.
 
     Alias:
         may use the "=" sign in place of "$math "
     """
-    value = safe_eval(" ".join(args), {**mfuncs, **DataTables})
+    ID = message.author.id
+    UserData[ID] = UserData.get(ID, {"vars":{}})
+    value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID]["vars"]})
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     if frmt[4] and len(frmt[4]) > 3:
         await reply(message, "width specifier too large")
         return
     frmt = "".join([i for i in frmt if i]).strip('"')
-    await reply(message, f"`{value:{frmt}}`")
+    if frmt: value = f"{value:{frmt}}"
+    if kwargs.get("set"):
+        varname = kwargs["set"]
+        assert re.match(r"[a-zA-Z_][a-zA-Z0-9_]*$", varname), "Invalid variable name"
+        UserData[ID]["vars"][varname] = value
+    else:
+        await reply(message, f"`{value}`")
 
 
 @command
