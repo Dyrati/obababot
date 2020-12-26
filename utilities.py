@@ -5,11 +5,12 @@ from copy import deepcopy
 
 prefix = "$"
 usercommands = {}
+aliases = {}
 client = None
 def command(f=None, alias=None, prefix=prefix):
     def decorator(f):
         global usercommands
-        if alias: usercommands[alias] = f
+        if alias: aliases[re.compile(alias)] = prefix + f.__name__
         usercommands[prefix + f.__name__] = f
         async def inner(*args, **kwargs):
             f(*args, **kwargs)
@@ -214,13 +215,17 @@ def terminal(callback):
             attachments.append(buffer)
         text = re.sub(r"\sattach=(\".*?\"|\S+)", msub, text)
         return text, attachments
+    ID = 0
     async def loop():
+        nonlocal ID
         while True:
             try: text = input("> ")
             except KeyboardInterrupt: return
+            if text in ("quit", "exit"): return
+            if text.startswith("setid"): ID=int(text[len("setid"):])
             text, attachments = get_attachments(text)
             message = SN(
-                author=SN(id=0), content=text, attachments=attachments,
+                author=SN(name="admin", id=ID), content=text, attachments=attachments,
                 guild=SN(name=None), channel=SN(name=None, send=send))
             await callback(message)
     asyncio.run(loop())

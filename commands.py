@@ -98,7 +98,7 @@ mfuncs = {
     'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
     'log':math.log, 'exp':math.exp,
 }
-@command(alias="=")
+@command(alias=r"(?P<set>[a-zA-Z_][a-zA-Z0-9_]*)?\s*=")
 async def math(message, *args, **kwargs):
     """Evaluate a python expression
 
@@ -111,9 +111,9 @@ async def math(message, *args, **kwargs):
         set -- a variable name to assign the output to.  Variables are stored
                per-user, and will be reset whenever the bot is reset, which
                can happen at any time.
-
-    Alias:
+    Aliases:
         may use the "=" sign in place of "$math "
+        may use "varname = expression" to set variables as well
     """
     ID = message.author.id
     UserData[ID] = UserData.get(ID, {"vars":{}})
@@ -127,7 +127,6 @@ async def math(message, *args, **kwargs):
     if frmt: value = f"{value:{frmt}}"
     if kwargs.get("set"):
         varname = kwargs["set"]
-        assert re.match(r"[a-zA-Z_][a-zA-Z0-9_]*$", varname), "Invalid variable name"
         UserData[ID]["vars"][varname] = value
     else:
         await reply(message, f"`{value}`")

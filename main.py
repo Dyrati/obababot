@@ -32,12 +32,19 @@ async def on_message(message):
     if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
         return
     text = message.content
-    for name in utilities.usercommands:
-        if text.startswith(name):
-            command, contents = name, text[len(name):]
-            break
+    for regex, command in utilities.aliases.items():
+        m = regex.match(text)
+        if not m: continue
+        for k,v in m.groupdict().items():
+            if v is None: continue
+            text += f" {k}={v}"
+        contents = text[m.end():]
+        break
     else:
-        return
+        command = text.split(" ",1)[0]
+        if command in utilities.usercommands:
+            contents = text[len(command)+1:]
+        else: return
     args, kwargs = parse(contents.replace("`",""))
     try:
         await utilities.usercommands[command](message, *args, **kwargs)
