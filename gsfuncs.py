@@ -5,12 +5,26 @@ import utilities
 from utilities import command, DataTables, UserData, namemaps, Text, reply
 
 
+build_dates = {
+    0x1C85: "Golden Sun - The Lost Age (UE)",
+    0x1D97: "Golden Sun - The Lost Age (G)",
+    0x1DC7: "Golden Sun - The Lost Age (S)",
+    0x1D98: "Golden Sun - The Lost Age (F)",
+    0x1DC8: "Golden Sun - The Lost Age (I)",
+    0x198A: "Golden Sun - The Lost Age (J)",
+    0x1652: "Golden Sun (UE)",
+    0x1849: "Golden Sun (G)",
+    0x1885: "Golden Sun (S)",
+    0x1713: "Golden Sun (F)",
+    0x1886: "Golden Sun (I)",
+    0x159C: "Golden Sun (J)",}
+
 def readsav(data):
     f = io.BytesIO(data)
     def read(size):
         return int.from_bytes(f.read(size), "little")
     headers = []
-    for i in range(0, 16, 3):
+    for i in range(16):
         f.seek(0x1000*i)
         headers.append({
             "addr": 0x1000*i,
@@ -19,27 +33,31 @@ def readsav(data):
             "checksum": read(2),
             "priority": read(2),
         })
-
     valid_saves = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] < 0xF]
     slots = {}
     for save in valid_saves:
         if save["priority"] > slots.get(save["slot"], -1):
             slots[save["slot"]] = save
-
     filedata = []
     for i in range(3):
         if not slots.get(i): continue
         f.seek(slots[i]["addr"] + 0x10)
         data = f.read(0x2FF0)
-        def read(addr, size):
-            return int.from_bytes(data[addr:addr+size], "little")
+        read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
+        version = build_dates[read(0x26, 2) & ~0x8000]
+        if "The Lost Age" in version: offset = 0x20
+        else: offset = 0
+        party_size = sum((1 if read(0x40, 1) & 2**i else 0 for i in range(8)))
+        positions = [read(0x438+offset + i, 1) for i in range(party_size)]
+        addresses = [0x500+offset + 0x14C*p for p in positions]
         filedata.append({
+            "version": version,
             "slot": i,
             "party_members": read(0x40, 1),
             "framecount": read(0x244, 4),
             "summons": read(0x24C, 4),
             "coins": read(0x250, 4),
-            "party_positions": [read(0x458+j, 1) for j in range(8)],
+            "party_positions": positions,
             "party": [{
                 "name": [read(base+i, 1) for i in range(15)],
                 "level": read(base+0xF, 1),
@@ -79,9 +97,8 @@ def readsav(data):
                 },
                 "inventory": [read(base+0xD8+j, 2) for j in range(0,30,2)],
                 "djinn": [read(base+0xF8+j, 4) for j in range(0,16,4)],
-            } for base in range(0x520, 0xF80, 0x14C)],
+            } for base in addresses],
         })
-
     partysummons = 0
     partydjinn = 0
     display = []
@@ -101,45 +118,16 @@ def readsav(data):
                 djinncounts[i] += count
             pc["djinn"] = sum((d<<20*i for i,d in enumerate(pc["djinn"])))
             pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
-
+        seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
+        seconds %= 60; minutes %= 60
         display.append({
             "slot": f["slot"],
-            "playtime": "{:02}:{:02}:{:02}".format(*(f["framecount"]//60**i % 60 for i in range(3,0,-1))),
+            "playtime": "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
             "coins": f["coins"],
             "djinn": djinncounts,
         })
-
     return filedata, display
 
-@command
-async def upload_save(message, *args, **kwargs):
-    """Upload a battery file
-
-    Battery files (.sav) are stored per-user, and will remain in the bot's
-        memory until the bot is reset, which can happen at any time.  Some 
-        functions require that you have already called this function within
-        the most recent bot session.
-    
-    Arguments:
-        link -- (optional) a link to a message with an attached .sav file
-                if not included, you must attach a .sav file to the message
-    """
-    ID = str(message.author.id)
-    if not UserData.get(ID): UserData[ID] = {}
-    if message.attachments:
-        data = await message.attachments[0].read()
-    else:
-        assert args and args[0].startswith("https://discord.com/channels/"), \
-            "Expected an attachment or a link to a message with an attachment"
-        ID_list = args[0].replace("https://discord.com/channels/","").split("/")
-        serverID, channelID, messageID = (int(i) for i in ID_list)
-        server = utilities.client.get_guild(serverID)
-        channel = server.get_channel(channelID)
-        m = await channel.fetch_message(messageID)
-        data = await m.attachments[0].read()
-    assert len(data) == 0x10000, "Expected a 64KB file"
-    UserData[ID]["save"] = data
-    await reply(message, "Upload successful.  Use $save_preview to view")
 
 @command
 async def save_preview(message, *args, **kwargs):
@@ -147,17 +135,20 @@ async def save_preview(message, *args, **kwargs):
     ID = str(message.author.id)
     if not UserData.get(ID): UserData[ID] = {}
     data = UserData[ID].get("save")
-    assert data, "Save file not found. Use $upload_save to store a save file"
+    assert data, "Save file not found. Use $upload to store a save file"
     filedata, display = readsav(data)
     for f, d in zip(filedata, display):
-        out = utilities.dictstr(d) + "\n"
+        out = f["version"] + "\n" + utilities.dictstr(d) + "\n"
         pcdict = f["party"]
         for pc in pcdict:
             pc.pop("inventory")
             pc.pop("base_stats")
             pc["stats"] = {k:v for k,v in pc["stats"].items() if not("res" in k or "pow" in k)}
-            pc.update(**pc.pop("stats"))
-            pc["djinn"] = pc.pop("djinn")
+            if kwargs.get("concise"):
+                pc.pop("stats"); pc.pop("djinn")
+            else:
+                pc.update(**pc.pop("stats"))
+                pc["djinn"] = pc.pop("djinn")
         out += "\n" + utilities.tableV(pcdict)
         await reply(message, f"```{out}```")
 
@@ -267,7 +258,7 @@ async def damage(message, *args, **kwargs):
         estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
         if RES is None: RES = estats.get(ability["element"] + "_Res")
     if ability["damage_type"] == "Healing":
-        damage = ability["power"]*POW//100
+        damage = ability["power"]*POW/100
     elif ability["damage_type"] == "Added Damage":
         damage = (ATK-DEF)/2 + ability["power"]
         if ability["element"] != "Neutral":
