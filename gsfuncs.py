@@ -146,8 +146,9 @@ async def save_preview(message, *args, **kwargs):
             slot["coins"] = f["coins"]
             slot["djinn"] = [d["djinn"]]
             slot[""] = ""
-            maxlen = len(max(f["party"], key=lambda x: len(x["name"]))["name"])
-            slot["PCs"] = [f"{pc['name']:<{maxlen+2}}{pc['level']:>2}" for pc in f["party"]]
+            lengths = (len(str(s[0])) if isinstance(s, list) else len(str(s)) for s in slot.values())
+            maxlen = max(*lengths, *(len(pc["name"])+4 for pc in f["party"]))
+            slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
             slots.append(slot)
         out = f["version"] + "\n" + utilities.tableV(slots)
         await reply(message, f"```{out}```")

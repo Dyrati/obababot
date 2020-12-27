@@ -175,7 +175,7 @@ def tableV(dictlist):
     for i,d in enumerate(dictlist):
         for k,v in d.items():
             if hasattr(v, "__iter__") and not isinstance(v, (str, bytes)):
-                count = len(max(dictlist, key=lambda x:len(x[k]))[k])
+                count = max((len(x[k]) for x in dictlist))
                 v = iter(v)
                 start = True
                 for j in range(count):
