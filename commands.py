@@ -1,7 +1,7 @@
 import re
 import inspect
 import utilities
-from utilities import command, prefix, DataTables, UserData, namemaps, reply, dictstr
+from utilities import command, prefix, DataTables, UserData, Namemaps, reply, dictstr
 from safe_eval import safe_eval
 
 
@@ -34,25 +34,17 @@ async def info(message, *args, **kwargs):
         name -- the name of the object to search for
 
     Keyword Arguments:
-        key -- an attribute of the returned object to view
         i -- instance number.  If the query returns multiple results, 
              this argument selects one of them
         json -- set equal to 1 or "true" to format the output as json
     """
-    instance = kwargs.get("i")
-    key = kwargs.get("key")
     name = " ".join(args).lower()
-    for tablename, data in DataTables.items():
-        if name in namemaps[tablename]:
-            IDlist = namemaps[tablename][name]
-            if instance:
-                IDlist = [IDlist[int(instance)]]
-            for ID in IDlist:
-                if key:
-                    output = str(data[ID][key])
-                else:
-                    output = dictstr(data[ID], kwargs.get("json"))
-                await reply(message, f"```{output}```")
+    for table, mapping in Namemaps.items():
+        if name in mapping:
+            entries = mapping[name]
+            if kwargs.get("i"): entries = [entries[int(kwargs.get("i"))]]
+            for entry in entries:
+                await reply(message, f"```{dictstr(entry, js=kwargs.get('json'))}```")
             return
     else:
         await reply(message, f"\"{name}\" not found")

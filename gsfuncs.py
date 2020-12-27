@@ -2,7 +2,7 @@ import re
 import io
 import json
 import utilities
-from utilities import command, DataTables, UserData, namemaps, Text, reply
+from utilities import command, DataTables, UserData, Namemaps, Text, reply
 
 
 build_dates = {
@@ -146,8 +146,12 @@ async def save_preview(message, *args, **kwargs):
             slot["coins"] = f["coins"]
             slot["djinn"] = [d["djinn"]]
             slot[""] = ""
-            lengths = (len(str(s[0])) if isinstance(s, list) else len(str(s)) for s in slot.values())
-            maxlen = max(*lengths, *(len(pc["name"])+4 for pc in f["party"]))
+            maxlen = max(*(len(pc["name"])+4 for pc in f["party"]))
+            for s in slot.values():
+                if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
+                    maxlen = max(maxlen, *(len(str(i)) for i in s))
+                else:
+                    maxlen = max(maxlen, len(str(s)))
             slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
             slots.append(slot)
         out = f["version"] + "\n" + utilities.tableV(slots)
@@ -260,15 +264,14 @@ async def damage(message, *args, **kwargs):
     elements = ["Venus", "Mercury", "Mars", "Jupiter"]
     args = [arg.strip('"').lower() for arg in args]
     kwargs = {k:v.strip('"').lower() for k,v in kwargs.items()}
-    abilityID = namemaps["abilitydata"][args[0]][0]
-    ability = DataTables["abilitydata"][abilityID]
+    abilityname = args[0]
+    ability = Namemaps["abilitydata"][abilityname][0]
     for kw in ("atk","def","hp","pow","res","range"):
         if kwargs.get(kw) is not None: kwargs[kw] = int(kwargs[kw])
     ATK, DEF, HP, POW, RES, RANGE = [kwargs.get(kw) for kw in ("atk","def","hp","pow","res","range")]
     target = kwargs.get("target")
     if target:
-        enemyID = namemaps["enemydata"][target][0]
-        enemy = DataTables["enemydata"][enemyID]
+        enemy = Namemaps["enemydata"][target][0]
         if HP is None: HP = enemy["HP"]
         if DEF is None: DEF = enemy["DEF"]
         estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
@@ -290,8 +293,7 @@ async def damage(message, *args, **kwargs):
         damage = ability["power"]*(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .5, .3, .1, .1, .1][RANGE]
     elif ability["damage_type"] == "Summon":
-        summonID = namemaps["summondata"][args[0]][0]
-        summon = DataTables["summondata"][summonID]
+        summon = Namemaps["summondata"][abilityname][0]
         damage = summon["power"] + summon["hp_multiplier"]*min(10000, HP)
         damage *= (1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]

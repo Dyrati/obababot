@@ -32,20 +32,6 @@ async def reply(message, text):
         await message.channel.send(text)
 
 
-def namedict(jsonobj):
-    out = {}
-    for entry in jsonobj:
-        if not entry.get("name"): continue
-        name = entry["name"].lower()
-        if out.get(name):
-            out[name].append(entry["ID"])
-        else:
-            out[name] = [entry["ID"]]
-        out[name.replace("'","")] = out[name]
-        out[name.replace("-"," ")] = out[name]
-    return out
-
-
 def load_text():
     text = {}
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
@@ -68,11 +54,25 @@ def load_text():
     return text
 
 
-DataTables, namemaps, UserData, Text = {}, {}, {}, {}
+def namedict(jsonobj):
+    out = {}
+    for entry in jsonobj:
+        if not entry.get("name"): continue
+        name = entry["name"].lower()
+        if out.get(name):
+            out[name].append(entry)
+        else:
+            out[name] = [entry]
+        out[name.replace("'","")] = out[name]
+        out[name.replace("-"," ")] = out[name]
+    return out
+
+
+DataTables, Namemaps, UserData, Text = {}, {}, {}, {}
 def load_data():
-    global DataTables, namemaps, UserData, Text
+    global DataTables, Namemaps, UserData, Text
     print("Loading database...", end="\r")
-    DataTables.clear(); namemaps.clear(); Text.clear()
+    DataTables.clear(); Namemaps.clear(); Text.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "enemygroupdata", "encounterdata"]:
@@ -85,7 +85,7 @@ def load_data():
                     entry["ATK"] = int(1.25*entry["ATK"])
                     entry["DEF"] = int(1.25*entry["DEF"])
     for k,v in DataTables.items():
-        namemaps[k] = namedict(v)
+        Namemaps[k] = namedict(v)
     Text.update(**load_text())
     print("Loaded database    ")
 
@@ -186,7 +186,7 @@ def tableV(dictlist):
             else:
                 columns[0].append(k)
                 columns[i+1].append(str(v))
-    widths = [len(max(c, key=lambda x: len(x))) for c in columns]
+    widths = [len(max(c, key=len)) for c in columns]
     template = "  ".join((f"{{:{w}.{w}}}" for w in widths))
     return "\n".join(template.format(*row) for row in zip(*columns))
 
