@@ -171,10 +171,6 @@ def tableH(dictlist, fields=None, widths=None):
 
 
 def tableV(dictlist):
-    table = {}
-    for k in dictlist[0]:
-        table[k] = [d[k] for d in dictlist]
-    keys = list(dictlist[0])
     columns = [[]] + [[] for d in dictlist]
     for i,d in enumerate(dictlist):
         for k,v in d.items():

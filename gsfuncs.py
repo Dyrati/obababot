@@ -137,19 +137,34 @@ async def save_preview(message, *args, **kwargs):
     data = UserData[ID].get("save")
     assert data, "Save file not found. Use $upload to store a save file"
     filedata, display = readsav(data)
+    if kwargs.get("concise"):
+        slots = []
+        for f,d in zip(filedata, display):
+            slot = {}
+            slot["slot"] = f["slot"]
+            slot["playtime"] = d["playtime"]
+            slot["coins"] = f["coins"]
+            slot["djinn"] = [d["djinn"]]
+            slot[""] = ""
+            maxlen = len(max(f["party"], key=lambda x: len(x["name"]))["name"])
+            slot["PCs"] = [f"{pc['name']:<{maxlen+2}}{pc['level']:>2}" for pc in f["party"]]
+            slots.append(slot)
+        out = f["version"] + "\n" + utilities.tableV(slots)
+        await reply(message, f"```{out}```")
+        return
     for f, d in zip(filedata, display):
         out = f["version"] + "\n" + utilities.dictstr(d) + "\n"
-        pcdict = f["party"]
-        for pc in pcdict:
-            pc.pop("inventory")
-            pc.pop("base_stats")
+        pclist = []
+        for pc in f["party"]:
+            entry = {}
+            entry[""] = pc["name"]
+            entry["level"] = pc["level"]
             pc["stats"] = {k:v for k,v in pc["stats"].items() if not("res" in k or "pow" in k)}
-            if kwargs.get("concise"):
-                pc.pop("stats"); pc.pop("djinn")
-            else:
-                pc.update(**pc.pop("stats"))
-                pc["djinn"] = pc.pop("djinn")
-        out += "\n" + utilities.tableV(pcdict)
+            entry.update(**pc["stats"])
+            entry[" "] = ""
+            entry["djinn"] = pc["djinn"]
+            pclist.append(entry)
+        out += "\n" + utilities.tableV(pclist)
         await reply(message, f"```{out}```")
 
 @command
