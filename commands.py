@@ -274,6 +274,7 @@ async def upload(message, *args, **kwargs):
         else:
             assert 0, "No valid saves detected"
         UserData[ID]["save"] = data
-        await utilities.usercommands["$save_preview"](message, concise=True)
+        sent = await utilities.usercommands["$save_preview"](message, concise=True)
+        UserData[ID]["response"] = sent
     else:
         assert 0, "Unhandled file type"

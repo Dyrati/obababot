@@ -155,8 +155,7 @@ async def save_preview(message, *args, **kwargs):
             slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
             slots.append(slot)
         out = f["version"] + "\n" + utilities.tableV(slots)
-        await reply(message, f"```{out}```")
-        return
+        return await reply(message, f"```{out}```")
     for f, d in zip(filedata, display):
         out = f["version"] + "\n" + utilities.dictstr(d) + "\n"
         pclist = []

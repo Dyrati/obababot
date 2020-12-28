@@ -1,6 +1,5 @@
 import re
 import json
-from copy import deepcopy
 
 
 prefix = "$"
@@ -27,9 +26,9 @@ def to_async(func):
 
 async def reply(message, text):
     if len(str(text)) > 2000:
-        await message.channel.send("output exceeded 2000 characters")
+        return await message.channel.send("output exceeded 2000 characters")
     else:
-        await message.channel.send(text)
+        return await message.channel.send(text)
 
 
 def load_text():
@@ -71,6 +70,7 @@ def namedict(jsonobj):
 DataTables, Namemaps, UserData, Text = {}, {}, {}, {}
 def load_data():
     global DataTables, Namemaps, UserData, Text
+    from copy import deepcopy
     print("Loading database...", end="\r")
     DataTables.clear(); Namemaps.clear(); Text.clear()
     for name in [
