@@ -146,7 +146,7 @@ async def save_preview(message, *args, **kwargs):
             slot["coins"] = f["coins"]
             slot["djinn"] = [d["djinn"]]
             slot[""] = ""
-            maxlen = max(*(len(pc["name"])+4 for pc in f["party"]))
+            maxlen = max((len(pc["name"])+4 for pc in f["party"]))
             for s in slot.values():
                 if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
                     maxlen = max(maxlen, *(len(str(i)) for i in s))

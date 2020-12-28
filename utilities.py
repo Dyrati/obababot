@@ -191,49 +191,6 @@ def tableV(dictlist):
     return "\n".join(template.format(*row) for row in zip(*columns))
 
 
-@command
-async def upload(message, *args, **kwargs):
-    """Upload a file
-
-    Uploads are stored per-user, and will remain in the bot's
-    memory until the bot is reset, which can happen at any time.  Some 
-    functions require that you have already called this function within
-    the most recent bot session.
-
-    Accepted File Types:
-        .sav -- Battery files. Enables save-related commands
-
-    Arguments:
-        link -- (optional) a link to a message with an attached file
-                if not included, you must attach a file to the message
-    """
-    ID = str(message.author.id)
-    if not UserData.get(ID): UserData[ID] = {}
-    if message.attachments:
-        attachment = message.attachments[0]
-    else:
-        assert args and args[0].startswith("https://discord.com/channels/"), \
-            "Expected an attachment or a link to a message with an attachment"
-        ID_list = args[0].replace("https://discord.com/channels/","").split("/")
-        serverID, channelID, messageID = (int(i) for i in ID_list)
-        server = client.get_guild(serverID)
-        channel = server.get_channel(channelID)
-        m = await channel.fetch_message(messageID)
-        attachment = m.attachments[0]
-    data = await attachment.read()
-    url = attachment.url
-    if url.endswith(".sav") or url.endswith("SaveRAM"):
-        for i in range(16):
-            addr = 0x1000*i
-            if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break
-        else:
-            assert 0, "No valid saves detected"
-        UserData[ID]["save"] = data
-        await usercommands["$save_preview"](message, concise=True)
-    else:
-        assert 0, "Unhandled file type"
-
-
 def terminal(callback):
     import asyncio
     import io

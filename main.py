@@ -3,6 +3,7 @@ import discord
 import os
 import sys
 import time
+import traceback
 import utilities
 from utilities import reply, parse, load_data
 import commands, gsfuncs
@@ -44,6 +45,7 @@ async def on_message(message):
     try:
         await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
+        # await reply(message, traceback.format_exc())
         args = f": {e.args[0]}" if e.args else ""
         await reply(message, e.__class__.__name__ + args)
     if kwargs.get("t"):
