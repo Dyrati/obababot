@@ -2,6 +2,7 @@ import re
 import inspect
 import utilities
 from utilities import command, prefix, DataTables, UserData, Namemaps, reply, dictstr
+import gsfuncs
 from safe_eval import safe_eval
 
 
@@ -187,3 +188,49 @@ async def sort(message, *args, **kwargs):
         fields.append(key)
     if output: await reply(message, f"```{utilities.tableH(output, fields=fields)}```")
     else: await reply(message, "no match found")
+
+
+@command
+async def getclass(message, *args, **kwargs):
+    """Get the class of a character based on their djinn
+
+    Arguments:
+        name     -- Isaac, Garet, Ivan, Mia, Felix, Jenna, Sheba, Piers
+        venus    -- djinn count
+        mercury  -- djinn count
+        mars     -- djinn count
+        jupiter  -- djinn count
+    
+    Keyword Arguments:
+        item -- name of class changing item
+                may be "mysterious card", "trainer's whip", or "tomegathericon"
+                or just "card/mc", "whip/tw", or "tome/tm" for short
+    """
+    assert len(args[1:])==4, "Expected 4 djinn counts: Venus, Mercury, Mars, Jupiter"
+    djinncounts = [int(arg) for arg in args[1:]]
+    pc_class = gsfuncs.getclass(args[0], djinncounts, item=kwargs.get("item"))
+    await reply(message, f"`{pc_class['name']}`")
+
+
+@command
+async def damage(message, *args, **kwargs):
+    """Damage Calculator
+
+    Arguments:
+        ability -- the name of the attack
+    
+    Keyword Arguments:
+        atk -- attack stat of attacker
+        pow -- elemental power of the attacker (for the attack's element)
+        target -- name of enemy.  auto-fills in kwargs for hp, def, and res
+        hp  -- hp of target
+        def -- defense stat of target
+        res -- resistance of target (for the attack's element)
+        range -- distance from primary target
+    """
+    ability = args[0].strip('"')
+    kwargs = {k:v.strip('"').lower() for k,v in kwargs.items()}
+    for key in ("atk", "pow", "hp", "def", "res", "range"):
+        if kwargs.get(key) is not None:
+            kwargs[key.upper()] = int(kwargs.pop(key))
+    await reply(message, f"`{gsfuncs.damage(ability, **kwargs)}`")

@@ -221,7 +221,8 @@ async def upload(message, *args, **kwargs):
         m = await channel.fetch_message(messageID)
         attachment = m.attachments[0]
     data = await attachment.read()
-    if attachment.url.endswith(".sav"):
+    url = attachment.url
+    if url.endswith(".sav") or url.endswith("SaveRAM"):
         for i in range(16):
             addr = 0x1000*i
             if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break

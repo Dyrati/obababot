@@ -172,24 +172,9 @@ async def save_preview(message, *args, **kwargs):
         out += "\n" + utilities.tableV(pclist)
         await reply(message, f"```{out}```")
 
-@command
-async def getclass(message, *args, **kwargs):
-    """Get the class of a character based on their djinn
 
-    Arguments:
-        name     -- Isaac, Garet, Ivan, Mia, Felix, Jenna, Sheba, Piers
-        venus    -- djinn count
-        mercury  -- djinn count
-        mars     -- djinn count
-        jupiter  -- djinn count
-    
-    Keyword Arguments:
-        item -- name of class changing item
-                may be "mysterious card", "trainer's whip", or "tomegathericon"
-                or just "card/mc", "whip/tw", or "tome/tm" for short
-    """
-    name, elevels = args[0].lower(), [int(i) for i in args[1:5]]
-    assert len(elevels) == 4, "Expected 4 elevel arguments: Venus, Mercury, Mars, Jupiter"
+def getclass(name, djinncounts, item=None):
+    name = name.lower()
     pcelements = {
         "isaac":"Venus", "garet":"Mars", "ivan":"Jupiter", "mia":"Mercury",
         "felix":"Venus", "jenna":"Mars", "sheba":"Jupiter", "piers":"Mercury"}
@@ -201,20 +186,18 @@ async def getclass(message, *args, **kwargs):
         'Jupiter':  ['Mercury', 'Venus', 'Mars', 'Jupiter'],
     }
     element = pcelements[name]
-    elevels = [lvl+5 if e == element else lvl for e,lvl in zip(elements, elevels)]
-    if kwargs.get("item"):
-        item = kwargs["item"].lower()
+    elevels = [cnt+5 if e == element else cnt for e,cnt in zip(elements, djinncounts)]
+    if item:
+        item = item.lower()
         aliases = {
             "card": "mysterious card", "mc": "mysterious card",
             "whip": "trainer's whip", "tw": "trainer's whip",
             "tome": "tomegathericon", "tm": "tomegathericon",
         }
         item = aliases.get(item, item)
-        if item in ("mysterious card", "trainer's whip", "tomegathericon"):
-            table = item
-        else:
-            await reply(message, f"\"{item}\" not recognized")
-            return
+        assert item in ("mysterious card", "trainer's whip", "tomegathericon"), \
+            f"\"{item}\" not recognized"
+        table = item
     elif sum(elevels) == elevels[elements.index(element)]:  # if all djinn match pc element
         if name in ("jenna", "piers"):
             table = "primary2"
@@ -243,59 +226,42 @@ async def getclass(message, *args, **kwargs):
         requirement = (classdata[e] for e in elements)
         if all(e1 >= e2 for e1, e2 in zip(elevels, requirement)):
             bestmatch = i
-    await reply(message, f"```{DataTables['classdata'][bestmatch]['name']}```")
+    return DataTables['classdata'][bestmatch]
 
-@command
-async def damage(message, *args, **kwargs):
-    """Damage Calculator
 
-    Arguments:
-        ability -- the name of the attack
-    
-    Keyword Arguments:
-        atk -- attack stat of attacker
-        pow -- elemental power of the attacker (for the attack's element)
-        target -- name of enemy.  auto-fills in kwargs for hp, def, and res
-        hp  -- hp of target
-        def -- defense stat of target
-        res -- resistance of target (for the attack's element)
-    """
-
+def damage(
+        abilityname, ATK=None, POW=None, target=None,
+        HP=None, DEF=None, RES=None, RANGE=None):
+    abilityname = abilityname.lower()
     elements = ["Venus", "Mercury", "Mars", "Jupiter"]
-    args = [arg.strip('"').lower() for arg in args]
-    kwargs = {k:v.strip('"').lower() for k,v in kwargs.items()}
-    abilityname = args[0]
     ability = Namemaps["abilitydata"][abilityname][0]
-    for kw in ("atk","def","hp","pow","res","range"):
-        if kwargs.get(kw) is not None: kwargs[kw] = int(kwargs[kw])
-    ATK, DEF, HP, POW, RES, RANGE = [kwargs.get(kw) for kw in ("atk","def","hp","pow","res","range")]
-    target = kwargs.get("target")
     if target:
         enemy = Namemaps["enemydata"][target][0]
         if HP is None: HP = enemy["HP"]
         if DEF is None: DEF = enemy["DEF"]
         estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
         if RES is None: RES = estats.get(ability["element"] + "_Res")
-    if ability["damage_type"] == "Healing":
+    damage_type = ability["damage_type"]
+    if damage_type == "Healing":
         damage = ability["power"]*POW/100
-    elif ability["damage_type"] == "Added Damage":
+    elif damage_type == "Added Damage":
         damage = (ATK-DEF)/2 + ability["power"]
         if ability["element"] != "Neutral":
             damage *= 1 + (POW-RES)/400
-    elif ability["damage_type"] == "Multiplier":
+    elif damage_type == "Multiplier":
         damage = (ATK-DEF)/2*ability["power"]/10
         if ability["element"] != "Neutral":
             damage *= 1 + (POW-RES)/400
-    elif ability["damage_type"] == "Base Damage":
+    elif damage_type == "Base Damage":
         damage = ability["power"]*(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .8, .6, .4, .2, .1][RANGE]
-    elif ability["damage_type"] == "Base Damage (Diminishing)":
+    elif damage_type == "Base Damage (Diminishing)":
         damage = ability["power"]*(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .5, .3, .1, .1, .1][RANGE]
-    elif ability["damage_type"] == "Summon":
+    elif damage_type == "Summon":
         summon = Namemaps["summondata"][abilityname][0]
         damage = summon["power"] + summon["hp_multiplier"]*min(10000, HP)
         damage *= (1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
     if int(damage) == damage: damage = int(damage)
-    await reply(message, f"```{damage}```")
+    return damage
