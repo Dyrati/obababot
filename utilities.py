@@ -91,7 +91,7 @@ def load_data():
 
 
 mquote = re.compile(r"\".*?\"|\'.*?\'")
-mkwarg = re.compile(r"([a-zA-Z_][a-zA-Z_0-9]*)=([^ =]\S*)")
+mkwarg = re.compile(r"([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*([^ =]\S*)")
 mtoken = re.compile(r"{(\d+)}")
 def parse(s):
     groups = []
@@ -206,7 +206,7 @@ def terminal(callback):
                 buffer.read = to_async(buffer.read)
                 buffer.url = filename
             attachments.append(buffer)
-        text = re.sub(r"\sattach=(\".*?\"|\S+)", msub, text)
+        text = re.sub(r"\sattach\s*=\s*(\".*?\"|\S+)", msub, text)
         return text, attachments
     ID = 0
     async def loop():

@@ -15,21 +15,29 @@ async def help(message, *args, **kwargs):
     if not args:
         docs = {name: f.__doc__ for name, f in utilities.usercommands.items()}
         docs = {k:v.split("\n",1)[0] for k,v in docs.items() if v and k.startswith(prefix)}
-        output = dictstr(docs) + f"\nType \"{prefix}help func\" for detailed information about func"
-        output += "\n\nFunction arguments are words separated by spaces\n    ex. $sort enemydata HP"
-        output += "\nKeyword arguments have the format: key=value\n    no spaces, unless value is in quotes"
-        output += "\n\nDataTables:"
-        for name in DataTables:
-            output += "\n    " + name
-            if name == "enemydata-h": output += " (hard-mode stats)"
-        await reply(message, f"```{output}```")
-        return
+        out = dictstr(docs)
+        out += f"\n\nType \"{prefix}help [func]\" for detailed information about [func]"
+        out += "\n\nFunction arguments are words separated by spaces\n    ex. $sort enemydata HP"
+        out += "\n\nKeyword arguments have the format: key=value"
+        out += "\n    value cannot have spaces, unless value is in quotes"
+        return await reply(message, f"```{out}```")
     await reply(message, f"```{inspect.getdoc(utilities.usercommands['$'+args[0]])}```")
 
 
 @command
+async def datatables(message, *args, **kwargs):
+    """Displays the names of all the data tables"""
+    names = list(DataTables)
+    for i, name in enumerate(names):
+        if name == "enemydata-h":
+            names[i] += " (hard mode stats)"
+    out = "\n".join(names)
+    await reply(message, f"```{out}```")
+
+
+@command
 async def info(message, *args, **kwargs):
-    """Returns info on something, like a search engine
+    """Display info about something
     
     Arguments:
         name -- the name of the object to search for
@@ -140,7 +148,7 @@ async def filter(message, *args, **kwargs):
     table = args[0]
     condition = " ".join(args[1:])
     if not condition: output = DataTables[table]
-    else: output = [e for e in DataTables[table] if safe_eval(condition, e)]
+    else: output = [e for e in DataTables[table] if safe_eval(condition, {**mfuncs, **e})]
     fields = ["ID"]
     if "name" in DataTables[table][0]: fields.append("name")
     if kwargs.get("fields"):
@@ -171,7 +179,7 @@ async def sort(message, *args, **kwargs):
     data = DataTables[table]
     condition = " ".join(args[2:])
     if condition:
-        data = [entry for entry in data if safe_eval(condition, entry)]
+        data = [entry for entry in data if safe_eval(condition, {**mfuncs, **entry})]
     if key.startswith("-"):
         key = key[1:].strip(" ")
         output = sorted(data, key=lambda x: x[key], reverse=True)
@@ -274,7 +282,50 @@ async def upload(message, *args, **kwargs):
         else:
             assert 0, "No valid saves detected"
         UserData[ID]["save"] = data
-        sent = await utilities.usercommands["$save_preview"](message, concise=True)
+        sent = await utilities.usercommands["$preview"](message, concise=True)
         UserData[ID]["response"] = sent
     else:
         assert 0, "Unhandled file type"
+
+
+@command
+async def preview(message, *args, **kwargs):
+    """See a preview of your last uploaded save file"""
+    ID = str(message.author.id)
+    if not UserData.get(ID): UserData[ID] = {}
+    data = UserData[ID].get("save")
+    assert data, "Save file not found. Use $upload to store a save file"
+    filedata, display = gsfuncs.readsav(data)
+    if kwargs.get("concise"):
+        slots = []
+        for f,d in zip(filedata, display):
+            slot = {}
+            slot["slot"] = f["slot"]
+            slot["playtime"] = d["playtime"]
+            slot["coins"] = f["coins"]
+            slot["djinn"] = [d["djinn"]]
+            slot[""] = ""
+            maxlen = max((len(pc["name"])+4 for pc in f["party"]))
+            for s in slot.values():
+                if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
+                    maxlen = max(maxlen, *(len(str(i)) for i in s))
+                else:
+                    maxlen = max(maxlen, len(str(s)))
+            slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
+            slots.append(slot)
+        out = f["version"] + "\n" + utilities.tableV(slots)
+        return await reply(message, f"```{out}```")
+    for f, d in zip(filedata, display):
+        out = f["version"] + "\n" + utilities.dictstr(d) + "\n"
+        pclist = []
+        for pc in f["party"]:
+            entry = {}
+            entry[""] = pc["name"]
+            entry["level"] = pc["level"]
+            pc["stats"] = {k:v for k,v in pc["stats"].items() if not("res" in k or "pow" in k)}
+            entry.update(**pc["stats"])
+            entry[" "] = ""
+            entry["djinn"] = pc["djinn"]
+            pclist.append(entry)
+        out += "\n" + utilities.tableV(pclist)
+        await reply(message, f"```{out}```")

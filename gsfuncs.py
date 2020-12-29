@@ -129,49 +129,6 @@ def readsav(data):
     return filedata, display
 
 
-@command
-async def save_preview(message, *args, **kwargs):
-    """See a preview of your last uploaded save file"""
-    ID = str(message.author.id)
-    if not UserData.get(ID): UserData[ID] = {}
-    data = UserData[ID].get("save")
-    assert data, "Save file not found. Use $upload to store a save file"
-    filedata, display = readsav(data)
-    if kwargs.get("concise"):
-        slots = []
-        for f,d in zip(filedata, display):
-            slot = {}
-            slot["slot"] = f["slot"]
-            slot["playtime"] = d["playtime"]
-            slot["coins"] = f["coins"]
-            slot["djinn"] = [d["djinn"]]
-            slot[""] = ""
-            maxlen = max((len(pc["name"])+4 for pc in f["party"]))
-            for s in slot.values():
-                if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
-                    maxlen = max(maxlen, *(len(str(i)) for i in s))
-                else:
-                    maxlen = max(maxlen, len(str(s)))
-            slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
-            slots.append(slot)
-        out = f["version"] + "\n" + utilities.tableV(slots)
-        return await reply(message, f"```{out}```")
-    for f, d in zip(filedata, display):
-        out = f["version"] + "\n" + utilities.dictstr(d) + "\n"
-        pclist = []
-        for pc in f["party"]:
-            entry = {}
-            entry[""] = pc["name"]
-            entry["level"] = pc["level"]
-            pc["stats"] = {k:v for k,v in pc["stats"].items() if not("res" in k or "pow" in k)}
-            entry.update(**pc["stats"])
-            entry[" "] = ""
-            entry["djinn"] = pc["djinn"]
-            pclist.append(entry)
-        out += "\n" + utilities.tableV(pclist)
-        await reply(message, f"```{out}```")
-
-
 def getclass(name, djinncounts, item=None):
     name = name.lower()
     pcelements = {
