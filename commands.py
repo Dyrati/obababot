@@ -126,6 +126,7 @@ async def math(message, *args, **kwargs):
         set -- a variable name to assign the output to.  Variables are stored
                per-user, and will be reset whenever the bot is reset, which
                can happen at any time.
+        raw -- set this arg to anything to remove surrounding backticks from output
     Aliases:
         may use the "=" sign in place of "$math "
         may use "varname = expression" to set variables as well
@@ -144,7 +145,8 @@ async def math(message, *args, **kwargs):
         varname = kwargs["set"]
         UserData[ID]["vars"][varname] = value
     else:
-        await reply(message, f"`{value}`")
+        if kwargs.get("raw"): await reply(message, f"{value}")
+        else: await reply(message, f"`{value}`")
 
 
 @command

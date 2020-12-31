@@ -28,20 +28,17 @@ async def on_message(message):
     if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
         return
     text = message.content
+    extrakwargs = {}
     for regex, command in utilities.aliases.items():
         m = regex.match(text)
         if not m: continue
-        for k,v in m.groupdict().items():
-            if v is None: continue
-            text += f" {k}={v}"
-        contents = text[m.end():]
+        args, kwargs = parse(text[m.end():].replace("`",""))
+        kwargs.update(**{k:v for k,v in m.groupdict().items() if v is not None})
         break
     else:
         command = text.split(" ",1)[0]
-        if command in utilities.usercommands:
-            contents = text[len(command)+1:]
-        else: return
-    args, kwargs = parse(contents.replace("`",""))
+        if command not in utilities.usercommands: return
+        args, kwargs = parse(text[len(command)+1:].replace("`",""))
     try:
         await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
@@ -50,7 +47,6 @@ async def on_message(message):
         await reply(message, e.__class__.__name__ + args)
     if kwargs.get("t"):
         await reply(message, f"response time: `{time.time()-timestamp}`")
-
 
 @client.event
 async def on_message_edit(before, after):
