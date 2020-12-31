@@ -195,13 +195,12 @@ class Charmap:
         self.charmap = []
     def addtext(self, text, coords):
         x, y = coords
-        initx = x
         cm = self.charmap
         cm.extend(([] for i in range(y-len(cm)+1)))
         for char in text:
             if char == "\n":
                 y += 1
-                x = initx
+                x = coords[0]
             else:
                 if y >= len(cm):
                     cm.extend(([] for i in range(y-len(cm)+1)))

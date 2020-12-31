@@ -63,10 +63,13 @@ def groupeval(m, v, groups):
         if mtoken.match(name): var = groups[int(name[1:-1])]
         else: var = v[name]
         if parens is not None:
-            args = (safe_eval(arg, v, groups) for arg in parens.split(",") if arg != "")
+            args = (safe_eval(arg, v, groups) for arg in parens.split(","))
             return var(*args)
         elif brackets is not None:
-            return var[safe_eval(brackets, v, groups)]
+            args = [arg.strip(" ") for arg in brackets.split(":")]
+            args = [safe_eval(arg, v, groups) if arg else None for arg in args]
+            if len(args) == 1: return var[args[0]]
+            else: return var[slice(*args)]
     else:
         if parens is not None:
             return safe_eval(parens, v, groups)
