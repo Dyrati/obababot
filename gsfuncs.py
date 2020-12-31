@@ -5,130 +5,6 @@ import utilities
 from utilities import command, DataTables, UserData, Namemaps, Text, reply
 
 
-build_dates = {
-    0x1C85: "Golden Sun - The Lost Age (UE)",
-    0x1D97: "Golden Sun - The Lost Age (G)",
-    0x1DC7: "Golden Sun - The Lost Age (S)",
-    0x1D98: "Golden Sun - The Lost Age (F)",
-    0x1DC8: "Golden Sun - The Lost Age (I)",
-    0x198A: "Golden Sun - The Lost Age (J)",
-    0x1652: "Golden Sun (UE)",
-    0x1849: "Golden Sun (G)",
-    0x1885: "Golden Sun (S)",
-    0x1713: "Golden Sun (F)",
-    0x1886: "Golden Sun (I)",
-    0x159C: "Golden Sun (J)",}
-
-def readsav(data):
-    f = io.BytesIO(data)
-    def read(size):
-        return int.from_bytes(f.read(size), "little")
-    headers = []
-    for i in range(16):
-        f.seek(0x1000*i)
-        headers.append({
-            "addr": 0x1000*i,
-            "header": f.read(7),
-            "slot": read(1),
-            "checksum": read(2),
-            "priority": read(2),
-        })
-    valid_saves = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] < 0xF]
-    slots = {}
-    for save in valid_saves:
-        if save["priority"] > slots.get(save["slot"], -1):
-            slots[save["slot"]] = save
-    filedata = []
-    for i in range(3):
-        if not slots.get(i): continue
-        f.seek(slots[i]["addr"] + 0x10)
-        data = f.read(0x2FF0)
-        read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
-        version = build_dates[read(0x26, 2) & ~0x8000]
-        if "The Lost Age" in version: offset = 0x20
-        else: offset = 0
-        party_size = sum((1 if read(0x40, 1) & 2**i else 0 for i in range(8)))
-        positions = [read(0x438+offset + i, 1) for i in range(party_size)]
-        addresses = [0x500+offset + 0x14C*p for p in positions]
-        filedata.append({
-            "version": version,
-            "slot": i,
-            "party_members": read(0x40, 1),
-            "framecount": read(0x244, 4),
-            "summons": read(0x24C, 4),
-            "coins": read(0x250, 4),
-            "party_positions": positions,
-            "party": [{
-                "name": [read(base+i, 1) for i in range(15)],
-                "level": read(base+0xF, 1),
-                "base_stats": {
-                    "HP": read(base+0x10, 2),
-                    "PP": read(base+0x12, 2),
-                    "ATK": read(base+0x18, 2),
-                    "DEF": read(base+0x1A, 2),
-                    "AGI": read(base+0x1C, 2),
-                    "LCK": read(base+0x1E, 1),
-                    "venus_pow": read(base+0x24, 2),
-                    "venus_res": read(base+0x26, 2),
-                    "merc_pow": read(base+0x28, 2),
-                    "merc_res": read(base+0x2A, 2),
-                    "mars_pow": read(base+0x2C, 2),
-                    "mars_res": read(base+0x2E, 2),
-                    "jup_pow": read(base+0x30, 2),
-                    "jup_res": read(base+0x32, 2),
-                },
-                "stats": {
-                    "HP_max": read(base+0x34, 2),
-                    "PP_max": read(base+0x36, 2),
-                    "HP_cur": read(base+0x38, 2),
-                    "PP_cur": read(base+0x3A, 2),
-                    "ATK": read(base+0x3c, 2),
-                    "DEF": read(base+0x3e, 2),
-                    "AGI": read(base+0x40, 2),
-                    "LCK": read(base+0x42, 1),
-                    "venus_pow": read(base+0x48, 2),
-                    "venus_res": read(base+0x4a, 2),
-                    "merc_pow": read(base+0x4c, 2),
-                    "merc_res": read(base+0x4e, 2),
-                    "mars_pow": read(base+0x50, 2),
-                    "mars_res": read(base+0x52, 2),
-                    "jup_pow": read(base+0x54, 2),
-                    "jup_res": read(base+0x56, 2),
-                },
-                "inventory": [read(base+0xD8+j, 2) for j in range(0,30,2)],
-                "djinn": [read(base+0xF8+j, 4) for j in range(0,16,4)],
-            } for base in addresses],
-        })
-    partysummons = 0
-    partydjinn = 0
-    display = []
-    for f in filedata:
-        f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
-        f["summons"] = [Text["summons"][i] for i in range(33) if f["summons"] & 2**i]
-        djinncounts = [0, 0, 0, 0]
-        for pc in f["party"]:
-            pc["name"] = "".join([chr(c) for c in pc["name"] if c])
-            pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
-            for k, v in pc["inventory"].items():
-                metadata = [(v>>11 & 0x1F) + 1]
-                if v & 1<<9: metadata.append("equipped")
-                if v & 1<<10: metadata.append("broken")
-                pc["inventory"][k] = metadata
-            for i, count in enumerate((sum((e>>i & 1 for i in range(20))) for e in pc["djinn"])):
-                djinncounts[i] += count
-            pc["djinn"] = sum((d<<20*i for i,d in enumerate(pc["djinn"])))
-            pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
-        seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
-        seconds %= 60; minutes %= 60
-        display.append({
-            "slot": f["slot"],
-            "playtime": "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
-            "coins": f["coins"],
-            "djinn": djinncounts,
-        })
-    return filedata, display
-
-
 def getclass(name, djinncounts, item=None):
     name = name.lower()
     pcelements = {
@@ -221,3 +97,207 @@ def damage(
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
     if int(damage) == damage: damage = int(damage)
     return damage
+
+
+build_dates = {
+    0x1C85: "Golden Sun - The Lost Age (UE)",
+    0x1D97: "Golden Sun - The Lost Age (G)",
+    0x1DC7: "Golden Sun - The Lost Age (S)",
+    0x1D98: "Golden Sun - The Lost Age (F)",
+    0x1DC8: "Golden Sun - The Lost Age (I)",
+    0x198A: "Golden Sun - The Lost Age (J)",
+    0x1652: "Golden Sun (UE)",
+    0x1849: "Golden Sun (G)",
+    0x1885: "Golden Sun (S)",
+    0x1713: "Golden Sun (F)",
+    0x1886: "Golden Sun (I)",
+    0x159C: "Golden Sun (J)",}
+
+def readsav(data):
+    f = io.BytesIO(data)
+    def read(size):
+        return int.from_bytes(f.read(size), "little")
+    headers = []
+    for i in range(16):
+        f.seek(0x1000*i)
+        headers.append({
+            "addr": 0x1000*i,
+            "header": f.read(7),
+            "slot": read(1),
+            "checksum": read(2),
+            "priority": read(2),
+        })
+    valid_saves = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] < 0xF]
+    slots = {}
+    for save in valid_saves:
+        if save["priority"] > slots.get(save["slot"], -1):
+            slots[save["slot"]] = save
+    filedata = []
+    for i in range(3):
+        if not slots.get(i): continue
+        f.seek(slots[i]["addr"] + 0x10)
+        data = f.read(0x2FF0)
+        read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
+        version = build_dates[read(0x26, 2) & ~0x8000]
+        if "The Lost Age" in version: offset = 0x20
+        else: offset = 0
+        party_size = sum((1 if read(0x40, 1) & 2**i else 0 for i in range(8)))
+        positions = [read(0x438+offset + i, 1) for i in range(party_size)]
+        addresses = [0x500+offset + 0x14C*p for p in positions]
+        filedata.append({
+            "version": version,
+            "slot": i,
+            "party_members": read(0x40, 1),
+            "framecount": read(0x244, 4),
+            "summons": read(0x24C, 4),
+            "coins": read(0x250, 4),
+            "party_positions": positions,
+            "party": [{
+                "name": [read(base+i, 1) for i in range(15)],
+                "level": read(base+0xF, 1),
+                "base_stats": {
+                    "HP": read(base+0x10, 2),
+                    "PP": read(base+0x12, 2),
+                    "ATK": read(base+0x18, 2),
+                    "DEF": read(base+0x1A, 2),
+                    "AGI": read(base+0x1C, 2),
+                    "LCK": read(base+0x1E, 1),
+                    "venus_pow": read(base+0x24, 2),
+                    "venus_res": read(base+0x26, 2),
+                    "merc_pow": read(base+0x28, 2),
+                    "merc_res": read(base+0x2A, 2),
+                    "mars_pow": read(base+0x2C, 2),
+                    "mars_res": read(base+0x2E, 2),
+                    "jup_pow": read(base+0x30, 2),
+                    "jup_res": read(base+0x32, 2),
+                },
+                "stats": {
+                    "HP_max": read(base+0x34, 2),
+                    "PP_max": read(base+0x36, 2),
+                    "HP_cur": read(base+0x38, 2),
+                    "PP_cur": read(base+0x3A, 2),
+                    "ATK": read(base+0x3c, 2),
+                    "DEF": read(base+0x3e, 2),
+                    "AGI": read(base+0x40, 2),
+                    "LCK": read(base+0x42, 1),
+                    "venus_pow": read(base+0x48, 2),
+                    "venus_res": read(base+0x4a, 2),
+                    "merc_pow": read(base+0x4c, 2),
+                    "merc_res": read(base+0x4e, 2),
+                    "mars_pow": read(base+0x50, 2),
+                    "mars_res": read(base+0x52, 2),
+                    "jup_pow": read(base+0x54, 2),
+                    "jup_res": read(base+0x56, 2),
+                },
+                "abilities": [read(base+0x58+4*j, 4) for j in range(32)],
+                "inventory": [read(base+0xD8+2*j, 2) for j in range(15)],
+                "djinn": [read(base+0xF8+4*j, 4) for j in range(4)],
+                "set_djinn": [read(base+0x108+4*j, 4) for j in range(4)],
+                "djinncounts": [read(base+0x118+j, 1) for j in range(4)],
+                "set_djinncounts": [read(base+0x11C+j, 1) for j in range(4)],
+                "exp": read(base+0x124, 4),
+                "class": read(base+0x129, 1),
+            } for base in addresses],
+        })
+    partysummons = 0
+    partydjinn = 0
+    display = []
+    for f in filedata:
+        f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
+        f["summons"] = [Text["summons"][i] for i in range(33) if f["summons"] & 2**i]
+        djinncounts = [0, 0, 0, 0]
+        for pc in f["party"]:
+            pc["name"] = "".join([chr(c) for c in pc["name"] if c])
+            pc["element"] = [0,2,3,1,0,2,3,1][Text["pcnames"].index(pc["name"])]
+            pc["element"] = Text["elements"][pc["element"]]
+            pc["abilities"] = [Text["abilities"][i & 0x3FF] for i in pc["abilities"] if i & 0x3FF]
+            pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
+            for k, v in pc["inventory"].items():
+                metadata = [(v>>11 & 0x1F) + 1]
+                if v & 1<<9: metadata.append("equipped")
+                if v & 1<<10: metadata.append("broken")
+                pc["inventory"][k] = metadata
+            pc["djinncounts"] = [sum((e>>i & 1 for i in range(20))) for e in pc["djinn"]]
+            for i, count in enumerate(pc["djinncounts"]):
+                djinncounts[i] += count
+            pc["class"] = Text["classes"][pc["class"]]
+            pc["djinn"] = sum((d<<20*i for i,d in enumerate(pc["djinn"])))
+            pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
+            pc["elevels"] = pc["set_djinncounts"].copy()
+            for i in range(4):
+                if Text["elements"][i] == pc["element"]: pc["elevels"][i] += 5
+        seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
+        seconds %= 60; minutes %= 60
+        f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
+        f["djinncounts"] = djinncounts
+    return filedata
+
+
+def preview(data):
+    filedata = readsav(data)
+    pages = {}
+    slots = []
+    for f in filedata:
+        slot = {}
+        slot["slot"] = f["slot"]
+        slot["playtime"] = f["playtime"]
+        slot["coins"] = f["coins"]
+        slot["djinn"] = [f["djinncounts"]]
+        slot[""] = ""
+        maxlen = max((len(pc["name"])+4 for pc in f["party"]))
+        for s in slot.values():
+            if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
+                maxlen = max(maxlen, *(len(str(i)) for i in s))
+            else:
+                maxlen = max(maxlen, len(str(s)))
+        slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
+        slots.append(slot)
+    preview = f["version"] + "\n" + utilities.tableV(slots)
+    pages["preview"] = f"```{preview}```"
+    for f in filedata:
+        slot = f["slot"]
+        pages[str(slot)] = {}
+        for pc in f["party"]:
+            out = utilities.Charmap()
+            out.addtext(pc["name"], (0, 0))
+            out.addtext(pc["class"], (0, 1))
+            out.addtext(utilities.dictstr({"LV": pc["level"], "EXP": pc["exp"]}), (0,2))
+            base = pc["base_stats"]
+            stats = pc["stats"]
+            out.addtext("Stats", (0, 5))
+            out.addtext(utilities.dictstr({
+                "HP": f"{stats['HP_cur']}/{stats['HP_max']}",
+                "PP": f"{stats['PP_cur']}/{stats['PP_max']}",
+                "ATK": stats["ATK"]}), (0, 6))
+            out.addtext(utilities.dictstr({
+                "DEF": stats["DEF"],
+                "AGI": stats["AGI"],
+                "LCK": stats["LCK"]}), (14, 6))
+            out.addtext("Base Stats", (27, 5))
+            out.addtext(utilities.dictstr({
+                "HP": base['HP'],
+                "PP": base['PP'],
+                "ATK": base["ATK"]}), (27, 6))
+            out.addtext(utilities.dictstr({
+                "DEF": base["DEF"],
+                "AGI": base["AGI"],
+                "LCK": base["LCK"]}), (36, 6))
+            elementdata = []
+            for i, name in enumerate(["venus", "merc", "mars", "jup"]):
+                elementdata.append(
+                    {"": Text["elements"][i],
+                    "Djinn": f"{pc['set_djinncounts'][i]}/{pc['djinncounts'][i]}",
+                    "Level": pc["elevels"][i],
+                    "Power": pc["stats"][f"{name}_pow"],
+                    "Resist": pc["stats"][f"{name}_res"]})
+            out.addtext(utilities.tableV(elementdata), (0,10))
+            out.addtext("Djinn", (0, 16))
+            out.addtext("\n".join(pc["djinn"]), (2,17))
+            out.addtext("Items", (10, 16))
+            out.addtext("\n".join(pc["inventory"]), (12,17))
+            out.addtext("Abilities", (30, 16))
+            out.addtext("\n".join(pc["abilities"][:16]), (32,17))
+            if len(pc["abilities"]) > 16:
+                out.addtext("\n".join(pc["abilities"][16:]), (49,17))
+            pages[str(slot)][pc["name"]] = f"```\n{out}\n```"
+    return pages

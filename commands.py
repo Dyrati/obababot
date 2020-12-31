@@ -26,7 +26,7 @@ async def help(message, *args, **kwargs):
 
 @command
 async def datatables(message, *args, **kwargs):
-    """Displays the names of all the data tables"""
+    """Display the names of all the data tables"""
     names = list(DataTables)
     for i, name in enumerate(names):
         if name == "enemydata-h":
@@ -153,7 +153,7 @@ async def filter(message, *args, **kwargs):
     if "name" in DataTables[table][0]: fields.append("name")
     if kwargs.get("fields"):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
-    if output: await reply(message, f"```{utilities.tableH(output, fields=fields)}```")
+    if output: await reply(message, f"```{utilities.tableH(output, fields=fields, border='=')}```")
     else: await reply(message, "no match found")
 
 
@@ -194,7 +194,7 @@ async def sort(message, *args, **kwargs):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
     else:
         fields.append(key)
-    if output: await reply(message, f"```{utilities.tableH(output, fields=fields)}```")
+    if output: await reply(message, f"```{utilities.tableH(output, fields=fields, border='=')}```")
     else: await reply(message, "no match found")
 
 
@@ -246,7 +246,7 @@ async def damage(message, *args, **kwargs):
 
 @command
 async def upload(message, *args, **kwargs):
-    """Upload a file
+    """Upload a file using an attachment or a link
 
     Uploads are stored per-user, and will remain in the bot's
     memory until the bot is reset, which can happen at any time.  Some 
@@ -254,7 +254,12 @@ async def upload(message, *args, **kwargs):
     the most recent bot session.
 
     Accepted File Types:
-        .sav -- Battery files. Enables save-related commands
+        .sav -- Battery files. Sends a multi-page message.
+            $page preview -- the general overview of the save file
+            $page [slot] [name]
+                [slot] is the in game slot you've saved to (0-2)
+                [name] is the name of the pc whose stats you want to see
+        .SaveRAM -- Bizhawk battery files (same as .sav)
 
     Arguments:
         link -- (optional) a link to a message with an attached file
@@ -275,57 +280,35 @@ async def upload(message, *args, **kwargs):
         attachment = m.attachments[0]
     data = await attachment.read()
     url = attachment.url
-    if url.endswith(".sav") or url.endswith("SaveRAM"):
+    if url.endswith(".sav") or url.endswith(".SaveRAM"):
         for i in range(16):
             addr = 0x1000*i
             if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break
         else:
             assert 0, "No valid saves detected"
         UserData[ID]["save"] = data
-        sent = await utilities.usercommands["$preview"](message, concise=True)
-        UserData[ID]["response"] = sent
+        pages = gsfuncs.preview(data)
+        sent = await reply(message, pages["preview"])
+        UserData[ID]["response"] = {"message": sent, "pages": pages}
     else:
         assert 0, "Unhandled file type"
 
 
 @command
-async def preview(message, *args, **kwargs):
-    """See a preview of your last uploaded save file"""
+async def page(message, *args, **kwargs):
+    """View a specific page of a multi-page message
+    
+    Requires that obababot has responded to you with a multi-page
+    message within the most recent bot session.  Arguments are 
+    specific to the message.
+    """
     ID = str(message.author.id)
-    if not UserData.get(ID): UserData[ID] = {}
-    data = UserData[ID].get("save")
-    assert data, "Save file not found. Use $upload to store a save file"
-    filedata, display = gsfuncs.readsav(data)
-    if kwargs.get("concise"):
-        slots = []
-        for f,d in zip(filedata, display):
-            slot = {}
-            slot["slot"] = f["slot"]
-            slot["playtime"] = d["playtime"]
-            slot["coins"] = f["coins"]
-            slot["djinn"] = [d["djinn"]]
-            slot[""] = ""
-            maxlen = max((len(pc["name"])+4 for pc in f["party"]))
-            for s in slot.values():
-                if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
-                    maxlen = max(maxlen, *(len(str(i)) for i in s))
-                else:
-                    maxlen = max(maxlen, len(str(s)))
-            slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
-            slots.append(slot)
-        out = f["version"] + "\n" + utilities.tableV(slots)
-        return await reply(message, f"```{out}```")
-    for f, d in zip(filedata, display):
-        out = f["version"] + "\n" + utilities.dictstr(d) + "\n"
-        pclist = []
-        for pc in f["party"]:
-            entry = {}
-            entry[""] = pc["name"]
-            entry["level"] = pc["level"]
-            pc["stats"] = {k:v for k,v in pc["stats"].items() if not("res" in k or "pow" in k)}
-            entry.update(**pc["stats"])
-            entry[" "] = ""
-            entry["djinn"] = pc["djinn"]
-            pclist.append(entry)
-        out += "\n" + utilities.tableV(pclist)
-        await reply(message, f"```{out}```")
+    acc = UserData
+    for key in (ID, "response", "pages"):
+        acc = acc.get(key)
+        assert acc, "No multi-page message detected"
+    response = UserData[ID]["response"]
+    message = response["message"]
+    page = response["pages"]
+    for arg in args: page = page[arg]
+    await message.edit(content=page)

@@ -35,13 +35,14 @@ def load_text():
     text = {}
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
     text["elements"] = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
+    mtoken = re.compile(r"{\d*}")
     with open(r"text/GStext.txt") as f:
         lines = f.read().splitlines()
         text["item_descriptions"] = lines[146:607]
+        lines = list(map(lambda x: mtoken.sub("", x), lines))
         text["items"] = lines[607:1068]
-        text["items"] = [re.search(r"[^{}]*$", s).group() for s in text["items"]]
         text["enemynames"] = lines[1068:1447]
-        text["moves"] = lines[1447:2181]
+        text["abilities"] = lines[1447:2181]
         text["move_descriptions"] = lines[2181:2915]
         text["classes"] = lines[2915:3159]
         text["djinn"] = lines[1747:1827]
@@ -150,20 +151,18 @@ def dictstr(dictionary, js=False, maxwidth=78):
     return out[1:]
 
 
-def tableH(dictlist, fields=None, widths=None):
+def tableH(dictlist, fields=None, border=None):
     fields = fields or dictlist[0].keys()
     for f in fields:
         for d in dictlist:
             d[f] = d.get(f, None)
-    if not widths:
-        widths = {k: len(k) for k in fields}
-        for d in dictlist:
-            for k in fields:
-                widths[k] = max(widths[k], len(str(d[k])))
-    elif not isinstance(widths, dict):
-        widths = dict(zip(fields, widths))
+    widths = {k: len(k) for k in fields}
+    for d in dictlist:
+        for k in fields:
+            widths[k] = max(widths[k], len(str(d[k])))
     out = " ".join((f"{k:^{w}.{w}}" for k,w in widths.items()))  # Heading
-    out += "\n" + " ".join(("="*w for w in widths.values()))  # Border
+    if border:
+        out += "\n" + " ".join((border*w for w in widths.values()))
     template = " ".join((f"{{{k}:<{w}.{w}}}" for k,w in widths.items()))
     for d in dictlist:
         out += "\n" + template.format(**{k:str(v) for k,v in d.items()})
@@ -191,13 +190,45 @@ def tableV(dictlist):
     return "\n".join(template.format(*row) for row in zip(*columns))
 
 
-def terminal(callback):
-    import asyncio
-    import io
-    from types import SimpleNamespace as SN
-    async def send(text):
-        print(text.replace("```","\n").replace("`",""))
-    def get_attachments(text):
+class Charmap:
+    def __init__(self):
+        self.charmap = []
+    def addtext(self, text, coords):
+        x, y = coords
+        initx = x
+        cm = self.charmap
+        cm.extend(([] for i in range(y-len(cm)+1)))
+        for char in text:
+            if char == "\n":
+                y += 1
+                x = initx
+            else:
+                if y >= len(cm):
+                    cm.extend(([] for i in range(y-len(cm)+1)))
+                if x >= len(cm[y]):
+                    cm[y].extend((" " for i in range(x-len(cm[y])+1)))
+                cm[y][x] = char
+                x += 1
+    def __str__(self):
+        return "\n".join(("".join(row) for row in self.charmap))
+
+
+class TerminalMessage:
+    def __init__(self, content="", ID=0):
+        from types import SimpleNamespace as SN
+        self.author = SN(name="admin", id=ID)
+        self.content, self.attachments = self.get_attachments(content)
+        self.guild = SN(name=None)
+        self.channel = SN(name=None, send=self.send)
+        self.edit = self.send
+    
+    async def send(self, content=""):
+        content = content.replace("```","\n").replace("`","")
+        print(content)
+        return TerminalMessage(content)
+    
+    def get_attachments(self, text):
+        import io
         attachments = []
         def msub(m):
             filename = m.group(1).strip('"')
@@ -208,6 +239,10 @@ def terminal(callback):
             attachments.append(buffer)
         text = re.sub(r"\sattach\s*=\s*(\".*?\"|\S+)", msub, text)
         return text, attachments
+
+
+def terminal(callback):
+    import asyncio
     ID = 0
     async def loop():
         nonlocal ID
@@ -216,9 +251,6 @@ def terminal(callback):
             except KeyboardInterrupt: return
             if text in ("quit", "exit"): return
             if text.startswith("setid"): ID=int(text[len("setid"):])
-            text, attachments = get_attachments(text)
-            message = SN(
-                author=SN(name="admin", id=ID), content=text, attachments=attachments,
-                guild=SN(name=None), channel=SN(name=None, send=send))
+            message = TerminalMessage(content=text, ID=ID)
             await callback(message)
     asyncio.run(loop())
