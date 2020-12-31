@@ -4147,7 +4147,7 @@
     },
     {
         "ID": 250,
-        "name": "{29}{3}Herb",
+        "name": "Herb",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4165,7 +4165,7 @@
     },
     {
         "ID": 251,
-        "name": "{29}{2}Nut",
+        "name": "Nut",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4183,7 +4183,7 @@
     },
     {
         "ID": 252,
-        "name": "{29}{2}Vial",
+        "name": "Vial",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4201,7 +4201,7 @@
     },
     {
         "ID": 253,
-        "name": "{29}{2}Potion",
+        "name": "Potion",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4219,7 +4219,7 @@
     },
     {
         "ID": 254,
-        "name": "{29}{5}Soothing Water",
+        "name": "Soothing Water",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4237,7 +4237,7 @@
     },
     {
         "ID": 255,
-        "name": "{29}{2}Psy Crystal",
+        "name": "Psy Crystal",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4255,7 +4255,7 @@
     },
     {
         "ID": 256,
-        "name": "{29}{2}Antidote",
+        "name": "Antidote",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4273,7 +4273,7 @@
     },
     {
         "ID": 257,
-        "name": "{29}{3}Elixir",
+        "name": "Elixir",
         "target": "Allies",
         "flags": [
             "usable in battle"
@@ -4290,7 +4290,7 @@
     },
     {
         "ID": 258,
-        "name": "{29}{4}Water of Life",
+        "name": "Water of Life",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4308,7 +4308,7 @@
     },
     {
         "ID": 259,
-        "name": "{29}{2}Mist Potion",
+        "name": "Mist Potion",
         "target": "Allies",
         "flags": [
             "usable out of battle",
@@ -4326,7 +4326,7 @@
     },
     {
         "ID": 260,
-        "name": "{29}{4}Power Bread",
+        "name": "Power Bread",
         "target": "Allies",
         "flags": [
             "usable out of battle"
@@ -4343,7 +4343,7 @@
     },
     {
         "ID": 261,
-        "name": "{29}{2}Cookie",
+        "name": "Cookie",
         "target": "Allies",
         "flags": [
             "usable out of battle"
@@ -4360,7 +4360,7 @@
     },
     {
         "ID": 262,
-        "name": "{29}{3}Apple",
+        "name": "Apple",
         "target": "Allies",
         "flags": [
             "usable out of battle"
@@ -4377,7 +4377,7 @@
     },
     {
         "ID": 263,
-        "name": "{29}{2}Hard Nut",
+        "name": "Hard Nut",
         "target": "Allies",
         "flags": [
             "usable out of battle"
@@ -4394,7 +4394,7 @@
     },
     {
         "ID": 264,
-        "name": "{29}{2}Mint",
+        "name": "Mint",
         "target": "Allies",
         "flags": [
             "usable out of battle"
@@ -4411,7 +4411,7 @@
     },
     {
         "ID": 265,
-        "name": "{29}{4}Lucky Pepper",
+        "name": "Lucky Pepper",
         "target": "Allies",
         "flags": [
             "usable out of battle"
@@ -4443,7 +4443,7 @@
     },
     {
         "ID": 267,
-        "name": "{29}{2}Smoke Bomb",
+        "name": "Smoke Bomb",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -4460,7 +4460,7 @@
     },
     {
         "ID": 268,
-        "name": "{29}{2}Sleep Bomb",
+        "name": "Sleep Bomb",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -4477,7 +4477,7 @@
     },
     {
         "ID": 269,
-        "name": "{29}{3}Adept Ring",
+        "name": "Adept Ring",
         "target": "Self",
         "flags": [
             "usable out of battle",
@@ -4495,7 +4495,7 @@
     },
     {
         "ID": 270,
-        "name": "{29}{4}Corn",
+        "name": "Corn",
         "target": "Allies",
         "flags": [
             "usable out of battle",

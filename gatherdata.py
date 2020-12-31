@@ -44,7 +44,7 @@ with open(ROM, "rb") as f:
     for i in range(734):
         abilitydata.append({
             "ID": i,
-            "name": moves[i],
+            "name": abilities[i],
             "target": read(1),
             "flags": read(1),
             "damage_type": None,
@@ -82,7 +82,7 @@ with open(ROM, "rb") as f:
             "IQ": read(1),
             "attack_pattern": read(1),
             "item_priority_flags": read(1),
-            "abilities": [moves[read(2)] for i in range(8)],
+            "abilities": [abilities[read(2)] for i in range(8)],
             "weaknesses": [read(1) for i in range(3)],
             "unused": read(1),
             "coins": read(2),
@@ -284,7 +284,7 @@ classgroups = [
     "Mariner", "Pierrot", "Tamer", "Dark Mage"]
 for class_ in classdata:
     class_.pop("unused")
-    class_["abilities"] = {moves[k]: v for k,v in class_["abilities"] if k != 0}
+    class_["abilities"] = {abilities[k]: v for k,v in class_["abilities"] if k != 0}
     class_["class_group"] = classgroups[class_["class_group"]]
     class_["weaknesses"] = [ability_effects[i] for i in class_["weaknesses"] if i]
     for k in ["HP", "PP", "ATK", "DEF", "AGI", "LCK"]:
