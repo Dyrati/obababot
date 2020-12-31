@@ -16,12 +16,26 @@ async def help(message, *args, **kwargs):
         docs = {name: f.__doc__ for name, f in utilities.usercommands.items()}
         docs = {k:v.split("\n",1)[0] for k,v in docs.items() if v and k.startswith(prefix)}
         out = dictstr(docs)
-        out += f"\n\nType \"{prefix}help [func]\" for detailed information about [func]"
-        out += "\n\nFunction arguments are words separated by spaces\n    ex. $sort enemydata HP"
-        out += "\n\nKeyword arguments have the format: key=value"
-        out += "\n    value cannot have spaces, unless value is in quotes"
-        return await reply(message, f"```{out}```")
-    await reply(message, f"```{inspect.getdoc(utilities.usercommands['$'+args[0]])}```")
+        out += "\n\n" + inspect.cleandoc(f"""
+        Type "{prefix}help [func]" for detailed information about [func]
+        
+        Function arguments are words separated by spaces
+            ex. $sort enemydata HP
+
+        Keyword arguments have the format: key=value
+            value cannot have spaces, unless value is in quotes
+
+        Python expressions may be used for some functions
+            https://python-reference.readthedocs.io/en/latest/docs/operators/
+            obaba bot accepts the following operation types:
+                Arithmetic, Relational, Boolean, Membership, Bitwise, Indexing
+
+        Multi-Page responses may be indexed using the {prefix}page command
+        """)
+        return await reply(message, f"```\n{out}\n```")
+    else:
+        func = utilities.usercommands['$'+args[0]]
+        await reply(message, f"```\n{inspect.getdoc(func)}\n```")
 
 
 @command
@@ -32,7 +46,7 @@ async def datatables(message, *args, **kwargs):
         if name == "enemydata-h":
             names[i] += " (hard mode stats)"
     out = "\n".join(names)
-    await reply(message, f"```{out}```")
+    await reply(message, f"```\n{out}\n```")
 
 
 @command
@@ -53,7 +67,7 @@ async def info(message, *args, **kwargs):
             entries = mapping[name]
             if kwargs.get("i"): entries = [entries[int(kwargs.get("i"))]]
             for entry in entries:
-                await reply(message, f"```{dictstr(entry, js=kwargs.get('json'))}```")
+                await reply(message, f"```\n{dictstr(entry, js=kwargs.get('json'))}\n```")
             return
     else:
         await reply(message, f"\"{name}\" not found")
@@ -83,7 +97,7 @@ async def index(message, *args, **kwargs):
                 break
         else:
             output = "no match found"
-    await reply(message, f"```{output}```")
+    await reply(message, f"```\n{output}\n```")
 
 
 import math
@@ -94,8 +108,8 @@ def rand(*args):
     else: return random.random()
 mfuncs = {
     'abs':abs, 'round':round, 'min':min, 'max':max, 'rand':rand,
-    'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int,
-    'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1), 
+    'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int, 'str': str,
+    'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1),
     'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
     'log':math.log, 'exp':math.exp,
 }
@@ -153,7 +167,7 @@ async def filter(message, *args, **kwargs):
     if "name" in DataTables[table][0]: fields.append("name")
     if kwargs.get("fields"):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
-    if output: await reply(message, f"```{utilities.tableH(output, fields=fields, border='=')}```")
+    if output: await reply(message, f"```\n{utilities.tableH(output, fields=fields, border='=')}\n```")
     else: await reply(message, "no match found")
 
 
@@ -194,7 +208,7 @@ async def sort(message, *args, **kwargs):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
     else:
         fields.append(key)
-    if output: await reply(message, f"```{utilities.tableH(output, fields=fields, border='=')}```")
+    if output: await reply(message, f"```\n{utilities.tableH(output, fields=fields, border='=')}\n```")
     else: await reply(message, "no match found")
 
 
