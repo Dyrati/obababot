@@ -51,6 +51,12 @@ async def on_message(message):
     if kwargs.get("t"):
         await reply(message, f"response time: `{time.time()-timestamp}`")
 
+
+@client.event
+async def on_message_edit(before, after):
+    await on_message(after)
+
+
 load_data()
 if terminal_mode:
     utilities.terminal(on_message)
