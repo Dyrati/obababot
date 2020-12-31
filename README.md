@@ -6,7 +6,7 @@ A discord utility bot for Golden Sun.
 $help        Provides information about the bot and its functions
 $datatables  Display the names of all the data tables
 $info        Display info about something
-$index       Indexes a data table
+$index       Index a data table
 $math        Evaluate a python expression
 $filter      Filters a data table based on a custom condition
 $sort        Sorts a data table based on an attribute (may also filter)
