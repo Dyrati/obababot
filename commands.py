@@ -152,7 +152,7 @@ async def math(message, *args, **kwargs):
 
 @command
 async def filter(message, *args, **kwargs):
-    """Filters a data table based on a custom condition
+    """Filter a data table based on a custom condition
 
     Arguments:
         tablename -- the table to search
@@ -176,7 +176,7 @@ async def filter(message, *args, **kwargs):
 
 @command
 async def sort(message, *args, **kwargs):
-    """Sorts a data table based on an attribute (may also filter)
+    """Sort a data table based on an attribute (may also filter)
 
     Arguments:
         tablename -- the table to search
