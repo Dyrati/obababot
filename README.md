@@ -3,16 +3,17 @@ A discord utility bot for Golden Sun.
 
 ## Commands
 ```
-$help:         Provides information about the bot and its functions
-$info:         Returns info on something, like a search engine
-$index:        Indexes a data table
-$math:         Evaluate a mathematical expression like a calculator
-$filter:       Filters a data table based on a custom condition
-$sort:         Sorts a data table based on an attribute (may also filter)
-$upload_save:  Temporarily store a battery file by uploading an attachment
-$save_preview: See a preview of your last uploaded save file
-$getclass:     Get the class of a character based on their djinn
-$damage:       Damage Calculator
+$help        Provides information about the bot and its functions
+$datatables  Display the names of all the data tables
+$info        Display info about something
+$index       Indexes a data table
+$math        Evaluate a python expression
+$filter      Filters a data table based on a custom condition
+$sort        Sorts a data table based on an attribute (may also filter)
+$getclass    Get the class of a character based on their djinn
+$damage      Damage Calculator
+$upload      Upload a file using an attachment or a link
+$page        View a specific page of a multi-page message
 ```
 ## Syntax
 **Arguments** are space-separated words
@@ -38,6 +39,12 @@ Depending on the context, you may use the attributes of objects by name.
  
 An easy way to view the attributes of objects in a data table is to use `$index [table] 0`,  
 which prints out all of the attributes and values of the first item in `[table]`.
+
+### Multi-Page Responses
+Some functions return a multi-page response.  By using the `$page` command, you can view other  
+pages of that response.  You can edit the command repeatedly to view other pages, and obaba  
+will edit her own message to reflect the change.  The arguments to `$page` depend on the  
+multi-page message that was last sent to you.
 
 ## Running the bot on your system
  - If you need to update the database, run `gatherdata.py` with the GS2 ROM as an argument
