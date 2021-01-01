@@ -316,6 +316,9 @@ async def page(message, *args, **kwargs):
     Requires that obababot has responded to you with a multi-page
     message within the most recent bot session.  Arguments are 
     specific to the message.
+
+    Keyword Arguments:
+        new -- set this arg to output a new response instead of editing
     """
     ID = message.author.id
     response = UserData[ID].live_response
