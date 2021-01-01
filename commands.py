@@ -330,7 +330,7 @@ async def page(message, *args, **kwargs):
         sent = await reply(message, page)
         response["message"] = sent
     else:
-        try: await old_message.edit(page)
+        try: await old_message.edit(content=page)
         except discord.NotFound:
             sent = await reply(message, page)
             response["message"] = sent
