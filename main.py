@@ -27,9 +27,6 @@ async def on_message(message):
     if message.author == client.user: return
     if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
         return
-    ID = message.author.id
-    UserData[ID] = UserData.get(ID, utilities.User(ID))
-    UserData[ID].responses.append([])
     text = message.content
     extrakwargs = {}
     for regex, command in utilities.aliases.items():
@@ -43,6 +40,9 @@ async def on_message(message):
         if command not in utilities.usercommands: return
         args, kwargs = parse(text[len(command)+1:].replace("`",""))
     try:
+        ID = message.author.id
+        UserData[ID] = UserData.get(ID, utilities.User(ID))
+        UserData[ID].responses.append([])
         if kwargs.get("raw"): UserData[ID].temp["raw"] = True
         await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
