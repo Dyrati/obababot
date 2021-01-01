@@ -151,22 +151,25 @@ def dictstr(dictionary, js=False, maxwidth=78):
     return out[1:]
 
 
-def tableH(dictlist, fields=None, border=None):
+def tableH(dictlist, fields=None, border=None, headers=True):
     fields = fields or dictlist[0].keys()
     for f in fields:
         for d in dictlist:
             d[f] = d.get(f, None)
-    widths = {k: len(k) for k in fields}
+    widths = {k: 0 for k in fields}
+    if headers: widths = {k: len(k) for k in fields}
     for d in dictlist:
         for k in fields:
             widths[k] = max(widths[k], len(str(d[k])))
-    out = " ".join((f"{k:^{w}.{w}}" for k,w in widths.items()))  # Heading
+    out = []
+    if headers:
+        out.append(" ".join((f"{k:^{w}.{w}}" for k,w in widths.items())))
     if border:
-        out += "\n" + " ".join((border*w for w in widths.values()))
+        out.append(" ".join((border*w for w in widths.values())))
     template = " ".join((f"{{{k}:<{w}.{w}}}" for k,w in widths.items()))
     for d in dictlist:
-        out += "\n" + template.format(**{k:str(v) for k,v in d.items()})
-    return out
+        out.append(template.format(**{k:str(v) for k,v in d.items()}))
+    return "\n".join(out)
 
 
 def tableV(dictlist):
@@ -195,12 +198,14 @@ class Charmap:
         self.charmap = []
     def addtext(self, text, coords):
         x, y = coords
+        xmax = x-1
         cm = self.charmap
         cm.extend(([] for i in range(y-len(cm)+1)))
         for char in text:
             if char == "\n":
-                y += 1
+                xmax = max(xmax, x-1)
                 x = coords[0]
+                y += 1
             else:
                 if y >= len(cm):
                     cm.extend(([] for i in range(y-len(cm)+1)))
@@ -208,6 +213,7 @@ class Charmap:
                     cm[y].extend((" " for i in range(x-len(cm[y])+1)))
                 cm[y][x] = char
                 x += 1
+        return max(xmax, x-1), y
     def __str__(self):
         return "\n".join(("".join(row) for row in self.charmap))
 
