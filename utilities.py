@@ -25,10 +25,15 @@ def to_async(func):
 
 
 async def reply(message, text):
+    ID = message.author.id
+    if UserData[ID].temp.get("raw"):
+        text = text.replace("`", "")
     if len(str(text)) > 2000:
-        return await message.channel.send("output exceeded 2000 characters")
+        sent = await message.channel.send("output exceeded 2000 characters")
     else:
-        return await message.channel.send(text)
+        sent = await message.channel.send(text)
+    UserData[ID].responses[-1].append(sent)
+    return sent
 
 
 def load_text():
@@ -70,7 +75,7 @@ def namedict(jsonobj):
 
 DataTables, Namemaps, UserData, Text = {}, {}, {}, {}
 def load_data():
-    global DataTables, Namemaps, UserData, Text
+    global DataTables, Namemaps, Text
     from copy import deepcopy
     print("Loading database...", end="\r")
     DataTables.clear(); Namemaps.clear(); Text.clear()
@@ -89,6 +94,16 @@ def load_data():
         Namemaps[k] = namedict(v)
     Text.update(**load_text())
     print("Loaded database    ")
+
+
+class User:
+    def __init__(self, ID):
+        self.ID = ID
+        self.temp = {}
+        self.vars = {}
+        self.responses = []
+        self.live_response = {}
+        self.save = None
 
 
 mquote = re.compile(r"\".*?\"|\'.*?\'")
@@ -233,6 +248,9 @@ class TerminalMessage:
         content = content.replace("```","\n").replace("`","")
         print(content)
         return TerminalMessage(content)
+    
+    async def delete(self):
+        print(f"Deleted {self}")
     
     def get_attachments(self, text):
         import io

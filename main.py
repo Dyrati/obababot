@@ -5,7 +5,7 @@ import sys
 import time
 import traceback
 import utilities
-from utilities import reply, parse, load_data
+from utilities import UserData, reply, parse, load_data
 import commands, gsfuncs
 print("Imported modules    ")
 
@@ -27,6 +27,9 @@ async def on_message(message):
     if message.author == client.user: return
     if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
         return
+    ID = message.author.id
+    UserData[ID] = UserData.get(ID, utilities.User(ID))
+    UserData[ID].responses.append([])
     text = message.content
     extrakwargs = {}
     for regex, command in utilities.aliases.items():
@@ -40,6 +43,7 @@ async def on_message(message):
         if command not in utilities.usercommands: return
         args, kwargs = parse(text[len(command)+1:].replace("`",""))
     try:
+        if kwargs.get("raw"): UserData[ID].temp["raw"] = True
         await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
         # await reply(message, traceback.format_exc())

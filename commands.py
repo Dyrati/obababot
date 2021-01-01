@@ -133,8 +133,7 @@ async def math(message, *args, **kwargs):
         may use "varname = expression" to set variables as well
     """
     ID = message.author.id
-    UserData[ID] = UserData.get(ID, {"vars":{}})
-    value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID]["vars"]})
+    value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID].vars})
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     if frmt[4] and len(frmt[4]) > 3:
@@ -144,10 +143,9 @@ async def math(message, *args, **kwargs):
     if frmt: value = f"{value:{frmt}}"
     if kwargs.get("set"):
         varname = kwargs["set"]
-        UserData[ID]["vars"][varname] = value
+        UserData[ID].vars[varname] = value
     else:
-        if kwargs.get("raw"): await reply(message, f"{value}")
-        else: await reply(message, f"`{value}`")
+        await reply(message, f"`{value}`")
 
 
 @command
@@ -282,14 +280,12 @@ async def upload(message, *args, **kwargs):
         link -- (optional) a link to a message with an attached file
                 if not included, you must attach a file to the message
     """
-    ID = str(message.author.id)
-    if not UserData.get(ID): UserData[ID] = {}
     if message.attachments:
         attachment = message.attachments[0]
     else:
         assert args and args[0].startswith("https://discord.com/channels/"), \
             "Expected an attachment or a link to a message with an attachment"
-        ID_list = args[0].replace("https://discord.com/channels/","").split("/")
+        ID_list = args[0][len("https://discord.com/channels/"):].split("/")
         serverID, channelID, messageID = (int(i) for i in ID_list)
         server = utilities.client.get_guild(serverID)
         channel = server.get_channel(channelID)
@@ -303,10 +299,11 @@ async def upload(message, *args, **kwargs):
             if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break
         else:
             assert 0, "No valid saves detected"
-        UserData[ID]["save"] = data
+        ID = message.author.id
+        UserData[ID].save = data
         pages = gsfuncs.preview(data)
         sent = await reply(message, pages["preview"])
-        UserData[ID]["response"] = {"message": sent, "pages": pages}
+        UserData[ID].live_response = {"message": sent, "pages": pages}
     else:
         assert 0, "Unhandled file type"
 
@@ -319,13 +316,21 @@ async def page(message, *args, **kwargs):
     message within the most recent bot session.  Arguments are 
     specific to the message.
     """
-    ID = str(message.author.id)
-    acc = UserData
-    for key in (ID, "response", "pages"):
-        acc = acc.get(key)
-        assert acc, "No multi-page message detected"
-    response = UserData[ID]["response"]
+    ID = message.author.id
+    response = UserData[ID].live_response
+    assert response, "No multi-page message detected"
     message = response["message"]
     page = response["pages"]
     for arg in args: page = page[arg]
     await message.edit(content=page)
+
+
+@command
+async def delete(message, *args, **kwargs):
+    ID = message.author.id
+    UserData[ID].responses.pop()
+    print(UserData[ID].responses)
+    try: responses = UserData[ID].responses.pop()
+    except IndexError: return
+    for message in responses:
+        await message.delete()
