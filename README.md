@@ -14,6 +14,7 @@ $getclass    Get the class of a character based on their djinn
 $damage      Damage Calculator
 $upload      Upload a file using an attachment or a link
 $page        View a specific page of a multi-page message
+$delete      Delete the last message(s) sent to you by obaba this session
 ```
 ## Syntax
 **Arguments** are space-separated words
