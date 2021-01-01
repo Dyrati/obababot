@@ -24,27 +24,13 @@ async def on_ready():
 @client.event
 async def on_message(message):
     timestamp = time.time()
-    if message.author == client.user: return
-    if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
-        return
-    text = message.content
-    extrakwargs = {}
-    for regex, command in utilities.aliases.items():
-        m = regex.match(text)
-        if not m: continue
-        args, kwargs = parse(text[m.end():].replace("`",""))
-        kwargs.update(**{k:v for k,v in m.groupdict().items() if v is not None})
-        break
-    else:
-        command = text.split(" ",1)[0]
-        if command not in utilities.usercommands: return
-        args, kwargs = parse(text[len(command)+1:].replace("`",""))
+    if not utilities.is_command(message): return
+    command, args, kwargs = utilities.extractcommand(message.content)
     ID = message.author.id
-    UserData[ID] = UserData.get(ID, utilities.User(ID))
+    UserData.setdefault(ID, utilities.User(ID))
     UserData[ID].responses.append([])
-    if kwargs.get("raw"): UserData[ID].temp["raw"] = True
-    try:
-        await utilities.usercommands[command](message, *args, **kwargs)
+    UserData[ID].temp["raw"] = kwargs.get("raw")
+    try: await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
         # await reply(message, traceback.format_exc())
         args = f": {e.args[0]}" if e.args else ""

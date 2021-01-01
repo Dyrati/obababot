@@ -255,7 +255,7 @@ def preview(data):
         slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
         slots.append(slot)
     preview = f["version"] + "\n" + utilities.tableV(slots)
-    pages["preview"] = f"```{preview}```"
+    pages["preview"] = f"```\n{preview}\n```"
     for f in filedata:
         slot = f["slot"]
         pages[str(slot)] = {}
@@ -306,7 +306,7 @@ def preview(data):
             x,_ = out.addtext(utilities.tableH(inventory, headers=False), (2, 15))
             out.addtext("Abilities", (x+4, 14))
             length = len(pc["abilities"])
-            if length > 15:
+            if length > len(pc["inventory"]):
                 count = length-length//2
                 x,_ = out.addtext("\n".join(pc["abilities"][:count]), (x+6, 15))
                 x,_ = out.addtext("\n".join(pc["abilities"][count:]), (x+3, 15))

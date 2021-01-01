@@ -1,11 +1,13 @@
 import re
 import json
 
-
 prefix = "$"
 usercommands = {}
 aliases = {}
 client = None
+UserData = {}
+
+
 def command(f=None, alias=None, prefix=prefix):
     def decorator(f):
         global usercommands
@@ -16,6 +18,17 @@ def command(f=None, alias=None, prefix=prefix):
         return inner
     if f: return decorator(f)
     else: return decorator
+
+
+def is_command(message):
+    if message.author == client.user: return False
+    if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
+        return False
+    for regex in aliases:
+        if regex.match(message.content): return True
+    else:
+        if message.content.split(" ",1)[0] in usercommands: return True
+    return False
 
 
 def to_async(func):
@@ -73,7 +86,7 @@ def namedict(jsonobj):
     return out
 
 
-DataTables, Namemaps, UserData, Text = {}, {}, {}, {}
+DataTables, Namemaps, Text = {}, {}, {}
 def load_data():
     global DataTables, Namemaps, Text
     from copy import deepcopy
@@ -94,16 +107,6 @@ def load_data():
         Namemaps[k] = namedict(v)
     Text.update(**load_text())
     print("Loaded database    ")
-
-
-class User:
-    def __init__(self, ID):
-        self.ID = ID
-        self.temp = {}
-        self.vars = {}
-        self.responses = []
-        self.live_response = {}
-        self.save = None
 
 
 mquote = re.compile(r"\".*?\"|\'.*?\'")
@@ -127,6 +130,21 @@ def parse(s):
     for k,v in kwargs.items():
         kwargs[k] = mtoken.sub(gettoken, v)
     return args, kwargs
+
+
+def extractcommand(text):
+    extrakwargs = {}
+    for regex, command in aliases.items():
+        m = regex.match(text)
+        if not m: continue
+        args, kwargs = parse(text[m.end():].replace("`",""))
+        kwargs.update(**{k:v for k,v in m.groupdict().items() if v is not None})
+        break
+    else:
+        command = text.split(" ",1)[0]
+        if command not in usercommands: return
+        args, kwargs = parse(text[len(command)+1:].replace("`",""))
+    return command, args, kwargs
 
 
 def wrap(iterable, maxwidth, pos=0):
@@ -235,6 +253,16 @@ class Charmap:
         return "\n".join(("".join(row) for row in self.charmap))
 
 
+class User:
+    def __init__(self, ID):
+        self.ID = ID
+        self.temp = {}
+        self.vars = {}
+        self.responses = []
+        self.live_response = {}
+        self.save = None
+
+
 class TerminalMessage:
     def __init__(self, content="", ID=0):
         from types import SimpleNamespace as SN
@@ -245,7 +273,7 @@ class TerminalMessage:
         self.edit = self.send
     
     async def send(self, content=""):
-        content = content.replace("```","\n").replace("`","")
+        # content = content.replace("```","\n").replace("`","")
         print(content)
         return TerminalMessage(content)
     
