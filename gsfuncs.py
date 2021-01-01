@@ -180,8 +180,8 @@ def readsav(data):
                     "DEF": read(base+0x3e, 2),
                     "AGI": read(base+0x40, 2),
                     "LCK": read(base+0x42, 1),
-                    "venus_pow": read(base+0x48, 2),
-                    "venus_res": read(base+0x4a, 2),
+                    "ven_pow": read(base+0x48, 2),
+                    "ven_res": read(base+0x4a, 2),
                     "merc_pow": read(base+0x4c, 2),
                     "merc_res": read(base+0x4e, 2),
                     "mars_pow": read(base+0x50, 2),
@@ -290,9 +290,9 @@ def preview(data):
                 "AGI": base["AGI"],
                 "LCK": base["LCK"]}), (x+3, 4))
             elementdata = []
-            for i, name in enumerate(["venus", "merc", "mars", "jup"]):
+            for i, name in enumerate(["ven", "merc", "mars", "jup"]):
                 elementdata.append(
-                    {"": Text["elements"][i],
+                    {"": name.title(),
                     "Djinn": f"{pc['set_djinncounts'][i]}/{pc['djinncounts'][i]}",
                     "Level": pc["elevels"][i],
                     "Power": pc["stats"][f"{name}_pow"],
