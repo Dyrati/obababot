@@ -151,7 +151,7 @@ def dictstr(dictionary, js=False, maxwidth=78):
     return out[1:]
 
 
-def tableH(dictlist, fields=None, border=None, headers=True):
+def tableH(dictlist, fields=None, spacing=1, border=None, headers=True):
     fields = fields or dictlist[0].keys()
     for f in fields:
         for d in dictlist:
@@ -162,17 +162,18 @@ def tableH(dictlist, fields=None, border=None, headers=True):
         for k in fields:
             widths[k] = max(widths[k], len(str(d[k])))
     out = []
+    spacing = " "*spacing
     if headers:
-        out.append(" ".join((f"{k:^{w}.{w}}" for k,w in widths.items())))
+        out.append(spacing.join((f"{k:^{w}.{w}}" for k,w in widths.items())))
     if border:
-        out.append(" ".join((border*w for w in widths.values())))
-    template = " ".join((f"{{{k}:<{w}.{w}}}" for k,w in widths.items()))
+        out.append(spacing.join((border*w for w in widths.values())))
+    template = spacing.join((f"{{{k}:<{w}.{w}}}" for k,w in widths.items()))
     for d in dictlist:
         out.append(template.format(**{k:str(v) for k,v in d.items()}))
     return "\n".join(out)
 
 
-def tableV(dictlist):
+def tableV(dictlist, spacing=2):
     columns = [[]] + [[] for d in dictlist]
     for i,d in enumerate(dictlist):
         for k,v in d.items():
@@ -189,7 +190,8 @@ def tableV(dictlist):
                 columns[0].append(k)
                 columns[i+1].append(str(v))
     widths = [len(max(c, key=len)) for c in columns]
-    template = "  ".join((f"{{:{w}.{w}}}" for w in widths))
+    spacing = " "*spacing
+    template = spacing.join((f"{{:{w}.{w}}}" for w in widths))
     return "\n".join(template.format(*row) for row in zip(*columns))
 
 

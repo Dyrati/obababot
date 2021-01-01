@@ -302,7 +302,7 @@ def preview(data):
             inventory = []
             for k,v in pc["inventory"].items():
                 flags = [s if f in v[1:] else "-" for s,f in zip("EB", ("equipped", "broken"))]
-                inventory.append({"item": k, "amt": v[0], "flags": "".join(flags)})
+                inventory.append({"item": k+" ", "amt": v[0], "flags": "".join(flags)})
             x,_ = out.addtext(utilities.tableH(inventory, headers=False), (2, 15))
             out.addtext("Abilities", (x+4, 14))
             length = len(pc["abilities"])
