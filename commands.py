@@ -323,11 +323,14 @@ async def page(message, *args, **kwargs):
     old_message = response["message"]
     page = response["pages"]
     for arg in args: page = page[arg]
-    try:
-        await old_message.edit(content=page)
-    except discord.NotFound:
+    if kwargs.get("new"):
         sent = await reply(message, page)
         response["message"] = sent
+    else:
+        try: await old_message.edit(page)
+        except discord.NotFound:
+            sent = await reply(message, page)
+            response["message"] = sent
 
 
 @command

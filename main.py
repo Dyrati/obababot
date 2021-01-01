@@ -51,6 +51,8 @@ async def on_message(message):
         await reply(message, e.__class__.__name__ + args)
     if kwargs.get("t"):
         await reply(message, f"response time: `{time.time()-timestamp}`")
+    if UserData[ID].responses and not UserData[ID].responses[-1]:
+        UserData[ID].responses.pop()
 
 @client.event
 async def on_message_edit(before, after):
