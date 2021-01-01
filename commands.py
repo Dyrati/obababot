@@ -1,3 +1,4 @@
+import discord
 import re
 import inspect
 import utilities
@@ -319,17 +320,21 @@ async def page(message, *args, **kwargs):
     ID = message.author.id
     response = UserData[ID].live_response
     assert response, "No multi-page message detected"
-    message = response["message"]
+    old_message = response["message"]
     page = response["pages"]
     for arg in args: page = page[arg]
-    await message.edit(content=page)
+    try:
+        await old_message.edit(content=page)
+    except discord.NotFound:
+        sent = await reply(message, page)
+        response["message"] = sent
 
 
 @command
 async def delete(message, *args, **kwargs):
+    """Delete the last message(s) sent to you by obaba this session"""
     ID = message.author.id
     UserData[ID].responses.pop()
-    print(UserData[ID].responses)
     try: responses = UserData[ID].responses.pop()
     except IndexError: return
     for message in responses:
