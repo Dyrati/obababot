@@ -49,6 +49,7 @@ async def on_message(message):
         # await reply(message, traceback.format_exc())
         args = f": {e.args[0]}" if e.args else ""
         await reply(message, e.__class__.__name__ + args)
+    UserData[ID].temp.clear()
     if kwargs.get("t"):
         await reply(message, f"response time: `{time.time()-timestamp}`")
     if UserData[ID].responses and not UserData[ID].responses[-1]:
