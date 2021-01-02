@@ -57,6 +57,8 @@ def load_text():
         text["abilities"] = lines[1447:2181]
         text["move_descriptions"] = lines[2181:2915]
         text["classes"] = lines[2915:3159]
+        text["areas"] = lines[3672:3770]
+        text["maps"] = lines[3770:4095]
         text["djinn"] = lines[1747:1827]
     with open(r"text/customtext.txt") as f:
         lines = f.read().splitlines()
@@ -88,7 +90,7 @@ def load_data():
     DataTables.clear(); Namemaps.clear(); Text.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
-            "classdata", "elementdata", "enemygroupdata", "encounterdata"]:
+            "classdata", "elementdata", "encounterdata", "mapdata", "enemygroupdata"]:
         with open(rf"data/{name}.json") as f:
             DataTables[name] = json.load(f)
             if name == "enemydata":

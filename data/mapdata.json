@@ -1,0 +1,2927 @@
+[
+    {
+        "ID": 0,
+        "name": "TITLE",
+        "file_index": 1609,
+        "area": "Title screen",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 1,
+        "name": "UTIL",
+        "file_index": 1610,
+        "area": "(Clear data)",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 2,
+        "name": "WORLD",
+        "file_index": 1611,
+        "area": "World Map",
+        "type": 1,
+        "MFT_index": 1,
+        "outdoor": 0
+    },
+    {
+        "ID": 3,
+        "name": "WORLD_END",
+        "file_index": 1612,
+        "area": "Staff Credit",
+        "type": 1,
+        "MFT_index": 1,
+        "outdoor": 0
+    },
+    {
+        "ID": 4,
+        "name": "V_ENT",
+        "file_index": 1613,
+        "area": "Venus Lighthouse",
+        "type": 2,
+        "MFT_index": 3,
+        "outdoor": 1
+    },
+    {
+        "ID": 5,
+        "name": "VTO01",
+        "file_index": 1614,
+        "area": "Venus Lighthouse",
+        "type": 2,
+        "MFT_index": 4,
+        "outdoor": 1
+    },
+    {
+        "ID": 6,
+        "name": "SHR_M14",
+        "file_index": 1615,
+        "area": "Suhalla Gate",
+        "type": 1,
+        "MFT_index": 5,
+        "outdoor": 1
+    },
+    {
+        "ID": 7,
+        "name": "SHR_M23",
+        "file_index": 1615,
+        "area": "Suhalla Gate",
+        "type": 1,
+        "MFT_index": 6,
+        "outdoor": 1
+    },
+    {
+        "ID": 8,
+        "name": "SHR_M56",
+        "file_index": 1615,
+        "area": "Suhalla Gate",
+        "type": 1,
+        "MFT_index": 7,
+        "outdoor": 1
+    },
+    {
+        "ID": 9,
+        "name": "OTMP0008",
+        "file_index": 1616,
+        "area": "Idejima",
+        "type": 2,
+        "MFT_index": 8,
+        "outdoor": 1
+    },
+    {
+        "ID": 10,
+        "name": "DELY00",
+        "file_index": 1617,
+        "area": "North Osenia Islet",
+        "type": 2,
+        "MFT_index": 9,
+        "outdoor": 1
+    },
+    {
+        "ID": 11,
+        "name": "DLY_ROOM",
+        "file_index": 1618,
+        "area": "North Osenia Islet",
+        "type": 2,
+        "MFT_index": 11,
+        "outdoor": 0
+    },
+    {
+        "ID": 12,
+        "name": "DL_SINDEN",
+        "file_index": 1618,
+        "area": "North Osenia Islet",
+        "type": 2,
+        "MFT_index": 12,
+        "outdoor": 0
+    },
+    {
+        "ID": 13,
+        "name": "DELY01",
+        "file_index": 1617,
+        "area": "North Osenia Islet",
+        "type": 2,
+        "MFT_index": 10,
+        "outdoor": 1
+    },
+    {
+        "ID": 14,
+        "name": "KANDRA01",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 14,
+        "outdoor": 0
+    },
+    {
+        "ID": 15,
+        "name": "KANDRA02",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 13,
+        "outdoor": 0
+    },
+    {
+        "ID": 16,
+        "name": "KANDRA03",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 15,
+        "outdoor": 0
+    },
+    {
+        "ID": 17,
+        "name": "KANDRA04",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 16,
+        "outdoor": 0
+    },
+    {
+        "ID": 18,
+        "name": "KANDRA05",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 17,
+        "outdoor": 0
+    },
+    {
+        "ID": 19,
+        "name": "KANDRA06",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 18,
+        "outdoor": 0
+    },
+    {
+        "ID": 20,
+        "name": "KANDRA07",
+        "file_index": 1619,
+        "area": "Daila",
+        "type": 1,
+        "MFT_index": 19,
+        "outdoor": 0
+    },
+    {
+        "ID": 21,
+        "name": "KANDO_O",
+        "file_index": 1619,
+        "area": "Kandorean Temple",
+        "type": 2,
+        "MFT_index": 20,
+        "outdoor": 1
+    },
+    {
+        "ID": 22,
+        "name": "KANDO_E",
+        "file_index": 1619,
+        "area": "Kandorean Temple",
+        "type": 2,
+        "MFT_index": 21,
+        "outdoor": 0
+    },
+    {
+        "ID": 23,
+        "name": "KAIJIN01",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 23,
+        "outdoor": 0
+    },
+    {
+        "ID": 24,
+        "name": "KAIJIN02",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 24,
+        "outdoor": 0
+    },
+    {
+        "ID": 25,
+        "name": "KAIJIN03",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 25,
+        "outdoor": 0
+    },
+    {
+        "ID": 26,
+        "name": "KAIJIN04",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 26,
+        "outdoor": 0
+    },
+    {
+        "ID": 27,
+        "name": "KAIJIN05",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 27,
+        "outdoor": 0
+    },
+    {
+        "ID": 28,
+        "name": "KAIJIN06",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 28,
+        "outdoor": 0
+    },
+    {
+        "ID": 29,
+        "name": "KAIJIN07",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 29,
+        "outdoor": 0
+    },
+    {
+        "ID": 30,
+        "name": "KAIJIN08",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 22,
+        "outdoor": 0
+    },
+    {
+        "ID": 31,
+        "name": "KAIJIN09",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 30,
+        "outdoor": 0
+    },
+    {
+        "ID": 32,
+        "name": "KAIJIN_T1",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 31,
+        "outdoor": 0
+    },
+    {
+        "ID": 33,
+        "name": "KAIJIN_T2",
+        "file_index": 1620,
+        "area": "Shrine of the Sea God",
+        "type": 1,
+        "MFT_index": 32,
+        "outdoor": 0
+    },
+    {
+        "ID": 34,
+        "name": "DEKAN00",
+        "file_index": 1621,
+        "area": "Dehkan Plateau",
+        "type": 1,
+        "MFT_index": 33,
+        "outdoor": 1
+    },
+    {
+        "ID": 35,
+        "name": "DEKAN01",
+        "file_index": 1621,
+        "area": "Dehkan Plateau",
+        "type": 1,
+        "MFT_index": 34,
+        "outdoor": 1
+    },
+    {
+        "ID": 36,
+        "name": "DEKAN02",
+        "file_index": 1621,
+        "area": "Dehkan Plateau",
+        "type": 1,
+        "MFT_index": 35,
+        "outdoor": 1
+    },
+    {
+        "ID": 37,
+        "name": "DJ_DKN00",
+        "file_index": 1621,
+        "area": "Dehkan Plateau",
+        "type": 1,
+        "MFT_index": 36,
+        "outdoor": 1
+    },
+    {
+        "ID": 38,
+        "name": "DJ_DKN01",
+        "file_index": 1621,
+        "area": "Dehkan Plateau",
+        "type": 1,
+        "MFT_index": 37,
+        "outdoor": 1
+    },
+    {
+        "ID": 39,
+        "name": "DJ_DKN02",
+        "file_index": 1621,
+        "area": "Dehkan Plateau",
+        "type": 1,
+        "MFT_index": 38,
+        "outdoor": 1
+    },
+    {
+        "ID": 40,
+        "name": "REM_FUNE01",
+        "file_index": 1622,
+        "area": "Madra",
+        "type": 1,
+        "MFT_index": 127,
+        "outdoor": 0
+    },
+    {
+        "ID": 41,
+        "name": "REM_FUNE02",
+        "file_index": 1622,
+        "area": "Madra",
+        "type": 1,
+        "MFT_index": 128,
+        "outdoor": 0
+    },
+    {
+        "ID": 42,
+        "name": "REM_SHIP02",
+        "file_index": 1623,
+        "area": "Madra",
+        "type": 1,
+        "MFT_index": 185,
+        "outdoor": 0
+    },
+    {
+        "ID": 43,
+        "name": "REM_SHIP01",
+        "file_index": 1623,
+        "area": "Madra Catacombs",
+        "type": 1,
+        "MFT_index": 126,
+        "outdoor": 0
+    },
+    {
+        "ID": 44,
+        "name": "OTMP0005",
+        "file_index": 1624,
+        "area": "Madra Drawbridge",
+        "type": 2,
+        "MFT_index": 40,
+        "outdoor": 1
+    },
+    {
+        "ID": 45,
+        "name": "MD_ROOM01",
+        "file_index": 1625,
+        "area": "Madra Drawbridge",
+        "type": 2,
+        "MFT_index": 41,
+        "outdoor": 0
+    },
+    {
+        "ID": 46,
+        "name": "MD_ROOM02",
+        "file_index": 1625,
+        "area": "Madra Drawbridge",
+        "type": 2,
+        "MFT_index": 42,
+        "outdoor": 0
+    },
+    {
+        "ID": 47,
+        "name": "DJ_MDR00",
+        "file_index": 1626,
+        "area": "Osenia Cliffs",
+        "type": 1,
+        "MFT_index": 43,
+        "outdoor": 0
+    },
+    {
+        "ID": 48,
+        "name": "DJ_MDR0A",
+        "file_index": 1626,
+        "area": "Osenia Cliffs",
+        "type": 1,
+        "MFT_index": 44,
+        "outdoor": 1
+    },
+    {
+        "ID": 49,
+        "name": "DJ_MDR0B",
+        "file_index": 1626,
+        "area": "Osenia Cliffs",
+        "type": 1,
+        "MFT_index": 45,
+        "outdoor": 1
+    },
+    {
+        "ID": 50,
+        "name": "DJ_MDR10",
+        "file_index": 1626,
+        "area": "Osenia Cliffs",
+        "type": 1,
+        "MFT_index": 48,
+        "outdoor": 0
+    },
+    {
+        "ID": 51,
+        "name": "DJ_MDR1A",
+        "file_index": 1626,
+        "area": "Osenia Cliffs",
+        "type": 1,
+        "MFT_index": 47,
+        "outdoor": 0
+    },
+    {
+        "ID": 52,
+        "name": "DJ_MDR1B",
+        "file_index": 1626,
+        "area": "Osenia Cliffs",
+        "type": 1,
+        "MFT_index": 46,
+        "outdoor": 0
+    },
+    {
+        "ID": 53,
+        "name": "OSE_ST",
+        "file_index": 1627,
+        "area": "E Tundaria Islet",
+        "type": 2,
+        "MFT_index": 49,
+        "outdoor": 1
+    },
+    {
+        "ID": 54,
+        "name": "GAKECHAM",
+        "file_index": 1628,
+        "area": "Yallam",
+        "type": 1,
+        "MFT_index": 50,
+        "outdoor": 0
+    },
+    {
+        "ID": 55,
+        "name": "MEEKA",
+        "file_index": 1629,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 51,
+        "outdoor": 1
+    },
+    {
+        "ID": 56,
+        "name": "MEEB1",
+        "file_index": 1629,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 52,
+        "outdoor": 1
+    },
+    {
+        "ID": 57,
+        "name": "MI_ROOM01",
+        "file_index": 1630,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 53,
+        "outdoor": 0
+    },
+    {
+        "ID": 58,
+        "name": "MI_SINDEN",
+        "file_index": 1630,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 54,
+        "outdoor": 0
+    },
+    {
+        "ID": 59,
+        "name": "POPEE1",
+        "file_index": 1631,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 55,
+        "outdoor": 1
+    },
+    {
+        "ID": 60,
+        "name": "POPEE2",
+        "file_index": 1631,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 56,
+        "outdoor": 1
+    },
+    {
+        "ID": 61,
+        "name": "POPEE3",
+        "file_index": 1631,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 57,
+        "outdoor": 1
+    },
+    {
+        "ID": 62,
+        "name": "POPEE4",
+        "file_index": 1631,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 58,
+        "outdoor": 1
+    },
+    {
+        "ID": 63,
+        "name": "POPEE5",
+        "file_index": 1631,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 59,
+        "outdoor": 1
+    },
+    {
+        "ID": 64,
+        "name": "PO_ROOM01",
+        "file_index": 1632,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 61,
+        "outdoor": 0
+    },
+    {
+        "ID": 65,
+        "name": "PO_ROOM02",
+        "file_index": 1632,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 62,
+        "outdoor": 0
+    },
+    {
+        "ID": 66,
+        "name": "PO_SINDEN",
+        "file_index": 1632,
+        "area": "Mikasalla",
+        "type": 2,
+        "MFT_index": 60,
+        "outdoor": 0
+    },
+    {
+        "ID": 67,
+        "name": "YANPI01",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 63,
+        "outdoor": 1
+    },
+    {
+        "ID": 68,
+        "name": "YANPI02",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 64,
+        "outdoor": 1
+    },
+    {
+        "ID": 69,
+        "name": "YANPI03",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 65,
+        "outdoor": 1
+    },
+    {
+        "ID": 70,
+        "name": "YANPI04",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 66,
+        "outdoor": 1
+    },
+    {
+        "ID": 71,
+        "name": "YANPI042",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 67,
+        "outdoor": 1
+    },
+    {
+        "ID": 72,
+        "name": "YANPI05",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 68,
+        "outdoor": 1
+    },
+    {
+        "ID": 73,
+        "name": "YANPI06",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 69,
+        "outdoor": 1
+    },
+    {
+        "ID": 74,
+        "name": "YANPI07",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 70,
+        "outdoor": 1
+    },
+    {
+        "ID": 75,
+        "name": "YANPI08",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 71,
+        "outdoor": 1
+    },
+    {
+        "ID": 76,
+        "name": "YANPI09",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 72,
+        "outdoor": 1
+    },
+    {
+        "ID": 77,
+        "name": "YANPI10",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 73,
+        "outdoor": 1
+    },
+    {
+        "ID": 78,
+        "name": "YANPI11",
+        "file_index": 1633,
+        "area": "Garoh",
+        "type": 1,
+        "MFT_index": 74,
+        "outdoor": 1
+    },
+    {
+        "ID": 79,
+        "name": "DJ_YANPI1",
+        "file_index": 1634,
+        "area": "Yampi Desert",
+        "type": 1,
+        "MFT_index": 75,
+        "outdoor": 1
+    },
+    {
+        "ID": 80,
+        "name": "DJ_YANPI2",
+        "file_index": 1634,
+        "area": "Yampi Desert",
+        "type": 1,
+        "MFT_index": 76,
+        "outdoor": 1
+    },
+    {
+        "ID": 81,
+        "name": "DJ_YANPI3",
+        "file_index": 1634,
+        "area": "Yampi Desert",
+        "type": 1,
+        "MFT_index": 77,
+        "outdoor": 1
+    },
+    {
+        "ID": 82,
+        "name": "AYERES01",
+        "file_index": 1635,
+        "area": "Yampi Desert Cave",
+        "type": 1,
+        "MFT_index": 78,
+        "outdoor": 0
+    },
+    {
+        "ID": 83,
+        "name": "AYERES02",
+        "file_index": 1635,
+        "area": "Yampi Desert Cave",
+        "type": 1,
+        "MFT_index": 79,
+        "outdoor": 0
+    },
+    {
+        "ID": 84,
+        "name": "AYERES03",
+        "file_index": 1635,
+        "area": "Yampi Desert Cave",
+        "type": 1,
+        "MFT_index": 80,
+        "outdoor": 0
+    },
+    {
+        "ID": 85,
+        "name": "AR_IN01",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 81,
+        "outdoor": 0
+    },
+    {
+        "ID": 86,
+        "name": "AR_IN02",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 82,
+        "outdoor": 0
+    },
+    {
+        "ID": 87,
+        "name": "AR_IN03",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 83,
+        "outdoor": 0
+    },
+    {
+        "ID": 88,
+        "name": "AR_IN04",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 84,
+        "outdoor": 0
+    },
+    {
+        "ID": 89,
+        "name": "AR_IN05",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 85,
+        "outdoor": 0
+    },
+    {
+        "ID": 90,
+        "name": "AR_IN06",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 86,
+        "outdoor": 0
+    },
+    {
+        "ID": 91,
+        "name": "AR_IN07",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 87,
+        "outdoor": 0
+    },
+    {
+        "ID": 92,
+        "name": "AR_IN08",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 88,
+        "outdoor": 0
+    },
+    {
+        "ID": 93,
+        "name": "AR_IN09",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 89,
+        "outdoor": 0
+    },
+    {
+        "ID": 94,
+        "name": "AR_IN10",
+        "file_index": 1636,
+        "area": "Air's Rock",
+        "type": 1,
+        "MFT_index": 90,
+        "outdoor": 0
+    },
+    {
+        "ID": 95,
+        "name": "OTMP0006",
+        "file_index": 1637,
+        "area": "Alhafra",
+        "type": 2,
+        "MFT_index": 91,
+        "outdoor": 1
+    },
+    {
+        "ID": 96,
+        "name": "AF_ROOM01",
+        "file_index": 1638,
+        "area": "Alhafra",
+        "type": 2,
+        "MFT_index": 92,
+        "outdoor": 0
+    },
+    {
+        "ID": 97,
+        "name": "AF_ROOM02",
+        "file_index": 1639,
+        "area": "Alhafra",
+        "type": 2,
+        "MFT_index": 93,
+        "outdoor": 0
+    },
+    {
+        "ID": 98,
+        "name": "OTMP0007",
+        "file_index": 1640,
+        "area": "Eastern Alhafra",
+        "type": 2,
+        "MFT_index": 94,
+        "outdoor": 0
+    },
+    {
+        "ID": 99,
+        "name": "ARA_FUNE",
+        "file_index": 1641,
+        "area": "Eastern Alhafra",
+        "type": 2,
+        "MFT_index": 95,
+        "outdoor": 0
+    },
+    {
+        "ID": 100,
+        "name": "ARA_B1A",
+        "file_index": 1642,
+        "area": "Alhafran Cave",
+        "type": 2,
+        "MFT_index": 96,
+        "outdoor": 0
+    },
+    {
+        "ID": 101,
+        "name": "ARA_B1B",
+        "file_index": 1642,
+        "area": "Alhafran Cave",
+        "type": 2,
+        "MFT_index": 97,
+        "outdoor": 0
+    },
+    {
+        "ID": 102,
+        "name": "GN_ID00",
+        "file_index": 1643,
+        "area": "Gondowan Cliffs",
+        "type": 1,
+        "MFT_index": 100,
+        "outdoor": 1
+    },
+    {
+        "ID": 103,
+        "name": "GN_ID01",
+        "file_index": 1643,
+        "area": "Gondowan Cliffs",
+        "type": 1,
+        "MFT_index": 101,
+        "outdoor": 1
+    },
+    {
+        "ID": 104,
+        "name": "DJ_KB00",
+        "file_index": 1644,
+        "area": "Gondowan Cliffs",
+        "type": 1,
+        "MFT_index": 39,
+        "outdoor": 1
+    },
+    {
+        "ID": 105,
+        "name": "NIRI_00",
+        "file_index": 1645,
+        "area": "Naribwe",
+        "type": 2,
+        "MFT_index": 98,
+        "outdoor": 1
+    },
+    {
+        "ID": 106,
+        "name": "NR_ROOM01",
+        "file_index": 1646,
+        "area": "Naribwe",
+        "type": 2,
+        "MFT_index": 99,
+        "outdoor": 0
+    },
+    {
+        "ID": 107,
+        "name": "MING_00",
+        "file_index": 1647,
+        "area": "Kibombo Mountains",
+        "type": 1,
+        "MFT_index": 102,
+        "outdoor": 1
+    },
+    {
+        "ID": 108,
+        "name": "MING_01",
+        "file_index": 1647,
+        "area": "Kibombo Mountains",
+        "type": 1,
+        "MFT_index": 103,
+        "outdoor": 1
+    },
+    {
+        "ID": 109,
+        "name": "DJ_MNG00",
+        "file_index": 1647,
+        "area": "Kibombo Mountains",
+        "type": 1,
+        "MFT_index": 104,
+        "outdoor": 1
+    },
+    {
+        "ID": 110,
+        "name": "KBMB01",
+        "file_index": 1648,
+        "area": "Kibombo",
+        "type": 2,
+        "MFT_index": 105,
+        "outdoor": 1
+    },
+    {
+        "ID": 111,
+        "name": "KBMB10",
+        "file_index": 1648,
+        "area": "Kibombo",
+        "type": 2,
+        "MFT_index": 106,
+        "outdoor": 1
+    },
+    {
+        "ID": 112,
+        "name": "KB_ROOM",
+        "file_index": 1648,
+        "area": "Kibombo",
+        "type": 2,
+        "MFT_index": 109,
+        "outdoor": 0
+    },
+    {
+        "ID": 113,
+        "name": "KBMB01N",
+        "file_index": 1648,
+        "area": "Gabomba Statue",
+        "type": 2,
+        "MFT_index": 107,
+        "outdoor": 1
+    },
+    {
+        "ID": 114,
+        "name": "KBMB10N",
+        "file_index": 1648,
+        "area": "Gabomba Statue",
+        "type": 2,
+        "MFT_index": 108,
+        "outdoor": 1
+    },
+    {
+        "ID": 115,
+        "name": "DJ_GBM10",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 110,
+        "outdoor": 0
+    },
+    {
+        "ID": 116,
+        "name": "DJ_GBM20",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 111,
+        "outdoor": 0
+    },
+    {
+        "ID": 117,
+        "name": "DJ_GBM30",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 112,
+        "outdoor": 0
+    },
+    {
+        "ID": 118,
+        "name": "DJ_GBM40",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 113,
+        "outdoor": 0
+    },
+    {
+        "ID": 119,
+        "name": "DJ_GBM50",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 114,
+        "outdoor": 0
+    },
+    {
+        "ID": 120,
+        "name": "DJ_GBM60",
+        "file_index": 1650,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 115,
+        "outdoor": 0
+    },
+    {
+        "ID": 121,
+        "name": "DJ_GBM70",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 116,
+        "outdoor": 0
+    },
+    {
+        "ID": 122,
+        "name": "DJ_GBM6E",
+        "file_index": 1650,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 117,
+        "outdoor": 0
+    },
+    {
+        "ID": 123,
+        "name": "DJ_GBMB1",
+        "file_index": 1649,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 118,
+        "outdoor": 0
+    },
+    {
+        "ID": 124,
+        "name": "DJ_GBM1E",
+        "file_index": 1650,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 119,
+        "outdoor": 0
+    },
+    {
+        "ID": 125,
+        "name": "DJ_GBMUP",
+        "file_index": 1648,
+        "area": "Gabomba Catacombs",
+        "type": 1,
+        "MFT_index": 120,
+        "outdoor": 0
+    },
+    {
+        "ID": 126,
+        "name": "GANCHI01",
+        "file_index": 1651,
+        "area": "Lemurian Ship",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 127,
+        "name": "GANCHI02",
+        "file_index": 1651,
+        "area": "Lemurian Ship",
+        "type": 1,
+        "MFT_index": 122,
+        "outdoor": 0
+    },
+    {
+        "ID": 128,
+        "name": "GANCHI03",
+        "file_index": 1651,
+        "area": "Lemurian Ship",
+        "type": 1,
+        "MFT_index": 123,
+        "outdoor": 0
+    },
+    {
+        "ID": 129,
+        "name": "GANCHI04",
+        "file_index": 1651,
+        "area": "Lemurian Ship",
+        "type": 1,
+        "MFT_index": 124,
+        "outdoor": 0
+    },
+    {
+        "ID": 130,
+        "name": "GANCHI05",
+        "file_index": 1651,
+        "area": "Lemurian Ship",
+        "type": 1,
+        "MFT_index": 125,
+        "outdoor": 0
+    },
+    {
+        "ID": 131,
+        "name": "RITOU_01",
+        "file_index": 1652,
+        "area": "East Indra Shore",
+        "type": 2,
+        "MFT_index": 129,
+        "outdoor": 0
+    },
+    {
+        "ID": 132,
+        "name": "RITOU_02",
+        "file_index": 1652,
+        "area": "West Indra Islet",
+        "type": 2,
+        "MFT_index": 130,
+        "outdoor": 1
+    },
+    {
+        "ID": 133,
+        "name": "RITOU_03",
+        "file_index": 1652,
+        "area": "E Tundaria Islet",
+        "type": 2,
+        "MFT_index": 131,
+        "outdoor": 1
+    },
+    {
+        "ID": 134,
+        "name": "RITOU_04",
+        "file_index": 1652,
+        "area": "N Osenia Islet",
+        "type": 2,
+        "MFT_index": 129,
+        "outdoor": 0
+    },
+    {
+        "ID": 135,
+        "name": "RITOU_05",
+        "file_index": 1652,
+        "area": "SE Angara Islet",
+        "type": 2,
+        "MFT_index": 132,
+        "outdoor": 1
+    },
+    {
+        "ID": 136,
+        "name": "DJ_RITOU01",
+        "file_index": 1653,
+        "area": "Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 314,
+        "outdoor": 0
+    },
+    {
+        "ID": 137,
+        "name": "DJ_RITOUB2",
+        "file_index": 1653,
+        "area": "Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 315,
+        "outdoor": 0
+    },
+    {
+        "ID": 138,
+        "name": "DJ_RITOUB3",
+        "file_index": 1653,
+        "area": "Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 316,
+        "outdoor": 0
+    },
+    {
+        "ID": 139,
+        "name": "YARRAM00",
+        "file_index": 1654,
+        "area": "Yallam",
+        "type": 2,
+        "MFT_index": 133,
+        "outdoor": 1
+    },
+    {
+        "ID": 140,
+        "name": "YARRAMB1",
+        "file_index": 1654,
+        "area": "Yallam",
+        "type": 2,
+        "MFT_index": 136,
+        "outdoor": 1
+    },
+    {
+        "ID": 141,
+        "name": "YA_ROOM01",
+        "file_index": 1655,
+        "area": "Yallam",
+        "type": 2,
+        "MFT_index": 134,
+        "outdoor": 0
+    },
+    {
+        "ID": 142,
+        "name": "YA_ROOM02",
+        "file_index": 1655,
+        "area": "Yallam",
+        "type": 2,
+        "MFT_index": 135,
+        "outdoor": 0
+    },
+    {
+        "ID": 143,
+        "name": "TAUPO_00",
+        "file_index": 1656,
+        "area": "Taopo Swamp",
+        "type": 1,
+        "MFT_index": 137,
+        "outdoor": 1
+    },
+    {
+        "ID": 144,
+        "name": "TAUPO_01",
+        "file_index": 1656,
+        "area": "Taopo Swamp",
+        "type": 1,
+        "MFT_index": 138,
+        "outdoor": 0
+    },
+    {
+        "ID": 145,
+        "name": "TAUPO_T1",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 140,
+        "outdoor": 1
+    },
+    {
+        "ID": 146,
+        "name": "TAUPO_T2",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 141,
+        "outdoor": 1
+    },
+    {
+        "ID": 147,
+        "name": "TAUPO_T3",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 142,
+        "outdoor": 1
+    },
+    {
+        "ID": 148,
+        "name": "TAUPO_C1F",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 139,
+        "outdoor": 1
+    },
+    {
+        "ID": 149,
+        "name": "TAUPO_CB1",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 143,
+        "outdoor": 1
+    },
+    {
+        "ID": 150,
+        "name": "TAUPO_CB2",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 144,
+        "outdoor": 1
+    },
+    {
+        "ID": 151,
+        "name": "TAUPO_CB3",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 145,
+        "outdoor": 1
+    },
+    {
+        "ID": 152,
+        "name": "TAUPO_CB32",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 146,
+        "outdoor": 1
+    },
+    {
+        "ID": 153,
+        "name": "TAUPO_CB4",
+        "file_index": 1656,
+        "area": "E Sea of Time Islet",
+        "type": 1,
+        "MFT_index": 147,
+        "outdoor": 1
+    },
+    {
+        "ID": 154,
+        "name": "GRAPUS00",
+        "file_index": 1657,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 148,
+        "outdoor": 1
+    },
+    {
+        "ID": 155,
+        "name": "GRAPUSGF",
+        "file_index": 1657,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 149,
+        "outdoor": 1
+    },
+    {
+        "ID": 156,
+        "name": "GR_ROOM01",
+        "file_index": 1657,
+        "area": "Apojii Islands",
+        "type": 2,
+        "MFT_index": 150,
+        "outdoor": 0
+    },
+    {
+        "ID": 157,
+        "name": "GRAPUSDJ",
+        "file_index": 1658,
+        "area": "Apojii Islands Cave",
+        "type": 1,
+        "MFT_index": 151,
+        "outdoor": 1
+    },
+    {
+        "ID": 158,
+        "name": "AQUAR01",
+        "file_index": 1659,
+        "area": "Gaia Rock",
+        "type": 1,
+        "MFT_index": 152,
+        "outdoor": 0
+    },
+    {
+        "ID": 159,
+        "name": "AQUAR02",
+        "file_index": 1659,
+        "area": "Gaia Rock",
+        "type": 1,
+        "MFT_index": 153,
+        "outdoor": 0
+    },
+    {
+        "ID": 160,
+        "name": "ACA_001",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 154,
+        "outdoor": 0
+    },
+    {
+        "ID": 161,
+        "name": "ACA_002",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 155,
+        "outdoor": 0
+    },
+    {
+        "ID": 162,
+        "name": "ACA_003",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 156,
+        "outdoor": 0
+    },
+    {
+        "ID": 163,
+        "name": "ACA_004",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 157,
+        "outdoor": 0
+    },
+    {
+        "ID": 164,
+        "name": "ACA_005",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 158,
+        "outdoor": 0
+    },
+    {
+        "ID": 165,
+        "name": "ACA_006",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 159,
+        "outdoor": 0
+    },
+    {
+        "ID": 166,
+        "name": "ACA_007",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 160,
+        "outdoor": 0
+    },
+    {
+        "ID": 167,
+        "name": "ACA_008",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 161,
+        "outdoor": 0
+    },
+    {
+        "ID": 168,
+        "name": "ACA_009",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 162,
+        "outdoor": 0
+    },
+    {
+        "ID": 169,
+        "name": "ACA_010",
+        "file_index": 1660,
+        "area": "Aqua Rock",
+        "type": 1,
+        "MFT_index": 163,
+        "outdoor": 0
+    },
+    {
+        "ID": 170,
+        "name": "IZ_ROOM01",
+        "file_index": 1661,
+        "area": "Izumo",
+        "type": 2,
+        "MFT_index": 165,
+        "outdoor": 0
+    },
+    {
+        "ID": 171,
+        "name": "OTMP000D",
+        "file_index": 1662,
+        "area": "Izumo",
+        "type": 2,
+        "MFT_index": 164,
+        "outdoor": 1
+    },
+    {
+        "ID": 172,
+        "name": "IZUMO_B1",
+        "file_index": 1663,
+        "area": "Izumo Ruins",
+        "type": 1,
+        "MFT_index": 166,
+        "outdoor": 1
+    },
+    {
+        "ID": 173,
+        "name": "IZUMO_B2",
+        "file_index": 1663,
+        "area": "Izumo Ruins",
+        "type": 1,
+        "MFT_index": 167,
+        "outdoor": 1
+    },
+    {
+        "ID": 174,
+        "name": "GAIAR01",
+        "file_index": 1664,
+        "area": "SE Angara Islet",
+        "type": 1,
+        "MFT_index": 168,
+        "outdoor": 0
+    },
+    {
+        "ID": 175,
+        "name": "GAIAR02",
+        "file_index": 1664,
+        "area": "SE Angara Islet",
+        "type": 1,
+        "MFT_index": 169,
+        "outdoor": 0
+    },
+    {
+        "ID": 176,
+        "name": "GAIAR03",
+        "file_index": 1664,
+        "area": "SE Angara Islet",
+        "type": 1,
+        "MFT_index": 170,
+        "outdoor": 0
+    },
+    {
+        "ID": 177,
+        "name": "GR_MAZE",
+        "file_index": 1665,
+        "area": "West Indra Islet",
+        "type": 1,
+        "MFT_index": 171,
+        "outdoor": 0
+    },
+    {
+        "ID": 178,
+        "name": "GR_01",
+        "file_index": 1665,
+        "area": "West Indra Islet",
+        "type": 1,
+        "MFT_index": 172,
+        "outdoor": 0
+    },
+    {
+        "ID": 179,
+        "name": "GR_02",
+        "file_index": 1665,
+        "area": "West Indra Islet",
+        "type": 1,
+        "MFT_index": 173,
+        "outdoor": 0
+    },
+    {
+        "ID": 180,
+        "name": "GR_02_2",
+        "file_index": 1665,
+        "area": "West Indra Islet",
+        "type": 1,
+        "MFT_index": 174,
+        "outdoor": 0
+    },
+    {
+        "ID": 181,
+        "name": "GR_03",
+        "file_index": 1665,
+        "area": "West Indra Islet",
+        "type": 1,
+        "MFT_index": 175,
+        "outdoor": 0
+    },
+    {
+        "ID": 182,
+        "name": "OTMP000B",
+        "file_index": 1666,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 176,
+        "outdoor": 1
+    },
+    {
+        "ID": 183,
+        "name": "CH_ROOM01",
+        "file_index": 1667,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 177,
+        "outdoor": 0
+    },
+    {
+        "ID": 184,
+        "name": "CH_SINDEN",
+        "file_index": 1668,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 182,
+        "outdoor": 0
+    },
+    {
+        "ID": 185,
+        "name": "CHAM_1",
+        "file_index": 1669,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 178,
+        "outdoor": 0
+    },
+    {
+        "ID": 186,
+        "name": "CHAM_2",
+        "file_index": 1669,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 179,
+        "outdoor": 0
+    },
+    {
+        "ID": 187,
+        "name": "CHAM_3",
+        "file_index": 1669,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 180,
+        "outdoor": 0
+    },
+    {
+        "ID": 188,
+        "name": "CHAM_4",
+        "file_index": 1669,
+        "area": "Champa",
+        "type": 2,
+        "MFT_index": 181,
+        "outdoor": 0
+    },
+    {
+        "ID": 189,
+        "name": "ANGKOR01",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 186,
+        "outdoor": 0
+    },
+    {
+        "ID": 190,
+        "name": "ANGKOR02",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 187,
+        "outdoor": 0
+    },
+    {
+        "ID": 191,
+        "name": "ANGKOR03",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 188,
+        "outdoor": 0
+    },
+    {
+        "ID": 192,
+        "name": "ANGKOR04",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 189,
+        "outdoor": 0
+    },
+    {
+        "ID": 193,
+        "name": "ANGKOR05",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 190,
+        "outdoor": 0
+    },
+    {
+        "ID": 194,
+        "name": "ANGKOR09",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 191,
+        "outdoor": 0
+    },
+    {
+        "ID": 195,
+        "name": "ANGKOR_O",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 192,
+        "outdoor": 1
+    },
+    {
+        "ID": 196,
+        "name": "ANGKOR_T",
+        "file_index": 1670,
+        "area": "Sea of Time",
+        "type": 1,
+        "MFT_index": 193,
+        "outdoor": 0
+    },
+    {
+        "ID": 197,
+        "name": "OTMP0009",
+        "file_index": 1671,
+        "area": "Ankohl Ruins",
+        "type": 1,
+        "MFT_index": 183,
+        "outdoor": 0
+    },
+    {
+        "ID": 198,
+        "name": "OTMP000A",
+        "file_index": 1671,
+        "area": "Ankohl Ruins",
+        "type": 1,
+        "MFT_index": 184,
+        "outdoor": 0
+    },
+    {
+        "ID": 199,
+        "name": "REM_D",
+        "file_index": 1672,
+        "area": "Ancient Lemuria",
+        "type": 2,
+        "MFT_index": 195,
+        "outdoor": 0
+    },
+    {
+        "ID": 200,
+        "name": "TEIHAKU",
+        "file_index": 1673,
+        "area": "Ancient Lemuria",
+        "type": 2,
+        "MFT_index": 194,
+        "outdoor": 0
+    },
+    {
+        "ID": 201,
+        "name": "REM_OLD",
+        "file_index": 1674,
+        "area": "Ancient Lemuria",
+        "type": 2,
+        "MFT_index": 197,
+        "outdoor": 1
+    },
+    {
+        "ID": 202,
+        "name": "REMURIA",
+        "file_index": 1675,
+        "area": "Lemuria",
+        "type": 2,
+        "MFT_index": 196,
+        "outdoor": 1
+    },
+    {
+        "ID": 203,
+        "name": "REM_ROOM",
+        "file_index": 1676,
+        "area": "Lemuria",
+        "type": 2,
+        "MFT_index": 199,
+        "outdoor": 0
+    },
+    {
+        "ID": 204,
+        "name": "REM_CAS",
+        "file_index": 1677,
+        "area": "Lemuria",
+        "type": 2,
+        "MFT_index": 198,
+        "outdoor": 0
+    },
+    {
+        "ID": 205,
+        "name": "REM_IZU",
+        "file_index": 1678,
+        "area": "Lemuria",
+        "type": 2,
+        "MFT_index": 200,
+        "outdoor": 0
+    },
+    {
+        "ID": 206,
+        "name": "SOUTH_O",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 206,
+        "outdoor": 1
+    },
+    {
+        "ID": 207,
+        "name": "SOUTH01",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 201,
+        "outdoor": 0
+    },
+    {
+        "ID": 208,
+        "name": "SOUTH02",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 202,
+        "outdoor": 0
+    },
+    {
+        "ID": 209,
+        "name": "SOUTH03",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 203,
+        "outdoor": 0
+    },
+    {
+        "ID": 210,
+        "name": "SOUTH04",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 204,
+        "outdoor": 0
+    },
+    {
+        "ID": 211,
+        "name": "SOUTH05",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 205,
+        "outdoor": 0
+    },
+    {
+        "ID": 212,
+        "name": "SOUTH_T",
+        "file_index": 1679,
+        "area": "Tundaria Tower",
+        "type": 1,
+        "MFT_index": 207,
+        "outdoor": 0
+    },
+    {
+        "ID": 213,
+        "name": "GND_KOYA",
+        "file_index": 1680,
+        "area": "SW Atteka Islet",
+        "type": 2,
+        "MFT_index": 210,
+        "outdoor": 1
+    },
+    {
+        "ID": 214,
+        "name": "GND_ROOM",
+        "file_index": 1680,
+        "area": "SW Atteka Islet",
+        "type": 2,
+        "MFT_index": 99,
+        "outdoor": 0
+    },
+    {
+        "ID": 215,
+        "name": "GND_DJ",
+        "file_index": 1680,
+        "area": "SW Atteka Islet",
+        "type": 2,
+        "MFT_index": 208,
+        "outdoor": 1
+    },
+    {
+        "ID": 216,
+        "name": "HES_KOYA",
+        "file_index": 1680,
+        "area": "Gondowan Settlement",
+        "type": 2,
+        "MFT_index": 211,
+        "outdoor": 1
+    },
+    {
+        "ID": 217,
+        "name": "HES_ROOM",
+        "file_index": 1680,
+        "area": "Gondowan Settlement",
+        "type": 2,
+        "MFT_index": 135,
+        "outdoor": 0
+    },
+    {
+        "ID": 218,
+        "name": "HES_DJ",
+        "file_index": 1680,
+        "area": "Gondowan Settlement",
+        "type": 2,
+        "MFT_index": 208,
+        "outdoor": 1
+    },
+    {
+        "ID": 219,
+        "name": "KLT_KOYA",
+        "file_index": 1680,
+        "area": "Hesperia Settlement",
+        "type": 2,
+        "MFT_index": 212,
+        "outdoor": 1
+    },
+    {
+        "ID": 220,
+        "name": "KLT_ROOM",
+        "file_index": 1680,
+        "area": "Hesperia Settlement",
+        "type": 2,
+        "MFT_index": 213,
+        "outdoor": 0
+    },
+    {
+        "ID": 221,
+        "name": "SEA_KOYA",
+        "file_index": 1680,
+        "area": "Kalt Island",
+        "type": 2,
+        "MFT_index": 209,
+        "outdoor": 1
+    },
+    {
+        "ID": 222,
+        "name": "SEA_ROOM",
+        "file_index": 1680,
+        "area": "Kalt Island",
+        "type": 2,
+        "MFT_index": 177,
+        "outdoor": 0
+    },
+    {
+        "ID": 223,
+        "name": "MAGMA01",
+        "file_index": 1681,
+        "area": "Magma Rock",
+        "type": 1,
+        "MFT_index": 214,
+        "outdoor": 0
+    },
+    {
+        "ID": 224,
+        "name": "MAGMA02",
+        "file_index": 1681,
+        "area": "Magma Rock",
+        "type": 1,
+        "MFT_index": 215,
+        "outdoor": 0
+    },
+    {
+        "ID": 225,
+        "name": "MAGMA03",
+        "file_index": 1681,
+        "area": "Magma Rock",
+        "type": 1,
+        "MFT_index": 216,
+        "outdoor": 0
+    },
+    {
+        "ID": 226,
+        "name": "MAGR_01",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 217,
+        "outdoor": 0
+    },
+    {
+        "ID": 227,
+        "name": "MAGR_02",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 218,
+        "outdoor": 0
+    },
+    {
+        "ID": 228,
+        "name": "MAGR_03",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 219,
+        "outdoor": 0
+    },
+    {
+        "ID": 229,
+        "name": "MAGR_04",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 220,
+        "outdoor": 0
+    },
+    {
+        "ID": 230,
+        "name": "MAGR_05",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 221,
+        "outdoor": 0
+    },
+    {
+        "ID": 231,
+        "name": "MAGR_06",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 222,
+        "outdoor": 0
+    },
+    {
+        "ID": 232,
+        "name": "MAGR_07",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 223,
+        "outdoor": 0
+    },
+    {
+        "ID": 233,
+        "name": "MAGR_08",
+        "file_index": 1682,
+        "area": "Atteka Inlet",
+        "type": 1,
+        "MFT_index": 224,
+        "outdoor": 0
+    },
+    {
+        "ID": 234,
+        "name": "ATK_IRIE",
+        "file_index": 1683,
+        "area": "Shaman Village Cave",
+        "type": 2,
+        "MFT_index": 225,
+        "outdoor": 1
+    },
+    {
+        "ID": 235,
+        "name": "OTMP0011",
+        "file_index": 1683,
+        "area": "Shaman Village Cave",
+        "type": 2,
+        "MFT_index": 226,
+        "outdoor": 1
+    },
+    {
+        "ID": 236,
+        "name": "OTMP0012",
+        "file_index": 1684,
+        "area": "Shaman Village",
+        "type": 2,
+        "MFT_index": 227,
+        "outdoor": 1
+    },
+    {
+        "ID": 237,
+        "name": "GIA_ROOM01",
+        "file_index": 1684,
+        "area": "Shaman Village",
+        "type": 2,
+        "MFT_index": 228,
+        "outdoor": 0
+    },
+    {
+        "ID": 238,
+        "name": "GIA_ROOM02",
+        "file_index": 1684,
+        "area": "Shaman Village",
+        "type": 2,
+        "MFT_index": 229,
+        "outdoor": 0
+    },
+    {
+        "ID": 239,
+        "name": "OTMP0013",
+        "file_index": 1684,
+        "area": "Trial Road",
+        "type": 2,
+        "MFT_index": 227,
+        "outdoor": 1
+    },
+    {
+        "ID": 240,
+        "name": "DJ_SYMN00",
+        "file_index": 1685,
+        "area": "Atteka Inlet",
+        "type": 2,
+        "MFT_index": 230,
+        "outdoor": 1
+    },
+    {
+        "ID": 241,
+        "name": "SHARMAN01",
+        "file_index": 1686,
+        "area": "Contigo",
+        "type": 1,
+        "MFT_index": 231,
+        "outdoor": 1
+    },
+    {
+        "ID": 242,
+        "name": "SHARMAN00",
+        "file_index": 1686,
+        "area": "Contigo",
+        "type": 1,
+        "MFT_index": 232,
+        "outdoor": 1
+    },
+    {
+        "ID": 243,
+        "name": "SHARMAN0A",
+        "file_index": 1686,
+        "area": "Contigo",
+        "type": 1,
+        "MFT_index": 233,
+        "outdoor": 1
+    },
+    {
+        "ID": 244,
+        "name": "SHA_ROOM01",
+        "file_index": 1686,
+        "area": "Contigo",
+        "type": 1,
+        "MFT_index": 234,
+        "outdoor": 0
+    },
+    {
+        "ID": 245,
+        "name": "SHA_ROOM02",
+        "file_index": 1686,
+        "area": "Contigo",
+        "type": 1,
+        "MFT_index": 235,
+        "outdoor": 0
+    },
+    {
+        "ID": 246,
+        "name": "SHA_SINDEN",
+        "file_index": 1686,
+        "area": "Contigo",
+        "type": 1,
+        "MFT_index": 236,
+        "outdoor": 0
+    },
+    {
+        "ID": 247,
+        "name": "TRYROAD_00",
+        "file_index": 1687,
+        "area": "Anemos Sanctum",
+        "type": 1,
+        "MFT_index": 243,
+        "outdoor": 1
+    },
+    {
+        "ID": 248,
+        "name": "TRYROAD_03",
+        "file_index": 1687,
+        "area": "Anemos Sanctum",
+        "type": 1,
+        "MFT_index": 246,
+        "outdoor": 1
+    },
+    {
+        "ID": 249,
+        "name": "TRYROAD_01",
+        "file_index": 1687,
+        "area": "Jupiter Lighthouse",
+        "type": 1,
+        "MFT_index": 244,
+        "outdoor": 1
+    },
+    {
+        "ID": 250,
+        "name": "TRYROAD_02",
+        "file_index": 1687,
+        "area": "Jupiter Lighthouse",
+        "type": 1,
+        "MFT_index": 245,
+        "outdoor": 1
+    },
+    {
+        "ID": 251,
+        "name": "JTO_E",
+        "file_index": 1688,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 247,
+        "outdoor": 0
+    },
+    {
+        "ID": 252,
+        "name": "JTOB1",
+        "file_index": 1689,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 248,
+        "outdoor": 1
+    },
+    {
+        "ID": 253,
+        "name": "JTO_CR",
+        "file_index": 1689,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 249,
+        "outdoor": 0
+    },
+    {
+        "ID": 254,
+        "name": "JTO01",
+        "file_index": 1690,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 250,
+        "outdoor": 0
+    },
+    {
+        "ID": 255,
+        "name": "JTO02",
+        "file_index": 1691,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 251,
+        "outdoor": 0
+    },
+    {
+        "ID": 256,
+        "name": "JTO03",
+        "file_index": 1692,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 252,
+        "outdoor": 0
+    },
+    {
+        "ID": 257,
+        "name": "JTO04",
+        "file_index": 1693,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 253,
+        "outdoor": 0
+    },
+    {
+        "ID": 258,
+        "name": "JTO05",
+        "file_index": 1694,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 254,
+        "outdoor": 0
+    },
+    {
+        "ID": 259,
+        "name": "JTO06",
+        "file_index": 1695,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 255,
+        "outdoor": 0
+    },
+    {
+        "ID": 260,
+        "name": "JTO07",
+        "file_index": 1696,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 256,
+        "outdoor": 0
+    },
+    {
+        "ID": 261,
+        "name": "JTO08",
+        "file_index": 1697,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 257,
+        "outdoor": 0
+    },
+    {
+        "ID": 262,
+        "name": "JTO09",
+        "file_index": 1698,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 258,
+        "outdoor": 0
+    },
+    {
+        "ID": 263,
+        "name": "JTO_M",
+        "file_index": 1699,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 259,
+        "outdoor": 0
+    },
+    {
+        "ID": 264,
+        "name": "JTO_T",
+        "file_index": 1700,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 260,
+        "outdoor": 0
+    },
+    {
+        "ID": 265,
+        "name": "JTO_T2",
+        "file_index": 1701,
+        "area": "Loho",
+        "type": 1,
+        "MFT_index": 260,
+        "outdoor": 0
+    },
+    {
+        "ID": 266,
+        "name": "ROOFO",
+        "file_index": 1702,
+        "area": "Northern Reaches",
+        "type": 2,
+        "MFT_index": 261,
+        "outdoor": 1
+    },
+    {
+        "ID": 267,
+        "name": "RO_ROOM",
+        "file_index": 1702,
+        "area": "Northern Reaches",
+        "type": 2,
+        "MFT_index": 262,
+        "outdoor": 0
+    },
+    {
+        "ID": 268,
+        "name": "KITA_UMI",
+        "file_index": 1703,
+        "area": "Prox",
+        "type": 1,
+        "MFT_index": 263,
+        "outdoor": 0
+    },
+    {
+        "ID": 269,
+        "name": "PROX_A",
+        "file_index": 1704,
+        "area": "Indra Cavern",
+        "type": 2,
+        "MFT_index": 264,
+        "outdoor": 1
+    },
+    {
+        "ID": 270,
+        "name": "PROX_B",
+        "file_index": 1704,
+        "area": "Indra Cavern",
+        "type": 2,
+        "MFT_index": 265,
+        "outdoor": 1
+    },
+    {
+        "ID": 271,
+        "name": "PROX_C",
+        "file_index": 1704,
+        "area": "Indra Cavern",
+        "type": 2,
+        "MFT_index": 266,
+        "outdoor": 1
+    },
+    {
+        "ID": 272,
+        "name": "PRO_ROOM01",
+        "file_index": 1704,
+        "area": "Indra Cavern",
+        "type": 2,
+        "MFT_index": 267,
+        "outdoor": 0
+    },
+    {
+        "ID": 273,
+        "name": "PRO_ROOM02",
+        "file_index": 1704,
+        "area": "Indra Cavern",
+        "type": 2,
+        "MFT_index": 268,
+        "outdoor": 0
+    },
+    {
+        "ID": 274,
+        "name": "PRO_SINDEN",
+        "file_index": 1704,
+        "area": "Indra Cavern",
+        "type": 2,
+        "MFT_index": 269,
+        "outdoor": 0
+    },
+    {
+        "ID": 275,
+        "name": "DJ_IND",
+        "file_index": 1705,
+        "area": "Osenia Cavern",
+        "type": 1,
+        "MFT_index": 317,
+        "outdoor": 1
+    },
+    {
+        "ID": 276,
+        "name": "DJ_OSE",
+        "file_index": 1705,
+        "area": "Angara Cavern",
+        "type": 1,
+        "MFT_index": 318,
+        "outdoor": 1
+    },
+    {
+        "ID": 277,
+        "name": "DJ_ATK",
+        "file_index": 1705,
+        "area": "Atteka Cavern",
+        "type": 1,
+        "MFT_index": 167,
+        "outdoor": 1
+    },
+    {
+        "ID": 278,
+        "name": "DJ_ANG",
+        "file_index": 1705,
+        "area": "Islet Cave",
+        "type": 1,
+        "MFT_index": 319,
+        "outdoor": 1
+    },
+    {
+        "ID": 279,
+        "name": "MAR_E",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 270,
+        "outdoor": 0
+    },
+    {
+        "ID": 280,
+        "name": "MAR_O04",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 278,
+        "outdoor": 0
+    },
+    {
+        "ID": 281,
+        "name": "MAR_O05",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 279,
+        "outdoor": 0
+    },
+    {
+        "ID": 282,
+        "name": "MAR_O06",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 280,
+        "outdoor": 0
+    },
+    {
+        "ID": 283,
+        "name": "MAR_O07",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 281,
+        "outdoor": 0
+    },
+    {
+        "ID": 284,
+        "name": "MAR_O08",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 282,
+        "outdoor": 0
+    },
+    {
+        "ID": 285,
+        "name": "MAR_O09",
+        "file_index": 1706,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 283,
+        "outdoor": 0
+    },
+    {
+        "ID": 286,
+        "name": "MAR_KB3",
+        "file_index": 1707,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 284,
+        "outdoor": 0
+    },
+    {
+        "ID": 287,
+        "name": "MAR_O03",
+        "file_index": 1708,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 277,
+        "outdoor": 0
+    },
+    {
+        "ID": 288,
+        "name": "MAR_M01",
+        "file_index": 1708,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 285,
+        "outdoor": 0
+    },
+    {
+        "ID": 289,
+        "name": "MAR_M02",
+        "file_index": 1708,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 286,
+        "outdoor": 0
+    },
+    {
+        "ID": 290,
+        "name": "MAR_M03",
+        "file_index": 1708,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 287,
+        "outdoor": 0
+    },
+    {
+        "ID": 291,
+        "name": "MAR_M04",
+        "file_index": 1708,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 288,
+        "outdoor": 0
+    },
+    {
+        "ID": 292,
+        "name": "MAR_F01",
+        "file_index": 1709,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 271,
+        "outdoor": 0
+    },
+    {
+        "ID": 293,
+        "name": "MAR_F02",
+        "file_index": 1709,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 272,
+        "outdoor": 0
+    },
+    {
+        "ID": 294,
+        "name": "MAR_F03",
+        "file_index": 1709,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 273,
+        "outdoor": 0
+    },
+    {
+        "ID": 295,
+        "name": "MAR_F04",
+        "file_index": 1709,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 274,
+        "outdoor": 0
+    },
+    {
+        "ID": 296,
+        "name": "MAR_O02",
+        "file_index": 1708,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 276,
+        "outdoor": 0
+    },
+    {
+        "ID": 297,
+        "name": "MAR_O01",
+        "file_index": 1710,
+        "area": "Mars Lighthouse",
+        "type": 1,
+        "MFT_index": 275,
+        "outdoor": 0
+    },
+    {
+        "ID": 298,
+        "name": "TAKARA00",
+        "file_index": 1711,
+        "area": "Treasure Isle",
+        "type": 1,
+        "MFT_index": 309,
+        "outdoor": 1
+    },
+    {
+        "ID": 299,
+        "name": "TAKARA01",
+        "file_index": 1711,
+        "area": "Treasure Isle",
+        "type": 1,
+        "MFT_index": 310,
+        "outdoor": 1
+    },
+    {
+        "ID": 300,
+        "name": "TAKARA02",
+        "file_index": 1711,
+        "area": "Treasure Isle",
+        "type": 1,
+        "MFT_index": 311,
+        "outdoor": 1
+    },
+    {
+        "ID": 301,
+        "name": "TAKARA03",
+        "file_index": 1711,
+        "area": "Treasure Isle",
+        "type": 1,
+        "MFT_index": 312,
+        "outdoor": 1
+    },
+    {
+        "ID": 302,
+        "name": "TAKARA04",
+        "file_index": 1711,
+        "area": "Treasure Isle",
+        "type": 1,
+        "MFT_index": 313,
+        "outdoor": 1
+    },
+    {
+        "ID": 303,
+        "name": "ANEMOS01",
+        "file_index": 1712,
+        "area": "Anemos Inner Sanctum",
+        "type": 1,
+        "MFT_index": 237,
+        "outdoor": 0
+    },
+    {
+        "ID": 304,
+        "name": "ANEMOS02",
+        "file_index": 1712,
+        "area": "Anemos Inner Sanctum",
+        "type": 1,
+        "MFT_index": 238,
+        "outdoor": 0
+    },
+    {
+        "ID": 305,
+        "name": "ANEMOS03",
+        "file_index": 1712,
+        "area": "Anemos Inner Sanctum",
+        "type": 1,
+        "MFT_index": 239,
+        "outdoor": 0
+    },
+    {
+        "ID": 306,
+        "name": "ANEMOS04",
+        "file_index": 1712,
+        "area": "Anemos Inner Sanctum",
+        "type": 1,
+        "MFT_index": 240,
+        "outdoor": 0
+    },
+    {
+        "ID": 307,
+        "name": "ANEMOS05",
+        "file_index": 1712,
+        "area": "Anemos Inner Sanctum",
+        "type": 1,
+        "MFT_index": 241,
+        "outdoor": 0
+    },
+    {
+        "ID": 308,
+        "name": "ANEMOS06",
+        "file_index": 1713,
+        "area": "Anemos Inner Sanctum",
+        "type": 1,
+        "MFT_index": 242,
+        "outdoor": 0
+    },
+    {
+        "ID": 309,
+        "name": "MTO05",
+        "file_index": 1714,
+        "area": "Mercury Lighthouse",
+        "type": 2,
+        "MFT_index": 308,
+        "outdoor": 0
+    },
+    {
+        "ID": 310,
+        "name": "EPILOGUE",
+        "file_index": 1715,
+        "area": "Epilogue",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 311,
+        "name": "ALFA_00",
+        "file_index": 1716,
+        "area": "Mt. Aleph Summit",
+        "type": 1,
+        "MFT_index": 320,
+        "outdoor": 0
+    },
+    {
+        "ID": 312,
+        "name": "ROUNGE",
+        "file_index": 1717,
+        "area": "Link Lobby",
+        "type": 2,
+        "MFT_index": 2,
+        "outdoor": 0
+    },
+    {
+        "ID": 313,
+        "name": "TEST0",
+        "file_index": 1718,
+        "area": "Test 0",
+        "type": 1,
+        "MFT_index": 324,
+        "outdoor": 1
+    },
+    {
+        "ID": 314,
+        "name": "TEST1",
+        "file_index": 1718,
+        "area": "Test 1",
+        "type": 1,
+        "MFT_index": 325,
+        "outdoor": 1
+    },
+    {
+        "ID": 315,
+        "name": "TEST2",
+        "file_index": 1718,
+        "area": "Test 2",
+        "type": 1,
+        "MFT_index": 326,
+        "outdoor": 1
+    },
+    {
+        "ID": 316,
+        "name": "TEST3",
+        "file_index": 1718,
+        "area": "Test 3",
+        "type": 1,
+        "MFT_index": 327,
+        "outdoor": 1
+    },
+    {
+        "ID": 317,
+        "name": "TEST4",
+        "file_index": 1718,
+        "area": "Test 4",
+        "type": 1,
+        "MFT_index": 328,
+        "outdoor": 1
+    },
+    {
+        "ID": 318,
+        "name": "TEST5",
+        "file_index": 1718,
+        "area": "Test 5",
+        "type": 1,
+        "MFT_index": 329,
+        "outdoor": 1
+    },
+    {
+        "ID": 319,
+        "name": "TEST6",
+        "file_index": 1718,
+        "area": "Test 6",
+        "type": 1,
+        "MFT_index": 330,
+        "outdoor": 1
+    },
+    {
+        "ID": 320,
+        "name": "TEST7",
+        "file_index": 1718,
+        "area": "Test 7",
+        "type": 1,
+        "MFT_index": 331,
+        "outdoor": 1
+    },
+    {
+        "ID": 321,
+        "name": "GET_ITEM",
+        "file_index": 1719,
+        "area": "Face Test",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 322,
+        "name": "YAMTEST",
+        "file_index": 1720,
+        "area": "Icon Test",
+        "type": 1,
+        "MFT_index": 322,
+        "outdoor": 0
+    },
+    {
+        "ID": 323,
+        "name": "YAMTEST2",
+        "file_index": 1721,
+        "area": "Psynergy Test",
+        "type": 1,
+        "MFT_index": 322,
+        "outdoor": 0
+    },
+    {
+        "ID": 324,
+        "name": "SHOPTEST",
+        "file_index": 1722,
+        "area": "Psynergy Test 2",
+        "type": 1,
+        "MFT_index": 323,
+        "outdoor": 0
+    }
+]

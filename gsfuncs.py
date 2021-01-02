@@ -1,6 +1,7 @@
 import re
 import io
 import json
+import bisect
 import utilities
 from utilities import command, DataTables, UserData, Namemaps, Text, reply
 
@@ -141,8 +142,8 @@ def readsav(data):
         version = build_dates[read(0x26, 2) & ~0x8000]
         if "The Lost Age" in version: offset = 0x20
         else: offset = 0
-        party_size = sum((1 if read(0x40, 1) & 2**i else 0 for i in range(8)))
-        positions = [read(0x438+offset + i, 1) for i in range(party_size)]
+        party_size = sum((1 if read(0x40, 1) & 2**j else 0 for j in range(8)))
+        positions = [read(0x438+offset + j, 1) for j in range(party_size)]
         addresses = [0x500+offset + 0x14C*p for p in positions]
         filedata.append({
             "version": version,
@@ -151,10 +152,15 @@ def readsav(data):
             "framecount": read(0x244, 4),
             "summons": read(0x24C, 4),
             "coins": read(0x250, 4),
+            "map_number": read(0x400+offset, 2),
+            "door_number": read(0x402+offset, 2),
+            "leader": read(0x434+offset, 1),
             "party_positions": positions,
             "party": [{
-                "name": [read(base+i, 1) for i in range(15)],
+                "name": [read(base+j, 1) for j in range(15)],
                 "level": read(base+0xF, 1),
+                "position": p,
+                "element": [0,2,3,1,0,2,3,1][p],
                 "base_stats": {
                     "HP": read(base+0x10, 2),
                     "PP": read(base+0x12, 2),
@@ -197,7 +203,7 @@ def readsav(data):
                 "set_djinncounts": [read(base+0x11C+j, 1) for j in range(4)],
                 "exp": read(base+0x124, 4),
                 "class": read(base+0x129, 1),
-            } for base in addresses],
+            } for p,base in zip(positions, addresses)],
         })
     partysummons = 0
     partydjinn = 0
@@ -205,10 +211,11 @@ def readsav(data):
     for f in filedata:
         f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
         f["summons"] = [Text["summons"][i] for i in range(33) if f["summons"] & 2**i]
+        f["area"] = DataTables["mapdata"][f["map_number"]]["area"]
+        print(f["leader"])
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:
             pc["name"] = "".join([chr(c) for c in pc["name"] if c])
-            pc["element"] = [0,2,3,1,0,2,3,1][Text["pcnames"].index(pc["name"])]
             pc["element"] = Text["elements"][pc["element"]]
             pc["abilities"] = [Text["abilities"][i & 0x3FF] for i in pc["abilities"] if i & 0x3FF]
             pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
@@ -217,7 +224,6 @@ def readsav(data):
                 if v & 1<<9: metadata.append("equipped")
                 if v & 1<<10: metadata.append("broken")
                 pc["inventory"][k] = metadata
-            pc["djinncounts"] = [sum((e>>i & 1 for i in range(20))) for e in pc["djinn"]]
             for i, count in enumerate(pc["djinncounts"]):
                 djinncounts[i] += count
             pc["class"] = Text["classes"][pc["class"]]
@@ -231,6 +237,8 @@ def readsav(data):
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
         seconds %= 60; minutes %= 60
         f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
+        for pc in f["party"]:
+            if pc["position"] == f["leader"]: f["leader"] = pc["name"]; break
         f["djinncounts"] = djinncounts
     return filedata
 
@@ -239,6 +247,18 @@ def preview(data):
     filedata = readsav(data)
     pages = {}
     slots = []
+    used_slots = [f["slot"] for f in filedata]
+    preview = utilities.Charmap()
+    preview.addtext(filedata[0]["version"], (0,0))
+    leaders, areas = [], []
+    maxname = max((len(f["leader"]) for f in filedata))
+    maxarea = max((len(f["area"]) for f in filedata))
+    for i in range(3):
+        if i not in used_slots:
+            preview.addtext(f"{i}  {'':-<{maxname}}  {'':-<{maxarea}}", (0, 2+i))
+        else:
+            f = next(filter(lambda x: x["slot"]==i, filedata))
+            preview.addtext(f"{i}  {f['leader']:<{maxname}}  {f['area']:<{maxarea}}", (0, 2+i))
     for f in filedata:
         slot = {}
         slot["slot"] = f["slot"]
@@ -246,15 +266,10 @@ def preview(data):
         slot["coins"] = f["coins"]
         slot["djinn"] = [f["djinncounts"]]
         slot[""] = ""
-        maxlen = max((len(pc["name"])+4 for pc in f["party"]))
-        for s in slot.values():
-            if hasattr(s, "__iter__") and not isinstance(s, (str, bytes)):
-                maxlen = max(maxlen, *(len(str(i)) for i in s))
-            else:
-                maxlen = max(maxlen, len(str(s)))
+        maxlen = max(len(str(f["djinncounts"])), *(len(pc["name"])+4 for pc in f["party"]))
         slot["PCs"] = [f"{pc['name']:<{maxlen-4}}{pc['level']:>4}" for pc in f["party"]]
         slots.append(slot)
-    preview = f["version"] + "\n" + utilities.tableV(slots)
+    preview.addtext(utilities.tableV(slots), (0,6))
     pages["preview"] = f"```\n{preview}\n```"
     for f in filedata:
         slot = f["slot"]

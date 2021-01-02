@@ -209,6 +209,19 @@ with open(ROM, "rb") as f:
             "group_ratios": [read(1) for i in range(8)],
         })
 
+    f.seek(0x0F17A8)  # map table
+    mapdata = []
+    for i in range(325):
+        mapdata.append({
+            "ID": i,
+            "name": maps[i],
+            "file_index": read(2),
+            "area": areas[read(1)],
+            "type": read(1),
+            "MFT_index": read(2),
+            "outdoor": read(2),
+        })
+
     f.seek(0x12CE7C)  # enemy group data
     enemygroupdata = []
     for i in range(660):
@@ -316,6 +329,6 @@ for group in enemygroupdata:
 
 for name in [
         "djinndata", "enemydata", "itemdata", "abilitydata", "pcdata", "summondata",
-        "classdata", "elementdata", "enemygroupdata", "encounterdata"
+        "classdata", "elementdata", "encounterdata", "mapdata", "enemygroupdata"
     ]:
     with open(f"data/{name}.json", "w") as f: json.dump(globals()[name], f, indent=4)
