@@ -212,7 +212,6 @@ def readsav(data):
         f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
         f["summons"] = [Text["summons"][i] for i in range(33) if f["summons"] & 2**i]
         f["area"] = DataTables["mapdata"][f["map_number"]]["area"]
-        print(f["leader"])
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:
             pc["name"] = "".join([chr(c) for c in pc["name"] if c])
@@ -262,7 +261,7 @@ def preview(data):
     for f in filedata:
         slot = {}
         slot["slot"] = f["slot"]
-        slot["playtime"] = f["playtime"]
+        slot["time"] = f["playtime"]
         slot["coins"] = f["coins"]
         slot["djinn"] = [f["djinncounts"]]
         slot[""] = ""

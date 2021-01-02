@@ -181,6 +181,7 @@ def dictstr(dictionary, js=False, maxwidth=78):
 
 
 def tableH(dictlist, fields=None, spacing=1, border=None, headers=True):
+    if not dictlist: return ""
     fields = fields or dictlist[0].keys()
     for f in fields:
         for d in dictlist:
