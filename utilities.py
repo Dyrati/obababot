@@ -48,7 +48,7 @@ def load_text():
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
     text["elements"] = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
     mtoken = re.compile(r"{\d*}")
-    with open(r"text/GStext.txt") as f:
+    with open(r"text/GS2text.txt") as f:
         lines = f.read().splitlines()
         text["item_descriptions"] = lines[146:607]
         lines = list(map(lambda x: mtoken.sub("", x), lines))

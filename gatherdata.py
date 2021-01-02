@@ -307,7 +307,6 @@ for class_ in classdata:
 for entry in elementdata:
     entry.pop("unused")
 
-
 # Djinn
 for djinni in djinndata:
     djinni.pop("unused")
