@@ -31,12 +31,6 @@ def is_command(message):
     return False
 
 
-def to_async(func):
-    async def inner(*args, **kwargs):
-        return func(*args, **kwargs)
-    return inner
-
-
 async def reply(message, text):
     ID = message.author.id
     if UserData[ID].temp.get("raw"):
@@ -251,6 +245,12 @@ class Charmap:
         return max(xmax, x-1), y
     def __str__(self):
         return "\n".join(("".join(row) for row in self.charmap))
+
+
+def to_async(func):
+    async def inner(*args, **kwargs):
+        return func(*args, **kwargs)
+    return inner
 
 
 class User:

@@ -23,10 +23,12 @@ $delete      Delete the last message(s) sent to you by obaba this session
  - in help-strings, if you see `*argument`, that means that all of the remaining space-separated words  
    become a part of this argument
  
-**Keyword** arguments have the form `key=value` and are optional
+**Keyword arguments** have the form `key=value` and are optional
  - `$sort enemydata HP range=30 fields="HP, PP, ATK, DEF"`
  - `value` cannot have spaces, unless it is in quotes
- - You may use the universal keyword argument `t=true` or `t=1` to view the response time
+ - **Global keyword args** are accessible to all functions
+    - `t=true` or `t=1` to view the response time
+    - `raw=true` or `raw=1` to strip the output of backticks
 
 ### Python Expressions
 Some functions accept **python expressions** as arguments, which uses python syntax.  
