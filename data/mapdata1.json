@@ -84,7 +84,7 @@
         "ID": 9,
         "name": "HAISIN",
         "file_index": 888,
-        "area": "Vale",
+        "area": "Sanctum",
         "type": 2,
         "MFT_index": 8,
         "outdoor": 0
@@ -156,7 +156,7 @@
         "ID": 17,
         "name": "DGN01N",
         "file_index": 896,
-        "area": "Sol Sanctum",
+        "area": "Elemental Star Room",
         "type": 1,
         "MFT_index": 16,
         "outdoor": 0
@@ -165,7 +165,7 @@
         "ID": 18,
         "name": "DGN01N2",
         "file_index": 897,
-        "area": "Sol Sanctum",
+        "area": "Elemental Star Room",
         "type": 1,
         "MFT_index": 17,
         "outdoor": 0
@@ -174,7 +174,7 @@
         "ID": 19,
         "name": "SOLENT",
         "file_index": 895,
-        "area": "Sol Sanctum",
+        "area": "Sol Entrance",
         "type": 1,
         "MFT_index": 10,
         "outdoor": 0
@@ -291,7 +291,7 @@
         "ID": 32,
         "name": "BIRIU1",
         "file_index": 907,
-        "area": "Bilibin",
+        "area": "Bilibin Treasury",
         "type": 2,
         "MFT_index": 35,
         "outdoor": 0
@@ -345,7 +345,7 @@
         "ID": 38,
         "name": "KRM_B1",
         "file_index": 911,
-        "area": "Kolima",
+        "area": "Kolima Tunnel",
         "type": 2,
         "MFT_index": 42,
         "outdoor": 0
@@ -444,7 +444,7 @@
         "ID": 49,
         "name": "SANKAN01",
         "file_index": 920,
-        "area": 16,
+        "area": "Bilibin Cave Entrance",
         "type": 1,
         "MFT_index": 50,
         "outdoor": 0
@@ -525,7 +525,7 @@
         "ID": 58,
         "name": "MTO06",
         "file_index": 925,
-        "area": "Mercury Lighthouse",
+        "area": "Lighthouse Aerie",
         "type": 1,
         "MFT_index": 61,
         "outdoor": 0
@@ -912,7 +912,7 @@
         "ID": 101,
         "name": "KARERM02",
         "file_index": 937,
-        "area": "Kalay",
+        "area": "Kalay Sanctum",
         "type": 2,
         "MFT_index": 97,
         "outdoor": 0
@@ -1020,7 +1020,7 @@
         "ID": 113,
         "name": "TAKARA00",
         "file_index": 946,
-        "area": "Crossbone Isle Cave",
+        "area": "Crossbone Isle",
         "type": 1,
         "MFT_index": 109,
         "outdoor": 0
@@ -1128,7 +1128,7 @@
         "ID": 125,
         "name": "TAKARAB11",
         "file_index": 946,
-        "area": "Crossbone Isle Cave",
+        "area": "Pirate Ship",
         "type": 1,
         "MFT_index": 120,
         "outdoor": 0
@@ -1245,7 +1245,7 @@
         "ID": 138,
         "name": "OTQD0003",
         "file_index": 952,
-        "area": 41,
+        "area": "Babi's Palace",
         "type": 2,
         "MFT_index": 126,
         "outdoor": 0
@@ -1254,7 +1254,7 @@
         "ID": 139,
         "name": "O_BAVI",
         "file_index": 952,
-        "area": 41,
+        "area": "Babi's Palace",
         "type": 2,
         "MFT_index": 125,
         "outdoor": 0
@@ -1263,7 +1263,7 @@
         "ID": 140,
         "name": "KORO02",
         "file_index": 953,
-        "area": 42,
+        "area": "Colosseum",
         "type": 1,
         "MFT_index": 128,
         "outdoor": 0
@@ -1272,7 +1272,7 @@
         "ID": 141,
         "name": "KORO01",
         "file_index": 953,
-        "area": 42,
+        "area": "Colosseum Tunnel",
         "type": 1,
         "MFT_index": 127,
         "outdoor": 0
@@ -1281,7 +1281,7 @@
         "ID": 142,
         "name": "KORO03",
         "file_index": 953,
-        "area": 42,
+        "area": "Colosseum Entrance",
         "type": 1,
         "MFT_index": 129,
         "outdoor": 0
@@ -1290,7 +1290,7 @@
         "ID": 143,
         "name": "COLOSSE01",
         "file_index": 954,
-        "area": 42,
+        "area": "Colosseum Final 1",
         "type": 1,
         "MFT_index": 130,
         "outdoor": 0
@@ -1299,7 +1299,7 @@
         "ID": 144,
         "name": "COLOSSE02",
         "file_index": 955,
-        "area": 42,
+        "area": "Colosseum Final 2",
         "type": 1,
         "MFT_index": 131,
         "outdoor": 0
@@ -1308,7 +1308,7 @@
         "ID": 145,
         "name": "COLOSSE03",
         "file_index": 956,
-        "area": 42,
+        "area": "Colosseum Final 3",
         "type": 1,
         "MFT_index": 132,
         "outdoor": 0
@@ -1542,7 +1542,7 @@
         "ID": 171,
         "name": "SHR_M56",
         "file_index": 963,
-        "area": "Suhalla Gate",
+        "area": "Gateway Cave",
         "type": 1,
         "MFT_index": 158,
         "outdoor": 0
@@ -1587,7 +1587,7 @@
         "ID": 176,
         "name": "BTO01",
         "file_index": 965,
-        "area": "Babi Lighthouse",
+        "area": "Babi Lighthouse Entry",
         "type": 1,
         "MFT_index": 161,
         "outdoor": 0
@@ -1596,7 +1596,7 @@
         "ID": 177,
         "name": "B_MICHI01",
         "file_index": 965,
-        "area": "Babi Lighthouse",
+        "area": "Road to Babi Lighthouse",
         "type": 1,
         "MFT_index": 167,
         "outdoor": 0
@@ -1641,7 +1641,7 @@
         "ID": 182,
         "name": "VTO01",
         "file_index": 968,
-        "area": "Venus Lighthouse Entry",
+        "area": "Venus Lighthouse",
         "type": 1,
         "MFT_index": 169,
         "outdoor": 0
@@ -1686,7 +1686,7 @@
         "ID": 187,
         "name": "VTO06",
         "file_index": 969,
-        "area": "Venus Lighthouse",
+        "area": "Lighthouse Aerie",
         "type": 1,
         "MFT_index": 174,
         "outdoor": 0

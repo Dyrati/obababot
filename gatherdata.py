@@ -40,8 +40,8 @@ with open(ROM1, "rb") as f:
 for map_ in mapdata1:
     for r in room_references:
         flag, check = r["door"] & 0x8000, r["room_or_area"]
-        # if flag and check == map_["ID"] or not flag and check == map_["area"]:
-        if not flag and check == map_["area"]:
+        if flag and check == map_["ID"] and r["door"] & 0x7FFF == 0x7FFF \
+            or not flag and check == map_["area"]:
             map_["area"] = areas1[r["name"]]
             break
 
