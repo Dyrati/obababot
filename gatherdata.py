@@ -44,6 +44,7 @@ for map_ in mapdata1:
             or not flag and check == map_["area"]:
             map_["area"] = areas1[r["name"]]
             break
+    else: map_["area"] = areas1[0]
 
 
 with open(ROM2, "rb") as f:

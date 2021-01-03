@@ -69,7 +69,6 @@ def load_text():
         lines = f.read().splitlines()
         text["ability_effects"] = lines[0:92]
         text["equipped_effects"] = lines[92:120]
-        text["summons"] = lines[120:149]
     return text
 
 

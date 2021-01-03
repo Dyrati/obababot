@@ -118,32 +118,3 @@ Counterstrike rate
 Curse is removable
 Turns
 Boosts encounters
-Venus
-Mercury
-Mars
-Jupiter
-Rameses
-Nereid
-Kirin
-Atlanta
-Cybele
-Neptune
-Tiamat
-Procne
-Judgment
-Boreas
-Meteor
-Thor
-Zagan
-Megaera
-Flora
-Moloch
-Ulysses
-Haures
-Eclipse
-Coatlicue
-Daedalus
-Azul
-Catastrophe
-Charon
-Iris

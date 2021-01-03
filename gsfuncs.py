@@ -208,7 +208,7 @@ def readsav(data):
     display = []
     for f in filedata:
         f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
-        f["summons"] = [Text["summons"][i] for i in range(33) if f["summons"] & 2**i]
+        f["summons"] = [DataTables["summondata"][i]["name"] for i in range(33) if f["summons"] & 2**i]
         f["area"] = DataTables[f"mapdata{GAME}"][f["map_number"]]["area"]
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:

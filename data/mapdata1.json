@@ -1713,7 +1713,7 @@
         "ID": 190,
         "name": "ROUNGE",
         "file_index": 971,
-        "area": 60,
+        "area": "Title screen",
         "type": 2,
         "MFT_index": 177,
         "outdoor": 0
