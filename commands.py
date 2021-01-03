@@ -2,7 +2,7 @@ import discord
 import re
 import inspect
 import utilities
-from utilities import command, prefix, DataTables, UserData, Namemaps, reply, dictstr
+from utilities import command, prefix, DataTables, UserData, Namemaps, reply, dictstr, mfuncs
 import gsfuncs
 from safe_eval import safe_eval
 
@@ -93,7 +93,7 @@ async def index(message, *args, **kwargs):
         output = dictstr(DataTables[tablename][int(condition)], kwargs.get("json"))
     else:
         for entry in DataTables[tablename]:
-            if safe_eval(condition, entry):
+            if safe_eval(condition, {**mfuncs, **entry}):
                 output = dictstr(entry, kwargs.get("json"))
                 break
         else:
@@ -101,19 +101,6 @@ async def index(message, *args, **kwargs):
     await reply(message, f"```\n{output}\n```")
 
 
-import math
-import random
-def rand(*args):
-    if len(args) == 1: return random.randint(1, *args)
-    elif args: return random.randint(*args)
-    else: return random.random()
-mfuncs = {
-    'abs':abs, 'round':round, 'min':min, 'max':max, 'rand':rand,
-    'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int, 'str': str,
-    'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1),
-    'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
-    'log':math.log, 'exp':math.exp,
-}
 @command(alias="=")
 async def math(message, *args, **kwargs):
     """Evaluate a python expression
@@ -124,9 +111,7 @@ async def math(message, *args, **kwargs):
 
     Keyword Arguments:
         f -- format string; uses python's format-specification-mini-language
-        set -- a variable name to assign the output to.  Variables are stored
-               per-user, and will be reset whenever the bot is reset, which
-               can happen at any time.
+
     Aliases:
         may use the "=" sign in place of "$math "
     """
@@ -134,16 +119,38 @@ async def math(message, *args, **kwargs):
     value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID].vars})
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
-    if frmt[4] and len(frmt[4]) > 3:
-        await reply(message, "width specifier too large")
-        return
+    assert not frmt[4] or len(frmt[4]) <= 3, "width specifier too large"
     frmt = "".join([i for i in frmt if i]).strip('"')
     if frmt: value = f"{value:{frmt}}"
-    if kwargs.get("set"):
-        varname = kwargs["set"]
-        UserData[ID].vars[varname] = value
-    else:
-        await reply(message, f"`{value}`")
+    await reply(message, f"`{value}`")
+
+
+@command
+async def var(message, *args, **kwargs):
+    """Set a variable equal to a python expression
+    
+    Syntax:
+        - $var [name] = [expression]
+        - [name] must start with a letter or underscore, and remaining
+          characters may only contain alphanumerics or underscores
+        - [expression] has identical syntax to the $math command
+    
+    Variables are stored per-user, and will be reset whenever the bot is 
+    reset, which can happen at any time.  They may be used in any var or
+    math commands.
+    """
+    ID = message.author.id
+    content = message.content[len("$var "):]
+    m = re.match(r"\s*([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", content)
+    varname, content = m.groups()
+    args, kwargs = utilities.parse(content)
+    value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID].vars})
+    fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
+    frmt = re.match(fspec, kwargs.get("f", "")).groups()
+    assert not frmt[4] or len(frmt[4]) <= 3, "width specifier too large"
+    frmt = "".join([i for i in frmt if i]).strip('"')
+    if frmt: value = f"{value:{frmt}}"
+    UserData[ID].vars[varname] = value
 
 
 @command

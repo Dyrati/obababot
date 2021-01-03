@@ -11,8 +11,9 @@ UserData = {}
 def command(f=None, alias=None, prefix=prefix):
     def decorator(f):
         global usercommands
-        if alias: aliases[alias] = prefix + f.__name__
-        usercommands[prefix + f.__name__] = f
+        name = prefix + f.__name__.strip("_")
+        if alias: aliases[alias] = name
+        usercommands[name] = f
         async def inner(*args, **kwargs):
             f(*args, **kwargs)
         return inner
@@ -144,6 +145,21 @@ def extractcommand(text):
         if command not in usercommands: return
         args, kwargs = parse(text[len(command)+1:].replace("`",""))
         return command, args, kwargs
+
+
+import math
+import random
+def rand(*args):
+    if len(args) == 1: return random.randint(1, *args)
+    elif args: return random.randint(*args)
+    else: return random.random()
+mfuncs = {
+    'abs':abs, 'round':round, 'min':min, 'max':max, 'rand':rand,
+    'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int, 'str': str,
+    'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1),
+    'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
+    'log':math.log, 'exp':math.exp,
+}
 
 
 def wrap(iterable, maxwidth, pos=0):
