@@ -48,6 +48,11 @@ def load_text():
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
     text["elements"] = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
     mtoken = re.compile(r"{\d*}")
+    with open(r"text/GS1text.txt") as f:
+        lines = f.read().splitlines()
+        lines = list(map(lambda x: mtoken.sub("", x), lines))
+        text["areas1"] = lines[2459:2567]
+        text["maps1"] = lines[2567:2768]
     with open(r"text/GS2text.txt") as f:
         lines = f.read().splitlines()
         text["item_descriptions"] = lines[146:607]
@@ -57,8 +62,8 @@ def load_text():
         text["abilities"] = lines[1447:2181]
         text["move_descriptions"] = lines[2181:2915]
         text["classes"] = lines[2915:3159]
-        text["areas"] = lines[3672:3770]
-        text["maps"] = lines[3770:4095]
+        text["areas2"] = lines[3672:3770]
+        text["maps2"] = lines[3770:4095]
         text["djinn"] = lines[1747:1827]
     with open(r"text/customtext.txt") as f:
         lines = f.read().splitlines()
@@ -90,7 +95,8 @@ def load_data():
     DataTables.clear(); Namemaps.clear(); Text.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
-            "classdata", "elementdata", "encounterdata", "mapdata", "enemygroupdata"]:
+            "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
+            "enemygroupdata"]:
         with open(rf"data/{name}.json") as f:
             DataTables[name] = json.load(f)
             if name == "enemydata":

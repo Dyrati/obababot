@@ -1,7 +1,6 @@
 import re
 import io
 import json
-import bisect
 import utilities
 from utilities import command, DataTables, UserData, Namemaps, Text, reply
 
@@ -140,8 +139,8 @@ def readsav(data):
         data = f.read(0x2FF0)
         read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
         version = build_dates[read(0x26, 2) & ~0x8000]
-        if "The Lost Age" in version: offset = 0x20
-        else: offset = 0
+        if "The Lost Age" in version: GAME = 2; offset = 0x20
+        else: GAME = 1; offset = 0
         party_size = sum((1 if read(0x40, 1) & 2**j else 0 for j in range(8)))
         positions = [read(0x438+offset + j, 1) for j in range(party_size)]
         addresses = [0x500+offset + 0x14C*p for p in positions]
@@ -159,7 +158,6 @@ def readsav(data):
             "party": [{
                 "name": [read(base+j, 1) for j in range(15)],
                 "level": read(base+0xF, 1),
-                "position": p,
                 "element": [0,2,3,1,0,2,3,1][p],
                 "base_stats": {
                     "HP": read(base+0x10, 2),
@@ -211,7 +209,7 @@ def readsav(data):
     for f in filedata:
         f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
         f["summons"] = [Text["summons"][i] for i in range(33) if f["summons"] & 2**i]
-        f["area"] = DataTables["mapdata"][f["map_number"]]["area"]
+        f["area"] = DataTables[f"mapdata{GAME}"][f["map_number"]]["area"]
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:
             pc["name"] = "".join([chr(c) for c in pc["name"] if c])
@@ -236,8 +234,8 @@ def readsav(data):
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
         seconds %= 60; minutes %= 60
         f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
-        for pc in f["party"]:
-            if pc["position"] == f["leader"]: f["leader"] = pc["name"]; break
+        for p, pc in zip(positions, f["party"]):
+            if p == f["leader"]: f["leader"] = pc["name"]; break
         f["djinncounts"] = djinncounts
     return filedata
 

@@ -1,0 +1,1811 @@
+[
+    {
+        "ID": 0,
+        "name": "TITLE",
+        "file_index": 879,
+        "area": "Title screen",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 1,
+        "name": "UTIL",
+        "file_index": 880,
+        "area": "(Clear data)",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 2,
+        "name": "WORLD",
+        "file_index": 881,
+        "area": "World Map",
+        "type": 1,
+        "MFT_index": 1,
+        "outdoor": 0
+    },
+    {
+        "ID": 3,
+        "name": "PLOGV00",
+        "file_index": 882,
+        "area": "Vale",
+        "type": 2,
+        "MFT_index": 2,
+        "outdoor": 0
+    },
+    {
+        "ID": 4,
+        "name": "SPWV00",
+        "file_index": 883,
+        "area": "Vale",
+        "type": 2,
+        "MFT_index": 3,
+        "outdoor": 0
+    },
+    {
+        "ID": 5,
+        "name": "SPW1V00",
+        "file_index": 884,
+        "area": "Vale",
+        "type": 2,
+        "MFT_index": 4,
+        "outdoor": 0
+    },
+    {
+        "ID": 6,
+        "name": "SPW2V00",
+        "file_index": 885,
+        "area": "Vale",
+        "type": 2,
+        "MFT_index": 5,
+        "outdoor": 0
+    },
+    {
+        "ID": 7,
+        "name": "HAIROOM1",
+        "file_index": 886,
+        "area": "Vale",
+        "type": 2,
+        "MFT_index": 6,
+        "outdoor": 0
+    },
+    {
+        "ID": 8,
+        "name": "HAIROOM2",
+        "file_index": 887,
+        "area": "Babi's Palace",
+        "type": 2,
+        "MFT_index": 7,
+        "outdoor": 0
+    },
+    {
+        "ID": 9,
+        "name": "HAISIN",
+        "file_index": 888,
+        "area": "Vale Sanctum",
+        "type": 2,
+        "MFT_index": 8,
+        "outdoor": 0
+    },
+    {
+        "ID": 10,
+        "name": "HYDIA01",
+        "file_index": 889,
+        "area": "Vale",
+        "type": 2,
+        "MFT_index": 9,
+        "outdoor": 0
+    },
+    {
+        "ID": 11,
+        "name": "DGN01",
+        "file_index": 890,
+        "area": "Sol Sanctum",
+        "type": 1,
+        "MFT_index": 11,
+        "outdoor": 0
+    },
+    {
+        "ID": 12,
+        "name": "DGN01B",
+        "file_index": 891,
+        "area": "Sol Sanctum",
+        "type": 1,
+        "MFT_index": 12,
+        "outdoor": 0
+    },
+    {
+        "ID": 13,
+        "name": "DGN01I",
+        "file_index": 892,
+        "area": "Sol Sanctum",
+        "type": 1,
+        "MFT_index": 13,
+        "outdoor": 0
+    },
+    {
+        "ID": 14,
+        "name": "DGN01L",
+        "file_index": 893,
+        "area": "Sol Sanctum",
+        "type": 1,
+        "MFT_index": 14,
+        "outdoor": 0
+    },
+    {
+        "ID": 15,
+        "name": "DGN01M",
+        "file_index": 894,
+        "area": "Sol Sanctum",
+        "type": 1,
+        "MFT_index": 15,
+        "outdoor": 0
+    },
+    {
+        "ID": 16,
+        "name": "DGN01U",
+        "file_index": 895,
+        "area": "Sol Sanctum",
+        "type": 1,
+        "MFT_index": 18,
+        "outdoor": 0
+    },
+    {
+        "ID": 17,
+        "name": "DGN01N",
+        "file_index": 896,
+        "area": "Elemental Star Room",
+        "type": 1,
+        "MFT_index": 16,
+        "outdoor": 0
+    },
+    {
+        "ID": 18,
+        "name": "DGN01N2",
+        "file_index": 897,
+        "area": "Elemental Star Room",
+        "type": 1,
+        "MFT_index": 17,
+        "outdoor": 0
+    },
+    {
+        "ID": 19,
+        "name": "SOLENT",
+        "file_index": 895,
+        "area": "Sol Entrance",
+        "type": 1,
+        "MFT_index": 10,
+        "outdoor": 0
+    },
+    {
+        "ID": 20,
+        "name": "KUPV0A",
+        "file_index": 898,
+        "area": "Vault",
+        "type": 2,
+        "MFT_index": 19,
+        "outdoor": 0
+    },
+    {
+        "ID": 21,
+        "name": "KUP_RM01",
+        "file_index": 899,
+        "area": "Vault",
+        "type": 2,
+        "MFT_index": 20,
+        "outdoor": 0
+    },
+    {
+        "ID": 22,
+        "name": "KUP_RGK",
+        "file_index": 900,
+        "area": "Lunpa",
+        "type": 2,
+        "MFT_index": 21,
+        "outdoor": 0
+    },
+    {
+        "ID": 23,
+        "name": "KUPV0B",
+        "file_index": 901,
+        "area": "Vault",
+        "type": 2,
+        "MFT_index": 19,
+        "outdoor": 0
+    },
+    {
+        "ID": 24,
+        "name": "KUP_RM02",
+        "file_index": 902,
+        "area": "Vault",
+        "type": 2,
+        "MFT_index": 20,
+        "outdoor": 0
+    },
+    {
+        "ID": 25,
+        "name": "GMAP_V00",
+        "file_index": 903,
+        "area": "Goma Cave Entrance",
+        "type": 1,
+        "MFT_index": 22,
+        "outdoor": 0
+    },
+    {
+        "ID": 26,
+        "name": "NED001",
+        "file_index": 904,
+        "area": "Goma Cave",
+        "type": 1,
+        "MFT_index": 23,
+        "outdoor": 0
+    },
+    {
+        "ID": 27,
+        "name": "NED002",
+        "file_index": 905,
+        "area": "Goma Cave",
+        "type": 1,
+        "MFT_index": 24,
+        "outdoor": 0
+    },
+    {
+        "ID": 28,
+        "name": "NED003",
+        "file_index": 906,
+        "area": "Goma Cave",
+        "type": 1,
+        "MFT_index": 25,
+        "outdoor": 0
+    },
+    {
+        "ID": 29,
+        "name": "NED003A",
+        "file_index": 906,
+        "area": "Goma Cave",
+        "type": 1,
+        "MFT_index": 26,
+        "outdoor": 0
+    },
+    {
+        "ID": 30,
+        "name": "VIVNOV00",
+        "file_index": 907,
+        "area": "Bilibin",
+        "type": 2,
+        "MFT_index": 33,
+        "outdoor": 0
+    },
+    {
+        "ID": 31,
+        "name": "PINORM01",
+        "file_index": 908,
+        "area": "Bilibin",
+        "type": 2,
+        "MFT_index": 34,
+        "outdoor": 0
+    },
+    {
+        "ID": 32,
+        "name": "BIRIU1",
+        "file_index": 907,
+        "area": "Bilibin Treasury",
+        "type": 2,
+        "MFT_index": 35,
+        "outdoor": 0
+    },
+    {
+        "ID": 33,
+        "name": "OTQD0001",
+        "file_index": 909,
+        "area": "McCoy's Palace",
+        "type": 2,
+        "MFT_index": 38,
+        "outdoor": 0
+    },
+    {
+        "ID": 34,
+        "name": "VIV1V00",
+        "file_index": 910,
+        "area": "McCoy's Palace",
+        "type": 2,
+        "MFT_index": 37,
+        "outdoor": 0
+    },
+    {
+        "ID": 35,
+        "name": "BIRI_B01",
+        "file_index": 907,
+        "area": "Bilibin Barricade",
+        "type": 1,
+        "MFT_index": 36,
+        "outdoor": 0
+    },
+    {
+        "ID": 36,
+        "name": "KRM_V00",
+        "file_index": 911,
+        "area": "Kolima",
+        "type": 2,
+        "MFT_index": 39,
+        "outdoor": 0
+    },
+    {
+        "ID": 37,
+        "name": "KORIRM01",
+        "file_index": 912,
+        "area": "Kolima",
+        "type": 2,
+        "MFT_index": 40,
+        "outdoor": 0
+    },
+    {
+        "ID": 38,
+        "name": "KRM_B1",
+        "file_index": 911,
+        "area": "Kolima Tunnel",
+        "type": 2,
+        "MFT_index": 42,
+        "outdoor": 0
+    },
+    {
+        "ID": 39,
+        "name": "KRMBRG",
+        "file_index": 911,
+        "area": "Kolima Bridge",
+        "type": 1,
+        "MFT_index": 41,
+        "outdoor": 0
+    },
+    {
+        "ID": 40,
+        "name": "DJ_KRM00",
+        "file_index": 913,
+        "area": "Kolima Forest",
+        "type": 1,
+        "MFT_index": 43,
+        "outdoor": 0
+    },
+    {
+        "ID": 41,
+        "name": "DJ_KRM01",
+        "file_index": 914,
+        "area": "Kolima Forest",
+        "type": 1,
+        "MFT_index": 44,
+        "outdoor": 0
+    },
+    {
+        "ID": 42,
+        "name": "DJ_KRM02",
+        "file_index": 915,
+        "area": "Kolima Forest",
+        "type": 1,
+        "MFT_index": 45,
+        "outdoor": 0
+    },
+    {
+        "ID": 43,
+        "name": "DJ_KRM03",
+        "file_index": 916,
+        "area": "Kolima Forest",
+        "type": 1,
+        "MFT_index": 46,
+        "outdoor": 0
+    },
+    {
+        "ID": 44,
+        "name": "DJ_KRM04",
+        "file_index": 917,
+        "area": "Kolima Forest",
+        "type": 1,
+        "MFT_index": 47,
+        "outdoor": 0
+    },
+    {
+        "ID": 45,
+        "name": "OTDJ0000",
+        "file_index": 918,
+        "area": "Tret Tree",
+        "type": 1,
+        "MFT_index": 48,
+        "outdoor": 0
+    },
+    {
+        "ID": 46,
+        "name": "OTDJ0001",
+        "file_index": 919,
+        "area": "Tret Tree",
+        "type": 1,
+        "MFT_index": 49,
+        "outdoor": 0
+    },
+    {
+        "ID": 47,
+        "name": "SANKAN03",
+        "file_index": 920,
+        "area": "Bilibin Cave",
+        "type": 1,
+        "MFT_index": 52,
+        "outdoor": 0
+    },
+    {
+        "ID": 48,
+        "name": "SANKAN02",
+        "file_index": 920,
+        "area": "Bilibin Cave",
+        "type": 1,
+        "MFT_index": 51,
+        "outdoor": 0
+    },
+    {
+        "ID": 49,
+        "name": "SANKAN01",
+        "file_index": 920,
+        "area": "Bilibin Cave Entrance",
+        "type": 1,
+        "MFT_index": 50,
+        "outdoor": 0
+    },
+    {
+        "ID": 50,
+        "name": "IMIRU01",
+        "file_index": 921,
+        "area": "Imil",
+        "type": 2,
+        "MFT_index": 53,
+        "outdoor": 0
+    },
+    {
+        "ID": 51,
+        "name": "IMI_RM01",
+        "file_index": 921,
+        "area": "Imil Sanctum",
+        "type": 2,
+        "MFT_index": 54,
+        "outdoor": 0
+    },
+    {
+        "ID": 52,
+        "name": "NED004",
+        "file_index": 922,
+        "area": "Imil Falls Cave",
+        "type": 1,
+        "MFT_index": 55,
+        "outdoor": 0
+    },
+    {
+        "ID": 53,
+        "name": "MTO01",
+        "file_index": 923,
+        "area": "Mercury Lighthouse",
+        "type": 1,
+        "MFT_index": 56,
+        "outdoor": 0
+    },
+    {
+        "ID": 54,
+        "name": "MTO02",
+        "file_index": 924,
+        "area": "Mercury Lighthouse",
+        "type": 1,
+        "MFT_index": 57,
+        "outdoor": 0
+    },
+    {
+        "ID": 55,
+        "name": "MTO03",
+        "file_index": 924,
+        "area": "Mercury Lighthouse",
+        "type": 1,
+        "MFT_index": 58,
+        "outdoor": 0
+    },
+    {
+        "ID": 56,
+        "name": "MTO04",
+        "file_index": 924,
+        "area": "Mercury Lighthouse",
+        "type": 1,
+        "MFT_index": 59,
+        "outdoor": 0
+    },
+    {
+        "ID": 57,
+        "name": "MTO05",
+        "file_index": 924,
+        "area": "Mercury Lighthouse",
+        "type": 1,
+        "MFT_index": 60,
+        "outdoor": 0
+    },
+    {
+        "ID": 58,
+        "name": "MTO06",
+        "file_index": 925,
+        "area": "Lighthouse Aerie",
+        "type": 1,
+        "MFT_index": 61,
+        "outdoor": 0
+    },
+    {
+        "ID": 59,
+        "name": "MTO07NG",
+        "file_index": 925,
+        "area": "Mercury Lighthouse",
+        "type": 1,
+        "MFT_index": 61,
+        "outdoor": 0
+    },
+    {
+        "ID": 60,
+        "name": "FUCHIN01",
+        "file_index": 926,
+        "area": "Fuchin Temple",
+        "type": 2,
+        "MFT_index": 62,
+        "outdoor": 0
+    },
+    {
+        "ID": 61,
+        "name": "FUCHINRM",
+        "file_index": 926,
+        "area": "Xian",
+        "type": 2,
+        "MFT_index": 63,
+        "outdoor": 0
+    },
+    {
+        "ID": 62,
+        "name": "NED005",
+        "file_index": 922,
+        "area": "Fuchin Falls Cave",
+        "type": 1,
+        "MFT_index": 64,
+        "outdoor": 0
+    },
+    {
+        "ID": 63,
+        "name": "NED006",
+        "file_index": 922,
+        "area": "Fuchin Falls Cave",
+        "type": 1,
+        "MFT_index": 65,
+        "outdoor": 0
+    },
+    {
+        "ID": 64,
+        "name": "NED007",
+        "file_index": 922,
+        "area": "Fuchin Falls Cave",
+        "type": 1,
+        "MFT_index": 66,
+        "outdoor": 0
+    },
+    {
+        "ID": 65,
+        "name": "NED008",
+        "file_index": 922,
+        "area": "Fuchin Falls Cave",
+        "type": 1,
+        "MFT_index": 67,
+        "outdoor": 0
+    },
+    {
+        "ID": 66,
+        "name": "NED009",
+        "file_index": 922,
+        "area": "Fuchin Falls Cave",
+        "type": 1,
+        "MFT_index": 68,
+        "outdoor": 0
+    },
+    {
+        "ID": 67,
+        "name": "NED010",
+        "file_index": 922,
+        "area": "Fuchin Falls Cave",
+        "type": 1,
+        "MFT_index": 69,
+        "outdoor": 0
+    },
+    {
+        "ID": 68,
+        "name": "DJ_MGR00",
+        "file_index": 927,
+        "area": "Mogall Forest",
+        "type": 1,
+        "MFT_index": 70,
+        "outdoor": 0
+    },
+    {
+        "ID": 69,
+        "name": "DJ_MGR01",
+        "file_index": 927,
+        "area": "Mogall Forest",
+        "type": 1,
+        "MFT_index": 71,
+        "outdoor": 0
+    },
+    {
+        "ID": 70,
+        "name": "DJ_MGR02",
+        "file_index": 927,
+        "area": "Mogall Forest",
+        "type": 1,
+        "MFT_index": 72,
+        "outdoor": 0
+    },
+    {
+        "ID": 71,
+        "name": "DJ_MGR0A",
+        "file_index": 927,
+        "area": "Mogall Forest",
+        "type": 1,
+        "MFT_index": 73,
+        "outdoor": 0
+    },
+    {
+        "ID": 72,
+        "name": "SEAN01",
+        "file_index": 928,
+        "area": "Xian",
+        "type": 2,
+        "MFT_index": 74,
+        "outdoor": 0
+    },
+    {
+        "ID": 73,
+        "name": "SEARM01",
+        "file_index": 929,
+        "area": "Xian",
+        "type": 2,
+        "MFT_index": 75,
+        "outdoor": 0
+    },
+    {
+        "ID": 74,
+        "name": "GMAP_V02",
+        "file_index": 930,
+        "area": "Alpine Crossing",
+        "type": 1,
+        "MFT_index": 76,
+        "outdoor": 0
+    },
+    {
+        "ID": 75,
+        "name": "ARTN_V00",
+        "file_index": 931,
+        "area": "Altin",
+        "type": 2,
+        "MFT_index": 77,
+        "outdoor": 0
+    },
+    {
+        "ID": 76,
+        "name": "ARTNRM00",
+        "file_index": 931,
+        "area": "Altin",
+        "type": 2,
+        "MFT_index": 78,
+        "outdoor": 0
+    },
+    {
+        "ID": 77,
+        "name": "ARTN_DJ01",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 79,
+        "outdoor": 0
+    },
+    {
+        "ID": 78,
+        "name": "ARTN_DJ02",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 80,
+        "outdoor": 0
+    },
+    {
+        "ID": 79,
+        "name": "ARTN_DJ03",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 81,
+        "outdoor": 0
+    },
+    {
+        "ID": 80,
+        "name": "ARTN_DJ04",
+        "file_index": 932,
+        "area": "Alpine Crossing",
+        "type": 1,
+        "MFT_index": 82,
+        "outdoor": 0
+    },
+    {
+        "ID": 81,
+        "name": "ARTN_DJ05",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 83,
+        "outdoor": 0
+    },
+    {
+        "ID": 82,
+        "name": "ARTN_DJ06",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 84,
+        "outdoor": 0
+    },
+    {
+        "ID": 83,
+        "name": "ARTN_DJ07",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 85,
+        "outdoor": 0
+    },
+    {
+        "ID": 84,
+        "name": "ARTN_DJ08",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 86,
+        "outdoor": 0
+    },
+    {
+        "ID": 85,
+        "name": "ARTN_DJ09",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 87,
+        "outdoor": 0
+    },
+    {
+        "ID": 86,
+        "name": "ARTN_DJ10",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 88,
+        "outdoor": 0
+    },
+    {
+        "ID": 87,
+        "name": "ARTN_DJ11",
+        "file_index": 932,
+        "area": "Altin Peak",
+        "type": 1,
+        "MFT_index": 89,
+        "outdoor": 0
+    },
+    {
+        "ID": 88,
+        "name": "RAMA01",
+        "file_index": 930,
+        "area": "Lama Temple",
+        "type": 2,
+        "MFT_index": 91,
+        "outdoor": 0
+    },
+    {
+        "ID": 89,
+        "name": "RMCN01",
+        "file_index": 933,
+        "area": "Lamakan Desert",
+        "type": 1,
+        "MFT_index": 92,
+        "outdoor": 0
+    },
+    {
+        "ID": 90,
+        "name": "RMCN02",
+        "file_index": 933,
+        "area": "Lamakan Desert",
+        "type": 1,
+        "MFT_index": 93,
+        "outdoor": 0
+    },
+    {
+        "ID": 91,
+        "name": "RMCN03",
+        "file_index": 933,
+        "area": "Lamakan Desert",
+        "type": 1,
+        "MFT_index": 94,
+        "outdoor": 0
+    },
+    {
+        "ID": 92,
+        "name": "RMCN04",
+        "file_index": 933,
+        "area": "Lamakan Desert",
+        "type": 1,
+        "MFT_index": 90,
+        "outdoor": 0
+    },
+    {
+        "ID": 93,
+        "name": "HAIKAKU0",
+        "file_index": 934,
+        "area": "Vale",
+        "type": 1,
+        "MFT_index": 30,
+        "outdoor": 0
+    },
+    {
+        "ID": 94,
+        "name": "HAIKAKU1",
+        "file_index": 934,
+        "area": "Vale Cave",
+        "type": 1,
+        "MFT_index": 31,
+        "outdoor": 0
+    },
+    {
+        "ID": 95,
+        "name": "HAIKAKU2",
+        "file_index": 934,
+        "area": "Vale Cave",
+        "type": 1,
+        "MFT_index": 32,
+        "outdoor": 0
+    },
+    {
+        "ID": 96,
+        "name": "KAKUSI01",
+        "file_index": 935,
+        "area": "Vault Cave",
+        "type": 1,
+        "MFT_index": 27,
+        "outdoor": 0
+    },
+    {
+        "ID": 97,
+        "name": "KAKUSI02",
+        "file_index": 935,
+        "area": "Vault Cave",
+        "type": 1,
+        "MFT_index": 28,
+        "outdoor": 0
+    },
+    {
+        "ID": 98,
+        "name": "KAKUSI03",
+        "file_index": 935,
+        "area": "Vault Cave",
+        "type": 1,
+        "MFT_index": 29,
+        "outdoor": 0
+    },
+    {
+        "ID": 99,
+        "name": "KAREI01",
+        "file_index": 936,
+        "area": "Kalay",
+        "type": 2,
+        "MFT_index": 95,
+        "outdoor": 0
+    },
+    {
+        "ID": 100,
+        "name": "KARERM01",
+        "file_index": 937,
+        "area": "Kalay",
+        "type": 2,
+        "MFT_index": 96,
+        "outdoor": 0
+    },
+    {
+        "ID": 101,
+        "name": "KARERM02",
+        "file_index": 937,
+        "area": "Kalay Sanctum",
+        "type": 2,
+        "MFT_index": 97,
+        "outdoor": 0
+    },
+    {
+        "ID": 102,
+        "name": "MOMOQD",
+        "file_index": 936,
+        "area": "Hammet Palace",
+        "type": 2,
+        "MFT_index": 98,
+        "outdoor": 0
+    },
+    {
+        "ID": 103,
+        "name": "OTQD0002",
+        "file_index": 938,
+        "area": "Hammet Palace",
+        "type": 2,
+        "MFT_index": 99,
+        "outdoor": 0
+    },
+    {
+        "ID": 104,
+        "name": "LUNPA00",
+        "file_index": 939,
+        "area": "Lunpa",
+        "type": 2,
+        "MFT_index": 100,
+        "outdoor": 0
+    },
+    {
+        "ID": 105,
+        "name": "LUNRM01",
+        "file_index": 940,
+        "area": "Lunpa Temple",
+        "type": 2,
+        "MFT_index": 101,
+        "outdoor": 0
+    },
+    {
+        "ID": 106,
+        "name": "LUNPA_D",
+        "file_index": 941,
+        "area": "West Lunpa Cave",
+        "type": 1,
+        "MFT_index": 102,
+        "outdoor": 0
+    },
+    {
+        "ID": 107,
+        "name": "JETTY01",
+        "file_index": 942,
+        "area": "Kalay Docks",
+        "type": 2,
+        "MFT_index": 103,
+        "outdoor": 0
+    },
+    {
+        "ID": 108,
+        "name": "M_TIKET",
+        "file_index": 942,
+        "area": "Tolbi Docks",
+        "type": 2,
+        "MFT_index": 104,
+        "outdoor": 0
+    },
+    {
+        "ID": 109,
+        "name": "MSHIP01",
+        "file_index": 943,
+        "area": "Tolbi-bound Ship",
+        "type": 1,
+        "MFT_index": 105,
+        "outdoor": 0
+    },
+    {
+        "ID": 110,
+        "name": "MSHIP02",
+        "file_index": 944,
+        "area": "Tolbi-bound Ship",
+        "type": 1,
+        "MFT_index": 106,
+        "outdoor": 0
+    },
+    {
+        "ID": 111,
+        "name": "SHIPRM1",
+        "file_index": 945,
+        "area": "Tolbi-bound Ship",
+        "type": 1,
+        "MFT_index": 107,
+        "outdoor": 0
+    },
+    {
+        "ID": 112,
+        "name": "JETTY02",
+        "file_index": 942,
+        "area": "Tolbi Docks",
+        "type": 2,
+        "MFT_index": 108,
+        "outdoor": 0
+    },
+    {
+        "ID": 113,
+        "name": "TAKARA00",
+        "file_index": 946,
+        "area": "Crossbone Isle",
+        "type": 1,
+        "MFT_index": 109,
+        "outdoor": 0
+    },
+    {
+        "ID": 114,
+        "name": "TAKARA01",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 115,
+        "name": "TAKARAB1",
+        "file_index": 947,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 110,
+        "outdoor": 0
+    },
+    {
+        "ID": 116,
+        "name": "TAKARAB2",
+        "file_index": 947,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 111,
+        "outdoor": 0
+    },
+    {
+        "ID": 117,
+        "name": "TAKARAB3",
+        "file_index": 948,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 112,
+        "outdoor": 0
+    },
+    {
+        "ID": 118,
+        "name": "TAKARAB4",
+        "file_index": 948,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 113,
+        "outdoor": 0
+    },
+    {
+        "ID": 119,
+        "name": "TAKARAB5",
+        "file_index": 947,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 114,
+        "outdoor": 0
+    },
+    {
+        "ID": 120,
+        "name": "TAKARAB6",
+        "file_index": 948,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 115,
+        "outdoor": 0
+    },
+    {
+        "ID": 121,
+        "name": "TAKARAB7",
+        "file_index": 947,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 116,
+        "outdoor": 0
+    },
+    {
+        "ID": 122,
+        "name": "TAKARAB8",
+        "file_index": 947,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 117,
+        "outdoor": 0
+    },
+    {
+        "ID": 123,
+        "name": "TAKARAB9",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 118,
+        "outdoor": 0
+    },
+    {
+        "ID": 124,
+        "name": "TAKARAB10",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 119,
+        "outdoor": 0
+    },
+    {
+        "ID": 125,
+        "name": "TAKARAB11",
+        "file_index": 946,
+        "area": "Pirate Ship",
+        "type": 1,
+        "MFT_index": 120,
+        "outdoor": 0
+    },
+    {
+        "ID": 126,
+        "name": "TAKARA91",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 127,
+        "name": "TAKARA92",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 128,
+        "name": "TAKARA93",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 129,
+        "name": "TAKARA94",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 130,
+        "name": "TAKARA95",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 131,
+        "name": "TAKARA96",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 132,
+        "name": "TAKARA97",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 133,
+        "name": "TAKARA98",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 134,
+        "name": "TAKARA99",
+        "file_index": 946,
+        "area": "Crossbone Isle Cave",
+        "type": 1,
+        "MFT_index": 121,
+        "outdoor": 0
+    },
+    {
+        "ID": 135,
+        "name": "TOREBI01",
+        "file_index": 949,
+        "area": "Tolbi",
+        "type": 2,
+        "MFT_index": 122,
+        "outdoor": 0
+    },
+    {
+        "ID": 136,
+        "name": "TORERM01",
+        "file_index": 950,
+        "area": "Tolbi Sanctum",
+        "type": 2,
+        "MFT_index": 123,
+        "outdoor": 0
+    },
+    {
+        "ID": 137,
+        "name": "TORERM02",
+        "file_index": 951,
+        "area": "Tolbi",
+        "type": 2,
+        "MFT_index": 124,
+        "outdoor": 0
+    },
+    {
+        "ID": 138,
+        "name": "OTQD0003",
+        "file_index": 952,
+        "area": "Babi's Palace",
+        "type": 2,
+        "MFT_index": 126,
+        "outdoor": 0
+    },
+    {
+        "ID": 139,
+        "name": "O_BAVI",
+        "file_index": 952,
+        "area": "Babi's Palace",
+        "type": 2,
+        "MFT_index": 125,
+        "outdoor": 0
+    },
+    {
+        "ID": 140,
+        "name": "KORO02",
+        "file_index": 953,
+        "area": "Colosseum Tunnel",
+        "type": 1,
+        "MFT_index": 128,
+        "outdoor": 0
+    },
+    {
+        "ID": 141,
+        "name": "KORO01",
+        "file_index": 953,
+        "area": "Colosseum Tunnel",
+        "type": 1,
+        "MFT_index": 127,
+        "outdoor": 0
+    },
+    {
+        "ID": 142,
+        "name": "KORO03",
+        "file_index": 953,
+        "area": "Colosseum Entrance",
+        "type": 1,
+        "MFT_index": 129,
+        "outdoor": 0
+    },
+    {
+        "ID": 143,
+        "name": "COLOSSE01",
+        "file_index": 954,
+        "area": "Colosseum Final 1",
+        "type": 1,
+        "MFT_index": 130,
+        "outdoor": 0
+    },
+    {
+        "ID": 144,
+        "name": "COLOSSE02",
+        "file_index": 955,
+        "area": "Colosseum Final 2",
+        "type": 1,
+        "MFT_index": 131,
+        "outdoor": 0
+    },
+    {
+        "ID": 145,
+        "name": "COLOSSE03",
+        "file_index": 956,
+        "area": "Colosseum Final 3",
+        "type": 1,
+        "MFT_index": 132,
+        "outdoor": 0
+    },
+    {
+        "ID": 146,
+        "name": "ALTA00",
+        "file_index": 957,
+        "area": "Altmiller Cave",
+        "type": 1,
+        "MFT_index": 133,
+        "outdoor": 0
+    },
+    {
+        "ID": 147,
+        "name": "ALTA01",
+        "file_index": 957,
+        "area": "Altmiller Cave",
+        "type": 1,
+        "MFT_index": 134,
+        "outdoor": 0
+    },
+    {
+        "ID": 148,
+        "name": "ALTA02",
+        "file_index": 957,
+        "area": "Altmiller Cave",
+        "type": 1,
+        "MFT_index": 135,
+        "outdoor": 0
+    },
+    {
+        "ID": 149,
+        "name": "ALTA03",
+        "file_index": 957,
+        "area": "Altmiller Cave",
+        "type": 1,
+        "MFT_index": 136,
+        "outdoor": 0
+    },
+    {
+        "ID": 150,
+        "name": "ALTA04",
+        "file_index": 957,
+        "area": "Altmiller Cave",
+        "type": 1,
+        "MFT_index": 137,
+        "outdoor": 0
+    },
+    {
+        "ID": 151,
+        "name": "ALTA05",
+        "file_index": 957,
+        "area": "Altmiller Cave",
+        "type": 1,
+        "MFT_index": 138,
+        "outdoor": 0
+    },
+    {
+        "ID": 152,
+        "name": "GNDT01",
+        "file_index": 958,
+        "area": "Gondowan Passage",
+        "type": 1,
+        "MFT_index": 139,
+        "outdoor": 0
+    },
+    {
+        "ID": 153,
+        "name": "KIRI01",
+        "file_index": 936,
+        "area": "Kalay Tunnel Entrance",
+        "type": 1,
+        "MFT_index": 147,
+        "outdoor": 0
+    },
+    {
+        "ID": 154,
+        "name": "KCHIKA01",
+        "file_index": 936,
+        "area": "Kalay Tunnel",
+        "type": 1,
+        "MFT_index": 148,
+        "outdoor": 0
+    },
+    {
+        "ID": 155,
+        "name": "KCHIKA02",
+        "file_index": 936,
+        "area": "Kalay Tunnel",
+        "type": 1,
+        "MFT_index": 149,
+        "outdoor": 0
+    },
+    {
+        "ID": 156,
+        "name": "KCHIKA03",
+        "file_index": 936,
+        "area": "Kalay Tunnel",
+        "type": 1,
+        "MFT_index": 150,
+        "outdoor": 0
+    },
+    {
+        "ID": 157,
+        "name": "GNDE01",
+        "file_index": 958,
+        "area": "Gondowan Cave",
+        "type": 1,
+        "MFT_index": 140,
+        "outdoor": 0
+    },
+    {
+        "ID": 158,
+        "name": "GNDE02",
+        "file_index": 958,
+        "area": "Gondowan Cave",
+        "type": 1,
+        "MFT_index": 141,
+        "outdoor": 0
+    },
+    {
+        "ID": 159,
+        "name": "RNP_E",
+        "file_index": 939,
+        "area": "Lunpa Fortress Gates",
+        "type": 1,
+        "MFT_index": 142,
+        "outdoor": 0
+    },
+    {
+        "ID": 160,
+        "name": "TORIDE01",
+        "file_index": 959,
+        "area": "Lunpa Fortress",
+        "type": 1,
+        "MFT_index": 143,
+        "outdoor": 0
+    },
+    {
+        "ID": 161,
+        "name": "TORIDE02",
+        "file_index": 959,
+        "area": "Lunpa Fortress",
+        "type": 1,
+        "MFT_index": 144,
+        "outdoor": 0
+    },
+    {
+        "ID": 162,
+        "name": "TORIDE03",
+        "file_index": 959,
+        "area": "Lunpa Fortress",
+        "type": 1,
+        "MFT_index": 145,
+        "outdoor": 0
+    },
+    {
+        "ID": 163,
+        "name": "TORIDE04",
+        "file_index": 959,
+        "area": "Lunpa Fortress",
+        "type": 1,
+        "MFT_index": 146,
+        "outdoor": 0
+    },
+    {
+        "ID": 164,
+        "name": "SUHR00",
+        "file_index": 960,
+        "area": "Suhalla Desert",
+        "type": 1,
+        "MFT_index": 151,
+        "outdoor": 0
+    },
+    {
+        "ID": 165,
+        "name": "SUHR01",
+        "file_index": 960,
+        "area": "Suhalla Desert",
+        "type": 1,
+        "MFT_index": 152,
+        "outdoor": 0
+    },
+    {
+        "ID": 166,
+        "name": "SUHR02",
+        "file_index": 960,
+        "area": "Suhalla Desert",
+        "type": 1,
+        "MFT_index": 153,
+        "outdoor": 0
+    },
+    {
+        "ID": 167,
+        "name": "OTMR0001",
+        "file_index": 961,
+        "area": "Suhalla",
+        "type": 2,
+        "MFT_index": 154,
+        "outdoor": 0
+    },
+    {
+        "ID": 168,
+        "name": "SUHARM01",
+        "file_index": 962,
+        "area": "Suhalla Sanctum",
+        "type": 2,
+        "MFT_index": 155,
+        "outdoor": 0
+    },
+    {
+        "ID": 169,
+        "name": "SHR_M14",
+        "file_index": 963,
+        "area": "Suhalla Gate",
+        "type": 1,
+        "MFT_index": 156,
+        "outdoor": 0
+    },
+    {
+        "ID": 170,
+        "name": "SHR_M23",
+        "file_index": 963,
+        "area": "Suhalla Gate",
+        "type": 1,
+        "MFT_index": 157,
+        "outdoor": 0
+    },
+    {
+        "ID": 171,
+        "name": "SHR_M56",
+        "file_index": 963,
+        "area": "Gateway Cave",
+        "type": 1,
+        "MFT_index": 158,
+        "outdoor": 0
+    },
+    {
+        "ID": 172,
+        "name": "UTO01",
+        "file_index": 964,
+        "area": "Tunnel Ruins",
+        "type": 1,
+        "MFT_index": 159,
+        "outdoor": 0
+    },
+    {
+        "ID": 173,
+        "name": "UTO02",
+        "file_index": 964,
+        "area": "Babi Lighthouse",
+        "type": 1,
+        "MFT_index": 160,
+        "outdoor": 0
+    },
+    {
+        "ID": 174,
+        "name": "BTO03",
+        "file_index": 965,
+        "area": "Babi Lighthouse",
+        "type": 1,
+        "MFT_index": 163,
+        "outdoor": 0
+    },
+    {
+        "ID": 175,
+        "name": "BTO02",
+        "file_index": 965,
+        "area": "Babi Lighthouse",
+        "type": 1,
+        "MFT_index": 162,
+        "outdoor": 0
+    },
+    {
+        "ID": 176,
+        "name": "BTO01",
+        "file_index": 965,
+        "area": "Babi Lighthouse Entry",
+        "type": 1,
+        "MFT_index": 161,
+        "outdoor": 0
+    },
+    {
+        "ID": 177,
+        "name": "B_MICHI01",
+        "file_index": 965,
+        "area": "Road to Babi Lighthouse",
+        "type": 1,
+        "MFT_index": 167,
+        "outdoor": 0
+    },
+    {
+        "ID": 178,
+        "name": "OTMR0002",
+        "file_index": 966,
+        "area": "Lalivero",
+        "type": 2,
+        "MFT_index": 164,
+        "outdoor": 0
+    },
+    {
+        "ID": 179,
+        "name": "RARIRM1",
+        "file_index": 967,
+        "area": "Lalivero Sanctum",
+        "type": 2,
+        "MFT_index": 165,
+        "outdoor": 0
+    },
+    {
+        "ID": 180,
+        "name": "RARIRM2",
+        "file_index": 967,
+        "area": "Lalivero",
+        "type": 2,
+        "MFT_index": 166,
+        "outdoor": 0
+    },
+    {
+        "ID": 181,
+        "name": "V_ENT01",
+        "file_index": 968,
+        "area": "Venus Lighthouse Entry",
+        "type": 1,
+        "MFT_index": 168,
+        "outdoor": 0
+    },
+    {
+        "ID": 182,
+        "name": "VTO01",
+        "file_index": 968,
+        "area": "Venus Lighthouse",
+        "type": 1,
+        "MFT_index": 169,
+        "outdoor": 0
+    },
+    {
+        "ID": 183,
+        "name": "VTO02",
+        "file_index": 968,
+        "area": "Venus Lighthouse",
+        "type": 1,
+        "MFT_index": 170,
+        "outdoor": 0
+    },
+    {
+        "ID": 184,
+        "name": "VTO03",
+        "file_index": 968,
+        "area": "Venus Lighthouse",
+        "type": 1,
+        "MFT_index": 171,
+        "outdoor": 0
+    },
+    {
+        "ID": 185,
+        "name": "VTO04",
+        "file_index": 968,
+        "area": "Venus Lighthouse",
+        "type": 1,
+        "MFT_index": 172,
+        "outdoor": 0
+    },
+    {
+        "ID": 186,
+        "name": "VTO05",
+        "file_index": 968,
+        "area": "Venus Lighthouse",
+        "type": 1,
+        "MFT_index": 173,
+        "outdoor": 0
+    },
+    {
+        "ID": 187,
+        "name": "VTO06",
+        "file_index": 969,
+        "area": "Lighthouse Aerie",
+        "type": 1,
+        "MFT_index": 174,
+        "outdoor": 0
+    },
+    {
+        "ID": 188,
+        "name": "KODAI01",
+        "file_index": 970,
+        "area": "Lemurian ship",
+        "type": 2,
+        "MFT_index": 175,
+        "outdoor": 0
+    },
+    {
+        "ID": 189,
+        "name": "OTMGTRE0",
+        "file_index": 951,
+        "area": "Tolbi Spring",
+        "type": 2,
+        "MFT_index": 176,
+        "outdoor": 0
+    },
+    {
+        "ID": 190,
+        "name": "ROUNGE",
+        "file_index": 971,
+        "area": "Lobby",
+        "type": 2,
+        "MFT_index": 177,
+        "outdoor": 0
+    },
+    {
+        "ID": 191,
+        "name": "TEST0",
+        "file_index": 972,
+        "area": "Test 0",
+        "type": 1,
+        "MFT_index": 178,
+        "outdoor": 0
+    },
+    {
+        "ID": 192,
+        "name": "TEST1",
+        "file_index": 972,
+        "area": "Test 1",
+        "type": 1,
+        "MFT_index": 179,
+        "outdoor": 0
+    },
+    {
+        "ID": 193,
+        "name": "TEST2",
+        "file_index": 972,
+        "area": "Test 2",
+        "type": 1,
+        "MFT_index": 180,
+        "outdoor": 0
+    },
+    {
+        "ID": 194,
+        "name": "TEST3",
+        "file_index": 972,
+        "area": "Test 3",
+        "type": 1,
+        "MFT_index": 181,
+        "outdoor": 0
+    },
+    {
+        "ID": 195,
+        "name": "TEST4",
+        "file_index": 972,
+        "area": "Test 4",
+        "type": 1,
+        "MFT_index": 182,
+        "outdoor": 0
+    },
+    {
+        "ID": 196,
+        "name": "TEST5",
+        "file_index": 972,
+        "area": "Test 5",
+        "type": 1,
+        "MFT_index": 183,
+        "outdoor": 0
+    },
+    {
+        "ID": 197,
+        "name": "TEST6",
+        "file_index": 972,
+        "area": "Test 6",
+        "type": 1,
+        "MFT_index": 184,
+        "outdoor": 0
+    },
+    {
+        "ID": 198,
+        "name": "TEST7",
+        "file_index": 972,
+        "area": "Test 7",
+        "type": 1,
+        "MFT_index": 185,
+        "outdoor": 0
+    },
+    {
+        "ID": 199,
+        "name": "GET_ITEM",
+        "file_index": 973,
+        "area": "Increase item and level",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    },
+    {
+        "ID": 200,
+        "name": "MENU",
+        "file_index": 974,
+        "area": "Menu test",
+        "type": 1,
+        "MFT_index": 0,
+        "outdoor": 0
+    }
+]
