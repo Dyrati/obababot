@@ -75,7 +75,7 @@
         "ID": 8,
         "name": "HAIROOM2",
         "file_index": 887,
-        "area": "Babi's Palace",
+        "area": "Vale",
         "type": 2,
         "MFT_index": 7,
         "outdoor": 0
@@ -84,7 +84,7 @@
         "ID": 9,
         "name": "HAISIN",
         "file_index": 888,
-        "area": "Vale Sanctum",
+        "area": "Vale",
         "type": 2,
         "MFT_index": 8,
         "outdoor": 0
@@ -156,7 +156,7 @@
         "ID": 17,
         "name": "DGN01N",
         "file_index": 896,
-        "area": "Elemental Star Room",
+        "area": "Sol Sanctum",
         "type": 1,
         "MFT_index": 16,
         "outdoor": 0
@@ -165,7 +165,7 @@
         "ID": 18,
         "name": "DGN01N2",
         "file_index": 897,
-        "area": "Elemental Star Room",
+        "area": "Sol Sanctum",
         "type": 1,
         "MFT_index": 17,
         "outdoor": 0
@@ -174,7 +174,7 @@
         "ID": 19,
         "name": "SOLENT",
         "file_index": 895,
-        "area": "Sol Entrance",
+        "area": "Sol Sanctum",
         "type": 1,
         "MFT_index": 10,
         "outdoor": 0
@@ -201,7 +201,7 @@
         "ID": 22,
         "name": "KUP_RGK",
         "file_index": 900,
-        "area": "Lunpa",
+        "area": "Vault",
         "type": 2,
         "MFT_index": 21,
         "outdoor": 0
@@ -291,7 +291,7 @@
         "ID": 32,
         "name": "BIRIU1",
         "file_index": 907,
-        "area": "Bilibin Treasury",
+        "area": "Bilibin",
         "type": 2,
         "MFT_index": 35,
         "outdoor": 0
@@ -345,7 +345,7 @@
         "ID": 38,
         "name": "KRM_B1",
         "file_index": 911,
-        "area": "Kolima Tunnel",
+        "area": "Kolima",
         "type": 2,
         "MFT_index": 42,
         "outdoor": 0
@@ -444,7 +444,7 @@
         "ID": 49,
         "name": "SANKAN01",
         "file_index": 920,
-        "area": "Bilibin Cave Entrance",
+        "area": 16,
         "type": 1,
         "MFT_index": 50,
         "outdoor": 0
@@ -462,7 +462,7 @@
         "ID": 51,
         "name": "IMI_RM01",
         "file_index": 921,
-        "area": "Imil Sanctum",
+        "area": "Imil",
         "type": 2,
         "MFT_index": 54,
         "outdoor": 0
@@ -525,7 +525,7 @@
         "ID": 58,
         "name": "MTO06",
         "file_index": 925,
-        "area": "Lighthouse Aerie",
+        "area": "Mercury Lighthouse",
         "type": 1,
         "MFT_index": 61,
         "outdoor": 0
@@ -552,7 +552,7 @@
         "ID": 61,
         "name": "FUCHINRM",
         "file_index": 926,
-        "area": "Xian",
+        "area": "Fuchin Temple",
         "type": 2,
         "MFT_index": 63,
         "outdoor": 0
@@ -723,7 +723,7 @@
         "ID": 80,
         "name": "ARTN_DJ04",
         "file_index": 932,
-        "area": "Alpine Crossing",
+        "area": "Altin Peak",
         "type": 1,
         "MFT_index": 82,
         "outdoor": 0
@@ -912,7 +912,7 @@
         "ID": 101,
         "name": "KARERM02",
         "file_index": 937,
-        "area": "Kalay Sanctum",
+        "area": "Kalay",
         "type": 2,
         "MFT_index": 97,
         "outdoor": 0
@@ -948,7 +948,7 @@
         "ID": 105,
         "name": "LUNRM01",
         "file_index": 940,
-        "area": "Lunpa Temple",
+        "area": "Lunpa",
         "type": 2,
         "MFT_index": 101,
         "outdoor": 0
@@ -975,7 +975,7 @@
         "ID": 108,
         "name": "M_TIKET",
         "file_index": 942,
-        "area": "Tolbi Docks",
+        "area": "Kalay Docks",
         "type": 2,
         "MFT_index": 104,
         "outdoor": 0
@@ -1020,7 +1020,7 @@
         "ID": 113,
         "name": "TAKARA00",
         "file_index": 946,
-        "area": "Crossbone Isle",
+        "area": "Crossbone Isle Cave",
         "type": 1,
         "MFT_index": 109,
         "outdoor": 0
@@ -1128,7 +1128,7 @@
         "ID": 125,
         "name": "TAKARAB11",
         "file_index": 946,
-        "area": "Pirate Ship",
+        "area": "Crossbone Isle Cave",
         "type": 1,
         "MFT_index": 120,
         "outdoor": 0
@@ -1227,7 +1227,7 @@
         "ID": 136,
         "name": "TORERM01",
         "file_index": 950,
-        "area": "Tolbi Sanctum",
+        "area": "Tolbi",
         "type": 2,
         "MFT_index": 123,
         "outdoor": 0
@@ -1245,7 +1245,7 @@
         "ID": 138,
         "name": "OTQD0003",
         "file_index": 952,
-        "area": "Babi's Palace",
+        "area": 41,
         "type": 2,
         "MFT_index": 126,
         "outdoor": 0
@@ -1254,7 +1254,7 @@
         "ID": 139,
         "name": "O_BAVI",
         "file_index": 952,
-        "area": "Babi's Palace",
+        "area": 41,
         "type": 2,
         "MFT_index": 125,
         "outdoor": 0
@@ -1263,7 +1263,7 @@
         "ID": 140,
         "name": "KORO02",
         "file_index": 953,
-        "area": "Colosseum Tunnel",
+        "area": 42,
         "type": 1,
         "MFT_index": 128,
         "outdoor": 0
@@ -1272,7 +1272,7 @@
         "ID": 141,
         "name": "KORO01",
         "file_index": 953,
-        "area": "Colosseum Tunnel",
+        "area": 42,
         "type": 1,
         "MFT_index": 127,
         "outdoor": 0
@@ -1281,7 +1281,7 @@
         "ID": 142,
         "name": "KORO03",
         "file_index": 953,
-        "area": "Colosseum Entrance",
+        "area": 42,
         "type": 1,
         "MFT_index": 129,
         "outdoor": 0
@@ -1290,7 +1290,7 @@
         "ID": 143,
         "name": "COLOSSE01",
         "file_index": 954,
-        "area": "Colosseum Final 1",
+        "area": 42,
         "type": 1,
         "MFT_index": 130,
         "outdoor": 0
@@ -1299,7 +1299,7 @@
         "ID": 144,
         "name": "COLOSSE02",
         "file_index": 955,
-        "area": "Colosseum Final 2",
+        "area": 42,
         "type": 1,
         "MFT_index": 131,
         "outdoor": 0
@@ -1308,7 +1308,7 @@
         "ID": 145,
         "name": "COLOSSE03",
         "file_index": 956,
-        "area": "Colosseum Final 3",
+        "area": 42,
         "type": 1,
         "MFT_index": 132,
         "outdoor": 0
@@ -1515,7 +1515,7 @@
         "ID": 168,
         "name": "SUHARM01",
         "file_index": 962,
-        "area": "Suhalla Sanctum",
+        "area": "Suhalla",
         "type": 2,
         "MFT_index": 155,
         "outdoor": 0
@@ -1542,7 +1542,7 @@
         "ID": 171,
         "name": "SHR_M56",
         "file_index": 963,
-        "area": "Gateway Cave",
+        "area": "Suhalla Gate",
         "type": 1,
         "MFT_index": 158,
         "outdoor": 0
@@ -1560,7 +1560,7 @@
         "ID": 173,
         "name": "UTO02",
         "file_index": 964,
-        "area": "Babi Lighthouse",
+        "area": "Tunnel Ruins",
         "type": 1,
         "MFT_index": 160,
         "outdoor": 0
@@ -1587,7 +1587,7 @@
         "ID": 176,
         "name": "BTO01",
         "file_index": 965,
-        "area": "Babi Lighthouse Entry",
+        "area": "Babi Lighthouse",
         "type": 1,
         "MFT_index": 161,
         "outdoor": 0
@@ -1596,7 +1596,7 @@
         "ID": 177,
         "name": "B_MICHI01",
         "file_index": 965,
-        "area": "Road to Babi Lighthouse",
+        "area": "Babi Lighthouse",
         "type": 1,
         "MFT_index": 167,
         "outdoor": 0
@@ -1614,7 +1614,7 @@
         "ID": 179,
         "name": "RARIRM1",
         "file_index": 967,
-        "area": "Lalivero Sanctum",
+        "area": "Lalivero",
         "type": 2,
         "MFT_index": 165,
         "outdoor": 0
@@ -1641,7 +1641,7 @@
         "ID": 182,
         "name": "VTO01",
         "file_index": 968,
-        "area": "Venus Lighthouse",
+        "area": "Venus Lighthouse Entry",
         "type": 1,
         "MFT_index": 169,
         "outdoor": 0
@@ -1686,7 +1686,7 @@
         "ID": 187,
         "name": "VTO06",
         "file_index": 969,
-        "area": "Lighthouse Aerie",
+        "area": "Venus Lighthouse",
         "type": 1,
         "MFT_index": 174,
         "outdoor": 0
@@ -1713,7 +1713,7 @@
         "ID": 190,
         "name": "ROUNGE",
         "file_index": 971,
-        "area": "Lobby",
+        "area": 60,
         "type": 2,
         "MFT_index": 177,
         "outdoor": 0
