@@ -8,6 +8,7 @@ $datatables  Display the names of all the data tables
 $info        Display info about something
 $index       Index a data table
 $math        Evaluate a python expression
+$var         Set a variable equal to a python expression
 $filter      Filter a data table based on a custom condition
 $sort        Sort a data table based on an attribute (may also filter)
 $getclass    Get the class of a character based on their djinn
