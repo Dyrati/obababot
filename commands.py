@@ -114,7 +114,7 @@ mfuncs = {
     'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
     'log':math.log, 'exp':math.exp,
 }
-@command(alias=r"(?P<set>[a-zA-Z_][a-zA-Z0-9_]*)?\s*=")
+@command(alias="=")
 async def math(message, *args, **kwargs):
     """Evaluate a python expression
 
@@ -129,7 +129,6 @@ async def math(message, *args, **kwargs):
                can happen at any time.
     Aliases:
         may use the "=" sign in place of "$math "
-        may use "varname = expression" to set variables as well
     """
     ID = message.author.id
     value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID].vars})

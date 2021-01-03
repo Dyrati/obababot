@@ -11,7 +11,7 @@ UserData = {}
 def command(f=None, alias=None, prefix=prefix):
     def decorator(f):
         global usercommands
-        if alias: aliases[re.compile(alias)] = prefix + f.__name__
+        if alias: aliases[alias] = prefix + f.__name__
         usercommands[prefix + f.__name__] = f
         async def inner(*args, **kwargs):
             f(*args, **kwargs)
@@ -24,8 +24,8 @@ def is_command(message):
     if message.author == client.user: return False
     if message.guild.name == "Golden Sun Speedrunning" and message.channel.name != "botspam":
         return False
-    for regex in aliases:
-        if regex.match(message.content): return True
+    for alias in aliases:
+        if message.content.startswith(alias): return True
     else:
         if message.content.split(" ",1)[0] in usercommands: return True
     return False
@@ -135,17 +135,15 @@ def parse(s):
 
 def extractcommand(text):
     extrakwargs = {}
-    for regex, command in aliases.items():
-        m = regex.match(text)
-        if not m: continue
-        args, kwargs = parse(text[m.end():].replace("`",""))
-        kwargs.update(**{k:v for k,v in m.groupdict().items() if v is not None})
-        break
+    for alias, command in aliases.items():
+        if text.startswith(alias):
+            args, kwargs = parse(text[len(alias):].replace("`",""))
+            return command, args, kwargs
     else:
         command = text.split(" ",1)[0]
         if command not in usercommands: return
         args, kwargs = parse(text[len(command)+1:].replace("`",""))
-    return command, args, kwargs
+        return command, args, kwargs
 
 
 def wrap(iterable, maxwidth, pos=0):
