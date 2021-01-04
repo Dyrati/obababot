@@ -266,6 +266,56 @@ async def damage(message, *args, **kwargs):
     await reply(message, f"`{gsfuncs.damage(ability, **kwargs)}`")
 
 
+async def handlesav(message, data):
+    for i in range(16):
+        addr = 0x1000*i
+        if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break
+    else:
+        assert 0, "No valid saves detected"
+    ID = message.author.id
+    UserData[ID].save = data
+    pages = gsfuncs.preview(data)
+    help_page = inspect.cleandoc("""Click emotes to view other pages of this message
+
+        P     - Go to preview page
+        0,1,2 - Select a save slot
+        <,>   - Scroll through characters of current save slot
+        ?     - Show this help page
+        """)
+    pages["help"] = f"```\n{help_page}\n```"
+    sent = await reply(message, pages["preview"])
+    async def medit(message, user, emoji):
+        mdata = MessageData[message]
+        tasks = [message.remove_reaction(emoji, user)]
+        if emoji == '\U0001f1f5':
+            tasks.append(message.edit(content=mdata["pages"]["preview"]))
+        elif emoji == '\u2753':
+            tasks.append(message.edit(content=mdata["pages"]["help"]))
+        else:
+            edit = False
+            if emoji.endswith('\ufe0f\u20e3'):
+                slot = int(emoji[0])
+                if slot in mdata["pages"]:
+                    mdata["slot"] = slot; edit = True
+            elif emoji == "\u25c0\ufe0f":
+                mdata["page"] -= 1; edit = True
+            elif emoji == "\u25b6\ufe0f":
+                mdata["page"] += 1; edit = True
+            if edit:
+                mdata["page"] %= len(mdata["pages"][mdata["slot"]])
+                content = mdata["pages"][mdata["slot"]][mdata["page"]]
+                tasks.append(message.edit(content=content))
+        for task in [utilities.client.loop.create_task(t) for t in tasks]:
+            await task
+    slots = [k for k in pages if isinstance(k, int)]
+    MessageData[sent] = {"slot": slots[0], "page": 0, "pages": pages, "func":medit}
+    buttons = [
+        '\U0001f1f5','0\ufe0f\u20e3','1\ufe0f\u20e3','2\ufe0f\u20e3',
+        '\u25c0\ufe0f','\u25b6\ufe0f','\u2753']
+    tasks = [utilities.client.loop.create_task(sent.add_reaction(b)) for b in buttons]
+    for t in tasks: await t
+
+
 @command
 async def upload(message, *args, **kwargs):
     """Upload a file using an attachment or a link
@@ -276,10 +326,7 @@ async def upload(message, *args, **kwargs):
     the most recent bot session.
 
     Accepted File Types:
-        .sav -- Battery files. Sends a multi-page message.
-            P -- view the preview page
-            0,1,2 -- switch to the corresponding slot
-            <,> -- scroll through the characters of the current slot
+        .sav -- Battery files. Returns a multi-page message.
         .SaveRAM -- Bizhawk battery files (same as .sav)
 
     Arguments:
@@ -300,42 +347,7 @@ async def upload(message, *args, **kwargs):
     data = await attachment.read()
     url = attachment.url
     if url.endswith(".sav") or url.endswith(".SaveRAM"):
-        for i in range(16):
-            addr = 0x1000*i
-            if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break
-        else:
-            assert 0, "No valid saves detected"
-        ID = message.author.id
-        UserData[ID].save = data
-        pages = gsfuncs.preview(data)
-        sent = await reply(message, pages["preview"])
-        async def medit(message, user, emoji):
-            mdata = MessageData[message]
-            try:
-                if emoji == '\U0001f1f5':
-                    await message.edit(content=mdata["pages"]["preview"])
-                else:
-                    if emoji.endswith('\ufe0f\u20e3'):
-                        slot = int(emoji[0])
-                        if slot in mdata["pages"]: mdata["slot"] = slot
-                    elif emoji == "\u25c0\ufe0f":
-                        mdata["page"] -= 1
-                    elif emoji == "\u25b6\ufe0f":
-                        mdata["page"] += 1
-                    else: return
-                    mdata["page"] %= len(mdata["pages"][mdata["slot"]])
-                    content = mdata["pages"][mdata["slot"]][mdata["page"]]
-                    await message.edit(content=content)
-            except KeyError:
-                pass
-            finally:
-                await message.remove_reaction(emoji, user)
-        slots = [k for k in pages if isinstance(k, int)]
-        MessageData[sent] = {"slot": slots[0], "page": 0, "pages": pages, "func":medit}
-        buttons = ['\U0001f1f5','0\ufe0f\u20e3','1\ufe0f\u20e3',
-                   '2\ufe0f\u20e3','\u25c0\ufe0f','\u25b6\ufe0f']
-        tasks = [utilities.client.loop.create_task(sent.add_reaction(b)) for b in buttons]
-        for t in tasks: await t
+        await handlesav(message, data)
     else:
         assert 0, "Unhandled file type"
 
