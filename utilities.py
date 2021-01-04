@@ -187,7 +187,7 @@ def wrap(iterable, maxwidth, pos=0):
     return out
 
 
-def dictstr(dictionary, js=False, maxwidth=78):
+def dictstr(dictionary, js=False, maxwidth=77):
     if js: return json.dumps(dictionary, indent=4)
     out = ""
     maxlen = len(max(dictionary.keys(), key=lambda x: len(x)))

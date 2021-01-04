@@ -12,7 +12,7 @@ print("Imported modules    ")
 
 terminal_mode = "-t" in sys.argv
 TOKEN = os.getenv('TOKEN') or input("Input bot token: ").strip('"')
-if TOKEN == "terminal": terminal_mode = True
+if TOKEN == "-t": terminal_mode = True
 client = discord.Client()
 utilities.client = client
 
@@ -47,13 +47,11 @@ async def on_message_edit(before, after):
 
 @client.event
 async def on_reaction_add(reaction, user, state=True):
-    # print(reaction.emoji.encode("ascii", "backslashreplace"))
+    # print(reaction.emoji.encode("ascii", "backslashreplace").decode())
     if user == client.user: return
-    message = reaction.message
-    name = reaction.emoji
-    if MessageData.get(message):
-        func = MessageData[message].get("func")
-        if func: await func(message, user, name)
+    if reaction.message in MessageData:
+        func = MessageData[reaction.message].get("func")
+        if func: await func(reaction.message, user, reaction.emoji)
 
 
 load_data()

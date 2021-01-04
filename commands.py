@@ -1,5 +1,4 @@
 import discord
-import asyncio
 import re
 import inspect
 import utilities
