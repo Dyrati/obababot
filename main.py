@@ -5,7 +5,7 @@ import sys
 import time
 import traceback
 import utilities
-from utilities import UserData, reply, parse, load_data
+from utilities import UserData, MessageData, reply, parse, load_data
 import commands, gsfuncs
 print("Imported modules    ")
 
@@ -44,6 +44,16 @@ async def on_message(message):
 @client.event
 async def on_message_edit(before, after):
     await on_message(after)
+
+@client.event
+async def on_reaction_add(reaction, user, state=True):
+    # print(reaction.emoji.encode("ascii", "backslashreplace"))
+    if user == client.user: return
+    message = reaction.message
+    name = reaction.emoji
+    if MessageData.get(message):
+        func = MessageData[message].get("func")
+        if func: await func(message, user, name)
 
 
 load_data()

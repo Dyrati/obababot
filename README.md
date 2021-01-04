@@ -14,7 +14,6 @@ $sort        Sort a data table based on an attribute (may also filter)
 $getclass    Get the class of a character based on their djinn
 $damage      Damage Calculator
 $upload      Upload a file using an attachment or a link
-$page        View a specific page of a multi-page message
 $delete      Delete the last message(s) sent to you by obaba this session
 ```
 ## Syntax
@@ -49,10 +48,9 @@ An easy way to view the attributes of objects in a data table is to use `$index 
 which prints out all of the attributes and values of the first item in `[table]`.
 
 ### Multi-Page Responses
-Some functions return a multi-page response.  By using the `$page` command, you can view other  
-pages of that response.  You can edit the command repeatedly to view other pages, and obaba  
-will edit her own message to reflect the change.  The arguments to `$page` depend on the  
-multi-page message that was last sent to you.
+Some functions return a multi-page response.  By clicking on the emotes, you can view other  
+pages of that response.  Obaba will edit her own message to reflect the change.  The message  
+will no longer be editable after a bot reset (which may happen at any time).
 
 ## Running the bot on your system
  - If you need to update the database, run `gatherdata.py` with the GS2 ROM as an argument

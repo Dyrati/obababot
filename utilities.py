@@ -6,6 +6,7 @@ usercommands = {}
 aliases = {}
 client = None
 UserData = {}
+MessageData = {}
 
 
 def command(f=None, alias=None, prefix=prefix):

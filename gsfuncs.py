@@ -270,7 +270,7 @@ def preview(data):
     pages["preview"] = f"```\n{preview}\n```"
     for f in filedata:
         slot = f["slot"]
-        pages[str(slot)] = {}
+        pages[slot] = []
         for pc in f["party"]:
             out = utilities.Charmap()
             out.addtext(pc["name"], (0, 0))[0]
@@ -324,5 +324,5 @@ def preview(data):
                 x,_ = out.addtext("\n".join(pc["abilities"][count:]), (x+3, 15))
             else:
                 out.addtext("\n".join(pc["abilities"]), (x+6, 15))
-            pages[str(slot)][pc["name"]] = f"```\n{out}\n```"
+            pages[slot].append(f"```\n{out}\n```")
     return pages

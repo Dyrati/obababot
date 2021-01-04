@@ -1,8 +1,11 @@
 import discord
+import asyncio
 import re
 import inspect
 import utilities
-from utilities import command, prefix, DataTables, UserData, Namemaps, reply, dictstr, mfuncs
+from utilities import \
+    command, prefix, DataTables, UserData, MessageData,\
+    Namemaps, reply, dictstr, mfuncs
 import gsfuncs
 from safe_eval import safe_eval
 
@@ -274,10 +277,9 @@ async def upload(message, *args, **kwargs):
 
     Accepted File Types:
         .sav -- Battery files. Sends a multi-page message.
-            $page preview -- the general overview of the save file
-            $page [slot] [name]
-                [slot] is the in game slot you've saved to (0-2)
-                [name] is the name of the pc whose stats you want to see
+            P -- view the preview page
+            0,1,2 -- switch to the corresponding slot
+            <,> -- scroll through the characters of the current slot
         .SaveRAM -- Bizhawk battery files (same as .sav)
 
     Arguments:
@@ -307,36 +309,35 @@ async def upload(message, *args, **kwargs):
         UserData[ID].save = data
         pages = gsfuncs.preview(data)
         sent = await reply(message, pages["preview"])
-        UserData[ID].live_response = {"message": sent, "pages": pages}
+        async def medit(message, user, emoji):
+            mdata = MessageData[message]
+            try:
+                if emoji == '\U0001f1f5':
+                    await message.edit(content=mdata["pages"]["preview"])
+                else:
+                    if emoji.endswith('\ufe0f\u20e3'):
+                        slot = int(emoji[0])
+                        if slot in mdata["pages"]: mdata["slot"] = slot
+                    elif emoji == "\u25c0\ufe0f":
+                        mdata["page"] -= 1
+                    elif emoji == "\u25b6\ufe0f":
+                        mdata["page"] += 1
+                    else: return
+                    mdata["page"] %= len(mdata["pages"][mdata["slot"]])
+                    content = mdata["pages"][mdata["slot"]][mdata["page"]]
+                    await message.edit(content=content)
+            except KeyError:
+                pass
+            finally:
+                await message.remove_reaction(emoji, user)
+        slots = [k for k in pages if isinstance(k, int)]
+        MessageData[sent] = {"slot": slots[0], "page": 0, "pages": pages, "func":medit}
+        buttons = ['\U0001f1f5','0\ufe0f\u20e3','1\ufe0f\u20e3',
+                   '2\ufe0f\u20e3','\u25c0\ufe0f','\u25b6\ufe0f']
+        tasks = [utilities.client.loop.create_task(sent.add_reaction(b)) for b in buttons]
+        for t in tasks: await t
     else:
         assert 0, "Unhandled file type"
-
-
-@command
-async def page(message, *args, **kwargs):
-    """View a specific page of a multi-page message
-    
-    Requires that obababot has responded to you with a multi-page
-    message within the most recent bot session.  Arguments are 
-    specific to the message.
-
-    Keyword Arguments:
-        new -- set this arg to output a new response instead of editing
-    """
-    ID = message.author.id
-    response = UserData[ID].live_response
-    assert response, "No multi-page message detected"
-    old_message = response["message"]
-    page = response["pages"]
-    for arg in args: page = page[arg]
-    if kwargs.get("new"):
-        sent = await reply(message, page)
-        response["message"] = sent
-    else:
-        try: await old_message.edit(content=page)
-        except discord.NotFound:
-            sent = await reply(message, page)
-            response["message"] = sent
 
 
 @command
