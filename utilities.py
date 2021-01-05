@@ -187,12 +187,12 @@ def wrap(iterable, maxwidth, pos=0):
     return out
 
 
-def dictstr(dictionary, js=False, maxwidth=77):
+def dictstr(dictionary, js=False, maxwidth=77, sep="  "):
     if js: return json.dumps(dictionary, indent=4)
     out = ""
     maxlen = len(max(dictionary.keys(), key=lambda x: len(x)))
     for k,v in dictionary.items():
-        out += f"\n{k+'  ':<{maxlen+2}}"
+        out += f"\n{k+sep:<{maxlen+len(sep)}}"
         if hasattr(v, "__iter__") and not isinstance(v, (str, bytes)):
             out += wrap(v, maxwidth, maxlen+2)
         else:
@@ -322,12 +322,12 @@ class TerminalMessage:
         return text, attachments
 
 
-def terminal(on_ready=lambda: None, on_message=lambda: None, on_react=lambda: None):
+def terminal(on_ready=None, on_message=None):
     import asyncio
     ID = 0
     async def loop():
         client.loop = asyncio.get_running_loop()
-        await on_ready()
+        if on_ready: await on_ready()
         nonlocal ID
         while True:
             try: text = input("> ")
@@ -335,5 +335,5 @@ def terminal(on_ready=lambda: None, on_message=lambda: None, on_react=lambda: No
             if text in ("quit", "exit"): return
             elif text.startswith("setid"): ID=int(text[len("setid"):])
             message = TerminalMessage(content=text, ID=ID)
-            await on_message(message)
+            if on_message: await on_message(message)
     asyncio.run(loop())

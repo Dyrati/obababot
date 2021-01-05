@@ -32,8 +32,6 @@ async def help(message, *args, **kwargs):
             https://python-reference.readthedocs.io/en/latest/docs/operators/
             obaba bot accepts the following operation types:
                 Arithmetic, Relational, Boolean, Membership, Bitwise, Indexing
-
-        Multi-Page responses may be indexed using the {prefix}page command
         """)
         return await reply(message, f"```\n{out}\n```")
     else:

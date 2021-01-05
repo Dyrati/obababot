@@ -282,20 +282,20 @@ def preview(data):
             x,y = out.addtext(utilities.dictstr({
                 "HP": f"{stats['HP_cur']}/{stats['HP_max']}",
                 "PP": f"{stats['PP_cur']}/{stats['PP_max']}",
-                "ATK": stats["ATK"]}), (0, 4))
+                "ATK": stats["ATK"]}, sep=" "), (0, 4))
             x,y = out.addtext(utilities.dictstr({
                 "DEF": stats["DEF"],
                 "AGI": stats["AGI"],
-                "LCK": stats["LCK"]}), (x+2, 4))
+                "LCK": stats["LCK"]}, sep=" "), (x+2, 4))
             out.addtext("Base Stats", (x+3, 3))
             x,y = out.addtext(utilities.dictstr({
                 "HP": base['HP'],
                 "PP": base['PP'],
-                "ATK": base["ATK"]}), (x+3, 4))
+                "ATK": base["ATK"]}, sep=" "), (x+3, 4))
             x,y = out.addtext(utilities.dictstr({
                 "DEF": base["DEF"],
                 "AGI": base["AGI"],
-                "LCK": base["LCK"]}), (x+2, 4))
+                "LCK": base["LCK"]}, sep=" "), (x+2, 4))
             elementdata = []
             for i, name in enumerate(["ven", "merc", "mars", "jup"]):
                 elementdata.append(
@@ -324,7 +324,7 @@ def preview(data):
             out.addtext("Abilities", (x+3, ymax+1))
             x += 2
             height = max(len(pc["abilities"])/4, len(pc["djinn"]))
-            if height != int(height): height = int(height) + 1
+            height = int(height) + 1 if height != int(height) else int(height)
             for i in range(0, len(pc["abilities"]), height):
                 x,_ = out.addtext("\n".join(pc["abilities"][i:i+height]), (x+3, ymax+2))
             pages[slot].append(f"```\n{out}\n```")
