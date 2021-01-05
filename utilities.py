@@ -249,13 +249,13 @@ class Charmap:
     def __init__(self):
         self.charmap = []
     def addtext(self, text, coords):
-        x, y = coords
-        xmax = x-1
+        x,y = coords
+        xmax = x
         cm = self.charmap
         cm.extend(([] for i in range(y-len(cm)+1)))
         for char in text:
             if char == "\n":
-                xmax = max(xmax, x-1)
+                xmax = max(xmax, x)
                 x = coords[0]
                 y += 1
             else:
@@ -265,7 +265,7 @@ class Charmap:
                     cm[y].extend((" " for i in range(x-len(cm[y])+1)))
                 cm[y][x] = char
                 x += 1
-        return max(xmax, x-1), y
+        return max(xmax, x), y+1
     def __str__(self):
         return "\n".join(("".join(row) for row in self.charmap))
 
@@ -294,11 +294,16 @@ class TerminalMessage:
         self.guild = SN(name=None)
         self.channel = SN(name=None, send=self.send)
         self.edit = self.send
+        self.add_reaction = self.react
+        self.remove_reaction = self.react
     
     async def send(self, content=""):
         # content = content.replace("```","\n").replace("`","")
         print(content)
         return TerminalMessage(content)
+
+    async def react(self, emoji):
+        pass
     
     async def delete(self):
         print(f"Deleted {self}")
@@ -317,16 +322,18 @@ class TerminalMessage:
         return text, attachments
 
 
-def terminal(callback):
+def terminal(on_ready=lambda: None, on_message=lambda: None, on_react=lambda: None):
     import asyncio
     ID = 0
     async def loop():
+        client.loop = asyncio.get_running_loop()
+        await on_ready()
         nonlocal ID
         while True:
             try: text = input("> ")
             except KeyboardInterrupt: return
             if text in ("quit", "exit"): return
-            if text.startswith("setid"): ID=int(text[len("setid"):])
+            elif text.startswith("setid"): ID=int(text[len("setid"):])
             message = TerminalMessage(content=text, ID=ID)
-            await callback(message)
+            await on_message(message)
     asyncio.run(loop())

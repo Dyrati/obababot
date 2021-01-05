@@ -276,53 +276,56 @@ def preview(data):
             out.addtext(pc["name"], (0, 0))[0]
             out.addtext(pc["class"], (0, 1))[0]
             out.addtext(utilities.dictstr({"LV": pc["level"], "EXP": pc["exp"]}), (14,0))
-            out.addtext("Djinn", (0, 3))
-            djinn = []
-            for d in pc["djinn"]:
-                djinn.append({"name": d, "state": "√" if d in pc["set_djinn"] else "-"})
-            out.addtext(utilities.tableH(djinn, headers=False), (2,4))
             base = pc["base_stats"]
             stats = pc["stats"]
-            out.addtext("Stats", (14, 3))
-            x,_ = out.addtext(utilities.dictstr({
+            out.addtext("Stats", (0, 3))
+            x,y = out.addtext(utilities.dictstr({
                 "HP": f"{stats['HP_cur']}/{stats['HP_max']}",
                 "PP": f"{stats['PP_cur']}/{stats['PP_max']}",
-                "ATK": stats["ATK"]}), (14, 4))
-            x,_ = out.addtext(utilities.dictstr({
+                "ATK": stats["ATK"]}), (0, 4))
+            x,y = out.addtext(utilities.dictstr({
                 "DEF": stats["DEF"],
                 "AGI": stats["AGI"],
-                "LCK": stats["LCK"]}), (x+3, 4))
-            out.addtext("Base Stats", (x+4, 3))
-            x,_ = out.addtext(utilities.dictstr({
+                "LCK": stats["LCK"]}), (x+2, 4))
+            out.addtext("Base Stats", (x+3, 3))
+            x,y = out.addtext(utilities.dictstr({
                 "HP": base['HP'],
                 "PP": base['PP'],
-                "ATK": base["ATK"]}), (x+4, 4))
-            out.addtext(utilities.dictstr({
+                "ATK": base["ATK"]}), (x+3, 4))
+            x,y = out.addtext(utilities.dictstr({
                 "DEF": base["DEF"],
                 "AGI": base["AGI"],
-                "LCK": base["LCK"]}), (x+3, 4))
+                "LCK": base["LCK"]}), (x+2, 4))
             elementdata = []
             for i, name in enumerate(["ven", "merc", "mars", "jup"]):
                 elementdata.append(
-                    {"": name.title(),
+                    {"Estats": name.title(),
                     "Djinn": f"{pc['set_djinncounts'][i]}/{pc['djinncounts'][i]}",
                     "Level": pc["elevels"][i],
                     "Power": pc["stats"][f"{name}_pow"],
                     "Resist": pc["stats"][f"{name}_res"]})
-            out.addtext(utilities.tableV(elementdata), (14,8))
-            out.addtext("Items", (0, 14))
+            out.addtext(utilities.tableV(elementdata), (x+3,2))
+            out.addtext("Items", (0, 8))
             inventory = []
             for k,v in pc["inventory"].items():
-                flags = [s if f in v[1:] else "-" for s,f in zip("EB", ("equipped", "broken"))]
-                inventory.append({"item": k+" ", "amt": v[0], "flags": "".join(flags)})
-            x,_ = out.addtext(utilities.tableH(inventory, headers=False), (2, 15))
-            out.addtext("Abilities", (x+4, 14))
-            length = len(pc["abilities"])
-            if length > len(pc["inventory"]):
-                count = length-length//2
-                x,_ = out.addtext("\n".join(pc["abilities"][:count]), (x+6, 15))
-                x,_ = out.addtext("\n".join(pc["abilities"][count:]), (x+3, 15))
-            else:
-                out.addtext("\n".join(pc["abilities"]), (x+6, 15))
+                state = "B" if "broken" in v[1:] else "E" if "equipped" in v[1:] else "-"
+                inventory.append({"item": k+" ", "amt": v[0], "state": state})
+            x = -1
+            ymax = 0
+            for i in range(0, len(inventory), 5):
+                x,y = out.addtext(utilities.tableH(inventory[i:i+5], headers=False), (x+3, 9))
+                ymax = max(ymax, y)
+            out.addtext("Djinn", (0, ymax+1))
+            djinn = []
+            for d in pc["djinn"]:
+                djinn.append({"name": d, "state": "√" if d in pc["set_djinn"] else "-"})
+            x,_ = out.addtext(utilities.tableH(djinn, headers=False), (2,ymax+2))
+            x = max(x, 4)
+            out.addtext("Abilities", (x+3, ymax+1))
+            x += 2
+            height = max(len(pc["abilities"])/4, len(pc["djinn"]))
+            if height != int(height): height = int(height) + 1
+            for i in range(0, len(pc["abilities"]), height):
+                x,_ = out.addtext("\n".join(pc["abilities"][i:i+height]), (x+3, ymax+2))
             pages[slot].append(f"```\n{out}\n```")
     return pages

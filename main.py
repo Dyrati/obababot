@@ -46,7 +46,7 @@ async def on_message_edit(before, after):
     await on_message(after)
 
 @client.event
-async def on_reaction_add(reaction, user, state=True):
+async def on_reaction_add(reaction, user):
     # print(reaction.emoji.encode("ascii", "backslashreplace").decode())
     if user == client.user: return
     if reaction.message in MessageData:
@@ -56,7 +56,7 @@ async def on_reaction_add(reaction, user, state=True):
 
 load_data()
 if terminal_mode:
-    utilities.terminal(on_message)
+    utilities.terminal(on_ready=on_ready, on_message=on_message)
 else:
     print("Connecting...", end="\r")
     client.run(TOKEN)
