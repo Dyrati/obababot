@@ -1,3 +1,3 @@
 __all__ = [
-    "connectfour",
+    "connect4",
 ]

@@ -62,7 +62,9 @@ class ConnectFour():
 
 
 @command
-async def connect_four(message, *args, **kwargs):
+async def connect4(message, *args, **kwargs):
+    """Begins a game of connect 4"""
+
     game = ConnectFour()
     width = len(str(game).split("\n",1)[0])
     players = []
@@ -110,23 +112,3 @@ async def connect_four(message, *args, **kwargs):
         buttons = {"\u2705":True, "\u274c":False},
         func = startphase)
 
-
-# @command
-# async def connect_four(message, *args, **kwargs):
-#     """Begins a game of connect four"""
-#     game = ConnectFour()
-#     content = f"Player {game.current_player}'s move\n\n{game}"
-#     async def inputhandle(message, user, button):
-#         wincheck = game.add_piece(button)
-#         if wincheck is not None:
-#             content = f"Player {game.current_player} wins!\n\n{game}"
-#             await message.edit(content=f"```\n{content}\n```")
-#             await utilities.end_interaction(message)
-#         else:
-#             content = f"Player {game.current_player}'s move\n\n{game}"
-#             await message.edit(content=f"```\n{content}\n```")
-#     await utilities.interactive_message(
-#         message = message,
-#         content = f"```{content}```",
-#         buttons = {f"{i}\ufe0f\u20e3": i for i in range(7)},
-#         func = inputhandle)
