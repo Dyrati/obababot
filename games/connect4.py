@@ -2,6 +2,21 @@ import utilities
 from utilities import command, reply
 
 
+def v_iter(array):
+    for x, col in enumerate(array):
+        out = []
+        for y, piece in enumerate(col):
+            out.append((piece, x, y))
+        yield out
+
+def h_iter(array):
+    array = zip(*array)
+    for y, col in enumerate(array):
+        out = []
+        for x, piece in enumerate(col):
+            out.append((piece, x, y))
+        yield out
+
 def diag_iter(array):
     up = lambda x,y: (x, y+1)
     down = lambda x,y: (x, y-1)
@@ -22,21 +37,6 @@ def diag_iter(array):
                 x,y = direction(x,y)
             yield out
             pos = start(*pos)
-
-def v_iter(array):
-    for x, col in enumerate(array):
-        out = []
-        for y, piece in enumerate(col):
-            out.append((piece, x, y))
-        yield out
-
-def h_iter(array):
-    array = zip(*array)
-    for y, col in enumerate(array):
-        out = []
-        for x, piece in enumerate(col):
-            out.append((piece, x, y))
-        yield out
 
 
 class ConnectFour():
@@ -61,20 +61,22 @@ class ConnectFour():
             col[:] = ["   " for i in range(6)]
 
     def check_win(self):
-        vertical = v_iter(self.board)
-        horizontal = h_iter(self.board)
-        diags = diag_iter(self.board)
-        for generator in (vertical, horizontal, diags):
-            for g in generator:
-                pieces, xcoords, ycoords = zip(*g)
+        copy = [col[:] for col in self.board]
+        result = False
+        for iterator in (v_iter, h_iter, diag_iter):
+            for line in iterator(copy):
+                pieces, xcoords, ycoords = zip(*line)
                 s = "".join(pieces)
                 for piece in self.pieces:
                     if piece*4 in s:
                         s = s.replace(piece*4, f"({piece[1:-1]})"*4)
+                        while f"({piece[1:-1]}){piece}" in s:
+                            s = s.replace(f"({piece[1:-1]}){piece}", f"({piece[1:-1]})"*2)
                         new = [s[i:i+3] for i in range(0,len(s),3)]
                         for n,x,y in zip(new, xcoords, ycoords):
                             self.board[x][y] = n
-                        return 1
+                        result = True
+        return result
     
     def __str__(self):
         rows = [f" |{'|'.join(row)}|" for row in zip(*self.board)]

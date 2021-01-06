@@ -245,19 +245,12 @@ def tableV(dictlist, spacing=2):
     return "\n".join(template.format(*row) for row in zip(*columns))
 
 
-# class MultiPage(dict):
-#     def __init__(self, pages, *start):
-#         self.pages = pages
-#         self.goto(*start)
-#         self.location = start
+class MetaString(dict):
+    def __init__(self, string=None):
+        self.metadata = {"str": string or ""}
 
-#     def __str__(self):
-#         return self.page
-
-#     def goto(self, *args):
-#         page = self.pages
-#         for arg in args: page = page[arg]
-#         self.location = args
+    def __str__(self):
+        return self.metadata["str"]
 
 
 class Charmap:
@@ -374,6 +367,6 @@ async def interactive_message(message=None, content=None, buttons={}, func=None)
 
 async def end_interaction(message):
     MessageData.pop(message)
-    # await message.clear_reactions()
+    await message.clear_reactions()
 
     
