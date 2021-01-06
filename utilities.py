@@ -356,7 +356,6 @@ def terminal(on_ready=None, on_message=None):
 
 async def interactive_message(message=None, content=None, buttons={}, func=None):
     create_task = client.loop.create_task
-    tasks = []
     async def newfunc(message, user, emoji):
         if emoji not in buttons: return
         task1 = create_task(func(message, user, buttons[emoji]))
@@ -364,12 +363,13 @@ async def interactive_message(message=None, content=None, buttons={}, func=None)
         await task1, task2
     if message in MessageData:
         response = message
-        tasks.append(response.clear_reactions())
-        tasks.append(response.edit(content=content))
+        task1 = create_task(response.clear_reactions())
+        task2 = create_task(response.edit(content=content))
+        await task1, task2
     else:
         response = await reply(message, content)
     MessageData[response] = {"func": newfunc}
-    tasks.extend((create_task(response.add_reaction(b)) for b in buttons))
+    tasks = [create_task(response.add_reaction(b)) for b in buttons]
     for t in tasks: await t
 
 async def end_interaction(message):
