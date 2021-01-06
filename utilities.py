@@ -245,6 +245,21 @@ def tableV(dictlist, spacing=2):
     return "\n".join(template.format(*row) for row in zip(*columns))
 
 
+class MultiPage(dict):
+    def __init__(self, pages, *start):
+        self.pages = pages
+        self.goto(*start)
+        self.location = start
+
+    def __str__(self):
+        return self.page
+
+    def goto(self, *args):
+        page = self.pages
+        for arg in args: page = page[arg]
+        self.location = args
+
+
 class Charmap:
     def __init__(self):
         self.charmap = []
@@ -337,3 +352,22 @@ def terminal(on_ready=None, on_message=None):
             message = TerminalMessage(content=text, ID=ID)
             if on_message: await on_message(message)
     asyncio.run(loop())
+
+
+async def interactive_message(message=None, response=None, buttons={}, func=None):
+    create_task = client.loop.create_task
+    async def newfunc(message, user, emoji):
+        if emoji not in buttons: return
+        task1 = create_task(func(message, user, buttons[emoji]))
+        task2 = create_task(message.remove_reaction(emoji, user))
+        await task1
+        await task2
+    response = await reply(message, response)
+    MessageData[response] = {"func": newfunc}
+    for t in [create_task(response.add_reaction(b)) for b in buttons]: await t
+
+async def end_interaction(message):
+    MessageData.pop(message)
+    # await message.clear_reactions()
+
+    
