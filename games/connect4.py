@@ -18,42 +18,66 @@ def diag_iter(array):
             x, y = pos
             out = []
             while ismember(x,y):
-                out.append(array[x][y])
+                out.append((array[x][y], x, y))
                 x,y = direction(x,y)
-            yield "".join(out)
+            yield out
             pos = start(*pos)
+
+def v_iter(array):
+    for x, col in enumerate(array):
+        out = []
+        for y, piece in enumerate(col):
+            out.append((piece, x, y))
+        yield out
+
+def h_iter(array):
+    array = zip(*array)
+    for y, col in enumerate(array):
+        out = []
+        for x, piece in enumerate(col):
+            out.append((piece, x, y))
+        yield out
 
 
 class ConnectFour():
     def __init__(self):
         self.current_player = 1
-        self.board = [[" " for i in range(6)] for j in range(7)]
-        self.pieces = ["X","O"]
+        self.board = [["   " for i in range(6)] for j in range(7)]
+        self.pieces = [" X "," O "]
+        self.count = 0
     
     def add_piece(self, col):
-        if " " not in self.board[col]: return
-        height = self.board[col].index(" ")
+        if "   " not in self.board[col]: return
+        height = self.board[col].index("   ")
         self.board[col][height] = self.pieces[self.current_player-1]
+        self.count += 1
         if self.check_win(): return self.current_player
+        if self.count == len(self.board)*len(self.board[0]): return 0
         self.current_player += 1
         if self.current_player > 2: self.current_player = 1
 
     def reset(self):
         for col in self.board:
-            col[:] = [" " for i in range(6)]
+            col[:] = ["   " for i in range(6)]
 
     def check_win(self):
-        vertical = ("".join(col) for col in self.board)
-        horizontal = ("".join(row) for row in zip(*self.board))
-        diags = (s for s in diag_iter(self.board))
+        vertical = v_iter(self.board)
+        horizontal = h_iter(self.board)
+        diags = diag_iter(self.board)
         for generator in (vertical, horizontal, diags):
-            for s in generator:
+            for g in generator:
+                pieces, xcoords, ycoords = zip(*g)
+                s = "".join(pieces)
                 for piece in self.pieces:
-                    if piece*4 in s: return True
-        return False
+                    if piece*4 in s:
+                        s = s.replace(piece*4, f"({piece[1:-1]})"*4)
+                        new = [s[i:i+3] for i in range(0,len(s),3)]
+                        for n,x,y in zip(new, xcoords, ycoords):
+                            self.board[x][y] = n
+                        return 1
     
     def __str__(self):
-        rows = [f" | {' | '.join(row)} |" for row in zip(*self.board)]
+        rows = [f" |{'|'.join(row)}|" for row in zip(*self.board)]
         spacing = len(rows[0])-1
         border = " " + "="*spacing
         legs = " |/"+" "*(spacing-3)+"|/"
@@ -71,7 +95,7 @@ async def connect4(message, *args, **kwargs):
 
     def header():
         names = "{}  vs  {}".format(*(p.name for p in players))
-        left, right = names.center(width).split(names)
+        left, right = names.center(width+1).split(names)
         if game.current_player == 1: left = left[:-2] + "► "
         elif game.current_player == 2: right = " ◄" + right[2:]
         return left + names + right + "\n\n"
@@ -81,7 +105,8 @@ async def connect4(message, *args, **kwargs):
         wincheck = game.add_piece(button)
         player = players[game.current_player-1]
         if wincheck is not None:
-            content =  f"{player.name} wins!".center(width) + f"\n\n{game}"
+            if wincheck == 0: content = "Tie Game".center(width+1) + f"\n\n{game}"
+            else: content =  f"{player.name} wins!".center(width+1) + f"\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
             await utilities.end_interaction(message)
         else:
@@ -98,10 +123,9 @@ async def connect4(message, *args, **kwargs):
             content += f"\nWaiting for Player {len(players)+1} to join\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
         else:
-            content = header() + str(game)
             await utilities.interactive_message(
                 message = message,
-                content = f"```\n{content}\n```",
+                content = f"```\n{header()}{game}\n```",
                 buttons = {f"{i}\ufe0f\u20e3": i for i in range(7)},
                 func = mainphase)
 
