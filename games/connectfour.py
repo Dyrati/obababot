@@ -1,5 +1,5 @@
 import utilities
-from utilities import command, reply, MessageData
+from utilities import command, reply
 
 def diag_iter(array):
     up = lambda x,y: (x, y+1)
@@ -53,7 +53,12 @@ class ConnectFour():
         return False
     
     def __str__(self):
-        return "\n".join(reversed([f"| {' | '.join(row)} |" for row in zip(*self.board)]))
+        rows = [f" | {' | '.join(row)} |" for row in zip(*self.board)]
+        spacing = len(rows[0])-1
+        border = " " + "="*spacing
+        legs = " |/"+" "*(spacing-3)+"|/"
+        feet = "//"+" "*(spacing-3)+"//"
+        return "\n".join((border, "\n".join((reversed(rows))), border, legs, feet))
 
 
 @command
