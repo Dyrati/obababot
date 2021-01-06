@@ -3,19 +3,23 @@ A discord utility bot for Golden Sun.
 
 ## Commands
 ```
-$help        Provides information about the bot and its functions
-$datatables  Display the names of all the data tables
-$info        Display info about something
-$index       Index a data table
-$math        Evaluate a python expression
-$var         Set a variable equal to a python expression
-$filter      Filter a data table based on a custom condition
-$sort        Sort a data table based on an attribute (may also filter)
-$getclass    Get the class of a character based on their djinn
-$damage      Damage Calculator
-$upload      Upload a file using an attachment or a link
-$delete      Delete the last message(s) sent to you by obaba this session
+$help          Provides information about the bot and its functions
+$datatables    Display the names of all the data tables
+$info          Display info about something
+$index         Index a data table
+$math          Evaluate a python expression
+$var           Set a variable equal to a python expression
+$filter        Filter a data table based on a custom condition
+$sort          Sort a data table based on an attribute (may also filter)
+$getclass      Get the class of a character based on their djinn
+$damage        Damage Calculator
+$upload        Upload a file using an attachment or a link
+$delete        Delete the last message(s) sent to you by obaba this session
+$connect_four  Begins a game of connect four
 ```
+
+Type `$help [funcname]` for detailed info on how to use that function.
+
 ## Syntax
 **Arguments** are space-separated words
  - `$sort enemydata HP`

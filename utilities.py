@@ -245,19 +245,19 @@ def tableV(dictlist, spacing=2):
     return "\n".join(template.format(*row) for row in zip(*columns))
 
 
-class MultiPage(dict):
-    def __init__(self, pages, *start):
-        self.pages = pages
-        self.goto(*start)
-        self.location = start
+# class MultiPage(dict):
+#     def __init__(self, pages, *start):
+#         self.pages = pages
+#         self.goto(*start)
+#         self.location = start
 
-    def __str__(self):
-        return self.page
+#     def __str__(self):
+#         return self.page
 
-    def goto(self, *args):
-        page = self.pages
-        for arg in args: page = page[arg]
-        self.location = args
+#     def goto(self, *args):
+#         page = self.pages
+#         for arg in args: page = page[arg]
+#         self.location = args
 
 
 class Charmap:
@@ -354,17 +354,23 @@ def terminal(on_ready=None, on_message=None):
     asyncio.run(loop())
 
 
-async def interactive_message(message=None, response=None, buttons={}, func=None):
+async def interactive_message(message=None, content=None, buttons={}, func=None):
     create_task = client.loop.create_task
+    tasks = []
     async def newfunc(message, user, emoji):
         if emoji not in buttons: return
         task1 = create_task(func(message, user, buttons[emoji]))
         task2 = create_task(message.remove_reaction(emoji, user))
-        await task1
-        await task2
-    response = await reply(message, response)
+        await task1, task2
+    if message in MessageData:
+        response = message
+        tasks.append(response.clear_reactions())
+        tasks.append(response.edit(content=content))
+    else:
+        response = await reply(message, content)
     MessageData[response] = {"func": newfunc}
-    for t in [create_task(response.add_reaction(b)) for b in buttons]: await t
+    tasks.extend((create_task(response.add_reaction(b)) for b in buttons))
+    for t in tasks: await t
 
 async def end_interaction(message):
     MessageData.pop(message)
