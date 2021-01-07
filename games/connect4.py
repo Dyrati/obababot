@@ -1,5 +1,4 @@
-import utilities
-from utilities import command, reply
+from utilities import command, reply, add_buttons, clear_buttons
 
 
 def v_iter(array):
@@ -11,9 +10,9 @@ def v_iter(array):
 
 def h_iter(array):
     array = zip(*array)
-    for y, col in enumerate(array):
+    for y, row in enumerate(array):
         out = []
-        for x, piece in enumerate(col):
+        for x, piece in enumerate(row):
             out.append((piece, x, y))
         yield out
 
@@ -69,12 +68,10 @@ class ConnectFour():
                 s = "".join(pieces)
                 for piece in self.pieces:
                     if piece*4 in s:
-                        s = s.replace(piece*4, f"({piece[1:-1]})"*4)
-                        while f"({piece[1:-1]}){piece}" in s:
-                            s = s.replace(f"({piece[1:-1]}){piece}", f"({piece[1:-1]})"*2)
-                        new = [s[i:i+3] for i in range(0,len(s),3)]
-                        for n,x,y in zip(new, xcoords, ycoords):
-                            self.board[x][y] = n
+                        start = s.index(piece*4)//len(piece)
+                        for p,x,y in line[start:]:
+                            if p == piece: self.board[x][y] = f"({piece[1:-1]})"
+                            else: break
                         result = True
         return result
     
@@ -110,10 +107,9 @@ async def connect4(message, *args, **kwargs):
             if wincheck == 0: content = "Tie Game".center(width+1) + f"\n\n{game}"
             else: content =  f"{player.name} wins!".center(width+1) + f"\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
-            await utilities.end_interaction(message)
+            await clear_buttons(message)
         else:
-            content = header() + str(game)
-            await message.edit(content=f"```\n{content}\n```")
+            await message.edit(content=f"```\n{header()}{game}\n```")
 
     async def startphase(message, user, button):
         if button == True:
@@ -121,20 +117,14 @@ async def connect4(message, *args, **kwargs):
         elif button == False and user in players:
             players.remove(user)
         if len(players) < 2:
-            content = "\n".join((player.name + " has joined!" for player in players))
-            content += f"\nWaiting for Player {len(players)+1} to join\n\n{game}"
+            content = " " + "\n".join((player.name + " has joined!" for player in players))
+            content += f"\n Waiting for Player {len(players)+1} to join\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
         else:
-            await utilities.interactive_message(
-                message = message,
-                content = f"```\n{header()}{game}\n```",
-                buttons = {f"{i}\ufe0f\u20e3": i for i in range(7)},
-                func = mainphase)
+            await message.edit(content= f"```\n{header()}{game}\n```")
+            buttons = {f"{i}\ufe0f\u20e3": i for i in range(7)}
+            await add_buttons(message, buttons, mainphase)
 
-    content = f"Waiting for Player {len(players)+1} to join\n\n{game}"
-    await utilities.interactive_message(
-        message = message,
-        content = f"```\n{content}\n```",
-        buttons = {"\u2705":True, "\u274c":False},
-        func = startphase)
-
+    content = f" \n Waiting for Player {len(players)+1} to join\n\n{game}"
+    sent = await reply(message, f"```\n{content}\n```")
+    await add_buttons(sent, {"\u2705":True, "\u274c":False}, startphase)

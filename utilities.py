@@ -347,7 +347,7 @@ def terminal(on_ready=None, on_message=None):
     asyncio.run(loop())
 
 
-async def interactive_message(message=None, content=None, buttons={}, func=None):
+async def add_buttons(message, buttons, func):
     create_task = client.loop.create_task
     async def newfunc(message, user, emoji):
         if emoji not in buttons: return
@@ -355,18 +355,11 @@ async def interactive_message(message=None, content=None, buttons={}, func=None)
         task2 = create_task(message.remove_reaction(emoji, user))
         await task1, task2
     if message in MessageData:
-        response = message
-        task1 = create_task(response.clear_reactions())
-        task2 = create_task(response.edit(content=content))
-        await task1, task2
-    else:
-        response = await reply(message, content)
-    MessageData[response] = {"func": newfunc}
-    tasks = [create_task(response.add_reaction(b)) for b in buttons]
+        await message.clear_reactions()
+    MessageData[message] = {"func": newfunc}
+    tasks = [create_task(message.add_reaction(b)) for b in buttons]
     for t in tasks: await t
 
-async def end_interaction(message):
+async def clear_buttons(message):
     MessageData.pop(message)
     await message.clear_reactions()
-
-    
