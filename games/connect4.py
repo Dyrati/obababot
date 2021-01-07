@@ -1,3 +1,4 @@
+import utilities
 from utilities import command, reply, add_buttons, clear_buttons
 
 
@@ -91,10 +92,11 @@ async def connect4(message, *args, **kwargs):
     game = ConnectFour()
     width = len(str(game).split("\n",1)[0])
     players = []
+    create_task = utilities.client.loop.create_task
 
     def header():
         names = "{}  vs  {}".format(*(p.name for p in players))
-        left, right = names.center(width+1).split(names)
+        left, right = names.center(width).split(names)
         if game.current_player == 1: left = left[:-2] + "► "
         elif game.current_player == 2: right = " ◄" + right[2:]
         return left + names + right + "\n\n"
@@ -106,8 +108,9 @@ async def connect4(message, *args, **kwargs):
         if wincheck is not None:
             if wincheck == 0: content = "Tie Game".center(width+1) + f"\n\n{game}"
             else: content =  f"{player.name} wins!".center(width+1) + f"\n\n{game}"
-            await message.edit(content=f"```\n{content}\n```")
-            await clear_buttons(message)
+            t1 = create_task(message.edit(content=f"```\n{content}\n```"))
+            t2 = create_task(clear_buttons(message))
+            await t1, t2
         else:
             await message.edit(content=f"```\n{header()}{game}\n```")
 
@@ -121,9 +124,10 @@ async def connect4(message, *args, **kwargs):
             content += f"\n Waiting for Player {len(players)+1} to join\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
         else:
-            await message.edit(content= f"```\n{header()}{game}\n```")
+            t1 = create_task(message.edit(content= f"```\n{header()}{game}\n```"))
             buttons = {f"{i}\ufe0f\u20e3": i for i in range(7)}
-            await add_buttons(message, buttons, mainphase)
+            t2 = create_task(add_buttons(message, buttons, mainphase))
+            await t1, t2
 
     content = f" \n Waiting for Player {len(players)+1} to join\n\n{game}"
     sent = await reply(message, f"```\n{content}\n```")

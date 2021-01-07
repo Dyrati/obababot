@@ -116,7 +116,7 @@ async def math(message, *args, **kwargs):
         may use the "=" sign in place of "$math "
     """
     ID = message.author.id
-    value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID].vars})
+    value = safe_eval(" ".join(args), {**mfuncs, **UserData[ID].vars})
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     assert not frmt[4] or len(frmt[4]) <= 3, "width specifier too large"
@@ -143,7 +143,7 @@ async def var(message, *args, **kwargs):
     m = re.match(r"\$var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
     varname, content = m.groups()
     args, kwargs = utilities.parse(content)
-    value = safe_eval(" ".join(args), {**mfuncs, **DataTables, **UserData[ID].vars})
+    value = safe_eval(" ".join(args), {**mfuncs, **UserData[ID].vars})
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     assert not frmt[4] or len(frmt[4]) <= 3, "width specifier too large"

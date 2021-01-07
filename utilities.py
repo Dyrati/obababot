@@ -109,6 +109,7 @@ def load_data():
     for k,v in DataTables.items():
         Namemaps[k] = namedict(v)
     Text.update(**load_text())
+    mfuncs.update(**DataTables)
     print("Loaded database    ")
 
 

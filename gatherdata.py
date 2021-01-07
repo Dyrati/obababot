@@ -248,6 +248,28 @@ with open(ROM2, "rb") as f:
             "group_ratios": [read(1) for i in range(8)],
         })
 
+    f.seek(0x0EE6D4)  # encounters by map
+    map_encounters = []
+    for i in range(325):
+        map_encounters.append({
+            "ID": i,
+            "room": read(2),
+            "door": read(2),
+            "flag_id": read(2),
+            "encounter_ids": [read(1), read(1)],
+        })
+
+    f.seek(0x0EEDBC)  # encounters on world map
+    wmap_encounters = []
+    for i in range(46):
+        wmap_encounters.append({
+            "ID": i,
+            "area_type": read(2),
+            "terrain": read(2),
+            "flag_id": read(2),
+            "encounter_ids": read(2),
+        })
+
     f.seek(0x0F17A8)  # map data
     mapdata2 = []
     for i in range(325):
