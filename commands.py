@@ -3,7 +3,7 @@ import re
 import inspect
 import utilities
 from utilities import \
-    command, prefix, DataTables, UserData, MessageData,\
+    command, prefix, DataTables, UserData,\
     Namemaps, reply, dictstr, mfuncs
 import gsfuncs
 from safe_eval import safe_eval

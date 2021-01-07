@@ -5,7 +5,7 @@ import sys
 import time
 import traceback
 import utilities
-from utilities import UserData, MessageData, reply, parse, load_data
+from utilities import UserData, ReactMessages, reply, parse, load_data
 import commands, gsfuncs
 from games import *
 print("Imported modules    ")
@@ -50,9 +50,9 @@ async def on_message_edit(before, after):
 async def on_reaction_add(reaction, user):
     # print(reaction.emoji.encode("ascii", "backslashreplace").decode())
     if user == client.user: return
-    if reaction.message in MessageData:
-        func = MessageData[reaction.message].get("func")
-        if func: await func(reaction.message, user, reaction.emoji)
+    message = reaction.message
+    if message in ReactMessages:
+        await ReactMessages[message](message, user, reaction.emoji)
 
 
 load_data()
