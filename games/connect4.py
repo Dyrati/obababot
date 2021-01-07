@@ -40,9 +40,9 @@ def diag_iter(array):
 
 
 class ConnectFour():
-    def __init__(self):
+    def __init__(self, width=7, height=6):
         self.current_player = 1
-        self.board = [["   " for i in range(6)] for j in range(7)]
+        self.board = [["   " for i in range(height)] for j in range(width)]
         self.pieces = [" X "," O "]
         self.count = 0
     
@@ -87,9 +87,16 @@ class ConnectFour():
 
 @command
 async def connect4(message, *args, **kwargs):
-    """Begins a game of connect 4"""
-
-    game = ConnectFour()
+    """Begins a game of connect 4
+    
+    Keyword Arguments:
+        width -- width of game board, ranges from 1 to 10
+        height -- height of game board, ranges from 1 to 10
+    """
+    dimensions = {k:int(v) for k,v in kwargs.items() if k in ("width", "height")}
+    dimensions.setdefault("width", 7); dimensions.setdefault("height", 6)
+    assert dimensions["width"] <= 10 and dimensions["height"] <= 10, "Dimensions too large"
+    game = ConnectFour(**dimensions)
     width = len(str(game).split("\n",1)[0])
     players = []
     create_task = utilities.client.loop.create_task
@@ -125,7 +132,7 @@ async def connect4(message, *args, **kwargs):
             await message.edit(content=f"```\n{content}\n```")
         else:
             t1 = create_task(message.edit(content= f"```\n{header()}{game}\n```"))
-            buttons = {f"{i}\ufe0f\u20e3": i for i in range(7)}
+            buttons = {f"{i}\ufe0f\u20e3": i for i in range(dimensions["width"])}
             t2 = create_task(add_buttons(message, buttons, mainphase))
             await t1, t2
 
