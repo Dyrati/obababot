@@ -272,45 +272,27 @@ async def handlesav(message, data):
     ID = message.author.id
     UserData[ID].save = data
     pages = gsfuncs.preview(data)
-    help_page = inspect.cleandoc("""Click emotes to view other pages of this message
-
-        P     - Go to preview page
-        0,1,2 - Select a save slot
-        <,>   - Scroll through characters of current save slot
-        ?     - Show this help page
-        """)
-    pages["help"] = f"```\n{help_page}\n```"
-    sent = await reply(message, pages["preview"])
-    async def medit(message, user, emoji):
-        mdata = MessageData[message]
-        tasks = [message.remove_reaction(emoji, user)]
-        if emoji == '\U0001f1f5':
-            tasks.append(message.edit(content=mdata["pages"]["preview"]))
-        elif emoji == '\u2753':
-            tasks.append(message.edit(content=mdata["pages"]["help"]))
-        else:
-            edit = False
-            if emoji.endswith('\ufe0f\u20e3'):
-                slot = int(emoji[0])
-                if slot in mdata["pages"]:
-                    mdata["slot"] = slot; edit = True
-            elif emoji == "\u25c0\ufe0f":
-                mdata["page"] -= 1; edit = True
-            elif emoji == "\u25b6\ufe0f":
-                mdata["page"] += 1; edit = True
-            if edit:
-                mdata["page"] %= len(mdata["pages"][mdata["slot"]])
-                content = mdata["pages"][mdata["slot"]][mdata["page"]]
-                tasks.append(message.edit(content=content))
-        for task in [utilities.client.loop.create_task(t) for t in tasks]:
-            await task
     slots = [k for k in pages if isinstance(k, int)]
-    MessageData[sent] = {"slot": slots[0], "page": 0, "pages": pages, "func":medit}
-    buttons = [
-        '\U0001f1f5','0\ufe0f\u20e3','1\ufe0f\u20e3','2\ufe0f\u20e3',
-        '\u25c0\ufe0f','\u25b6\ufe0f','\u2753']
-    tasks = [utilities.client.loop.create_task(sent.add_reaction(b)) for b in buttons]
-    for t in tasks: await t
+    slot = slots[0]
+    page = 0
+    async def medit(message, user, button):
+        nonlocal slot, page
+        if button == "P":
+            await message.edit(content=pages["preview"])
+        elif button == "?":
+            await message.edit(content=pages["help"])
+        else:
+            if button in slots: slot = button
+            elif button == "L": page -= 1
+            elif button == "R": page += 1
+            else: return
+            page %= len(pages[slot])
+            await message.edit(content=pages[slot][page])
+    buttons = {
+        '\U0001f1f5':"P",'0\ufe0f\u20e3':0,'1\ufe0f\u20e3':1,'2\ufe0f\u20e3':2,
+        '\u25c0\ufe0f':"L",'\u25b6\ufe0f':"R",'\u2753':"?"}
+    sent = await reply(message, pages["preview"])
+    await utilities.add_buttons(sent, buttons, medit)
 
 
 @command

@@ -1,6 +1,7 @@
 import re
 import io
 import json
+import inspect
 import utilities
 from utilities import command, DataTables, UserData, Namemaps, Text, reply
 
@@ -268,6 +269,14 @@ def preview(data):
         slots.append(slot)
     preview.addtext(utilities.tableV(slots), (0,6))
     pages["preview"] = f"```\n{preview}\n```"
+    pages["help"] = inspect.cleandoc("""```
+        Click emotes to view other pages of this message
+
+        P     - Go to preview page
+        0,1,2 - Select a save slot
+        <,>   - Scroll through characters of current save slot
+        ?     - Show this help page
+        ```""")
     for f in filedata:
         slot = f["slot"]
         pages[slot] = []
