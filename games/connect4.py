@@ -40,10 +40,11 @@ def diag_iter(array):
 
 
 class ConnectFour():
-    def __init__(self, width=7, height=6):
+    def __init__(self, width=7, height=6, connect=4):
         self.current_player = 1
         self.board = [["   " for i in range(height)] for j in range(width)]
         self.pieces = [" X "," O "]
+        self.connect = connect
         self.count = 0
     
     def add_piece(self, col):
@@ -68,8 +69,8 @@ class ConnectFour():
                 pieces, xcoords, ycoords = zip(*line)
                 s = "".join(pieces)
                 for piece in self.pieces:
-                    if piece*4 in s:
-                        start = s.index(piece*4)//len(piece)
+                    if piece*self.connect in s:
+                        start = s.index(piece*self.connect)//len(piece)
                         for p,x,y in line[start:]:
                             if p == piece: self.board[x][y] = f"({piece[1:-1]})"
                             else: break
@@ -92,9 +93,11 @@ async def connect4(message, *args, **kwargs):
     Keyword Arguments:
         width -- width of game board, ranges from 1 to 10
         height -- height of game board, ranges from 1 to 10
+        connect -- the number of connected pieces required to win
     """
-    dimensions = {k:int(v) for k,v in kwargs.items() if k in ("width", "height")}
-    dimensions.setdefault("width", 7); dimensions.setdefault("height", 6)
+    defaults = {"width":7, "height":6, "connect":4}
+    dimensions = {k:int(v) for k,v in kwargs.items() if k in defaults}
+    for k,v in defaults.items(): dimensions.setdefault(k,v)
     assert dimensions["width"] <= 10 and dimensions["height"] <= 10, "Dimensions too large"
     game = ConnectFour(**dimensions)
     width = len(str(game).split("\n",1)[0])
