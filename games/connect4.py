@@ -130,7 +130,7 @@ async def connect4(message, *args, **kwargs):
         elif button == False and user in players:
             players.remove(user)
         if len(players) < 2:
-            content = " " + "\n".join((player.name + " has joined!" for player in players))
+            content = " " + "\n ".join((player.name + " has joined!" for player in players))
             content += f"\n Waiting for Player {len(players)+1} to join\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
         else:

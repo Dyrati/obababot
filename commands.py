@@ -264,18 +264,14 @@ async def damage(message, *args, **kwargs):
 
 
 async def handlesav(message, data):
-    for i in range(16):
-        addr = 0x1000*i
-        if data[addr:addr+7] == b'CAMELOT' and data[addr+7] < 0xF: break
-    else:
-        assert 0, "No valid saves detected"
-    ID = message.author.id
-    UserData[ID].save = data
+    headers = (data[addr:addr+16] for addr in range(0,0x10000,0x1000))
+    assert any((h[:7] == b'CAMELOT' and h[7] <= 0xF for h in headers)), "No valid saves detected"
+    UserData[message.author.id].save = data
     pages = gsfuncs.preview(data)
     slots = [k for k in pages if isinstance(k, int)]
     slot = slots[0]
     page = 0
-    async def medit(message, user, button):
+    async def on_react(message, user, button):
         nonlocal slot, page
         if button == "P":
             await message.edit(content=pages["preview"])
@@ -283,16 +279,16 @@ async def handlesav(message, data):
             await message.edit(content=pages["help"])
         else:
             if button in slots: slot = button
-            elif button == "L": page -= 1
-            elif button == "R": page += 1
+            elif button == "<": page -= 1
+            elif button == ">": page += 1
             else: return
             page %= len(pages[slot])
             await message.edit(content=pages[slot][page])
     buttons = {
         '\U0001f1f5':"P",'0\ufe0f\u20e3':0,'1\ufe0f\u20e3':1,'2\ufe0f\u20e3':2,
-        '\u25c0\ufe0f':"L",'\u25b6\ufe0f':"R",'\u2753':"?"}
+        '\u25c0\ufe0f':"<",'\u25b6\ufe0f':">",'\u2753':"?"}
     sent = await reply(message, pages["preview"])
-    await utilities.add_buttons(sent, buttons, medit)
+    await utilities.add_buttons(sent, buttons, on_react)
 
 
 @command
