@@ -13,14 +13,14 @@ with open(ROM1, "rb") as f:
     def read(size):
         return int.from_bytes(f.read(size), "little")
 
-    room_references = []
+    room_references1 = []
     f.seek(0x09DDD8)  # room name reference table
     for i in range(126):
-        room_references.append({
+        room_references1.append({
             "ID": i,
             "room_or_area": read(2),
             "door": read(2),
-            "name": read(2),
+            "name": areas1[read(2)],
             "unused": read(2),
         })
 
@@ -36,16 +36,6 @@ with open(ROM1, "rb") as f:
             "MFT_index": read(2),
             "outdoor": read(2),
         })
-
-for map_ in mapdata1:
-    for r in room_references:
-        flag, check = r["door"] & 0x8000, r["room_or_area"]
-        if flag and check == map_["ID"] and r["door"] & 0x7FFF == 0x7FFF \
-            or not flag and check == map_["area"]:
-            map_["area"] = areas1[r["name"]]
-            break
-    else: map_["area"] = areas1[0]
-
 
 with open(ROM2, "rb") as f:
     def read(size):
@@ -270,6 +260,17 @@ with open(ROM2, "rb") as f:
             "encounter_ids": read(2),
         })
 
+    room_references2 = []
+    f.seek(0x0EF4A4)  # room references
+    for i in range(110):
+        room_references2.append({
+            "ID": i,
+            "room_or_area": read(2),
+            "door": read(2),
+            "name": areas2[read(2)],
+            "unused": read(2),
+        })
+
     f.seek(0x0F17A8)  # map data
     mapdata2 = []
     for i in range(325):
@@ -277,7 +278,7 @@ with open(ROM2, "rb") as f:
             "ID": i,
             "name": maps2[i],
             "file_index": read(2),
-            "area": areas2[read(1)],
+            "area": read(1),
             "type": read(1),
             "MFT_index": read(2),
             "outdoor": read(2),
@@ -390,6 +391,6 @@ for group in enemygroupdata:
 for name in [
         "djinndata", "enemydata", "itemdata", "abilitydata", "pcdata", "summondata",
         "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
-        "enemygroupdata"
+        "room_references1", "room_references2", "enemygroupdata"
     ]:
     with open(f"data/{name}.json", "w") as f: json.dump(globals()[name], f, indent=4)

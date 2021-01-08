@@ -99,7 +99,7 @@ def load_data():
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
-            "enemygroupdata"]:
+            "room_references1", "room_references2", "enemygroupdata"]:
         with open(rf"data/{name}.json") as f:
             DataTables[name] = json.load(f)
             if name == "enemydata":

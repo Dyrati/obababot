@@ -1,0 +1,772 @@
+[
+    {
+        "ID": 0,
+        "room_or_area": 0,
+        "door": 32767,
+        "name": "Title screen",
+        "unused": 0
+    },
+    {
+        "ID": 1,
+        "room_or_area": 1,
+        "door": 32767,
+        "name": "(Clear data)",
+        "unused": 0
+    },
+    {
+        "ID": 2,
+        "room_or_area": 2,
+        "door": 32767,
+        "name": "World Map",
+        "unused": 0
+    },
+    {
+        "ID": 3,
+        "room_or_area": 3,
+        "door": 32767,
+        "name": "Staff Credit",
+        "unused": 0
+    },
+    {
+        "ID": 4,
+        "room_or_area": 4,
+        "door": 32767,
+        "name": "Venus Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 5,
+        "room_or_area": 5,
+        "door": 32767,
+        "name": "Suhalla Gate",
+        "unused": 0
+    },
+    {
+        "ID": 6,
+        "room_or_area": 6,
+        "door": 32767,
+        "name": "Idejima",
+        "unused": 0
+    },
+    {
+        "ID": 7,
+        "room_or_area": 11,
+        "door": 32775,
+        "name": "North Osenia Islet",
+        "unused": 0
+    },
+    {
+        "ID": 8,
+        "room_or_area": 7,
+        "door": 32767,
+        "name": "Daila",
+        "unused": 0
+    },
+    {
+        "ID": 9,
+        "room_or_area": 8,
+        "door": 32767,
+        "name": "Kandorean Temple",
+        "unused": 0
+    },
+    {
+        "ID": 10,
+        "room_or_area": 9,
+        "door": 32767,
+        "name": "Kandorean Temple",
+        "unused": 0
+    },
+    {
+        "ID": 11,
+        "room_or_area": 10,
+        "door": 32767,
+        "name": "Shrine of the Sea God",
+        "unused": 0
+    },
+    {
+        "ID": 12,
+        "room_or_area": 11,
+        "door": 32767,
+        "name": "Dehkan Plateau",
+        "unused": 0
+    },
+    {
+        "ID": 13,
+        "room_or_area": 14,
+        "door": 32767,
+        "name": "Madra",
+        "unused": 0
+    },
+    {
+        "ID": 14,
+        "room_or_area": 15,
+        "door": 32767,
+        "name": "Madra Catacombs",
+        "unused": 0
+    },
+    {
+        "ID": 15,
+        "room_or_area": 16,
+        "door": 32767,
+        "name": "Madra Drawbridge",
+        "unused": 0
+    },
+    {
+        "ID": 16,
+        "room_or_area": 17,
+        "door": 32767,
+        "name": "Osenia Cliffs",
+        "unused": 0
+    },
+    {
+        "ID": 17,
+        "room_or_area": 57,
+        "door": 32773,
+        "name": "E Tundaria Islet",
+        "unused": 0
+    },
+    {
+        "ID": 18,
+        "room_or_area": 58,
+        "door": 32772,
+        "name": "Yallam",
+        "unused": 0
+    },
+    {
+        "ID": 19,
+        "room_or_area": 58,
+        "door": 32773,
+        "name": "Apojii Islands",
+        "unused": 0
+    },
+    {
+        "ID": 20,
+        "room_or_area": 18,
+        "door": 32767,
+        "name": "Mikasalla",
+        "unused": 0
+    },
+    {
+        "ID": 21,
+        "room_or_area": 19,
+        "door": 32767,
+        "name": "Garoh",
+        "unused": 0
+    },
+    {
+        "ID": 22,
+        "room_or_area": 20,
+        "door": 32767,
+        "name": "Yampi Desert",
+        "unused": 0
+    },
+    {
+        "ID": 23,
+        "room_or_area": 21,
+        "door": 32767,
+        "name": "Yampi Desert Cave",
+        "unused": 0
+    },
+    {
+        "ID": 24,
+        "room_or_area": 22,
+        "door": 32767,
+        "name": "Air's Rock",
+        "unused": 0
+    },
+    {
+        "ID": 25,
+        "room_or_area": 23,
+        "door": 32767,
+        "name": "Air's Rock",
+        "unused": 0
+    },
+    {
+        "ID": 26,
+        "room_or_area": 24,
+        "door": 32767,
+        "name": "Alhafra",
+        "unused": 0
+    },
+    {
+        "ID": 27,
+        "room_or_area": 25,
+        "door": 32767,
+        "name": "Eastern Alhafra",
+        "unused": 0
+    },
+    {
+        "ID": 28,
+        "room_or_area": 26,
+        "door": 32767,
+        "name": "Alhafran Cave",
+        "unused": 0
+    },
+    {
+        "ID": 29,
+        "room_or_area": 27,
+        "door": 32767,
+        "name": "Gondowan Cliffs",
+        "unused": 0
+    },
+    {
+        "ID": 30,
+        "room_or_area": 28,
+        "door": 32767,
+        "name": "Naribwe",
+        "unused": 0
+    },
+    {
+        "ID": 31,
+        "room_or_area": 29,
+        "door": 32767,
+        "name": "Kibombo Mountains",
+        "unused": 0
+    },
+    {
+        "ID": 32,
+        "room_or_area": 30,
+        "door": 32767,
+        "name": "Kibombo",
+        "unused": 0
+    },
+    {
+        "ID": 33,
+        "room_or_area": 31,
+        "door": 32767,
+        "name": "Kibombo",
+        "unused": 0
+    },
+    {
+        "ID": 34,
+        "room_or_area": 32,
+        "door": 32767,
+        "name": "Gabomba Statue",
+        "unused": 0
+    },
+    {
+        "ID": 35,
+        "room_or_area": 33,
+        "door": 32767,
+        "name": "Gabomba Catacombs",
+        "unused": 0
+    },
+    {
+        "ID": 36,
+        "room_or_area": 12,
+        "door": 32767,
+        "name": "Lemurian Ship",
+        "unused": 0
+    },
+    {
+        "ID": 37,
+        "room_or_area": 13,
+        "door": 32767,
+        "name": "East Indra Shore",
+        "unused": 0
+    },
+    {
+        "ID": 38,
+        "room_or_area": 34,
+        "door": 32767,
+        "name": "West Indra Islet",
+        "unused": 0
+    },
+    {
+        "ID": 39,
+        "room_or_area": 35,
+        "door": 32767,
+        "name": "E Tundaria Islet",
+        "unused": 0
+    },
+    {
+        "ID": 40,
+        "room_or_area": 36,
+        "door": 32767,
+        "name": "N Osenia Islet",
+        "unused": 0
+    },
+    {
+        "ID": 41,
+        "room_or_area": 37,
+        "door": 32767,
+        "name": "SE Angara Islet",
+        "unused": 0
+    },
+    {
+        "ID": 42,
+        "room_or_area": 38,
+        "door": 32767,
+        "name": "Sea of Time Islet",
+        "unused": 0
+    },
+    {
+        "ID": 43,
+        "room_or_area": 40,
+        "door": 32767,
+        "name": "Yallam",
+        "unused": 0
+    },
+    {
+        "ID": 44,
+        "room_or_area": 41,
+        "door": 32767,
+        "name": "Taopo Swamp",
+        "unused": 0
+    },
+    {
+        "ID": 45,
+        "room_or_area": 42,
+        "door": 32767,
+        "name": "Taopo Swamp",
+        "unused": 0
+    },
+    {
+        "ID": 46,
+        "room_or_area": 156,
+        "door": 32774,
+        "name": "E Sea of Time Islet",
+        "unused": 0
+    },
+    {
+        "ID": 47,
+        "room_or_area": 43,
+        "door": 32767,
+        "name": "Apojii Islands",
+        "unused": 0
+    },
+    {
+        "ID": 48,
+        "room_or_area": 44,
+        "door": 32767,
+        "name": "Apojii Islands Cave",
+        "unused": 0
+    },
+    {
+        "ID": 49,
+        "room_or_area": 49,
+        "door": 32767,
+        "name": "Gaia Rock",
+        "unused": 0
+    },
+    {
+        "ID": 50,
+        "room_or_area": 50,
+        "door": 32767,
+        "name": "Gaia Rock",
+        "unused": 0
+    },
+    {
+        "ID": 51,
+        "room_or_area": 45,
+        "door": 32767,
+        "name": "Aqua Rock",
+        "unused": 0
+    },
+    {
+        "ID": 52,
+        "room_or_area": 46,
+        "door": 32767,
+        "name": "Aqua Rock",
+        "unused": 0
+    },
+    {
+        "ID": 53,
+        "room_or_area": 47,
+        "door": 32767,
+        "name": "Izumo",
+        "unused": 0
+    },
+    {
+        "ID": 54,
+        "room_or_area": 48,
+        "door": 32767,
+        "name": "Izumo Ruins",
+        "unused": 0
+    },
+    {
+        "ID": 55,
+        "room_or_area": 183,
+        "door": 32776,
+        "name": "SE Angara Islet",
+        "unused": 0
+    },
+    {
+        "ID": 56,
+        "room_or_area": 183,
+        "door": 32777,
+        "name": "West Indra Islet",
+        "unused": 0
+    },
+    {
+        "ID": 57,
+        "room_or_area": 51,
+        "door": 32767,
+        "name": "Champa",
+        "unused": 0
+    },
+    {
+        "ID": 58,
+        "room_or_area": 53,
+        "door": 32767,
+        "name": "Sea of Time",
+        "unused": 0
+    },
+    {
+        "ID": 59,
+        "room_or_area": 52,
+        "door": 32767,
+        "name": "Ankohl Ruins",
+        "unused": 0
+    },
+    {
+        "ID": 60,
+        "room_or_area": 201,
+        "door": 32769,
+        "name": "Ancient Lemuria",
+        "unused": 0
+    },
+    {
+        "ID": 61,
+        "room_or_area": 54,
+        "door": 32767,
+        "name": "Lemuria",
+        "unused": 0
+    },
+    {
+        "ID": 62,
+        "room_or_area": 55,
+        "door": 32767,
+        "name": "Lemuria",
+        "unused": 0
+    },
+    {
+        "ID": 63,
+        "room_or_area": 56,
+        "door": 32767,
+        "name": "Tundaria Tower",
+        "unused": 0
+    },
+    {
+        "ID": 64,
+        "room_or_area": 60,
+        "door": 32767,
+        "name": "SW Atteka Islet",
+        "unused": 0
+    },
+    {
+        "ID": 65,
+        "room_or_area": 57,
+        "door": 32767,
+        "name": "Gondowan Settlement",
+        "unused": 0
+    },
+    {
+        "ID": 66,
+        "room_or_area": 58,
+        "door": 32767,
+        "name": "Hesperia Settlement",
+        "unused": 0
+    },
+    {
+        "ID": 67,
+        "room_or_area": 59,
+        "door": 32767,
+        "name": "Kalt Island",
+        "unused": 0
+    },
+    {
+        "ID": 68,
+        "room_or_area": 61,
+        "door": 32767,
+        "name": "Magma Rock",
+        "unused": 0
+    },
+    {
+        "ID": 69,
+        "room_or_area": 62,
+        "door": 32767,
+        "name": "Magma Rock",
+        "unused": 0
+    },
+    {
+        "ID": 70,
+        "room_or_area": 63,
+        "door": 32767,
+        "name": "Atteka Inlet",
+        "unused": 0
+    },
+    {
+        "ID": 71,
+        "room_or_area": 66,
+        "door": 32767,
+        "name": "Shaman Village Cave",
+        "unused": 0
+    },
+    {
+        "ID": 72,
+        "room_or_area": 67,
+        "door": 32767,
+        "name": "Shaman Village",
+        "unused": 0
+    },
+    {
+        "ID": 73,
+        "room_or_area": 68,
+        "door": 32767,
+        "name": "Trial Road",
+        "unused": 0
+    },
+    {
+        "ID": 74,
+        "room_or_area": 69,
+        "door": 32767,
+        "name": "Trial Road",
+        "unused": 0
+    },
+    {
+        "ID": 75,
+        "room_or_area": 237,
+        "door": 32789,
+        "name": "Atteka Inlet",
+        "unused": 0
+    },
+    {
+        "ID": 76,
+        "room_or_area": 64,
+        "door": 32767,
+        "name": "Contigo",
+        "unused": 0
+    },
+    {
+        "ID": 77,
+        "room_or_area": 65,
+        "door": 32767,
+        "name": "Anemos Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 78,
+        "room_or_area": 70,
+        "door": 32767,
+        "name": "Jupiter Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 79,
+        "room_or_area": 71,
+        "door": 32767,
+        "name": "Loho",
+        "unused": 0
+    },
+    {
+        "ID": 80,
+        "room_or_area": 72,
+        "door": 32767,
+        "name": "Northern Reaches",
+        "unused": 0
+    },
+    {
+        "ID": 81,
+        "room_or_area": 73,
+        "door": 32767,
+        "name": "Prox",
+        "unused": 0
+    },
+    {
+        "ID": 82,
+        "room_or_area": 74,
+        "door": 32767,
+        "name": "Indra Cavern",
+        "unused": 0
+    },
+    {
+        "ID": 83,
+        "room_or_area": 75,
+        "door": 32767,
+        "name": "Osenia Cavern",
+        "unused": 0
+    },
+    {
+        "ID": 84,
+        "room_or_area": 77,
+        "door": 32767,
+        "name": "Angara Cavern",
+        "unused": 0
+    },
+    {
+        "ID": 85,
+        "room_or_area": 76,
+        "door": 32767,
+        "name": "Atteka Cavern",
+        "unused": 0
+    },
+    {
+        "ID": 86,
+        "room_or_area": 39,
+        "door": 32767,
+        "name": "Islet Cave",
+        "unused": 0
+    },
+    {
+        "ID": 87,
+        "room_or_area": 78,
+        "door": 32767,
+        "name": "Mars Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 88,
+        "room_or_area": 79,
+        "door": 32767,
+        "name": "Treasure Isle",
+        "unused": 0
+    },
+    {
+        "ID": 89,
+        "room_or_area": 80,
+        "door": 32767,
+        "name": "Anemos Inner Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 90,
+        "room_or_area": 81,
+        "door": 32767,
+        "name": "Mercury Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 91,
+        "room_or_area": 82,
+        "door": 32767,
+        "name": "Epilogue",
+        "unused": 0
+    },
+    {
+        "ID": 92,
+        "room_or_area": 83,
+        "door": 32767,
+        "name": "Mt. Aleph Summit",
+        "unused": 0
+    },
+    {
+        "ID": 93,
+        "room_or_area": 84,
+        "door": 32767,
+        "name": "Link Lobby",
+        "unused": 0
+    },
+    {
+        "ID": 94,
+        "room_or_area": 85,
+        "door": 32767,
+        "name": "Test 0",
+        "unused": 0
+    },
+    {
+        "ID": 95,
+        "room_or_area": 86,
+        "door": 32767,
+        "name": "Test 1",
+        "unused": 0
+    },
+    {
+        "ID": 96,
+        "room_or_area": 87,
+        "door": 32767,
+        "name": "Test 2",
+        "unused": 0
+    },
+    {
+        "ID": 97,
+        "room_or_area": 88,
+        "door": 32767,
+        "name": "Test 3",
+        "unused": 0
+    },
+    {
+        "ID": 98,
+        "room_or_area": 89,
+        "door": 32767,
+        "name": "Test 4",
+        "unused": 0
+    },
+    {
+        "ID": 99,
+        "room_or_area": 90,
+        "door": 32767,
+        "name": "Test 5",
+        "unused": 0
+    },
+    {
+        "ID": 100,
+        "room_or_area": 91,
+        "door": 32767,
+        "name": "Test 6",
+        "unused": 0
+    },
+    {
+        "ID": 101,
+        "room_or_area": 92,
+        "door": 32767,
+        "name": "Test 7",
+        "unused": 0
+    },
+    {
+        "ID": 102,
+        "room_or_area": 321,
+        "door": 32864,
+        "name": "Face Test",
+        "unused": 0
+    },
+    {
+        "ID": 103,
+        "room_or_area": 321,
+        "door": 32865,
+        "name": "Face Test",
+        "unused": 0
+    },
+    {
+        "ID": 104,
+        "room_or_area": 321,
+        "door": 32866,
+        "name": "Face Test",
+        "unused": 0
+    },
+    {
+        "ID": 105,
+        "room_or_area": 321,
+        "door": 32867,
+        "name": "Face Test",
+        "unused": 0
+    },
+    {
+        "ID": 106,
+        "room_or_area": 93,
+        "door": 32767,
+        "name": "Icon Test",
+        "unused": 0
+    },
+    {
+        "ID": 107,
+        "room_or_area": 94,
+        "door": 32767,
+        "name": "Psynergy Test",
+        "unused": 0
+    },
+    {
+        "ID": 108,
+        "room_or_area": 95,
+        "door": 32767,
+        "name": "Psynergy Test 2",
+        "unused": 0
+    },
+    {
+        "ID": 109,
+        "room_or_area": 96,
+        "door": 32767,
+        "name": "Shop Test",
+        "unused": 0
+    }
+]

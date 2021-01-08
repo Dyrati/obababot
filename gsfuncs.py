@@ -100,6 +100,18 @@ def damage(
     return damage
 
 
+def roomname(gamenumber, mapnumber, doornumber):
+    roomtable = DataTables[f"room_references{gamenumber}"]
+    mapdata = DataTables[f"mapdata{gamenumber}"]
+    for r in roomtable:
+        door, check = r["door"], r["room_or_area"]
+        flag, door = door & 0x8000, door & 0x7FFF
+        area = mapdata[mapnumber]["area"]
+        if (check==mapnumber if flag else check==area):
+            if door in (0x7fff, doornumber): return r["name"]
+    return roomtable[0]["name"]
+
+
 build_dates = {
     0x1C85: "Golden Sun - The Lost Age (UE)",
     0x1D97: "Golden Sun - The Lost Age (G)",
@@ -210,7 +222,7 @@ def readsav(data):
     for f in filedata:
         f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
         f["summons"] = [DataTables["summondata"][i]["name"] for i in range(33) if f["summons"] & 2**i]
-        f["area"] = DataTables[f"mapdata{GAME}"][f["map_number"]]["area"]
+        f["area"] = roomname(GAME, f["map_number"], f["door_number"])
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:
             pc["name"] = "".join([chr(c) for c in pc["name"] if c])
@@ -332,9 +344,10 @@ def preview(data):
             x = max(x, 4)
             out.addtext("Abilities", (x+3, ymax+1))
             x += 2
-            height = max(len(pc["abilities"])/4, len(pc["djinn"]))
-            height = int(height) + 1 if height != int(height) else int(height)
-            for i in range(0, len(pc["abilities"]), height):
-                x,_ = out.addtext("\n".join(pc["abilities"][i:i+height]), (x+3, ymax+2))
+            if pc["abilities"]:
+                height = max(len(pc["abilities"])/4, len(pc["djinn"]))
+                height = int(height) + 1 if height != int(height) else int(height)
+                for i in range(0, len(pc["abilities"]), height):
+                    x,_ = out.addtext("\n".join(pc["abilities"][i:i+height]), (x+3, ymax+2))
             pages[slot].append(f"```\n{out}\n```")
     return pages

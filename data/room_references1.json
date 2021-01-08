@@ -1,0 +1,884 @@
+[
+    {
+        "ID": 0,
+        "room_or_area": 0,
+        "door": 32767,
+        "name": "Title screen",
+        "unused": 0
+    },
+    {
+        "ID": 1,
+        "room_or_area": 1,
+        "door": 32767,
+        "name": "(Clear data)",
+        "unused": 0
+    },
+    {
+        "ID": 2,
+        "room_or_area": 2,
+        "door": 32767,
+        "name": "World Map",
+        "unused": 0
+    },
+    {
+        "ID": 3,
+        "room_or_area": 9,
+        "door": 32769,
+        "name": "Vale Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 4,
+        "room_or_area": 9,
+        "door": 32770,
+        "name": "Vale Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 5,
+        "room_or_area": 9,
+        "door": 32788,
+        "name": "Vale Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 6,
+        "room_or_area": 9,
+        "door": 32789,
+        "name": "Vale Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 7,
+        "room_or_area": 9,
+        "door": 32780,
+        "name": "Vault Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 8,
+        "room_or_area": 9,
+        "door": 32779,
+        "name": "Vault Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 9,
+        "room_or_area": 9,
+        "door": 32778,
+        "name": "Vault Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 10,
+        "room_or_area": 9,
+        "door": 32803,
+        "name": "Bilibin Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 11,
+        "room_or_area": 9,
+        "door": 32800,
+        "name": "Xian Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 12,
+        "room_or_area": 9,
+        "door": 32797,
+        "name": "Altin Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 13,
+        "room_or_area": 9,
+        "door": 65535,
+        "name": "Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 14,
+        "room_or_area": 8,
+        "door": 32787,
+        "name": "Babi's Palace",
+        "unused": 0
+    },
+    {
+        "ID": 15,
+        "room_or_area": 3,
+        "door": 32767,
+        "name": "Vale",
+        "unused": 0
+    },
+    {
+        "ID": 16,
+        "room_or_area": 19,
+        "door": 65535,
+        "name": "Sol Entrance",
+        "unused": 0
+    },
+    {
+        "ID": 17,
+        "room_or_area": 17,
+        "door": 65535,
+        "name": "Elemental Star Room",
+        "unused": 0
+    },
+    {
+        "ID": 18,
+        "room_or_area": 18,
+        "door": 65535,
+        "name": "Elemental Star Room",
+        "unused": 0
+    },
+    {
+        "ID": 19,
+        "room_or_area": 4,
+        "door": 32767,
+        "name": "Sol Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 20,
+        "room_or_area": 105,
+        "door": 32775,
+        "name": "Lunpa Temple",
+        "unused": 0
+    },
+    {
+        "ID": 21,
+        "room_or_area": 105,
+        "door": 32779,
+        "name": "Lunpa Temple",
+        "unused": 0
+    },
+    {
+        "ID": 22,
+        "room_or_area": 22,
+        "door": 32770,
+        "name": "Lunpa",
+        "unused": 0
+    },
+    {
+        "ID": 23,
+        "room_or_area": 5,
+        "door": 32767,
+        "name": "Vault",
+        "unused": 0
+    },
+    {
+        "ID": 24,
+        "room_or_area": 6,
+        "door": 32767,
+        "name": "Goma Cave Entrance",
+        "unused": 0
+    },
+    {
+        "ID": 25,
+        "room_or_area": 7,
+        "door": 32767,
+        "name": "Goma Cave",
+        "unused": 0
+    },
+    {
+        "ID": 26,
+        "room_or_area": 32,
+        "door": 65535,
+        "name": "Bilibin Treasury",
+        "unused": 0
+    },
+    {
+        "ID": 27,
+        "room_or_area": 8,
+        "door": 32767,
+        "name": "Bilibin",
+        "unused": 0
+    },
+    {
+        "ID": 28,
+        "room_or_area": 34,
+        "door": 65535,
+        "name": "McCoy's Palace",
+        "unused": 0
+    },
+    {
+        "ID": 29,
+        "room_or_area": 9,
+        "door": 32767,
+        "name": "McCoy's Palace",
+        "unused": 0
+    },
+    {
+        "ID": 30,
+        "room_or_area": 10,
+        "door": 32767,
+        "name": "Bilibin Barricade",
+        "unused": 0
+    },
+    {
+        "ID": 31,
+        "room_or_area": 38,
+        "door": 65535,
+        "name": "Kolima Tunnel",
+        "unused": 0
+    },
+    {
+        "ID": 32,
+        "room_or_area": 11,
+        "door": 32767,
+        "name": "Kolima",
+        "unused": 0
+    },
+    {
+        "ID": 33,
+        "room_or_area": 12,
+        "door": 32767,
+        "name": "Kolima Bridge",
+        "unused": 0
+    },
+    {
+        "ID": 34,
+        "room_or_area": 13,
+        "door": 32767,
+        "name": "Kolima Forest",
+        "unused": 0
+    },
+    {
+        "ID": 35,
+        "room_or_area": 14,
+        "door": 32767,
+        "name": "Tret Tree",
+        "unused": 0
+    },
+    {
+        "ID": 36,
+        "room_or_area": 49,
+        "door": 65535,
+        "name": "Bilibin Cave Entrance",
+        "unused": 0
+    },
+    {
+        "ID": 37,
+        "room_or_area": 15,
+        "door": 32767,
+        "name": "Bilibin Cave",
+        "unused": 0
+    },
+    {
+        "ID": 38,
+        "room_or_area": 51,
+        "door": 32775,
+        "name": "Imil Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 39,
+        "room_or_area": 17,
+        "door": 32767,
+        "name": "Imil",
+        "unused": 0
+    },
+    {
+        "ID": 40,
+        "room_or_area": 18,
+        "door": 32767,
+        "name": "Imil Falls Cave",
+        "unused": 0
+    },
+    {
+        "ID": 41,
+        "room_or_area": 58,
+        "door": 65535,
+        "name": "Lighthouse Aerie",
+        "unused": 0
+    },
+    {
+        "ID": 42,
+        "room_or_area": 19,
+        "door": 32767,
+        "name": "Mercury Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 43,
+        "room_or_area": 61,
+        "door": 32770,
+        "name": "Xian",
+        "unused": 0
+    },
+    {
+        "ID": 44,
+        "room_or_area": 61,
+        "door": 32771,
+        "name": "Lama Temple",
+        "unused": 0
+    },
+    {
+        "ID": 45,
+        "room_or_area": 20,
+        "door": 32767,
+        "name": "Fuchin Temple",
+        "unused": 0
+    },
+    {
+        "ID": 46,
+        "room_or_area": 21,
+        "door": 32767,
+        "name": "Fuchin Falls Cave",
+        "unused": 0
+    },
+    {
+        "ID": 47,
+        "room_or_area": 22,
+        "door": 32767,
+        "name": "Mogall Forest",
+        "unused": 0
+    },
+    {
+        "ID": 48,
+        "room_or_area": 23,
+        "door": 32767,
+        "name": "Xian",
+        "unused": 0
+    },
+    {
+        "ID": 49,
+        "room_or_area": 24,
+        "door": 32767,
+        "name": "Alpine Crossing",
+        "unused": 0
+    },
+    {
+        "ID": 50,
+        "room_or_area": 80,
+        "door": 32774,
+        "name": "Alpine Crossing",
+        "unused": 0
+    },
+    {
+        "ID": 51,
+        "room_or_area": 80,
+        "door": 32775,
+        "name": "Alpine Crossing",
+        "unused": 0
+    },
+    {
+        "ID": 52,
+        "room_or_area": 25,
+        "door": 32767,
+        "name": "Altin",
+        "unused": 0
+    },
+    {
+        "ID": 53,
+        "room_or_area": 26,
+        "door": 32767,
+        "name": "Altin Peak",
+        "unused": 0
+    },
+    {
+        "ID": 54,
+        "room_or_area": 27,
+        "door": 32767,
+        "name": "Lama Temple",
+        "unused": 0
+    },
+    {
+        "ID": 55,
+        "room_or_area": 28,
+        "door": 32767,
+        "name": "Lamakan Desert",
+        "unused": 0
+    },
+    {
+        "ID": 56,
+        "room_or_area": 29,
+        "door": 32767,
+        "name": "Vale",
+        "unused": 0
+    },
+    {
+        "ID": 57,
+        "room_or_area": 30,
+        "door": 32767,
+        "name": "Vale Cave",
+        "unused": 0
+    },
+    {
+        "ID": 58,
+        "room_or_area": 31,
+        "door": 32767,
+        "name": "Vault Cave",
+        "unused": 0
+    },
+    {
+        "ID": 59,
+        "room_or_area": 101,
+        "door": 65535,
+        "name": "Kalay Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 60,
+        "room_or_area": 32,
+        "door": 32767,
+        "name": "Kalay",
+        "unused": 0
+    },
+    {
+        "ID": 61,
+        "room_or_area": 103,
+        "door": 65535,
+        "name": "Hammet Palace",
+        "unused": 0
+    },
+    {
+        "ID": 62,
+        "room_or_area": 33,
+        "door": 32767,
+        "name": "Hammet Palace",
+        "unused": 0
+    },
+    {
+        "ID": 63,
+        "room_or_area": 105,
+        "door": 32778,
+        "name": "Gate to Suhalla",
+        "unused": 0
+    },
+    {
+        "ID": 64,
+        "room_or_area": 34,
+        "door": 32767,
+        "name": "Lunpa",
+        "unused": 0
+    },
+    {
+        "ID": 65,
+        "room_or_area": 35,
+        "door": 32767,
+        "name": "West Lunpa Cave",
+        "unused": 0
+    },
+    {
+        "ID": 66,
+        "room_or_area": 108,
+        "door": 32770,
+        "name": "Tolbi Docks",
+        "unused": 0
+    },
+    {
+        "ID": 67,
+        "room_or_area": 36,
+        "door": 32767,
+        "name": "Kalay Docks",
+        "unused": 0
+    },
+    {
+        "ID": 68,
+        "room_or_area": 37,
+        "door": 32767,
+        "name": "Tolbi-bound Ship",
+        "unused": 0
+    },
+    {
+        "ID": 69,
+        "room_or_area": 38,
+        "door": 32767,
+        "name": "Tolbi Docks",
+        "unused": 0
+    },
+    {
+        "ID": 70,
+        "room_or_area": 113,
+        "door": 65535,
+        "name": "Crossbone Isle",
+        "unused": 0
+    },
+    {
+        "ID": 71,
+        "room_or_area": 125,
+        "door": 65535,
+        "name": "Pirate Ship",
+        "unused": 0
+    },
+    {
+        "ID": 72,
+        "room_or_area": 39,
+        "door": 32767,
+        "name": "Crossbone Isle Cave",
+        "unused": 0
+    },
+    {
+        "ID": 73,
+        "room_or_area": 136,
+        "door": 32776,
+        "name": "Tolbi Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 74,
+        "room_or_area": 136,
+        "door": 32798,
+        "name": "Tolbi Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 75,
+        "room_or_area": 40,
+        "door": 32767,
+        "name": "Tolbi",
+        "unused": 0
+    },
+    {
+        "ID": 76,
+        "room_or_area": 139,
+        "door": 65535,
+        "name": "Babi's Palace",
+        "unused": 0
+    },
+    {
+        "ID": 77,
+        "room_or_area": 138,
+        "door": 65535,
+        "name": "Babi's Palace",
+        "unused": 0
+    },
+    {
+        "ID": 78,
+        "room_or_area": 141,
+        "door": 65535,
+        "name": "Colosseum Tunnel",
+        "unused": 0
+    },
+    {
+        "ID": 79,
+        "room_or_area": 142,
+        "door": 65535,
+        "name": "Colosseum Entrance",
+        "unused": 0
+    },
+    {
+        "ID": 80,
+        "room_or_area": 140,
+        "door": 32770,
+        "name": "Colosseum Tunnel",
+        "unused": 0
+    },
+    {
+        "ID": 81,
+        "room_or_area": 140,
+        "door": 32772,
+        "name": "Colosseum Tunnel",
+        "unused": 0
+    },
+    {
+        "ID": 82,
+        "room_or_area": 140,
+        "door": 65535,
+        "name": "Colosseum",
+        "unused": 0
+    },
+    {
+        "ID": 83,
+        "room_or_area": 143,
+        "door": 65535,
+        "name": "Colosseum Final 1",
+        "unused": 0
+    },
+    {
+        "ID": 84,
+        "room_or_area": 144,
+        "door": 65535,
+        "name": "Colosseum Final 2",
+        "unused": 0
+    },
+    {
+        "ID": 85,
+        "room_or_area": 145,
+        "door": 65535,
+        "name": "Colosseum Final 3",
+        "unused": 0
+    },
+    {
+        "ID": 86,
+        "room_or_area": 43,
+        "door": 32767,
+        "name": "Altmiller Cave",
+        "unused": 0
+    },
+    {
+        "ID": 87,
+        "room_or_area": 44,
+        "door": 32767,
+        "name": "Gondowan Passage",
+        "unused": 0
+    },
+    {
+        "ID": 88,
+        "room_or_area": 45,
+        "door": 32767,
+        "name": "Kalay Tunnel Entrance",
+        "unused": 0
+    },
+    {
+        "ID": 89,
+        "room_or_area": 46,
+        "door": 32767,
+        "name": "Kalay Tunnel",
+        "unused": 0
+    },
+    {
+        "ID": 90,
+        "room_or_area": 47,
+        "door": 32767,
+        "name": "Gondowan Cave",
+        "unused": 0
+    },
+    {
+        "ID": 91,
+        "room_or_area": 48,
+        "door": 32767,
+        "name": "Lunpa Fortress Gates",
+        "unused": 0
+    },
+    {
+        "ID": 92,
+        "room_or_area": 49,
+        "door": 32767,
+        "name": "Lunpa Fortress",
+        "unused": 0
+    },
+    {
+        "ID": 93,
+        "room_or_area": 50,
+        "door": 32767,
+        "name": "Suhalla Desert",
+        "unused": 0
+    },
+    {
+        "ID": 94,
+        "room_or_area": 168,
+        "door": 32770,
+        "name": "Suhalla Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 95,
+        "room_or_area": 168,
+        "door": 32774,
+        "name": "Suhalla Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 96,
+        "room_or_area": 51,
+        "door": 32767,
+        "name": "Suhalla",
+        "unused": 0
+    },
+    {
+        "ID": 97,
+        "room_or_area": 171,
+        "door": 65535,
+        "name": "Gateway Cave",
+        "unused": 0
+    },
+    {
+        "ID": 98,
+        "room_or_area": 52,
+        "door": 32767,
+        "name": "Suhalla Gate",
+        "unused": 0
+    },
+    {
+        "ID": 99,
+        "room_or_area": 173,
+        "door": 32769,
+        "name": "Babi Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 100,
+        "room_or_area": 173,
+        "door": 32770,
+        "name": "Babi Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 101,
+        "room_or_area": 173,
+        "door": 32771,
+        "name": "Babi Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 102,
+        "room_or_area": 53,
+        "door": 32767,
+        "name": "Tunnel Ruins",
+        "unused": 0
+    },
+    {
+        "ID": 103,
+        "room_or_area": 176,
+        "door": 65535,
+        "name": "Babi Lighthouse Entry",
+        "unused": 0
+    },
+    {
+        "ID": 104,
+        "room_or_area": 177,
+        "door": 65535,
+        "name": "Road to Babi Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 105,
+        "room_or_area": 54,
+        "door": 32767,
+        "name": "Babi Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 106,
+        "room_or_area": 179,
+        "door": 32779,
+        "name": "Lalivero Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 107,
+        "room_or_area": 179,
+        "door": 32780,
+        "name": "Lalivero Sanctum",
+        "unused": 0
+    },
+    {
+        "ID": 108,
+        "room_or_area": 55,
+        "door": 32767,
+        "name": "Lalivero",
+        "unused": 0
+    },
+    {
+        "ID": 109,
+        "room_or_area": 182,
+        "door": 65535,
+        "name": "Venus Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 110,
+        "room_or_area": 56,
+        "door": 32767,
+        "name": "Venus Lighthouse Entry",
+        "unused": 0
+    },
+    {
+        "ID": 111,
+        "room_or_area": 187,
+        "door": 65535,
+        "name": "Lighthouse Aerie",
+        "unused": 0
+    },
+    {
+        "ID": 112,
+        "room_or_area": 57,
+        "door": 32767,
+        "name": "Venus Lighthouse",
+        "unused": 0
+    },
+    {
+        "ID": 113,
+        "room_or_area": 58,
+        "door": 32767,
+        "name": "Lemurian ship",
+        "unused": 0
+    },
+    {
+        "ID": 114,
+        "room_or_area": 59,
+        "door": 32767,
+        "name": "Tolbi Spring",
+        "unused": 0
+    },
+    {
+        "ID": 115,
+        "room_or_area": 190,
+        "door": 32769,
+        "name": "Lobby",
+        "unused": 0
+    },
+    {
+        "ID": 116,
+        "room_or_area": 61,
+        "door": 32767,
+        "name": "Test 0",
+        "unused": 0
+    },
+    {
+        "ID": 117,
+        "room_or_area": 62,
+        "door": 32767,
+        "name": "Test 1",
+        "unused": 0
+    },
+    {
+        "ID": 118,
+        "room_or_area": 63,
+        "door": 32767,
+        "name": "Test 2",
+        "unused": 0
+    },
+    {
+        "ID": 119,
+        "room_or_area": 64,
+        "door": 32767,
+        "name": "Test 3",
+        "unused": 0
+    },
+    {
+        "ID": 120,
+        "room_or_area": 65,
+        "door": 32767,
+        "name": "Test 4",
+        "unused": 0
+    },
+    {
+        "ID": 121,
+        "room_or_area": 66,
+        "door": 32767,
+        "name": "Test 5",
+        "unused": 0
+    },
+    {
+        "ID": 122,
+        "room_or_area": 67,
+        "door": 32767,
+        "name": "Test 6",
+        "unused": 0
+    },
+    {
+        "ID": 123,
+        "room_or_area": 68,
+        "door": 32767,
+        "name": "Test 7",
+        "unused": 0
+    },
+    {
+        "ID": 124,
+        "room_or_area": 69,
+        "door": 32767,
+        "name": "Increase item and level",
+        "unused": 0
+    },
+    {
+        "ID": 125,
+        "room_or_area": 70,
+        "door": 32767,
+        "name": "Menu test",
+        "unused": 0
+    }
+]
