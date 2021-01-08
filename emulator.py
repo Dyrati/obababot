@@ -78,6 +78,7 @@ emojis = {
     "question": "\u2753",
     "checkmark": "\u2705",
     "redX": "\u274c",
+    "whiteflag": "\U0001f3f3\ufe0f",
 }
 for i in range(10):  # numbers
     emojis[str(i)] = f"{i}\ufe0f\u20e3"

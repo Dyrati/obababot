@@ -13,6 +13,39 @@ with open(ROM1, "rb") as f:
     def read(size):
         return int.from_bytes(f.read(size), "little")
 
+    f.seek(0x09C610)  # encounter data
+    encounterdata1 = []
+    for i in range(104):
+        encounterdata1.append({
+            "ID": i,
+            "rate": read(2),
+            "level": read(2),
+            "enemy_groups": [read(2) for i in range(8)],
+            "group_ratios": [read(1) for i in range(8)],
+        })
+
+    f.seek(0x09D170)  # encounters by map
+    map_encounters1 = []
+    for i in range(198):
+        map_encounters1.append({
+            "ID": i,
+            "room": read(2),
+            "door": read(2),
+            "flag_id": read(2),
+            "encounter_ids": [read(1), read(1)],
+        })
+
+    f.seek(0x09D7A8)  # encounters on world map
+    wmap_encounters1 = []
+    for i in range(32):
+        wmap_encounters1.append({
+            "ID": i,
+            "area_type": read(2),
+            "terrain": read(2),
+            "flag_id": read(2),
+            "encounter_ids": read(2),
+        })
+
     room_references1 = []
     f.seek(0x09DDD8)  # room name reference table
     for i in range(126):
@@ -35,7 +68,14 @@ with open(ROM1, "rb") as f:
             "type": read(1),
             "MFT_index": read(2),
             "outdoor": read(2),
+            "encounters": {},
         })
+
+for encounter in map_encounters1:
+    room = mapdata1[encounter["room"]]["encounters"]
+    door = encounter["door"]
+    room[door if door != 65535 else "all"] = encounter["encounter_ids"]
+
 
 with open(ROM2, "rb") as f:
     def read(size):
@@ -240,7 +280,7 @@ with open(ROM2, "rb") as f:
 
     f.seek(0x0EE6D4)  # encounters by map
     map_encounters = []
-    for i in range(325):
+    for i in range(220):
         map_encounters.append({
             "ID": i,
             "room": read(2),
@@ -282,6 +322,7 @@ with open(ROM2, "rb") as f:
             "type": read(1),
             "MFT_index": read(2),
             "outdoor": read(2),
+            "encounters": {},
         })
 
     f.seek(0x12CE7C)  # enemy group data
@@ -378,6 +419,11 @@ for djinni in djinndata:
     djinni["target"] = move["target"]
     djinni["power"] = move["power"]
     djinni["description"] = move["description"]
+
+for encounter in map_encounters:
+    room = mapdata2[encounter["room"]]["encounters"]
+    door = encounter["door"]
+    room[door if door != 65535 else "all"] = encounter["encounter_ids"]
 
 # Enemy Groups
 for group in enemygroupdata:
