@@ -45,14 +45,18 @@ class ConnectFour():
         self.pieces = [" X "," O "]
         self.connect = connect
         self.count = 0
+        self.previous = None
+        self.end = False
     
     def add_piece(self, col):
         if "   " not in self.board[col]: return
         height = self.board[col].index("   ")
-        self.board[col][height] = self.pieces[self.current_player-1]
+        piece = self.pieces[self.current_player-1]
+        self.board[col][height] = piece
         self.count += 1
+        self.previous = (piece, col, height)
         if self.check_win(): return self.current_player
-        if self.count == len(self.board)*len(self.board[0]): return 0
+        if self.check_tie(): return 0
         self.current_player += 1
         if self.current_player > 2: self.current_player = 1
 
@@ -62,7 +66,6 @@ class ConnectFour():
 
     def check_win(self):
         copy = [col[:] for col in self.board]
-        result = False
         for iterator in (v_iter, h_iter, diag_iter):
             for line in iterator(copy):
                 pieces, xcoords, ycoords = zip(*line)
@@ -73,11 +76,20 @@ class ConnectFour():
                         for p,x,y in line[start:]:
                             if p == piece: self.board[x][y] = f"({piece[1:-1]})"
                             else: break
-                        result = True
-        return result
+                        self.end = True
+        return self.end
+
+    def check_tie(self):
+        if self.count == len(self.board)*len(self.board[0]):
+            self.end = True
+        return self.end
     
     def __str__(self):
-        rows = [f" |{'|'.join(row)}|" for row in zip(*self.board)]
+        copy = [col[:] for col in self.board]
+        if self.previous and not self.end:
+            p,x,y = self.previous
+            copy[x][y] = f"'{p[1:-1]}'"
+        rows = [f" |{'|'.join(row)}|" for row in zip(*copy)]
         spacing = len(rows[0])-1
         border = " " + "="*spacing
         legs = " |/"+" "*(spacing-3)+"|/"

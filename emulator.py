@@ -19,7 +19,6 @@ class TerminalUser:
 
 class TerminalAttachment:
     def __init__(self, filename):
-        import io
         with open(filename, "rb") as f:
             buffer = io.BytesIO(f.read())
             self.read = to_async(buffer.read)
@@ -28,7 +27,7 @@ class TerminalAttachment:
 class TerminalReaction:
     def __init__(self, target, emoji):
         self.message = target
-        self.emoji = emoji.encode().decode("unicode-escape")
+        self.emoji = emoji
 
 class TerminalMessage:
     def __init__(self, content="", user=None, attach=None):
@@ -67,6 +66,25 @@ class TerminalMessage:
         return text, attachments
 
 
+emojis = {
+    "thumbsup": "\U0001f44d",
+    "thumbsdown": "\U0001f44e",
+    "cake": "\U0001f370",
+    "poop": "\U0001f4a9",
+    "up": "\U0001f53c",
+    "down": "\U0001f53d",
+    "left": "\u25c0\ufe0f",
+    "right": "\u25b6\ufe0f",
+    "question": "\u2753",
+    "checkmark": "\u2705",
+    "redX": "\u274c",
+}
+for i in range(10):  # numbers
+    emojis[str(i)] = f"{i}\ufe0f\u20e3"
+for i in range(26):  # letters
+    emojis[chr(0x61+i)] = f"\\U{0x1f1e6+i:08x}".encode().decode("unicode-escape")
+
+
 def terminal(on_ready=None, on_message=None, on_react=None):
     import asyncio
     user = TerminalUser("admin")
@@ -84,7 +102,7 @@ def terminal(on_ready=None, on_message=None, on_react=None):
                 else: user = TerminalUser(args[1])
             elif text.startswith("react ") and ReactMessages:
                 target = next(reversed(ReactMessages))
-                emoji = text[len("react "):]
+                emoji = emojis[text[len("react "):]]
                 await on_react(TerminalReaction(target, emoji), user)
             else:
                 message = TerminalMessage(

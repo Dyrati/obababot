@@ -6,8 +6,7 @@ import time
 import traceback
 import utilities
 from utilities import client, UserData, ReactMessages, reply, parse, load_data
-import commands, gsfuncs
-from games import *
+import commands, gsfuncs, games
 print("Imported modules    ")
 
 
