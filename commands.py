@@ -140,7 +140,7 @@ async def var(message, *args, **kwargs):
     math commands.
     """
     ID = message.author.id
-    m = re.match(prefix + r"var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
+    m = re.match("\\" + prefix + r"var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
     varname, content = m.groups()
     args, kwargs = utilities.parse(content)
     value = safe_eval(" ".join(args), {**mfuncs, **UserData[ID].vars})

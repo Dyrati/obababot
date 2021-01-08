@@ -273,12 +273,6 @@ class Charmap:
         return "\n".join(("".join(row) for row in self.charmap))
 
 
-def to_async(func):
-    async def inner(*args, **kwargs):
-        return func(*args, **kwargs)
-    return inner
-
-
 class User:
     def __init__(self, ID):
         self.ID = ID
@@ -287,59 +281,6 @@ class User:
         self.responses = []
         self.live_response = {}
         self.save = None
-
-
-class TerminalMessage:
-    def __init__(self, content="", ID=0):
-        from types import SimpleNamespace as SN
-        self.author = SN(name="admin", id=ID)
-        self.content, self.attachments = self.get_attachments(content)
-        self.guild = SN(name=None)
-        self.channel = SN(name=None, send=self.send)
-        self.edit = self.send
-        self.add_reaction = self.react
-        self.remove_reaction = self.react
-    
-    async def send(self, content=""):
-        # content = content.replace("```","\n").replace("`","")
-        print(content)
-        return TerminalMessage(content)
-
-    async def react(self, emoji):
-        pass
-    
-    async def delete(self):
-        print(f"Deleted {self}")
-    
-    def get_attachments(self, text):
-        import io
-        attachments = []
-        def msub(m):
-            filename = m.group(1).strip('"')
-            with open(filename, "rb") as f:
-                buffer = io.BytesIO(f.read())
-                buffer.read = to_async(buffer.read)
-                buffer.url = filename
-            attachments.append(buffer)
-        text = re.sub(r"\sattach\s*=\s*(\".*?\"|\S+)", msub, text)
-        return text, attachments
-
-
-def terminal(on_ready=None, on_message=None):
-    import asyncio
-    ID = 0
-    async def loop():
-        client.loop = asyncio.get_running_loop()
-        if on_ready: await on_ready()
-        nonlocal ID
-        while True:
-            try: text = input("> ")
-            except KeyboardInterrupt: return
-            if text in ("quit", "exit"): return
-            elif text.startswith("setid"): ID=int(text[len("setid"):])
-            message = TerminalMessage(content=text, ID=ID)
-            if on_message: await on_message(message)
-    asyncio.run(loop())
 
 
 async def add_buttons(message, buttons, func):
@@ -354,6 +295,7 @@ async def add_buttons(message, buttons, func):
     ReactMessages[message] = newfunc
     tasks = [create_task(message.add_reaction(b)) for b in buttons]
     for t in tasks: await t
+
 
 async def clear_buttons(message):
     ReactMessages.pop(message)

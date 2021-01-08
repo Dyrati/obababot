@@ -55,7 +55,8 @@ async def on_reaction_add(reaction, user):
 
 load_data()
 if terminal_mode:
-    utilities.terminal(on_ready=on_ready, on_message=on_message)
+    from emulator import terminal
+    terminal(on_ready=on_ready, on_message=on_message, on_react=on_reaction_add)
 else:
     print("Connecting...", end="\r")
     client.run(TOKEN)
