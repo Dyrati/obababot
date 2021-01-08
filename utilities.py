@@ -1,10 +1,12 @@
+import discord
 import re
+import os
 import json
 
-prefix = "$"
+prefix = os.getenv("PREFIX","$")
 usercommands = {}
 aliases = {}
-client = None
+client = discord.Client()
 UserData = {}
 ReactMessages = {}
 
@@ -244,14 +246,6 @@ def tableV(dictlist, spacing=2):
     spacing = " "*spacing
     template = spacing.join((f"{{:{w}.{w}}}" for w in widths))
     return "\n".join(template.format(*row) for row in zip(*columns))
-
-
-class MetaString(dict):
-    def __init__(self, string=None):
-        self.metadata = {"str": string or ""}
-
-    def __str__(self):
-        return self.metadata["str"]
 
 
 class Charmap:

@@ -5,7 +5,7 @@ import sys
 import time
 import traceback
 import utilities
-from utilities import UserData, ReactMessages, reply, parse, load_data
+from utilities import client, UserData, ReactMessages, reply, parse, load_data
 import commands, gsfuncs
 from games import *
 print("Imported modules    ")
@@ -14,8 +14,6 @@ print("Imported modules    ")
 terminal_mode = "-t" in sys.argv
 TOKEN = os.getenv('TOKEN') or input("Input bot token: ").strip('"')
 if TOKEN == "-t": terminal_mode = True
-client = discord.Client()
-utilities.client = client
 
 @client.event
 async def on_ready():

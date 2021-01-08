@@ -3,7 +3,7 @@ import re
 import inspect
 import utilities
 from utilities import \
-    command, prefix, DataTables, UserData,\
+    client, command, prefix, DataTables, UserData,\
     Namemaps, reply, dictstr, mfuncs
 import gsfuncs
 from safe_eval import safe_eval
@@ -23,7 +23,7 @@ async def help(message, *args, **kwargs):
         Type "{prefix}help [func]" for detailed information about [func]
         
         Function arguments are words separated by spaces
-            ex. $sort enemydata HP
+            ex. {prefix}sort enemydata HP
 
         Keyword arguments have the format: key=value
             value cannot have spaces, unless value is in quotes
@@ -35,7 +35,7 @@ async def help(message, *args, **kwargs):
         """)
         return await reply(message, f"```\n{out}\n```")
     else:
-        func = utilities.usercommands['$'+args[0]]
+        func = utilities.usercommands[prefix+args[0]]
         await reply(message, f"```\n{inspect.getdoc(func)}\n```")
 
 
@@ -140,7 +140,7 @@ async def var(message, *args, **kwargs):
     math commands.
     """
     ID = message.author.id
-    m = re.match(r"\$var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
+    m = re.match(prefix + r"var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
     varname, content = m.groups()
     args, kwargs = utilities.parse(content)
     value = safe_eval(" ".join(args), {**mfuncs, **UserData[ID].vars})
@@ -315,7 +315,7 @@ async def upload(message, *args, **kwargs):
             "Expected an attachment or a link to a message with an attachment"
         ID_list = args[0][len("https://discord.com/channels/"):].split("/")
         serverID, channelID, messageID = (int(i) for i in ID_list)
-        server = utilities.client.get_guild(serverID)
+        server = client.get_guild(serverID)
         channel = server.get_channel(channelID)
         m = await channel.fetch_message(messageID)
         attachment = m.attachments[0]

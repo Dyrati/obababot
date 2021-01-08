@@ -1,5 +1,4 @@
-import utilities
-from utilities import command, reply, add_buttons, clear_buttons
+from utilities import client, command, reply, add_buttons, clear_buttons
 
 
 def v_iter(array):
@@ -102,7 +101,7 @@ async def connect4(message, *args, **kwargs):
     game = ConnectFour(**dimensions)
     width = len(str(game).split("\n",1)[0])
     players = []
-    create_task = utilities.client.loop.create_task
+    create_task = client.loop.create_task
 
     def header():
         names = "{}  vs  {}".format(*(p.name for p in players))
