@@ -105,6 +105,7 @@ async def connect4(message, *args, **kwargs):
         width -- width of game board, ranges from 1 to 10
         height -- height of game board, ranges from 1 to 10
         connect -- the number of connected pieces required to win
+        notify -- ping the first player when a game has started
     """
     defaults = {"width":7, "height":6, "connect":4}
     dimensions = {k:int(v) for k,v in kwargs.items() if k in defaults}
@@ -145,7 +146,9 @@ async def connect4(message, *args, **kwargs):
             content += f"\n Waiting for Player {len(players)+1} to join\n\n{game}"
             await message.edit(content=f"```\n{content}\n```")
         else:
-            t1 = create_task(message.edit(content= f"```\n{header()}{game}\n```"))
+            content = players[0].mention if kwargs.get("notify") else ""
+            content += f"```\n{header()}{game}\n```"
+            t1 = create_task(message.edit(content=content))
             buttons = {f"{i}\ufe0f\u20e3": i for i in range(dimensions["width"])}
             t2 = create_task(add_buttons(message, buttons, mainphase))
             await t1, t2
