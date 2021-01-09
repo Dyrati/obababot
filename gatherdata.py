@@ -74,7 +74,8 @@ with open(ROM1, "rb") as f:
 for encounter in map_encounters1:
     room = mapdata1[encounter["room"]]["encounters"]
     door = encounter["door"]
-    room[door if door != 65535 else "all"] = encounter["encounter_ids"]
+    ids = list(filter(lambda x: x, encounter["encounter_ids"]))
+    room[door if door != 65535 else "all"] = ids
 
 
 with open(ROM2, "rb") as f:
@@ -423,7 +424,8 @@ for djinni in djinndata:
 for encounter in map_encounters:
     room = mapdata2[encounter["room"]]["encounters"]
     door = encounter["door"]
-    room[door if door != 65535 else "all"] = encounter["encounter_ids"]
+    ids = list(filter(lambda x: x, encounter["encounter_ids"]))
+    room[door if door != 65535 else "all"] = ids
 
 # Enemy Groups
 for group in enemygroupdata:
