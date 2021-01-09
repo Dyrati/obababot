@@ -111,6 +111,7 @@ async def math(message, *args, **kwargs):
 
     Keyword Arguments:
         f -- format string; uses python's format-specification-mini-language
+             https://docs.python.org/3/library/string.html#formatspec
 
     Aliases:
         may use the "=" sign in place of "$math "
