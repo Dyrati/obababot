@@ -2,6 +2,9 @@
     {
         "ID": 0,
         "name": "TITLE",
+        "area_names": [
+            "Title screen"
+        ],
         "file_index": 1609,
         "area": 0,
         "type": 1,
@@ -12,6 +15,9 @@
     {
         "ID": 1,
         "name": "UTIL",
+        "area_names": [
+            "(Clear data)"
+        ],
         "file_index": 1610,
         "area": 1,
         "type": 1,
@@ -22,6 +28,9 @@
     {
         "ID": 2,
         "name": "WORLD",
+        "area_names": [
+            "World Map"
+        ],
         "file_index": 1611,
         "area": 2,
         "type": 1,
@@ -32,6 +41,9 @@
     {
         "ID": 3,
         "name": "WORLD_END",
+        "area_names": [
+            "Staff Credit"
+        ],
         "file_index": 1612,
         "area": 3,
         "type": 1,
@@ -42,6 +54,9 @@
     {
         "ID": 4,
         "name": "V_ENT",
+        "area_names": [
+            "Venus Lighthouse"
+        ],
         "file_index": 1613,
         "area": 4,
         "type": 2,
@@ -52,6 +67,9 @@
     {
         "ID": 5,
         "name": "VTO01",
+        "area_names": [
+            "Venus Lighthouse"
+        ],
         "file_index": 1614,
         "area": 4,
         "type": 2,
@@ -62,6 +80,9 @@
     {
         "ID": 6,
         "name": "SHR_M14",
+        "area_names": [
+            "Suhalla Gate"
+        ],
         "file_index": 1615,
         "area": 5,
         "type": 1,
@@ -72,6 +93,9 @@
     {
         "ID": 7,
         "name": "SHR_M23",
+        "area_names": [
+            "Suhalla Gate"
+        ],
         "file_index": 1615,
         "area": 5,
         "type": 1,
@@ -82,6 +106,9 @@
     {
         "ID": 8,
         "name": "SHR_M56",
+        "area_names": [
+            "Suhalla Gate"
+        ],
         "file_index": 1615,
         "area": 5,
         "type": 1,
@@ -92,6 +119,9 @@
     {
         "ID": 9,
         "name": "OTMP0008",
+        "area_names": [
+            "Idejima"
+        ],
         "file_index": 1616,
         "area": 6,
         "type": 2,
@@ -102,6 +132,9 @@
     {
         "ID": 10,
         "name": "DELY00",
+        "area_names": [
+            "Daila"
+        ],
         "file_index": 1617,
         "area": 7,
         "type": 2,
@@ -112,6 +145,10 @@
     {
         "ID": 11,
         "name": "DLY_ROOM",
+        "area_names": [
+            "North Osenia Islet",
+            "Daila"
+        ],
         "file_index": 1618,
         "area": 7,
         "type": 2,
@@ -122,6 +159,9 @@
     {
         "ID": 12,
         "name": "DL_SINDEN",
+        "area_names": [
+            "Daila"
+        ],
         "file_index": 1618,
         "area": 7,
         "type": 2,
@@ -132,6 +172,9 @@
     {
         "ID": 13,
         "name": "DELY01",
+        "area_names": [
+            "Daila"
+        ],
         "file_index": 1617,
         "area": 7,
         "type": 2,
@@ -142,6 +185,9 @@
     {
         "ID": 14,
         "name": "KANDRA01",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -156,6 +202,9 @@
     {
         "ID": 15,
         "name": "KANDRA02",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -176,6 +225,9 @@
     {
         "ID": 16,
         "name": "KANDRA03",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -190,6 +242,9 @@
     {
         "ID": 17,
         "name": "KANDRA04",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -204,6 +259,9 @@
     {
         "ID": 18,
         "name": "KANDRA05",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -214,6 +272,9 @@
     {
         "ID": 19,
         "name": "KANDRA06",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -228,6 +289,9 @@
     {
         "ID": 20,
         "name": "KANDRA07",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 8,
         "type": 1,
@@ -248,6 +312,9 @@
     {
         "ID": 21,
         "name": "KANDO_O",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 9,
         "type": 2,
@@ -258,6 +325,9 @@
     {
         "ID": 22,
         "name": "KANDO_E",
+        "area_names": [
+            "Kandorean Temple"
+        ],
         "file_index": 1619,
         "area": 9,
         "type": 2,
@@ -268,6 +338,9 @@
     {
         "ID": 23,
         "name": "KAIJIN01",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -278,6 +351,9 @@
     {
         "ID": 24,
         "name": "KAIJIN02",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -288,6 +364,9 @@
     {
         "ID": 25,
         "name": "KAIJIN03",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -311,6 +390,9 @@
     {
         "ID": 26,
         "name": "KAIJIN04",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -325,6 +407,9 @@
     {
         "ID": 27,
         "name": "KAIJIN05",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -339,6 +424,9 @@
     {
         "ID": 28,
         "name": "KAIJIN06",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -349,6 +437,9 @@
     {
         "ID": 29,
         "name": "KAIJIN07",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -363,6 +454,9 @@
     {
         "ID": 30,
         "name": "KAIJIN08",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -377,6 +471,9 @@
     {
         "ID": 31,
         "name": "KAIJIN09",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -387,6 +484,9 @@
     {
         "ID": 32,
         "name": "KAIJIN_T1",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -401,6 +501,9 @@
     {
         "ID": 33,
         "name": "KAIJIN_T2",
+        "area_names": [
+            "Shrine of the Sea God"
+        ],
         "file_index": 1620,
         "area": 10,
         "type": 1,
@@ -411,6 +514,9 @@
     {
         "ID": 34,
         "name": "DEKAN00",
+        "area_names": [
+            "Dehkan Plateau"
+        ],
         "file_index": 1621,
         "area": 11,
         "type": 1,
@@ -425,6 +531,9 @@
     {
         "ID": 35,
         "name": "DEKAN01",
+        "area_names": [
+            "Dehkan Plateau"
+        ],
         "file_index": 1621,
         "area": 11,
         "type": 1,
@@ -439,6 +548,9 @@
     {
         "ID": 36,
         "name": "DEKAN02",
+        "area_names": [
+            "Dehkan Plateau"
+        ],
         "file_index": 1621,
         "area": 11,
         "type": 1,
@@ -453,6 +565,9 @@
     {
         "ID": 37,
         "name": "DJ_DKN00",
+        "area_names": [
+            "Dehkan Plateau"
+        ],
         "file_index": 1621,
         "area": 11,
         "type": 1,
@@ -470,6 +585,9 @@
     {
         "ID": 38,
         "name": "DJ_DKN01",
+        "area_names": [
+            "Dehkan Plateau"
+        ],
         "file_index": 1621,
         "area": 11,
         "type": 1,
@@ -484,6 +602,9 @@
     {
         "ID": 39,
         "name": "DJ_DKN02",
+        "area_names": [
+            "Dehkan Plateau"
+        ],
         "file_index": 1621,
         "area": 11,
         "type": 1,
@@ -498,6 +619,9 @@
     {
         "ID": 40,
         "name": "REM_FUNE01",
+        "area_names": [
+            "Lemurian Ship"
+        ],
         "file_index": 1622,
         "area": 12,
         "type": 1,
@@ -512,6 +636,9 @@
     {
         "ID": 41,
         "name": "REM_FUNE02",
+        "area_names": [
+            "Lemurian Ship"
+        ],
         "file_index": 1622,
         "area": 12,
         "type": 1,
@@ -522,6 +649,9 @@
     {
         "ID": 42,
         "name": "REM_SHIP02",
+        "area_names": [
+            "Lemurian Ship"
+        ],
         "file_index": 1623,
         "area": 12,
         "type": 1,
@@ -532,6 +662,9 @@
     {
         "ID": 43,
         "name": "REM_SHIP01",
+        "area_names": [
+            "East Indra Shore"
+        ],
         "file_index": 1623,
         "area": 13,
         "type": 1,
@@ -542,6 +675,9 @@
     {
         "ID": 44,
         "name": "OTMP0005",
+        "area_names": [
+            "Madra"
+        ],
         "file_index": 1624,
         "area": 14,
         "type": 2,
@@ -552,6 +688,9 @@
     {
         "ID": 45,
         "name": "MD_ROOM01",
+        "area_names": [
+            "Madra"
+        ],
         "file_index": 1625,
         "area": 14,
         "type": 2,
@@ -562,6 +701,9 @@
     {
         "ID": 46,
         "name": "MD_ROOM02",
+        "area_names": [
+            "Madra"
+        ],
         "file_index": 1625,
         "area": 14,
         "type": 2,
@@ -572,6 +714,9 @@
     {
         "ID": 47,
         "name": "DJ_MDR00",
+        "area_names": [
+            "Madra Catacombs"
+        ],
         "file_index": 1626,
         "area": 15,
         "type": 1,
@@ -586,6 +731,9 @@
     {
         "ID": 48,
         "name": "DJ_MDR0A",
+        "area_names": [
+            "Madra Catacombs"
+        ],
         "file_index": 1626,
         "area": 15,
         "type": 1,
@@ -600,6 +748,9 @@
     {
         "ID": 49,
         "name": "DJ_MDR0B",
+        "area_names": [
+            "Madra Catacombs"
+        ],
         "file_index": 1626,
         "area": 15,
         "type": 1,
@@ -614,6 +765,9 @@
     {
         "ID": 50,
         "name": "DJ_MDR10",
+        "area_names": [
+            "Madra Catacombs"
+        ],
         "file_index": 1626,
         "area": 15,
         "type": 1,
@@ -628,6 +782,9 @@
     {
         "ID": 51,
         "name": "DJ_MDR1A",
+        "area_names": [
+            "Madra Catacombs"
+        ],
         "file_index": 1626,
         "area": 15,
         "type": 1,
@@ -642,6 +799,9 @@
     {
         "ID": 52,
         "name": "DJ_MDR1B",
+        "area_names": [
+            "Madra Catacombs"
+        ],
         "file_index": 1626,
         "area": 15,
         "type": 1,
@@ -656,6 +816,9 @@
     {
         "ID": 53,
         "name": "OSE_ST",
+        "area_names": [
+            "Madra Drawbridge"
+        ],
         "file_index": 1627,
         "area": 16,
         "type": 2,
@@ -666,6 +829,9 @@
     {
         "ID": 54,
         "name": "GAKECHAM",
+        "area_names": [
+            "Osenia Cliffs"
+        ],
         "file_index": 1628,
         "area": 17,
         "type": 1,
@@ -676,6 +842,9 @@
     {
         "ID": 55,
         "name": "MEEKA",
+        "area_names": [
+            "Mikasalla"
+        ],
         "file_index": 1629,
         "area": 18,
         "type": 2,
@@ -686,6 +855,9 @@
     {
         "ID": 56,
         "name": "MEEB1",
+        "area_names": [
+            "Mikasalla"
+        ],
         "file_index": 1629,
         "area": 18,
         "type": 2,
@@ -696,6 +868,10 @@
     {
         "ID": 57,
         "name": "MI_ROOM01",
+        "area_names": [
+            "E Tundaria Islet",
+            "Mikasalla"
+        ],
         "file_index": 1630,
         "area": 18,
         "type": 2,
@@ -706,6 +882,11 @@
     {
         "ID": 58,
         "name": "MI_SINDEN",
+        "area_names": [
+            "Yallam",
+            "Apojii Islands",
+            "Mikasalla"
+        ],
         "file_index": 1630,
         "area": 18,
         "type": 2,
@@ -716,6 +897,9 @@
     {
         "ID": 59,
         "name": "POPEE1",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1631,
         "area": 19,
         "type": 2,
@@ -726,6 +910,9 @@
     {
         "ID": 60,
         "name": "POPEE2",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1631,
         "area": 19,
         "type": 2,
@@ -736,6 +923,9 @@
     {
         "ID": 61,
         "name": "POPEE3",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1631,
         "area": 19,
         "type": 2,
@@ -746,6 +936,9 @@
     {
         "ID": 62,
         "name": "POPEE4",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1631,
         "area": 19,
         "type": 2,
@@ -756,6 +949,9 @@
     {
         "ID": 63,
         "name": "POPEE5",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1631,
         "area": 19,
         "type": 2,
@@ -766,6 +962,9 @@
     {
         "ID": 64,
         "name": "PO_ROOM01",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1632,
         "area": 19,
         "type": 2,
@@ -776,6 +975,9 @@
     {
         "ID": 65,
         "name": "PO_ROOM02",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1632,
         "area": 19,
         "type": 2,
@@ -786,6 +988,9 @@
     {
         "ID": 66,
         "name": "PO_SINDEN",
+        "area_names": [
+            "Garoh"
+        ],
         "file_index": 1632,
         "area": 19,
         "type": 2,
@@ -796,6 +1001,9 @@
     {
         "ID": 67,
         "name": "YANPI01",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -810,6 +1018,9 @@
     {
         "ID": 68,
         "name": "YANPI02",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -820,6 +1031,9 @@
     {
         "ID": 69,
         "name": "YANPI03",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -834,6 +1048,9 @@
     {
         "ID": 70,
         "name": "YANPI04",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -848,6 +1065,9 @@
     {
         "ID": 71,
         "name": "YANPI042",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -858,6 +1078,9 @@
     {
         "ID": 72,
         "name": "YANPI05",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -872,6 +1095,9 @@
     {
         "ID": 73,
         "name": "YANPI06",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -886,6 +1112,9 @@
     {
         "ID": 74,
         "name": "YANPI07",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -900,6 +1129,9 @@
     {
         "ID": 75,
         "name": "YANPI08",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -914,6 +1146,9 @@
     {
         "ID": 76,
         "name": "YANPI09",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -924,6 +1159,9 @@
     {
         "ID": 77,
         "name": "YANPI10",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -938,6 +1176,9 @@
     {
         "ID": 78,
         "name": "YANPI11",
+        "area_names": [
+            "Yampi Desert"
+        ],
         "file_index": 1633,
         "area": 20,
         "type": 1,
@@ -952,6 +1193,9 @@
     {
         "ID": 79,
         "name": "DJ_YANPI1",
+        "area_names": [
+            "Yampi Desert Cave"
+        ],
         "file_index": 1634,
         "area": 21,
         "type": 1,
@@ -966,6 +1210,9 @@
     {
         "ID": 80,
         "name": "DJ_YANPI2",
+        "area_names": [
+            "Yampi Desert Cave"
+        ],
         "file_index": 1634,
         "area": 21,
         "type": 1,
@@ -989,6 +1236,9 @@
     {
         "ID": 81,
         "name": "DJ_YANPI3",
+        "area_names": [
+            "Yampi Desert Cave"
+        ],
         "file_index": 1634,
         "area": 21,
         "type": 1,
@@ -1003,6 +1253,9 @@
     {
         "ID": 82,
         "name": "AYERES01",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1635,
         "area": 22,
         "type": 1,
@@ -1017,6 +1270,9 @@
     {
         "ID": 83,
         "name": "AYERES02",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1635,
         "area": 22,
         "type": 1,
@@ -1031,6 +1287,9 @@
     {
         "ID": 84,
         "name": "AYERES03",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1635,
         "area": 22,
         "type": 1,
@@ -1051,6 +1310,9 @@
     {
         "ID": 85,
         "name": "AR_IN01",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1087,6 +1349,9 @@
     {
         "ID": 86,
         "name": "AR_IN02",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1101,6 +1366,9 @@
     {
         "ID": 87,
         "name": "AR_IN03",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1115,6 +1383,9 @@
     {
         "ID": 88,
         "name": "AR_IN04",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1130,6 +1401,9 @@
     {
         "ID": 89,
         "name": "AR_IN05",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1140,6 +1414,9 @@
     {
         "ID": 90,
         "name": "AR_IN06",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1154,6 +1431,9 @@
     {
         "ID": 91,
         "name": "AR_IN07",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1168,6 +1448,9 @@
     {
         "ID": 92,
         "name": "AR_IN08",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1182,6 +1465,9 @@
     {
         "ID": 93,
         "name": "AR_IN09",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1196,6 +1482,9 @@
     {
         "ID": 94,
         "name": "AR_IN10",
+        "area_names": [
+            "Air's Rock"
+        ],
         "file_index": 1636,
         "area": 23,
         "type": 1,
@@ -1206,6 +1495,9 @@
     {
         "ID": 95,
         "name": "OTMP0006",
+        "area_names": [
+            "Alhafra"
+        ],
         "file_index": 1637,
         "area": 24,
         "type": 2,
@@ -1216,6 +1508,9 @@
     {
         "ID": 96,
         "name": "AF_ROOM01",
+        "area_names": [
+            "Alhafra"
+        ],
         "file_index": 1638,
         "area": 24,
         "type": 2,
@@ -1226,6 +1521,9 @@
     {
         "ID": 97,
         "name": "AF_ROOM02",
+        "area_names": [
+            "Alhafra"
+        ],
         "file_index": 1639,
         "area": 24,
         "type": 2,
@@ -1236,6 +1534,9 @@
     {
         "ID": 98,
         "name": "OTMP0007",
+        "area_names": [
+            "Eastern Alhafra"
+        ],
         "file_index": 1640,
         "area": 25,
         "type": 2,
@@ -1246,6 +1547,9 @@
     {
         "ID": 99,
         "name": "ARA_FUNE",
+        "area_names": [
+            "Eastern Alhafra"
+        ],
         "file_index": 1641,
         "area": 25,
         "type": 2,
@@ -1256,6 +1560,9 @@
     {
         "ID": 100,
         "name": "ARA_B1A",
+        "area_names": [
+            "Alhafran Cave"
+        ],
         "file_index": 1642,
         "area": 26,
         "type": 2,
@@ -1270,6 +1577,9 @@
     {
         "ID": 101,
         "name": "ARA_B1B",
+        "area_names": [
+            "Alhafran Cave"
+        ],
         "file_index": 1642,
         "area": 26,
         "type": 2,
@@ -1286,6 +1596,9 @@
     {
         "ID": 102,
         "name": "GN_ID00",
+        "area_names": [
+            "Gondowan Cliffs"
+        ],
         "file_index": 1643,
         "area": 27,
         "type": 1,
@@ -1303,6 +1616,9 @@
     {
         "ID": 103,
         "name": "GN_ID01",
+        "area_names": [
+            "Gondowan Cliffs"
+        ],
         "file_index": 1643,
         "area": 27,
         "type": 1,
@@ -1313,6 +1629,9 @@
     {
         "ID": 104,
         "name": "DJ_KB00",
+        "area_names": [
+            "Gondowan Cliffs"
+        ],
         "file_index": 1644,
         "area": 27,
         "type": 1,
@@ -1323,6 +1642,9 @@
     {
         "ID": 105,
         "name": "NIRI_00",
+        "area_names": [
+            "Naribwe"
+        ],
         "file_index": 1645,
         "area": 28,
         "type": 2,
@@ -1333,6 +1655,9 @@
     {
         "ID": 106,
         "name": "NR_ROOM01",
+        "area_names": [
+            "Naribwe"
+        ],
         "file_index": 1646,
         "area": 28,
         "type": 2,
@@ -1343,6 +1668,9 @@
     {
         "ID": 107,
         "name": "MING_00",
+        "area_names": [
+            "Kibombo Mountains"
+        ],
         "file_index": 1647,
         "area": 29,
         "type": 1,
@@ -1358,6 +1686,9 @@
     {
         "ID": 108,
         "name": "MING_01",
+        "area_names": [
+            "Kibombo Mountains"
+        ],
         "file_index": 1647,
         "area": 29,
         "type": 1,
@@ -1373,6 +1704,9 @@
     {
         "ID": 109,
         "name": "DJ_MNG00",
+        "area_names": [
+            "Kibombo Mountains"
+        ],
         "file_index": 1647,
         "area": 29,
         "type": 1,
@@ -1387,6 +1721,9 @@
     {
         "ID": 110,
         "name": "KBMB01",
+        "area_names": [
+            "Kibombo"
+        ],
         "file_index": 1648,
         "area": 30,
         "type": 2,
@@ -1397,6 +1734,9 @@
     {
         "ID": 111,
         "name": "KBMB10",
+        "area_names": [
+            "Kibombo"
+        ],
         "file_index": 1648,
         "area": 30,
         "type": 2,
@@ -1407,6 +1747,9 @@
     {
         "ID": 112,
         "name": "KB_ROOM",
+        "area_names": [
+            "Kibombo"
+        ],
         "file_index": 1648,
         "area": 30,
         "type": 2,
@@ -1417,6 +1760,9 @@
     {
         "ID": 113,
         "name": "KBMB01N",
+        "area_names": [
+            "Kibombo"
+        ],
         "file_index": 1648,
         "area": 31,
         "type": 2,
@@ -1427,6 +1773,9 @@
     {
         "ID": 114,
         "name": "KBMB10N",
+        "area_names": [
+            "Kibombo"
+        ],
         "file_index": 1648,
         "area": 31,
         "type": 2,
@@ -1437,6 +1786,9 @@
     {
         "ID": 115,
         "name": "DJ_GBM10",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1451,6 +1803,9 @@
     {
         "ID": 116,
         "name": "DJ_GBM20",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1471,6 +1826,9 @@
     {
         "ID": 117,
         "name": "DJ_GBM30",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1491,6 +1849,9 @@
     {
         "ID": 118,
         "name": "DJ_GBM40",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1505,6 +1866,9 @@
     {
         "ID": 119,
         "name": "DJ_GBM50",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1519,6 +1883,9 @@
     {
         "ID": 120,
         "name": "DJ_GBM60",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1650,
         "area": 32,
         "type": 1,
@@ -1533,6 +1900,9 @@
     {
         "ID": 121,
         "name": "DJ_GBM70",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1543,6 +1913,9 @@
     {
         "ID": 122,
         "name": "DJ_GBM6E",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1650,
         "area": 32,
         "type": 1,
@@ -1553,6 +1926,9 @@
     {
         "ID": 123,
         "name": "DJ_GBMB1",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1649,
         "area": 32,
         "type": 1,
@@ -1567,6 +1943,9 @@
     {
         "ID": 124,
         "name": "DJ_GBM1E",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1650,
         "area": 32,
         "type": 1,
@@ -1577,6 +1956,9 @@
     {
         "ID": 125,
         "name": "DJ_GBMUP",
+        "area_names": [
+            "Gabomba Statue"
+        ],
         "file_index": 1648,
         "area": 32,
         "type": 1,
@@ -1587,6 +1969,9 @@
     {
         "ID": 126,
         "name": "GANCHI01",
+        "area_names": [
+            "Gabomba Catacombs"
+        ],
         "file_index": 1651,
         "area": 33,
         "type": 1,
@@ -1601,6 +1986,9 @@
     {
         "ID": 127,
         "name": "GANCHI02",
+        "area_names": [
+            "Gabomba Catacombs"
+        ],
         "file_index": 1651,
         "area": 33,
         "type": 1,
@@ -1615,6 +2003,9 @@
     {
         "ID": 128,
         "name": "GANCHI03",
+        "area_names": [
+            "Gabomba Catacombs"
+        ],
         "file_index": 1651,
         "area": 33,
         "type": 1,
@@ -1629,6 +2020,9 @@
     {
         "ID": 129,
         "name": "GANCHI04",
+        "area_names": [
+            "Gabomba Catacombs"
+        ],
         "file_index": 1651,
         "area": 33,
         "type": 1,
@@ -1643,6 +2037,9 @@
     {
         "ID": 130,
         "name": "GANCHI05",
+        "area_names": [
+            "Gabomba Catacombs"
+        ],
         "file_index": 1651,
         "area": 33,
         "type": 1,
@@ -1657,6 +2054,9 @@
     {
         "ID": 131,
         "name": "RITOU_01",
+        "area_names": [
+            "West Indra Islet"
+        ],
         "file_index": 1652,
         "area": 34,
         "type": 2,
@@ -1667,6 +2067,9 @@
     {
         "ID": 132,
         "name": "RITOU_02",
+        "area_names": [
+            "E Tundaria Islet"
+        ],
         "file_index": 1652,
         "area": 35,
         "type": 2,
@@ -1677,6 +2080,9 @@
     {
         "ID": 133,
         "name": "RITOU_03",
+        "area_names": [
+            "N Osenia Islet"
+        ],
         "file_index": 1652,
         "area": 36,
         "type": 2,
@@ -1687,6 +2093,9 @@
     {
         "ID": 134,
         "name": "RITOU_04",
+        "area_names": [
+            "SE Angara Islet"
+        ],
         "file_index": 1652,
         "area": 37,
         "type": 2,
@@ -1697,6 +2106,9 @@
     {
         "ID": 135,
         "name": "RITOU_05",
+        "area_names": [
+            "Sea of Time Islet"
+        ],
         "file_index": 1652,
         "area": 38,
         "type": 2,
@@ -1707,6 +2119,9 @@
     {
         "ID": 136,
         "name": "DJ_RITOU01",
+        "area_names": [
+            "Islet Cave"
+        ],
         "file_index": 1653,
         "area": 39,
         "type": 1,
@@ -1721,6 +2136,9 @@
     {
         "ID": 137,
         "name": "DJ_RITOUB2",
+        "area_names": [
+            "Islet Cave"
+        ],
         "file_index": 1653,
         "area": 39,
         "type": 1,
@@ -1736,6 +2154,9 @@
     {
         "ID": 138,
         "name": "DJ_RITOUB3",
+        "area_names": [
+            "Islet Cave"
+        ],
         "file_index": 1653,
         "area": 39,
         "type": 1,
@@ -1746,6 +2167,9 @@
     {
         "ID": 139,
         "name": "YARRAM00",
+        "area_names": [
+            "Yallam"
+        ],
         "file_index": 1654,
         "area": 40,
         "type": 2,
@@ -1756,6 +2180,9 @@
     {
         "ID": 140,
         "name": "YARRAMB1",
+        "area_names": [
+            "Yallam"
+        ],
         "file_index": 1654,
         "area": 40,
         "type": 2,
@@ -1766,6 +2193,9 @@
     {
         "ID": 141,
         "name": "YA_ROOM01",
+        "area_names": [
+            "Yallam"
+        ],
         "file_index": 1655,
         "area": 40,
         "type": 2,
@@ -1776,6 +2206,9 @@
     {
         "ID": 142,
         "name": "YA_ROOM02",
+        "area_names": [
+            "Yallam"
+        ],
         "file_index": 1655,
         "area": 40,
         "type": 2,
@@ -1786,6 +2219,9 @@
     {
         "ID": 143,
         "name": "TAUPO_00",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 41,
         "type": 1,
@@ -1800,6 +2236,9 @@
     {
         "ID": 144,
         "name": "TAUPO_01",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 41,
         "type": 1,
@@ -1814,6 +2253,9 @@
     {
         "ID": 145,
         "name": "TAUPO_T1",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1828,6 +2270,9 @@
     {
         "ID": 146,
         "name": "TAUPO_T2",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1842,6 +2287,9 @@
     {
         "ID": 147,
         "name": "TAUPO_T3",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1856,6 +2304,9 @@
     {
         "ID": 148,
         "name": "TAUPO_C1F",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1870,6 +2321,9 @@
     {
         "ID": 149,
         "name": "TAUPO_CB1",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1884,6 +2338,9 @@
     {
         "ID": 150,
         "name": "TAUPO_CB2",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1898,6 +2355,9 @@
     {
         "ID": 151,
         "name": "TAUPO_CB3",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1912,6 +2372,9 @@
     {
         "ID": 152,
         "name": "TAUPO_CB32",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1926,6 +2389,9 @@
     {
         "ID": 153,
         "name": "TAUPO_CB4",
+        "area_names": [
+            "Taopo Swamp"
+        ],
         "file_index": 1656,
         "area": 42,
         "type": 1,
@@ -1940,6 +2406,9 @@
     {
         "ID": 154,
         "name": "GRAPUS00",
+        "area_names": [
+            "Apojii Islands"
+        ],
         "file_index": 1657,
         "area": 43,
         "type": 2,
@@ -1950,6 +2419,9 @@
     {
         "ID": 155,
         "name": "GRAPUSGF",
+        "area_names": [
+            "Apojii Islands"
+        ],
         "file_index": 1657,
         "area": 43,
         "type": 2,
@@ -1960,6 +2432,10 @@
     {
         "ID": 156,
         "name": "GR_ROOM01",
+        "area_names": [
+            "Apojii Islands",
+            "E Sea of Time Islet"
+        ],
         "file_index": 1657,
         "area": 43,
         "type": 2,
@@ -1970,6 +2446,9 @@
     {
         "ID": 157,
         "name": "GRAPUSDJ",
+        "area_names": [
+            "Apojii Islands Cave"
+        ],
         "file_index": 1658,
         "area": 44,
         "type": 1,
@@ -1984,6 +2463,9 @@
     {
         "ID": 158,
         "name": "AQUAR01",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1659,
         "area": 45,
         "type": 1,
@@ -1998,6 +2480,9 @@
     {
         "ID": 159,
         "name": "AQUAR02",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1659,
         "area": 45,
         "type": 1,
@@ -2012,6 +2497,9 @@
     {
         "ID": 160,
         "name": "ACA_001",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2026,6 +2514,9 @@
     {
         "ID": 161,
         "name": "ACA_002",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2040,6 +2531,9 @@
     {
         "ID": 162,
         "name": "ACA_003",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2054,6 +2548,9 @@
     {
         "ID": 163,
         "name": "ACA_004",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2070,6 +2567,9 @@
     {
         "ID": 164,
         "name": "ACA_005",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2084,6 +2584,9 @@
     {
         "ID": 165,
         "name": "ACA_006",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2098,6 +2601,9 @@
     {
         "ID": 166,
         "name": "ACA_007",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2112,6 +2618,9 @@
     {
         "ID": 167,
         "name": "ACA_008",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2126,6 +2635,9 @@
     {
         "ID": 168,
         "name": "ACA_009",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2140,6 +2652,9 @@
     {
         "ID": 169,
         "name": "ACA_010",
+        "area_names": [
+            "Aqua Rock"
+        ],
         "file_index": 1660,
         "area": 46,
         "type": 1,
@@ -2152,6 +2667,9 @@
     {
         "ID": 170,
         "name": "IZ_ROOM01",
+        "area_names": [
+            "Izumo"
+        ],
         "file_index": 1661,
         "area": 47,
         "type": 2,
@@ -2162,6 +2680,9 @@
     {
         "ID": 171,
         "name": "OTMP000D",
+        "area_names": [
+            "Izumo"
+        ],
         "file_index": 1662,
         "area": 47,
         "type": 2,
@@ -2172,6 +2693,9 @@
     {
         "ID": 172,
         "name": "IZUMO_B1",
+        "area_names": [
+            "Izumo Ruins"
+        ],
         "file_index": 1663,
         "area": 48,
         "type": 1,
@@ -2186,6 +2710,9 @@
     {
         "ID": 173,
         "name": "IZUMO_B2",
+        "area_names": [
+            "Izumo Ruins"
+        ],
         "file_index": 1663,
         "area": 48,
         "type": 1,
@@ -2200,6 +2727,9 @@
     {
         "ID": 174,
         "name": "GAIAR01",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1664,
         "area": 49,
         "type": 1,
@@ -2214,6 +2744,9 @@
     {
         "ID": 175,
         "name": "GAIAR02",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1664,
         "area": 49,
         "type": 1,
@@ -2234,6 +2767,9 @@
     {
         "ID": 176,
         "name": "GAIAR03",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1664,
         "area": 49,
         "type": 1,
@@ -2248,6 +2784,9 @@
     {
         "ID": 177,
         "name": "GR_MAZE",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1665,
         "area": 50,
         "type": 1,
@@ -2265,6 +2804,9 @@
     {
         "ID": 178,
         "name": "GR_01",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1665,
         "area": 50,
         "type": 1,
@@ -2279,6 +2821,9 @@
     {
         "ID": 179,
         "name": "GR_02",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1665,
         "area": 50,
         "type": 1,
@@ -2293,6 +2838,9 @@
     {
         "ID": 180,
         "name": "GR_02_2",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1665,
         "area": 50,
         "type": 1,
@@ -2307,6 +2855,9 @@
     {
         "ID": 181,
         "name": "GR_03",
+        "area_names": [
+            "Gaia Rock"
+        ],
         "file_index": 1665,
         "area": 50,
         "type": 1,
@@ -2321,6 +2872,9 @@
     {
         "ID": 182,
         "name": "OTMP000B",
+        "area_names": [
+            "Champa"
+        ],
         "file_index": 1666,
         "area": 51,
         "type": 2,
@@ -2331,6 +2885,11 @@
     {
         "ID": 183,
         "name": "CH_ROOM01",
+        "area_names": [
+            "SE Angara Islet",
+            "Champa",
+            "West Indra Islet"
+        ],
         "file_index": 1667,
         "area": 51,
         "type": 2,
@@ -2341,6 +2900,9 @@
     {
         "ID": 184,
         "name": "CH_SINDEN",
+        "area_names": [
+            "Champa"
+        ],
         "file_index": 1668,
         "area": 51,
         "type": 2,
@@ -2351,6 +2913,9 @@
     {
         "ID": 185,
         "name": "CHAM_1",
+        "area_names": [
+            "Champa"
+        ],
         "file_index": 1669,
         "area": 51,
         "type": 2,
@@ -2361,6 +2926,9 @@
     {
         "ID": 186,
         "name": "CHAM_2",
+        "area_names": [
+            "Champa"
+        ],
         "file_index": 1669,
         "area": 51,
         "type": 2,
@@ -2371,6 +2939,9 @@
     {
         "ID": 187,
         "name": "CHAM_3",
+        "area_names": [
+            "Champa"
+        ],
         "file_index": 1669,
         "area": 51,
         "type": 2,
@@ -2381,6 +2952,9 @@
     {
         "ID": 188,
         "name": "CHAM_4",
+        "area_names": [
+            "Champa"
+        ],
         "file_index": 1669,
         "area": 51,
         "type": 2,
@@ -2391,6 +2965,9 @@
     {
         "ID": 189,
         "name": "ANGKOR01",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2405,6 +2982,9 @@
     {
         "ID": 190,
         "name": "ANGKOR02",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2419,6 +2999,9 @@
     {
         "ID": 191,
         "name": "ANGKOR03",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2433,6 +3016,9 @@
     {
         "ID": 192,
         "name": "ANGKOR04",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2447,6 +3033,9 @@
     {
         "ID": 193,
         "name": "ANGKOR05",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2461,6 +3050,9 @@
     {
         "ID": 194,
         "name": "ANGKOR09",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2471,6 +3063,9 @@
     {
         "ID": 195,
         "name": "ANGKOR_O",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2481,6 +3076,9 @@
     {
         "ID": 196,
         "name": "ANGKOR_T",
+        "area_names": [
+            "Ankohl Ruins"
+        ],
         "file_index": 1670,
         "area": 52,
         "type": 1,
@@ -2491,6 +3089,9 @@
     {
         "ID": 197,
         "name": "OTMP0009",
+        "area_names": [
+            "Sea of Time"
+        ],
         "file_index": 1671,
         "area": 53,
         "type": 1,
@@ -2501,6 +3102,9 @@
     {
         "ID": 198,
         "name": "OTMP000A",
+        "area_names": [
+            "Sea of Time"
+        ],
         "file_index": 1671,
         "area": 53,
         "type": 1,
@@ -2511,6 +3115,9 @@
     {
         "ID": 199,
         "name": "REM_D",
+        "area_names": [
+            "Lemuria"
+        ],
         "file_index": 1672,
         "area": 54,
         "type": 2,
@@ -2521,6 +3128,9 @@
     {
         "ID": 200,
         "name": "TEIHAKU",
+        "area_names": [
+            "Lemuria"
+        ],
         "file_index": 1673,
         "area": 54,
         "type": 2,
@@ -2531,6 +3141,10 @@
     {
         "ID": 201,
         "name": "REM_OLD",
+        "area_names": [
+            "Ancient Lemuria",
+            "Lemuria"
+        ],
         "file_index": 1674,
         "area": 54,
         "type": 2,
@@ -2541,6 +3155,9 @@
     {
         "ID": 202,
         "name": "REMURIA",
+        "area_names": [
+            "Lemuria"
+        ],
         "file_index": 1675,
         "area": 55,
         "type": 2,
@@ -2551,6 +3168,9 @@
     {
         "ID": 203,
         "name": "REM_ROOM",
+        "area_names": [
+            "Lemuria"
+        ],
         "file_index": 1676,
         "area": 55,
         "type": 2,
@@ -2561,6 +3181,9 @@
     {
         "ID": 204,
         "name": "REM_CAS",
+        "area_names": [
+            "Lemuria"
+        ],
         "file_index": 1677,
         "area": 55,
         "type": 2,
@@ -2571,6 +3194,9 @@
     {
         "ID": 205,
         "name": "REM_IZU",
+        "area_names": [
+            "Lemuria"
+        ],
         "file_index": 1678,
         "area": 55,
         "type": 2,
@@ -2581,6 +3207,9 @@
     {
         "ID": 206,
         "name": "SOUTH_O",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2591,6 +3220,9 @@
     {
         "ID": 207,
         "name": "SOUTH01",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2605,6 +3237,9 @@
     {
         "ID": 208,
         "name": "SOUTH02",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2619,6 +3254,9 @@
     {
         "ID": 209,
         "name": "SOUTH03",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2633,6 +3271,9 @@
     {
         "ID": 210,
         "name": "SOUTH04",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2647,6 +3288,9 @@
     {
         "ID": 211,
         "name": "SOUTH05",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2661,6 +3305,9 @@
     {
         "ID": 212,
         "name": "SOUTH_T",
+        "area_names": [
+            "Tundaria Tower"
+        ],
         "file_index": 1679,
         "area": 56,
         "type": 1,
@@ -2671,6 +3318,9 @@
     {
         "ID": 213,
         "name": "GND_KOYA",
+        "area_names": [
+            "Gondowan Settlement"
+        ],
         "file_index": 1680,
         "area": 57,
         "type": 2,
@@ -2681,6 +3331,9 @@
     {
         "ID": 214,
         "name": "GND_ROOM",
+        "area_names": [
+            "Gondowan Settlement"
+        ],
         "file_index": 1680,
         "area": 57,
         "type": 2,
@@ -2691,6 +3344,9 @@
     {
         "ID": 215,
         "name": "GND_DJ",
+        "area_names": [
+            "Gondowan Settlement"
+        ],
         "file_index": 1680,
         "area": 57,
         "type": 2,
@@ -2701,6 +3357,9 @@
     {
         "ID": 216,
         "name": "HES_KOYA",
+        "area_names": [
+            "Hesperia Settlement"
+        ],
         "file_index": 1680,
         "area": 58,
         "type": 2,
@@ -2711,6 +3370,9 @@
     {
         "ID": 217,
         "name": "HES_ROOM",
+        "area_names": [
+            "Hesperia Settlement"
+        ],
         "file_index": 1680,
         "area": 58,
         "type": 2,
@@ -2721,6 +3383,9 @@
     {
         "ID": 218,
         "name": "HES_DJ",
+        "area_names": [
+            "Hesperia Settlement"
+        ],
         "file_index": 1680,
         "area": 58,
         "type": 2,
@@ -2731,6 +3396,9 @@
     {
         "ID": 219,
         "name": "KLT_KOYA",
+        "area_names": [
+            "Kalt Island"
+        ],
         "file_index": 1680,
         "area": 59,
         "type": 2,
@@ -2741,6 +3409,9 @@
     {
         "ID": 220,
         "name": "KLT_ROOM",
+        "area_names": [
+            "Kalt Island"
+        ],
         "file_index": 1680,
         "area": 59,
         "type": 2,
@@ -2751,6 +3422,9 @@
     {
         "ID": 221,
         "name": "SEA_KOYA",
+        "area_names": [
+            "SW Atteka Islet"
+        ],
         "file_index": 1680,
         "area": 60,
         "type": 2,
@@ -2761,6 +3435,9 @@
     {
         "ID": 222,
         "name": "SEA_ROOM",
+        "area_names": [
+            "SW Atteka Islet"
+        ],
         "file_index": 1680,
         "area": 60,
         "type": 2,
@@ -2771,6 +3448,9 @@
     {
         "ID": 223,
         "name": "MAGMA01",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1681,
         "area": 61,
         "type": 1,
@@ -2785,6 +3465,9 @@
     {
         "ID": 224,
         "name": "MAGMA02",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1681,
         "area": 61,
         "type": 1,
@@ -2814,6 +3497,9 @@
     {
         "ID": 225,
         "name": "MAGMA03",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1681,
         "area": 61,
         "type": 1,
@@ -2828,6 +3514,9 @@
     {
         "ID": 226,
         "name": "MAGR_01",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2842,6 +3531,9 @@
     {
         "ID": 227,
         "name": "MAGR_02",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2856,6 +3548,9 @@
     {
         "ID": 228,
         "name": "MAGR_03",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2870,6 +3565,9 @@
     {
         "ID": 229,
         "name": "MAGR_04",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2905,6 +3603,9 @@
     {
         "ID": 230,
         "name": "MAGR_05",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2919,6 +3620,9 @@
     {
         "ID": 231,
         "name": "MAGR_06",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2933,6 +3637,9 @@
     {
         "ID": 232,
         "name": "MAGR_07",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2947,6 +3654,9 @@
     {
         "ID": 233,
         "name": "MAGR_08",
+        "area_names": [
+            "Magma Rock"
+        ],
         "file_index": 1682,
         "area": 62,
         "type": 1,
@@ -2961,6 +3671,9 @@
     {
         "ID": 234,
         "name": "ATK_IRIE",
+        "area_names": [
+            "Atteka Inlet"
+        ],
         "file_index": 1683,
         "area": 63,
         "type": 2,
@@ -2971,6 +3684,9 @@
     {
         "ID": 235,
         "name": "OTMP0011",
+        "area_names": [
+            "Atteka Inlet"
+        ],
         "file_index": 1683,
         "area": 63,
         "type": 2,
@@ -2981,6 +3697,9 @@
     {
         "ID": 236,
         "name": "OTMP0012",
+        "area_names": [
+            "Contigo"
+        ],
         "file_index": 1684,
         "area": 64,
         "type": 2,
@@ -2991,6 +3710,10 @@
     {
         "ID": 237,
         "name": "GIA_ROOM01",
+        "area_names": [
+            "Contigo",
+            "Atteka Inlet"
+        ],
         "file_index": 1684,
         "area": 64,
         "type": 2,
@@ -3001,6 +3724,9 @@
     {
         "ID": 238,
         "name": "GIA_ROOM02",
+        "area_names": [
+            "Contigo"
+        ],
         "file_index": 1684,
         "area": 64,
         "type": 2,
@@ -3011,6 +3737,9 @@
     {
         "ID": 239,
         "name": "OTMP0013",
+        "area_names": [
+            "Anemos Sanctum"
+        ],
         "file_index": 1684,
         "area": 65,
         "type": 2,
@@ -3021,6 +3750,9 @@
     {
         "ID": 240,
         "name": "DJ_SYMN00",
+        "area_names": [
+            "Shaman Village Cave"
+        ],
         "file_index": 1685,
         "area": 66,
         "type": 2,
@@ -3035,6 +3767,9 @@
     {
         "ID": 241,
         "name": "SHARMAN01",
+        "area_names": [
+            "Shaman Village"
+        ],
         "file_index": 1686,
         "area": 67,
         "type": 1,
@@ -3045,6 +3780,9 @@
     {
         "ID": 242,
         "name": "SHARMAN00",
+        "area_names": [
+            "Shaman Village"
+        ],
         "file_index": 1686,
         "area": 67,
         "type": 1,
@@ -3055,6 +3793,9 @@
     {
         "ID": 243,
         "name": "SHARMAN0A",
+        "area_names": [
+            "Shaman Village"
+        ],
         "file_index": 1686,
         "area": 67,
         "type": 1,
@@ -3065,6 +3806,9 @@
     {
         "ID": 244,
         "name": "SHA_ROOM01",
+        "area_names": [
+            "Shaman Village"
+        ],
         "file_index": 1686,
         "area": 67,
         "type": 1,
@@ -3075,6 +3819,9 @@
     {
         "ID": 245,
         "name": "SHA_ROOM02",
+        "area_names": [
+            "Shaman Village"
+        ],
         "file_index": 1686,
         "area": 67,
         "type": 1,
@@ -3085,6 +3832,9 @@
     {
         "ID": 246,
         "name": "SHA_SINDEN",
+        "area_names": [
+            "Shaman Village"
+        ],
         "file_index": 1686,
         "area": 67,
         "type": 1,
@@ -3095,6 +3845,9 @@
     {
         "ID": 247,
         "name": "TRYROAD_00",
+        "area_names": [
+            "Trial Road"
+        ],
         "file_index": 1687,
         "area": 68,
         "type": 1,
@@ -3105,6 +3858,9 @@
     {
         "ID": 248,
         "name": "TRYROAD_03",
+        "area_names": [
+            "Trial Road"
+        ],
         "file_index": 1687,
         "area": 68,
         "type": 1,
@@ -3115,6 +3871,9 @@
     {
         "ID": 249,
         "name": "TRYROAD_01",
+        "area_names": [
+            "Trial Road"
+        ],
         "file_index": 1687,
         "area": 69,
         "type": 1,
@@ -3129,6 +3888,9 @@
     {
         "ID": 250,
         "name": "TRYROAD_02",
+        "area_names": [
+            "Trial Road"
+        ],
         "file_index": 1687,
         "area": 69,
         "type": 1,
@@ -3143,6 +3905,9 @@
     {
         "ID": 251,
         "name": "JTO_E",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1688,
         "area": 70,
         "type": 1,
@@ -3153,6 +3918,9 @@
     {
         "ID": 252,
         "name": "JTOB1",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1689,
         "area": 70,
         "type": 1,
@@ -3167,6 +3935,9 @@
     {
         "ID": 253,
         "name": "JTO_CR",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1689,
         "area": 70,
         "type": 1,
@@ -3177,6 +3948,9 @@
     {
         "ID": 254,
         "name": "JTO01",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1690,
         "area": 70,
         "type": 1,
@@ -3191,6 +3965,9 @@
     {
         "ID": 255,
         "name": "JTO02",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1691,
         "area": 70,
         "type": 1,
@@ -3205,6 +3982,9 @@
     {
         "ID": 256,
         "name": "JTO03",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1692,
         "area": 70,
         "type": 1,
@@ -3235,6 +4015,9 @@
     {
         "ID": 257,
         "name": "JTO04",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1693,
         "area": 70,
         "type": 1,
@@ -3255,6 +4038,9 @@
     {
         "ID": 258,
         "name": "JTO05",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1694,
         "area": 70,
         "type": 1,
@@ -3269,6 +4055,9 @@
     {
         "ID": 259,
         "name": "JTO06",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1695,
         "area": 70,
         "type": 1,
@@ -3283,6 +4072,9 @@
     {
         "ID": 260,
         "name": "JTO07",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1696,
         "area": 70,
         "type": 1,
@@ -3297,6 +4089,9 @@
     {
         "ID": 261,
         "name": "JTO08",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1697,
         "area": 70,
         "type": 1,
@@ -3311,6 +4106,9 @@
     {
         "ID": 262,
         "name": "JTO09",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1698,
         "area": 70,
         "type": 1,
@@ -3325,6 +4123,9 @@
     {
         "ID": 263,
         "name": "JTO_M",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1699,
         "area": 70,
         "type": 1,
@@ -3339,6 +4140,9 @@
     {
         "ID": 264,
         "name": "JTO_T",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1700,
         "area": 70,
         "type": 1,
@@ -3349,6 +4153,9 @@
     {
         "ID": 265,
         "name": "JTO_T2",
+        "area_names": [
+            "Jupiter Lighthouse"
+        ],
         "file_index": 1701,
         "area": 70,
         "type": 1,
@@ -3359,6 +4166,9 @@
     {
         "ID": 266,
         "name": "ROOFO",
+        "area_names": [
+            "Loho"
+        ],
         "file_index": 1702,
         "area": 71,
         "type": 2,
@@ -3369,6 +4179,9 @@
     {
         "ID": 267,
         "name": "RO_ROOM",
+        "area_names": [
+            "Loho"
+        ],
         "file_index": 1702,
         "area": 71,
         "type": 2,
@@ -3379,6 +4192,9 @@
     {
         "ID": 268,
         "name": "KITA_UMI",
+        "area_names": [
+            "Northern Reaches"
+        ],
         "file_index": 1703,
         "area": 72,
         "type": 1,
@@ -3393,6 +4209,9 @@
     {
         "ID": 269,
         "name": "PROX_A",
+        "area_names": [
+            "Prox"
+        ],
         "file_index": 1704,
         "area": 73,
         "type": 2,
@@ -3403,6 +4222,9 @@
     {
         "ID": 270,
         "name": "PROX_B",
+        "area_names": [
+            "Prox"
+        ],
         "file_index": 1704,
         "area": 73,
         "type": 2,
@@ -3413,6 +4235,9 @@
     {
         "ID": 271,
         "name": "PROX_C",
+        "area_names": [
+            "Prox"
+        ],
         "file_index": 1704,
         "area": 73,
         "type": 2,
@@ -3423,6 +4248,9 @@
     {
         "ID": 272,
         "name": "PRO_ROOM01",
+        "area_names": [
+            "Prox"
+        ],
         "file_index": 1704,
         "area": 73,
         "type": 2,
@@ -3433,6 +4261,9 @@
     {
         "ID": 273,
         "name": "PRO_ROOM02",
+        "area_names": [
+            "Prox"
+        ],
         "file_index": 1704,
         "area": 73,
         "type": 2,
@@ -3443,6 +4274,9 @@
     {
         "ID": 274,
         "name": "PRO_SINDEN",
+        "area_names": [
+            "Prox"
+        ],
         "file_index": 1704,
         "area": 73,
         "type": 2,
@@ -3453,6 +4287,9 @@
     {
         "ID": 275,
         "name": "DJ_IND",
+        "area_names": [
+            "Indra Cavern"
+        ],
         "file_index": 1705,
         "area": 74,
         "type": 1,
@@ -3463,6 +4300,9 @@
     {
         "ID": 276,
         "name": "DJ_OSE",
+        "area_names": [
+            "Osenia Cavern"
+        ],
         "file_index": 1705,
         "area": 75,
         "type": 1,
@@ -3473,6 +4313,9 @@
     {
         "ID": 277,
         "name": "DJ_ATK",
+        "area_names": [
+            "Atteka Cavern"
+        ],
         "file_index": 1705,
         "area": 76,
         "type": 1,
@@ -3483,6 +4326,9 @@
     {
         "ID": 278,
         "name": "DJ_ANG",
+        "area_names": [
+            "Angara Cavern"
+        ],
         "file_index": 1705,
         "area": 77,
         "type": 1,
@@ -3493,6 +4339,9 @@
     {
         "ID": 279,
         "name": "MAR_E",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3503,6 +4352,9 @@
     {
         "ID": 280,
         "name": "MAR_O04",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3517,6 +4369,9 @@
     {
         "ID": 281,
         "name": "MAR_O05",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3531,6 +4386,9 @@
     {
         "ID": 282,
         "name": "MAR_O06",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3545,6 +4403,9 @@
     {
         "ID": 283,
         "name": "MAR_O07",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3559,6 +4420,9 @@
     {
         "ID": 284,
         "name": "MAR_O08",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3573,6 +4437,9 @@
     {
         "ID": 285,
         "name": "MAR_O09",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1706,
         "area": 78,
         "type": 1,
@@ -3587,6 +4454,9 @@
     {
         "ID": 286,
         "name": "MAR_KB3",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1707,
         "area": 78,
         "type": 1,
@@ -3601,6 +4471,9 @@
     {
         "ID": 287,
         "name": "MAR_O03",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1708,
         "area": 78,
         "type": 1,
@@ -3615,6 +4488,9 @@
     {
         "ID": 288,
         "name": "MAR_M01",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1708,
         "area": 78,
         "type": 1,
@@ -3629,6 +4505,9 @@
     {
         "ID": 289,
         "name": "MAR_M02",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1708,
         "area": 78,
         "type": 1,
@@ -3643,6 +4522,9 @@
     {
         "ID": 290,
         "name": "MAR_M03",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1708,
         "area": 78,
         "type": 1,
@@ -3657,6 +4539,9 @@
     {
         "ID": 291,
         "name": "MAR_M04",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1708,
         "area": 78,
         "type": 1,
@@ -3671,6 +4556,9 @@
     {
         "ID": 292,
         "name": "MAR_F01",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1709,
         "area": 78,
         "type": 1,
@@ -3685,6 +4573,9 @@
     {
         "ID": 293,
         "name": "MAR_F02",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1709,
         "area": 78,
         "type": 1,
@@ -3699,6 +4590,9 @@
     {
         "ID": 294,
         "name": "MAR_F03",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1709,
         "area": 78,
         "type": 1,
@@ -3713,6 +4607,9 @@
     {
         "ID": 295,
         "name": "MAR_F04",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1709,
         "area": 78,
         "type": 1,
@@ -3727,6 +4624,9 @@
     {
         "ID": 296,
         "name": "MAR_O02",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1708,
         "area": 78,
         "type": 1,
@@ -3737,6 +4637,9 @@
     {
         "ID": 297,
         "name": "MAR_O01",
+        "area_names": [
+            "Mars Lighthouse"
+        ],
         "file_index": 1710,
         "area": 78,
         "type": 1,
@@ -3747,6 +4650,9 @@
     {
         "ID": 298,
         "name": "TAKARA00",
+        "area_names": [
+            "Treasure Isle"
+        ],
         "file_index": 1711,
         "area": 79,
         "type": 1,
@@ -3761,6 +4667,9 @@
     {
         "ID": 299,
         "name": "TAKARA01",
+        "area_names": [
+            "Treasure Isle"
+        ],
         "file_index": 1711,
         "area": 79,
         "type": 1,
@@ -3775,6 +4684,9 @@
     {
         "ID": 300,
         "name": "TAKARA02",
+        "area_names": [
+            "Treasure Isle"
+        ],
         "file_index": 1711,
         "area": 79,
         "type": 1,
@@ -3789,6 +4701,9 @@
     {
         "ID": 301,
         "name": "TAKARA03",
+        "area_names": [
+            "Treasure Isle"
+        ],
         "file_index": 1711,
         "area": 79,
         "type": 1,
@@ -3803,6 +4718,9 @@
     {
         "ID": 302,
         "name": "TAKARA04",
+        "area_names": [
+            "Treasure Isle"
+        ],
         "file_index": 1711,
         "area": 79,
         "type": 1,
@@ -3813,6 +4731,9 @@
     {
         "ID": 303,
         "name": "ANEMOS01",
+        "area_names": [
+            "Anemos Inner Sanctum"
+        ],
         "file_index": 1712,
         "area": 80,
         "type": 1,
@@ -3823,6 +4744,9 @@
     {
         "ID": 304,
         "name": "ANEMOS02",
+        "area_names": [
+            "Anemos Inner Sanctum"
+        ],
         "file_index": 1712,
         "area": 80,
         "type": 1,
@@ -3837,6 +4761,9 @@
     {
         "ID": 305,
         "name": "ANEMOS03",
+        "area_names": [
+            "Anemos Inner Sanctum"
+        ],
         "file_index": 1712,
         "area": 80,
         "type": 1,
@@ -3851,6 +4778,9 @@
     {
         "ID": 306,
         "name": "ANEMOS04",
+        "area_names": [
+            "Anemos Inner Sanctum"
+        ],
         "file_index": 1712,
         "area": 80,
         "type": 1,
@@ -3871,6 +4801,9 @@
     {
         "ID": 307,
         "name": "ANEMOS05",
+        "area_names": [
+            "Anemos Inner Sanctum"
+        ],
         "file_index": 1712,
         "area": 80,
         "type": 1,
@@ -3885,6 +4818,9 @@
     {
         "ID": 308,
         "name": "ANEMOS06",
+        "area_names": [
+            "Anemos Inner Sanctum"
+        ],
         "file_index": 1713,
         "area": 80,
         "type": 1,
@@ -3895,6 +4831,9 @@
     {
         "ID": 309,
         "name": "MTO05",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 1714,
         "area": 81,
         "type": 2,
@@ -3905,6 +4844,9 @@
     {
         "ID": 310,
         "name": "EPILOGUE",
+        "area_names": [
+            "Epilogue"
+        ],
         "file_index": 1715,
         "area": 82,
         "type": 1,
@@ -3915,6 +4857,9 @@
     {
         "ID": 311,
         "name": "ALFA_00",
+        "area_names": [
+            "Mt. Aleph Summit"
+        ],
         "file_index": 1716,
         "area": 83,
         "type": 1,
@@ -3925,6 +4870,9 @@
     {
         "ID": 312,
         "name": "ROUNGE",
+        "area_names": [
+            "Link Lobby"
+        ],
         "file_index": 1717,
         "area": 84,
         "type": 2,
@@ -3935,6 +4883,9 @@
     {
         "ID": 313,
         "name": "TEST0",
+        "area_names": [
+            "Test 0"
+        ],
         "file_index": 1718,
         "area": 85,
         "type": 1,
@@ -3945,6 +4896,9 @@
     {
         "ID": 314,
         "name": "TEST1",
+        "area_names": [
+            "Test 1"
+        ],
         "file_index": 1718,
         "area": 86,
         "type": 1,
@@ -3955,6 +4909,9 @@
     {
         "ID": 315,
         "name": "TEST2",
+        "area_names": [
+            "Test 2"
+        ],
         "file_index": 1718,
         "area": 87,
         "type": 1,
@@ -3965,6 +4922,9 @@
     {
         "ID": 316,
         "name": "TEST3",
+        "area_names": [
+            "Test 3"
+        ],
         "file_index": 1718,
         "area": 88,
         "type": 1,
@@ -3975,6 +4935,9 @@
     {
         "ID": 317,
         "name": "TEST4",
+        "area_names": [
+            "Test 4"
+        ],
         "file_index": 1718,
         "area": 89,
         "type": 1,
@@ -3985,6 +4948,9 @@
     {
         "ID": 318,
         "name": "TEST5",
+        "area_names": [
+            "Test 5"
+        ],
         "file_index": 1718,
         "area": 90,
         "type": 1,
@@ -3995,6 +4961,9 @@
     {
         "ID": 319,
         "name": "TEST6",
+        "area_names": [
+            "Test 6"
+        ],
         "file_index": 1718,
         "area": 91,
         "type": 1,
@@ -4005,6 +4974,9 @@
     {
         "ID": 320,
         "name": "TEST7",
+        "area_names": [
+            "Test 7"
+        ],
         "file_index": 1718,
         "area": 92,
         "type": 1,
@@ -4015,6 +4987,10 @@
     {
         "ID": 321,
         "name": "GET_ITEM",
+        "area_names": [
+            "Icon Test",
+            "Face Test"
+        ],
         "file_index": 1719,
         "area": 93,
         "type": 1,
@@ -4025,6 +5001,9 @@
     {
         "ID": 322,
         "name": "YAMTEST",
+        "area_names": [
+            "Psynergy Test"
+        ],
         "file_index": 1720,
         "area": 94,
         "type": 1,
@@ -4035,6 +5014,9 @@
     {
         "ID": 323,
         "name": "YAMTEST2",
+        "area_names": [
+            "Psynergy Test 2"
+        ],
         "file_index": 1721,
         "area": 95,
         "type": 1,
@@ -4045,6 +5027,9 @@
     {
         "ID": 324,
         "name": "SHOPTEST",
+        "area_names": [
+            "Shop Test"
+        ],
         "file_index": 1722,
         "area": 96,
         "type": 1,

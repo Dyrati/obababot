@@ -2,6 +2,9 @@
     {
         "ID": 0,
         "name": "TITLE",
+        "area_names": [
+            "Title screen"
+        ],
         "file_index": 879,
         "area": 0,
         "type": 1,
@@ -12,6 +15,9 @@
     {
         "ID": 1,
         "name": "UTIL",
+        "area_names": [
+            "(Clear data)"
+        ],
         "file_index": 880,
         "area": 1,
         "type": 1,
@@ -22,6 +28,9 @@
     {
         "ID": 2,
         "name": "WORLD",
+        "area_names": [
+            "World Map"
+        ],
         "file_index": 881,
         "area": 2,
         "type": 1,
@@ -32,6 +41,9 @@
     {
         "ID": 3,
         "name": "PLOGV00",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 882,
         "area": 3,
         "type": 2,
@@ -42,6 +54,9 @@
     {
         "ID": 4,
         "name": "SPWV00",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 883,
         "area": 3,
         "type": 2,
@@ -52,6 +67,9 @@
     {
         "ID": 5,
         "name": "SPW1V00",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 884,
         "area": 3,
         "type": 2,
@@ -62,6 +80,9 @@
     {
         "ID": 6,
         "name": "SPW2V00",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 885,
         "area": 3,
         "type": 2,
@@ -72,6 +93,9 @@
     {
         "ID": 7,
         "name": "HAIROOM1",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 886,
         "area": 3,
         "type": 2,
@@ -82,6 +106,10 @@
     {
         "ID": 8,
         "name": "HAIROOM2",
+        "area_names": [
+            "Vale",
+            "Babi's Palace"
+        ],
         "file_index": 887,
         "area": 3,
         "type": 2,
@@ -92,6 +120,15 @@
     {
         "ID": 9,
         "name": "HAISIN",
+        "area_names": [
+            "Altin Sanctum",
+            "Vault Sanctum",
+            "Vale Sanctum",
+            "Xian Sanctum",
+            "Bilibin Sanctum",
+            "Vale",
+            "Sanctum"
+        ],
         "file_index": 888,
         "area": 3,
         "type": 2,
@@ -102,6 +139,9 @@
     {
         "ID": 10,
         "name": "HYDIA01",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 889,
         "area": 3,
         "type": 2,
@@ -112,6 +152,9 @@
     {
         "ID": 11,
         "name": "DGN01",
+        "area_names": [
+            "Sol Sanctum"
+        ],
         "file_index": 890,
         "area": 4,
         "type": 1,
@@ -126,6 +169,9 @@
     {
         "ID": 12,
         "name": "DGN01B",
+        "area_names": [
+            "Sol Sanctum"
+        ],
         "file_index": 891,
         "area": 4,
         "type": 1,
@@ -136,6 +182,9 @@
     {
         "ID": 13,
         "name": "DGN01I",
+        "area_names": [
+            "Sol Sanctum"
+        ],
         "file_index": 892,
         "area": 4,
         "type": 1,
@@ -146,6 +195,9 @@
     {
         "ID": 14,
         "name": "DGN01L",
+        "area_names": [
+            "Sol Sanctum"
+        ],
         "file_index": 893,
         "area": 4,
         "type": 1,
@@ -160,6 +212,9 @@
     {
         "ID": 15,
         "name": "DGN01M",
+        "area_names": [
+            "Sol Sanctum"
+        ],
         "file_index": 894,
         "area": 4,
         "type": 1,
@@ -174,6 +229,9 @@
     {
         "ID": 16,
         "name": "DGN01U",
+        "area_names": [
+            "Sol Sanctum"
+        ],
         "file_index": 895,
         "area": 4,
         "type": 1,
@@ -203,6 +261,10 @@
     {
         "ID": 17,
         "name": "DGN01N",
+        "area_names": [
+            "Sol Sanctum",
+            "Elemental Star Room"
+        ],
         "file_index": 896,
         "area": 4,
         "type": 1,
@@ -213,6 +275,10 @@
     {
         "ID": 18,
         "name": "DGN01N2",
+        "area_names": [
+            "Sol Sanctum",
+            "Elemental Star Room"
+        ],
         "file_index": 897,
         "area": 4,
         "type": 1,
@@ -223,6 +289,10 @@
     {
         "ID": 19,
         "name": "SOLENT",
+        "area_names": [
+            "Sol Sanctum",
+            "Sol Entrance"
+        ],
         "file_index": 895,
         "area": 4,
         "type": 1,
@@ -233,6 +303,9 @@
     {
         "ID": 20,
         "name": "KUPV0A",
+        "area_names": [
+            "Vault"
+        ],
         "file_index": 898,
         "area": 5,
         "type": 2,
@@ -243,6 +316,9 @@
     {
         "ID": 21,
         "name": "KUP_RM01",
+        "area_names": [
+            "Vault"
+        ],
         "file_index": 899,
         "area": 5,
         "type": 2,
@@ -253,6 +329,10 @@
     {
         "ID": 22,
         "name": "KUP_RGK",
+        "area_names": [
+            "Lunpa",
+            "Vault"
+        ],
         "file_index": 900,
         "area": 5,
         "type": 2,
@@ -263,6 +343,9 @@
     {
         "ID": 23,
         "name": "KUPV0B",
+        "area_names": [
+            "Vault"
+        ],
         "file_index": 901,
         "area": 5,
         "type": 2,
@@ -273,6 +356,9 @@
     {
         "ID": 24,
         "name": "KUP_RM02",
+        "area_names": [
+            "Vault"
+        ],
         "file_index": 902,
         "area": 5,
         "type": 2,
@@ -283,6 +369,9 @@
     {
         "ID": 25,
         "name": "GMAP_V00",
+        "area_names": [
+            "Goma Cave Entrance"
+        ],
         "file_index": 903,
         "area": 6,
         "type": 1,
@@ -293,6 +382,9 @@
     {
         "ID": 26,
         "name": "NED001",
+        "area_names": [
+            "Goma Cave"
+        ],
         "file_index": 904,
         "area": 7,
         "type": 1,
@@ -307,6 +399,9 @@
     {
         "ID": 27,
         "name": "NED002",
+        "area_names": [
+            "Goma Cave"
+        ],
         "file_index": 905,
         "area": 7,
         "type": 1,
@@ -321,6 +416,9 @@
     {
         "ID": 28,
         "name": "NED003",
+        "area_names": [
+            "Goma Cave"
+        ],
         "file_index": 906,
         "area": 7,
         "type": 1,
@@ -335,6 +433,9 @@
     {
         "ID": 29,
         "name": "NED003A",
+        "area_names": [
+            "Goma Cave"
+        ],
         "file_index": 906,
         "area": 7,
         "type": 1,
@@ -345,6 +446,9 @@
     {
         "ID": 30,
         "name": "VIVNOV00",
+        "area_names": [
+            "Bilibin"
+        ],
         "file_index": 907,
         "area": 8,
         "type": 2,
@@ -355,6 +459,9 @@
     {
         "ID": 31,
         "name": "PINORM01",
+        "area_names": [
+            "Bilibin"
+        ],
         "file_index": 908,
         "area": 8,
         "type": 2,
@@ -365,6 +472,10 @@
     {
         "ID": 32,
         "name": "BIRIU1",
+        "area_names": [
+            "Bilibin Treasury",
+            "Bilibin"
+        ],
         "file_index": 907,
         "area": 8,
         "type": 2,
@@ -375,6 +486,9 @@
     {
         "ID": 33,
         "name": "OTQD0001",
+        "area_names": [
+            "McCoy's Palace"
+        ],
         "file_index": 909,
         "area": 9,
         "type": 2,
@@ -385,6 +499,9 @@
     {
         "ID": 34,
         "name": "VIV1V00",
+        "area_names": [
+            "McCoy's Palace"
+        ],
         "file_index": 910,
         "area": 9,
         "type": 2,
@@ -395,6 +512,9 @@
     {
         "ID": 35,
         "name": "BIRI_B01",
+        "area_names": [
+            "Bilibin Barricade"
+        ],
         "file_index": 907,
         "area": 10,
         "type": 1,
@@ -405,6 +525,9 @@
     {
         "ID": 36,
         "name": "KRM_V00",
+        "area_names": [
+            "Kolima"
+        ],
         "file_index": 911,
         "area": 11,
         "type": 2,
@@ -415,6 +538,9 @@
     {
         "ID": 37,
         "name": "KORIRM01",
+        "area_names": [
+            "Kolima"
+        ],
         "file_index": 912,
         "area": 11,
         "type": 2,
@@ -425,6 +551,10 @@
     {
         "ID": 38,
         "name": "KRM_B1",
+        "area_names": [
+            "Kolima Tunnel",
+            "Kolima"
+        ],
         "file_index": 911,
         "area": 11,
         "type": 2,
@@ -439,6 +569,9 @@
     {
         "ID": 39,
         "name": "KRMBRG",
+        "area_names": [
+            "Kolima Bridge"
+        ],
         "file_index": 911,
         "area": 12,
         "type": 1,
@@ -449,6 +582,9 @@
     {
         "ID": 40,
         "name": "DJ_KRM00",
+        "area_names": [
+            "Kolima Forest"
+        ],
         "file_index": 913,
         "area": 13,
         "type": 1,
@@ -463,6 +599,9 @@
     {
         "ID": 41,
         "name": "DJ_KRM01",
+        "area_names": [
+            "Kolima Forest"
+        ],
         "file_index": 914,
         "area": 13,
         "type": 1,
@@ -477,6 +616,9 @@
     {
         "ID": 42,
         "name": "DJ_KRM02",
+        "area_names": [
+            "Kolima Forest"
+        ],
         "file_index": 915,
         "area": 13,
         "type": 1,
@@ -491,6 +633,9 @@
     {
         "ID": 43,
         "name": "DJ_KRM03",
+        "area_names": [
+            "Kolima Forest"
+        ],
         "file_index": 916,
         "area": 13,
         "type": 1,
@@ -501,6 +646,9 @@
     {
         "ID": 44,
         "name": "DJ_KRM04",
+        "area_names": [
+            "Kolima Forest"
+        ],
         "file_index": 917,
         "area": 13,
         "type": 1,
@@ -515,6 +663,9 @@
     {
         "ID": 45,
         "name": "OTDJ0000",
+        "area_names": [
+            "Tret Tree"
+        ],
         "file_index": 918,
         "area": 14,
         "type": 1,
@@ -628,6 +779,9 @@
     {
         "ID": 46,
         "name": "OTDJ0001",
+        "area_names": [
+            "Tret Tree"
+        ],
         "file_index": 919,
         "area": 14,
         "type": 1,
@@ -651,6 +805,9 @@
     {
         "ID": 47,
         "name": "SANKAN03",
+        "area_names": [
+            "Bilibin Cave"
+        ],
         "file_index": 920,
         "area": 15,
         "type": 1,
@@ -668,6 +825,9 @@
     {
         "ID": 48,
         "name": "SANKAN02",
+        "area_names": [
+            "Bilibin Cave"
+        ],
         "file_index": 920,
         "area": 15,
         "type": 1,
@@ -688,6 +848,9 @@
     {
         "ID": 49,
         "name": "SANKAN01",
+        "area_names": [
+            "Bilibin Cave Entrance"
+        ],
         "file_index": 920,
         "area": 16,
         "type": 1,
@@ -698,6 +861,9 @@
     {
         "ID": 50,
         "name": "IMIRU01",
+        "area_names": [
+            "Imil"
+        ],
         "file_index": 921,
         "area": 17,
         "type": 2,
@@ -708,6 +874,10 @@
     {
         "ID": 51,
         "name": "IMI_RM01",
+        "area_names": [
+            "Imil Sanctum",
+            "Imil"
+        ],
         "file_index": 921,
         "area": 17,
         "type": 2,
@@ -718,6 +888,9 @@
     {
         "ID": 52,
         "name": "NED004",
+        "area_names": [
+            "Imil Falls Cave"
+        ],
         "file_index": 922,
         "area": 18,
         "type": 1,
@@ -728,6 +901,9 @@
     {
         "ID": 53,
         "name": "MTO01",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 923,
         "area": 19,
         "type": 1,
@@ -772,6 +948,9 @@
     {
         "ID": 54,
         "name": "MTO02",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 924,
         "area": 19,
         "type": 1,
@@ -807,6 +986,9 @@
     {
         "ID": 55,
         "name": "MTO03",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 924,
         "area": 19,
         "type": 1,
@@ -833,6 +1015,9 @@
     {
         "ID": 56,
         "name": "MTO04",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 924,
         "area": 19,
         "type": 1,
@@ -859,6 +1044,9 @@
     {
         "ID": 57,
         "name": "MTO05",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 924,
         "area": 19,
         "type": 1,
@@ -882,6 +1070,10 @@
     {
         "ID": 58,
         "name": "MTO06",
+        "area_names": [
+            "Mercury Lighthouse",
+            "Lighthouse Aerie"
+        ],
         "file_index": 925,
         "area": 19,
         "type": 1,
@@ -892,6 +1084,9 @@
     {
         "ID": 59,
         "name": "MTO07NG",
+        "area_names": [
+            "Mercury Lighthouse"
+        ],
         "file_index": 925,
         "area": 19,
         "type": 1,
@@ -902,6 +1097,9 @@
     {
         "ID": 60,
         "name": "FUCHIN01",
+        "area_names": [
+            "Fuchin Temple"
+        ],
         "file_index": 926,
         "area": 20,
         "type": 2,
@@ -912,6 +1110,11 @@
     {
         "ID": 61,
         "name": "FUCHINRM",
+        "area_names": [
+            "Fuchin Temple",
+            "Xian",
+            "Lama Temple"
+        ],
         "file_index": 926,
         "area": 20,
         "type": 2,
@@ -922,6 +1125,9 @@
     {
         "ID": 62,
         "name": "NED005",
+        "area_names": [
+            "Fuchin Falls Cave"
+        ],
         "file_index": 922,
         "area": 21,
         "type": 1,
@@ -936,6 +1142,9 @@
     {
         "ID": 63,
         "name": "NED006",
+        "area_names": [
+            "Fuchin Falls Cave"
+        ],
         "file_index": 922,
         "area": 21,
         "type": 1,
@@ -950,6 +1159,9 @@
     {
         "ID": 64,
         "name": "NED007",
+        "area_names": [
+            "Fuchin Falls Cave"
+        ],
         "file_index": 922,
         "area": 21,
         "type": 1,
@@ -964,6 +1176,9 @@
     {
         "ID": 65,
         "name": "NED008",
+        "area_names": [
+            "Fuchin Falls Cave"
+        ],
         "file_index": 922,
         "area": 21,
         "type": 1,
@@ -974,6 +1189,9 @@
     {
         "ID": 66,
         "name": "NED009",
+        "area_names": [
+            "Fuchin Falls Cave"
+        ],
         "file_index": 922,
         "area": 21,
         "type": 1,
@@ -984,6 +1202,9 @@
     {
         "ID": 67,
         "name": "NED010",
+        "area_names": [
+            "Fuchin Falls Cave"
+        ],
         "file_index": 922,
         "area": 21,
         "type": 1,
@@ -998,6 +1219,9 @@
     {
         "ID": 68,
         "name": "DJ_MGR00",
+        "area_names": [
+            "Mogall Forest"
+        ],
         "file_index": 927,
         "area": 22,
         "type": 1,
@@ -1012,6 +1236,9 @@
     {
         "ID": 69,
         "name": "DJ_MGR01",
+        "area_names": [
+            "Mogall Forest"
+        ],
         "file_index": 927,
         "area": 22,
         "type": 1,
@@ -1026,6 +1253,9 @@
     {
         "ID": 70,
         "name": "DJ_MGR02",
+        "area_names": [
+            "Mogall Forest"
+        ],
         "file_index": 927,
         "area": 22,
         "type": 1,
@@ -1040,6 +1270,9 @@
     {
         "ID": 71,
         "name": "DJ_MGR0A",
+        "area_names": [
+            "Mogall Forest"
+        ],
         "file_index": 927,
         "area": 22,
         "type": 1,
@@ -1050,6 +1283,9 @@
     {
         "ID": 72,
         "name": "SEAN01",
+        "area_names": [
+            "Xian"
+        ],
         "file_index": 928,
         "area": 23,
         "type": 2,
@@ -1060,6 +1296,9 @@
     {
         "ID": 73,
         "name": "SEARM01",
+        "area_names": [
+            "Xian"
+        ],
         "file_index": 929,
         "area": 23,
         "type": 2,
@@ -1070,6 +1309,9 @@
     {
         "ID": 74,
         "name": "GMAP_V02",
+        "area_names": [
+            "Alpine Crossing"
+        ],
         "file_index": 930,
         "area": 24,
         "type": 1,
@@ -1080,6 +1322,9 @@
     {
         "ID": 75,
         "name": "ARTN_V00",
+        "area_names": [
+            "Altin"
+        ],
         "file_index": 931,
         "area": 25,
         "type": 2,
@@ -1090,6 +1335,9 @@
     {
         "ID": 76,
         "name": "ARTNRM00",
+        "area_names": [
+            "Altin"
+        ],
         "file_index": 931,
         "area": 25,
         "type": 2,
@@ -1100,6 +1348,9 @@
     {
         "ID": 77,
         "name": "ARTN_DJ01",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1110,6 +1361,9 @@
     {
         "ID": 78,
         "name": "ARTN_DJ02",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1124,6 +1378,9 @@
     {
         "ID": 79,
         "name": "ARTN_DJ03",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1138,6 +1395,10 @@
     {
         "ID": 80,
         "name": "ARTN_DJ04",
+        "area_names": [
+            "Altin Peak",
+            "Alpine Crossing"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1152,6 +1413,9 @@
     {
         "ID": 81,
         "name": "ARTN_DJ05",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1166,6 +1430,9 @@
     {
         "ID": 82,
         "name": "ARTN_DJ06",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1180,6 +1447,9 @@
     {
         "ID": 83,
         "name": "ARTN_DJ07",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1194,6 +1464,9 @@
     {
         "ID": 84,
         "name": "ARTN_DJ08",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1208,6 +1481,9 @@
     {
         "ID": 85,
         "name": "ARTN_DJ09",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1225,6 +1501,9 @@
     {
         "ID": 86,
         "name": "ARTN_DJ10",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1235,6 +1514,9 @@
     {
         "ID": 87,
         "name": "ARTN_DJ11",
+        "area_names": [
+            "Altin Peak"
+        ],
         "file_index": 932,
         "area": 26,
         "type": 1,
@@ -1249,6 +1531,9 @@
     {
         "ID": 88,
         "name": "RAMA01",
+        "area_names": [
+            "Lama Temple"
+        ],
         "file_index": 930,
         "area": 27,
         "type": 2,
@@ -1259,6 +1544,9 @@
     {
         "ID": 89,
         "name": "RMCN01",
+        "area_names": [
+            "Lamakan Desert"
+        ],
         "file_index": 933,
         "area": 28,
         "type": 1,
@@ -1273,6 +1561,9 @@
     {
         "ID": 90,
         "name": "RMCN02",
+        "area_names": [
+            "Lamakan Desert"
+        ],
         "file_index": 933,
         "area": 28,
         "type": 1,
@@ -1287,6 +1578,9 @@
     {
         "ID": 91,
         "name": "RMCN03",
+        "area_names": [
+            "Lamakan Desert"
+        ],
         "file_index": 933,
         "area": 28,
         "type": 1,
@@ -1301,6 +1595,9 @@
     {
         "ID": 92,
         "name": "RMCN04",
+        "area_names": [
+            "Lamakan Desert"
+        ],
         "file_index": 933,
         "area": 28,
         "type": 1,
@@ -1311,6 +1608,9 @@
     {
         "ID": 93,
         "name": "HAIKAKU0",
+        "area_names": [
+            "Vale"
+        ],
         "file_index": 934,
         "area": 29,
         "type": 1,
@@ -1321,6 +1621,9 @@
     {
         "ID": 94,
         "name": "HAIKAKU1",
+        "area_names": [
+            "Vale Cave"
+        ],
         "file_index": 934,
         "area": 30,
         "type": 1,
@@ -1353,6 +1656,9 @@
     {
         "ID": 95,
         "name": "HAIKAKU2",
+        "area_names": [
+            "Vale Cave"
+        ],
         "file_index": 934,
         "area": 30,
         "type": 1,
@@ -1379,6 +1685,9 @@
     {
         "ID": 96,
         "name": "KAKUSI01",
+        "area_names": [
+            "Vault Cave"
+        ],
         "file_index": 935,
         "area": 31,
         "type": 1,
@@ -1393,6 +1702,9 @@
     {
         "ID": 97,
         "name": "KAKUSI02",
+        "area_names": [
+            "Vault Cave"
+        ],
         "file_index": 935,
         "area": 31,
         "type": 1,
@@ -1407,6 +1719,9 @@
     {
         "ID": 98,
         "name": "KAKUSI03",
+        "area_names": [
+            "Vault Cave"
+        ],
         "file_index": 935,
         "area": 31,
         "type": 1,
@@ -1421,6 +1736,9 @@
     {
         "ID": 99,
         "name": "KAREI01",
+        "area_names": [
+            "Kalay"
+        ],
         "file_index": 936,
         "area": 32,
         "type": 2,
@@ -1431,6 +1749,9 @@
     {
         "ID": 100,
         "name": "KARERM01",
+        "area_names": [
+            "Kalay"
+        ],
         "file_index": 937,
         "area": 32,
         "type": 2,
@@ -1441,6 +1762,10 @@
     {
         "ID": 101,
         "name": "KARERM02",
+        "area_names": [
+            "Kalay Sanctum",
+            "Kalay"
+        ],
         "file_index": 937,
         "area": 32,
         "type": 2,
@@ -1451,6 +1776,9 @@
     {
         "ID": 102,
         "name": "MOMOQD",
+        "area_names": [
+            "Hammet Palace"
+        ],
         "file_index": 936,
         "area": 33,
         "type": 2,
@@ -1461,6 +1789,9 @@
     {
         "ID": 103,
         "name": "OTQD0002",
+        "area_names": [
+            "Hammet Palace"
+        ],
         "file_index": 938,
         "area": 33,
         "type": 2,
@@ -1471,6 +1802,9 @@
     {
         "ID": 104,
         "name": "LUNPA00",
+        "area_names": [
+            "Lunpa"
+        ],
         "file_index": 939,
         "area": 34,
         "type": 2,
@@ -1481,6 +1815,11 @@
     {
         "ID": 105,
         "name": "LUNRM01",
+        "area_names": [
+            "Lunpa",
+            "Lunpa Temple",
+            "Gate to Suhalla"
+        ],
         "file_index": 940,
         "area": 34,
         "type": 2,
@@ -1491,6 +1830,9 @@
     {
         "ID": 106,
         "name": "LUNPA_D",
+        "area_names": [
+            "West Lunpa Cave"
+        ],
         "file_index": 941,
         "area": 35,
         "type": 1,
@@ -1501,6 +1843,9 @@
     {
         "ID": 107,
         "name": "JETTY01",
+        "area_names": [
+            "Kalay Docks"
+        ],
         "file_index": 942,
         "area": 36,
         "type": 2,
@@ -1511,6 +1856,10 @@
     {
         "ID": 108,
         "name": "M_TIKET",
+        "area_names": [
+            "Kalay Docks",
+            "Tolbi Docks"
+        ],
         "file_index": 942,
         "area": 36,
         "type": 2,
@@ -1521,6 +1870,9 @@
     {
         "ID": 109,
         "name": "MSHIP01",
+        "area_names": [
+            "Tolbi-bound Ship"
+        ],
         "file_index": 943,
         "area": 37,
         "type": 1,
@@ -1531,6 +1883,9 @@
     {
         "ID": 110,
         "name": "MSHIP02",
+        "area_names": [
+            "Tolbi-bound Ship"
+        ],
         "file_index": 944,
         "area": 37,
         "type": 1,
@@ -1541,6 +1896,9 @@
     {
         "ID": 111,
         "name": "SHIPRM1",
+        "area_names": [
+            "Tolbi-bound Ship"
+        ],
         "file_index": 945,
         "area": 37,
         "type": 1,
@@ -1551,6 +1909,9 @@
     {
         "ID": 112,
         "name": "JETTY02",
+        "area_names": [
+            "Tolbi Docks"
+        ],
         "file_index": 942,
         "area": 38,
         "type": 2,
@@ -1561,6 +1922,10 @@
     {
         "ID": 113,
         "name": "TAKARA00",
+        "area_names": [
+            "Crossbone Isle",
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1571,6 +1936,9 @@
     {
         "ID": 114,
         "name": "TAKARA01",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1581,6 +1949,9 @@
     {
         "ID": 115,
         "name": "TAKARAB1",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 947,
         "area": 39,
         "type": 1,
@@ -1591,6 +1962,9 @@
     {
         "ID": 116,
         "name": "TAKARAB2",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 947,
         "area": 39,
         "type": 1,
@@ -1601,6 +1975,9 @@
     {
         "ID": 117,
         "name": "TAKARAB3",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 948,
         "area": 39,
         "type": 1,
@@ -1611,6 +1988,9 @@
     {
         "ID": 118,
         "name": "TAKARAB4",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 948,
         "area": 39,
         "type": 1,
@@ -1621,6 +2001,9 @@
     {
         "ID": 119,
         "name": "TAKARAB5",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 947,
         "area": 39,
         "type": 1,
@@ -1631,6 +2014,9 @@
     {
         "ID": 120,
         "name": "TAKARAB6",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 948,
         "area": 39,
         "type": 1,
@@ -1641,6 +2027,9 @@
     {
         "ID": 121,
         "name": "TAKARAB7",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 947,
         "area": 39,
         "type": 1,
@@ -1651,6 +2040,9 @@
     {
         "ID": 122,
         "name": "TAKARAB8",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 947,
         "area": 39,
         "type": 1,
@@ -1661,6 +2053,9 @@
     {
         "ID": 123,
         "name": "TAKARAB9",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1671,6 +2066,9 @@
     {
         "ID": 124,
         "name": "TAKARAB10",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1681,6 +2079,10 @@
     {
         "ID": 125,
         "name": "TAKARAB11",
+        "area_names": [
+            "Pirate Ship",
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1691,6 +2093,9 @@
     {
         "ID": 126,
         "name": "TAKARA91",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1701,6 +2106,9 @@
     {
         "ID": 127,
         "name": "TAKARA92",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1711,6 +2119,9 @@
     {
         "ID": 128,
         "name": "TAKARA93",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1721,6 +2132,9 @@
     {
         "ID": 129,
         "name": "TAKARA94",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1731,6 +2145,9 @@
     {
         "ID": 130,
         "name": "TAKARA95",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1741,6 +2158,9 @@
     {
         "ID": 131,
         "name": "TAKARA96",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1751,6 +2171,9 @@
     {
         "ID": 132,
         "name": "TAKARA97",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1761,6 +2184,9 @@
     {
         "ID": 133,
         "name": "TAKARA98",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1771,6 +2197,9 @@
     {
         "ID": 134,
         "name": "TAKARA99",
+        "area_names": [
+            "Crossbone Isle Cave"
+        ],
         "file_index": 946,
         "area": 39,
         "type": 1,
@@ -1781,6 +2210,9 @@
     {
         "ID": 135,
         "name": "TOREBI01",
+        "area_names": [
+            "Tolbi"
+        ],
         "file_index": 949,
         "area": 40,
         "type": 2,
@@ -1791,6 +2223,10 @@
     {
         "ID": 136,
         "name": "TORERM01",
+        "area_names": [
+            "Tolbi Sanctum",
+            "Tolbi"
+        ],
         "file_index": 950,
         "area": 40,
         "type": 2,
@@ -1801,6 +2237,9 @@
     {
         "ID": 137,
         "name": "TORERM02",
+        "area_names": [
+            "Tolbi"
+        ],
         "file_index": 951,
         "area": 40,
         "type": 2,
@@ -1811,6 +2250,9 @@
     {
         "ID": 138,
         "name": "OTQD0003",
+        "area_names": [
+            "Babi's Palace"
+        ],
         "file_index": 952,
         "area": 41,
         "type": 2,
@@ -1821,6 +2263,9 @@
     {
         "ID": 139,
         "name": "O_BAVI",
+        "area_names": [
+            "Babi's Palace"
+        ],
         "file_index": 952,
         "area": 41,
         "type": 2,
@@ -1831,6 +2276,10 @@
     {
         "ID": 140,
         "name": "KORO02",
+        "area_names": [
+            "Colosseum",
+            "Colosseum Tunnel"
+        ],
         "file_index": 953,
         "area": 42,
         "type": 1,
@@ -1841,6 +2290,9 @@
     {
         "ID": 141,
         "name": "KORO01",
+        "area_names": [
+            "Colosseum Tunnel"
+        ],
         "file_index": 953,
         "area": 42,
         "type": 1,
@@ -1851,6 +2303,9 @@
     {
         "ID": 142,
         "name": "KORO03",
+        "area_names": [
+            "Colosseum Entrance"
+        ],
         "file_index": 953,
         "area": 42,
         "type": 1,
@@ -1861,6 +2316,9 @@
     {
         "ID": 143,
         "name": "COLOSSE01",
+        "area_names": [
+            "Colosseum Final 1"
+        ],
         "file_index": 954,
         "area": 42,
         "type": 1,
@@ -1871,6 +2329,9 @@
     {
         "ID": 144,
         "name": "COLOSSE02",
+        "area_names": [
+            "Colosseum Final 2"
+        ],
         "file_index": 955,
         "area": 42,
         "type": 1,
@@ -1881,6 +2342,9 @@
     {
         "ID": 145,
         "name": "COLOSSE03",
+        "area_names": [
+            "Colosseum Final 3"
+        ],
         "file_index": 956,
         "area": 42,
         "type": 1,
@@ -1891,6 +2355,9 @@
     {
         "ID": 146,
         "name": "ALTA00",
+        "area_names": [
+            "Altmiller Cave"
+        ],
         "file_index": 957,
         "area": 43,
         "type": 1,
@@ -1905,6 +2372,9 @@
     {
         "ID": 147,
         "name": "ALTA01",
+        "area_names": [
+            "Altmiller Cave"
+        ],
         "file_index": 957,
         "area": 43,
         "type": 1,
@@ -1919,6 +2389,9 @@
     {
         "ID": 148,
         "name": "ALTA02",
+        "area_names": [
+            "Altmiller Cave"
+        ],
         "file_index": 957,
         "area": 43,
         "type": 1,
@@ -1933,6 +2406,9 @@
     {
         "ID": 149,
         "name": "ALTA03",
+        "area_names": [
+            "Altmiller Cave"
+        ],
         "file_index": 957,
         "area": 43,
         "type": 1,
@@ -1947,6 +2423,9 @@
     {
         "ID": 150,
         "name": "ALTA04",
+        "area_names": [
+            "Altmiller Cave"
+        ],
         "file_index": 957,
         "area": 43,
         "type": 1,
@@ -1961,6 +2440,9 @@
     {
         "ID": 151,
         "name": "ALTA05",
+        "area_names": [
+            "Altmiller Cave"
+        ],
         "file_index": 957,
         "area": 43,
         "type": 1,
@@ -1978,6 +2460,9 @@
     {
         "ID": 152,
         "name": "GNDT01",
+        "area_names": [
+            "Gondowan Passage"
+        ],
         "file_index": 958,
         "area": 44,
         "type": 1,
@@ -1988,6 +2473,9 @@
     {
         "ID": 153,
         "name": "KIRI01",
+        "area_names": [
+            "Kalay Tunnel Entrance"
+        ],
         "file_index": 936,
         "area": 45,
         "type": 1,
@@ -1998,6 +2486,9 @@
     {
         "ID": 154,
         "name": "KCHIKA01",
+        "area_names": [
+            "Kalay Tunnel"
+        ],
         "file_index": 936,
         "area": 46,
         "type": 1,
@@ -2008,6 +2499,9 @@
     {
         "ID": 155,
         "name": "KCHIKA02",
+        "area_names": [
+            "Kalay Tunnel"
+        ],
         "file_index": 936,
         "area": 46,
         "type": 1,
@@ -2018,6 +2512,9 @@
     {
         "ID": 156,
         "name": "KCHIKA03",
+        "area_names": [
+            "Kalay Tunnel"
+        ],
         "file_index": 936,
         "area": 46,
         "type": 1,
@@ -2028,6 +2525,9 @@
     {
         "ID": 157,
         "name": "GNDE01",
+        "area_names": [
+            "Gondowan Cave"
+        ],
         "file_index": 958,
         "area": 47,
         "type": 1,
@@ -2048,6 +2548,9 @@
     {
         "ID": 158,
         "name": "GNDE02",
+        "area_names": [
+            "Gondowan Cave"
+        ],
         "file_index": 958,
         "area": 47,
         "type": 1,
@@ -2071,6 +2574,9 @@
     {
         "ID": 159,
         "name": "RNP_E",
+        "area_names": [
+            "Lunpa Fortress Gates"
+        ],
         "file_index": 939,
         "area": 48,
         "type": 1,
@@ -2081,6 +2587,9 @@
     {
         "ID": 160,
         "name": "TORIDE01",
+        "area_names": [
+            "Lunpa Fortress"
+        ],
         "file_index": 959,
         "area": 49,
         "type": 1,
@@ -2091,6 +2600,9 @@
     {
         "ID": 161,
         "name": "TORIDE02",
+        "area_names": [
+            "Lunpa Fortress"
+        ],
         "file_index": 959,
         "area": 49,
         "type": 1,
@@ -2101,6 +2613,9 @@
     {
         "ID": 162,
         "name": "TORIDE03",
+        "area_names": [
+            "Lunpa Fortress"
+        ],
         "file_index": 959,
         "area": 49,
         "type": 1,
@@ -2121,6 +2636,9 @@
     {
         "ID": 163,
         "name": "TORIDE04",
+        "area_names": [
+            "Lunpa Fortress"
+        ],
         "file_index": 959,
         "area": 49,
         "type": 1,
@@ -2138,6 +2656,9 @@
     {
         "ID": 164,
         "name": "SUHR00",
+        "area_names": [
+            "Suhalla Desert"
+        ],
         "file_index": 960,
         "area": 50,
         "type": 1,
@@ -2152,6 +2673,9 @@
     {
         "ID": 165,
         "name": "SUHR01",
+        "area_names": [
+            "Suhalla Desert"
+        ],
         "file_index": 960,
         "area": 50,
         "type": 1,
@@ -2166,6 +2690,9 @@
     {
         "ID": 166,
         "name": "SUHR02",
+        "area_names": [
+            "Suhalla Desert"
+        ],
         "file_index": 960,
         "area": 50,
         "type": 1,
@@ -2176,6 +2703,9 @@
     {
         "ID": 167,
         "name": "OTMR0001",
+        "area_names": [
+            "Suhalla"
+        ],
         "file_index": 961,
         "area": 51,
         "type": 2,
@@ -2186,6 +2716,10 @@
     {
         "ID": 168,
         "name": "SUHARM01",
+        "area_names": [
+            "Suhalla Sanctum",
+            "Suhalla"
+        ],
         "file_index": 962,
         "area": 51,
         "type": 2,
@@ -2196,6 +2730,9 @@
     {
         "ID": 169,
         "name": "SHR_M14",
+        "area_names": [
+            "Suhalla Gate"
+        ],
         "file_index": 963,
         "area": 52,
         "type": 1,
@@ -2206,6 +2743,9 @@
     {
         "ID": 170,
         "name": "SHR_M23",
+        "area_names": [
+            "Suhalla Gate"
+        ],
         "file_index": 963,
         "area": 52,
         "type": 1,
@@ -2226,6 +2766,10 @@
     {
         "ID": 171,
         "name": "SHR_M56",
+        "area_names": [
+            "Gateway Cave",
+            "Suhalla Gate"
+        ],
         "file_index": 963,
         "area": 52,
         "type": 1,
@@ -2246,6 +2790,9 @@
     {
         "ID": 172,
         "name": "UTO01",
+        "area_names": [
+            "Tunnel Ruins"
+        ],
         "file_index": 964,
         "area": 53,
         "type": 1,
@@ -2287,6 +2834,10 @@
     {
         "ID": 173,
         "name": "UTO02",
+        "area_names": [
+            "Babi Lighthouse",
+            "Tunnel Ruins"
+        ],
         "file_index": 964,
         "area": 53,
         "type": 1,
@@ -2331,6 +2882,9 @@
     {
         "ID": 174,
         "name": "BTO03",
+        "area_names": [
+            "Babi Lighthouse"
+        ],
         "file_index": 965,
         "area": 54,
         "type": 1,
@@ -2345,6 +2899,9 @@
     {
         "ID": 175,
         "name": "BTO02",
+        "area_names": [
+            "Babi Lighthouse"
+        ],
         "file_index": 965,
         "area": 54,
         "type": 1,
@@ -2359,6 +2916,10 @@
     {
         "ID": 176,
         "name": "BTO01",
+        "area_names": [
+            "Babi Lighthouse Entry",
+            "Babi Lighthouse"
+        ],
         "file_index": 965,
         "area": 54,
         "type": 1,
@@ -2373,6 +2934,10 @@
     {
         "ID": 177,
         "name": "B_MICHI01",
+        "area_names": [
+            "Road to Babi Lighthouse",
+            "Babi Lighthouse"
+        ],
         "file_index": 965,
         "area": 54,
         "type": 1,
@@ -2383,6 +2948,9 @@
     {
         "ID": 178,
         "name": "OTMR0002",
+        "area_names": [
+            "Lalivero"
+        ],
         "file_index": 966,
         "area": 55,
         "type": 2,
@@ -2393,6 +2961,10 @@
     {
         "ID": 179,
         "name": "RARIRM1",
+        "area_names": [
+            "Lalivero",
+            "Lalivero Sanctum"
+        ],
         "file_index": 967,
         "area": 55,
         "type": 2,
@@ -2403,6 +2975,9 @@
     {
         "ID": 180,
         "name": "RARIRM2",
+        "area_names": [
+            "Lalivero"
+        ],
         "file_index": 967,
         "area": 55,
         "type": 2,
@@ -2413,6 +2988,9 @@
     {
         "ID": 181,
         "name": "V_ENT01",
+        "area_names": [
+            "Venus Lighthouse Entry"
+        ],
         "file_index": 968,
         "area": 56,
         "type": 1,
@@ -2423,6 +3001,10 @@
     {
         "ID": 182,
         "name": "VTO01",
+        "area_names": [
+            "Venus Lighthouse Entry",
+            "Venus Lighthouse"
+        ],
         "file_index": 968,
         "area": 56,
         "type": 1,
@@ -2467,6 +3049,9 @@
     {
         "ID": 183,
         "name": "VTO02",
+        "area_names": [
+            "Venus Lighthouse"
+        ],
         "file_index": 968,
         "area": 57,
         "type": 1,
@@ -2487,6 +3072,9 @@
     {
         "ID": 184,
         "name": "VTO03",
+        "area_names": [
+            "Venus Lighthouse"
+        ],
         "file_index": 968,
         "area": 57,
         "type": 1,
@@ -2507,6 +3095,9 @@
     {
         "ID": 185,
         "name": "VTO04",
+        "area_names": [
+            "Venus Lighthouse"
+        ],
         "file_index": 968,
         "area": 57,
         "type": 1,
@@ -2521,6 +3112,9 @@
     {
         "ID": 186,
         "name": "VTO05",
+        "area_names": [
+            "Venus Lighthouse"
+        ],
         "file_index": 968,
         "area": 57,
         "type": 1,
@@ -2535,6 +3129,10 @@
     {
         "ID": 187,
         "name": "VTO06",
+        "area_names": [
+            "Lighthouse Aerie",
+            "Venus Lighthouse"
+        ],
         "file_index": 969,
         "area": 57,
         "type": 1,
@@ -2545,6 +3143,9 @@
     {
         "ID": 188,
         "name": "KODAI01",
+        "area_names": [
+            "Lemurian ship"
+        ],
         "file_index": 970,
         "area": 58,
         "type": 2,
@@ -2555,6 +3156,9 @@
     {
         "ID": 189,
         "name": "OTMGTRE0",
+        "area_names": [
+            "Tolbi Spring"
+        ],
         "file_index": 951,
         "area": 59,
         "type": 2,
@@ -2565,6 +3169,9 @@
     {
         "ID": 190,
         "name": "ROUNGE",
+        "area_names": [
+            "Lobby"
+        ],
         "file_index": 971,
         "area": 60,
         "type": 2,
@@ -2575,6 +3182,9 @@
     {
         "ID": 191,
         "name": "TEST0",
+        "area_names": [
+            "Test 0"
+        ],
         "file_index": 972,
         "area": 61,
         "type": 1,
@@ -2585,6 +3195,9 @@
     {
         "ID": 192,
         "name": "TEST1",
+        "area_names": [
+            "Test 1"
+        ],
         "file_index": 972,
         "area": 62,
         "type": 1,
@@ -2595,6 +3208,9 @@
     {
         "ID": 193,
         "name": "TEST2",
+        "area_names": [
+            "Test 2"
+        ],
         "file_index": 972,
         "area": 63,
         "type": 1,
@@ -2605,6 +3221,9 @@
     {
         "ID": 194,
         "name": "TEST3",
+        "area_names": [
+            "Test 3"
+        ],
         "file_index": 972,
         "area": 64,
         "type": 1,
@@ -2615,6 +3234,9 @@
     {
         "ID": 195,
         "name": "TEST4",
+        "area_names": [
+            "Test 4"
+        ],
         "file_index": 972,
         "area": 65,
         "type": 1,
@@ -2625,6 +3247,9 @@
     {
         "ID": 196,
         "name": "TEST5",
+        "area_names": [
+            "Test 5"
+        ],
         "file_index": 972,
         "area": 66,
         "type": 1,
@@ -2635,6 +3260,9 @@
     {
         "ID": 197,
         "name": "TEST6",
+        "area_names": [
+            "Test 6"
+        ],
         "file_index": 972,
         "area": 67,
         "type": 1,
@@ -2645,6 +3273,9 @@
     {
         "ID": 198,
         "name": "TEST7",
+        "area_names": [
+            "Test 7"
+        ],
         "file_index": 972,
         "area": 68,
         "type": 1,
@@ -2655,6 +3286,9 @@
     {
         "ID": 199,
         "name": "GET_ITEM",
+        "area_names": [
+            "Increase item and level"
+        ],
         "file_index": 973,
         "area": 69,
         "type": 1,
@@ -2665,6 +3299,9 @@
     {
         "ID": 200,
         "name": "MENU",
+        "area_names": [
+            "Menu test"
+        ],
         "file_index": 974,
         "area": 70,
         "type": 1,

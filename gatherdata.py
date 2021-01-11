@@ -63,6 +63,7 @@ with open(ROM1, "rb") as f:
         mapdata1.append({
             "ID": i,
             "name": maps1[i],
+            "area_names": set(),
             "file_index": read(2),
             "area": read(1),
             "type": read(1),
@@ -76,6 +77,18 @@ for encounter in map_encounters1:
     door = encounter["door"]
     ids = list(filter(lambda x: x, encounter["encounter_ids"]))
     room[door if door != 65535 else "all"] = ids
+temp_areas = {}
+for room in room_references1:
+    flag = room["door"] >> 15
+    roa = room["room_or_area"]
+    if flag: mapdata1[roa]["area_names"].add(room["name"])
+    else: temp_areas[roa] = room["name"]
+for map_ in mapdata1:
+    area = map_["area"]
+    if area in temp_areas:
+        map_["area_names"].add(temp_areas[area])
+for map_ in mapdata1:
+    map_["area_names"] = list(map_["area_names"])
 
 
 with open(ROM2, "rb") as f:
@@ -280,9 +293,9 @@ with open(ROM2, "rb") as f:
         })
 
     f.seek(0x0EE6D4)  # encounters by map
-    map_encounters = []
+    map_encounters2 = []
     for i in range(220):
-        map_encounters.append({
+        map_encounters2.append({
             "ID": i,
             "room": read(2),
             "door": read(2),
@@ -291,9 +304,9 @@ with open(ROM2, "rb") as f:
         })
 
     f.seek(0x0EEDBC)  # encounters on world map
-    wmap_encounters = []
+    wmap_encounters2 = []
     for i in range(46):
-        wmap_encounters.append({
+        wmap_encounters2.append({
             "ID": i,
             "area_type": read(2),
             "terrain": read(2),
@@ -318,6 +331,7 @@ with open(ROM2, "rb") as f:
         mapdata2.append({
             "ID": i,
             "name": maps2[i],
+            "area_names": set(),
             "file_index": read(2),
             "area": read(1),
             "type": read(1),
@@ -421,11 +435,25 @@ for djinni in djinndata:
     djinni["power"] = move["power"]
     djinni["description"] = move["description"]
 
-for encounter in map_encounters:
+# Map Names
+for encounter in map_encounters2:
     room = mapdata2[encounter["room"]]["encounters"]
     door = encounter["door"]
     ids = list(filter(lambda x: x, encounter["encounter_ids"]))
     room[door if door != 65535 else "all"] = ids
+temp_areas = {}
+for room in room_references2:
+    flag = room["door"] >> 15
+    roa = room["room_or_area"]
+    if flag: mapdata2[roa]["area_names"].add(room["name"])
+    else: temp_areas[roa] = room["name"]
+for map_ in mapdata2:
+    area = map_["area"]
+    if area in temp_areas:
+        map_["area_names"].add(temp_areas[area])
+for map_ in mapdata2:
+    map_["area_names"] = list(map_["area_names"])
+
 
 # Enemy Groups
 for group in enemygroupdata:
