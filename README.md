@@ -57,7 +57,8 @@ pages of that response.  Obaba will edit her own message to reflect the change. 
 will no longer be editable after a bot reset (which may happen at any time).
 
 ## Running the bot on your system
- - If you need to update the database, run `gatherdata.py` with the GS2 ROM as an argument
+ - If you need to update the database, run `gatherdata.py` with the GS1 and GS2 ROMs as 
+   arguments 1 and 2
  - In cmd, set the environment variable TOKEN equal to the bot token using the command:
    - `set TOKEN=tokengoeshere`
  - Download the respository, navigate to it from cmd, and run `main.py`
