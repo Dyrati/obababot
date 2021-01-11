@@ -12,7 +12,7 @@ print("Imported modules    ")
 
 terminal_mode = "-t" in sys.argv
 TOKEN = os.getenv('TOKEN') or input("Input bot token: ").strip('"')
-if TOKEN == "-t": terminal_mode = True
+if TOKEN == "t": terminal_mode = True
 
 @client.event
 async def on_ready():

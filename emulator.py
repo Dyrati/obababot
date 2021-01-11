@@ -14,6 +14,7 @@ Users = {}
 class TerminalUser:
     def __init__(self, name):
         self.name = name
+        self.mention = "@" + name
         self.id = len(Users)
         Users[name] = self
 
@@ -75,7 +76,7 @@ emojis = {
     "down": "\U0001f53d",
     "left": "\u25c0\ufe0f",
     "right": "\u25b6\ufe0f",
-    "question": "\u2753",
+    "?": "\u2753",
     "checkmark": "\u2705",
     "redX": "\u274c",
     "whiteflag": "\U0001f3f3\ufe0f",

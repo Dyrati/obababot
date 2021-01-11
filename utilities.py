@@ -47,6 +47,13 @@ async def reply(message, text):
     return sent
 
 
+async def send(url, text):
+    ID_list = url[len("https://discord.com/channels/"):].split("/")
+    serverID, channelID = (int(i) for i in ID_list)
+    channel = client.get_guild(serverID).get_channel(channelID)
+    await channel.send(text)
+
+
 def load_text():
     text = {}
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
