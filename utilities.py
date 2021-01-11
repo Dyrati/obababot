@@ -2,6 +2,7 @@ import discord
 import re
 import os
 import json
+from copy import deepcopy
 
 prefix = os.getenv("PREFIX","$")
 usercommands = {}
@@ -100,7 +101,6 @@ def namedict(jsonobj):
 DataTables, Namemaps, Text = {}, {}, {}
 def load_data():
     global DataTables, Namemaps, Text
-    from copy import deepcopy
     print("Loading database...", end="\r")
     DataTables.clear(); Namemaps.clear(); Text.clear()
     for name in [
@@ -284,7 +284,7 @@ class User:
     def __init__(self, ID):
         self.ID = ID
         self.temp = {}
-        self.vars = {}
+        self.vars = mfuncs.copy()
         self.responses = []
         self.live_response = {}
         self.save = None

@@ -93,7 +93,8 @@ async def index(message, *args, **kwargs):
         output = dictstr(DataTables[tablename][int(condition)], kwargs.get("json"))
     else:
         for entry in DataTables[tablename]:
-            if safe_eval(condition, {**mfuncs, **entry}):
+            uvars = UserData[message.author.id].vars
+            if safe_eval(condition, {**uvars, **entry}):
                 output = dictstr(entry, kwargs.get("json"))
                 break
         else:
@@ -116,8 +117,7 @@ async def math(message, *args, **kwargs):
     Aliases:
         may use the "=" sign in place of "$math "
     """
-    ID = message.author.id
-    value = safe_eval(" ".join(args), {**mfuncs, **UserData[ID].vars})
+    value = safe_eval(" ".join(args), UserData[message.author.id].vars)
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     assert not frmt[4] or len(frmt[4]) <= 3, "width specifier too large"
@@ -144,7 +144,7 @@ async def var(message, *args, **kwargs):
     m = re.match("\\" + prefix + r"var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
     varname, content = m.groups()
     args, kwargs = utilities.parse(content)
-    value = safe_eval(" ".join(args), {**mfuncs, **UserData[ID].vars})
+    value = safe_eval(" ".join(args), UserData[ID].vars)
     fspec = r"(.?[<>=^])?([+\- ])?(#)?(0)?(\d+)?([_,])?(.\d+)?([bcdeEfFgGnosxX%])?"
     frmt = re.match(fspec, kwargs.get("f", "")).groups()
     assert not frmt[4] or len(frmt[4]) <= 3, "width specifier too large"
@@ -167,8 +167,9 @@ async def filter(message, *args, **kwargs):
     """
     table = args[0]
     condition = " ".join(args[1:])
+    uvars = UserData[message.author.id].vars
     if not condition: output = DataTables[table]
-    else: output = [e for e in DataTables[table] if safe_eval(condition, {**mfuncs, **e})]
+    else: output = [e for e in DataTables[table] if safe_eval(condition, {**uvars, **e})]
     fields = ["ID"]
     if "name" in DataTables[table][0]: fields.append("name")
     if kwargs.get("fields"):
@@ -199,7 +200,8 @@ async def sort(message, *args, **kwargs):
     data = DataTables[table]
     condition = " ".join(args[2:])
     if condition:
-        data = [entry for entry in data if safe_eval(condition, {**mfuncs, **entry})]
+        uvars = UserData[message.author.id].vars
+        data = [entry for entry in data if safe_eval(condition, {**uvars, **entry})]
     if key.startswith("-"):
         key = key[1:].strip(" ")
         output = sorted(data, key=lambda x: x[key], reverse=True)

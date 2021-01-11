@@ -25,7 +25,7 @@ async def on_message(message):
     if not utilities.is_command(message): return
     command, args, kwargs = utilities.extractcommand(message.content)
     ID = message.author.id
-    UserData.setdefault(ID, utilities.User(ID))
+    if not UserData.get(ID): UserData[ID] = utilities.User(ID)
     UserData[ID].responses.append([])
     UserData[ID].temp["raw"] = kwargs.get("raw")
     try: await utilities.usercommands[command](message, *args, **kwargs)
