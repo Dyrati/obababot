@@ -75,30 +75,30 @@ async def info(message, *args, **kwargs):
 
 
 @command
-async def index(message, *args, **kwargs):
-    """Index a data table
-    
+async def display(message, *args, **kwargs):
+    """Display an object or list of objects
+
     Arguments:
-        tablename -- the name of the data table
-        *condition -- grabs the *nth* element of a data table
-                      may alternatively contain a python expression, and will
-                      return the first object that satisfies the expression
-    
+        object -- the object to display.  This must either be a python
+                  dictionary or a list of python dictionaries
+                  accepts python expressions as input
+
     Keyword Arguments:
-        json -- set equal to 1 or "true" to format the output as json
+        fields -- if displaying a table, this argument may be a list of 
+                  comma-separated attributes to display in the output table
     """
-    tablename = args[0]
-    condition = " ".join(args[1:])
-    if re.match(r"\d+$", condition):
-        output = dictstr(DataTables[tablename][int(condition)], kwargs.get("json"))
+    uvars = UserData[message.author.id].vars
+    obj = safe_eval(" ".join(args), uvars)
+    if isinstance(obj, dict):
+        output = dictstr(obj)
+    elif isinstance(obj, list) and obj and isinstance(obj[0], dict):
+        fields = ["ID"]
+        if "name" in obj[0]: fields.append("name")
+        if kwargs.get("fields"):
+            fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
+        output = utilities.tableH(obj, fields=fields, border='=')
     else:
-        for entry in DataTables[tablename]:
-            uvars = UserData[message.author.id].vars
-            if safe_eval(condition, {**uvars, **entry}):
-                output = dictstr(entry, kwargs.get("json"))
-                break
-        else:
-            output = "no match found"
+        raise AssertionError("Expected a python dictionary or a list of dictionaries")
     await reply(message, f"```\n{output}\n```")
 
 
@@ -157,21 +157,23 @@ async def var(message, *args, **kwargs):
 async def filter(message, *args, **kwargs):
     """Filter a data table based on a custom condition
 
+    Automatically stores the result in the variable "_"
+
     Arguments:
-        tablename -- the table to search
+        tablename  -- the table to filter. Accepts user variables
         *condition -- a python expression that may contain attribute names
                       example: HP>5000 and DEF<100
     
     Keyword Arguments:
         fields -- additional attributes to display in the output, separated by commas
     """
-    table = args[0]
-    condition = " ".join(args[1:])
     uvars = UserData[message.author.id].vars
-    if not condition: output = DataTables[table]
-    else: output = [e for e in DataTables[table] if safe_eval(condition, {**uvars, **e})]
+    table = safe_eval(args[0], uvars)
+    condition = " ".join(args[1:])
+    output = [e for e in table if safe_eval(condition, {**uvars, **e})]
+    uvars["_"] = output
     fields = ["ID"]
-    if "name" in DataTables[table][0]: fields.append("name")
+    if "name" in table[0]: fields.append("name")
     if kwargs.get("fields"):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
     if output: await reply(message, f"```\n{utilities.tableH(output, fields=fields, border='=')}\n```")
@@ -182,40 +184,44 @@ async def filter(message, *args, **kwargs):
 async def sort(message, *args, **kwargs):
     """Sort a data table based on an attribute (may also filter)
 
+    Automatically stores the result in the user variable "_"
+
     Arguments:
-        tablename -- the table to search
-        attribute -- the attribute to sort by
-                     to sort from highest to lowest, place a "-" sign in front
-        *filter -- a python expression that may contain attribute names
-                   will only output entries that make the expression true
-                   example: HP>5000 and DEF<100
+        table -- the table to sort. Accepts user variables
+        *key  -- a python expression to sort the objects by (ex: len(name))
+                 to sort from highest to lowest, place a "-" sign in front
 
     Keyword Arguments:
-        range -- the number of entries to display.  Default is 20.
-                 to display a section of the output, use the syntax: "start,end"
+        range  -- the number of entries to display.  Default is 20.
+                  to display a section of the output, use the syntax: "start,end"
         fields -- additional attributes to display in the output, separated by commas
+        filter -- a python expression that may contain attribute names
+                  will only output entries that make the expression true
+                  example: HP>5000 and DEF<100
     """
-    table = args[0]
-    key = args[1].strip('"')
-    data = DataTables[table]
-    condition = " ".join(args[2:])
+    uvars = UserData[message.author.id].vars
+    data = safe_eval(args[0], uvars)
+    key = " ".join(args[1:])
+    condition = kwargs.get("filter")
     if condition:
-        uvars = UserData[message.author.id].vars
-        data = [entry for entry in data if safe_eval(condition, {**uvars, **entry})]
-    if key.startswith("-"):
-        key = key[1:].strip(" ")
-        output = sorted(data, key=lambda x: x[key], reverse=True)
-    else:
-        output = sorted(data, key=lambda x: x[key])
+        condition = condition.strip('"')
+        data = (entry for entry in data if safe_eval(condition, {**uvars, **entry}))
+    reverse = False
+    if key.startswith("-"): key = key[1:]; reverse = True
+    mapping = map(lambda x: dict(value=safe_eval(key, {**uvars, **x}), **x), data)
+    output = list(sorted(mapping, key=lambda x: x["value"], reverse=reverse))
     range_ = list(map(int, kwargs.get("range", "20").strip('"').split(",")))
     if len(range_) == 1: range_.insert(0,0)
-    output = list(output)[range_[0]:range_[1]]
+    uvars["_"] = output
+    output = output[range_[0]:range_[1]]
     fields = ["ID"]
-    if "name" in DataTables[table][0]: fields.append("name")
+    reference = output[0]
+    if "name" in reference: fields.append("name")
+    if key in reference:
+        if key not in fields: fields.append(key)
+    else: fields.append("value")
     if kwargs.get("fields"):
         fields.extend((f.strip(" ") for f in kwargs["fields"].strip('"').split(",")))
-    else:
-        fields.append(key)
     if output: await reply(message, f"```\n{utilities.tableH(output, fields=fields, border='=')}\n```")
     else: await reply(message, "no match found")
 

@@ -284,7 +284,7 @@ class User:
     def __init__(self, ID):
         self.ID = ID
         self.temp = {}
-        self.vars = mfuncs.copy()
+        self.vars = dict(_=None, **mfuncs)
         self.responses = []
         self.live_response = {}
         self.save = None
