@@ -6,7 +6,7 @@ A discord utility bot for Golden Sun.
 $help        Provides information about the bot and its functions
 $datatables  Display the names of all the data tables
 $info        Display info about something
-$index       Index a data table
+$display     Display an object or list of objects
 $math        Evaluate a python expression
 $var         Set a variable equal to a python expression
 $filter      Filter a data table based on a custom condition
@@ -49,7 +49,12 @@ Depending on the context, you may use the attributes of objects by name.
 |$filter `djinndata HP>10 and element=="Venus"` | a list of all djinn that satisfy the expression |
  
 An easy way to view the attributes of objects in a data table is to use `$index [table] 0`,  
-which prints out all of the attributes and values of the first item in `[table]`.
+which prints out all of the attributes and values of the first item in `[table]`.  
+
+### User Variables
+By using the `$var` command, you can store values in a variable.  These variables are only available to 
+you.  They can be used anywhere that accepts a python expression.  Some functions automatically store 
+data in the default variable: `_`. Additionally, you may use any database table names as variables.
 
 ### Multi-Page Responses
 Some functions return a multi-page response.  By clicking on the emotes, you can view other  

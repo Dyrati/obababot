@@ -136,11 +136,18 @@ async def var(message, *args, **kwargs):
           characters may only contain alphanumerics or underscores
         - [expression] has identical syntax to the $math command
     
+    Keyword Arguments:
+        clear -- set to true to reset all of your user variables
+    
     Variables are stored per-user, and will be reset whenever the bot is 
     reset, which can happen at any time.  They may be used in any var or
     math commands.
     """
     ID = message.author.id
+    if kwargs.get("clear"):
+        UserData[ID].vars = dict(_=None, **mfuncs)
+        await reply(message, "Variables reset to default")
+        return
     m = re.match("\\" + prefix + r"var\s+([a-zA-Z_][a-zA-Z_0-9]*)\s*=\s*(.*)", message.content)
     varname, content = m.groups()
     args, kwargs = utilities.parse(content)
