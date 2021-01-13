@@ -19,8 +19,8 @@ with open(ROM1, "rb") as f:
             "ID": i,
             "rate": read(2),
             "level": read(2),
-            "enemy_groups": [read(2) for i in range(8)],
-            "group_ratios": [read(1) for i in range(8)],
+            "enemy_groups": [read(2) for j in range(8)],
+            "group_ratios": [read(1) for j in range(8)],
         })
 
     f.seek(0x09D170)  # encounters by map
@@ -114,7 +114,7 @@ with open(ROM2, "rb") as f:
             "unleash_ability": read(2),
             "unused": read(4),
             "element": elements[read(4)],
-            "equipped_effects": [[read(1), read(1), read(2)] for i in range(4)],
+            "equipped_effects": [[read(1), read(1), read(2)] for j in range(4)],
             "use_ability": read(2),
             "unused": read(2),
             "dropped_by": [],
@@ -158,14 +158,14 @@ with open(ROM2, "rb") as f:
             "turns": read(1),
             "HP_regen": read(1),
             "PP_regen": read(1),
-            "items": [read(2) for i in range(4)],
-            "item_quantities": [read(1) for i in range(4)],
+            "items": [read(2) for j in range(4)],
+            "item_quantities": [read(1) for j in range(4)],
             "elemental_stats_id": read(1),
             "IQ": read(1),
             "attack_pattern": read(1),
             "item_priority_flags": read(1),
-            "abilities": [abilities[read(2)] for i in range(8)],
-            "weaknesses": [read(1) for i in range(3)],
+            "abilities": [abilities[read(2)] for j in range(8)],
+            "weaknesses": [read(1) for j in range(3)],
             "unused": read(1),
             "coins": read(2),
             "item_drop": read(2),
@@ -182,15 +182,15 @@ with open(ROM2, "rb") as f:
             "name": pcnames[i],
             "element": elements[[0,2,3,1,0,2,3,1][i]],
             "unused": read(80),
-            "HP_growths": [read(2) for i in range(6)],
-            "PP_growths": [read(2) for i in range(6)],
-            "ATK_growths": [read(2) for i in range(6)],
-            "DEF_growths": [read(2) for i in range(6)],
-            "AGI_growths": [read(2) for i in range(6)],
-            "LCK_growths": [read(1) for i in range(6)],
-            "elevels": [read(1)/10 for i in range(4)],
+            "HP_growths": [read(2) for j in range(6)],
+            "PP_growths": [read(2) for j in range(6)],
+            "ATK_growths": [read(2) for j in range(6)],
+            "DEF_growths": [read(2) for j in range(6)],
+            "AGI_growths": [read(2) for j in range(6)],
+            "LCK_growths": [read(1) for j in range(6)],
+            "elevels": [read(1)/10 for j in range(4)],
             "starting_level": read(2),
-            "starting_items": [read(2) for i in range(14)],
+            "starting_items": [read(2) for j in range(14)],
         })
 
     f.seek(0x0C150C)  # summon data
@@ -216,15 +216,13 @@ with open(ROM2, "rb") as f:
 
     f.seek(0x0C15F4)  # class data
     classdata = []
+    classdataset = {}
     for i in range(244):
         classdata.append({
             "ID": i,
             "name": classes[i],
             "class_group": read(4),
-            "Venus": read(1),
-            "Mercury": read(1),
-            "Mars": read(1),
-            "Jupiter": read(1),
+            "elevels": [read(1) for j in range(4)],
             "HP": read(1),
             "PP": read(1),
             "ATK": read(1),
@@ -232,10 +230,17 @@ with open(ROM2, "rb") as f:
             "AGI": read(1),
             "LCK": read(1),
             "unused": read(2),
-            "abilities": [(read(2), read(2)) for i in range(16)],
-            "weaknesses": [read(1) for i in range(3)],
+            "abilities": [(read(2), read(2)) for j in range(16)],
+            "weaknesses": [read(1) for j in range(3)],
             "unused": read(1),
         })
+        # c1, c2 = classdataset.get(classdata[-1]["name"]), classdata[-1]
+        # if c1:
+        #     for suffix, e1, e2 in zip("EWFA", c1["elevels"], c2["elevels"]):
+        #         if e1 and e1 != e2: c1["name"] += f" ({suffix})"
+        #         if e2 and e1 != e2: c2["name"] += f" ({suffix})"
+        # classdataset["name"] = c1
+
 
     f.seek(0x0C6684)  # elemental data
     elementdata = []
@@ -287,8 +292,8 @@ with open(ROM2, "rb") as f:
             "ID": i,
             "rate": read(2),
             "level": read(2),
-            "enemy_groups": [read(2) for i in range(8)],
-            "group_ratios": [read(1) for i in range(8)],
+            "enemy_groups": [read(2) for j in range(8)],
+            "group_ratios": [read(1) for j in range(8)],
         })
 
     f.seek(0x0EE6D4)  # encounters by map
@@ -344,9 +349,9 @@ with open(ROM2, "rb") as f:
     for i in range(660):
         enemygroupdata.append({
             "ID": i,
-            "enemies": [enemynames[read(2)] for i in range(5)],
-            "min_amounts": [read(1) for i in range(5)],
-            "max_amounts": [read(1) for i in range(5)],
+            "enemies": [enemynames[read(2)] for j in range(5)],
+            "min_amounts": [read(1) for j in range(5)],
+            "max_amounts": [read(1) for j in range(5)],
             "positioning": read(1),
             "unused": read(3),
         })

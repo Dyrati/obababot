@@ -883,9 +883,9 @@
         "ID": 58,
         "name": "MI_SINDEN",
         "area_names": [
-            "Apojii Islands",
             "Yallam",
-            "Mikasalla"
+            "Mikasalla",
+            "Apojii Islands"
         ],
         "file_index": 1630,
         "area": 18,
@@ -2887,8 +2887,8 @@
         "name": "CH_ROOM01",
         "area_names": [
             "Champa",
-            "SE Angara Islet",
-            "West Indra Islet"
+            "West Indra Islet",
+            "SE Angara Islet"
         ],
         "file_index": 1667,
         "area": 51,
@@ -3711,8 +3711,8 @@
         "ID": 237,
         "name": "GIA_ROOM01",
         "area_names": [
-            "Contigo",
-            "Atteka Inlet"
+            "Atteka Inlet",
+            "Contigo"
         ],
         "file_index": 1684,
         "area": 64,
