@@ -1,7 +1,6 @@
 import json
 import sys
-import utilities
-
+from obababot import utilities
 
 ROM1 = sys.argv[1]
 ROM2 = sys.argv[2]
@@ -469,4 +468,5 @@ for name in [
         "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
         "room_references1", "room_references2", "enemygroupdata"
     ]:
-    with open(f"data/{name}.json", "w") as f: json.dump(globals()[name], f, indent=4)
+    with open(f"obababot/data/{name}.json", "w") as f:
+        json.dump(globals()[name], f, indent=4)

@@ -146,8 +146,8 @@
         "ID": 11,
         "name": "DLY_ROOM",
         "area_names": [
-            "North Osenia Islet",
-            "Daila"
+            "Daila",
+            "North Osenia Islet"
         ],
         "file_index": 1618,
         "area": 7,
@@ -883,8 +883,8 @@
         "ID": 58,
         "name": "MI_SINDEN",
         "area_names": [
-            "Yallam",
             "Apojii Islands",
+            "Yallam",
             "Mikasalla"
         ],
         "file_index": 1630,
@@ -2886,8 +2886,8 @@
         "ID": 183,
         "name": "CH_ROOM01",
         "area_names": [
-            "SE Angara Islet",
             "Champa",
+            "SE Angara Islet",
             "West Indra Islet"
         ],
         "file_index": 1667,
@@ -3142,8 +3142,8 @@
         "ID": 201,
         "name": "REM_OLD",
         "area_names": [
-            "Ancient Lemuria",
-            "Lemuria"
+            "Lemuria",
+            "Ancient Lemuria"
         ],
         "file_index": 1674,
         "area": 54,

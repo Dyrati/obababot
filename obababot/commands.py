@@ -1,12 +1,12 @@
 import discord
 import re
 import inspect
-import utilities
-from utilities import \
+from . import utilities
+from .utilities import \
     client, command, prefix, DataTables, UserData,\
     Namemaps, reply, dictstr, mfuncs
-import gsfuncs
-from safe_eval import safe_eval
+from . import gsfuncs
+from .safe_eval import safe_eval
 
 
 ### Register functions below ###

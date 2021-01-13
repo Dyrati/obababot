@@ -2,7 +2,7 @@ import asyncio
 import io
 import re
 from types import SimpleNamespace as SN
-from utilities import client, parse, ReactMessages
+from .utilities import client, parse, ReactMessages
 
 
 def to_async(func):
@@ -84,7 +84,9 @@ emojis = {
 for i in range(10):  # numbers
     emojis[str(i)] = f"{i}\ufe0f\u20e3"
 for i in range(26):  # letters
-    emojis[chr(0x61+i)] = f"\\U{0x1f1e6+i:08x}".encode().decode("unicode-escape")
+    emojis[chr(0x41+i)] = emojis[chr(0x61+i)] = f"\\U{0x1f1e6+i:08x}".encode().decode("unicode-escape")
+emojis["<"] = emojis["left"]
+emojis[">"] = emojis["right"]
 
 
 def terminal(on_ready=None, on_message=None, on_react=None):

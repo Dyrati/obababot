@@ -2,8 +2,8 @@ import re
 import io
 import json
 import inspect
-import utilities
-from utilities import command, DataTables, UserData, Namemaps, Text, reply
+from . import utilities
+from .utilities import command, DataTables, UserData, Namemaps, Text, reply
 
 
 def getclass(name, djinncounts, item=None):

@@ -4,9 +4,8 @@ import os
 import sys
 import time
 import traceback
-import utilities
-from utilities import client, UserData, ReactMessages, reply, parse, load_data
-import commands, gsfuncs, games
+from obababot import utilities, commands, gsfuncs, games
+from obababot.utilities import client, UserData, ReactMessages, reply, parse, load_data
 print("Imported modules    ")
 
 
@@ -54,7 +53,7 @@ async def on_reaction_add(reaction, user):
 
 load_data()
 if terminal_mode:
-    from emulator import terminal
+    from obababot.emulator import terminal
     terminal(on_ready=on_ready, on_message=on_message, on_react=on_reaction_add)
 else:
     print("Connecting...", end="\r")

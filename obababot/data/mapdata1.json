@@ -121,12 +121,12 @@
         "ID": 9,
         "name": "HAISIN",
         "area_names": [
-            "Altin Sanctum",
-            "Vault Sanctum",
-            "Vale Sanctum",
             "Xian Sanctum",
-            "Bilibin Sanctum",
             "Vale",
+            "Vale Sanctum",
+            "Altin Sanctum",
+            "Bilibin Sanctum",
+            "Vault Sanctum",
             "Sanctum"
         ],
         "file_index": 888,
@@ -262,8 +262,8 @@
         "ID": 17,
         "name": "DGN01N",
         "area_names": [
-            "Sol Sanctum",
-            "Elemental Star Room"
+            "Elemental Star Room",
+            "Sol Sanctum"
         ],
         "file_index": 896,
         "area": 4,
@@ -276,8 +276,8 @@
         "ID": 18,
         "name": "DGN01N2",
         "area_names": [
-            "Sol Sanctum",
-            "Elemental Star Room"
+            "Elemental Star Room",
+            "Sol Sanctum"
         ],
         "file_index": 897,
         "area": 4,
@@ -1111,8 +1111,8 @@
         "ID": 61,
         "name": "FUCHINRM",
         "area_names": [
-            "Fuchin Temple",
             "Xian",
+            "Fuchin Temple",
             "Lama Temple"
         ],
         "file_index": 926,
@@ -1396,8 +1396,8 @@
         "ID": 80,
         "name": "ARTN_DJ04",
         "area_names": [
-            "Altin Peak",
-            "Alpine Crossing"
+            "Alpine Crossing",
+            "Altin Peak"
         ],
         "file_index": 932,
         "area": 26,
@@ -1816,8 +1816,8 @@
         "ID": 105,
         "name": "LUNRM01",
         "area_names": [
-            "Lunpa",
             "Lunpa Temple",
+            "Lunpa",
             "Gate to Suhalla"
         ],
         "file_index": 940,
@@ -1923,8 +1923,8 @@
         "ID": 113,
         "name": "TAKARA00",
         "area_names": [
-            "Crossbone Isle",
-            "Crossbone Isle Cave"
+            "Crossbone Isle Cave",
+            "Crossbone Isle"
         ],
         "file_index": 946,
         "area": 39,
@@ -2080,8 +2080,8 @@
         "ID": 125,
         "name": "TAKARAB11",
         "area_names": [
-            "Pirate Ship",
-            "Crossbone Isle Cave"
+            "Crossbone Isle Cave",
+            "Pirate Ship"
         ],
         "file_index": 946,
         "area": 39,
@@ -2835,8 +2835,8 @@
         "ID": 173,
         "name": "UTO02",
         "area_names": [
-            "Babi Lighthouse",
-            "Tunnel Ruins"
+            "Tunnel Ruins",
+            "Babi Lighthouse"
         ],
         "file_index": 964,
         "area": 53,
@@ -2962,8 +2962,8 @@
         "ID": 179,
         "name": "RARIRM1",
         "area_names": [
-            "Lalivero",
-            "Lalivero Sanctum"
+            "Lalivero Sanctum",
+            "Lalivero"
         ],
         "file_index": 967,
         "area": 55,
@@ -3002,8 +3002,8 @@
         "ID": 182,
         "name": "VTO01",
         "area_names": [
-            "Venus Lighthouse Entry",
-            "Venus Lighthouse"
+            "Venus Lighthouse",
+            "Venus Lighthouse Entry"
         ],
         "file_index": 968,
         "area": 56,
@@ -3130,8 +3130,8 @@
         "ID": 187,
         "name": "VTO06",
         "area_names": [
-            "Lighthouse Aerie",
-            "Venus Lighthouse"
+            "Venus Lighthouse",
+            "Lighthouse Aerie"
         ],
         "file_index": 969,
         "area": 57,

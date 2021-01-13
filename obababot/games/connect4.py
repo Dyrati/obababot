@@ -1,5 +1,4 @@
-from utilities import client, command, reply, add_buttons, clear_buttons
-
+from ..utilities import client, command, reply, add_buttons, clear_buttons
 
 def v_iter(array):
     for x, col in enumerate(array):
