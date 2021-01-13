@@ -56,7 +56,7 @@ def getclass(name, djinncounts, item=None):
     for i in range(offsets[tableID], offsets[tableID+1]):
         classdata = DataTables["classdata"][i]
         if classdata["name"] == "?": continue
-        requirement = (classdata[e] for e in elements)
+        requirement = classdata["elevels"]
         if all(e1 >= e2 for e1, e2 in zip(elevels, requirement)):
             bestmatch = i
     return DataTables['classdata'][bestmatch]
