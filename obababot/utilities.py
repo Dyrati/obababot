@@ -87,9 +87,11 @@ def load_text():
 
 def namedict(jsonobj):
     out = {}
+    mbracket = re.compile(r" \(.\)$")
     for entry in jsonobj:
         if not entry.get("name"): continue
         name = entry["name"].lower()
+        name = mbracket.sub("", name)
         if out.get(name):
             out[name].append(entry)
         else:

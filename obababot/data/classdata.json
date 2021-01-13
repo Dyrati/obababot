@@ -1088,7 +1088,7 @@
     },
     {
         "ID": 40,
-        "name": "Swordsman",
+        "name": "Swordsman (E)",
         "class_group": "Swordsman",
         "elevels": [
             5,
@@ -1116,7 +1116,7 @@
     },
     {
         "ID": 41,
-        "name": "Defender",
+        "name": "Defender (E)",
         "class_group": "Swordsman",
         "elevels": [
             5,
@@ -1148,7 +1148,7 @@
     },
     {
         "ID": 42,
-        "name": "Cavalier",
+        "name": "Cavalier (E)",
         "class_group": "Swordsman",
         "elevels": [
             5,
@@ -1348,7 +1348,7 @@
     },
     {
         "ID": 50,
-        "name": "Swordsman",
+        "name": "Swordsman (F)",
         "class_group": "Swordsman",
         "elevels": [
             0,
@@ -1377,7 +1377,7 @@
     },
     {
         "ID": 51,
-        "name": "Defender",
+        "name": "Defender (F)",
         "class_group": "Swordsman",
         "elevels": [
             0,
@@ -1410,7 +1410,7 @@
     },
     {
         "ID": 52,
-        "name": "Cavalier",
+        "name": "Cavalier (F)",
         "class_group": "Swordsman",
         "elevels": [
             0,
@@ -1898,7 +1898,7 @@
     },
     {
         "ID": 71,
-        "name": "Illusionist",
+        "name": "Illusionist (E)",
         "class_group": "Apprentice",
         "elevels": [
             5,
@@ -1933,7 +1933,7 @@
     },
     {
         "ID": 72,
-        "name": "Enchanter",
+        "name": "Enchanter (E)",
         "class_group": "Apprentice",
         "elevels": [
             5,
@@ -1972,7 +1972,7 @@
     },
     {
         "ID": 73,
-        "name": "Conjurer",
+        "name": "Conjurer (E)",
         "class_group": "Apprentice",
         "elevels": [
             6,
@@ -2011,7 +2011,7 @@
     },
     {
         "ID": 74,
-        "name": "War Adept",
+        "name": "War Adept (E)",
         "class_group": "Apprentice",
         "elevels": [
             7,
@@ -2180,7 +2180,7 @@
     },
     {
         "ID": 81,
-        "name": "Illusionist",
+        "name": "Illusionist (F)",
         "class_group": "Apprentice",
         "elevels": [
             0,
@@ -2215,7 +2215,7 @@
     },
     {
         "ID": 82,
-        "name": "Enchanter",
+        "name": "Enchanter (F)",
         "class_group": "Apprentice",
         "elevels": [
             0,
@@ -2254,7 +2254,7 @@
     },
     {
         "ID": 83,
-        "name": "Conjurer",
+        "name": "Conjurer (F)",
         "class_group": "Apprentice",
         "elevels": [
             0,
@@ -2293,7 +2293,7 @@
     },
     {
         "ID": 84,
-        "name": "War Adept",
+        "name": "War Adept (F)",
         "class_group": "Apprentice",
         "elevels": [
             0,
@@ -2677,7 +2677,7 @@
     },
     {
         "ID": 100,
-        "name": "Seer",
+        "name": "Seer (W)",
         "class_group": "Seer",
         "elevels": [
             0,
@@ -2711,7 +2711,7 @@
     },
     {
         "ID": 101,
-        "name": "Diviner",
+        "name": "Diviner (W)",
         "class_group": "Seer",
         "elevels": [
             2,
@@ -2745,7 +2745,7 @@
     },
     {
         "ID": 102,
-        "name": "Shaman",
+        "name": "Shaman (W)",
         "class_group": "Seer",
         "elevels": [
             4,
@@ -2783,7 +2783,7 @@
     },
     {
         "ID": 103,
-        "name": "Druid",
+        "name": "Druid (W)",
         "class_group": "Seer",
         "elevels": [
             6,
@@ -2821,7 +2821,7 @@
     },
     {
         "ID": 104,
-        "name": "Oracle",
+        "name": "Oracle (W)",
         "class_group": "Seer",
         "elevels": [
             7,
@@ -2954,7 +2954,7 @@
     },
     {
         "ID": 110,
-        "name": "Seer",
+        "name": "Seer (A)",
         "class_group": "Seer",
         "elevels": [
             0,
@@ -2988,7 +2988,7 @@
     },
     {
         "ID": 111,
-        "name": "Diviner",
+        "name": "Diviner (A)",
         "class_group": "Seer",
         "elevels": [
             2,
@@ -3022,7 +3022,7 @@
     },
     {
         "ID": 112,
-        "name": "Shaman",
+        "name": "Shaman (A)",
         "class_group": "Seer",
         "elevels": [
             4,
@@ -3059,7 +3059,7 @@
     },
     {
         "ID": 113,
-        "name": "Druid",
+        "name": "Druid (A)",
         "class_group": "Seer",
         "elevels": [
             6,
@@ -3096,7 +3096,7 @@
     },
     {
         "ID": 114,
-        "name": "Oracle",
+        "name": "Oracle (A)",
         "class_group": "Seer",
         "elevels": [
             7,
@@ -3266,7 +3266,7 @@
     },
     {
         "ID": 121,
-        "name": "Conjurer",
+        "name": "Conjurer (M)",
         "class_group": "Seer",
         "elevels": [
             4,
@@ -3304,7 +3304,7 @@
     },
     {
         "ID": 122,
-        "name": "Dark Mage",
+        "name": "Dark Mage (M)",
         "class_group": "Seer",
         "elevels": [
             5,
@@ -3475,7 +3475,7 @@
     },
     {
         "ID": 130,
-        "name": "Pilgrim",
+        "name": "Pilgrim (W)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3507,7 +3507,7 @@
     },
     {
         "ID": 131,
-        "name": "Wanderer",
+        "name": "Wanderer (W)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3539,7 +3539,7 @@
     },
     {
         "ID": 132,
-        "name": "Ascetic",
+        "name": "Ascetic (W)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3615,7 +3615,7 @@
     },
     {
         "ID": 134,
-        "name": "Guru",
+        "name": "Guru (W)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3748,7 +3748,7 @@
     },
     {
         "ID": 140,
-        "name": "Pilgrim",
+        "name": "Pilgrim (A)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3780,7 +3780,7 @@
     },
     {
         "ID": 141,
-        "name": "Wanderer",
+        "name": "Wanderer (A)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3812,7 +3812,7 @@
     },
     {
         "ID": 142,
-        "name": "Ascetic",
+        "name": "Ascetic (A)",
         "class_group": "Pilgrim",
         "elevels": [
             0,
@@ -3886,7 +3886,7 @@
     },
     {
         "ID": 144,
-        "name": "Guru",
+        "name": "Guru (A)",
         "class_group": "Pilgrim",
         "elevels": [
             0,

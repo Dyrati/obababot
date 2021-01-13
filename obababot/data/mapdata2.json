@@ -883,9 +883,9 @@
         "ID": 58,
         "name": "MI_SINDEN",
         "area_names": [
-            "Yallam",
+            "Apojii Islands",
             "Mikasalla",
-            "Apojii Islands"
+            "Yallam"
         ],
         "file_index": 1630,
         "area": 18,
@@ -2887,8 +2887,8 @@
         "name": "CH_ROOM01",
         "area_names": [
             "Champa",
-            "West Indra Islet",
-            "SE Angara Islet"
+            "SE Angara Islet",
+            "West Indra Islet"
         ],
         "file_index": 1667,
         "area": 51,
@@ -3142,8 +3142,8 @@
         "ID": 201,
         "name": "REM_OLD",
         "area_names": [
-            "Lemuria",
-            "Ancient Lemuria"
+            "Ancient Lemuria",
+            "Lemuria"
         ],
         "file_index": 1674,
         "area": 54,
@@ -4988,8 +4988,8 @@
         "ID": 321,
         "name": "GET_ITEM",
         "area_names": [
-            "Icon Test",
-            "Face Test"
+            "Face Test",
+            "Icon Test"
         ],
         "file_index": 1719,
         "area": 93,

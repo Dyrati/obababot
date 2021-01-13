@@ -2,8 +2,13 @@ import json
 import sys
 from obababot import utilities
 
-ROM1 = sys.argv[1]
-ROM2 = sys.argv[2]
+if len(sys.argv) == 3:
+    ROM1 = sys.argv[1]
+    ROM2 = sys.argv[2]
+else:
+    ROM1 = input("ROM1: ")
+    ROM2 = input("ROM2: ")
+
 if __name__ == "__main__": utilities.Text = utilities.load_text()
 globals().update(**utilities.Text)
 
@@ -87,7 +92,7 @@ for map_ in mapdata1:
     if area in temp_areas:
         map_["area_names"].add(temp_areas[area])
 for map_ in mapdata1:
-    map_["area_names"] = list(map_["area_names"])
+    map_["area_names"] = list(sorted(map_["area_names"]))
 
 
 with open(ROM2, "rb") as f:
@@ -234,12 +239,12 @@ with open(ROM2, "rb") as f:
             "weaknesses": [read(1) for j in range(3)],
             "unused": read(1),
         })
-        # c1, c2 = classdataset.get(classdata[-1]["name"]), classdata[-1]
-        # if c1:
-        #     for suffix, e1, e2 in zip("EWFA", c1["elevels"], c2["elevels"]):
-        #         if e1 and e1 != e2: c1["name"] += f" ({suffix})"
-        #         if e2 and e1 != e2: c2["name"] += f" ({suffix})"
-        # classdataset["name"] = c1
+        c1, c2 = classdataset.get(classes[i]), classdata[-1]
+        if c1 and c1["name"] != "?" and not {c1["ID"], c2["ID"]} & {121, 122}:
+            for suffix, e1, e2 in zip("EWFA", c1["elevels"], c2["elevels"]):
+                if e1 and e1 != e2: c1["name"] += f" ({suffix})"
+                if e2 and e1 != e2: c2["name"] += f" ({suffix})"
+        classdataset[classes[i]] = c2
 
 
     f.seek(0x0C6684)  # elemental data
@@ -424,6 +429,8 @@ for class_ in classdata:
     class_["weaknesses"] = [ability_effects[i] for i in class_["weaknesses"] if i]
     for k in ["HP", "PP", "ATK", "DEF", "AGI", "LCK"]:
         class_[k] /= 10
+classdata[121]["name"] += " (M)"
+classdata[122]["name"] += " (M)"
 
 # Element Presets
 for entry in elementdata:
@@ -456,7 +463,7 @@ for map_ in mapdata2:
     if area in temp_areas:
         map_["area_names"].add(temp_areas[area])
 for map_ in mapdata2:
-    map_["area_names"] = list(map_["area_names"])
+    map_["area_names"] = list(sorted(map_["area_names"]))
 
 
 # Enemy Groups

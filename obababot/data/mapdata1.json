@@ -107,8 +107,8 @@
         "ID": 8,
         "name": "HAIROOM2",
         "area_names": [
-            "Vale",
-            "Babi's Palace"
+            "Babi's Palace",
+            "Vale"
         ],
         "file_index": 887,
         "area": 3,
@@ -121,13 +121,13 @@
         "ID": 9,
         "name": "HAISIN",
         "area_names": [
-            "Bilibin Sanctum",
-            "Vale",
             "Altin Sanctum",
+            "Bilibin Sanctum",
             "Sanctum",
+            "Vale",
             "Vale Sanctum",
-            "Xian Sanctum",
-            "Vault Sanctum"
+            "Vault Sanctum",
+            "Xian Sanctum"
         ],
         "file_index": 888,
         "area": 3,
@@ -262,8 +262,8 @@
         "ID": 17,
         "name": "DGN01N",
         "area_names": [
-            "Sol Sanctum",
-            "Elemental Star Room"
+            "Elemental Star Room",
+            "Sol Sanctum"
         ],
         "file_index": 896,
         "area": 4,
@@ -276,8 +276,8 @@
         "ID": 18,
         "name": "DGN01N2",
         "area_names": [
-            "Sol Sanctum",
-            "Elemental Star Room"
+            "Elemental Star Room",
+            "Sol Sanctum"
         ],
         "file_index": 897,
         "area": 4,
@@ -290,8 +290,8 @@
         "ID": 19,
         "name": "SOLENT",
         "area_names": [
-            "Sol Sanctum",
-            "Sol Entrance"
+            "Sol Entrance",
+            "Sol Sanctum"
         ],
         "file_index": 895,
         "area": 4,
@@ -473,8 +473,8 @@
         "ID": 32,
         "name": "BIRIU1",
         "area_names": [
-            "Bilibin Treasury",
-            "Bilibin"
+            "Bilibin",
+            "Bilibin Treasury"
         ],
         "file_index": 907,
         "area": 8,
@@ -552,8 +552,8 @@
         "ID": 38,
         "name": "KRM_B1",
         "area_names": [
-            "Kolima Tunnel",
-            "Kolima"
+            "Kolima",
+            "Kolima Tunnel"
         ],
         "file_index": 911,
         "area": 11,
@@ -875,8 +875,8 @@
         "ID": 51,
         "name": "IMI_RM01",
         "area_names": [
-            "Imil Sanctum",
-            "Imil"
+            "Imil",
+            "Imil Sanctum"
         ],
         "file_index": 921,
         "area": 17,
@@ -1111,9 +1111,9 @@
         "ID": 61,
         "name": "FUCHINRM",
         "area_names": [
+            "Fuchin Temple",
             "Lama Temple",
-            "Xian",
-            "Fuchin Temple"
+            "Xian"
         ],
         "file_index": 926,
         "area": 20,
@@ -1396,8 +1396,8 @@
         "ID": 80,
         "name": "ARTN_DJ04",
         "area_names": [
-            "Altin Peak",
-            "Alpine Crossing"
+            "Alpine Crossing",
+            "Altin Peak"
         ],
         "file_index": 932,
         "area": 26,
@@ -1763,8 +1763,8 @@
         "ID": 101,
         "name": "KARERM02",
         "area_names": [
-            "Kalay Sanctum",
-            "Kalay"
+            "Kalay",
+            "Kalay Sanctum"
         ],
         "file_index": 937,
         "area": 32,
@@ -1816,9 +1816,9 @@
         "ID": 105,
         "name": "LUNRM01",
         "area_names": [
+            "Gate to Suhalla",
             "Lunpa",
-            "Lunpa Temple",
-            "Gate to Suhalla"
+            "Lunpa Temple"
         ],
         "file_index": 940,
         "area": 34,
@@ -1923,8 +1923,8 @@
         "ID": 113,
         "name": "TAKARA00",
         "area_names": [
-            "Crossbone Isle Cave",
-            "Crossbone Isle"
+            "Crossbone Isle",
+            "Crossbone Isle Cave"
         ],
         "file_index": 946,
         "area": 39,
@@ -2224,8 +2224,8 @@
         "ID": 136,
         "name": "TORERM01",
         "area_names": [
-            "Tolbi Sanctum",
-            "Tolbi"
+            "Tolbi",
+            "Tolbi Sanctum"
         ],
         "file_index": 950,
         "area": 40,
@@ -2277,8 +2277,8 @@
         "ID": 140,
         "name": "KORO02",
         "area_names": [
-            "Colosseum Tunnel",
-            "Colosseum"
+            "Colosseum",
+            "Colosseum Tunnel"
         ],
         "file_index": 953,
         "area": 42,
@@ -2717,8 +2717,8 @@
         "ID": 168,
         "name": "SUHARM01",
         "area_names": [
-            "Suhalla Sanctum",
-            "Suhalla"
+            "Suhalla",
+            "Suhalla Sanctum"
         ],
         "file_index": 962,
         "area": 51,
@@ -2835,8 +2835,8 @@
         "ID": 173,
         "name": "UTO02",
         "area_names": [
-            "Tunnel Ruins",
-            "Babi Lighthouse"
+            "Babi Lighthouse",
+            "Tunnel Ruins"
         ],
         "file_index": 964,
         "area": 53,
@@ -2917,8 +2917,8 @@
         "ID": 176,
         "name": "BTO01",
         "area_names": [
-            "Babi Lighthouse Entry",
-            "Babi Lighthouse"
+            "Babi Lighthouse",
+            "Babi Lighthouse Entry"
         ],
         "file_index": 965,
         "area": 54,
@@ -2935,8 +2935,8 @@
         "ID": 177,
         "name": "B_MICHI01",
         "area_names": [
-            "Road to Babi Lighthouse",
-            "Babi Lighthouse"
+            "Babi Lighthouse",
+            "Road to Babi Lighthouse"
         ],
         "file_index": 965,
         "area": 54,
@@ -2962,8 +2962,8 @@
         "ID": 179,
         "name": "RARIRM1",
         "area_names": [
-            "Lalivero Sanctum",
-            "Lalivero"
+            "Lalivero",
+            "Lalivero Sanctum"
         ],
         "file_index": 967,
         "area": 55,
