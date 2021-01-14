@@ -365,9 +365,8 @@ with open(ROM2, "rb") as f:
 itemtypes = [
     "Other", "Weapon", "Armor", "Armgear", "Headgear", "Boots", "Psy-item", 
     "Trident", "Ring", "Shirt", "Class-item", "Elemental Star"]
-flagdesc = ["Curses when equipped", "Can't be removed", "Rare item", "Important item",
-        "Stackable", "Not transferable"]
-usetypes = ["Multi-Use", "Consumable", "Can Break", "Bestows ability", "Item transforms when used"]
+flagdesc = ["Cursed", "Not removable", "Rare item", "Important item", "Stackable", "Not transferable"]
+usetypes = ["Multi-Use", "Consumable", "Can Break", "Bestows ability", "Transforms when used"]
 for item in itemdata:
     item.pop("unused")
     item["item_type"] = itemtypes[item["item_type"]]

@@ -277,8 +277,8 @@
         "price": 13600,
         "item_type": "Weapon",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -362,7 +362,7 @@
         "price": 30,
         "item_type": "Weapon",
         "flags": [
-            "Can't be removed"
+            "Not removable"
         ],
         "equippable_by": [
             "Isaac",
@@ -955,8 +955,8 @@
         "price": 16000,
         "item_type": "Weapon",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -1254,8 +1254,8 @@
         "price": 13800,
         "item_type": "Weapon",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -1540,8 +1540,8 @@
         "price": 10000,
         "item_type": "Weapon",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -2025,8 +2025,8 @@
         "price": 17000,
         "item_type": "Armor",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -4056,8 +4056,8 @@
         "price": 7500,
         "item_type": "Headgear",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -4629,7 +4629,7 @@
         "attack": 0,
         "defense": 0,
         "unleash_rate": 0,
-        "use_type": "Item transforms when used",
+        "use_type": "Transforms when used",
         "unleash_ability": "Nothing",
         "element": "Neutral",
         "equipped_effects": {},
@@ -5601,7 +5601,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -5627,7 +5627,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -5653,7 +5653,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -5679,7 +5679,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -5705,7 +5705,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -6224,7 +6224,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -6250,7 +6250,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -6276,7 +6276,7 @@
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
-            "Can't be removed",
+            "Not removable",
             "Important item",
             "Not transferable"
         ],
@@ -7006,8 +7006,8 @@
         "price": 24200,
         "item_type": "Weapon",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -8486,8 +8486,8 @@
         "price": 14000,
         "item_type": "Armor",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -9187,8 +9187,8 @@
         "price": 11200,
         "item_type": "Armgear",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -9747,8 +9747,8 @@
         "price": 12800,
         "item_type": "Headgear",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
@@ -10217,8 +10217,8 @@
         "price": 15800,
         "item_type": "Headgear",
         "flags": [
-            "Curses when equipped",
-            "Can't be removed",
+            "Cursed",
+            "Not removable",
             "Rare item"
         ],
         "equippable_by": [
