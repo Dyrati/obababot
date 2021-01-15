@@ -128,8 +128,7 @@ build_dates = {
 
 def readsav(data):
     f = io.BytesIO(data)
-    def read(size):
-        return int.from_bytes(f.read(size), "little")
+    read = lambda size: int.from_bytes(f.read(size), "little")
     headers = []
     for i in range(16):
         f.seek(0x1000*i)
@@ -151,6 +150,7 @@ def readsav(data):
         f.seek(slots[i]["addr"] + 0x10)
         data = f.read(0x2FF0)
         read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
+        string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
         version = build_dates[read(0x26, 2) & ~0x8000]
         if "The Lost Age" in version: GAME = 2; offset = 0x20
         else: GAME = 1; offset = 0
@@ -160,7 +160,7 @@ def readsav(data):
         filedata.append({
             "version": version,
             "slot": i,
-            "leader": data[:12].decode(),
+            "leader": string(0, 12),
             "party_members": read(0x40, 1),
             "framecount": read(0x244, 4),
             "summons": read(0x24C, 4),
@@ -169,7 +169,7 @@ def readsav(data):
             "door_number": read(0x402+offset, 2),
             "party_positions": positions,
             "party": [{
-                "name": data[base:base+15].decode(),
+                "name": string(base, 15),
                 "level": read(base+0xF, 1),
                 "element": [0,2,3,1,0,2,3,1][p],
                 "base_stats": {
@@ -214,11 +214,9 @@ def readsav(data):
                 "set_djinncounts": [read(base+0x11C+j, 1) for j in range(4)],
                 "exp": read(base+0x124, 4),
                 "class": read(base+0x129, 1),
+                "status": [read(base+j, 1) for j in (0x130, 0x131, 0x140)],
             } for p,base in zip(positions, addresses)],
         })
-    partysummons = 0
-    partydjinn = 0
-    display = []
     for f in filedata:
         f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
         f["summons"] = [DataTables["summondata"][i]["name"] for i in range(33) if f["summons"] & 2**i]
@@ -241,8 +239,10 @@ def readsav(data):
             pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
             pc["set_djinn"] = [Text["djinn"][i] for i in range(80) if pc["set_djinn"] & 2**i]
             pc["elevels"] = pc["set_djinncounts"].copy()
-            for i in range(4):
-                if Text["elements"][i] == pc["element"]: pc["elevels"][i] += 5
+            pc["elevels"][Text["elements"].index(pc["element"])] += 5
+            pc["status"].insert(2, int(pc["status"][1]==2))
+            pc["status"][1] = int(pc["status"][1]==1)
+            pc["status"] = [n for s,n in zip(pc["status"], ("Curse","Poison","Venom","Haunt")) if s]
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
         seconds %= 60; minutes %= 60
         f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
@@ -291,9 +291,11 @@ def preview(data):
         pages[slot] = []
         for pc in f["party"]:
             out = utilities.Charmap()
-            out.addtext(pc["name"], (0, 0))[0]
-            out.addtext(pc["class"], (0, 1))[0]
-            out.addtext(utilities.dictstr({"LV": pc["level"], "EXP": pc["exp"]}), (14,0))
+            x,y = out.addtext(f"{pc['name']}\n{pc['class']}", (0, 0))
+            x,y = out.addtext(f"Lvl {pc['level']}\nExp {pc['exp']}", (x+3,0))
+            x += 2
+            for i in range(0, len(pc["status"]), 2):
+                x,y = out.addtext("\n".join(pc["status"][i:i+2]), (x+1, 0))
             base = pc["base_stats"]
             stats = pc["stats"]
             out.addtext("Stats", (0, 3))
