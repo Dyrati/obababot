@@ -276,7 +276,8 @@ async def damage(message, *args, **kwargs):
     for key in ("atk", "pow", "hp", "def", "res", "range"):
         if kwargs.get(key) is not None:
             kwargs[key.upper()] = int(kwargs.pop(key))
-    await reply(message, f"`{gsfuncs.damage(ability, **kwargs)}`")
+    damage = gsfuncs.damage(ability, **kwargs)
+    await reply(message, f"`{damage}-{damage+3}`")
 
 
 async def handlesav(message, data):

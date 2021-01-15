@@ -74,30 +74,30 @@ def damage(
         if DEF is None: DEF = enemy["DEF"]
         estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
         if RES is None: RES = estats.get(ability["element"] + "_Res")
+    int_256 = lambda x: int(256*x)/256
     damage_type = ability["damage_type"]
     if damage_type == "Healing":
         damage = ability["power"]*POW/100
     elif damage_type == "Added Damage":
         damage = (ATK-DEF)/2 + ability["power"]
         if ability["element"] != "Neutral":
-            damage *= 1 + (POW-RES)/400
+            damage *= int_256(1 + (POW-RES)/400)
     elif damage_type == "Multiplier":
         damage = (ATK-DEF)/2*ability["power"]/10
         if ability["element"] != "Neutral":
-            damage *= 1 + (POW-RES)/400
+            damage *= int_256(1 + (POW-RES)/400)
     elif damage_type == "Base Damage":
-        damage = ability["power"]*(1 + (POW-RES)/200)
+        damage = ability["power"]*int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .8, .6, .4, .2, .1][RANGE]
     elif damage_type == "Base Damage (Diminishing)":
-        damage = ability["power"]*(1 + (POW-RES)/200)
+        damage = ability["power"]*int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .5, .3, .1, .1, .1][RANGE]
     elif damage_type == "Summon":
         summon = Namemaps["summondata"][abilityname][0]
-        damage = summon["power"] + summon["hp_multiplier"]*min(10000, HP)
-        damage *= (1 + (POW-RES)/200)
+        damage = summon["power"] + int(summon["hp_multiplier"]*min(10000, HP))
+        damage *= int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
-    if int(damage) == damage: damage = int(damage)
-    return damage
+    return int(damage)
 
 
 def roomname(gamenumber, mapnumber, doornumber):
@@ -160,16 +160,16 @@ def readsav(data):
         filedata.append({
             "version": version,
             "slot": i,
+            "leader": data[:12].decode(),
             "party_members": read(0x40, 1),
             "framecount": read(0x244, 4),
             "summons": read(0x24C, 4),
             "coins": read(0x250, 4),
             "map_number": read(0x400+offset, 2),
             "door_number": read(0x402+offset, 2),
-            "leader": read(0x434+offset, 1),
             "party_positions": positions,
             "party": [{
-                "name": [read(base+j, 1) for j in range(15)],
+                "name": data[base:base+15].decode(),
                 "level": read(base+0xF, 1),
                 "element": [0,2,3,1,0,2,3,1][p],
                 "base_stats": {
@@ -225,7 +225,6 @@ def readsav(data):
         f["area"] = roomname(GAME, f["map_number"], f["door_number"])
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:
-            pc["name"] = "".join([chr(c) for c in pc["name"] if c])
             pc["element"] = Text["elements"][pc["element"]]
             pc["abilities"] = [Text["abilities"][i & 0x3FF] for i in pc["abilities"] if i & 0x3FF]
             pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
@@ -247,8 +246,6 @@ def readsav(data):
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
         seconds %= 60; minutes %= 60
         f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
-        for p, pc in zip(positions, f["party"]):
-            if p == f["leader"]: f["leader"] = pc["name"]; break
         f["djinncounts"] = djinncounts
     return filedata
 
