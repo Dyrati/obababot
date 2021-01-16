@@ -48,11 +48,23 @@ async def reply(message, text):
     return sent
 
 
-async def send(url, text):
-    ID_list = url[len("https://discord.com/channels/"):].split("/")
-    serverID, channelID = (int(i) for i in ID_list)
-    channel = client.get_guild(serverID).get_channel(channelID)
-    await channel.send(text)
+async def from_url(url):
+    ids = list(map(int, url[len("https://discord.com/channels/"):].split("/")))
+    server = client.get_guild(ids[0])
+    channel = server.get_channel(ids[1])
+    if len(ids) == 3:
+        message = await channel.fetch_message(ids[2])
+        return server, channel, message
+    else:
+        return server, channel
+
+
+async def get_attachment(message, *args):
+    if not message.attachments:
+        assert args and args[0].startswith("https://discord.com/channels/"), \
+            "Expected an attachment or a link to a message with an attachment"
+        server, channel, message = await from_url(args[0])
+    return message.attachments[0]
 
 
 def load_text():
@@ -302,7 +314,7 @@ class User:
         self.vars = dict(_=None, **mfuncs)
         self.responses = []
         self.live_response = {}
-        self.save = None
+        self.party = None
 
 
 async def add_buttons(message, buttons, func):

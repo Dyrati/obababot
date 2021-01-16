@@ -283,8 +283,8 @@ async def damage(message, *args, **kwargs):
 async def handlesav(message, data):
     headers = (data[addr:addr+16] for addr in range(0,0x10000,0x1000))
     assert any((h[:7] == b'CAMELOT' and h[7] <= 0xF for h in headers)), "No valid saves detected"
-    UserData[message.author.id].save = data
-    pages = gsfuncs.preview(data)
+    filedata = gsfuncs.readsav(data)
+    pages = gsfuncs.preview(filedata)
     slots = [k for k in pages if isinstance(k, int)]
     slot = slots[0]
     page = 0
@@ -325,23 +325,27 @@ async def upload(message, *args, **kwargs):
         link -- (optional) a link to a message with an attached file
                 if not included, you must attach a file to the message
     """
-    if message.attachments:
-        attachment = message.attachments[0]
-    else:
-        assert args and args[0].startswith("https://discord.com/channels/"), \
-            "Expected an attachment or a link to a message with an attachment"
-        ID_list = args[0][len("https://discord.com/channels/"):].split("/")
-        serverID, channelID, messageID = (int(i) for i in ID_list)
-        server = client.get_guild(serverID)
-        channel = server.get_channel(channelID)
-        m = await channel.fetch_message(messageID)
-        attachment = m.attachments[0]
+    attachment = await utilities.get_attachment(message, *args)
     data = await attachment.read()
-    url = attachment.url
-    if url.endswith(".sav") or url.endswith(".SaveRAM"):
+    if attachment.url.endswith(".sav") or attachment.url.endswith(".SaveRAM"):
         await handlesav(message, data)
     else:
         assert 0, "Unhandled file type"
+
+
+@command
+async def loadparty(message, *args, **kwargs):
+    attachment = await utilities.get_attachment(message, *args)
+    data = await attachment.read()
+    url = attachment.url
+    assert url.endswith(".sav") or url.endswith(".SaveRAM"), "Invalid file extension"
+    filedata = gsfuncs.readsav(data)
+    slot = int(args[0]) if args else 0
+    for f in filedata:
+        if f["slot"] == slot: break
+    else: assert 0, "Slot not found"
+    UserData[message.author.id].party = f["party"]
+    for pc in f["party"]: print(pc["name"])
 
 
 @command

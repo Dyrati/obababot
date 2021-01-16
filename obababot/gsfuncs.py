@@ -65,14 +65,13 @@ def getclass(name, djinncounts, item=None):
 def damage(
         abilityname, ATK=None, POW=None, target=None,
         HP=None, DEF=None, RES=None, RANGE=None):
-    elements = ["Venus", "Mercury", "Mars", "Jupiter"]
     ability = DataTables.get("abilitydata", abilityname)
     if target:
         enemy = DataTables.get("enemydata", target)
         if HP is None: HP = enemy["HP"]
         if DEF is None: DEF = enemy["DEF"]
-        estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
-        if RES is None: RES = estats.get(ability["element"] + "_Res")
+        epos = Text["elements"].index(ability["element"])
+        if RES is None: RES = enemy["eres"][epos]
     int_256 = lambda x: int(256*x)/256
     damage_type = ability["damage_type"]
     if damage_type == "Healing":
@@ -129,7 +128,6 @@ def readsav(data):
     for save in valid_saves:
         if save["priority"] > slots.get(save["slot"], -1):
             slots[save["slot"]] = save
-    filedata = []
     build_dates = {
         0x1C85: "Golden Sun - The Lost Age (UE)",
         0x1D97: "Golden Sun - The Lost Age (G)",
@@ -143,6 +141,7 @@ def readsav(data):
         0x1713: "Golden Sun (F)",
         0x1886: "Golden Sun (I)",
         0x159C: "Golden Sun (J)"}
+    filedata = []
     for i in range(3):
         if not slots.get(i): continue
         f.seek(slots[i]["addr"] + 0x10)
@@ -177,14 +176,8 @@ def readsav(data):
                     "DEF": read(base+0x1A, 2),
                     "AGI": read(base+0x1C, 2),
                     "LCK": read(base+0x1E, 1),
-                    "venus_pow": read(base+0x24, 2),
-                    "venus_res": read(base+0x26, 2),
-                    "merc_pow": read(base+0x28, 2),
-                    "merc_res": read(base+0x2A, 2),
-                    "mars_pow": read(base+0x2C, 2),
-                    "mars_res": read(base+0x2E, 2),
-                    "jup_pow": read(base+0x30, 2),
-                    "jup_res": read(base+0x32, 2),
+                    "epow": [read(base+0x24+4*j, 2) for j in range(4)],
+                    "eres": [read(base+0x26+4*j, 2) for j in range(4)],
                 },
                 "stats": {
                     "HP_max": read(base+0x34, 2),
@@ -195,14 +188,8 @@ def readsav(data):
                     "DEF": read(base+0x3e, 2),
                     "AGI": read(base+0x40, 2),
                     "LCK": read(base+0x42, 1),
-                    "ven_pow": read(base+0x48, 2),
-                    "ven_res": read(base+0x4a, 2),
-                    "merc_pow": read(base+0x4c, 2),
-                    "merc_res": read(base+0x4e, 2),
-                    "mars_pow": read(base+0x50, 2),
-                    "mars_res": read(base+0x52, 2),
-                    "jup_pow": read(base+0x54, 2),
-                    "jup_res": read(base+0x56, 2),
+                    "epow": [read(base+0x48+4*j, 2) for j in range(4)],
+                    "eres": [read(base+0x4A+4*j, 2) for j in range(4)],
                 },
                 "abilities": [read(base+0x58+4*j, 4) for j in range(32)],
                 "inventory": [read(base+0xD8+2*j, 2) for j in range(15)],
@@ -248,8 +235,7 @@ def readsav(data):
     return filedata
 
 
-def preview(data):
-    filedata = readsav(data)
+def preview(filedata):
     pages = {}
     slots = []
     used_slots = [f["slot"] for f in filedata]
@@ -320,8 +306,8 @@ def preview(data):
                     {"Estats": name.title(),
                     "Djinn": f"{pc['set_djinncounts'][i]}/{pc['djinncounts'][i]}",
                     "Level": pc["elevels"][i],
-                    "Power": pc["stats"][f"{name}_pow"],
-                    "Resist": pc["stats"][f"{name}_res"]})
+                    "Power": pc["stats"]["epow"][i],
+                    "Resist": pc["stats"]["eres"][i]})
             out.addtext(utilities.tableV(elementdata), (x+3,2))
             out.addtext("Items", (0, 8))
             inventory = []

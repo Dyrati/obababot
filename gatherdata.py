@@ -160,6 +160,9 @@ with open(ROM2, "rb") as f:
             "DEF": read(2),
             "AGI": read(2),
             "LCK": read(1),
+            "elevels": None,
+            "epow": None,
+            "eres": None,
             "turns": read(1),
             "HP_regen": read(1),
             "PP_regen": read(1),
@@ -253,19 +256,11 @@ with open(ROM2, "rb") as f:
         elementdata.append({
             "ID": i,
             "unused": read(4),
-            "Venus_lvl": read(1),
-            "Mercury_lvl": read(1),
-            "Mars_lvl": read(1),
-            "Jupiter_lvl": read(1),
-            "Venus_Pow": read(2),
-            "Venus_Res": read(2),
-            "Mercury_Pow": read(2),
-            "Mercury_Res": read(2),
-            "Mars_Pow": read(2),
-            "Mars_Res": read(2),
-            "Jupiter_Pow": read(2),
-            "Jupiter_Res": read(2),
+            "elevels": [read(1) for j in range(4)],
+            "epowres": [(read(2), read(2)) for j in range(4)],
         })
+        entry = elementdata[-1]
+        entry["epow"], entry["eres"] = zip(*entry.pop("epowres"))
     
     f.seek(0x0C6BB0)  # djinn data
     djinndata = []
@@ -393,6 +388,8 @@ for move in abilitydata:
 # Enemies
 for enemy in enemydata:
     enemy.pop("unused")
+    for name in ("elevels", "epow", "eres"):
+        enemy[name] = elementdata[enemy["elemental_stats_id"]][name]
     enemy["items"] = [items[i] for i in enemy["items"] if i]
     enemy["items"] = dict(zip(enemy["items"], enemy.pop("item_quantities")))
     if enemy["name"] in ("Dullahan", "Serpent"): enemy["HP_regen"] *= 10
