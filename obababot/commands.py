@@ -62,10 +62,10 @@ async def info(message, *args, **kwargs):
              this argument selects one of them
         json -- set equal to 1 or "true" to format the output as json
     """
-    name = " ".join(args).lower()
-    for table, mapping in Namemaps.items():
-        if name in mapping:
-            entries = mapping[name]
+    name = " ".join(args)
+    for table in Namemaps:
+        entries = Namemaps.get_all(table, name)
+        if entries:
             if kwargs.get("i"): entries = [entries[int(kwargs.get("i"))]]
             for entry in entries:
                 await reply(message, f"```\n{dictstr(entry, js=kwargs.get('json'))}\n```")

@@ -29,7 +29,7 @@ async def on_message(message):
     UserData[ID].temp["raw"] = kwargs.get("raw")
     try: await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
-        # await reply(message, traceback.format_exc())
+        await reply(message, traceback.format_exc())
         args = f": {e.args[0]}" if e.args else ""
         await reply(message, e.__class__.__name__ + args)
     UserData[ID].temp.clear()

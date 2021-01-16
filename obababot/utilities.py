@@ -85,23 +85,35 @@ def load_text():
     return text
 
 
-def namedict(jsonobj):
-    out = {}
-    mbracket = re.compile(r" \(.\)$")
-    for entry in jsonobj:
-        if not entry.get("name"): continue
-        name = entry["name"].lower()
-        name = mbracket.sub("", name)
-        if out.get(name):
-            out[name].append(entry)
+class NameMapping(dict):
+    def __init__(self, dictlist=None):
+        if dictlist: self.new(dictlist)
+        self._mbracket = re.compile(r" \(.\)$")
+    def new(self, dictlist):
+        for k,v in dictlist.items():
+            self[k] = {}
+            for obj in v: self.add(k, obj)
+    def add(self, tablename, obj):
+        if not obj.get("name"): return
+        name = self.normalize(obj["name"])
+        if name in self[tablename]:
+            self[tablename][name].append(obj)
         else:
-            out[name] = [entry]
-        out[name.replace("'","")] = out[name]
-        out[name.replace("-"," ")] = out[name]
-    return out
+            self[tablename][name] = [obj]
+    def get(self, tablename, name, instance=0):
+        name = self.normalize(name)
+        if name not in self[tablename]: return None
+        else: return self[tablename][name][instance]
+    def get_all(self, tablename, name):
+        name = self.normalize(name)
+        if name not in self[tablename]: return None
+        else: return self[tablename][name]
+    def normalize(self, name):
+        name = self._mbracket.sub("", name)
+        return name.lower().replace("'","").replace("-"," ")
 
 
-DataTables, Namemaps, Text = {}, {}, {}
+DataTables, Namemaps, Text = {}, NameMapping(), {}
 def load_data():
     global DataTables, Namemaps, Text
     dirname = os.path.dirname(__file__)
@@ -119,8 +131,7 @@ def load_data():
                     entry["HP"] = min(0x3FFF, int(1.5*entry["HP"]))
                     entry["ATK"] = int(1.25*entry["ATK"])
                     entry["DEF"] = int(1.25*entry["DEF"])
-    for k,v in DataTables.items():
-        Namemaps[k] = namedict(v)
+    Namemaps.new(DataTables)
     Text.update(**load_text())
     mfuncs.update(**DataTables)
     print("Loaded database    ")

@@ -65,11 +65,10 @@ def getclass(name, djinncounts, item=None):
 def damage(
         abilityname, ATK=None, POW=None, target=None,
         HP=None, DEF=None, RES=None, RANGE=None):
-    abilityname = abilityname.lower()
     elements = ["Venus", "Mercury", "Mars", "Jupiter"]
-    ability = Namemaps["abilitydata"][abilityname][0]
+    ability = Namemaps.get("abilitydata", abilityname)
     if target:
-        enemy = Namemaps["enemydata"][target][0]
+        enemy = Namemaps.get("enemydata", target)
         if HP is None: HP = enemy["HP"]
         if DEF is None: DEF = enemy["DEF"]
         estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
@@ -93,7 +92,7 @@ def damage(
         damage = ability["power"]*int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .5, .3, .1, .1, .1][RANGE]
     elif damage_type == "Summon":
-        summon = Namemaps["summondata"][abilityname][0]
+        summon = Namemaps.get("summondata", abilityname)
         damage = summon["power"] + int(summon["hp_multiplier"]*min(10000, HP))
         damage *= int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
@@ -111,20 +110,6 @@ def roomname(gamenumber, mapnumber, doornumber):
             if door in (0x7fff, doornumber): return r["name"]
     return roomtable[0]["name"]
 
-
-build_dates = {
-    0x1C85: "Golden Sun - The Lost Age (UE)",
-    0x1D97: "Golden Sun - The Lost Age (G)",
-    0x1DC7: "Golden Sun - The Lost Age (S)",
-    0x1D98: "Golden Sun - The Lost Age (F)",
-    0x1DC8: "Golden Sun - The Lost Age (I)",
-    0x198A: "Golden Sun - The Lost Age (J)",
-    0x1652: "Golden Sun (UE)",
-    0x1849: "Golden Sun (G)",
-    0x1885: "Golden Sun (S)",
-    0x1713: "Golden Sun (F)",
-    0x1886: "Golden Sun (I)",
-    0x159C: "Golden Sun (J)",}
 
 def readsav(data):
     f = io.BytesIO(data)
@@ -145,6 +130,19 @@ def readsav(data):
         if save["priority"] > slots.get(save["slot"], -1):
             slots[save["slot"]] = save
     filedata = []
+    build_dates = {
+        0x1C85: "Golden Sun - The Lost Age (UE)",
+        0x1D97: "Golden Sun - The Lost Age (G)",
+        0x1DC7: "Golden Sun - The Lost Age (S)",
+        0x1D98: "Golden Sun - The Lost Age (F)",
+        0x1DC8: "Golden Sun - The Lost Age (I)",
+        0x198A: "Golden Sun - The Lost Age (J)",
+        0x1652: "Golden Sun (UE)",
+        0x1849: "Golden Sun (G)",
+        0x1885: "Golden Sun (S)",
+        0x1713: "Golden Sun (F)",
+        0x1886: "Golden Sun (I)",
+        0x159C: "Golden Sun (J)"}
     for i in range(3):
         if not slots.get(i): continue
         f.seek(slots[i]["addr"] + 0x10)
@@ -350,3 +348,46 @@ def preview(data):
                     x,_ = out.addtext("\n".join(pc["abilities"][i:i+height]), (x+3, ymax+2))
             pages[slot].append(f"```\n{out}\n```")
     return pages
+
+
+def battle_turn(party1, party2, moves1, moves2):
+    moves = [(m, 0) for m in moves1] + [(m, 1) for m in moves2]
+    for move, p in sorted(moves, key=lambda x: -x[0]["AGI"]):
+        ability = move["ability"]
+        for i in range(move["center"]-ability["range"]+1, move["center"]+ability["range"]):
+            if ability["target"] == "Enemies": p = not p
+            party = (party1, party2)[p]
+            if not party.get(i): continue
+            RANGE = abs(i-move["center"])
+            dealt = damage(
+                ability["name"],
+                target=party[i],
+                range=RANGE,
+                **{move[s] for s in ("ATK", "POW", "target") if move.get(s)})
+            party[i]["HP_cur"] -= dealt
+
+def rn(init):
+    while True:
+        init = (0x41C64E6D*init + 0x3039) % 2**32
+        yield (init >> 8) & 0xFFFF
+
+def enemyparty(enemygroup, grn=0):
+    grn = rn(grn)
+    enemies, mins, maxs = (enemygroup[attr] for attr in ["enemies", "min_amounts", "max_amounts"])
+    quantities = [mn + ((mx-mn+1)*next(grn) >> 16) if mx > mn else mn for mn,mx in zip(mins, maxs)]
+    def swap(array, pos1, pos2):
+        temp = array[pos2]
+        array[pos2] = array[pos1]
+        array[pos1] = temp
+    order = [0,1,2,3,4]
+    for i in range(10):
+        swap(order, 5*next(grn) >> 16, 5*next(grn) >> 16)
+    order = [v for v in order if v < len(enemies)]
+    party = []
+    for pos in order:
+        party.extend([enemies[pos]]*quantities[pos])
+    party = [Namemaps.get("enemydata", n).copy() for n in party]
+    for e in party:
+        e["HP_cur"] = e["HP"]
+        e["PP_cur"] = e["PP"]
+    return party
