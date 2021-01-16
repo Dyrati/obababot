@@ -1,8 +1,8 @@
 import asyncio
 import io
 import re
-from types import SimpleNamespace as SN
-from .utilities import client, parse, ReactMessages
+import traceback
+from .utilities import *
 
 
 def to_async(func):
@@ -30,22 +30,34 @@ class TerminalReaction:
         self.message = target
         self.emoji = emoji
 
+class TerminalGuild:
+    def __init__(self, name):
+        self.name = name
+
+class TerminalChannel:
+    def __init__(self, name, guild=None):
+        self.name = name
+        self.guild = guild
+    async def send(self, content=""):
+        print(content)
+        return TerminalMessage(content, guild=self.guild, channel=self)
+
 class TerminalMessage:
-    def __init__(self, content="", user=None, attach=None):
-        from types import SimpleNamespace as SN
+    def __init__(self, content="", guild=None, channel=None, user=None, attach=None):
         self.author = user
         self.content, self.attachments = self.get_attachments(content)
         self.attachments = [TerminalAttachment(attach.strip('"'))] if attach else []
-        self.guild = SN(name=None)
-        self.channel = SN(name=None, send=self.send)
+        self.guild = guild
+        self.channel = channel
         self.edit = self.send
         self.add_reaction = self.react
         self.remove_reaction = self.react
         self.clear_reactions = self.react
-    
+
     async def send(self, content=""):
         print(content)
-        return TerminalMessage(content)
+        return TerminalMessage(
+            content, guild=self.guild, channel=self.channel, user=self.author)
 
     async def react(self, *args):
         pass
@@ -91,6 +103,8 @@ emojis[">"] = emojis["right"]
 
 def terminal(on_ready=None, on_message=None, on_react=None):
     import asyncio
+    guild = TerminalGuild("testguild")
+    channel = TerminalChannel("testchannel", guild=guild)
     user = TerminalUser("admin")
     async def loop():
         client.loop = asyncio.get_running_loop()
@@ -99,17 +113,23 @@ def terminal(on_ready=None, on_message=None, on_react=None):
         while True:
             try: text = input("> ")
             except KeyboardInterrupt: return
-            args, kwargs = parse(text)
-            if text in ("quit", "exit"): return
-            elif text.startswith("setuser "):
-                if args[1] in Users: user = Users[args[1]]
-                else: user = TerminalUser(args[1])
-            elif text.startswith("react ") and ReactMessages:
-                target = next(reversed(ReactMessages))
-                emoji = emojis[text[len("react "):]]
-                await on_react(TerminalReaction(target, emoji), user)
-            else:
-                message = TerminalMessage(
-                    content=text, user=user, attach=kwargs.get("attach"))
-                if on_message: await on_message(message)
+            try:
+                args, kwargs = parse(text)
+                if text in ("quit", "exit"): return
+                if text.startswith("eval "):
+                    print(eval(text[len("eval "):]))
+                elif text.startswith("setuser "):
+                    if args[1] in Users: user = Users[args[1]]
+                    else: user = TerminalUser(args[1])
+                elif text.startswith("react ") and ReactMessages:
+                    target = next(reversed(ReactMessages))
+                    emoji = emojis[text[len("react "):]]
+                    await on_react(TerminalReaction(target, emoji), user)
+                else:
+                    message = TerminalMessage(
+                        content=text, guild=guild, channel=channel, user=user,
+                        attach=kwargs.get("attach"))
+                    if on_message: await on_message(message)
+            except Exception:
+                print(traceback.format_exc())
     asyncio.run(loop())

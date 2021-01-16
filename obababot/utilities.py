@@ -10,6 +10,7 @@ aliases = {}
 client = discord.Client()
 UserData = {}
 ReactMessages = {}
+LiveMessages = {}
 
 
 def command(f=None, alias=None, prefix=prefix):
@@ -315,22 +316,25 @@ class User:
         self.responses = []
         self.live_response = {}
         self.party = None
+        self.battle = None
 
 
-async def add_buttons(message, buttons, func):
+async def set_buttons(message, buttons, func):
     create_task = client.loop.create_task
-    async def newfunc(message, user, emoji):
+    async def inner(message, user, emoji):
         if emoji not in buttons: return
         task1 = create_task(func(message, user, buttons[emoji]))
         task2 = create_task(message.remove_reaction(emoji, user))
         await task1, task2
     if message in ReactMessages:
         await message.clear_reactions()
-    ReactMessages[message] = newfunc
+    ReactMessages[message] = inner
     tasks = [create_task(message.add_reaction(b)) for b in buttons]
     for t in tasks: await t
-
 
 async def clear_buttons(message):
     ReactMessages.pop(message)
     await message.clear_reactions()
+
+async def live_message(message, callback):
+    LiveMessages[message.channel] = {"message": message, "callback": callback}

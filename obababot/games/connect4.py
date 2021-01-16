@@ -1,4 +1,4 @@
-from ..utilities import client, command, reply, add_buttons, clear_buttons
+from ..utilities import client, command, reply, set_buttons, clear_buttons
 
 def v_iter(array):
     for x, col in enumerate(array):
@@ -122,19 +122,6 @@ async def connect4(message, *args, **kwargs):
         elif game.current_player == 2: right = " ◄" + right[2:]
         return left + names + right + "\n\n"
 
-    async def mainphase(message, user, button):
-        if user != players[game.current_player-1]: return
-        wincheck = game.add_piece(button)
-        player = players[game.current_player-1]
-        if wincheck is not None:
-            if wincheck == 0: content = "Tie Game".center(width+1) + f"\n\n{game}"
-            else: content =  f"{player.name} wins!".center(width+1) + f"\n\n{game}"
-            t1 = create_task(message.edit(content=f"```\n{content}\n```"))
-            t2 = create_task(clear_buttons(message))
-            await t1, t2
-        else:
-            await message.edit(content=f"```\n{header()}{game}\n```")
-
     async def startphase(message, user, button):
         if button == True:
             players.append(user)
@@ -149,9 +136,22 @@ async def connect4(message, *args, **kwargs):
             content += f"```\n{header()}{game}\n```"
             t1 = create_task(message.edit(content=content))
             buttons = {f"{i}\ufe0f\u20e3": i for i in range(dimensions["width"])}
-            t2 = create_task(add_buttons(message, buttons, mainphase))
+            t2 = create_task(set_buttons(message, buttons, mainphase))
             await t1, t2
+
+    async def mainphase(message, user, button):
+        if user != players[game.current_player-1]: return
+        wincheck = game.add_piece(button)
+        player = players[game.current_player-1]
+        if wincheck is not None:
+            if wincheck == 0: content = "Tie Game".center(width+1) + f"\n\n{game}"
+            else: content =  f"{player.name} wins!".center(width+1) + f"\n\n{game}"
+            t1 = create_task(message.edit(content=f"```\n{content}\n```"))
+            t2 = create_task(clear_buttons(message))
+            await t1, t2
+        else:
+            await message.edit(content=f"```\n{header()}{game}\n```")
 
     content = f" \n Waiting for Player {len(players)+1} to join\n\n{game}"
     sent = await reply(message, f"```\n{content}\n```")
-    await add_buttons(sent, {"\u2705":True, "\u274c":False}, startphase)
+    await set_buttons(sent, {"\u2705":True, "\u274c":False}, startphase)

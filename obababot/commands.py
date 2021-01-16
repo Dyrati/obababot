@@ -271,12 +271,21 @@ async def damage(message, *args, **kwargs):
         res -- resistance of target (for the attack's element)
         range -- distance from primary target
     """
-    ability = args[0].strip('"')
+    abilityname = " ".join(args).strip('"')
+    ability = DataTables.get("abilitydata", abilityname)
+    if not ability:
+        ability = DataTables.get("itemdata", abilityname)
+        ability = DataTables["abilitydata"][ability["use_ability"]]
+        kwargs["pow"] = "100"
     kwargs = {k:v.strip('"').lower() for k,v in kwargs.items()}
     for key in ("atk", "pow", "hp", "def", "res", "range"):
         if kwargs.get(key) is not None:
             kwargs[key.upper()] = int(kwargs.pop(key))
-    damage = gsfuncs.damage(ability, **kwargs)
+    for kw in {"user", "target"} & set(kwargs):
+        user = UserData[message.author.id]
+        names = {p["name"].lower():p["stats"] for p in user.party} if user.party else {}
+        kwargs[kw] = names.get(kwargs[kw], DataTables.get("enemydata", kwargs[kw]))
+    damage = gsfuncs.battle_damage(ability, **kwargs)
     await reply(message, f"`{damage}-{damage+3}`")
 
 
@@ -305,7 +314,7 @@ async def handlesav(message, data):
         '\U0001f1f5':"P",'0\ufe0f\u20e3':0,'1\ufe0f\u20e3':1,'2\ufe0f\u20e3':2,
         '\u25c0\ufe0f':"<",'\u25b6\ufe0f':">",'\u2753':"?"}
     sent = await reply(message, pages["preview"])
-    await utilities.add_buttons(sent, buttons, on_react)
+    await utilities.set_buttons(sent, buttons, on_react)
 
 
 @command
@@ -331,21 +340,6 @@ async def upload(message, *args, **kwargs):
         await handlesav(message, data)
     else:
         assert 0, "Unhandled file type"
-
-
-@command
-async def loadparty(message, *args, **kwargs):
-    attachment = await utilities.get_attachment(message, *args)
-    data = await attachment.read()
-    url = attachment.url
-    assert url.endswith(".sav") or url.endswith(".SaveRAM"), "Invalid file extension"
-    filedata = gsfuncs.readsav(data)
-    slot = int(args[0]) if args else 0
-    for f in filedata:
-        if f["slot"] == slot: break
-    else: assert 0, "Slot not found"
-    UserData[message.author.id].party = f["party"]
-    for pc in f["party"]: print(pc["name"])
 
 
 @command

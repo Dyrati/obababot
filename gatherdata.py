@@ -209,11 +209,10 @@ with open(ROM2, "rb") as f:
         summondata.append({
             "ID": i,
             "name": move["name"],
+            "target": move["target"],
+            "damage_type": "Summon",
             "element": move["element"],
-            "Venus": read(1),
-            "Mercury": read(1),
-            "Mars": read(1),
-            "Jupiter": read(1),
+            "djinn_cost": [read(1) for j in range(4)],
             "ability_effect": move["ability_effect"],
             "icon": move["icon"],
             "range": move["range"],
@@ -405,12 +404,13 @@ for pc in pcdata:
 
 # Summons
 for summon in summondata:
-    summon["hp_multiplier"] = sum(summon[k] for k in elements[0:4])*0.03
+    summon["hp_multiplier"] = sum(summon["djinn_cost"])*0.03
     if summon["name"] == "Daedalus":
         summon["hp_multiplier"] = 0.22
         summon["power"] = 350
     if summon["name"] == "Iris":
         summon["hp_multiplier"] = 0.40
+    summon["target"] = targets[summon["target"]]
 
 # Classes
 classgroups = [

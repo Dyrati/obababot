@@ -5,7 +5,8 @@ import sys
 import time
 import traceback
 from obababot import utilities, commands, gsfuncs, games
-from obababot.utilities import client, UserData, ReactMessages, reply, parse, load_data
+from obababot.utilities import \
+    client, UserData, ReactMessages, LiveMessages, reply, parse, load_data
 print("Imported modules    ")
 
 
@@ -22,7 +23,10 @@ async def on_ready():
 @client.event
 async def on_message(message):
     timestamp = time.time()
-    if not utilities.is_command(message): return
+    if not utilities.is_command(message):
+        lm = LiveMessages.get(message.channel)
+        if lm: await lm["callback"](lm["message"], message)
+        return
     command, args, kwargs = utilities.extractcommand(message.content)
     ID = message.author.id
     if not UserData.get(ID): UserData[ID] = utilities.User(ID)
