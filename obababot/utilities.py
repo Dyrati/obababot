@@ -85,53 +85,53 @@ def load_text():
     return text
 
 
-class NameMapping(dict):
+class Database(dict):
     def __init__(self, dictlist=None):
-        if dictlist: self.new(dictlist)
+        self.namemap = {}
         self._mbracket = re.compile(r" \(.\)$")
-    def new(self, dictlist):
-        for k,v in dictlist.items():
-            self[k] = {}
-            for obj in v: self.add(k, obj)
-    def add(self, tablename, obj):
+    def new_table(self, tablename, table):
+        self[tablename] = table
+        self.namemap[tablename] = {}
+        for obj in table: self.add_entry(tablename, obj)
+    def add_entry(self, tablename, obj):
         if not obj.get("name"): return
         name = self.normalize(obj["name"])
-        if name in self[tablename]:
-            self[tablename][name].append(obj)
+        if name in self.namemap[tablename]:
+            self.namemap[tablename][name].append(obj)
         else:
-            self[tablename][name] = [obj]
+            self.namemap[tablename][name] = [obj]
     def get(self, tablename, name, instance=0):
         name = self.normalize(name)
-        if name not in self[tablename]: return None
-        else: return self[tablename][name][instance]
+        if name not in self.namemap[tablename]: return None
+        else: return self.namemap[tablename][name][instance]
     def get_all(self, tablename, name):
         name = self.normalize(name)
-        if name not in self[tablename]: return None
-        else: return self[tablename][name]
+        if name not in self.namemap[tablename]: return None
+        else: return self.namemap[tablename][name]
     def normalize(self, name):
         name = self._mbracket.sub("", name)
         return name.lower().replace("'","").replace("-"," ")
 
 
-DataTables, Namemaps, Text = {}, NameMapping(), {}
+DataTables, Text = Database(), {}
 def load_data():
-    global DataTables, Namemaps, Text
+    global DataTables, Text
     dirname = os.path.dirname(__file__)
     print("Loading database...", end="\r")
-    DataTables.clear(); Namemaps.clear(); Text.clear()
+    DataTables.clear(); Text.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
             "room_references1", "room_references2", "enemygroupdata"]:
         with open(os.path.join(dirname, rf"data/{name}.json")) as f:
-            DataTables[name] = json.load(f)
+            DataTables.new_table(name, json.load(f))
             if name == "enemydata":
-                DataTables["enemydata-h"] = deepcopy(DataTables["enemydata"])
-                for entry in DataTables["enemydata-h"]:
+                hard_enemies = deepcopy(DataTables["enemydata"])
+                for entry in hard_enemies:
                     entry["HP"] = min(0x3FFF, int(1.5*entry["HP"]))
                     entry["ATK"] = int(1.25*entry["ATK"])
                     entry["DEF"] = int(1.25*entry["DEF"])
-    Namemaps.new(DataTables)
+                DataTables.new_table("enemydata-h", hard_enemies)
     Text.update(**load_text())
     mfuncs.update(**DataTables)
     print("Loaded database    ")

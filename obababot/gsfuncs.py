@@ -3,7 +3,7 @@ import io
 import json
 import inspect
 from . import utilities
-from .utilities import command, DataTables, UserData, Namemaps, Text, reply
+from .utilities import command, DataTables, UserData, Text, reply
 
 
 def getclass(name, djinncounts, item=None):
@@ -66,9 +66,9 @@ def damage(
         abilityname, ATK=None, POW=None, target=None,
         HP=None, DEF=None, RES=None, RANGE=None):
     elements = ["Venus", "Mercury", "Mars", "Jupiter"]
-    ability = Namemaps.get("abilitydata", abilityname)
+    ability = DataTables.get("abilitydata", abilityname)
     if target:
-        enemy = Namemaps.get("enemydata", target)
+        enemy = DataTables.get("enemydata", target)
         if HP is None: HP = enemy["HP"]
         if DEF is None: DEF = enemy["DEF"]
         estats = DataTables["elementdata"][enemy["elemental_stats_id"]]
@@ -92,7 +92,7 @@ def damage(
         damage = ability["power"]*int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .5, .3, .1, .1, .1][RANGE]
     elif damage_type == "Summon":
-        summon = Namemaps.get("summondata", abilityname)
+        summon = DataTables.get("summondata", abilityname)
         damage = summon["power"] + int(summon["hp_multiplier"]*min(10000, HP))
         damage *= int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
@@ -386,7 +386,7 @@ def enemyparty(enemygroup, grn=0):
     party = []
     for pos in order:
         party.extend([enemies[pos]]*quantities[pos])
-    party = [Namemaps.get("enemydata", n).copy() for n in party]
+    party = [DataTables.get("enemydata", n).copy() for n in party]
     for e in party:
         e["HP_cur"] = e["HP"]
         e["PP_cur"] = e["PP"]

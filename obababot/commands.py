@@ -4,7 +4,7 @@ import inspect
 from . import utilities
 from .utilities import \
     client, command, prefix, DataTables, UserData,\
-    Namemaps, reply, dictstr, mfuncs
+    reply, dictstr, mfuncs
 from . import gsfuncs
 from .safe_eval import safe_eval
 
@@ -63,8 +63,8 @@ async def info(message, *args, **kwargs):
         json -- set equal to 1 or "true" to format the output as json
     """
     name = " ".join(args)
-    for table in Namemaps:
-        entries = Namemaps.get_all(table, name)
+    for table in DataTables:
+        entries = DataTables.get_all(table, name)
         if entries:
             if kwargs.get("i"): entries = [entries[int(kwargs.get("i"))]]
             for entry in entries:
