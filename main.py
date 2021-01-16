@@ -10,6 +10,7 @@ print("Imported modules    ")
 
 
 terminal_mode = "-t" in sys.argv
+show_errors = "-e" in sys.argv
 TOKEN = os.getenv('TOKEN') or input("Input bot token: ").strip('"')
 if TOKEN == "t": terminal_mode = True
 
@@ -29,9 +30,9 @@ async def on_message(message):
     UserData[ID].temp["raw"] = kwargs.get("raw")
     try: await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
-        await reply(message, traceback.format_exc())
         args = f": {e.args[0]}" if e.args else ""
-        await reply(message, e.__class__.__name__ + args)
+        if show_errors: await reply(message, traceback.format_exc())
+        else: await reply(message, e.__class__.__name__ + args)
     UserData[ID].temp.clear()
     if kwargs.get("t"):
         await reply(message, f"response time: `{time.time()-timestamp}`")
