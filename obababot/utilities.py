@@ -195,7 +195,7 @@ def rand(*args):
 mfuncs = {
     'abs':abs, 'round':round, 'min':min, 'max':max, 'rand':rand,
     'bin':bin, 'hex':hex, 'len':len, 'sum': sum, 'int': int, 'str': str,
-    'True':True, 'False':False, 'pi':math.pi, 'e': math.exp(1),
+    'True':True, 'False':False, 'None':None, 'pi':math.pi, 'e': math.exp(1),
     'sin':math.sin, 'cos':math.cos, 'tan':math.tan, 'sqrt':math.sqrt,
     'log':math.log, 'exp':math.exp,
 }
@@ -286,6 +286,7 @@ def tableV(dictlist, spacing=2):
 class Charmap:
     def __init__(self):
         self.charmap = []
+        self.pos = (0, 0)
     def addtext(self, text, coords):
         x,y = coords
         xmax = x
@@ -303,7 +304,8 @@ class Charmap:
                     cm[y].extend((" " for i in range(x-len(cm[y])+1)))
                 cm[y][x] = char
                 x += 1
-        return max(xmax, x), y+1
+        self.pos = max(xmax, x), y+1
+        return self.pos
     def __str__(self):
         return "\n".join(("".join(row) for row in self.charmap))
 
@@ -315,8 +317,8 @@ class User:
         self.vars = dict(_=None, **mfuncs)
         self.responses = []
         self.live_response = {}
+        self.filedata = None
         self.party = None
-        self.battle = None
 
 
 async def set_buttons(message, buttons, func):
@@ -338,3 +340,5 @@ async def clear_buttons(message):
 
 async def live_message(message, callback):
     LiveMessages[message.channel] = {"message": message, "callback": callback}
+async def kill_message(message):
+    LiveMessages.pop(message.channel)

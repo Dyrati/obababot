@@ -35,7 +35,8 @@ async def help(message, *args, **kwargs):
         """)
         return await reply(message, f"```\n{out}\n```")
     else:
-        func = utilities.usercommands[prefix+args[0]]
+        func = (prefix if not args[0].startswith(prefix) else "") + args[0]
+        func = utilities.usercommands[func]
         await reply(message, f"```\n{inspect.getdoc(func)}\n```")
 
 
@@ -292,8 +293,10 @@ async def damage(message, *args, **kwargs):
 async def handlesav(message, data):
     headers = (data[addr:addr+16] for addr in range(0,0x10000,0x1000))
     assert any((h[:7] == b'CAMELOT' and h[7] <= 0xF for h in headers)), "No valid saves detected"
+    user = UserData[message.author.id]
     filedata = gsfuncs.readsav(data)
     pages = gsfuncs.preview(filedata)
+    user.filedata = filedata
     slots = [k for k in pages if isinstance(k, int)]
     slot = slots[0]
     page = 0

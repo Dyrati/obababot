@@ -4,7 +4,7 @@ import os
 import sys
 import time
 import traceback
-from obababot import utilities, commands, gsfuncs, games
+from obababot import utilities, commands, gsfuncs, battlesim, games
 from obababot.utilities import \
     client, UserData, ReactMessages, LiveMessages, reply, parse, load_data
 print("Imported modules    ")

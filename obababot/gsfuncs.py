@@ -78,7 +78,9 @@ def battle_damage(
     int_256 = lambda x: int(256*x)/256
     damage_type = ability["damage_type"]
     if damage_type == "Healing":
-        damage = ability["power"]*POW/100
+        damage = ability["power"]
+        if ability["element"] != "Neutral":
+            damage *= POW/100
     elif damage_type == "Added Damage":
         damage = (ATK-DEF)/2 + ability["power"]
         if ability["element"] != "Neutral":
@@ -98,6 +100,7 @@ def battle_damage(
         damage = ability["power"] + int(ability["hp_multiplier"]*min(10000, HP))
         damage *= int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
+    else: damage = 0
     return max(0, int(damage))
 
 
@@ -179,6 +182,7 @@ def readsav(data):
                     "DEF": read(base+0x1A, 2),
                     "AGI": read(base+0x1C, 2),
                     "LCK": read(base+0x1E, 1),
+                    "turns": read(base+0x1F, 1),
                     "epow": [read(base+0x24+4*j, 2) for j in range(4)],
                     "eres": [read(base+0x26+4*j, 2) for j in range(4)],
                 },
@@ -191,6 +195,7 @@ def readsav(data):
                     "DEF": read(base+0x3e, 2),
                     "AGI": read(base+0x40, 2),
                     "LCK": read(base+0x42, 1),
+                    "turns": read(base+0x43, 1),
                     "epow": [read(base+0x48+4*j, 2) for j in range(4)],
                     "eres": [read(base+0x4A+4*j, 2) for j in range(4)],
                 },
@@ -231,6 +236,7 @@ def readsav(data):
             pc["status"].insert(2, int(pc["status"][1]==2))
             pc["status"][1] = int(pc["status"][1]==1)
             pc["status"] = [n for s,n in zip(pc["status"], ("Curse","Poison","Venom","Haunt")) if s]
+            if pc["stats"]["HP_cur"] == 0: pc["status"].insert(0, "Downed")
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
         seconds %= 60; minutes %= 60
         f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
@@ -339,125 +345,44 @@ def preview(filedata):
     return pages
 
 
-def rn(init):
-    def inner():
-        nonlocal init
+def rn_value(count,initValue=0):
+    for i in range(32):
+        if (count >> i) & 1:
+            initValue = (initValue*multipliers[i] + increments[i]) & 0xFFFFFFFF
+    return initValue
+
+def rn_count(value):
+    advances = 0
+    for i in range(32):
+        if value & 2**i:
+            value = (value*multipliers[i] + increments[i]) & 0xFFFFFFFF
+            advances += 2**i
+    return -advances & 0xFFFFFFFF
+
+def rn_iter(init, u32=False):
+    while True:
         init = (0x41C64E6D*init + 0x3039) % 2**32
-        return (init >> 8) & 0xFFFF
-    return inner
-
-def enemyparty(enemygroup, grn=0):
-    grn = rn(grn)
-    enemies, mins, maxs = (enemygroup[attr] for attr in ["enemies", "min_amounts", "max_amounts"])
-    quantities = [mn + ((mx-mn+1)*grn() >> 16) if mx > mn else mn for mn,mx in zip(mins, maxs)]
-    def swap(array, pos1, pos2):
-        temp = array[pos2]
-        array[pos2] = array[pos1]
-        array[pos1] = temp
-    order = [0,1,2,3,4]
-    for i in range(10):
-        swap(order, 5*grn() >> 16, 5*grn() >> 16)
-    order = [v for v in order if v < len(enemies)]
-    party = []
-    for pos in order:
-        party.extend([enemies[pos]]*quantities[pos])
-    party = [DataTables.get("enemydata", n).copy() for n in party]
-    for e in party:
-        e["HP_cur"] = e["HP"]
-        e["PP_cur"] = e["PP"]
-    return party
-
+        if u32: yield init
+        else: yield (init >> 8) & 0xFFFF
 
 # @command
-async def loadparty(message, *args, **kwargs):
-    attachment = await utilities.get_attachment(message, *args[1:])
-    data = await attachment.read()
-    url = attachment.url
-    assert url.endswith(".sav") or url.endswith(".SaveRAM"), "Invalid file extension"
-    filedata = readsav(data)
-    slot = int(args[0]) if args else 0
-    for f in filedata:
-        if f["slot"] == slot: break
-    else: assert 0, "Slot not found"
-    UserData[message.author.id].party = f["party"]
-    await reply(message, f"Loaded party from slot {slot}")
-
-
-# @command
-async def battle(message, *args, **kwargs):
-    user = UserData[message.author.id]
-    assert user.party, "Please load a party using the $loadparty command"
-    
-    party = user.party.copy()
-    for p in party: p.update(**p.pop("stats"))
-    enemies = enemyparty(DataTables["enemygroupdata"][int(args[0])], 0)
-    cursor = 0
-    side = 0
-    inputs = []
-    brn = rn(int(kwargs.get("brn", 0)))
-    grn = rn(int(kwargs.get("grn", 0)))
-
-    async def main(before, after):
-        for line in after.content.split("\n"):
-            if not line.startswith(utilities.prefix): continue
-            content = line[len(utilities.prefix):]
-            args, kwargs = utilities.parse(content)
-            move_select(*args, **kwargs)
-            await before.edit(content=display())
-
-    def display():
-        out = utilities.Charmap()
-        x,y = out.addtext(
-            "\n".join((f"{p['name']} {p['HP_cur']}" for p in party[:4])), (2,0))
-        if side == 0: out.addtext("►", (0, cursor))
-        elif side == 1: out.addtext("►", (x+3, cursor))
-        out.addtext(
-            "\n".join((f"{e['name']} {e['HP_cur']}" for e in enemies[:4])), (x+5,0))
-        return f"```\n{out}\n```"
-
-    def move_select(*args, **kwargs):
-        nonlocal cursor
-        ability = DataTables.get("abilitydata", args[0])
-        pc = party[cursor]
-        inputs.append({
-            "ability": ability,
-            "user": pc,
-            "AGI": (pc["AGI"]*grn() >> 20) + pc["AGI"],
-            "center": int(args[1]),
-        })
-        if cursor == 3:
-            einputs = []
-            for enemy in enemies:
-                ability = DataTables.get("abilitydata", enemy["abilities"][brn() & 7])
-                einputs.append({
-                    "ability": ability,
-                    "user": enemy,
-                    "AGI": enemy["AGI"],
-                    "center": grn() & 3,
-                })
-            battle_turn(party, enemies, inputs, einputs)
-        cursor = (cursor + 1) % 4
-
-    def battle_turn(party1, party2, moves1, moves2):
-        moves = [(m, 0) for m in moves1] + [(m, 1) for m in moves2]
-        for move, p in sorted(moves, key=lambda x: -x[0]["AGI"]):
-            ability = move["ability"]
-            lower, upper = move["center"]-ability["range"]+1, move["center"]+ability["range"]
-            for i in range(lower, upper):
-                if ability["target"] == "Enemies": party = (party1, party2)[not p]
-                else: party = (party1, party2)[p]
-                if i >= len(party) or i < 0: continue
-                if ability["damage_type"] not in ("Added Damage", "Multiplier", "Base Damage", "Summon"):
-                    break
-                RANGE = abs(i-move["center"])
-                dealt = battle_damage(
-                    ability,
-                    user=move.get("user"),
-                    target=party[i],
-                    RANGE=RANGE)
-                party[i]["HP_cur"] -= dealt
-                print(f"{party[i]['name']} took {dealt} damage!")
-        moves1.clear(); moves2.clear()
-
-    sent = await reply(message, display())
-    await utilities.live_message(sent, main)
+# async def get_rn(message, *args, **kwargs):
+#     user = UserData[message.author.id]
+#     init, lower, upper = map(int, args)
+#     assert upper-lower <= 2000, "Range exceeded"
+#     upper += 1  # to make it inclusive
+#     fields = ["rel", "value"]
+#     if kwargs.get("eval"): fields.append("eval")
+#     rn = rn_iter2(rn_value(rn_count(init) + lower-1), u32=True)
+#     iterator = zip(range(lower,upper), rn)
+#     if kwargs.get("filter"):
+#         condition = kwargs["filter"].strip('"')
+#         f = lambda x: safe_eval(condition, {"rn":x[1]})
+#         iterator = filter(f, iterator)
+#     expression = kwargs.get("eval", "").strip('"')
+#     out = [{
+#         "rel":i,
+#         "value": f"{rn:08X}",
+#         "eval": safe_eval(expression, {"rn":rn}),
+#         } for i,rn in iterator]
+#     await reply(message, f"```\n{utilities.tableH(out, fields=fields)}\n```")
