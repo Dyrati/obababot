@@ -68,18 +68,33 @@ async def get_attachment(message, *args):
     return message.attachments[0]
 
 
+def textparser(filename):
+    with open(filename) as f:
+        lines = filter(lambda x: x, f.read().splitlines())
+    section = re.compile(r"^\[(.*?)\]$")
+    groups = {}
+    for line in lines:
+        m = section.match(line)
+        if m:
+            current = []
+            groups[m.group(1)] = current
+        else:
+            current.append(line)
+    return groups
+
 def load_text():
     text = {}
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
     text["elements"] = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
     mtoken = re.compile(r"{\d*}")
     dirname = os.path.dirname(__file__)
-    with open(os.path.join(dirname, "text/GS1text.txt")) as f:
+    path = lambda f: os.path.join(dirname, f)
+    with open(path("text/GS1text.txt")) as f:
         lines = f.read().splitlines()
         lines = list(map(lambda x: mtoken.sub("", x), lines))
         text["areas1"] = lines[2459:2567]
         text["maps1"] = lines[2567:2768]
-    with open(os.path.join(dirname, "text/GS2text.txt")) as f:
+    with open(path("text/GS2text.txt")) as f:
         lines = f.read().splitlines()
         text["item_descriptions"] = lines[146:607]
         lines = list(map(lambda x: mtoken.sub("", x), lines))
@@ -91,10 +106,7 @@ def load_text():
         text["areas2"] = lines[3672:3770]
         text["maps2"] = lines[3770:4095]
         text["djinn"] = lines[1747:1827]
-    with open(os.path.join(dirname, "text/customtext.txt")) as f:
-        lines = f.read().splitlines()
-        text["ability_effects"] = lines[0:92]
-        text["equipped_effects"] = lines[92:120]
+    text.update(**textparser(path("text/customtext.txt")))
     return text
 
 

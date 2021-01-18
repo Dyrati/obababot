@@ -116,6 +116,75 @@ def roomname(gamenumber, mapnumber, doornumber):
     return roomtable[0]["name"]
 
 
+def get_character_info(data):
+    read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
+    string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
+    out = {
+        "name": string(0, 15),
+        "level": read(0xF, 1),
+        "base_stats": {
+            "HP": read(0x10, 2),
+            "PP": read(0x12, 2),
+            "ATK": read(0x18, 2),
+            "DEF": read(0x1A, 2),
+            "AGI": read(0x1C, 2),
+            "LCK": read(0x1E, 1),
+            "turns": read(0x1F, 1),
+            "epow": [read(0x24+4*j, 2) for j in range(4)],
+            "eres": [read(0x26+4*j, 2) for j in range(4)],
+        },
+        "stats": {
+            "HP_max": read(0x34, 2),
+            "PP_max": read(0x36, 2),
+            "HP_cur": read(0x38, 2),
+            "PP_cur": read(0x3A, 2),
+            "ATK": read(0x3c, 2),
+            "DEF": read(0x3e, 2),
+            "AGI": read(0x40, 2),
+            "LCK": read(0x42, 1),
+            "turns": read(0x43, 1),
+            "epow": [read(0x48+4*j, 2) for j in range(4)],
+            "eres": [read(0x4A+4*j, 2) for j in range(4)],
+        },
+        "abilities": [read(0x58+4*j, 4) for j in range(32)],
+        "inventory": [read(0xD8+2*j, 2) for j in range(15)],
+        "djinn": [read(0xF8+4*j, 4) for j in range(4)],
+        "set_djinn": [read(0x108+4*j, 4) for j in range(4)],
+        "djinncounts": [read(0x118+j, 1) for j in range(4)],
+        "set_djinncounts": [read(0x11C+j, 1) for j in range(4)],
+        "exp": read(0x124, 4),
+        "class": read(0x129, 1),
+        "defending": read(0x12B, 1),
+        "status": [read(j, 1) for j in (0x130, 0x131, 0x140)],
+        "status": {
+            "summon_boosts": [read(0x12C+j, 1) for j in range(4)],
+            "curse": read(0x130,1),
+            "poison": int(read(0x131,1)==1),
+            "venom": int(read(0x131,1)==2),
+            "attack_buff": [read(0x132,1), read(0x133,1)], #turns, amount
+            "defense_buff": [read(0x134,1), read(0x135,1)],
+            "resist_buff": [read(0x136,1), read(0x137,1)],
+            "delusion": read(0x138,1),
+            "confusion": read(0x139,1),
+            "charm": read(0x13A,1),
+            "stun": read(0x13B,1),
+            "sleep": read(0x13C,1),
+            "psy_seal": read(0x13D,1),
+            "hp_regen": read(0x13E,1),
+            "reflect": read(0x13F,1),
+            "haunt": read(0x140,1),
+            "candle_curse": read(0x141,1),
+            "critical_rate": read(0x142,1),
+            "reflux": read(0x143,1),
+            "kite": read(0x144,1),
+            "immobilize": read(0x145,1),
+            "agility_buff": [read(0x146,1), read(0x147,1)],
+        },
+        "ID": read(0x14A,2),
+    }
+    return out
+
+
 def readsav(data):
     f = io.BytesIO(data)
     read = lambda size: int.from_bytes(f.read(size), "little")
@@ -163,60 +232,22 @@ def readsav(data):
         filedata.append({
             "version": version,
             "slot": i,
-            "leader": string(0, 12),
-            "party_members": read(0x40, 1),
-            "framecount": read(0x244, 4),
-            "summons": read(0x24C, 4),
-            "coins": read(0x250, 4),
-            "map_number": read(0x400+offset, 2),
-            "door_number": read(0x402+offset, 2),
+            "leader": string(0,12),
+            "framecount": read(0x244,4),
+            "summons": read(0x24C,4),
+            "coins": read(0x250,4),
+            "map_number": read(0x400+offset,2),
+            "door_number": read(0x402+offset,2),
             "party_positions": positions,
-            "party": [{
-                "name": string(base, 15),
-                "level": read(base+0xF, 1),
-                "element": [0,2,3,1,0,2,3,1][p],
-                "base_stats": {
-                    "HP": read(base+0x10, 2),
-                    "PP": read(base+0x12, 2),
-                    "ATK": read(base+0x18, 2),
-                    "DEF": read(base+0x1A, 2),
-                    "AGI": read(base+0x1C, 2),
-                    "LCK": read(base+0x1E, 1),
-                    "turns": read(base+0x1F, 1),
-                    "epow": [read(base+0x24+4*j, 2) for j in range(4)],
-                    "eres": [read(base+0x26+4*j, 2) for j in range(4)],
-                },
-                "stats": {
-                    "HP_max": read(base+0x34, 2),
-                    "PP_max": read(base+0x36, 2),
-                    "HP_cur": read(base+0x38, 2),
-                    "PP_cur": read(base+0x3A, 2),
-                    "ATK": read(base+0x3c, 2),
-                    "DEF": read(base+0x3e, 2),
-                    "AGI": read(base+0x40, 2),
-                    "LCK": read(base+0x42, 1),
-                    "turns": read(base+0x43, 1),
-                    "epow": [read(base+0x48+4*j, 2) for j in range(4)],
-                    "eres": [read(base+0x4A+4*j, 2) for j in range(4)],
-                },
-                "abilities": [read(base+0x58+4*j, 4) for j in range(32)],
-                "inventory": [read(base+0xD8+2*j, 2) for j in range(15)],
-                "djinn": [read(base+0xF8+4*j, 4) for j in range(4)],
-                "set_djinn": [read(base+0x108+4*j, 4) for j in range(4)],
-                "djinncounts": [read(base+0x118+j, 1) for j in range(4)],
-                "set_djinncounts": [read(base+0x11C+j, 1) for j in range(4)],
-                "exp": read(base+0x124, 4),
-                "class": read(base+0x129, 1),
-                "status": [read(base+j, 1) for j in (0x130, 0x131, 0x140)],
-            } for p,base in zip(positions, addresses)],
+            "party": [get_character_info(data[base:base+0x14C]) for base in addresses],
         })
     for f in filedata:
-        f["party_members"] = [Text["pcnames"][i] for i in range(8) if f["party_members"] & 2**i]
         f["summons"] = [DataTables["summondata"][i]["name"] for i in range(33) if f["summons"] & 2**i]
         f["area"] = roomname(GAME, f["map_number"], f["door_number"])
         djinncounts = [0, 0, 0, 0]
         for pc in f["party"]:
-            pc["element"] = Text["elements"][pc["element"]]
+            element = [0,2,3,1,0,2,3,1][pc["ID"]]
+            pc["element"] = Text["elements"][element]
             pc["abilities"] = [Text["abilities"][i & 0x3FF] for i in pc["abilities"] if i & 0x3FF]
             pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
             for k, v in pc["inventory"].items():
@@ -232,11 +263,11 @@ def readsav(data):
             pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
             pc["set_djinn"] = [Text["djinn"][i] for i in range(80) if pc["set_djinn"] & 2**i]
             pc["elevels"] = pc["set_djinncounts"].copy()
-            pc["elevels"][Text["elements"].index(pc["element"])] += 5
-            pc["status"].insert(2, int(pc["status"][1]==2))
-            pc["status"][1] = int(pc["status"][1]==1)
-            pc["status"] = [n for s,n in zip(pc["status"], ("Curse","Poison","Venom","Haunt")) if s]
-            if pc["stats"]["HP_cur"] == 0: pc["status"].insert(0, "Downed")
+            pc["elevels"][element] += 5
+            pc["perm_status"] = []
+            if pc["stats"]["HP_cur"] == 0: pc["perm_status"].append("Downed")
+            for status in ("Curse", "Poison", "Venom", "Haunt"):
+                if pc["status"][status.lower()]: pc["perm_status"].append(status)
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
         seconds %= 60; minutes %= 60
         f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
@@ -287,8 +318,8 @@ def preview(filedata):
             x,y = out.addtext(f"{pc['name']}\n{pc['class']}", (0, 0))
             x,y = out.addtext(f"Lvl {pc['level']}\nExp {pc['exp']}", (x+3,0))
             x += 2
-            for i in range(0, len(pc["status"]), 2):
-                x,y = out.addtext("\n".join(pc["status"][i:i+2]), (x+1, 0))
+            for i in range(0, len(pc["perm_status"]), 2):
+                x,y = out.addtext("\n".join(pc["perm_status"][i:i+2]), (x+1, 0))
             base = pc["base_stats"]
             stats = pc["stats"]
             out.addtext("Stats", (0, 3))

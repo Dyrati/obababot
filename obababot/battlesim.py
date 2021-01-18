@@ -20,9 +20,9 @@ def enemyparty(enemygroup, grn=0):
     party = []
     for pos in order:
         party.extend([enemies[pos]]*quantities[pos])
-    party = [DataTables.get("enemydata", n).copy() for n in party]
+    party = [deepcopy(DataTables.get("enemydata", n)) for n in party]
     for e in party:
-        e["HP_cur"] = e["HP"]
+        e["HP_max"] = e["HP_cur"] = e.pop("HP")
         e["PP_cur"] = e["PP"]
         e["status"] = []
     return party
@@ -45,6 +45,65 @@ async def loadparty(message, *args, **kwargs):
     user.party = slots[slot]["party"]
     await reply(message, f"Loaded party from slot {slot}")
 
+def abilityfunc(ability, party1, party2):
+    def healing(**kwargs):
+        damage = ability["power"]
+        if ability["element"] != "Neutral":
+            damage *= kwargs["POW"]/100
+        return damage
+    def additive(**kwargs):
+        damage = (kwargs["ATK"]-kwargs["DEF"])/2 + ability["power"]
+        if ability["element"] != "Neutral":
+            damage *= int_256(1 + (POW-RES)/400)
+        return damage
+    def multiplier(**kwargs):
+        damage = (kwargs["ATK"]-kwargs["DEF"])/2*ability["power"]/10
+        if ability["element"] != "Neutral":
+            damage *= int_256(1 + (kwargs["POW"]-kwargs["RES"])/400)
+        return damage
+    def basedmg(**kwargs):
+        damage = ability["power"]*int_256(1 + (kwargs["POW"]-kwargs["RES"])/200)
+        if kwargs["RANGE"]: damage *= [1, .8, .6, .4, .2, .1][kwargs["RANGE"]]
+        return damage
+    def basedmgdim(**kwargs):
+        damage = ability["power"]*int_256(1 + (kwargs["POW"]-kwargs["RES"])/200)
+        if kwargs["RANGE"]: damage *= [1, .5, .3, .1, .1, .1][kwargs["RANGE"]]
+        return damage
+    def summon(**kwargs):
+        ability = DataTables.get("summondata", ability["name"])
+        damage = ability["power"] + int(ability["hp_multiplier"]*min(10000, HP))
+        damage *= int_256(1 + (kwargs["POW"]-kwargs["RES"])/200)
+        if kwargs["RANGE"]: damage *= [1, .7, .4, .3, .2, .1][kwargs["RANGE"]]
+        return damage
+    def decorator(f):
+        def inner(attacker, defender, brn=None):
+            if brn == None: brn = rn_iter(0)
+            POS = defender["position"]
+            lower, upper = max(0, POS-RANGE), min(len(party2), POS+RANGE+1)
+            out = []
+            epos = Text["elements"].index(ability["element"])
+            for i in range(lower, upper):
+                defender = defender_party[i]
+                kwargs = {
+                    "ATK": attacker["ATK"],
+                    "POW": attacker["epow"][epos] if epos < 5 else None,
+                    "DEF": defender["DEF"],
+                    "RES": defender["eres"][epos] if epos < 5 else None,
+                    "HP": defender["HP_max"],
+                    "RANGE": abs(i-POS)}
+                damage = f(**kwargs)
+                out.append((defender, damage))
+            return out
+        return inner
+    damagetypes = {
+        "Healing": healing,
+        "Added Damage": additive,
+        "Multiplier": multiplier,
+        "Base Damage": basedmg,
+        "Base Damage (Diminishing)": basedmgdim,
+        "Summon": summon}
+    return decorator(damagetypes[ability["damage_type"]])
+
 
 @command
 async def battle(message, *args, **kwargs):
@@ -52,15 +111,23 @@ async def battle(message, *args, **kwargs):
     author = message.author
     assert user.party, "Please load a party using the $loadparty command"
     party = deepcopy(user.party)
-    party = [{**p, **p.pop("stats"), "defending":False, "type":"human"} for p in party]
+    party = [{
+        **p.pop("stats"), **p,
+        "defending":False,
+        "type":"human",
+        "status":p.pop("perm_status"),
+        } for p in party]
     front, back = party[:4], party[4:]
     enemies = [deepcopy(DataTables.get("enemydata", name.strip('"'))) for name in args]
     for e in enemies:
-        e["HP_cur"] = e["HP"]
+        e["HP_max"] = e["HP_cur"] = e.pop("HP")
         e["PP_cur"] = e["PP"]
         e["defending"] = False
         e["status"] = []
         e["type"] = "enemy"
+    # abilityfunclist = []
+    # for ability in DataTables["abilitydata"]:
+    #     abilityfunclist.append(abilityfunc(ability, party, enemies))
     cursor = 0
     side = 0
     inputs = []
@@ -71,16 +138,16 @@ async def battle(message, *args, **kwargs):
 
     async def main(before, after):
         if after.author != author: return
-        if mode == "battle":
+        if after.content == "$quit" or mode == "end":
+            await utilities.kill_message(before)
+        elif mode == "battle":
+            prefix = utilities.prefix + "ability "
             for line in after.content.split("\n"):
-                if not line.startswith(utilities.prefix): continue
-                content = line[len(utilities.prefix):]
+                if not line.startswith(prefix): continue
+                content = line[len(prefix):]
                 args, kwargs = utilities.parse(content)
                 move_select(*args, **kwargs)
                 await before.edit(content=f"```\n{display()}\n```")
-        elif mode == "end":
-            out = display()
-            await utilities.kill_message(before)
 
     def display():
         nonlocal front, enemies
