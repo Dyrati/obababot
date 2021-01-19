@@ -118,8 +118,9 @@ def roomname(gamenumber, mapnumber, doornumber):
 
 def get_character_info(data):
     read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
+    readsigned = lambda addr, size: (read(addr, size) ^ 2**(8*size)) - 2**(8*size)
     string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
-    out = {
+    pc = {
         "name": string(0, 15),
         "level": read(0xF, 1),
         "base_stats": {
@@ -161,9 +162,9 @@ def get_character_info(data):
             "curse": read(0x130,1),
             "poison": int(read(0x131,1)==1),
             "venom": int(read(0x131,1)==2),
-            "attack_buff": [read(0x132,1), read(0x133,1)], #turns, amount
-            "defense_buff": [read(0x134,1), read(0x135,1)],
-            "resist_buff": [read(0x136,1), read(0x137,1)],
+            "attack_buff": [read(0x132,1), readsigned(0x133,1)], #turns, amount
+            "defense_buff": [read(0x134,1), readsigned(0x135,1)],
+            "resist_buff": [read(0x136,1), readsigned(0x137,1)],
             "delusion": read(0x138,1),
             "confusion": read(0x139,1),
             "charm": read(0x13A,1),
@@ -178,11 +179,31 @@ def get_character_info(data):
             "reflux": read(0x143,1),
             "kite": read(0x144,1),
             "immobilize": read(0x145,1),
-            "agility_buff": [read(0x146,1), read(0x147,1)],
+            "agility_buff": [read(0x146,1), readsigned(0x147,1)],
         },
         "ID": read(0x14A,2),
     }
-    return out
+    element = [0,2,3,1,0,2,3,1][pc["ID"]]
+    pc["element"] = Text["elements"][element]
+    pc["abilities"] = [Text["abilities"][i & 0x3FF] for i in pc["abilities"] if i & 0x3FF]
+    pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
+    for k, v in pc["inventory"].items():
+        metadata = [(v>>11 & 0x1F) + 1]
+        if v & 1<<9: metadata.append("equipped")
+        if v & 1<<10: metadata.append("broken")
+        pc["inventory"][k] = metadata
+    pc["class"] = Text["classes"][pc["class"]]
+    pc["djinn"] = sum((d<<20*i for i,d in enumerate(pc["djinn"])))
+    pc["set_djinn"] = sum((d<<20*i for i,d in enumerate(pc["set_djinn"])))
+    pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
+    pc["set_djinn"] = [Text["djinn"][i] for i in range(80) if pc["set_djinn"] & 2**i]
+    pc["elevels"] = pc["set_djinncounts"].copy()
+    pc["elevels"][element] += 5
+    pc["perm_status"] = []
+    if pc["stats"]["HP_cur"] == 0: pc["perm_status"].append("Downed")
+    for status in ("Curse", "Poison", "Venom", "Haunt"):
+        if pc["status"][status.lower()]: pc["perm_status"].append(status)
+    return pc
 
 
 def readsav(data):
@@ -198,7 +219,7 @@ def readsav(data):
             "checksum": read(2),
             "priority": read(2),
         })
-    valid_saves = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] < 0xF]
+    valid_saves = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] <= 0xF]
     slots = {}
     for save in valid_saves:
         if save["priority"] > slots.get(save["slot"], -1):
@@ -229,7 +250,7 @@ def readsav(data):
         party_size = sum((1 if read(0x40, 1) & 2**j else 0 for j in range(8)))
         positions = [read(0x438+offset + j, 1) for j in range(party_size)]
         addresses = [0x500+offset + 0x14C*p for p in positions]
-        filedata.append({
+        f = {
             "version": version,
             "slot": i,
             "leader": string(0,12),
@@ -240,38 +261,13 @@ def readsav(data):
             "door_number": read(0x402+offset,2),
             "party_positions": positions,
             "party": [get_character_info(data[base:base+0x14C]) for base in addresses],
-        })
-    for f in filedata:
+        }
         f["summons"] = [DataTables["summondata"][i]["name"] for i in range(33) if f["summons"] & 2**i]
         f["area"] = roomname(GAME, f["map_number"], f["door_number"])
-        djinncounts = [0, 0, 0, 0]
-        for pc in f["party"]:
-            element = [0,2,3,1,0,2,3,1][pc["ID"]]
-            pc["element"] = Text["elements"][element]
-            pc["abilities"] = [Text["abilities"][i & 0x3FF] for i in pc["abilities"] if i & 0x3FF]
-            pc["inventory"] = {Text["items"][i & 0x1FF]: i for i in pc["inventory"] if i & 0x1FF}
-            for k, v in pc["inventory"].items():
-                metadata = [(v>>11 & 0x1F) + 1]
-                if v & 1<<9: metadata.append("equipped")
-                if v & 1<<10: metadata.append("broken")
-                pc["inventory"][k] = metadata
-            for i, count in enumerate(pc["djinncounts"]):
-                djinncounts[i] += count
-            pc["class"] = Text["classes"][pc["class"]]
-            pc["djinn"] = sum((d<<20*i for i,d in enumerate(pc["djinn"])))
-            pc["set_djinn"] = sum((d<<20*i for i,d in enumerate(pc["set_djinn"])))
-            pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
-            pc["set_djinn"] = [Text["djinn"][i] for i in range(80) if pc["set_djinn"] & 2**i]
-            pc["elevels"] = pc["set_djinncounts"].copy()
-            pc["elevels"][element] += 5
-            pc["perm_status"] = []
-            if pc["stats"]["HP_cur"] == 0: pc["perm_status"].append("Downed")
-            for status in ("Curse", "Poison", "Venom", "Haunt"):
-                if pc["status"][status.lower()]: pc["perm_status"].append(status)
         seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
-        seconds %= 60; minutes %= 60
-        f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes, seconds),
-        f["djinncounts"] = djinncounts
+        f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes % 60, seconds % 60),
+        f["djinncounts"] = [sum((pc["djinncounts"][i] for pc in f["party"])) for i in range(4)]
+        filedata.append(f)
     return filedata
 
 
