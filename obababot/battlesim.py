@@ -375,8 +375,6 @@ async def battle(message, *args, **kwargs):
                 dice_roll -= v
                 if dice_roll < 0: break
             ability = DataTables.get("abilitydata", enemy["abilities"][i])
-            ability = DataTables.get("abilitydata", "Defend")
-            for e in enemies: e["HP_cur"] = e["HP_max"]
             target_party = party if ability["target"] == "Enemies" else enemies
             AGI = enemy["AGI"]*(1 - turn/(2*enemy["turns"]))
             if ability["name"] == "Defend": AGI += 20000
