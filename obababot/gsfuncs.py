@@ -116,7 +116,7 @@ def roomname(gamenumber, mapnumber, doornumber):
     return roomtable[0]["name"]
 
 
-def get_character_info(data):
+def get_character_info(data=bytearray(0x14C)):
     read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
     readsigned = lambda addr, size: (read(addr, size) ^ 2**(8*size)) - 2**(8*size)
     string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
@@ -156,7 +156,6 @@ def get_character_info(data):
         "exp": read(0x124, 4),
         "class": read(0x129, 1),
         "defending": read(0x12B, 1),
-        "status": [read(j, 1) for j in (0x130, 0x131, 0x140)],
         "status": {
             "summon_boosts": [read(0x12C+j, 1) for j in range(4)],
             "curse": read(0x130,1),
@@ -174,7 +173,7 @@ def get_character_info(data):
             "hp_regen": read(0x13E,1),
             "reflect": read(0x13F,1),
             "haunt": read(0x140,1),
-            "candle_curse": read(0x141,1),
+            "death_curse": read(0x141,1),
             "critical_rate": read(0x142,1),
             "reflux": read(0x143,1),
             "kite": read(0x144,1),
@@ -193,6 +192,7 @@ def get_character_info(data):
         if v & 1<<10: metadata.append("broken")
         pc["inventory"][k] = metadata
     pc["class"] = Text["classes"][pc["class"]]
+    pc["weaknesses"] = DataTables.get("classdata", pc["class"])["weaknesses"]
     pc["djinn"] = sum((d<<20*i for i,d in enumerate(pc["djinn"])))
     pc["set_djinn"] = sum((d<<20*i for i,d in enumerate(pc["set_djinn"])))
     pc["djinn"] = [Text["djinn"][i] for i in range(80) if pc["djinn"] & 2**i]
@@ -250,7 +250,7 @@ def readsav(data):
         party_size = sum((1 if read(0x40, 1) & 2**j else 0 for j in range(8)))
         positions = [read(0x438+offset + j, 1) for j in range(party_size)]
         addresses = [0x500+offset + 0x14C*p for p in positions]
-        f = {
+        slot = {
             "version": version,
             "slot": i,
             "leader": string(0,12),
@@ -262,12 +262,13 @@ def readsav(data):
             "party_positions": positions,
             "party": [get_character_info(data[base:base+0x14C]) for base in addresses],
         }
-        f["summons"] = [DataTables["summondata"][i]["name"] for i in range(33) if f["summons"] & 2**i]
-        f["area"] = roomname(GAME, f["map_number"], f["door_number"])
-        seconds, minutes, hours = (f["framecount"]//60**i for i in range(1,4))
-        f["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes % 60, seconds % 60),
-        f["djinncounts"] = [sum((pc["djinncounts"][i] for pc in f["party"])) for i in range(4)]
-        filedata.append(f)
+        slot["summons"] = [i for i in range(33) if slot["summons"] & 2**i]
+        slot["summons"] = [DataTables["summondata"][i]["name"] for i in slot["summons"]]
+        slot["area"] = roomname(GAME, slot["map_number"], slot["door_number"])
+        seconds, minutes, hours = (slot["framecount"]//60**i for i in range(1,4))
+        slot["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes % 60, seconds % 60),
+        slot["djinncounts"] = [sum((pc["djinncounts"][i] for pc in slot["party"])) for i in range(4)]
+        filedata.append(slot)
     return filedata
 
 

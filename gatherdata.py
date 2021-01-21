@@ -136,7 +136,7 @@ with open(ROM2, "rb") as f:
             "flags": read(1),
             "damage_type": None,
             "element": elements[read(1)],
-            "ability_effect": ability_effects[read(1)],
+            "effect": ability_effects[read(1)],
             "icon": read(2),
             "utility": read(1),
             "unused": read(1),
@@ -204,21 +204,19 @@ with open(ROM2, "rb") as f:
     f.seek(0x0C150C)  # summon data
     summondata = []
     for i in range(29):
-        moveID = read(4)
-        move = abilitydata[moveID]
         summondata.append({
             "ID": i,
-            "name": move["name"],
-            "target": move["target"],
-            "damage_type": "Summon",
-            "element": move["element"],
+            "ability": read(4),
             "djinn_cost": [read(1) for j in range(4)],
-            "ability_effect": move["ability_effect"],
-            "icon": move["icon"],
-            "range": move["range"],
-            "power": move["power"],
             "hp_multiplier": None,
-            "description": move["description"],
+        })
+    othersummons = {514:0, 515:0, 673:0.3, 683:0.35, 724:0.4}
+    for ability, mult in othersummons.items():
+        summondata.append({
+            "ID": len(summondata),
+            "ability": ability,
+            "djinn_cost": [0,0,0,0],
+            "hp_multiplier": mult,
         })
 
     f.seek(0x0C15F4)  # class data
@@ -404,13 +402,13 @@ for pc in pcdata:
 
 # Summons
 for summon in summondata:
-    summon["hp_multiplier"] = sum(summon["djinn_cost"])*0.03
-    if summon["name"] == "Daedalus":
-        summon["hp_multiplier"] = 0.22
-        summon["power"] = 350
-    if summon["name"] == "Iris":
-        summon["hp_multiplier"] = 0.40
-    summon["target"] = targets[summon["target"]]
+    move = abilitydata[summon["ability"]]
+    summon.update({**move, **summon})
+    if summon["hp_multiplier"] is None:
+        summon["hp_multiplier"] = sum(summon["djinn_cost"])*0.03
+summondata[24]["hp_multiplier"] = 0.22
+summondata[24]["power"] = 350
+summondata[28]["hp_multiplier"] = 0.40
 
 # Classes
 classgroups = [
@@ -437,7 +435,7 @@ for djinni in djinndata:
     djinni.pop("unused")
     move = abilitydata[djinni["ability"]]
     djinni["damage_type"] = move["damage_type"]
-    djinni["effect"] = move["ability_effect"]
+    djinni["effect"] = move["effect"]
     djinni["target"] = move["target"]
     djinni["power"] = move["power"]
     djinni["description"] = move["description"]

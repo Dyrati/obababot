@@ -24,9 +24,9 @@ def diag_iter(array):
     upright = lambda x,y: (x+1, y+1)
     ismember = lambda x,y: 0 <= x < len(array) and 0 <= y < len(array[0])
     positions = ((0,0), (len(array)-1,1), (len(array)-1,0), (0,1))
-    starts = (right, up, left, up)
-    direction = (upleft, upleft, upright, upright)
-    for pos, start, direction in zip(positions, starts, direction):
+    shifts = (right, up, left, up)
+    directions = (upleft, upleft, upright, upright)
+    for pos, shift, direction in zip(positions, shifts, directions):
         while ismember(*pos):
             x, y = pos
             out = []
@@ -34,7 +34,7 @@ def diag_iter(array):
                 out.append((array[x][y], x, y))
                 x,y = direction(x,y)
             yield out
-            pos = start(*pos)
+            pos = shift(*pos)
 
 
 class ConnectFour():

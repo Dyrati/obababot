@@ -43,8 +43,8 @@ op_regex = [
 ]
 
 mquote = re.compile(r"(\".*?\"|\'.*?\')")
-varmatch = r"\b(?!(?:in|not|and|or)\b)[a-zA-Z_][a-zA-Z0-9_]*"
-mgroup = re.compile(rf"[^)\]]*(?<!\w|_|}})(({varmatch}|{{\d+}})?(?:\((.*?)\)|\[(.*?)\]))")
+varmatch = r"\b(?!(?:in|not|and|or)\b)[a-zA-Z_]\w*"
+mgroup = re.compile(rf"[^)\]]*(?<![\w}}])(({varmatch}|{{\d+}})?(?:\((.*?)\)|\[(.*?)\]))")
 mvar = re.compile(rf"({varmatch})")
 mtoken = re.compile(r"^\s*{(\d+)}\s*$")
 
