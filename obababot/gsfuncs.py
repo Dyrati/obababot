@@ -131,6 +131,8 @@ def get_character_info(data=bytearray(0x14C)):
             "AGI": read(0x1C, 2),
             "LCK": read(0x1E, 1),
             "turns": read(0x1F, 1),
+            "HP_recovery": read(0x20, 1),
+            "PP_recovery": read(0x21, 1),
             "epow": [read(0x24+4*j, 2) for j in range(4)],
             "eres": [read(0x26+4*j, 2) for j in range(4)],
         },
@@ -144,6 +146,8 @@ def get_character_info(data=bytearray(0x14C)):
             "AGI": read(0x40, 2),
             "LCK": read(0x42, 1),
             "turns": read(0x43, 1),
+            "HP_recovery": read(0x44, 1),
+            "PP_recovery": read(0x45, 1),
             "epow": [read(0x48+4*j, 2) for j in range(4)],
             "eres": [read(0x4A+4*j, 2) for j in range(4)],
         },
@@ -201,12 +205,12 @@ def get_character_info(data=bytearray(0x14C)):
     pc["elevels"][element] += 5
     pc["perm_status"] = []
     if pc["stats"]["HP_cur"] == 0: pc["perm_status"].append("Downed")
-    for status in ("Curse", "Poison", "Venom", "Haunt"):
-        if pc["status"][status.lower()]: pc["perm_status"].append(status)
+    for status in ("curse", "poison", "venom", "haunt"):
+        if pc["status"][status]: pc["perm_status"].append(status)
     return pc
 
 
-def readsav(data):
+def get_save_data(data):
     f = io.BytesIO(data)
     read = lambda size: int.from_bytes(f.read(size), "little")
     headers = []
@@ -219,29 +223,37 @@ def readsav(data):
             "checksum": read(2),
             "priority": read(2),
         })
-    valid_saves = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] <= 0xF]
+    valid_headers = [h for h in headers if h["header"] == b"CAMELOT" and h["slot"] <= 0xF]
     slots = {}
-    for save in valid_saves:
-        if save["priority"] > slots.get(save["slot"], -1):
-            slots[save["slot"]] = save
-    build_dates = {
-        0x1C85: "Golden Sun - The Lost Age (UE)",
-        0x1D97: "Golden Sun - The Lost Age (G)",
-        0x1DC7: "Golden Sun - The Lost Age (S)",
-        0x1D98: "Golden Sun - The Lost Age (F)",
-        0x1DC8: "Golden Sun - The Lost Age (I)",
-        0x198A: "Golden Sun - The Lost Age (J)",
-        0x1652: "Golden Sun (UE)",
-        0x1849: "Golden Sun (G)",
-        0x1885: "Golden Sun (S)",
-        0x1713: "Golden Sun (F)",
-        0x1886: "Golden Sun (I)",
-        0x159C: "Golden Sun (J)"}
+    for h in valid_headers:
+        if h["priority"] > slots.get(h["slot"], -1):
+            slots[h["slot"]] = h
+    for slot, header in slots.items():
+        f.seek(header["addr"] + 0x10)
+        slots[slot] = f.read(0x2FF0)
+    return slots
+
+
+build_dates = {
+    0x1C85: "Golden Sun - The Lost Age (UE)",
+    0x1D97: "Golden Sun - The Lost Age (G)",
+    0x1DC7: "Golden Sun - The Lost Age (S)",
+    0x1D98: "Golden Sun - The Lost Age (F)",
+    0x1DC8: "Golden Sun - The Lost Age (I)",
+    0x198A: "Golden Sun - The Lost Age (J)",
+    0x1652: "Golden Sun (UE)",
+    0x1849: "Golden Sun (G)",
+    0x1885: "Golden Sun (S)",
+    0x1713: "Golden Sun (F)",
+    0x1886: "Golden Sun (I)",
+    0x159C: "Golden Sun (J)"}
+
+
+def readsav(data):
+    slots = get_save_data(data)
     filedata = []
-    for i in range(3):
-        if not slots.get(i): continue
-        f.seek(slots[i]["addr"] + 0x10)
-        data = f.read(0x2FF0)
+    for i in sorted(slots):
+        data = slots[i]
         read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
         string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
         version = build_dates[read(0x26, 2) & ~0x8000]
@@ -253,12 +265,12 @@ def readsav(data):
         slot = {
             "version": version,
             "slot": i,
-            "leader": string(0,12),
-            "framecount": read(0x244,4),
-            "summons": read(0x24C,4),
-            "coins": read(0x250,4),
-            "map_number": read(0x400+offset,2),
-            "door_number": read(0x402+offset,2),
+            "leader": string(0, 12),
+            "framecount": read(0x244, 4),
+            "summons": read(0x24C, 4),
+            "coins": read(0x250, 4),
+            "map_number": read(0x400+offset, 2),
+            "door_number": read(0x402+offset, 2),
             "party_positions": positions,
             "party": [get_character_info(data[base:base+0x14C]) for base in addresses],
         }
@@ -392,25 +404,3 @@ def rn_iter(init, u32=False):
         init = (0x41C64E6D*init + 0x3039) % 2**32
         if u32: yield init
         else: yield (init >> 8) & 0xFFFF
-
-# @command
-# async def get_rn(message, *args, **kwargs):
-#     user = UserData[message.author.id]
-#     init, lower, upper = map(int, args)
-#     assert upper-lower <= 2000, "Range exceeded"
-#     upper += 1  # to make it inclusive
-#     fields = ["rel", "value"]
-#     if kwargs.get("eval"): fields.append("eval")
-#     rn = rn_iter2(rn_value(rn_count(init) + lower-1), u32=True)
-#     iterator = zip(range(lower,upper), rn)
-#     if kwargs.get("filter"):
-#         condition = kwargs["filter"].strip('"')
-#         f = lambda x: safe_eval(condition, {"rn":x[1]})
-#         iterator = filter(f, iterator)
-#     expression = kwargs.get("eval", "").strip('"')
-#     out = [{
-#         "rel":i,
-#         "value": f"{rn:08X}",
-#         "eval": safe_eval(expression, {"rn":rn}),
-#         } for i,rn in iterator]
-#     await reply(message, f"```\n{utilities.tableH(out, fields=fields)}\n```")
