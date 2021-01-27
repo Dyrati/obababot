@@ -53,7 +53,7 @@
     },
     {
         "ID": 1,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (1)",
         "level": 12,
         "HP": 349,
         "PP": 25,
@@ -108,7 +108,7 @@
     },
     {
         "ID": 2,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (2)",
         "level": 15,
         "HP": 421,
         "PP": 30,
@@ -163,7 +163,7 @@
     },
     {
         "ID": 3,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (3)",
         "level": 23,
         "HP": 623,
         "PP": 51,
@@ -218,7 +218,7 @@
     },
     {
         "ID": 4,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (4)",
         "level": 3,
         "HP": 255,
         "PP": 25,
@@ -273,7 +273,7 @@
     },
     {
         "ID": 5,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (5)",
         "level": 9,
         "HP": 223,
         "PP": 20,
@@ -328,7 +328,7 @@
     },
     {
         "ID": 6,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (6)",
         "level": 19,
         "HP": 466,
         "PP": 46,
@@ -383,7 +383,7 @@
     },
     {
         "ID": 7,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (7)",
         "level": 20,
         "HP": 500,
         "PP": 44,
@@ -438,7 +438,7 @@
     },
     {
         "ID": 8,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (8)",
         "level": 23,
         "HP": 590,
         "PP": 53,
@@ -493,7 +493,7 @@
     },
     {
         "ID": 9,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (9)",
         "level": 27,
         "HP": 710,
         "PP": 65,
@@ -548,7 +548,7 @@
     },
     {
         "ID": 10,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (10)",
         "level": 31,
         "HP": 830,
         "PP": 77,
@@ -603,7 +603,7 @@
     },
     {
         "ID": 11,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (11)",
         "level": 3,
         "HP": 255,
         "PP": 25,
@@ -658,7 +658,7 @@
     },
     {
         "ID": 12,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (12)",
         "level": 3,
         "HP": 255,
         "PP": 25,
@@ -713,7 +713,7 @@
     },
     {
         "ID": 13,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (13)",
         "level": 3,
         "HP": 255,
         "PP": 25,
@@ -768,7 +768,7 @@
     },
     {
         "ID": 14,
-        "name": "Venus Djinni",
+        "name": "Venus Djinni (14)",
         "level": 36,
         "HP": 990,
         "PP": 94,
@@ -823,7 +823,7 @@
     },
     {
         "ID": 15,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (1)",
         "level": 10,
         "HP": 290,
         "PP": 20,
@@ -878,7 +878,7 @@
     },
     {
         "ID": 16,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (2)",
         "level": 13,
         "HP": 361,
         "PP": 27,
@@ -933,7 +933,7 @@
     },
     {
         "ID": 17,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (3)",
         "level": 18,
         "HP": 466,
         "PP": 46,
@@ -988,7 +988,7 @@
     },
     {
         "ID": 18,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (4)",
         "level": 24,
         "HP": 654,
         "PP": 59,
@@ -1043,7 +1043,7 @@
     },
     {
         "ID": 19,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (5)",
         "level": 6,
         "HP": 165,
         "PP": 14,
@@ -1098,7 +1098,7 @@
     },
     {
         "ID": 20,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (6)",
         "level": 12,
         "HP": 291,
         "PP": 26,
@@ -1153,7 +1153,7 @@
     },
     {
         "ID": 21,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (7)",
         "level": 3,
         "HP": 217,
         "PP": 20,
@@ -1208,7 +1208,7 @@
     },
     {
         "ID": 22,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (8)",
         "level": 3,
         "HP": 217,
         "PP": 20,
@@ -1263,7 +1263,7 @@
     },
     {
         "ID": 23,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (9)",
         "level": 17,
         "HP": 414,
         "PP": 37,
@@ -1318,7 +1318,7 @@
     },
     {
         "ID": 24,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (10)",
         "level": 24,
         "HP": 620,
         "PP": 56,
@@ -1373,7 +1373,7 @@
     },
     {
         "ID": 25,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (11)",
         "level": 3,
         "HP": 217,
         "PP": 20,
@@ -1428,7 +1428,7 @@
     },
     {
         "ID": 26,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (12)",
         "level": 3,
         "HP": 217,
         "PP": 20,
@@ -1483,7 +1483,7 @@
     },
     {
         "ID": 27,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (13)",
         "level": 32,
         "HP": 860,
         "PP": 80,
@@ -1538,7 +1538,7 @@
     },
     {
         "ID": 28,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (14)",
         "level": 35,
         "HP": 940,
         "PP": 88,
@@ -1593,7 +1593,7 @@
     },
     {
         "ID": 29,
-        "name": "Mercury Djinni",
+        "name": "Mercury Djinni (15)",
         "level": 34,
         "HP": 920,
         "PP": 86,
@@ -1648,7 +1648,7 @@
     },
     {
         "ID": 30,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (1)",
         "level": 5,
         "HP": 172,
         "PP": 14,
@@ -1703,7 +1703,7 @@
     },
     {
         "ID": 31,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (2)",
         "level": 13,
         "HP": 355,
         "PP": 24,
@@ -1758,7 +1758,7 @@
     },
     {
         "ID": 32,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (3)",
         "level": 22,
         "HP": 592,
         "PP": 52,
@@ -1813,7 +1813,7 @@
     },
     {
         "ID": 33,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (4)",
         "level": 8,
         "HP": 203,
         "PP": 18,
@@ -1868,7 +1868,7 @@
     },
     {
         "ID": 34,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (5)",
         "level": 3,
         "HP": 151,
         "PP": 14,
@@ -1923,7 +1923,7 @@
     },
     {
         "ID": 35,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (6)",
         "level": 16,
         "HP": 403,
         "PP": 37,
@@ -1978,7 +1978,7 @@
     },
     {
         "ID": 36,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (7)",
         "level": 3,
         "HP": 151,
         "PP": 14,
@@ -2033,7 +2033,7 @@
     },
     {
         "ID": 37,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (8)",
         "level": 3,
         "HP": 151,
         "PP": 14,
@@ -2088,7 +2088,7 @@
     },
     {
         "ID": 38,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (9)",
         "level": 28,
         "HP": 756,
         "PP": 69,
@@ -2143,7 +2143,7 @@
     },
     {
         "ID": 39,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (10)",
         "level": 31,
         "HP": 840,
         "PP": 79,
@@ -2198,7 +2198,7 @@
     },
     {
         "ID": 40,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (11)",
         "level": 3,
         "HP": 151,
         "PP": 14,
@@ -2253,7 +2253,7 @@
     },
     {
         "ID": 41,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (12)",
         "level": 3,
         "HP": 151,
         "PP": 14,
@@ -2308,7 +2308,7 @@
     },
     {
         "ID": 42,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (13)",
         "level": 33,
         "HP": 890,
         "PP": 83,
@@ -2363,7 +2363,7 @@
     },
     {
         "ID": 43,
-        "name": "Mars Djinni",
+        "name": "Mars Djinni (14)",
         "level": 35,
         "HP": 950,
         "PP": 89,
@@ -2418,7 +2418,7 @@
     },
     {
         "ID": 44,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (1)",
         "level": 8,
         "HP": 243,
         "PP": 22,
@@ -2473,7 +2473,7 @@
     },
     {
         "ID": 45,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (2)",
         "level": 11,
         "HP": 314,
         "PP": 25,
@@ -2528,7 +2528,7 @@
     },
     {
         "ID": 46,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (3)",
         "level": 18,
         "HP": 481,
         "PP": 40,
@@ -2583,7 +2583,7 @@
     },
     {
         "ID": 47,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (4)",
         "level": 25,
         "HP": 688,
         "PP": 62,
@@ -2638,7 +2638,7 @@
     },
     {
         "ID": 48,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (5)",
         "level": 7,
         "HP": 184,
         "PP": 16,
@@ -2693,7 +2693,7 @@
     },
     {
         "ID": 49,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (6)",
         "level": 11,
         "HP": 267,
         "PP": 24,
@@ -2748,7 +2748,7 @@
     },
     {
         "ID": 50,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (7)",
         "level": 3,
         "HP": 191,
         "PP": 22,
@@ -2803,7 +2803,7 @@
     },
     {
         "ID": 51,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (8)",
         "level": 18,
         "HP": 440,
         "PP": 40,
@@ -2858,7 +2858,7 @@
     },
     {
         "ID": 52,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (9)",
         "level": 3,
         "HP": 191,
         "PP": 22,
@@ -2913,7 +2913,7 @@
     },
     {
         "ID": 53,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (10)",
         "level": 28,
         "HP": 740,
         "PP": 68,
@@ -2968,7 +2968,7 @@
     },
     {
         "ID": 54,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (11)",
         "level": 3,
         "HP": 191,
         "PP": 22,
@@ -3023,7 +3023,7 @@
     },
     {
         "ID": 55,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (12)",
         "level": 32,
         "HP": 852,
         "PP": 78,
@@ -3078,7 +3078,7 @@
     },
     {
         "ID": 56,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (13)",
         "level": 32,
         "HP": 870,
         "PP": 81,
@@ -3133,7 +3133,7 @@
     },
     {
         "ID": 57,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (14)",
         "level": 3,
         "HP": 191,
         "PP": 22,
@@ -3188,7 +3188,7 @@
     },
     {
         "ID": 58,
-        "name": "Jupiter Djinni",
+        "name": "Jupiter Djinni (15)",
         "level": 36,
         "HP": 980,
         "PP": 92,
@@ -4587,7 +4587,7 @@
     },
     {
         "ID": 83,
-        "name": "Serpent",
+        "name": "Serpent (1)",
         "level": 33,
         "HP": 3536,
         "PP": 160,
@@ -4642,7 +4642,7 @@
     },
     {
         "ID": 84,
-        "name": "Serpent",
+        "name": "Serpent (2)",
         "level": 33,
         "HP": 3536,
         "PP": 160,
@@ -4697,7 +4697,7 @@
     },
     {
         "ID": 85,
-        "name": "Serpent",
+        "name": "Serpent (3)",
         "level": 33,
         "HP": 3536,
         "PP": 160,
@@ -4752,7 +4752,7 @@
     },
     {
         "ID": 86,
-        "name": "Serpent",
+        "name": "Serpent (4)",
         "level": 33,
         "HP": 3536,
         "PP": 160,
@@ -4807,7 +4807,7 @@
     },
     {
         "ID": 87,
-        "name": "Serpent",
+        "name": "Serpent (5)",
         "level": 33,
         "HP": 3536,
         "PP": 160,
@@ -5140,7 +5140,7 @@
     },
     {
         "ID": 93,
-        "name": "Poseidon",
+        "name": "Poseidon (1)",
         "level": 39,
         "HP": 4905,
         "PP": 162,
@@ -5195,7 +5195,7 @@
     },
     {
         "ID": 94,
-        "name": "Poseidon",
+        "name": "Poseidon (2)",
         "level": 39,
         "HP": 4905,
         "PP": 162,
@@ -5305,7 +5305,7 @@
     },
     {
         "ID": 96,
-        "name": "Moapa",
+        "name": "Moapa (1)",
         "level": 37,
         "HP": 3042,
         "PP": 0,
@@ -5365,7 +5365,7 @@
     },
     {
         "ID": 97,
-        "name": "Moapa",
+        "name": "Moapa (2)",
         "level": 37,
         "HP": 3042,
         "PP": 0,
@@ -5425,7 +5425,7 @@
     },
     {
         "ID": 98,
-        "name": "Moapa",
+        "name": "Moapa (3)",
         "level": 37,
         "HP": 3042,
         "PP": 0,
@@ -5485,7 +5485,7 @@
     },
     {
         "ID": 99,
-        "name": "Knight",
+        "name": "Knight (1)",
         "level": 37,
         "HP": 1954,
         "PP": 0,
@@ -5545,7 +5545,7 @@
     },
     {
         "ID": 100,
-        "name": "Knight",
+        "name": "Knight (2)",
         "level": 37,
         "HP": 1954,
         "PP": 0,
@@ -5661,7 +5661,7 @@
     },
     {
         "ID": 102,
-        "name": "Agatio",
+        "name": "Agatio (1)",
         "level": 43,
         "HP": 4248,
         "PP": 280,
@@ -5716,7 +5716,7 @@
     },
     {
         "ID": 103,
-        "name": "Agatio",
+        "name": "Agatio (2)",
         "level": 43,
         "HP": 4248,
         "PP": 280,
@@ -5771,7 +5771,7 @@
     },
     {
         "ID": 104,
-        "name": "Agatio",
+        "name": "Agatio (3)",
         "level": 43,
         "HP": 4320,
         "PP": 280,
@@ -5826,7 +5826,7 @@
     },
     {
         "ID": 105,
-        "name": "Karst",
+        "name": "Karst (1)",
         "level": 43,
         "HP": 3186,
         "PP": 320,
@@ -5881,7 +5881,7 @@
     },
     {
         "ID": 106,
-        "name": "Karst",
+        "name": "Karst (2)",
         "level": 43,
         "HP": 3186,
         "PP": 320,
@@ -5936,7 +5936,7 @@
     },
     {
         "ID": 107,
-        "name": "Karst",
+        "name": "Karst (3)",
         "level": 43,
         "HP": 3240,
         "PP": 320,
@@ -6714,7 +6714,7 @@
     },
     {
         "ID": 121,
-        "name": "Kobold",
+        "name": "Kobold (1)",
         "level": 10,
         "HP": 77,
         "PP": 0,
@@ -6879,7 +6879,7 @@
     },
     {
         "ID": 124,
-        "name": "Mad Plant",
+        "name": "Mad Plant (1)",
         "level": 23,
         "HP": 449,
         "PP": 0,
@@ -6933,7 +6933,7 @@
     },
     {
         "ID": 125,
-        "name": "Mad Plant",
+        "name": "Mad Plant (2)",
         "level": 26,
         "HP": 518,
         "PP": 0,
@@ -6987,7 +6987,7 @@
     },
     {
         "ID": 126,
-        "name": "Mad Plant",
+        "name": "Mad Plant (3)",
         "level": 28,
         "HP": 566,
         "PP": 0,
@@ -7041,7 +7041,7 @@
     },
     {
         "ID": 127,
-        "name": "Mad Plant",
+        "name": "Mad Plant (4)",
         "level": 35,
         "HP": 726,
         "PP": 0,
@@ -7095,7 +7095,7 @@
     },
     {
         "ID": 128,
-        "name": "Mad Plant",
+        "name": "Mad Plant (5)",
         "level": 35,
         "HP": 730,
         "PP": 0,
@@ -8188,7 +8188,7 @@
     },
     {
         "ID": 148,
-        "name": "Lich",
+        "name": "Lich (1)",
         "level": 33,
         "HP": 187,
         "PP": 30,
@@ -10280,7 +10280,7 @@
     },
     {
         "ID": 186,
-        "name": "Flame Dragon",
+        "name": "Flame Dragon (1)",
         "level": 45,
         "HP": 5724,
         "PP": 250,
@@ -10335,7 +10335,7 @@
     },
     {
         "ID": 187,
-        "name": "Flame Dragon",
+        "name": "Flame Dragon (2)",
         "level": 45,
         "HP": 5348,
         "PP": 320,
@@ -11099,7 +11099,7 @@
     },
     {
         "ID": 201,
-        "name": "Valukar",
+        "name": "Valukar (1)",
         "level": 47,
         "HP": 12960,
         "PP": 0,
@@ -11154,7 +11154,7 @@
     },
     {
         "ID": 202,
-        "name": "Valukar",
+        "name": "Valukar (2)",
         "level": 0,
         "HP": 18,
         "PP": 0,
@@ -11209,7 +11209,7 @@
     },
     {
         "ID": 203,
-        "name": "Valukar",
+        "name": "Valukar (3)",
         "level": 0,
         "HP": 18,
         "PP": 0,
@@ -11594,7 +11594,7 @@
     },
     {
         "ID": 210,
-        "name": "Dullahan",
+        "name": "Dullahan (1)",
         "level": 50,
         "HP": 16000,
         "PP": 300,
@@ -11649,7 +11649,7 @@
     },
     {
         "ID": 211,
-        "name": "Dullahan",
+        "name": "Dullahan (2)",
         "level": 50,
         "HP": 16000,
         "PP": 300,
@@ -11704,7 +11704,7 @@
     },
     {
         "ID": 212,
-        "name": "Dullahan",
+        "name": "Dullahan (3)",
         "level": 50,
         "HP": 16000,
         "PP": 300,
@@ -11759,7 +11759,7 @@
     },
     {
         "ID": 213,
-        "name": "Sentinel",
+        "name": "Sentinel (1)",
         "level": 48,
         "HP": 8736,
         "PP": 780,
@@ -11814,7 +11814,7 @@
     },
     {
         "ID": 214,
-        "name": "Sentinel",
+        "name": "Sentinel (2)",
         "level": 0,
         "HP": 18,
         "PP": 0,
@@ -11869,7 +11869,7 @@
     },
     {
         "ID": 215,
-        "name": "Sentinel",
+        "name": "Sentinel (3)",
         "level": 0,
         "HP": 18,
         "PP": 0,
@@ -11924,7 +11924,7 @@
     },
     {
         "ID": 216,
-        "name": "Vermin",
+        "name": "Vermin (1)",
         "level": 1,
         "HP": 20,
         "PP": 0,
@@ -11978,7 +11978,7 @@
     },
     {
         "ID": 217,
-        "name": "Vermin",
+        "name": "Vermin (2)",
         "level": 3,
         "HP": 36,
         "PP": 0,
@@ -12086,7 +12086,7 @@
     },
     {
         "ID": 219,
-        "name": "Bat",
+        "name": "Bat (1)",
         "level": 1,
         "HP": 17,
         "PP": 0,
@@ -12141,7 +12141,7 @@
     },
     {
         "ID": 220,
-        "name": "Bat",
+        "name": "Bat (2)",
         "level": 3,
         "HP": 30,
         "PP": 0,
@@ -12306,7 +12306,7 @@
     },
     {
         "ID": 223,
-        "name": "Wild Mushroom",
+        "name": "Wild Mushroom (1)",
         "level": 1,
         "HP": 18,
         "PP": 0,
@@ -12361,7 +12361,7 @@
     },
     {
         "ID": 224,
-        "name": "Wild Mushroom",
+        "name": "Wild Mushroom (2)",
         "level": 3,
         "HP": 34,
         "PP": 0,
@@ -12471,7 +12471,7 @@
     },
     {
         "ID": 226,
-        "name": "Slime",
+        "name": "Slime (1)",
         "level": 2,
         "HP": 22,
         "PP": 0,
@@ -12527,7 +12527,7 @@
     },
     {
         "ID": 227,
-        "name": "Slime",
+        "name": "Slime (2)",
         "level": 3,
         "HP": 32,
         "PP": 0,
@@ -12862,7 +12862,7 @@
     },
     {
         "ID": 233,
-        "name": "Lich",
+        "name": "Lich (2)",
         "level": 23,
         "HP": 900,
         "PP": 52,
@@ -12917,7 +12917,7 @@
     },
     {
         "ID": 234,
-        "name": "Zombie",
+        "name": "Zombie (1)",
         "level": 4,
         "HP": 55,
         "PP": 0,
@@ -13082,7 +13082,7 @@
     },
     {
         "ID": 237,
-        "name": "Bandit",
+        "name": "Bandit (1)",
         "level": 7,
         "HP": 244,
         "PP": 0,
@@ -13140,7 +13140,7 @@
     },
     {
         "ID": 238,
-        "name": "Thief",
+        "name": "Thief (1)",
         "level": 6,
         "HP": 110,
         "PP": 0,
@@ -16399,7 +16399,7 @@
     },
     {
         "ID": 297,
-        "name": "Kobold",
+        "name": "Kobold (2)",
         "level": 20,
         "HP": 220,
         "PP": 0,
@@ -17565,7 +17565,7 @@
     },
     {
         "ID": 318,
-        "name": "Amaze",
+        "name": "Amaze (1)",
         "level": 2,
         "HP": 28,
         "PP": 0,
@@ -17620,7 +17620,7 @@
     },
     {
         "ID": 319,
-        "name": "Amaze",
+        "name": "Amaze (2)",
         "level": 6,
         "HP": 39,
         "PP": 0,
@@ -18396,7 +18396,7 @@
     },
     {
         "ID": 333,
-        "name": "Azart",
+        "name": "Azart (1)",
         "level": 25,
         "HP": 450,
         "PP": 0,
@@ -18455,7 +18455,7 @@
     },
     {
         "ID": 334,
-        "name": "Azart",
+        "name": "Azart (2)",
         "level": 25,
         "HP": 450,
         "PP": 0,
@@ -18514,7 +18514,7 @@
     },
     {
         "ID": 335,
-        "name": "Satrage",
+        "name": "Satrage (1)",
         "level": 25,
         "HP": 570,
         "PP": 0,
@@ -18573,7 +18573,7 @@
     },
     {
         "ID": 336,
-        "name": "Satrage",
+        "name": "Satrage (2)",
         "level": 25,
         "HP": 570,
         "PP": 0,
@@ -18632,7 +18632,7 @@
     },
     {
         "ID": 337,
-        "name": "Navampa",
+        "name": "Navampa (1)",
         "level": 25,
         "HP": 820,
         "PP": 0,
@@ -18692,7 +18692,7 @@
     },
     {
         "ID": 338,
-        "name": "Navampa",
+        "name": "Navampa (2)",
         "level": 25,
         "HP": 820,
         "PP": 0,
@@ -19083,7 +19083,7 @@
     },
     {
         "ID": 345,
-        "name": "Saturos",
+        "name": "Saturos (1)",
         "level": 18,
         "HP": 1200,
         "PP": 160,
@@ -19138,7 +19138,7 @@
     },
     {
         "ID": 346,
-        "name": "Saturos",
+        "name": "Saturos (2)",
         "level": 38,
         "HP": 3000,
         "PP": 260,
@@ -19407,7 +19407,7 @@
     },
     {
         "ID": 351,
-        "name": "Mimic",
+        "name": "Mimic (1)",
         "level": 9,
         "HP": 207,
         "PP": 12,
@@ -19462,7 +19462,7 @@
     },
     {
         "ID": 352,
-        "name": "Mimic",
+        "name": "Mimic (2)",
         "level": 17,
         "HP": 431,
         "PP": 36,
@@ -19517,7 +19517,7 @@
     },
     {
         "ID": 353,
-        "name": "Mimic",
+        "name": "Mimic (3)",
         "level": 22,
         "HP": 536,
         "PP": 50,
@@ -19572,7 +19572,7 @@
     },
     {
         "ID": 354,
-        "name": "Mimic",
+        "name": "Mimic (4)",
         "level": 27,
         "HP": 676,
         "PP": 62,
@@ -19627,7 +19627,7 @@
     },
     {
         "ID": 355,
-        "name": "Mimic",
+        "name": "Mimic (5)",
         "level": 28,
         "HP": 707,
         "PP": 64,
@@ -19682,7 +19682,7 @@
     },
     {
         "ID": 356,
-        "name": "Mimic",
+        "name": "Mimic (6)",
         "level": 34,
         "HP": 879,
         "PP": 76,
@@ -19737,7 +19737,7 @@
     },
     {
         "ID": 357,
-        "name": "Mimic",
+        "name": "Mimic (7)",
         "level": 35,
         "HP": 907,
         "PP": 78,
@@ -19792,7 +19792,7 @@
     },
     {
         "ID": 358,
-        "name": "Mimic",
+        "name": "Mimic (8)",
         "level": 36,
         "HP": 936,
         "PP": 80,
@@ -19847,7 +19847,7 @@
     },
     {
         "ID": 359,
-        "name": "Mimic",
+        "name": "Mimic (9)",
         "level": 38,
         "HP": 1008,
         "PP": 84,
@@ -19902,7 +19902,7 @@
     },
     {
         "ID": 360,
-        "name": "Zombie",
+        "name": "Zombie (2)",
         "level": 4,
         "HP": 55,
         "PP": 0,
@@ -19956,7 +19956,7 @@
     },
     {
         "ID": 361,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (1)",
         "level": 48,
         "HP": 5000,
         "PP": 500,
@@ -20008,7 +20008,7 @@
     },
     {
         "ID": 362,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (2)",
         "level": 48,
         "HP": 5000,
         "PP": 0,
@@ -20060,7 +20060,7 @@
     },
     {
         "ID": 363,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (3)",
         "level": 48,
         "HP": 5000,
         "PP": 0,
@@ -20112,7 +20112,7 @@
     },
     {
         "ID": 364,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (4)",
         "level": 48,
         "HP": 5000,
         "PP": 0,
@@ -20164,7 +20164,7 @@
     },
     {
         "ID": 365,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (5)",
         "level": 48,
         "HP": 4200,
         "PP": 500,
@@ -20216,7 +20216,7 @@
     },
     {
         "ID": 366,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (6)",
         "level": 48,
         "HP": 4200,
         "PP": 0,
@@ -20268,7 +20268,7 @@
     },
     {
         "ID": 367,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (7)",
         "level": 48,
         "HP": 4200,
         "PP": 0,
@@ -20320,7 +20320,7 @@
     },
     {
         "ID": 368,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (8)",
         "level": 48,
         "HP": 4000,
         "PP": 500,
@@ -20372,7 +20372,7 @@
     },
     {
         "ID": 369,
-        "name": "Doom Dragon",
+        "name": "Doom Dragon (9)",
         "level": 48,
         "HP": 4000,
         "PP": 0,
@@ -20632,7 +20632,7 @@
     },
     {
         "ID": 374,
-        "name": "Azart",
+        "name": "Azart (3)",
         "level": 38,
         "HP": 365,
         "PP": 0,
@@ -20691,7 +20691,7 @@
     },
     {
         "ID": 375,
-        "name": "Satrage",
+        "name": "Satrage (3)",
         "level": 38,
         "HP": 485,
         "PP": 0,
@@ -20751,7 +20751,7 @@
     },
     {
         "ID": 376,
-        "name": "Navampa",
+        "name": "Navampa (3)",
         "level": 38,
         "HP": 735,
         "PP": 0,
@@ -20811,7 +20811,7 @@
     },
     {
         "ID": 377,
-        "name": "Bandit",
+        "name": "Bandit (2)",
         "level": 23,
         "HP": 346,
         "PP": 0,
@@ -20870,7 +20870,7 @@
     },
     {
         "ID": 378,
-        "name": "Thief",
+        "name": "Thief (2)",
         "level": 23,
         "HP": 212,
         "PP": 0,

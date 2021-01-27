@@ -13,6 +13,21 @@ if __name__ == "__main__": utilities.Text = utilities.load_text()
 globals().update(**utilities.Text)
 
 
+def get_duplicates(array):
+    namedict = {}
+    for obj in array:
+        namedict[obj["name"]] = namedict.get(obj["name"], 0) + 1
+    return {k:v for k,v in namedict.items() if k != "?" and v > 1}
+
+def add_instance_numbers(array):
+    namedict = get_duplicates(array)
+    for obj in reversed(array):
+        count = namedict.get(obj["name"])
+        if count:
+            namedict[obj["name"]] -= 1
+            obj["name"] += f" ({count})"
+
+
 with open(ROM1, "rb") as f:
     def read(size):
         return int.from_bytes(f.read(size), "little")
@@ -125,9 +140,11 @@ with open(ROM2, "rb") as f:
             "dropped_by": [],
             "description": item_descriptions[i],
         })
+    add_instance_numbers(itemdata)
 
     f.seek(0x0B7C14)  # ability data
     abilitydata = []
+    abilitydataset = {}
     for i in range(734):
         abilitydata.append({
             "ID": i,
@@ -145,6 +162,7 @@ with open(ROM2, "rb") as f:
             "power": read(2),
             "description": move_descriptions[i]
         })
+    add_instance_numbers(abilitydata)
 
     f.seek(0x0B9E7C)  # enemy data
     enemydata = []
@@ -181,6 +199,7 @@ with open(ROM2, "rb") as f:
             "exp": read(2),
             "unused": read(2),
         })
+    add_instance_numbers(enemydata)
 
     f.seek(0x0C0F4C)  # pc data
     pcdata = []
@@ -242,8 +261,8 @@ with open(ROM2, "rb") as f:
         c1, c2 = classdataset.get(classes[i]), classdata[-1]
         if c1 and c1["name"] != "?" and not {c1["ID"], c2["ID"]} & {121, 122}:
             for suffix, e1, e2 in zip("EWFA", c1["elevels"], c2["elevels"]):
-                if e1 and e1 != e2: c1["name"] += f" ({suffix})"
-                if e2 and e1 != e2: c2["name"] += f" ({suffix})"
+                if e1 > e2: c1["name"] += f" ({suffix})"
+                if e2 > e1: c2["name"] += f" ({suffix})"
         classdataset[classes[i]] = c2
 
 
@@ -389,7 +408,7 @@ for enemy in enemydata:
         enemy[name] = elementdata[enemy["elemental_stats_id"]][name]
     enemy["items"] = [items[i] for i in enemy["items"] if i]
     enemy["items"] = dict(zip(enemy["items"], enemy.pop("item_quantities")))
-    if enemy["name"] in ("Dullahan", "Serpent"): enemy["HP_regen"] *= 10
+    if "Dullahan" in enemy["name"] or "Serpent" in enemy["name"]: enemy["HP_regen"] *= 10
     enemy["weaknesses"] = [ability_effects[i] for i in enemy["weaknesses"] if i]
     itemID = enemy["item_drop"]
     if itemID: itemdata[itemID]["dropped_by"].append(enemy["name"])
@@ -404,6 +423,7 @@ for pc in pcdata:
 for summon in summondata:
     move = abilitydata[summon["ability"]]
     summon.update({**move, **summon})
+    summon["name"] = abilities[summon["ability"]]
     if summon["hp_multiplier"] is None:
         summon["hp_multiplier"] = sum(summon["djinn_cost"])*0.03
 summondata[24]["hp_multiplier"] = 0.22

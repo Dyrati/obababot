@@ -121,6 +121,9 @@ class Database(dict):
     def add_entry(self, tablename, obj):
         if not obj.get("name"): return
         name = self.normalize(obj["name"])
+        if name != self._mbracket.sub("", name):
+            self.namemap[tablename][name] = [obj]
+            name = self._mbracket.sub("", name)
         if name in self.namemap[tablename]:
             self.namemap[tablename][name].append(obj)
         else:
@@ -134,7 +137,6 @@ class Database(dict):
         if name not in self.namemap[tablename]: return None
         else: return self.namemap[tablename][name]
     def normalize(self, name):
-        name = self._mbracket.sub("", name)
         return name.lower().replace("'","").replace("-"," ")
 
 

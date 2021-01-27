@@ -677,7 +677,7 @@
         "defense": 0,
         "unleash_rate": 8,
         "use_type": "Multi-Use",
-        "unleash_ability": "Rising Dragon",
+        "unleash_ability": "Rising Dragon (1)",
         "element": "Neutral",
         "equipped_effects": {},
         "use_ability": 0,
@@ -710,7 +710,7 @@
         "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
-            "Bandit"
+            "Bandit (1)"
         ],
         "description": "Light Blade: Unleashes Rapid Smash"
     },
@@ -3041,7 +3041,7 @@
     },
     {
         "ID": 123,
-        "name": "Dragon Shield",
+        "name": "Dragon Shield (1)",
         "price": 2400,
         "item_type": "Armgear",
         "flags": [
@@ -3279,7 +3279,7 @@
     },
     {
         "ID": 132,
-        "name": "Spirit Gloves",
+        "name": "Spirit Gloves (1)",
         "price": 5200,
         "item_type": "Armgear",
         "flags": [
@@ -4490,17 +4490,17 @@
             "Ruffian",
             "Wild Wolf",
             "Dino",
-            "Vermin",
-            "Vermin",
+            "Vermin (1)",
+            "Vermin (2)",
             "Mad Vermin",
-            "Bat",
-            "Bat",
+            "Bat (1)",
+            "Bat (2)",
             "Giant Bat",
-            "Slime",
-            "Slime",
+            "Slime (1)",
+            "Slime (2)",
             "Ooze",
             "Slime Beast",
-            "Zombie",
+            "Zombie (1)",
             "Skeleton",
             "Rat",
             "Armored Rat",
@@ -4603,7 +4603,7 @@
         "use_ability": 253,
         "dropped_by": [
             "Avimander",
-            "Mad Plant",
+            "Mad Plant (3)",
             "Foul Mummy",
             "Sea Hedgehog",
             "Grisly",
@@ -4612,7 +4612,7 @@
             "Chimera",
             "Tret",
             "Tempest Lizard",
-            "Mimic"
+            "Mimic (4)"
         ],
         "description": "Replenishes all HP"
     },
@@ -4678,13 +4678,13 @@
         "equipped_effects": {},
         "use_ability": 255,
         "dropped_by": [
-            "Poseidon",
-            "Poseidon",
+            "Poseidon (1)",
+            "Poseidon (2)",
             "Grave Wight",
-            "Lich",
-            "Flame Dragon",
+            "Lich (1)",
+            "Flame Dragon (2)",
             "Puppet Warrior",
-            "Lich",
+            "Lich (2)",
             "Manticore",
             "Manticore King",
             "Wise Gryphon",
@@ -4692,8 +4692,8 @@
             "Lizard King",
             "Toadonpa",
             "Storm Lizard",
-            "Saturos",
-            "Mimic"
+            "Saturos (1)",
+            "Mimic (7)"
         ],
         "description": "Replenishes all PP"
     },
@@ -4851,7 +4851,7 @@
         "equipped_effects": {},
         "use_ability": 260,
         "dropped_by": [
-            "Mimic"
+            "Mimic (6)"
         ],
         "description": "Boosts maximum HP"
     },
@@ -4875,7 +4875,7 @@
         "equipped_effects": {},
         "use_ability": 261,
         "dropped_by": [
-            "Mimic"
+            "Mimic (9)"
         ],
         "description": "Boosts maximum PP"
     },
@@ -4899,7 +4899,7 @@
         "equipped_effects": {},
         "use_ability": 262,
         "dropped_by": [
-            "Mimic"
+            "Mimic (8)"
         ],
         "description": "Boosts Attack"
     },
@@ -4923,7 +4923,7 @@
         "equipped_effects": {},
         "use_ability": 263,
         "dropped_by": [
-            "Mimic"
+            "Mimic (3)"
         ],
         "description": "Boosts Defense"
     },
@@ -4947,7 +4947,7 @@
         "equipped_effects": {},
         "use_ability": 264,
         "dropped_by": [
-            "Mad Plant"
+            "Mad Plant (4)"
         ],
         "description": "Boosts Agility"
     },
@@ -4971,7 +4971,7 @@
         "equipped_effects": {},
         "use_ability": 265,
         "dropped_by": [
-            "Mad Plant"
+            "Mad Plant (5)"
         ],
         "description": "Boosts Luck"
     },
@@ -5649,7 +5649,7 @@
     },
     {
         "ID": 222,
-        "name": "Mythril Bag",
+        "name": "Mythril Bag (1)",
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
@@ -5675,7 +5675,7 @@
     },
     {
         "ID": 223,
-        "name": "Mythril Bag",
+        "name": "Mythril Bag (2)",
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
@@ -5701,7 +5701,7 @@
     },
     {
         "ID": 224,
-        "name": "Mythril Bag",
+        "name": "Mythril Bag (3)",
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
@@ -5767,8 +5767,8 @@
         "dropped_by": [
             "Punch Ant",
             "Alec Goblin",
-            "Wild Mushroom",
-            "Wild Mushroom",
+            "Wild Mushroom (1)",
+            "Wild Mushroom (2)",
             "Will Head",
             "Rat Soldier",
             "Rat Fighter",
@@ -5805,7 +5805,7 @@
             "Death Cap",
             "Bone Fighter",
             "Acid Maggot",
-            "Kobold",
+            "Kobold (2)",
             "Gargoyle"
         ],
         "description": "Lulls enemies to sleep"
@@ -5830,9 +5830,9 @@
         "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
-            "Mad Plant",
-            "Mimic",
-            "Mimic"
+            "Mad Plant (1)",
+            "Mimic (1)",
+            "Mimic (5)"
         ],
         "description": "Ticket for use in special game"
     },
@@ -5856,11 +5856,11 @@
         "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
-            "Mad Plant",
+            "Mad Plant (2)",
             "Orc Lord",
             "Hobgoblin",
             "Hydros Statue",
-            "Mimic"
+            "Mimic (2)"
         ],
         "description": "Medal for use in a special fountain"
     },
@@ -6054,14 +6054,14 @@
         "use_ability": 47,
         "dropped_by": [
             "Fire Worm",
-            "Kobold",
+            "Kobold (1)",
             "Wargold",
             "Doomsayer",
             "Ghost",
             "Gnome",
             "Salamander",
-            "Amaze",
-            "Amaze"
+            "Amaze (1)",
+            "Amaze (2)"
         ],
         "description": "Causes damage with flames"
     },
@@ -6220,7 +6220,7 @@
     },
     {
         "ID": 245,
-        "name": "Mythril Bag",
+        "name": "Mythril Bag (4)",
         "price": 0,
         "item_type": "Elemental Star",
         "flags": [
@@ -7125,7 +7125,7 @@
         "defense": 0,
         "unleash_rate": 7,
         "use_type": "Multi-Use",
-        "unleash_ability": "Hurricane",
+        "unleash_ability": "Hurricane (2)",
         "element": "Neutral",
         "equipped_effects": {},
         "use_ability": 0,
@@ -7601,7 +7601,7 @@
         "defense": 0,
         "unleash_rate": 7,
         "use_type": "Multi-Use",
-        "unleash_ability": "Supernova",
+        "unleash_ability": "Supernova (2)",
         "element": "Neutral",
         "equipped_effects": {},
         "use_ability": 0,
@@ -8047,7 +8047,7 @@
         "defense": 0,
         "unleash_rate": 7,
         "use_type": "Multi-Use",
-        "unleash_ability": "Fire Dance",
+        "unleash_ability": "Fire Dance (1)",
         "element": "Neutral",
         "equipped_effects": {},
         "use_ability": 0,
@@ -9126,7 +9126,7 @@
     },
     {
         "ID": 354,
-        "name": "Dragon Shield",
+        "name": "Dragon Shield (2)",
         "price": 7400,
         "item_type": "Armgear",
         "flags": [
@@ -9478,7 +9478,7 @@
     },
     {
         "ID": 366,
-        "name": "Spirit Gloves",
+        "name": "Spirit Gloves (2)",
         "price": 7200,
         "item_type": "Armgear",
         "flags": [
@@ -10917,7 +10917,7 @@
     },
     {
         "ID": 417,
-        "name": "Rusty Sword",
+        "name": "Rusty Sword (1)",
         "price": 320,
         "item_type": "Weapon",
         "flags": [
@@ -10945,7 +10945,7 @@
     },
     {
         "ID": 418,
-        "name": "Rusty Sword",
+        "name": "Rusty Sword (2)",
         "price": 370,
         "item_type": "Weapon",
         "flags": [
@@ -10971,7 +10971,7 @@
     },
     {
         "ID": 419,
-        "name": "Rusty Sword",
+        "name": "Rusty Sword (3)",
         "price": 520,
         "item_type": "Weapon",
         "flags": [
@@ -10999,7 +10999,7 @@
     },
     {
         "ID": 420,
-        "name": "Rusty Sword",
+        "name": "Rusty Sword (4)",
         "price": 580,
         "item_type": "Weapon",
         "flags": [
@@ -11025,7 +11025,7 @@
     },
     {
         "ID": 421,
-        "name": "Rusty Axe",
+        "name": "Rusty Axe (1)",
         "price": 340,
         "item_type": "Weapon",
         "flags": [
@@ -11051,7 +11051,7 @@
     },
     {
         "ID": 422,
-        "name": "Rusty Axe",
+        "name": "Rusty Axe (2)",
         "price": 550,
         "item_type": "Weapon",
         "flags": [
@@ -11077,7 +11077,7 @@
     },
     {
         "ID": 423,
-        "name": "Rusty Mace",
+        "name": "Rusty Mace (1)",
         "price": 460,
         "item_type": "Weapon",
         "flags": [
@@ -11105,7 +11105,7 @@
     },
     {
         "ID": 424,
-        "name": "Rusty Mace",
+        "name": "Rusty Mace (2)",
         "price": 420,
         "item_type": "Weapon",
         "flags": [
@@ -11133,7 +11133,7 @@
     },
     {
         "ID": 425,
-        "name": "Rusty Staff",
+        "name": "Rusty Staff (1)",
         "price": 530,
         "item_type": "Weapon",
         "flags": [
@@ -11159,7 +11159,7 @@
     },
     {
         "ID": 426,
-        "name": "Rusty Staff",
+        "name": "Rusty Staff (2)",
         "price": 500,
         "item_type": "Weapon",
         "flags": [
@@ -11185,7 +11185,7 @@
     },
     {
         "ID": 427,
-        "name": "Rusty Staff",
+        "name": "Rusty Staff (3)",
         "price": 480,
         "item_type": "Weapon",
         "flags": [
@@ -11416,9 +11416,9 @@
         "equipped_effects": {},
         "use_ability": 0,
         "dropped_by": [
-            "Karst",
-            "Karst",
-            "Karst",
+            "Karst (1)",
+            "Karst (2)",
+            "Karst (3)",
             "Wonder Bird"
         ],
         "description": "Twisted black stuff (forgeable)"

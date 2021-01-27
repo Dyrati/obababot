@@ -899,7 +899,7 @@
     },
     {
         "ID": 54,
-        "name": "Blast",
+        "name": "Blast (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -950,7 +950,7 @@
     },
     {
         "ID": 57,
-        "name": "Blast",
+        "name": "Blast (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -984,7 +984,7 @@
     },
     {
         "ID": 59,
-        "name": "Supernova",
+        "name": "Supernova (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -3068,7 +3068,7 @@
     },
     {
         "ID": 185,
-        "name": "Gale",
+        "name": "Gale (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -3102,7 +3102,7 @@
     },
     {
         "ID": 187,
-        "name": "Hurricane",
+        "name": "Hurricane (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -3170,7 +3170,7 @@
     },
     {
         "ID": 191,
-        "name": "Mist",
+        "name": "Mist (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -5326,7 +5326,7 @@
     },
     {
         "ID": 322,
-        "name": "Mist",
+        "name": "Mist (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -6261,7 +6261,7 @@
     },
     {
         "ID": 377,
-        "name": "Gale",
+        "name": "Gale (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -6682,7 +6682,7 @@
     },
     {
         "ID": 402,
-        "name": "Daedalus",
+        "name": "Daedalus (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -6699,7 +6699,7 @@
     },
     {
         "ID": 403,
-        "name": "Daedalus",
+        "name": "Daedalus (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -6972,7 +6972,7 @@
     },
     {
         "ID": 420,
-        "name": "Fire Breath",
+        "name": "Fire Breath (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -6989,7 +6989,7 @@
     },
     {
         "ID": 421,
-        "name": "Fire Breath",
+        "name": "Fire Breath (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7006,7 +7006,7 @@
     },
     {
         "ID": 422,
-        "name": "Fire Breath",
+        "name": "Fire Breath (3)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7023,7 +7023,7 @@
     },
     {
         "ID": 423,
-        "name": "Water Breath",
+        "name": "Water Breath (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7040,7 +7040,7 @@
     },
     {
         "ID": 424,
-        "name": "Water Breath",
+        "name": "Water Breath (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7057,7 +7057,7 @@
     },
     {
         "ID": 425,
-        "name": "Water Breath",
+        "name": "Water Breath (3)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7074,7 +7074,7 @@
     },
     {
         "ID": 426,
-        "name": "Ice Breath",
+        "name": "Ice Breath (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7091,7 +7091,7 @@
     },
     {
         "ID": 427,
-        "name": "Ice Breath",
+        "name": "Ice Breath (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7108,7 +7108,7 @@
     },
     {
         "ID": 428,
-        "name": "Ice Breath",
+        "name": "Ice Breath (3)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7125,7 +7125,7 @@
     },
     {
         "ID": 429,
-        "name": "Dark Breath",
+        "name": "Dark Breath (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7142,7 +7142,7 @@
     },
     {
         "ID": 430,
-        "name": "Dark Breath",
+        "name": "Dark Breath (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7159,7 +7159,7 @@
     },
     {
         "ID": 431,
-        "name": "Acid Breath",
+        "name": "Acid Breath (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7176,7 +7176,7 @@
     },
     {
         "ID": 432,
-        "name": "Acid Breath",
+        "name": "Acid Breath (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7193,7 +7193,7 @@
     },
     {
         "ID": 433,
-        "name": "Storm Breath",
+        "name": "Storm Breath (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7210,7 +7210,7 @@
     },
     {
         "ID": 434,
-        "name": "Storm Breath",
+        "name": "Storm Breath (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7227,7 +7227,7 @@
     },
     {
         "ID": 435,
-        "name": "Sonic Wave",
+        "name": "Sonic Wave (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -7244,7 +7244,7 @@
     },
     {
         "ID": 436,
-        "name": "Sonic Wave",
+        "name": "Sonic Wave (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -8913,7 +8913,7 @@
     },
     {
         "ID": 535,
-        "name": "Hurricane",
+        "name": "Hurricane (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -9066,7 +9066,7 @@
     },
     {
         "ID": 544,
-        "name": "Rising Dragon",
+        "name": "Rising Dragon (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -9194,7 +9194,7 @@
     },
     {
         "ID": 552,
-        "name": "Fire Dance",
+        "name": "Fire Dance (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -9613,7 +9613,7 @@
     },
     {
         "ID": 577,
-        "name": "Supernova",
+        "name": "Supernova (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -9758,7 +9758,7 @@
     },
     {
         "ID": 586,
-        "name": "Fire Breath",
+        "name": "Fire Breath (4)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -10836,7 +10836,7 @@
     },
     {
         "ID": 650,
-        "name": "Fire Breath",
+        "name": "Fire Breath (5)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -11364,7 +11364,7 @@
     },
     {
         "ID": 682,
-        "name": "Rising Dragon",
+        "name": "Rising Dragon (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -11670,7 +11670,7 @@
     },
     {
         "ID": 700,
-        "name": "Poison Sting",
+        "name": "Poison Sting (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -11721,7 +11721,7 @@
     },
     {
         "ID": 703,
-        "name": "Poison Sting",
+        "name": "Poison Sting (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -11823,7 +11823,7 @@
     },
     {
         "ID": 709,
-        "name": "Fire Dance",
+        "name": "Fire Dance (2)",
         "target": "Enemies",
         "flags": [
             "usable in battle"

@@ -184,7 +184,7 @@ def get_character_info(data=bytearray(0x14C)):
             "immobilize": read(0x145,1),
             "agility_buff": [read(0x146,1), readsigned(0x147,1)],
         },
-        "ID": read(0x14A,2),
+        "ID": read(0x14A,2) or read(0x128,1),
     }
     element = [0,2,3,1,0,2,3,1][pc["ID"]]
     pc["element"] = Text["elements"][element]
