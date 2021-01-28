@@ -21,7 +21,7 @@ class AbilityHandler:
         self.logs.append(f"{user.name} uses {ability['name']}!")
         for i in range(max(0, lower), min(len(party), upper)):
             target = party[i]
-            if "Downed" in target.perm_status: continue
+            if target.stats["HP_cur"] <= 0: continue
             RANGE = abs(i-center) if distance != 255 else 0
             kwargs = dict(zip(("ability","user","target","RANGE"), (ability,user,target,RANGE)))
             self.hit(**kwargs)
@@ -63,14 +63,11 @@ class AbilityHandler:
             self.logs.append(f"{target.name} took {prev} damage!")
         self.bound(user, target)
         for char in (user, target):
-            statuses = char.perm_status
-            if char.stats["HP_cur"] == 0 and "Downed" not in statuses:
+            if char.stats["HP_cur"] == 0:
                 self.logs.append(f"{char.name} was downed")
                 # char.stats["HP_cur"] = char.stats["HP_max"]
-                statuses.add("Downed")
-            elif char.stats["HP_cur"] > 0 and "Downed" in statuses:
+            elif char.stats["HP_cur"] > 0:
                 self.logs.append(f"{char.name} was revived!")
-                statuses.discard("Downed")
 
 
 @command
@@ -92,14 +89,12 @@ async def battle(message, *args, **kwargs):
     party = deepcopy(user.party)
     front, back = party[:4], party[4:]
     for i,p in enumerate(party):
-        p.perm_status = set(p.perm_status)
         p.damage_mult = 1
         p.type = "human"
         p.position = i % 4
         p.party = front
     enemies = [EnemyData(DataTables.get("enemydata", name.strip('"'))) for name in args]
     for i,e in enumerate(enemies):
-        e.perm_status = set(e.perm_status)
         e.damage_mult = 1
         e.type = "enemy"
         e.position = i
@@ -141,7 +136,7 @@ async def battle(message, *args, **kwargs):
         return out
 
     def live_party(party):
-        return [i for i,p in enumerate(party) if "Downed" not in p.perm_status]
+        return [i for i,p in enumerate(party) if p.stats["HP_cur"] > 0]
 
     def assigncursor(value):
         nonlocal cursor, front
@@ -155,9 +150,6 @@ async def battle(message, *args, **kwargs):
 
     def move_select(*args, **kwargs):
         nonlocal mode, front, back
-        for user in party + enemies:
-            if user.stats["HP_cur"] <= 0: user.perm_status.add("Downed")
-            elif user.stats["HP_cur"] > 0 : user.perm_status.discard("Downed")
         ability = DataTables.get("abilitydata", args[0].strip('"'))
         pc = front[cursor]
         if ability["range"] == 255: center = 0
@@ -182,7 +174,7 @@ async def battle(message, *args, **kwargs):
             result = battle_turn()
             assigncursor(0)
             if result is not None:
-                if result==1 and back and any(["Downed" not in pc.perm_status for pc in back]):
+                if result==1 and back and any([pc.stats["HP_cur"] > 0 for pc in back]):
                     front, back = back, front
                 else:
                     AbilityHandle.logs.append(f"Party {result} wins!")
@@ -217,7 +209,7 @@ async def battle(message, *args, **kwargs):
         nonlocal front, back, mode
         AbilityHandle.logs.clear()
         for move in sorted(inputs, key=lambda x: -x["AGI"]):
-            if "Downed" in move["user"].perm_status: continue
+            if move["user"].stats["HP_cur"] <= 0: continue
             ability = move["ability"]
             if move["user"].type == "enemy":
                 lp = live_party(move["target_party"])

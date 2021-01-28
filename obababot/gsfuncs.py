@@ -176,7 +176,6 @@ def get_ability_effects():
     def effect2(**kwargs): pass
     def effect3(**kwargs):
         for status in ("poison", "venom"):
-            kwargs["target"].perm_status.discard(status)
             kwargs["target"].status[status] = 0
     def effect4(**kwargs):
         for status in ("stun", "sleep", "delusion", "curse"):
@@ -390,10 +389,6 @@ class PlayerData:
         self.set_djinn = [Text["djinn"][i] for i in range(80) if self.set_djinn & 2**i]
         self.elevels = self.set_djinncounts.copy()
         self.elevels[element] += 5
-        self.perm_status = []
-        if self.stats["HP_cur"] == 0: self.perm_status.append("Downed")
-        for status in ("curse", "poison", "venom", "haunt"):
-            if self.status[status]: self.perm_status.append(status)
 
     def get_byte_data(self):
         data = bytearray(0x14C)
@@ -557,7 +552,6 @@ class EnemyData:
             "agility_buff": [0, 0],
         }
         self.ID = obj["ID"]
-        self.perm_status = []
         self.attack_pattern = obj["attack_pattern"]
         self.elevels = obj["elevels"]
         self.weaknesses = obj["weaknesses"]
@@ -694,28 +688,30 @@ def preview(filedata):
             x,y = out.addtext(f"{pc.name}\n{pc.class_}", (0, 0))
             x,y = out.addtext(f"Lvl {pc.level}\nExp {pc.exp}", (x+3,0))
             x += 2
-            for i in range(0, len(pc.perm_status), 2):
-                x,y = out.addtext("\n".join(pc.perm_status[i:i+2]), (x+1, 0))
-            base = pc.base_stats
-            stats = pc.stats
+            perm_status = []
+            if pc.stats["HP_cur"] == 0: perm_status.append("Downed")
+            for status in ("Curse", "Poison", "Venom", "Haunt"):
+                if pc.status[status.lower()]: perm_status.append(status)
+            for i in range(0, len(perm_status), 2):
+                x,y = out.addtext("\n".join(perm_status[i:i+2]), (x+1, 0))
             out.addtext("Stats", (0, 3))
             x,y = out.addtext(utilities.dictstr({
-                "HP": f"{stats['HP_cur']}/{stats['HP_max']}",
-                "PP": f"{stats['PP_cur']}/{stats['PP_max']}",
-                "ATK": stats["ATK"]}, sep=" "), (0, 4))
+                "HP": f"{pc.stats['HP_cur']}/{pc.stats['HP_max']}",
+                "PP": f"{pc.stats['PP_cur']}/{pc.stats['PP_max']}",
+                "ATK": pc.stats["ATK"]}, sep=" "), (0, 4))
             x,y = out.addtext(utilities.dictstr({
-                "DEF": stats["DEF"],
-                "AGI": stats["AGI"],
-                "LCK": stats["LCK"]}, sep=" "), (x+2, 4))
+                "DEF": pc.stats["DEF"],
+                "AGI": pc.stats["AGI"],
+                "LCK": pc.stats["LCK"]}, sep=" "), (x+2, 4))
             out.addtext("Base Stats", (x+3, 3))
             x,y = out.addtext(utilities.dictstr({
-                "HP": base['HP_max'],
-                "PP": base['PP_max'],
-                "ATK": base["ATK"]}, sep=" "), (x+3, 4))
+                "HP": pc.base_stats['HP_max'],
+                "PP": pc.base_stats['PP_max'],
+                "ATK": pc.base_stats["ATK"]}, sep=" "), (x+3, 4))
             x,y = out.addtext(utilities.dictstr({
-                "DEF": base["DEF"],
-                "AGI": base["AGI"],
-                "LCK": base["LCK"]}, sep=" "), (x+2, 4))
+                "DEF": pc.base_stats["DEF"],
+                "AGI": pc.base_stats["AGI"],
+                "LCK": pc.base_stats["LCK"]}, sep=" "), (x+2, 4))
             elementdata = []
             for i, name in enumerate(["ven", "merc", "mars", "jup"]):
                 elementdata.append(
