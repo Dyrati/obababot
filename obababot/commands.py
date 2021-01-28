@@ -284,8 +284,9 @@ async def damage(message, *args, **kwargs):
             kwargs[key.upper()] = int(kwargs.pop(key))
     for kw in {"user", "target"} & set(kwargs):
         user = UserData[message.author.id]
-        names = {p["name"].lower():p["stats"] for p in user.party} if user.party else {}
-        kwargs[kw] = names.get(kwargs[kw], DataTables.get("enemydata", kwargs[kw]))
+        names = {p.name.lower():p for p in user.party} if user.party else {}
+        if kwargs[kw] in names: kwargs[kw] = names[kwargs[kw]]
+        else: kwargs[kw] = gsfuncs.EnemyData(DataTables.get("enemydata", kwargs[kw]))
     damage = gsfuncs.battle_damage(ability, **kwargs)
     await reply(message, f"`{damage}-{damage+3}`")
 

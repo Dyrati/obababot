@@ -111,7 +111,7 @@ def load_text():
 
 
 class Database(dict):
-    def __init__(self, dictlist=None):
+    def __init__(self):
         self.namemap = {}
         self._mbracket = re.compile(r" \(.\)$")
     def new_table(self, tablename, table):
@@ -139,8 +139,24 @@ class Database(dict):
     def normalize(self, name):
         return name.lower().replace("'","").replace("-"," ")
 
+class TextMap(Database):
+    def __init__(self):
+        self.namemap = {}
+        self.counts = {}
+    def new_table(self, tablename, table):
+        self[tablename] = table
+        self.namemap[tablename] = {}
+        self.counts[tablename] = 0
+        for obj in table: self.add_entry(tablename, obj)
+    def add_entry(self, tablename, name):
+        name = self.normalize(name)
+        self.namemap[tablename][name] = self.counts[tablename]
+        self.counts[tablename] += 1
+    def get(self, tablename, name):
+        return self.namemap[tablename].get(self.normalize(name))
 
-DataTables, Text = Database(), {}
+
+DataTables, Text = Database(), TextMap()
 def load_data():
     global DataTables, Text
     dirname = os.path.dirname(__file__)
@@ -159,7 +175,7 @@ def load_data():
                     entry["ATK"] = int(1.25*entry["ATK"])
                     entry["DEF"] = int(1.25*entry["DEF"])
                 DataTables.new_table("enemydata-h", hard_enemies)
-    Text.update(**load_text())
+    for k,v in load_text().items(): Text.new_table(k,v)
     mfuncs.update(**DataTables)
     print("Loaded database    ")
 

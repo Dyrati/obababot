@@ -184,7 +184,7 @@ with open(ROM2, "rb") as f:
             "turns": read(1),
             "HP_regen": read(1),
             "PP_regen": read(1),
-            "items": [read(2) for j in range(4)],
+            "inventory": [read(2) for j in range(4)],
             "item_quantities": [read(1) for j in range(4)],
             "elemental_stats_id": read(1),
             "IQ": read(1),
@@ -406,8 +406,8 @@ for enemy in enemydata:
     enemy.pop("unused")
     for name in ("elevels", "epow", "eres"):
         enemy[name] = elementdata[enemy["elemental_stats_id"]][name]
-    enemy["items"] = [items[i] for i in enemy["items"] if i]
-    enemy["items"] = dict(zip(enemy["items"], enemy.pop("item_quantities")))
+    enemy["inventory"] = [items[i] for i in enemy["inventory"] if i]
+    enemy["inventory"] = dict(zip(enemy["inventory"], enemy.pop("item_quantities")))
     if "Dullahan" in enemy["name"] or "Serpent" in enemy["name"]: enemy["HP_regen"] *= 10
     enemy["weaknesses"] = [ability_effects[i] for i in enemy["weaknesses"] if i]
     itemID = enemy["item_drop"]
