@@ -6325,7 +6325,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 30,
-        "description": "The elemental power of earth."
+        "description": "The elemental power of earth.",
+        "hp_multiplier": 0.03,
+        "djinn_cost": [
+            1,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 381,
@@ -6342,7 +6349,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 60,
-        "description": "Guardian of an immortal pharaoh."
+        "description": "Guardian of an immortal pharaoh.",
+        "hp_multiplier": 0.06,
+        "djinn_cost": [
+            2,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 382,
@@ -6359,7 +6373,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 120,
-        "description": "The great mother of the earth."
+        "description": "The great mother of the earth.",
+        "hp_multiplier": 0.09,
+        "djinn_cost": [
+            3,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 383,
@@ -6376,7 +6397,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 240,
-        "description": "The might of the apocalypse."
+        "description": "The might of the apocalypse.",
+        "hp_multiplier": 0.12,
+        "djinn_cost": [
+            4,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 384,
@@ -6393,7 +6421,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 50,
-        "description": "Earth's might enflamed."
+        "description": "Earth's might enflamed.",
+        "hp_multiplier": 0.06,
+        "djinn_cost": [
+            1,
+            0,
+            1,
+            0
+        ]
     },
     {
         "ID": 385,
@@ -6410,7 +6445,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 270,
-        "description": "A beast that sunders darkness."
+        "description": "A beast that sunders darkness.",
+        "hp_multiplier": 0.15,
+        "djinn_cost": [
+            3,
+            0,
+            2,
+            0
+        ]
     },
     {
         "ID": 386,
@@ -6427,7 +6469,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 500,
-        "description": "The boatsman of the river Styx."
+        "description": "The boatsman of the river Styx.",
+        "hp_multiplier": 0.3,
+        "djinn_cost": [
+            8,
+            0,
+            0,
+            2
+        ]
     },
     {
         "ID": 387,
@@ -6459,7 +6508,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 30,
-        "description": "The elemental power of water."
+        "description": "The elemental power of water.",
+        "hp_multiplier": 0.03,
+        "djinn_cost": [
+            0,
+            1,
+            0,
+            0
+        ]
     },
     {
         "ID": 389,
@@ -6476,7 +6532,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 60,
-        "description": "Princess of the sea spirits."
+        "description": "Princess of the sea spirits.",
+        "hp_multiplier": 0.06,
+        "djinn_cost": [
+            0,
+            2,
+            0,
+            0
+        ]
     },
     {
         "ID": 390,
@@ -6493,7 +6556,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 120,
-        "description": "An incarnation of the sea king."
+        "description": "An incarnation of the sea king.",
+        "hp_multiplier": 0.09,
+        "djinn_cost": [
+            0,
+            3,
+            0,
+            0
+        ]
     },
     {
         "ID": 391,
@@ -6510,7 +6580,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 240,
-        "description": "The god of the north wind."
+        "description": "The god of the north wind.",
+        "hp_multiplier": 0.12,
+        "djinn_cost": [
+            0,
+            4,
+            0,
+            0
+        ]
     },
     {
         "ID": 392,
@@ -6527,7 +6604,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 100,
-        "description": "The sacred ice monster."
+        "description": "The sacred ice monster.",
+        "hp_multiplier": 0.09,
+        "djinn_cost": [
+            0,
+            2,
+            0,
+            1
+        ]
     },
     {
         "ID": 393,
@@ -6544,7 +6628,14 @@
         "range": 255,
         "PP_cost": 0,
         "power": 60,
-        "description": "A goddess bearing the water of life."
+        "description": "A goddess bearing the water of life.",
+        "hp_multiplier": 0.18,
+        "djinn_cost": [
+            0,
+            3,
+            0,
+            3
+        ]
     },
     {
         "ID": 394,
@@ -6561,7 +6652,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 330,
-        "description": "An awakened dragon from the deep."
+        "description": "An awakened dragon from the deep.",
+        "hp_multiplier": 0.21,
+        "djinn_cost": [
+            3,
+            4,
+            0,
+            0
+        ]
     },
     {
         "ID": 395,
@@ -6593,7 +6691,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 30,
-        "description": "The elemental power of fire."
+        "description": "The elemental power of fire.",
+        "hp_multiplier": 0.03,
+        "djinn_cost": [
+            0,
+            0,
+            1,
+            0
+        ]
     },
     {
         "ID": 397,
@@ -6610,7 +6715,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 60,
-        "description": "A mystical beast cloaked in flame."
+        "description": "A mystical beast cloaked in flame.",
+        "hp_multiplier": 0.06,
+        "djinn_cost": [
+            0,
+            0,
+            2,
+            0
+        ]
     },
     {
         "ID": 398,
@@ -6627,7 +6739,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 120,
-        "description": "The queen of all dragons."
+        "description": "The queen of all dragons.",
+        "hp_multiplier": 0.09,
+        "djinn_cost": [
+            0,
+            0,
+            3,
+            0
+        ]
     },
     {
         "ID": 399,
@@ -6644,7 +6763,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 240,
-        "description": "A meteorite from deep space."
+        "description": "A meteorite from deep space.",
+        "hp_multiplier": 0.12,
+        "djinn_cost": [
+            0,
+            0,
+            4,
+            0
+        ]
     },
     {
         "ID": 400,
@@ -6661,7 +6787,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 40,
-        "description": "The goddess of vengeance."
+        "description": "The goddess of vengeance.",
+        "hp_multiplier": 0.06,
+        "djinn_cost": [
+            0,
+            0,
+            1,
+            1
+        ]
     },
     {
         "ID": 401,
@@ -6678,7 +6811,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 160,
-        "description": "An legendary wandering mage."
+        "description": "An legendary wandering mage.",
+        "hp_multiplier": 0.12,
+        "djinn_cost": [
+            0,
+            2,
+            2,
+            0
+        ]
     },
     {
         "ID": 402,
@@ -6695,7 +6835,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 100,
-        "description": "Master craftsman of ancient times."
+        "description": "Master craftsman of ancient times.",
+        "hp_multiplier": 0.07,
+        "djinn_cost": [
+            3,
+            0,
+            4,
+            0
+        ]
     },
     {
         "ID": 403,
@@ -6712,7 +6859,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 250,
-        "description": "Second strike."
+        "description": "Second strike.",
+        "hp_multiplier": 0.15,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 404,
@@ -6729,7 +6883,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 800,
-        "description": "Goddess of rainbows, guide of souls."
+        "description": "Goddess of rainbows, guide of souls.",
+        "hp_multiplier": 0.4,
+        "djinn_cost": [
+            0,
+            4,
+            9,
+            0
+        ]
     },
     {
         "ID": 405,
@@ -6761,7 +6922,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 30,
-        "description": "The elemental power of wind."
+        "description": "The elemental power of wind.",
+        "hp_multiplier": 0.03,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            1
+        ]
     },
     {
         "ID": 407,
@@ -6778,7 +6946,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 60,
-        "description": "The heavenly huntress."
+        "description": "The heavenly huntress.",
+        "hp_multiplier": 0.06,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            2
+        ]
     },
     {
         "ID": 408,
@@ -6795,7 +6970,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 120,
-        "description": "A goddess in bird form."
+        "description": "A goddess in bird form.",
+        "hp_multiplier": 0.09,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            3
+        ]
     },
     {
         "ID": 409,
@@ -6812,7 +6994,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 240,
-        "description": "The mighty god of thunder."
+        "description": "The mighty god of thunder.",
+        "hp_multiplier": 0.12,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            4
+        ]
     },
     {
         "ID": 410,
@@ -6829,7 +7018,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 80,
-        "description": "The wind rider, goddess of flowers."
+        "description": "The wind rider, goddess of flowers.",
+        "hp_multiplier": 0.09,
+        "djinn_cost": [
+            1,
+            0,
+            0,
+            2
+        ]
     },
     {
         "ID": 411,
@@ -6846,7 +7042,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 300,
-        "description": "A dragon whose wings span the skies."
+        "description": "A dragon whose wings span the skies.",
+        "hp_multiplier": 0.15,
+        "djinn_cost": [
+            0,
+            2,
+            0,
+            3
+        ]
     },
     {
         "ID": 412,
@@ -6863,7 +7066,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 400,
-        "description": "The embodiment of destruction."
+        "description": "The embodiment of destruction.",
+        "hp_multiplier": 0.24,
+        "djinn_cost": [
+            0,
+            0,
+            3,
+            5
+        ]
     },
     {
         "ID": 413,
@@ -8577,7 +8787,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 200,
-        "description": "?"
+        "description": "?",
+        "hp_multiplier": 0,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 515,
@@ -8594,7 +8811,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 120,
-        "description": "?"
+        "description": "?",
+        "hp_multiplier": 0,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 516,
@@ -11224,7 +11448,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 35,
-        "description": "?"
+        "description": "?",
+        "hp_multiplier": 0.3,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 674,
@@ -11394,7 +11625,14 @@
         "range": 6,
         "PP_cost": 21,
         "power": 120,
-        "description": "?"
+        "description": "?",
+        "hp_multiplier": 0.35,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 684,
@@ -12091,7 +12329,14 @@
         "range": 6,
         "PP_cost": 0,
         "power": 200,
-        "description": "?"
+        "description": "?",
+        "hp_multiplier": 0.4,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ]
     },
     {
         "ID": 725,

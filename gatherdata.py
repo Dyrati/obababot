@@ -229,14 +229,15 @@ with open(ROM2, "rb") as f:
             "djinn_cost": [read(1) for j in range(4)],
             "hp_multiplier": None,
         })
-    othersummons = {514:0, 515:0, 673:0.3, 683:0.35, 724:0.4}
-    for ability, mult in othersummons.items():
+    othersummons = [(24,403,0.15), (29,514,0), (30,515,0), (31,673,0.3), (32,683,0.35), (33,724,0.4)]
+    for ID, ability, mult in othersummons:
         summondata.append({
-            "ID": len(summondata),
+            "ID": ID,
             "ability": ability,
             "djinn_cost": [0,0,0,0],
             "hp_multiplier": mult,
         })
+    summondata.insert(25,summondata.pop(29))
 
     f.seek(0x0C15F4)  # class data
     classdata = []
@@ -420,15 +421,16 @@ for pc in pcdata:
     pc["starting_items"] = [items[i] for i in pc["starting_items"] if i]
 
 # Summons
+summondata[24]["hp_multiplier"] = 0.07
+summondata[29]["hp_multiplier"] = 0.40
 for summon in summondata:
     move = abilitydata[summon["ability"]]
     summon.update({**move, **summon})
-    summon["name"] = abilities[summon["ability"]]
+    summon["name"] = abilitydata[summon["ability"]]["name"]
     if summon["hp_multiplier"] is None:
         summon["hp_multiplier"] = sum(summon["djinn_cost"])*0.03
-summondata[24]["hp_multiplier"] = 0.22
-summondata[24]["power"] = 350
-summondata[28]["hp_multiplier"] = 0.40
+    move["hp_multiplier"] = summon["hp_multiplier"]
+    move["djinn_cost"] = summon["djinn_cost"]
 
 # Classes
 classgroups = [

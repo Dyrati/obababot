@@ -608,8 +608,8 @@
             4,
             0
         ],
-        "hp_multiplier": 0.22,
-        "name": "Daedalus",
+        "hp_multiplier": 0.07,
+        "name": "Daedalus (1)",
         "target": "Enemies",
         "flags": [
             "usable in battle"
@@ -621,8 +621,33 @@
         "utility": 0,
         "range": 6,
         "PP_cost": 0,
-        "power": 350,
+        "power": 100,
         "description": "Master craftsman of ancient times."
+    },
+    {
+        "ID": 24,
+        "ability": 403,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.15,
+        "name": "Daedalus (2)",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mars",
+        "effect": "Nothing",
+        "icon": 194,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 250,
+        "description": "Second strike."
     },
     {
         "ID": 25,

@@ -66,6 +66,7 @@ class AbilityHandler:
             statuses = char.perm_status
             if char.stats["HP_cur"] == 0 and "Downed" not in statuses:
                 self.logs.append(f"{char.name} was downed")
+                # char.stats["HP_cur"] = char.stats["HP_max"]
                 statuses.add("Downed")
             elif char.stats["HP_cur"] > 0 and "Downed" in statuses:
                 self.logs.append(f"{char.name} was revived!")

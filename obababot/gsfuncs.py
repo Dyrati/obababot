@@ -97,7 +97,6 @@ def battle_damage(
         damage = ability["power"]*int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .5, .3, .1, .1, .1][RANGE]
     elif damage_type == "Summon":
-        ability = DataTables.get("summondata", ability["name"])
         damage = ability["power"] + int(ability["hp_multiplier"]*min(10000, HP))
         damage *= int_256(1 + (POW-RES)/200)
         if RANGE: damage *= [1, .7, .4, .3, .2, .1][RANGE]
@@ -641,8 +640,9 @@ def readsav(data):
             "party_positions": positions,
             "party": [PlayerData(data[base:base+0x14C]) for base in addresses],
         }
-        slot["summons"] = [i for i in range(33) if slot["summons"] & 2**i]
-        slot["summons"] = [DataTables["summondata"][i]["name"] for i in slot["summons"]]
+        summons = [s["name"] for s in DataTables["summondata"]]
+        summons[24:26] = ["Daedalus"]
+        slot["summons"] = [summons[i] for i in range(33) if slot["summons"] & 2**i]
         slot["area"] = roomname(GAME, slot["map_number"], slot["door_number"])
         seconds, minutes, hours = (slot["framecount"]//60**i for i in range(1,4))
         slot["playtime"] = "{:02}:{:02}:{:02}".format(hours, minutes % 60, seconds % 60),
