@@ -382,7 +382,7 @@ class PlayerData:
             if v & 1<<10: metadata.append("broken")
             self.inventory[k] = metadata
         self.class_ = DataTables["classdata"][self.class_]["name"]
-        self.weaknesses = DataTables.get("classdata", self.class_)["weaknesses"]
+        self.weaknesses = DataTables.get("classdata", self.class_)["weaknesses"].copy()
         self.djinn = sum((d<<20*i for i,d in enumerate(self.djinn)))
         self.set_djinn = sum((d<<20*i for i,d in enumerate(self.set_djinn)))
         self.djinn = [Text["djinn"][i] for i in range(80) if self.djinn & 2**i]
@@ -464,6 +464,8 @@ class PlayerData:
                 deferred.append((effect_func, value))
             else:
                 effect_func(self, value)
+        if item["use_type"] == "Bestows Ability":
+            self.abilities.append(item["use_ability"])
         return deferred
 
     def add_djinn(self, djinn):
@@ -479,6 +481,7 @@ class PlayerData:
         self.stats = deepcopy(self.base_stats)
         self.status["critical_rate"] = 0
         deferred = []
+        self.abilities = []
         for item in equipped:
             deferred.extend(self.equip(DataTables.get("itemdata", item)))
         for djinn in self.set_djinn: self.add_djinn(DataTables.get("djinndata",djinn))
@@ -486,6 +489,9 @@ class PlayerData:
         class_item = next(iter(class_items), None)
         name = Text["pcnames"][self.ID]
         class_ = getclass(name, self.set_djinncounts, class_item)
+        self.class_ = class_["name"]
+        self.weaknesses = class_["weaknesses"].copy()
+        self.abilities.extend((a for a,l in class_["abilities"].items() if l <= self.level))
         self.stats["HP_max"] = int(self.stats["HP_max"]*class_["HP"])
         self.stats["HP_cur"] = int(self.stats["HP_max"]*hp_percent)
         self.stats["PP_max"] = int(self.stats["PP_max"]*class_["PP"])

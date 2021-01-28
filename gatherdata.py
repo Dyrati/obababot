@@ -135,7 +135,7 @@ with open(ROM2, "rb") as f:
             "unused": read(4),
             "element": elements[read(4)],
             "equipped_effects": [[read(1), read(1), read(2)] for j in range(4)],
-            "use_ability": read(2),
+            "use_ability": abilities[read(2)],
             "unused": read(2),
             "dropped_by": [],
             "description": item_descriptions[i],
