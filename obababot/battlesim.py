@@ -6,68 +6,87 @@ from .gsfuncs import \
     rn_iter, ability_effects, equipped_effects
 
 
-class AbilityHandler:
+def bound(*args):
+    for char in args:
+        for stat in ("HP","PP"):
+            current = char.stats[stat+"_cur"]
+            statmax = char.stats[stat+"_max"]
+            char.stats[stat+"_cur"] = int(max(0, min(statmax, current)))
 
-    def __init__(self, brn=None, grn=None):
-        self.brn = brn if brn is not None else rn_iter(0)
-        self.grn = grn if grn is not None else rn_iter(0)
-        self.logs = []
+def live_party(party):
+    return [i for i,p in enumerate(party) if p.stats["HP_cur"] > 0]
 
-    def execute(self, ability, user, target):
-        center = target.position
-        distance = ability["range"]
-        lower, upper = center-distance+1, center+distance
-        party = target.party
-        self.logs.append(f"{user.name} uses {ability['name']}!")
-        for i in range(max(0, lower), min(len(party), upper)):
-            target = party[i]
-            if target.stats["HP_cur"] <= 0: continue
-            RANGE = abs(i-center) if distance != 255 else 0
-            kwargs = dict(zip(("ability","user","target","RANGE"), (ability,user,target,RANGE)))
-            self.hit(**kwargs)
-
-    def bound(self, *args):
-        for char in args:
-            for stat in ("HP","PP"):
-                current = char.stats[stat+"_cur"]
-                statmax = char.stats[stat+"_max"]
-                char.stats[stat+"_cur"] = int(max(0, min(statmax, current)))
-
-    def hit(self, **kwargs):
-        ability, user, target = kwargs["ability"], kwargs["user"], kwargs["target"]
-        self.bound(user, target)
+def execute_ability(ability, user, target, brn=None, grn=None, logs=None):
+    center = target.position
+    distance = ability["range"]
+    lower, upper = center-distance+1, center+distance
+    party = target.party
+    logs.append(f"{user.name} uses {ability['name']}!")
+    for i in range(max(0, lower), min(len(party), upper)):
+        target = party[i]
+        if target.stats["HP_cur"] <= 0: continue
+        RANGE = abs(i-center) if distance != 255 else 0
+        bound(user, target)
         effect = ability_effects[Text.get("ability_effects", ability["effect"])]
-        bonus_effects = None
-        if (100*next(self.brn)) >> 16 <= statuschance(**kwargs):
-            bonus_effects = effect(ability=ability, user=user, target=target)
-        if bonus_effects: kwargs.update(bonus_effects)
+        bonus_effects = {}
+        if (100*next(brn)) >> 16 <= statuschance(ability, user, target, RANGE):
+            bonus_effects = effect(ability=ability, user=user, target=target) or {}
         damage_type = ability["damage_type"]
         if damage_type == "Healing":
-            damage = battle_damage(**kwargs) + next(self.brn) & 3
+            damage = battle_damage(ability, user, target, RANGE=RANGE, **bonus_effects) + next(brn) & 3
             damage = min(target.stats["HP_max"]-target.stats["HP_cur"], max(1, damage))
             target.stats["HP_cur"] += damage
-            self.logs.append(f"{target.name} recovered {damage} HP!")
+            logs.append(f"{target.name} recovered {damage} HP!")
         elif damage_type in ("Utility", "Effect Only", "Psynergy Drain", "Psynergy Recovery"):
             pass
         else:
-            MULT = kwargs.get("MULT")
-            if isinstance(MULT, list): kwargs["MULT"] = MULT[len(MULT)*next(self.brn) >> 16]
-            HP_SAP, PP_SAP = kwargs.pop("HP_SAP",0), kwargs.pop("PP_SAP",0)
-            SELFDESTRUCT = kwargs.pop("SELFDESTRUCT",0)
-            damage = battle_damage(**kwargs)
-            damage = max(1, int(damage*target.damage_mult) + (next(self.brn) & 3))
+            MULT = bonus_effects.get("MULT")
+            if isinstance(MULT, list): bonus_effects["MULT"] = MULT[len(MULT)*next(brn) >> 16]
+            HP_SAP, PP_SAP = bonus_effects.pop("HP_SAP",0), bonus_effects.pop("PP_SAP",0)
+            SELFDESTRUCT = bonus_effects.pop("SELFDESTRUCT",0)
+            damage = battle_damage(ability, user, target, RANGE=RANGE, **bonus_effects)
+            damage = max(1, int(damage*target.damage_mult) + (next(brn) & 3))
             prev, damage = damage, min(target.stats["HP_cur"], damage)
             target.stats["HP_cur"] -= damage
             if HP_SAP: user.stats["HP_cur"] += int(damage*HP_SAP)
             if PP_SAP: user.stats["PP_cur"] += int(damage*PP_SAP)
-            self.logs.append(f"{target.name} took {prev} damage!")
-        self.bound(user, target)
+            logs.append(f"{target.name} took {prev} damage!")
+        if user.status["poison"] or user.status["venom"]:
+            damage = user.stats["HP_max"]//(10 if user.status["poison"] else 5)
+            user.stats["HP_cur"] -= user.stats["HP_max"]//10
+            logs.append(f"{user.name} took {user.stats['HP_max']//10} poison damage")
+        bound(user, target)
         for char in (user, target):
             if char.stats["HP_cur"] == 0:
-                self.logs.append(f"{char.name} was downed")
-                # char.stats["HP_cur"] = char.stats["HP_max"]
-            elif char.stats["HP_cur"] > 0:
-                self.logs.append(f"{char.name} was revived!")
+                logs.append(f"{char.name} was downed")
+
+
+def execute_turn(inputs, party, enemies, brn=None, grn=None, logs=None):
+    for move in sorted(inputs, key=lambda x: -x["AGI"]):
+        if move["user"].stats["HP_cur"] <= 0 or move["user"].status["stun"]:
+            continue
+        ability = move["ability"]
+        if move["user"].type == "enemy":
+            lp = live_party(move["target_party"])
+            center = lp[len(lp)*next(grn) >> 16]
+            move["target"] = move["target_party"][center]
+        execute_ability(ability, move["user"], move["target"], brn=brn, grn=grn, logs=logs)
+        if not live_party(enemies): return 1
+        if not live_party(party[:4]):
+            if live_party(party[4:]): party = party[4:] + party[:4]
+            else: return 1
+    for char in party + enemies:
+        for status in ("attack_buff","defense_buff","resist_buff","agility_buff"):
+            turns, amt = char.status[status]
+            if turns > 0: char.status[status][0] -= 1
+            if turns == 1: char.status[status][1] = 0
+        for status in (
+                "delusion","confusion","charm","stun","sleep","psy_seal","hp_regen",
+                "reflect","death_curse","counterstrike","kite","immobilize"):
+            turns = char.status[status]
+            if turns > 0: char.status[status] -= 1
+        char.damage_mult = 1
+    inputs.clear()
 
 
 @command
@@ -102,9 +121,9 @@ async def battle(message, *args, **kwargs):
     cursor = 0
     side = 0
     inputs = []
+    logs = []
     brn = rn_iter(int(kwargs.get("brn", 0)))
     grn = rn_iter(int(kwargs.get("grn", 0)))
-    AbilityHandle = AbilityHandler(brn=brn, grn=grn)
     mode = "battle"
 
     async def main(before, after):
@@ -130,18 +149,15 @@ async def battle(message, *args, **kwargs):
             elif side == 1: out.addtext("►", (x+3, cursor))
         x,y2 = out.addtext("\n".join((e.name for e in enemies)), (x+5,0))
         x,y2 = out.addtext("\n".join((str(e.stats['HP_cur']) for e in enemies)), (x+1,0))
-        if AbilityHandle.logs:
-            out.addtext("\n".join(AbilityHandle.logs), (2, max(y1,y2)+1))
-            AbilityHandle.logs.clear()
+        if logs:
+            out.addtext("\n".join(logs), (2, max(y1,y2)+1))
+            logs.clear()
         return out
 
-    def live_party(party):
-        return [i for i,p in enumerate(party) if p.stats["HP_cur"] > 0]
-
     def assigncursor(value):
-        nonlocal cursor, front
+        nonlocal cursor, party
         if value is None: cursor = None; return
-        lp = live_party(front)
+        lp = live_party(party[:4])
         for i in lp:
             if i >= value: cursor = i; break
         else:
@@ -149,9 +165,9 @@ async def battle(message, *args, **kwargs):
             return True
 
     def move_select(*args, **kwargs):
-        nonlocal mode, front, back
+        nonlocal mode, party, enemies
         ability = DataTables.get("abilitydata", args[0].strip('"'))
-        pc = front[cursor]
+        pc = party[:4][cursor]
         if ability["range"] == 255: center = 0
         elif ability["target"] == "Self": center = pc.position
         else:
@@ -171,14 +187,14 @@ async def battle(message, *args, **kwargs):
         check = assigncursor(cursor+1)
         if check:
             for enemy in enemies: inputs.extend(enemymoves(enemy))
-            result = battle_turn()
+            result = execute_turn(inputs, party, enemies, brn=brn, grn=grn, logs=logs)
             assigncursor(0)
-            if result is not None:
-                if result==1 and back and any([pc.stats["HP_cur"] > 0 for pc in back]):
-                    front, back = back, front
+            if result == 1:
+                if live_party(party[4:]):
+                    logs.append(f"Player party wins!")
                 else:
-                    AbilityHandle.logs.append(f"Party {result} wins!")
-                    mode = "end"; assigncursor(None)
+                    logs.append(f"Player was defeated")
+                mode = "end"; assigncursor(None)
 
     def enemymoves(enemy):
         einputs = []
@@ -204,42 +220,6 @@ async def battle(message, *args, **kwargs):
                 "target_party": target_party,
                 "AGI": AGI})
         return einputs
-
-    def battle_turn():
-        nonlocal front, back, mode
-        AbilityHandle.logs.clear()
-        for move in sorted(inputs, key=lambda x: -x["AGI"]):
-            if move["user"].stats["HP_cur"] <= 0: continue
-            ability = move["ability"]
-            if move["user"].type == "enemy":
-                lp = live_party(move["target_party"])
-                center = lp[len(lp)*next(grn) >> 16]
-                move["target"] = move["target_party"][center]
-            AbilityHandle.execute(ability, move["user"], move["target"])
-            if not live_party(enemies):
-                AbilityHandle.logs.append("Player wins!")
-                mode = "end"
-                break
-            if not live_party(front):
-                if live_party(back):
-                    front, back = back, front
-                else:
-                    AbilityHandle.logs.append("Player party was defeated")
-                    mode = "end"
-                break
-            
-        for char in party + enemies:
-            for status in ("attack_buff","defense_buff","resist_buff","agility_buff"):
-                turns, amt = char.status[status]
-                if turns > 0: char.status[status][0] -= 1
-                if turns == 1: char.status[status][1] = 0
-            for status in (
-                    "delusion","confusion","charm","stun","sleep","psy_seal","hp_regen",
-                    "reflect","death_curse","counterstrike","kite","immobilize"):
-                turns = char.status[status]
-                if turns > 0: char.status[status] -= 1
-            char.damage_mult = 1
-        inputs.clear()
 
     sent = await reply(message, f"```\n{display()}\n```")
     await utilities.live_message(sent, main)

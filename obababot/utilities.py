@@ -156,12 +156,12 @@ class TextMap(Database):
         return self.namemap[tablename].get(self.normalize(name))
 
 
-DataTables, Text = Database(), TextMap()
+DataTables, Text, Emojis = Database(), TextMap(), {}
 def load_data():
-    global DataTables, Text
+    global DataTables, Text, Emojis
     dirname = os.path.dirname(__file__)
     print("Loading database...", end="\r")
-    DataTables.clear(); Text.clear()
+    DataTables.clear(); Text.clear(), Emojis.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
@@ -176,6 +176,10 @@ def load_data():
                     entry["DEF"] = int(1.25*entry["DEF"])
                 DataTables.new_table("enemydata-h", hard_enemies)
     for k,v in load_text().items(): Text.new_table(k,v)
+    match_emoji = re.compile(r"<.*?:(.*?):(.*?)>")
+    for emoji in client.emojis:
+        m = match_emoji.match(str(emoji))
+        Emojis[m.group(1)] = m.group()
     mfuncs.update(**DataTables)
     print("Loaded database    ")
 
@@ -354,8 +358,8 @@ class User:
 async def set_buttons(message, buttons, func):
     create_task = client.loop.create_task
     async def inner(message, user, emoji):
-        if emoji not in buttons: return
-        task1 = create_task(func(message, user, buttons[emoji]))
+        if str(emoji) not in buttons: return
+        task1 = create_task(func(message, user, buttons[str(emoji)]))
         task2 = create_task(message.remove_reaction(emoji, user))
         await task1, task2
     if message in ReactMessages:

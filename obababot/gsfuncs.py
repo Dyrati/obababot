@@ -65,7 +65,7 @@ def getclass(name, djinncounts, item=None):
 
 
 def battle_damage(
-        ability, ATK=None, POW=None, user=None, target=None,
+        ability, user=None, target=None, ATK=None, POW=None,
         HP=None, DEF=None, RES=None, RANGE=None, MULT=None):
     epos = Text["elements"].index(ability["element"])
     if user:

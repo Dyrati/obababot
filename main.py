@@ -18,6 +18,7 @@ if TOKEN == "t": terminal_mode = True
 @client.event
 async def on_ready():
     print("Connected    ")
+    load_data()
     print("Bot is ready ")
 
 @client.event
@@ -56,7 +57,6 @@ async def on_reaction_add(reaction, user):
         await ReactMessages[message](message, user, reaction.emoji)
 
 
-load_data()
 if terminal_mode:
     from obababot.emulator import terminal
     terminal(on_ready=on_ready, on_message=on_message, on_react=on_reaction_add)
