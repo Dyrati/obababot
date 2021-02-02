@@ -1,6 +1,6 @@
 from copy import deepcopy
 from . import utilities
-from .utilities import command, DataTables, UserData, Text, reply
+from .utilities import command, reply, DataTables, UserData, Text, Emojis
 from .gsfuncs import \
     PlayerData, EnemyData, battle_damage, statuschance, readsav, \
     rn_iter, ability_effects, equipped_effects
@@ -21,7 +21,8 @@ def execute_ability(ability, user, target, brn=None, grn=None, logs=None):
     distance = ability["range"]
     lower, upper = center-distance+1, center+distance
     party = target.party
-    logs.append(f"{user.name} uses {ability['name']}!")
+    if ability["name"] == "Defend": logs.append(f"{user.name} is defending")
+    else: logs.append(f"{user.name} uses {ability['name']}!")
     for i in range(max(0, lower), min(len(party), upper)):
         target = party[i]
         if target.stats["HP_cur"] <= 0: continue
@@ -29,7 +30,8 @@ def execute_ability(ability, user, target, brn=None, grn=None, logs=None):
         bound(user, target)
         effect = ability_effects[Text.get("ability_effects", ability["effect"])]
         bonus_effects = {}
-        if (100*next(brn)) >> 16 <= statuschance(ability, user, target, RANGE):
+        if ability["name"] == "Defend": pass
+        elif (100*next(brn)) >> 16 <= statuschance(ability, user, target, RANGE):
             bonus_effects = effect(ability=ability, user=user, target=target) or {}
         damage_type = ability["damage_type"]
         if damage_type == "Healing":
@@ -45,6 +47,7 @@ def execute_ability(ability, user, target, brn=None, grn=None, logs=None):
             HP_SAP, PP_SAP = bonus_effects.pop("HP_SAP",0), bonus_effects.pop("PP_SAP",0)
             SELFDESTRUCT = bonus_effects.pop("SELFDESTRUCT",0)
             damage = battle_damage(ability, user, target, RANGE=RANGE, **bonus_effects)
+            if target.defending: damage >>= 1
             damage = max(1, int(damage*target.damage_mult) + (next(brn) & 3))
             prev, damage = damage, min(target.stats["HP_cur"], damage)
             target.stats["HP_cur"] -= damage
@@ -74,7 +77,7 @@ def execute_turn(inputs, party, enemies, brn=None, grn=None, logs=None):
         if not live_party(enemies): return 1
         if not live_party(party[:4]):
             if live_party(party[4:]): party = party[4:] + party[:4]
-            else: return 1
+            else: return 2
     for char in party + enemies:
         for status in ("attack_buff","defense_buff","resist_buff","agility_buff"):
             turns, amt = char.status[status]
@@ -86,6 +89,7 @@ def execute_turn(inputs, party, enemies, brn=None, grn=None, logs=None):
             turns = char.status[status]
             if turns > 0: char.status[status] -= 1
         char.damage_mult = 1
+        char.defending = 0
     inputs.clear()
 
 
@@ -108,51 +112,68 @@ async def battle(message, *args, **kwargs):
     party = deepcopy(user.party)
     front, back = party[:4], party[4:]
     for i,p in enumerate(party):
-        p.damage_mult = 1
         p.type = "human"
         p.position = i % 4
-        p.party = front
+        p.party = party
+        p.damage_mult = 1
+        p.sprite = Emojis[("venus","mercury","mars","jupiter")[i%4] + "battle3"]
     enemies = [EnemyData(DataTables.get("enemydata", name.strip('"'))) for name in args]
     for i,e in enumerate(enemies):
-        e.damage_mult = 1
         e.type = "enemy"
         e.position = i
         e.party = enemies
+        e.damage_mult = 1
+        e.sprite = Emojis["venusbattle2"]
     cursor = 0
     side = 0
     inputs = []
     logs = []
     brn = rn_iter(int(kwargs.get("brn", 0)))
     grn = rn_iter(int(kwargs.get("grn", 0)))
-    mode = "battle"
+    mode = "move_select"
 
-    async def main(before, after):
-        if after.author != author: return
-        if after.content == "$quit" or mode == "end":
-            await utilities.kill_message(before)
-        elif mode == "battle":
+    def display():
+        enemy_hp = "** **" + " "*2 \
+                 + "     ".join((f"`{e.stats['HP_cur']}`" for e in enemies))
+        sprites = "\n".join((e.sprite for e in enemies)) + "\n" + " "*10 \
+                + "".join((p.sprite for p in party[:4]))
+        party_hp = "** **" + " "*10 \
+                 + "      ".join((f"`{p.stats['HP_cur']}`" for p in party[:4]))
+        pc = party[:4][cursor]
+        hud = utilities.Charmap()
+        if mode == "move_select":
+            x,y = -3,0
+            abilities = list(pc.abilities)
+            for i in range(0, len(abilities), 8):
+                x,y = hud.addtext("\n".join(abilities[i:i+8]), (x+3, y))
+        elif logs:
+            hud.addtext("\n".join(logs), (2, 0))
+            logs.clear()
+        hud = f"```\n{hud}\n```"
+        return enemy_hp, sprites, party_hp, hud
+
+    enemy_hp, sprites, player_hp, hud = [await reply(message, s) for s in display()]
+
+    async def main(message):
+        nonlocal mode
+        if message.author != author: return
+        if message.content == "$quit" or mode == "end":
+            utilities.register_remove(message.channel)
+        elif mode == "move_select":
             prefix = utilities.prefix
-            for line in after.content.split("\n"):
+            for line in message.content.split("\n"):
                 if not line.startswith(prefix): continue
                 content = line[len(prefix):]
                 args, kwargs = utilities.parse(content)
-                move_select(*args, **kwargs)
-                await before.edit(content=f"```\n{display()}\n```")
-
-    def display():
-        nonlocal front, enemies
-        out = utilities.Charmap()
-        x,y1 = out.addtext("\n".join((p.name for p in front)), (2,0))
-        x,y1 = out.addtext("\n".join((str(p.stats['HP_cur']) for p in front)), (x+1,0))
-        if cursor is not None:
-            if side == 0: out.addtext("►", (0, cursor))
-            elif side == 1: out.addtext("►", (x+3, cursor))
-        x,y2 = out.addtext("\n".join((e.name for e in enemies)), (x+5,0))
-        x,y2 = out.addtext("\n".join((str(e.stats['HP_cur']) for e in enemies)), (x+1,0))
-        if logs:
-            out.addtext("\n".join(logs), (2, max(y1,y2)+1))
-            logs.clear()
-        return out
+                mode = move_select(*args, **kwargs)
+            if mode == "battle":
+                for enemy in enemies: inputs.extend(enemymoves(enemy))
+                result = execute_turn(inputs, party, enemies, brn=brn, grn=grn, logs=logs)
+                if result == 1: logs.append(f"Player party wins!"); mode = "end"
+                elif result == 2: logs.append(f"Player was defeated"); mode = "end"
+                else: mode = "move_select"
+            for sent, s in zip((enemy_hp, sprites, player_hp, hud), display()):
+                await sent.edit(content=s)
 
     def assigncursor(value):
         nonlocal cursor, party
@@ -175,9 +196,9 @@ async def battle(message, *args, **kwargs):
                 lp = live_party(enemies)
                 center = lp[(len(lp)-1)//2]
             else: center = int(args[1])
-        target_party = enemies if ability["target"] == "Enemies" else party
+        target_party = enemies if ability["target"] == "Enemies" else party[:4]
         AGI = (pc.stats["AGI"]*next(grn) >> 20) + pc.stats["AGI"]
-        if ability["name"] == "Defend": AGI += 20000
+        if ability["name"] == "Defend": pc.defending = 1
         inputs.append({
             "ability": ability,
             "user": pc,
@@ -185,16 +206,8 @@ async def battle(message, *args, **kwargs):
             "target_party": target_party,
             "AGI": AGI})
         check = assigncursor(cursor+1)
-        if check:
-            for enemy in enemies: inputs.extend(enemymoves(enemy))
-            result = execute_turn(inputs, party, enemies, brn=brn, grn=grn, logs=logs)
-            assigncursor(0)
-            if result == 1:
-                if live_party(party[4:]):
-                    logs.append(f"Player party wins!")
-                else:
-                    logs.append(f"Player was defeated")
-                mode = "end"; assigncursor(None)
+        if check: return "battle"
+        else: return "move_select"
 
     def enemymoves(enemy):
         einputs = []
@@ -211,9 +224,9 @@ async def battle(message, *args, **kwargs):
                 dice_roll -= v
                 if dice_roll < 0: break
             ability = DataTables.get("abilitydata", enemy.abilities[i])
-            target_party = front if ability["target"] == "Enemies" else enemies
+            target_party = party[:4] if ability["target"] == "Enemies" else enemies
             AGI = enemy.stats["AGI"]*(1 - turn/(2*enemy.stats["turns"]))
-            if ability["name"] == "Defend": AGI += 20000
+            if ability["name"] == "Defend": enemy.defending = 1
             inputs.append({
                 "ability": ability,
                 "user": enemy,
@@ -221,5 +234,4 @@ async def battle(message, *args, **kwargs):
                 "AGI": AGI})
         return einputs
 
-    sent = await reply(message, f"```\n{display()}\n```")
-    await utilities.live_message(sent, main)
+    utilities.register_on_message(message.channel, main)

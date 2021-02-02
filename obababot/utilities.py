@@ -10,7 +10,7 @@ aliases = {}
 client = discord.Client()
 UserData = {}
 ReactMessages = {}
-LiveMessages = {}
+RegisteredFuncs = {}
 
 
 def command(f=None, alias=None, prefix=prefix):
@@ -372,7 +372,9 @@ async def clear_buttons(message):
     ReactMessages.pop(message)
     await message.clear_reactions()
 
-async def live_message(message, callback):
-    LiveMessages[message.channel] = {"message": message, "callback": callback}
-async def kill_message(message):
-    LiveMessages.pop(message.channel)
+
+def register_on_message(channel, callback):
+    assert isinstance(channel, discord.TextChannel), "Expected a text channel"
+    RegisteredFuncs[channel] = callback
+def register_remove(channel):
+    RegisteredFuncs.pop(channel)
