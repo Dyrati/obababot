@@ -33,7 +33,7 @@ def is_command(message):
     for alias in aliases:
         if message.content.startswith(alias): return True
     else:
-        if message.content.split(" ",1)[0] in usercommands: return True
+        if re.match("\S+", message.content).group() in usercommands: return True
     return False
 
 
@@ -214,7 +214,7 @@ def extractcommand(text):
             args, kwargs = parse(text[len(alias):].replace("`",""))
             return command, args, kwargs
     else:
-        command = text.split(" ",1)[0]
+        command = re.match("\S+", text).group()
         if command not in usercommands: return
         args, kwargs = parse(text[len(command)+1:].replace("`",""))
         return command, args, kwargs
@@ -350,7 +350,6 @@ class User:
         self.temp = {}
         self.vars = dict(_=None, **mfuncs)
         self.responses = []
-        self.live_response = {}
         self.filedata = None
         self.party = None
 

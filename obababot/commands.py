@@ -20,7 +20,7 @@ async def help(message, *args, **kwargs):
         docs = {k:v.split("\n",1)[0] for k,v in docs.items() if v and k.startswith(prefix)}
         out = dictstr(docs)
         out += "\n\n" + inspect.cleandoc(f"""
-        Type "{prefix}help [func]" for detailed information about [func]
+        Type "{prefix}help funcname" for detailed information about funcname
         
         Function arguments are words separated by spaces
             ex. {prefix}sort enemydata HP
@@ -250,7 +250,8 @@ async def getclass(message, *args, **kwargs):
                 may be "mysterious card", "trainer's whip", or "tomegathericon"
                 or just "card/mc", "whip/tw", or "tome/tm" for short
     """
-    assert len(args[1:])==4, "Expected 4 djinn counts: Venus, Mercury, Mars, Jupiter"
+    assert len(args[1:])==4, \
+        "Expected a party member name followed by 4 djinn counts: Venus, Mercury, Mars, Jupiter"
     djinncounts = [int(arg) for arg in args[1:]]
     pc_class = gsfuncs.getclass(args[0], djinncounts, item=kwargs.get("item"))
     await reply(message, f"`{pc_class['name']}`")
@@ -289,6 +290,16 @@ async def damage(message, *args, **kwargs):
         else: kwargs[kw] = gsfuncs.EnemyData(DataTables.get("enemydata", kwargs[kw]))
     damage = gsfuncs.battle_damage(ability, **kwargs)
     await reply(message, f"`{damage}-{damage+3}`")
+
+
+@command
+async def textbox(message, *args, **kwargs):
+    """Generate a Golden sun Text Box"""
+
+    from .textboxes import textbox, to_buffer
+    text = message.content[len(f"{prefix}textbox "):]
+    im = textbox(text)
+    await message.channel.send(file=discord.File(to_buffer(im), "text.png"))
 
 
 async def handlesav(message, data):

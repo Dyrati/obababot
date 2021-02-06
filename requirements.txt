@@ -10,3 +10,4 @@ matplotlib==3.2.2
 numpy==1.18.5
 requests==2.24.0
 urllib3==1.25.9
+Pillow==8.1.0

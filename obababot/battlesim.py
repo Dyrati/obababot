@@ -116,7 +116,7 @@ async def battle(message, *args, **kwargs):
         p.position = i % 4
         p.party = party
         p.damage_mult = 1
-        p.sprite = Emojis[("venus","mercury","mars","jupiter")[i%4] + "battle3"]
+        p.sprite = Emojis[Text["pcnames"][p.ID] + "Battle"]
     enemies = [EnemyData(DataTables.get("enemydata", name.strip('"'))) for name in args]
     for i,e in enumerate(enemies):
         e.type = "enemy"
@@ -128,31 +128,46 @@ async def battle(message, *args, **kwargs):
     side = 0
     inputs = []
     logs = []
+    option = ""
     brn = rn_iter(int(kwargs.get("brn", 0)))
     grn = rn_iter(int(kwargs.get("grn", 0)))
     mode = "move_select"
 
     def display():
         enemy_hp = "** **" + " "*2 \
-                 + "     ".join((f"`{e.stats['HP_cur']}`" for e in enemies))
-        sprites = "\n".join((e.sprite for e in enemies)) + "\n" + " "*10 \
+                 + " ".join((f"`{e.stats['HP_cur']:05}`" for e in enemies))
+        sprites = "".join((e.sprite for e in enemies)) + "\n\n" + " "*13 \
                 + "".join((p.sprite for p in party[:4]))
-        party_hp = "** **" + " "*10 \
-                 + "      ".join((f"`{p.stats['HP_cur']}`" for p in party[:4]))
+        party_hp = "** **" + " "*16 \
+                 + "   ".join((f"`{p.stats['HP_cur']:04}`" for p in party[:4]))
         pc = party[:4][cursor]
         hud = utilities.Charmap()
-        if mode == "move_select":
-            x,y = -3,0
-            abilities = list(pc.abilities)
-            for i in range(0, len(abilities), 8):
-                x,y = hud.addtext("\n".join(abilities[i:i+8]), (x+3, y))
-        elif logs:
-            hud.addtext("\n".join(logs), (2, 0))
-            logs.clear()
-        hud = f"```\n{hud}\n```"
+        x,y = -3,0
+        options = get_options(pc, option)
+        height = len(options)//4
+        if height != len(options)/4: height += 1
+        for i in range(0, len(options), height or 1):
+            x,_ = hud.addtext("\n".join(options[i:i+height]), (x+3, y))
+        hud = f"**{pc.name}**\n```\n{hud}\n```"
         return enemy_hp, sprites, party_hp, hud
 
+    def get_options(pc, option):
+        if option == "Psynergy": return list(pc.abilities)
+        elif option == "Djinn": return list(pc.djinn)
+        elif option == "Summon": return [s["name"] for s in DataTables["summondata"]]
+        elif option == "Item": return list(pc.inventory)
+        else: return []
+    
+    async def update_hud(message, user, button):
+        nonlocal option
+        option = button
+        await hud.edit(content=display()[3])
+
     enemy_hp, sprites, player_hp, hud = [await reply(message, s) for s in display()]
+    await utilities.set_buttons(
+        hud,
+        {Emojis[s+"Icon"]: s for s in ("Attack","Psynergy","Djinn","Summon","Item","Defend")},
+        update_hud)
 
     async def main(message):
         nonlocal mode
@@ -172,8 +187,12 @@ async def battle(message, *args, **kwargs):
                 if result == 1: logs.append(f"Player party wins!"); mode = "end"
                 elif result == 2: logs.append(f"Player was defeated"); mode = "end"
                 else: mode = "move_select"
+            create_task = utilities.client.loop.create_task
+            tasks = []
             for sent, s in zip((enemy_hp, sprites, player_hp, hud), display()):
-                await sent.edit(content=s)
+                tasks.append(create_task(sent.edit(content=s)))
+            tasks = tasks[-1:] + tasks[:-1]
+            for t in tasks: await t
 
     def assigncursor(value):
         nonlocal cursor, party
