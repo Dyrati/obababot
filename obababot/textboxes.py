@@ -1,6 +1,7 @@
 import os
 import io
 import string
+import re
 from PIL import Image
 
 tiles = {}
@@ -72,7 +73,7 @@ def kerning_paste(target, src, coords):
     endpos = [coords[i] + max(v[i] for v in vectors) + 1 for i in range(2)]
     return coords + endpos
 
-def place_text(text):
+def text_to_img_kerning(text):
     w, h = maxchar
     width = max(map(len, text.splitlines()))
     height = len(text.splitlines())
@@ -84,10 +85,28 @@ def place_text(text):
         for char in line:
             if char not in tiles:
                 box[0] += w; box[2] += w; checkv = True; continue
-            box = kerning_paste(out, tiles[char], (box[2]+1 if checkv else box[0], y))
+            x = box[2]+1 if checkv else box[0]
+            box = kerning_paste(out, tiles[char], (x, y))
             checkv = box[3]-box[1] <= h//2
-        y += h*3//2
         xmax = max(xmax, box[2])
+        y += h*3//2
+    return out.crop((0, 0, xmax, y-h//2))
+
+def text_to_img(text):
+    w, h = maxchar
+    width = max(map(len, text.splitlines()))
+    height = len(text.splitlines())
+    out = Image.new("RGBA", ((width+2)*w, (height+2)*(h*3//2)))
+    y, xmax = 0, 0
+    for line in text.splitlines():
+        x = 0
+        for char in line:
+            if char not in tiles: x += w; continue
+            tile = tiles[char]
+            out.paste(tile, (x, y + h-tile.height), mask=tile)
+            x += max(v[0] for v in get_vectors(tile)) + 2
+        xmax = max(xmax, x-1)
+        y += h*3//2
     return out.crop((0, 0, xmax, y-h//2))
 
 def add_background(im):
@@ -107,7 +126,7 @@ def add_background(im):
     return bg
 
 def textbox(text):
-    out = place_text(text)
+    out = text_to_img(text)
     out = add_background(out)
     out = out.resize((out.width*2, out.height*2), resample=Image.BOX)
     return out
