@@ -55,42 +55,42 @@ def get_vectors(im):
     check = lambda x,y: im.getpixel((x,y))[3] > 0
     return [(x,y) for y in range(h) for x in range(w) if check(x,y)]
 
-def check_collision(im, vectors, coords=(0,0)):
-    x,y = coords
-    check = lambda v: im.getpixel((v[0]+x, v[1]+y))[3] > 0
-    return any(map(check, vectors))
+# def check_collision(im, vectors, coords=(0,0)):
+#     x,y = coords
+#     check = lambda v: im.getpixel((v[0]+x, v[1]+y))[3] > 0
+#     return any(map(check, vectors))
 
-def kerning_paste(target, src, coords):
-    coords = list(coords)
-    vectors = get_vectors(src)
-    coords[1] += maxchar[1]-src.height
-    x,y = coords
-    for i in range(maxchar[0]):
-        if check_collision(target, vectors, coords=(x+i, y)) \
-                or check_collision(target, vectors, coords=(x+i, y+1)):
-            coords[0] = x+i+2
-    target.paste(src, coords.copy(), mask=src)  # mutates the coords argument
-    endpos = [coords[i] + max(v[i] for v in vectors) + 1 for i in range(2)]
-    return coords + endpos
+# def kerning_paste(target, src, coords):
+#     coords = list(coords)
+#     vectors = get_vectors(src)
+#     coords[1] += maxchar[1]-src.height
+#     x,y = coords
+#     for i in range(maxchar[0]):
+#         if check_collision(target, vectors, coords=(x+i, y)) \
+#                 or check_collision(target, vectors, coords=(x+i, y+1)):
+#             coords[0] = x+i+2
+#     target.paste(src, coords.copy(), mask=src)  # mutates the coords argument
+#     endpos = [coords[i] + max(v[i] for v in vectors) + 1 for i in range(2)]
+#     return coords + endpos
 
-def text_to_img_kerning(text):
-    w, h = maxchar
-    width = max(map(len, text.splitlines()))
-    height = len(text.splitlines())
-    out = Image.new("RGBA", ((width+2)*w, (height+2)*(h*3//2)))
-    y, xmax = 0, 0
-    for line in text.splitlines():
-        box = [0,0,0,0]
-        checkv = False
-        for char in line:
-            if char not in tiles:
-                box[0] += w; box[2] += w; checkv = True; continue
-            x = box[2]+1 if checkv else box[0]
-            box = kerning_paste(out, tiles[char], (x, y))
-            checkv = box[3]-box[1] <= h//2
-        xmax = max(xmax, box[2])
-        y += h*3//2
-    return out.crop((0, 0, xmax, y-h//2))
+# def text_to_img_kerning(text):
+#     w, h = maxchar
+#     width = max(map(len, text.splitlines()))
+#     height = len(text.splitlines())
+#     out = Image.new("RGBA", ((width+2)*w, (height+2)*(h*3//2)))
+#     y, xmax = 0, 0
+#     for line in text.splitlines():
+#         box = [0,0,0,0]
+#         checkv = False
+#         for char in line:
+#             if char not in tiles:
+#                 box[0] += w; box[2] += w; checkv = True; continue
+#             x = box[2]+1 if checkv else box[0]
+#             box = kerning_paste(out, tiles[char], (x, y))
+#             checkv = box[3]-box[1] <= h//2
+#         xmax = max(xmax, box[2])
+#         y += h*3//2
+#     return out.crop((0, 0, xmax, y-h//2))
 
 def text_to_img(text):
     w, h = maxchar
