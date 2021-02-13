@@ -13,14 +13,14 @@ if __name__ == "__main__": utilities.Text = utilities.load_text()
 globals().update(**utilities.Text)
 
 
-def get_duplicates(array):
+def instance_counts(array):
     namedict = {}
     for obj in array:
         namedict[obj["name"]] = namedict.get(obj["name"], 0) + 1
     return {k:v for k,v in namedict.items() if k != "?" and v > 1}
 
 def add_instance_numbers(array):
-    namedict = get_duplicates(array)
+    namedict = instance_counts(array)
     for obj in reversed(array):
         count = namedict.get(obj["name"])
         if count:
@@ -91,6 +91,18 @@ with open(ROM1, "rb") as f:
             "encounters": {},
         })
 
+    f.seek(0x0C5C38) # enemy group data
+    enemygroupdata1 = []
+    for i in range(380):
+        enemygroupdata1.append({
+            "ID": i,
+            "unused": read(1),
+            "enemies": [enemynames1[read(1)] for j in range(5)],
+            "min_amounts": [read(1) for j in range(5)],
+            "max_amounts": [read(1) for j in range(5)],
+        })
+
+
 for encounter in map_encounters1:
     room = mapdata1[encounter["room"]]["encounters"]
     door = encounter["door"]
@@ -108,6 +120,14 @@ for map_ in mapdata1:
         map_["area_names"].add(temp_areas[area])
 for map_ in mapdata1:
     map_["area_names"] = list(sorted(map_["area_names"]))
+
+# Enemy Groups
+for group in enemygroupdata1:
+    group.pop("unused")
+    entries = [i for i in range(5) if group["enemies"][i] != "???"]
+    group["enemies"] = [group["enemies"][i] for i in entries]
+    group["min_amounts"] = [group["min_amounts"][i] for i in entries]
+    group["max_amounts"] = [group["max_amounts"][i] for i in entries]
 
 
 with open(ROM2, "rb") as f:
@@ -169,7 +189,7 @@ with open(ROM2, "rb") as f:
     for i in range(379):
         enemydata.append({
             "ID": i,
-            "name": enemynames[i],
+            "name": enemynames2[i],
             "unused": read(15),
             "level": read(1),
             "HP": read(2),
@@ -303,9 +323,9 @@ with open(ROM2, "rb") as f:
         })
 
     f.seek(0x0EDACC)  # encounter data
-    encounterdata = []
+    encounterdata2 = []
     for i in range(110):
-        encounterdata.append({
+        encounterdata2.append({
             "ID": i,
             "rate": read(2),
             "level": read(2),
@@ -362,11 +382,11 @@ with open(ROM2, "rb") as f:
         })
 
     f.seek(0x12CE7C)  # enemy group data
-    enemygroupdata = []
+    enemygroupdata2 = []
     for i in range(660):
-        enemygroupdata.append({
+        enemygroupdata2.append({
             "ID": i,
-            "enemies": [enemynames[read(2)] for j in range(5)],
+            "enemies": [enemynames2[read(2)] for j in range(5)],
             "min_amounts": [read(1) for j in range(5)],
             "max_amounts": [read(1) for j in range(5)],
             "positioning": read(1),
@@ -483,7 +503,7 @@ for map_ in mapdata2:
 
 
 # Enemy Groups
-for group in enemygroupdata:
+for group in enemygroupdata2:
     group.pop("unused")
     entries = [i for i in range(5) if group["enemies"][i] != "???"]
     group["enemies"] = [group["enemies"][i] for i in entries]
@@ -493,8 +513,9 @@ for group in enemygroupdata:
 
 for name in [
         "djinndata", "enemydata", "itemdata", "abilitydata", "pcdata", "summondata",
-        "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
-        "room_references1", "room_references2", "enemygroupdata"
+        "classdata", "elementdata", "encounterdata2", "encounterdata1", "mapdata1",
+        "mapdata2", "room_references1", "room_references2", "enemygroupdata2",
+        "enemygroupdata1",
     ]:
     with open(f"obababot/data/{name}.json", "w") as f:
         json.dump(globals()[name], f, indent=4)

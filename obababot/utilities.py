@@ -92,6 +92,7 @@ def load_text():
     with open(path("text/GS1text.txt")) as f:
         lines = f.read().splitlines()
         lines = list(map(lambda x: mtoken.sub("", x), lines))
+        text["enemynames1"] = lines[655:819]
         text["areas1"] = lines[2459:2567]
         text["maps1"] = lines[2567:2768]
     with open(path("text/GS2text.txt")) as f:
@@ -99,7 +100,7 @@ def load_text():
         text["item_descriptions"] = lines[146:607]
         lines = list(map(lambda x: mtoken.sub("", x), lines))
         text["items"] = lines[607:1068]
-        text["enemynames"] = lines[1068:1447]
+        text["enemynames2"] = lines[1068:1447]
         text["abilities"] = lines[1447:2181]
         text["move_descriptions"] = lines[2181:2915]
         text["classes"] = lines[2915:3159]
@@ -164,8 +165,9 @@ def load_data():
     DataTables.clear(); Text.clear(), Emojis.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
-            "classdata", "elementdata", "encounterdata", "mapdata1", "mapdata2",
-            "room_references1", "room_references2", "enemygroupdata"]:
+            "classdata", "elementdata", "encounterdata2", "encounterdata1", "mapdata1",
+            "mapdata2", "room_references1", "room_references2", "enemygroupdata2",
+            "enemygroupdata1"]:
         with open(os.path.join(dirname, rf"data/{name}.json")) as f:
             DataTables.new_table(name, json.load(f))
             if name == "enemydata":

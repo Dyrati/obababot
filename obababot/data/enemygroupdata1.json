@@ -1,0 +1,4511 @@
+[
+    {
+        "ID": 0,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 1,
+        "enemies": [
+            "Vermin"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 2,
+        "enemies": [
+            "Bat"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 3,
+        "enemies": [
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 4,
+        "enemies": [
+            "Vermin",
+            "Bat"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 5,
+        "enemies": [
+            "Mystery Woman",
+            "Mystery Man"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 6,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 7,
+        "enemies": [
+            "Vermin"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 8,
+        "enemies": [
+            "Bat"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 9,
+        "enemies": [
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 10,
+        "enemies": [
+            "Vermin",
+            "Wild Mushroom",
+            "Bat"
+        ],
+        "min_amounts": [
+            0,
+            0,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 11,
+        "enemies": [
+            "Slime"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 12,
+        "enemies": [
+            "Slime",
+            "Bat"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            3
+        ]
+    },
+    {
+        "ID": 13,
+        "enemies": [
+            "Slime",
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            3
+        ]
+    },
+    {
+        "ID": 14,
+        "enemies": [
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Bat"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 15,
+        "enemies": [
+            "Amaze"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 16,
+        "enemies": [
+            "Amaze",
+            "Slime",
+            "Vermin"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 17,
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 18,
+        "enemies": [
+            "Amaze"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 19,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 20,
+        "enemies": [
+            "Vermin"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 21,
+        "enemies": [
+            "Bat"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 22,
+        "enemies": [
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 23,
+        "enemies": [
+            "Slime"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 24,
+        "enemies": [
+            "Amaze"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 25,
+        "enemies": [
+            "Zombie"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 26,
+        "enemies": [
+            "Vermin",
+            "Bat",
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 27,
+        "enemies": [
+            "Slime",
+            "Amaze",
+            "Bat"
+        ],
+        "min_amounts": [
+            0,
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 28,
+        "enemies": [
+            "Zombie"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 29,
+        "enemies": [
+            "Bandit",
+            "Thief",
+            "Thief"
+        ],
+        "min_amounts": [
+            1,
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 30,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 31,
+        "enemies": [
+            "Ghost",
+            "Vermin",
+            "Wild Mushroom"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 32,
+        "enemies": [
+            "Zombie",
+            "Bat",
+            "Slime"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 33,
+        "enemies": [
+            "Zombie"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 34,
+        "enemies": [
+            "Zombie",
+            "Ghost"
+        ],
+        "min_amounts": [
+            0,
+            1
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 35,
+        "enemies": [
+            "Skeleton"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 36,
+        "enemies": [
+            "Will Head"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 37,
+        "enemies": [
+            "Skeleton",
+            "Ghost"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 38,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 39,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 40,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 41,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 42,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 43,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 44,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 45,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 46,
+        "enemies": [
+            "Ooze"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 47,
+        "enemies": [
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 48,
+        "enemies": [
+            "Worm",
+            "Vermin",
+            "Bat"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 49,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 50,
+        "enemies": [
+            "Rat"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 51,
+        "enemies": [
+            "Zombie",
+            "Skeleton"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 52,
+        "enemies": [
+            "Ghost",
+            "Bat",
+            "Zombie"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 53,
+        "enemies": [
+            "Skeleton",
+            "Bat",
+            "Rat Soldier"
+        ],
+        "min_amounts": [
+            0,
+            0,
+            1
+        ],
+        "max_amounts": [
+            1,
+            3,
+            2
+        ]
+    },
+    {
+        "ID": 54,
+        "enemies": [
+            "Rat",
+            "Rat Soldier"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 55,
+        "enemies": [
+            "Rat Soldier",
+            "Rat",
+            "Bat"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 56,
+        "enemies": [
+            "Zombie",
+            "Ghost"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            3,
+            2
+        ]
+    },
+    {
+        "ID": 57,
+        "enemies": [
+            "Skeleton",
+            "Ghost",
+            "Will Head"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            3,
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 58,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 59,
+        "enemies": [
+            "Drone Bee"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 60,
+        "enemies": [
+            "Rat",
+            "Rat Soldier"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 61,
+        "enemies": [
+            "Will Head",
+            "Rat Soldier"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 62,
+        "enemies": [
+            "Skeleton"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 63,
+        "enemies": [
+            "Drone Bee"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 64,
+        "enemies": [
+            "Skeleton",
+            "Will Head"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            3,
+            3
+        ]
+    },
+    {
+        "ID": 65,
+        "enemies": [
+            "Drone Bee",
+            "Rat Soldier",
+            "Rat"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 66,
+        "enemies": [
+            "Troll"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 67,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 68,
+        "enemies": [
+            "Spider"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 69,
+        "enemies": [
+            "Rat Soldier",
+            "Rat",
+            "Drone Bee"
+        ],
+        "min_amounts": [
+            0,
+            0,
+            1
+        ],
+        "max_amounts": [
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 70,
+        "enemies": [
+            "Spider",
+            "Drone Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 71,
+        "enemies": [
+            "Troll",
+            "Rat",
+            "Rat Soldier"
+        ],
+        "min_amounts": [
+            1,
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 72,
+        "enemies": [
+            "Creeper"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 73,
+        "enemies": [
+            "Spider",
+            "Troll"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            3,
+            1
+        ]
+    },
+    {
+        "ID": 74,
+        "enemies": [
+            "Gnome",
+            "Creeper",
+            "Creeper"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 75,
+        "enemies": [
+            "Gnome",
+            "Troll",
+            "Troll"
+        ],
+        "min_amounts": [
+            1,
+            0,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 76,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 77,
+        "enemies": [
+            "Ooze"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 78,
+        "enemies": [
+            "Ghoul"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 79,
+        "enemies": [
+            "Troll",
+            "Drone Bee",
+            "Rat Soldier"
+        ],
+        "min_amounts": [
+            1,
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 80,
+        "enemies": [
+            "Ghoul",
+            "Ooze"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 81,
+        "enemies": [
+            "Gnome",
+            "Troll"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 82,
+        "enemies": [
+            "Gnome",
+            "Ooze"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 83,
+        "enemies": [
+            "Ghoul",
+            "Gnome"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            3,
+            2
+        ]
+    },
+    {
+        "ID": 84,
+        "enemies": [
+            "Ghoul"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 85,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 86,
+        "enemies": [
+            "Gnome"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 87,
+        "enemies": [
+            "Ooze"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            4
+        ]
+    },
+    {
+        "ID": 88,
+        "enemies": [
+            "Mauler",
+            "Ooze"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            3
+        ]
+    },
+    {
+        "ID": 89,
+        "enemies": [
+            "Mauler",
+            "Gnome"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            3
+        ]
+    },
+    {
+        "ID": 90,
+        "enemies": [
+            "Mauler"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 91,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 92,
+        "enemies": [
+            "Ooze"
+        ],
+        "min_amounts": [
+            3
+        ],
+        "max_amounts": [
+            5
+        ]
+    },
+    {
+        "ID": 93,
+        "enemies": [
+            "Cuttle",
+            "Ooze"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 94,
+        "enemies": [
+            "Gnome",
+            "Ooze"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 95,
+        "enemies": [
+            "Lizard Man"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 96,
+        "enemies": [
+            "Mauler"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 97,
+        "enemies": [
+            "Lizard Man",
+            "Cuttle"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 98,
+        "enemies": [
+            "Ghoul"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 99,
+        "enemies": [
+            "Siren"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 100,
+        "enemies": [
+            "Lizard Man",
+            "Harpy"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 101,
+        "enemies": [
+            "Cuttle"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 102,
+        "enemies": [
+            "Harpy"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 103,
+        "enemies": [
+            "Siren",
+            "Harpy"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 104,
+        "enemies": [
+            "Siren"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 105,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 106,
+        "enemies": [
+            "Tret"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 107,
+        "enemies": [
+            "Lizard Man"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 108,
+        "enemies": [
+            "Saturos"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 109,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 110,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 111,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 112,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 113,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 114,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 115,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 116,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 117,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 118,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 119,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 120,
+        "enemies": [
+            "Ooze"
+        ],
+        "min_amounts": [
+            3
+        ],
+        "max_amounts": [
+            4
+        ]
+    },
+    {
+        "ID": 121,
+        "enemies": [
+            "Mauler"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 122,
+        "enemies": [
+            "Lizard Man"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 123,
+        "enemies": [
+            "Mole",
+            "Ooze"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 124,
+        "enemies": [
+            "Spirit"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 125,
+        "enemies": [
+            "Dirge",
+            "Mole"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 126,
+        "enemies": [
+            "Skeleton"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 127,
+        "enemies": [
+            "Bone Fighter",
+            "Spirit"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 128,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 129,
+        "enemies": [
+            "Mole"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 130,
+        "enemies": [
+            "Mole",
+            "Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 131,
+        "enemies": [
+            "Dirge",
+            "Spirit"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 132,
+        "enemies": [
+            "Bone Fighter",
+            "Spirit"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 133,
+        "enemies": [
+            "Bone Fighter"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 134,
+        "enemies": [
+            "Death Head"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 135,
+        "enemies": [
+            "Death Head",
+            "Spirit"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 136,
+        "enemies": [
+            "Death Head",
+            "Bone Fighter"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 137,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 138,
+        "enemies": [
+            "Ape"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 139,
+        "enemies": [
+            "Killer Ape"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 140,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 141,
+        "enemies": [
+            "Mole",
+            "Dirge"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 142,
+        "enemies": [
+            "Ape",
+            "Mole"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 143,
+        "enemies": [
+            "Bone Fighter",
+            "Spirit"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 144,
+        "enemies": [
+            "Ape",
+            "Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 145,
+        "enemies": [
+            "Death Head",
+            "Spirit"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 146,
+        "enemies": [
+            "Death Head",
+            "Bone Fighter"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 147,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 148,
+        "enemies": [
+            "Dirge",
+            "Bone Fighter"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 149,
+        "enemies": [
+            "Slime Beast",
+            "Ape"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 150,
+        "enemies": [
+            "Tarantula",
+            "Bone Fighter"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 151,
+        "enemies": [
+            "Slime Beast",
+            "Calamar"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 152,
+        "enemies": [
+            "Tarantula",
+            "Slime Beast"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 153,
+        "enemies": [
+            "Calamar"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 154,
+        "enemies": [
+            "Rat Fighter"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 155,
+        "enemies": [
+            "Rat Fighter",
+            "Ape"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            3,
+            2
+        ]
+    },
+    {
+        "ID": 156,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 157,
+        "enemies": [
+            "Living Statue"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 158,
+        "enemies": [
+            "Hydros Statue"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 159,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 160,
+        "enemies": [
+            "Orc"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 161,
+        "enemies": [
+            "Grub",
+            "Rat Fighter"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 162,
+        "enemies": [
+            "Orc",
+            "Rat Fighter"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 163,
+        "enemies": [
+            "Fighter Bee",
+            "Orc"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 164,
+        "enemies": [
+            "Fighter Bee",
+            "Grub"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 165,
+        "enemies": [
+            "Salamander",
+            "Grub"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 166,
+        "enemies": [
+            "Salamander",
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 167,
+        "enemies": [
+            "Salamander"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 168,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 169,
+        "enemies": [
+            "Ant Lion"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 170,
+        "enemies": [
+            "Manticore"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 171,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 172,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 173,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 174,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 175,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 176,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 177,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 178,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 179,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 180,
+        "enemies": [
+            "Mad Vermin"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 181,
+        "enemies": [
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 182,
+        "enemies": [
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 183,
+        "enemies": [
+            "Mad Vermin",
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 184,
+        "enemies": [
+            "Mad Vermin",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 185,
+        "enemies": [
+            "Undead"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 186,
+        "enemies": [
+            "Undead",
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 187,
+        "enemies": [
+            "Undead",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 188,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 189,
+        "enemies": [
+            "Mad Vermin",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 190,
+        "enemies": [
+            "Mad Vermin",
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 191,
+        "enemies": [
+            "Fighter Bee",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 192,
+        "enemies": [
+            "Ravager"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 193,
+        "enemies": [
+            "Undead",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 194,
+        "enemies": [
+            "Ravager",
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 195,
+        "enemies": [
+            "Ghost Mage"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 196,
+        "enemies": [
+            "Ghost Mage",
+            "Undead"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 197,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 198,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 199,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 200,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 201,
+        "enemies": [
+            "Fighter Bee",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 202,
+        "enemies": [
+            "Ravager",
+            "Death Cap"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 203,
+        "enemies": [
+            "Ravager",
+            "Fighter Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 204,
+        "enemies": [
+            "Ghost Mage",
+            "Undead"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 205,
+        "enemies": [
+            "Ghost Mage"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 206,
+        "enemies": [
+            "Gargoyle"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 207,
+        "enemies": [
+            "Cave Troll",
+            "Gargoyle"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 208,
+        "enemies": [
+            "Cave Troll"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 209,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 210,
+        "enemies": [
+            "Man o' War"
+        ],
+        "min_amounts": [
+            3
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 211,
+        "enemies": [
+            "Lizard Fighter",
+            "Rabid Bat"
+        ],
+        "min_amounts": [
+            1,
+            2
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 212,
+        "enemies": [
+            "Virago",
+            "Man o' War"
+        ],
+        "min_amounts": [
+            1,
+            2
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 213,
+        "enemies": [
+            "Kraken"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 214,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 215,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 216,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 217,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 218,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 219,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 220,
+        "enemies": [
+            "Mad Mole"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 221,
+        "enemies": [
+            "Armored Rat",
+            "Rabid Bat"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 222,
+        "enemies": [
+            "Mad Mole",
+            "Rabid Bat"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 223,
+        "enemies": [
+            "Armored Rat",
+            "Foul Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 224,
+        "enemies": [
+            "Mad Mole",
+            "Foul Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 225,
+        "enemies": [
+            "Gnome Mage"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 226,
+        "enemies": [
+            "Gnome Mage",
+            "Mad Mole"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 227,
+        "enemies": [
+            "Gnome Mage",
+            "Foul Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 228,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 229,
+        "enemies": [
+            "Armored Rat",
+            "Foul Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 230,
+        "enemies": [
+            "Mad Mole",
+            "Worm"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 231,
+        "enemies": [
+            "Gnome Mage",
+            "Wight"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 232,
+        "enemies": [
+            "Golem",
+            "Wight"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 233,
+        "enemies": [
+            "Clay Gargoyle",
+            "Mad Mole"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 234,
+        "enemies": [
+            "Golem",
+            "Clay Gargoyle"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 235,
+        "enemies": [
+            "Dread Hound"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 236,
+        "enemies": [
+            "Dread Hound",
+            "Golem"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 237,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 238,
+        "enemies": [
+            "Azart"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 239,
+        "enemies": [
+            "Azart"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 240,
+        "enemies": [
+            "Satrage"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 241,
+        "enemies": [
+            "Satrage"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 242,
+        "enemies": [
+            "Navampa"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 243,
+        "enemies": [
+            "Navampa"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 244,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 245,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 246,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 247,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 248,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 249,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 250,
+        "enemies": [
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 251,
+        "enemies": [
+            "Rat Warrior",
+            "Warrior Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 252,
+        "enemies": [
+            "Dirty Ape"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 253,
+        "enemies": [
+            "Kobold"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 254,
+        "enemies": [
+            "Dirty Ape",
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 255,
+        "enemies": [
+            "Kobold",
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 256,
+        "enemies": [
+            "Dirty Ape",
+            "Warrior Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 257,
+        "enemies": [
+            "Kobold"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 258,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 259,
+        "enemies": [
+            "Rat Warrior",
+            "Vile Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 260,
+        "enemies": [
+            "Kobold",
+            "Vile Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 261,
+        "enemies": [
+            "Vile Dirge",
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 262,
+        "enemies": [
+            "Kobold",
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 263,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 264,
+        "enemies": [
+            "Brigand"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 265,
+        "enemies": [
+            "Brigand"
+        ],
+        "min_amounts": [
+            3
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 266,
+        "enemies": [
+            "Toadonpa"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 267,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 268,
+        "enemies": [
+            "Orc Captain",
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 269,
+        "enemies": [
+            "Warrior Bee",
+            "Kobold"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 270,
+        "enemies": [
+            "Dirty Ape",
+            "Rat Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 271,
+        "enemies": [
+            "Dirty Ape",
+            "Warrior Bee"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 272,
+        "enemies": [
+            "Kobold",
+            "Vile Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 273,
+        "enemies": [
+            "Orc Captain",
+            "Vile Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 274,
+        "enemies": [
+            "Orc Captain"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 275,
+        "enemies": [
+            "Brutal Troll"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 276,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 277,
+        "enemies": [
+            "Acid Maggot",
+            "Kobold"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 278,
+        "enemies": [
+            "Roach",
+            "Vile Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 279,
+        "enemies": [
+            "Brutal Troll"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 280,
+        "enemies": [
+            "Magicore"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 281,
+        "enemies": [
+            "Harridan",
+            "Orc Captain"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 282,
+        "enemies": [
+            "Stone Soldier"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            3
+        ]
+    },
+    {
+        "ID": 283,
+        "enemies": [
+            "Stone Soldier",
+            "Acid Maggot"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 284,
+        "enemies": [
+            "Harridan",
+            "Roach"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 285,
+        "enemies": [
+            "Magicore",
+            "Vile Dirge"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 286,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 287,
+        "enemies": [
+            "Tornado Lizard"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 288,
+        "enemies": [
+            "Storm Lizard"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 289,
+        "enemies": [
+            "Tempest Lizard"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 290,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 291,
+        "enemies": [
+            "Hobgoblin",
+            "Virago"
+        ],
+        "min_amounts": [
+            1,
+            2
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 292,
+        "enemies": [
+            "Grisly",
+            "Succubus"
+        ],
+        "min_amounts": [
+            2,
+            1
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 293,
+        "enemies": [
+            "Lich",
+            "Fiendish Ghoul"
+        ],
+        "min_amounts": [
+            1,
+            2
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 294,
+        "enemies": [
+            "Gryphon"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 295,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 296,
+        "enemies": [
+            "Lizard King",
+            "Harridan",
+            "Stone Soldier"
+        ],
+        "min_amounts": [
+            1,
+            1,
+            2
+        ],
+        "max_amounts": [
+            1,
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 297,
+        "enemies": [
+            "Chimera"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 298,
+        "enemies": [
+            "Earth Lizard"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 299,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 300,
+        "enemies": [
+            "Poison Toad",
+            "Thunder Lizard"
+        ],
+        "min_amounts": [
+            1,
+            2
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 301,
+        "enemies": [
+            "Cerebus"
+        ],
+        "min_amounts": [
+            2
+        ],
+        "max_amounts": [
+            2
+        ]
+    },
+    {
+        "ID": 302,
+        "enemies": [
+            "Deadbeard"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 303,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 304,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 305,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 306,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 307,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 308,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 309,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 310,
+        "enemies": [
+            "Cannibal Ghoul",
+            "Horned Ghost"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 311,
+        "enemies": [
+            "Horned Ghost",
+            "Gnome Wizard"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 312,
+        "enemies": [
+            "Earth Golem",
+            "Goblin"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 313,
+        "enemies": [
+            "Mole Mage",
+            "Earth Golem"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 314,
+        "enemies": [
+            "Nightmare",
+            "Horned Ghost"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 315,
+        "enemies": [
+            "Gnome Wizard",
+            "Cannibal Ghoul"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 316,
+        "enemies": [
+            "Goblin",
+            "Mole Mage"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 317,
+        "enemies": [
+            "Nightmare",
+            "Earth Golem"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 318,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 319,
+        "enemies": [
+            "Horned Ghost",
+            "Nightmare"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 320,
+        "enemies": [
+            "Earth Golem",
+            "Horned Ghost"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 321,
+        "enemies": [
+            "Gnome Wizard",
+            "Earth Golem"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 322,
+        "enemies": [
+            "Nightmare",
+            "Goblin"
+        ],
+        "min_amounts": [
+            2,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 323,
+        "enemies": [
+            "Nightmare",
+            "Earth Golem",
+            "Horned Ghost"
+        ],
+        "min_amounts": [
+            1,
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 324,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 325,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 326,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 327,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 328,
+        "enemies": [
+            "Gnome Wizard",
+            "Plated Rat"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 329,
+        "enemies": [
+            "Skull Warrior",
+            "Willowisp"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            2
+        ]
+    },
+    {
+        "ID": 330,
+        "enemies": [
+            "Orc Lord",
+            "Wild Gryphon"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 331,
+        "enemies": [
+            "Ice Gargoyle",
+            "Nightmare"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 332,
+        "enemies": [
+            "Wild Gryphon",
+            "Manticore King"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 333,
+        "enemies": [
+            "Manticore King",
+            "Willowisp"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            3
+        ]
+    },
+    {
+        "ID": 334,
+        "enemies": [
+            "Chimera Mage",
+            "Ice Gargoyle"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 335,
+        "enemies": [
+            "Chimera Mage",
+            "Manticore King"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 336,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 337,
+        "enemies": [
+            "Wild Gryphon",
+            "Grand Golem"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 338,
+        "enemies": [
+            "Manticore King",
+            "Skull Warrior"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 339,
+        "enemies": [
+            "Chimera Mage",
+            "Fenrir"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 340,
+        "enemies": [
+            "Recluse",
+            "Willowisp"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            3
+        ]
+    },
+    {
+        "ID": 341,
+        "enemies": [
+            "Boulder Beast",
+            "Thunder Lizard"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            2,
+            1
+        ]
+    },
+    {
+        "ID": 342,
+        "enemies": [
+            "Grand Golem",
+            "Boulder Beast"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            4
+        ]
+    },
+    {
+        "ID": 343,
+        "enemies": [
+            "Fenrir",
+            "Ice Gargoyle"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 344,
+        "enemies": [
+            "Thunder Lizard",
+            "Chimera Mage"
+        ],
+        "min_amounts": [
+            1,
+            0
+        ],
+        "max_amounts": [
+            1,
+            2
+        ]
+    },
+    {
+        "ID": 345,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 346,
+        "enemies": [
+            "Menardi",
+            "Saturos"
+        ],
+        "min_amounts": [
+            1,
+            1
+        ],
+        "max_amounts": [
+            1,
+            1
+        ]
+    },
+    {
+        "ID": 347,
+        "enemies": [
+            "Fusion Dragon"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 348,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 349,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 350,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 351,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 352,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 353,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 354,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 355,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 356,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 357,
+        "enemies": [
+            "Mimic"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 358,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 359,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 360,
+        "enemies": [
+            "Venus Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 361,
+        "enemies": [
+            "Venus Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 362,
+        "enemies": [
+            "Venus Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 363,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 364,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 365,
+        "enemies": [
+            "Mercury Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 366,
+        "enemies": [
+            "Mercury Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 367,
+        "enemies": [
+            "Mercury Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 368,
+        "enemies": [
+            "Mercury Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 369,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 370,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 371,
+        "enemies": [
+            "Mars Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 372,
+        "enemies": [
+            "Mars Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 373,
+        "enemies": [
+            "Mars Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 374,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 375,
+        "enemies": [],
+        "min_amounts": [],
+        "max_amounts": []
+    },
+    {
+        "ID": 376,
+        "enemies": [
+            "Jupiter Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 377,
+        "enemies": [
+            "Jupiter Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 378,
+        "enemies": [
+            "Jupiter Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    },
+    {
+        "ID": 379,
+        "enemies": [
+            "Jupiter Djinni"
+        ],
+        "min_amounts": [
+            1
+        ],
+        "max_amounts": [
+            1
+        ]
+    }
+]
