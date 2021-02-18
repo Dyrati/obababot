@@ -157,12 +157,12 @@ class TextMap(Database):
         return self.namemap[tablename].get(self.normalize(name))
 
 
-DataTables, Text, Emojis = Database(), TextMap(), {}
+DataTables, Text, Emojis, Images = Database(), TextMap(), {}, {}
 def load_data():
     global DataTables, Text, Emojis
     dirname = os.path.dirname(__file__)
     print("Loading database...", end="\r")
-    DataTables.clear(); Text.clear(), Emojis.clear()
+    DataTables.clear(); Text.clear(), Emojis.clear(), Images.clear()
     for name in [
             "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
             "classdata", "elementdata", "encounterdata2", "encounterdata1", "mapdata1",
@@ -182,6 +182,8 @@ def load_data():
     for emoji in client.emojis:
         m = match_emoji.match(str(emoji))
         Emojis[m.group(1)] = m.group()
+    for path, dirs, files in os.walk(os.path.join(dirname, "sprites")):
+        for f in files: Images[os.path.splitext(f)[0]] = os.path.join(path, f)
     mfuncs.update(**DataTables)
     print("Loaded database    ")
 
@@ -277,9 +279,6 @@ def dictstr(dictionary, js=False, maxwidth=77, sep="  "):
 def tableH(dictlist, fields=None, spacing=1, border=None, headers=True):
     if not dictlist: return ""
     fields = fields or dictlist[0].keys()
-    for f in fields:
-        for d in dictlist:
-            d[f] = d.get(f, None)
     widths = {k: 0 for k in fields}
     if headers: widths = {k: len(k) for k in fields}
     for d in dictlist:

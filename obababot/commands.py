@@ -1,9 +1,10 @@
 import discord
 import re
 import inspect
+from copy import deepcopy
 from . import utilities
 from .utilities import \
-    client, command, prefix, DataTables, UserData,\
+    client, command, prefix, DataTables, UserData, Images, \
     reply, dictstr, mfuncs
 from . import gsfuncs
 from .safe_eval import safe_eval
