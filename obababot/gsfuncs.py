@@ -622,7 +622,8 @@ def readsav(data):
         data = slots[i]
         read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
         string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
-        version = build_dates[read(0x26, 2) & ~0x8000]
+        version = build_dates.get(read(0x26, 2) & ~0x8000)
+        if version is None: continue
         if "The Lost Age" in version: GAME = 2; offset = 0x20
         else: GAME = 1; offset = 0
         party_size = sum((1 if read(0x40, 1) & 2**j else 0 for j in range(8)))
