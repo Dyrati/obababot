@@ -10,7 +10,7 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 1,
@@ -23,7 +23,7 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 2,
@@ -36,7 +36,21 @@
         "type": 1,
         "MFT_index": 1,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": [
+            14,
+            15,
+            25,
+            26,
+            29,
+            30,
+            42,
+            43,
+            53,
+            54,
+            78,
+            79,
+            107
+        ]
     },
     {
         "ID": 3,
@@ -49,7 +63,7 @@
         "type": 1,
         "MFT_index": 1,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 4,
@@ -62,7 +76,7 @@
         "type": 2,
         "MFT_index": 3,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 5,
@@ -75,7 +89,7 @@
         "type": 2,
         "MFT_index": 4,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 6,
@@ -88,7 +102,7 @@
         "type": 1,
         "MFT_index": 5,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 7,
@@ -101,7 +115,7 @@
         "type": 1,
         "MFT_index": 6,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 8,
@@ -114,7 +128,7 @@
         "type": 1,
         "MFT_index": 7,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 9,
@@ -127,7 +141,7 @@
         "type": 2,
         "MFT_index": 8,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 10,
@@ -140,7 +154,7 @@
         "type": 2,
         "MFT_index": 9,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 11,
@@ -154,7 +168,7 @@
         "type": 2,
         "MFT_index": 11,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 12,
@@ -167,7 +181,7 @@
         "type": 2,
         "MFT_index": 12,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 13,
@@ -180,7 +194,7 @@
         "type": 2,
         "MFT_index": 10,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 14,
@@ -193,11 +207,9 @@
         "type": 1,
         "MFT_index": 14,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                17
-            ]
-        }
+        "encounters": [
+            17
+        ]
     },
     {
         "ID": 15,
@@ -210,17 +222,10 @@
         "type": 1,
         "MFT_index": 13,
         "outdoor": 0,
-        "encounters": {
-            "2": [
-                18
-            ],
-            "3": [
-                18
-            ],
-            "all": [
-                16
-            ]
-        }
+        "encounters": [
+            16,
+            18
+        ]
     },
     {
         "ID": 16,
@@ -233,11 +238,9 @@
         "type": 1,
         "MFT_index": 15,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                18
-            ]
-        }
+        "encounters": [
+            18
+        ]
     },
     {
         "ID": 17,
@@ -250,11 +253,9 @@
         "type": 1,
         "MFT_index": 16,
         "outdoor": 0,
-        "encounters": {
-            "2": [
-                17
-            ]
-        }
+        "encounters": [
+            17
+        ]
     },
     {
         "ID": 18,
@@ -267,7 +268,7 @@
         "type": 1,
         "MFT_index": 17,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 19,
@@ -280,11 +281,9 @@
         "type": 1,
         "MFT_index": 18,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                17
-            ]
-        }
+        "encounters": [
+            17
+        ]
     },
     {
         "ID": 20,
@@ -297,17 +296,10 @@
         "type": 1,
         "MFT_index": 19,
         "outdoor": 0,
-        "encounters": {
-            "3": [
-                18
-            ],
-            "4": [
-                18
-            ],
-            "all": [
-                16
-            ]
-        }
+        "encounters": [
+            16,
+            18
+        ]
     },
     {
         "ID": 21,
@@ -320,7 +312,7 @@
         "type": 2,
         "MFT_index": 20,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 22,
@@ -333,7 +325,7 @@
         "type": 2,
         "MFT_index": 21,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 23,
@@ -346,7 +338,7 @@
         "type": 1,
         "MFT_index": 23,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 24,
@@ -359,7 +351,7 @@
         "type": 1,
         "MFT_index": 24,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 25,
@@ -372,20 +364,10 @@
         "type": 1,
         "MFT_index": 25,
         "outdoor": 0,
-        "encounters": {
-            "3": [
-                19
-            ],
-            "4": [
-                19
-            ],
-            "5": [
-                19
-            ],
-            "all": [
-                20
-            ]
-        }
+        "encounters": [
+            19,
+            20
+        ]
     },
     {
         "ID": 26,
@@ -398,11 +380,9 @@
         "type": 1,
         "MFT_index": 26,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                19
-            ]
-        }
+        "encounters": [
+            19
+        ]
     },
     {
         "ID": 27,
@@ -415,11 +395,9 @@
         "type": 1,
         "MFT_index": 27,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                19
-            ]
-        }
+        "encounters": [
+            19
+        ]
     },
     {
         "ID": 28,
@@ -432,7 +410,7 @@
         "type": 1,
         "MFT_index": 28,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 29,
@@ -445,11 +423,9 @@
         "type": 1,
         "MFT_index": 29,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                20
-            ]
-        }
+        "encounters": [
+            20
+        ]
     },
     {
         "ID": 30,
@@ -462,11 +438,9 @@
         "type": 1,
         "MFT_index": 22,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                20
-            ]
-        }
+        "encounters": [
+            20
+        ]
     },
     {
         "ID": 31,
@@ -479,7 +453,7 @@
         "type": 1,
         "MFT_index": 30,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 32,
@@ -492,11 +466,9 @@
         "type": 1,
         "MFT_index": 31,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                21
-            ]
-        }
+        "encounters": [
+            21
+        ]
     },
     {
         "ID": 33,
@@ -509,7 +481,7 @@
         "type": 1,
         "MFT_index": 32,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 34,
@@ -522,11 +494,9 @@
         "type": 1,
         "MFT_index": 33,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                22
-            ]
-        }
+        "encounters": [
+            22
+        ]
     },
     {
         "ID": 35,
@@ -539,11 +509,9 @@
         "type": 1,
         "MFT_index": 34,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                22
-            ]
-        }
+        "encounters": [
+            22
+        ]
     },
     {
         "ID": 36,
@@ -556,11 +524,9 @@
         "type": 1,
         "MFT_index": 35,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                23
-            ]
-        }
+        "encounters": [
+            23
+        ]
     },
     {
         "ID": 37,
@@ -573,14 +539,10 @@
         "type": 1,
         "MFT_index": 36,
         "outdoor": 1,
-        "encounters": {
-            "3": [
-                24
-            ],
-            "all": [
-                23
-            ]
-        }
+        "encounters": [
+            23,
+            24
+        ]
     },
     {
         "ID": 38,
@@ -593,11 +555,9 @@
         "type": 1,
         "MFT_index": 37,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                24
-            ]
-        }
+        "encounters": [
+            24
+        ]
     },
     {
         "ID": 39,
@@ -610,11 +570,9 @@
         "type": 1,
         "MFT_index": 38,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                24
-            ]
-        }
+        "encounters": [
+            24
+        ]
     },
     {
         "ID": 40,
@@ -627,11 +585,9 @@
         "type": 1,
         "MFT_index": 127,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                51
-            ]
-        }
+        "encounters": [
+            51
+        ]
     },
     {
         "ID": 41,
@@ -644,7 +600,7 @@
         "type": 1,
         "MFT_index": 128,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 42,
@@ -657,7 +613,7 @@
         "type": 1,
         "MFT_index": 185,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 43,
@@ -670,7 +626,7 @@
         "type": 1,
         "MFT_index": 126,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 44,
@@ -683,7 +639,7 @@
         "type": 2,
         "MFT_index": 40,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 45,
@@ -696,7 +652,7 @@
         "type": 2,
         "MFT_index": 41,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 46,
@@ -709,7 +665,7 @@
         "type": 2,
         "MFT_index": 42,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 47,
@@ -722,11 +678,9 @@
         "type": 1,
         "MFT_index": 43,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                27
-            ]
-        }
+        "encounters": [
+            27
+        ]
     },
     {
         "ID": 48,
@@ -739,11 +693,9 @@
         "type": 1,
         "MFT_index": 44,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                27
-            ]
-        }
+        "encounters": [
+            27
+        ]
     },
     {
         "ID": 49,
@@ -756,11 +708,9 @@
         "type": 1,
         "MFT_index": 45,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                27
-            ]
-        }
+        "encounters": [
+            27
+        ]
     },
     {
         "ID": 50,
@@ -773,11 +723,9 @@
         "type": 1,
         "MFT_index": 48,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                28
-            ]
-        }
+        "encounters": [
+            28
+        ]
     },
     {
         "ID": 51,
@@ -790,11 +738,9 @@
         "type": 1,
         "MFT_index": 47,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                28
-            ]
-        }
+        "encounters": [
+            28
+        ]
     },
     {
         "ID": 52,
@@ -807,11 +753,9 @@
         "type": 1,
         "MFT_index": 46,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                28
-            ]
-        }
+        "encounters": [
+            28
+        ]
     },
     {
         "ID": 53,
@@ -824,7 +768,7 @@
         "type": 2,
         "MFT_index": 49,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 54,
@@ -837,7 +781,7 @@
         "type": 1,
         "MFT_index": 50,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 55,
@@ -850,7 +794,7 @@
         "type": 2,
         "MFT_index": 51,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 56,
@@ -863,7 +807,7 @@
         "type": 2,
         "MFT_index": 52,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 57,
@@ -877,7 +821,7 @@
         "type": 2,
         "MFT_index": 53,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 58,
@@ -892,7 +836,7 @@
         "type": 2,
         "MFT_index": 54,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 59,
@@ -905,7 +849,7 @@
         "type": 2,
         "MFT_index": 55,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 60,
@@ -918,7 +862,7 @@
         "type": 2,
         "MFT_index": 56,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 61,
@@ -931,7 +875,7 @@
         "type": 2,
         "MFT_index": 57,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 62,
@@ -944,7 +888,7 @@
         "type": 2,
         "MFT_index": 58,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 63,
@@ -957,7 +901,7 @@
         "type": 2,
         "MFT_index": 59,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 64,
@@ -970,7 +914,7 @@
         "type": 2,
         "MFT_index": 61,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 65,
@@ -983,7 +927,7 @@
         "type": 2,
         "MFT_index": 62,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 66,
@@ -996,7 +940,7 @@
         "type": 2,
         "MFT_index": 60,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 67,
@@ -1009,11 +953,9 @@
         "type": 1,
         "MFT_index": 63,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                31
-            ]
-        }
+        "encounters": [
+            31
+        ]
     },
     {
         "ID": 68,
@@ -1026,7 +968,7 @@
         "type": 1,
         "MFT_index": 64,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 69,
@@ -1039,11 +981,9 @@
         "type": 1,
         "MFT_index": 65,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                31
-            ]
-        }
+        "encounters": [
+            31
+        ]
     },
     {
         "ID": 70,
@@ -1056,11 +996,9 @@
         "type": 1,
         "MFT_index": 66,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                32
-            ]
-        }
+        "encounters": [
+            32
+        ]
     },
     {
         "ID": 71,
@@ -1073,7 +1011,7 @@
         "type": 1,
         "MFT_index": 67,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 72,
@@ -1086,11 +1024,9 @@
         "type": 1,
         "MFT_index": 68,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                32
-            ]
-        }
+        "encounters": [
+            32
+        ]
     },
     {
         "ID": 73,
@@ -1103,11 +1039,9 @@
         "type": 1,
         "MFT_index": 69,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                33
-            ]
-        }
+        "encounters": [
+            33
+        ]
     },
     {
         "ID": 74,
@@ -1120,11 +1054,9 @@
         "type": 1,
         "MFT_index": 70,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                33
-            ]
-        }
+        "encounters": [
+            33
+        ]
     },
     {
         "ID": 75,
@@ -1137,11 +1069,9 @@
         "type": 1,
         "MFT_index": 71,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                33
-            ]
-        }
+        "encounters": [
+            33
+        ]
     },
     {
         "ID": 76,
@@ -1154,7 +1084,7 @@
         "type": 1,
         "MFT_index": 72,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 77,
@@ -1167,11 +1097,9 @@
         "type": 1,
         "MFT_index": 73,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                32
-            ]
-        }
+        "encounters": [
+            32
+        ]
     },
     {
         "ID": 78,
@@ -1184,11 +1112,9 @@
         "type": 1,
         "MFT_index": 74,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                32
-            ]
-        }
+        "encounters": [
+            32
+        ]
     },
     {
         "ID": 79,
@@ -1201,11 +1127,9 @@
         "type": 1,
         "MFT_index": 75,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                96
-            ]
-        }
+        "encounters": [
+            96
+        ]
     },
     {
         "ID": 80,
@@ -1218,20 +1142,10 @@
         "type": 1,
         "MFT_index": 76,
         "outdoor": 1,
-        "encounters": {
-            "15": [
-                97
-            ],
-            "16": [
-                97
-            ],
-            "17": [
-                97
-            ],
-            "all": [
-                96
-            ]
-        }
+        "encounters": [
+            96,
+            97
+        ]
     },
     {
         "ID": 81,
@@ -1244,11 +1158,9 @@
         "type": 1,
         "MFT_index": 77,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                97
-            ]
-        }
+        "encounters": [
+            97
+        ]
     },
     {
         "ID": 82,
@@ -1261,11 +1173,9 @@
         "type": 1,
         "MFT_index": 78,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                34
-            ]
-        }
+        "encounters": [
+            34
+        ]
     },
     {
         "ID": 83,
@@ -1278,11 +1188,9 @@
         "type": 1,
         "MFT_index": 79,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                35
-            ]
-        }
+        "encounters": [
+            35
+        ]
     },
     {
         "ID": 84,
@@ -1295,17 +1203,9 @@
         "type": 1,
         "MFT_index": 80,
         "outdoor": 0,
-        "encounters": {
-            "8": [
-                35
-            ],
-            "9": [
-                35
-            ],
-            "all": [
-                35
-            ]
-        }
+        "encounters": [
+            35
+        ]
     },
     {
         "ID": 85,
@@ -1318,33 +1218,11 @@
         "type": 1,
         "MFT_index": 81,
         "outdoor": 0,
-        "encounters": {
-            "5": [
-                38
-            ],
-            "4": [
-                37
-            ],
-            "6": [
-                37
-            ],
-            "7": [
-                37
-            ],
-            "10": [
-                37
-            ],
-            "14": [
-                38
-            ],
-            "15": [
-                38
-            ],
-            "all": [
-                36,
-                37
-            ]
-        }
+        "encounters": [
+            36,
+            37,
+            38
+        ]
     },
     {
         "ID": 86,
@@ -1357,11 +1235,9 @@
         "type": 1,
         "MFT_index": 82,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                36
-            ]
-        }
+        "encounters": [
+            36
+        ]
     },
     {
         "ID": 87,
@@ -1374,11 +1250,9 @@
         "type": 1,
         "MFT_index": 83,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                36
-            ]
-        }
+        "encounters": [
+            36
+        ]
     },
     {
         "ID": 88,
@@ -1391,12 +1265,10 @@
         "type": 1,
         "MFT_index": 84,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                37,
-                38
-            ]
-        }
+        "encounters": [
+            37,
+            38
+        ]
     },
     {
         "ID": 89,
@@ -1409,7 +1281,7 @@
         "type": 1,
         "MFT_index": 85,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 90,
@@ -1422,11 +1294,9 @@
         "type": 1,
         "MFT_index": 86,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                37
-            ]
-        }
+        "encounters": [
+            37
+        ]
     },
     {
         "ID": 91,
@@ -1439,11 +1309,9 @@
         "type": 1,
         "MFT_index": 87,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                36
-            ]
-        }
+        "encounters": [
+            36
+        ]
     },
     {
         "ID": 92,
@@ -1456,11 +1324,9 @@
         "type": 1,
         "MFT_index": 88,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                36
-            ]
-        }
+        "encounters": [
+            36
+        ]
     },
     {
         "ID": 93,
@@ -1473,11 +1339,9 @@
         "type": 1,
         "MFT_index": 89,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                38
-            ]
-        }
+        "encounters": [
+            38
+        ]
     },
     {
         "ID": 94,
@@ -1490,7 +1354,7 @@
         "type": 1,
         "MFT_index": 90,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 95,
@@ -1503,7 +1367,7 @@
         "type": 2,
         "MFT_index": 91,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 96,
@@ -1516,7 +1380,7 @@
         "type": 2,
         "MFT_index": 92,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 97,
@@ -1529,7 +1393,7 @@
         "type": 2,
         "MFT_index": 93,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 98,
@@ -1542,7 +1406,7 @@
         "type": 2,
         "MFT_index": 94,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 99,
@@ -1555,7 +1419,7 @@
         "type": 2,
         "MFT_index": 95,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 100,
@@ -1568,11 +1432,9 @@
         "type": 2,
         "MFT_index": 96,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                39
-            ]
-        }
+        "encounters": [
+            39
+        ]
     },
     {
         "ID": 101,
@@ -1585,13 +1447,9 @@
         "type": 2,
         "MFT_index": 97,
         "outdoor": 0,
-        "encounters": {
-            "8": [],
-            "9": [],
-            "all": [
-                39
-            ]
-        }
+        "encounters": [
+            39
+        ]
     },
     {
         "ID": 102,
@@ -1604,14 +1462,10 @@
         "type": 1,
         "MFT_index": 100,
         "outdoor": 1,
-        "encounters": {
-            "2": [
-                40
-            ],
-            "all": [
-                41
-            ]
-        }
+        "encounters": [
+            40,
+            41
+        ]
     },
     {
         "ID": 103,
@@ -1624,7 +1478,7 @@
         "type": 1,
         "MFT_index": 101,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 104,
@@ -1637,7 +1491,7 @@
         "type": 1,
         "MFT_index": 39,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 105,
@@ -1650,7 +1504,7 @@
         "type": 2,
         "MFT_index": 98,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 106,
@@ -1663,7 +1517,7 @@
         "type": 2,
         "MFT_index": 99,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 107,
@@ -1676,12 +1530,9 @@
         "type": 1,
         "MFT_index": 102,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                45,
-                45
-            ]
-        }
+        "encounters": [
+            45
+        ]
     },
     {
         "ID": 108,
@@ -1694,12 +1545,10 @@
         "type": 1,
         "MFT_index": 103,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                45,
-                45
-            ]
-        }
+        "encounters": [
+            44,
+            45
+        ]
     },
     {
         "ID": 109,
@@ -1712,11 +1561,9 @@
         "type": 1,
         "MFT_index": 104,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                45
-            ]
-        }
+        "encounters": [
+            45
+        ]
     },
     {
         "ID": 110,
@@ -1729,7 +1576,7 @@
         "type": 2,
         "MFT_index": 105,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 111,
@@ -1742,7 +1589,7 @@
         "type": 2,
         "MFT_index": 106,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 112,
@@ -1755,7 +1602,7 @@
         "type": 2,
         "MFT_index": 109,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 113,
@@ -1768,7 +1615,7 @@
         "type": 2,
         "MFT_index": 107,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 114,
@@ -1781,7 +1628,7 @@
         "type": 2,
         "MFT_index": 108,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 115,
@@ -1794,11 +1641,9 @@
         "type": 1,
         "MFT_index": 110,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                46
-            ]
-        }
+        "encounters": [
+            46
+        ]
     },
     {
         "ID": 116,
@@ -1811,17 +1656,10 @@
         "type": 1,
         "MFT_index": 111,
         "outdoor": 0,
-        "encounters": {
-            "1": [
-                47
-            ],
-            "2": [
-                47
-            ],
-            "all": [
-                48
-            ]
-        }
+        "encounters": [
+            47,
+            48
+        ]
     },
     {
         "ID": 117,
@@ -1834,17 +1672,10 @@
         "type": 1,
         "MFT_index": 112,
         "outdoor": 0,
-        "encounters": {
-            "1": [
-                47
-            ],
-            "4": [
-                47
-            ],
-            "all": [
-                48
-            ]
-        }
+        "encounters": [
+            47,
+            48
+        ]
     },
     {
         "ID": 118,
@@ -1857,11 +1688,9 @@
         "type": 1,
         "MFT_index": 113,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                47
-            ]
-        }
+        "encounters": [
+            47
+        ]
     },
     {
         "ID": 119,
@@ -1874,11 +1703,9 @@
         "type": 1,
         "MFT_index": 114,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                48
-            ]
-        }
+        "encounters": [
+            48
+        ]
     },
     {
         "ID": 120,
@@ -1891,11 +1718,9 @@
         "type": 1,
         "MFT_index": 115,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                48
-            ]
-        }
+        "encounters": [
+            48
+        ]
     },
     {
         "ID": 121,
@@ -1908,7 +1733,7 @@
         "type": 1,
         "MFT_index": 116,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 122,
@@ -1921,7 +1746,7 @@
         "type": 1,
         "MFT_index": 117,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 123,
@@ -1934,11 +1759,9 @@
         "type": 1,
         "MFT_index": 118,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                46
-            ]
-        }
+        "encounters": [
+            46
+        ]
     },
     {
         "ID": 124,
@@ -1951,7 +1774,7 @@
         "type": 1,
         "MFT_index": 119,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 125,
@@ -1964,7 +1787,7 @@
         "type": 1,
         "MFT_index": 120,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 126,
@@ -1977,11 +1800,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                49
-            ]
-        }
+        "encounters": [
+            49
+        ]
     },
     {
         "ID": 127,
@@ -1994,11 +1815,9 @@
         "type": 1,
         "MFT_index": 122,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                49
-            ]
-        }
+        "encounters": [
+            49
+        ]
     },
     {
         "ID": 128,
@@ -2011,11 +1830,9 @@
         "type": 1,
         "MFT_index": 123,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                50
-            ]
-        }
+        "encounters": [
+            50
+        ]
     },
     {
         "ID": 129,
@@ -2028,11 +1845,9 @@
         "type": 1,
         "MFT_index": 124,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                50
-            ]
-        }
+        "encounters": [
+            50
+        ]
     },
     {
         "ID": 130,
@@ -2045,11 +1860,9 @@
         "type": 1,
         "MFT_index": 125,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                50
-            ]
-        }
+        "encounters": [
+            50
+        ]
     },
     {
         "ID": 131,
@@ -2062,7 +1875,7 @@
         "type": 2,
         "MFT_index": 129,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 132,
@@ -2075,7 +1888,7 @@
         "type": 2,
         "MFT_index": 130,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 133,
@@ -2088,7 +1901,7 @@
         "type": 2,
         "MFT_index": 131,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 134,
@@ -2101,7 +1914,7 @@
         "type": 2,
         "MFT_index": 129,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 135,
@@ -2114,7 +1927,7 @@
         "type": 2,
         "MFT_index": 132,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 136,
@@ -2127,11 +1940,9 @@
         "type": 1,
         "MFT_index": 314,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                70
-            ]
-        }
+        "encounters": [
+            70
+        ]
     },
     {
         "ID": 137,
@@ -2144,12 +1955,10 @@
         "type": 1,
         "MFT_index": 315,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                98,
-                99
-            ]
-        }
+        "encounters": [
+            98,
+            99
+        ]
     },
     {
         "ID": 138,
@@ -2162,7 +1971,7 @@
         "type": 1,
         "MFT_index": 316,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 139,
@@ -2175,7 +1984,7 @@
         "type": 2,
         "MFT_index": 133,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 140,
@@ -2188,7 +1997,7 @@
         "type": 2,
         "MFT_index": 136,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 141,
@@ -2201,7 +2010,7 @@
         "type": 2,
         "MFT_index": 134,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 142,
@@ -2214,7 +2023,7 @@
         "type": 2,
         "MFT_index": 135,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 143,
@@ -2227,11 +2036,9 @@
         "type": 1,
         "MFT_index": 137,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                55
-            ]
-        }
+        "encounters": [
+            55
+        ]
     },
     {
         "ID": 144,
@@ -2244,11 +2051,9 @@
         "type": 1,
         "MFT_index": 138,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                55
-            ]
-        }
+        "encounters": [
+            55
+        ]
     },
     {
         "ID": 145,
@@ -2261,11 +2066,9 @@
         "type": 1,
         "MFT_index": 140,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                55
-            ]
-        }
+        "encounters": [
+            55
+        ]
     },
     {
         "ID": 146,
@@ -2278,11 +2081,9 @@
         "type": 1,
         "MFT_index": 141,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                55
-            ]
-        }
+        "encounters": [
+            55
+        ]
     },
     {
         "ID": 147,
@@ -2295,11 +2096,9 @@
         "type": 1,
         "MFT_index": 142,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                55
-            ]
-        }
+        "encounters": [
+            55
+        ]
     },
     {
         "ID": 148,
@@ -2312,11 +2111,9 @@
         "type": 1,
         "MFT_index": 139,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                56
-            ]
-        }
+        "encounters": [
+            56
+        ]
     },
     {
         "ID": 149,
@@ -2329,11 +2126,9 @@
         "type": 1,
         "MFT_index": 143,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                56
-            ]
-        }
+        "encounters": [
+            56
+        ]
     },
     {
         "ID": 150,
@@ -2346,11 +2141,9 @@
         "type": 1,
         "MFT_index": 144,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                56
-            ]
-        }
+        "encounters": [
+            56
+        ]
     },
     {
         "ID": 151,
@@ -2363,11 +2156,9 @@
         "type": 1,
         "MFT_index": 145,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                57
-            ]
-        }
+        "encounters": [
+            57
+        ]
     },
     {
         "ID": 152,
@@ -2380,11 +2171,9 @@
         "type": 1,
         "MFT_index": 146,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                57
-            ]
-        }
+        "encounters": [
+            57
+        ]
     },
     {
         "ID": 153,
@@ -2397,11 +2186,9 @@
         "type": 1,
         "MFT_index": 147,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                57
-            ]
-        }
+        "encounters": [
+            57
+        ]
     },
     {
         "ID": 154,
@@ -2414,7 +2201,7 @@
         "type": 2,
         "MFT_index": 148,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 155,
@@ -2427,7 +2214,7 @@
         "type": 2,
         "MFT_index": 149,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 156,
@@ -2441,7 +2228,7 @@
         "type": 2,
         "MFT_index": 150,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 157,
@@ -2454,11 +2241,9 @@
         "type": 1,
         "MFT_index": 151,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                58
-            ]
-        }
+        "encounters": [
+            58
+        ]
     },
     {
         "ID": 158,
@@ -2471,11 +2256,9 @@
         "type": 1,
         "MFT_index": 152,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                58
-            ]
-        }
+        "encounters": [
+            58
+        ]
     },
     {
         "ID": 159,
@@ -2488,11 +2271,9 @@
         "type": 1,
         "MFT_index": 153,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                59
-            ]
-        }
+        "encounters": [
+            59
+        ]
     },
     {
         "ID": 160,
@@ -2505,11 +2286,9 @@
         "type": 1,
         "MFT_index": 154,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                62
-            ]
-        }
+        "encounters": [
+            62
+        ]
     },
     {
         "ID": 161,
@@ -2522,11 +2301,9 @@
         "type": 1,
         "MFT_index": 155,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                62
-            ]
-        }
+        "encounters": [
+            62
+        ]
     },
     {
         "ID": 162,
@@ -2539,11 +2316,9 @@
         "type": 1,
         "MFT_index": 156,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                62
-            ]
-        }
+        "encounters": [
+            62
+        ]
     },
     {
         "ID": 163,
@@ -2556,13 +2331,9 @@
         "type": 1,
         "MFT_index": 157,
         "outdoor": 0,
-        "encounters": {
-            "6": [],
-            "7": [],
-            "all": [
-                62
-            ]
-        }
+        "encounters": [
+            62
+        ]
     },
     {
         "ID": 164,
@@ -2575,11 +2346,9 @@
         "type": 1,
         "MFT_index": 158,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                60
-            ]
-        }
+        "encounters": [
+            60
+        ]
     },
     {
         "ID": 165,
@@ -2592,11 +2361,9 @@
         "type": 1,
         "MFT_index": 159,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                60
-            ]
-        }
+        "encounters": [
+            60
+        ]
     },
     {
         "ID": 166,
@@ -2609,11 +2376,9 @@
         "type": 1,
         "MFT_index": 160,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                62
-            ]
-        }
+        "encounters": [
+            62
+        ]
     },
     {
         "ID": 167,
@@ -2626,11 +2391,9 @@
         "type": 1,
         "MFT_index": 161,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                61
-            ]
-        }
+        "encounters": [
+            61
+        ]
     },
     {
         "ID": 168,
@@ -2643,11 +2406,9 @@
         "type": 1,
         "MFT_index": 162,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                61
-            ]
-        }
+        "encounters": [
+            61
+        ]
     },
     {
         "ID": 169,
@@ -2660,9 +2421,7 @@
         "type": 1,
         "MFT_index": 163,
         "outdoor": 0,
-        "encounters": {
-            "all": []
-        }
+        "encounters": []
     },
     {
         "ID": 170,
@@ -2675,7 +2434,7 @@
         "type": 2,
         "MFT_index": 165,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 171,
@@ -2688,7 +2447,7 @@
         "type": 2,
         "MFT_index": 164,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 172,
@@ -2701,11 +2460,9 @@
         "type": 1,
         "MFT_index": 166,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                68
-            ]
-        }
+        "encounters": [
+            68
+        ]
     },
     {
         "ID": 173,
@@ -2718,11 +2475,9 @@
         "type": 1,
         "MFT_index": 167,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                69
-            ]
-        }
+        "encounters": [
+            69
+        ]
     },
     {
         "ID": 174,
@@ -2735,11 +2490,9 @@
         "type": 1,
         "MFT_index": 168,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                63
-            ]
-        }
+        "encounters": [
+            63
+        ]
     },
     {
         "ID": 175,
@@ -2752,17 +2505,10 @@
         "type": 1,
         "MFT_index": 169,
         "outdoor": 0,
-        "encounters": {
-            "3": [
-                64
-            ],
-            "4": [
-                64
-            ],
-            "all": [
-                63
-            ]
-        }
+        "encounters": [
+            63,
+            64
+        ]
     },
     {
         "ID": 176,
@@ -2775,11 +2521,9 @@
         "type": 1,
         "MFT_index": 170,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                63
-            ]
-        }
+        "encounters": [
+            63
+        ]
     },
     {
         "ID": 177,
@@ -2792,14 +2536,10 @@
         "type": 1,
         "MFT_index": 171,
         "outdoor": 0,
-        "encounters": {
-            "9": [],
-            "10": [],
-            "all": [
-                65,
-                66
-            ]
-        }
+        "encounters": [
+            65,
+            66
+        ]
     },
     {
         "ID": 178,
@@ -2812,11 +2552,9 @@
         "type": 1,
         "MFT_index": 172,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                65
-            ]
-        }
+        "encounters": [
+            65
+        ]
     },
     {
         "ID": 179,
@@ -2829,11 +2567,9 @@
         "type": 1,
         "MFT_index": 173,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                66
-            ]
-        }
+        "encounters": [
+            66
+        ]
     },
     {
         "ID": 180,
@@ -2846,11 +2582,9 @@
         "type": 1,
         "MFT_index": 174,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                66
-            ]
-        }
+        "encounters": [
+            66
+        ]
     },
     {
         "ID": 181,
@@ -2863,11 +2597,9 @@
         "type": 1,
         "MFT_index": 175,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                67
-            ]
-        }
+        "encounters": [
+            67
+        ]
     },
     {
         "ID": 182,
@@ -2880,7 +2612,7 @@
         "type": 2,
         "MFT_index": 176,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 183,
@@ -2895,7 +2627,7 @@
         "type": 2,
         "MFT_index": 177,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 184,
@@ -2908,7 +2640,7 @@
         "type": 2,
         "MFT_index": 182,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 185,
@@ -2921,7 +2653,7 @@
         "type": 2,
         "MFT_index": 178,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 186,
@@ -2934,7 +2666,7 @@
         "type": 2,
         "MFT_index": 179,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 187,
@@ -2947,7 +2679,7 @@
         "type": 2,
         "MFT_index": 180,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 188,
@@ -2960,7 +2692,7 @@
         "type": 2,
         "MFT_index": 181,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 189,
@@ -2973,11 +2705,9 @@
         "type": 1,
         "MFT_index": 186,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                71
-            ]
-        }
+        "encounters": [
+            71
+        ]
     },
     {
         "ID": 190,
@@ -2990,11 +2720,9 @@
         "type": 1,
         "MFT_index": 187,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                71
-            ]
-        }
+        "encounters": [
+            71
+        ]
     },
     {
         "ID": 191,
@@ -3007,11 +2735,9 @@
         "type": 1,
         "MFT_index": 188,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                71
-            ]
-        }
+        "encounters": [
+            71
+        ]
     },
     {
         "ID": 192,
@@ -3024,11 +2750,9 @@
         "type": 1,
         "MFT_index": 189,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                72
-            ]
-        }
+        "encounters": [
+            72
+        ]
     },
     {
         "ID": 193,
@@ -3041,11 +2765,9 @@
         "type": 1,
         "MFT_index": 190,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                73
-            ]
-        }
+        "encounters": [
+            73
+        ]
     },
     {
         "ID": 194,
@@ -3058,7 +2780,7 @@
         "type": 1,
         "MFT_index": 191,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 195,
@@ -3071,7 +2793,7 @@
         "type": 1,
         "MFT_index": 192,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 196,
@@ -3084,7 +2806,7 @@
         "type": 1,
         "MFT_index": 193,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 197,
@@ -3097,7 +2819,7 @@
         "type": 1,
         "MFT_index": 183,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 198,
@@ -3110,7 +2832,7 @@
         "type": 1,
         "MFT_index": 184,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 199,
@@ -3123,7 +2845,7 @@
         "type": 2,
         "MFT_index": 195,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 200,
@@ -3136,7 +2858,7 @@
         "type": 2,
         "MFT_index": 194,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 201,
@@ -3150,7 +2872,7 @@
         "type": 2,
         "MFT_index": 197,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 202,
@@ -3163,7 +2885,7 @@
         "type": 2,
         "MFT_index": 196,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 203,
@@ -3176,7 +2898,7 @@
         "type": 2,
         "MFT_index": 199,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 204,
@@ -3189,7 +2911,7 @@
         "type": 2,
         "MFT_index": 198,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 205,
@@ -3202,7 +2924,7 @@
         "type": 2,
         "MFT_index": 200,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 206,
@@ -3215,7 +2937,7 @@
         "type": 1,
         "MFT_index": 206,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 207,
@@ -3228,11 +2950,9 @@
         "type": 1,
         "MFT_index": 201,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                74
-            ]
-        }
+        "encounters": [
+            74
+        ]
     },
     {
         "ID": 208,
@@ -3245,11 +2965,9 @@
         "type": 1,
         "MFT_index": 202,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                74
-            ]
-        }
+        "encounters": [
+            74
+        ]
     },
     {
         "ID": 209,
@@ -3262,11 +2980,9 @@
         "type": 1,
         "MFT_index": 203,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                75
-            ]
-        }
+        "encounters": [
+            75
+        ]
     },
     {
         "ID": 210,
@@ -3279,11 +2995,9 @@
         "type": 1,
         "MFT_index": 204,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                75
-            ]
-        }
+        "encounters": [
+            75
+        ]
     },
     {
         "ID": 211,
@@ -3296,11 +3010,9 @@
         "type": 1,
         "MFT_index": 205,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                76
-            ]
-        }
+        "encounters": [
+            76
+        ]
     },
     {
         "ID": 212,
@@ -3313,7 +3025,7 @@
         "type": 1,
         "MFT_index": 207,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 213,
@@ -3326,7 +3038,7 @@
         "type": 2,
         "MFT_index": 210,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 214,
@@ -3339,7 +3051,7 @@
         "type": 2,
         "MFT_index": 99,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 215,
@@ -3352,7 +3064,7 @@
         "type": 2,
         "MFT_index": 208,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 216,
@@ -3365,7 +3077,7 @@
         "type": 2,
         "MFT_index": 211,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 217,
@@ -3378,7 +3090,7 @@
         "type": 2,
         "MFT_index": 135,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 218,
@@ -3391,7 +3103,7 @@
         "type": 2,
         "MFT_index": 208,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 219,
@@ -3404,7 +3116,7 @@
         "type": 2,
         "MFT_index": 212,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 220,
@@ -3417,7 +3129,7 @@
         "type": 2,
         "MFT_index": 213,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 221,
@@ -3430,7 +3142,7 @@
         "type": 2,
         "MFT_index": 209,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 222,
@@ -3443,7 +3155,7 @@
         "type": 2,
         "MFT_index": 177,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 223,
@@ -3456,11 +3168,9 @@
         "type": 1,
         "MFT_index": 214,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                86
-            ]
-        }
+        "encounters": [
+            86
+        ]
     },
     {
         "ID": 224,
@@ -3473,26 +3183,10 @@
         "type": 1,
         "MFT_index": 215,
         "outdoor": 0,
-        "encounters": {
-            "13": [
-                86
-            ],
-            "14": [
-                86
-            ],
-            "15": [
-                86
-            ],
-            "16": [
-                86
-            ],
-            "17": [
-                86
-            ],
-            "all": [
-                87
-            ]
-        }
+        "encounters": [
+            86,
+            87
+        ]
     },
     {
         "ID": 225,
@@ -3505,11 +3199,9 @@
         "type": 1,
         "MFT_index": 216,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                87
-            ]
-        }
+        "encounters": [
+            87
+        ]
     },
     {
         "ID": 226,
@@ -3522,11 +3214,9 @@
         "type": 1,
         "MFT_index": 217,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                88
-            ]
-        }
+        "encounters": [
+            88
+        ]
     },
     {
         "ID": 227,
@@ -3539,11 +3229,9 @@
         "type": 1,
         "MFT_index": 218,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                88
-            ]
-        }
+        "encounters": [
+            88
+        ]
     },
     {
         "ID": 228,
@@ -3556,11 +3244,9 @@
         "type": 1,
         "MFT_index": 219,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                89
-            ]
-        }
+        "encounters": [
+            89
+        ]
     },
     {
         "ID": 229,
@@ -3573,32 +3259,10 @@
         "type": 1,
         "MFT_index": 220,
         "outdoor": 0,
-        "encounters": {
-            "1": [
-                89
-            ],
-            "2": [
-                89
-            ],
-            "3": [
-                89
-            ],
-            "4": [
-                89
-            ],
-            "5": [
-                89
-            ],
-            "6": [
-                89
-            ],
-            "7": [
-                89
-            ],
-            "all": [
-                90
-            ]
-        }
+        "encounters": [
+            89,
+            90
+        ]
     },
     {
         "ID": 230,
@@ -3611,11 +3275,9 @@
         "type": 1,
         "MFT_index": 221,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                89
-            ]
-        }
+        "encounters": [
+            89
+        ]
     },
     {
         "ID": 231,
@@ -3628,11 +3290,9 @@
         "type": 1,
         "MFT_index": 222,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                90
-            ]
-        }
+        "encounters": [
+            90
+        ]
     },
     {
         "ID": 232,
@@ -3645,11 +3305,9 @@
         "type": 1,
         "MFT_index": 223,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                90
-            ]
-        }
+        "encounters": [
+            90
+        ]
     },
     {
         "ID": 233,
@@ -3662,11 +3320,9 @@
         "type": 1,
         "MFT_index": 224,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                90
-            ]
-        }
+        "encounters": [
+            90
+        ]
     },
     {
         "ID": 234,
@@ -3679,7 +3335,7 @@
         "type": 2,
         "MFT_index": 225,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 235,
@@ -3692,7 +3348,7 @@
         "type": 2,
         "MFT_index": 226,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 236,
@@ -3705,7 +3361,7 @@
         "type": 2,
         "MFT_index": 227,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 237,
@@ -3719,7 +3375,7 @@
         "type": 2,
         "MFT_index": 228,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 238,
@@ -3732,7 +3388,7 @@
         "type": 2,
         "MFT_index": 229,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 239,
@@ -3745,7 +3401,7 @@
         "type": 2,
         "MFT_index": 227,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 240,
@@ -3758,11 +3414,9 @@
         "type": 2,
         "MFT_index": 230,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                81
-            ]
-        }
+        "encounters": [
+            81
+        ]
     },
     {
         "ID": 241,
@@ -3775,7 +3429,7 @@
         "type": 1,
         "MFT_index": 231,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 242,
@@ -3788,7 +3442,7 @@
         "type": 1,
         "MFT_index": 232,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 243,
@@ -3801,7 +3455,7 @@
         "type": 1,
         "MFT_index": 233,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 244,
@@ -3814,7 +3468,7 @@
         "type": 1,
         "MFT_index": 234,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 245,
@@ -3827,7 +3481,7 @@
         "type": 1,
         "MFT_index": 235,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 246,
@@ -3840,7 +3494,7 @@
         "type": 1,
         "MFT_index": 236,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 247,
@@ -3853,7 +3507,7 @@
         "type": 1,
         "MFT_index": 243,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 248,
@@ -3866,7 +3520,7 @@
         "type": 1,
         "MFT_index": 246,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 249,
@@ -3879,11 +3533,9 @@
         "type": 1,
         "MFT_index": 244,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                85
-            ]
-        }
+        "encounters": [
+            85
+        ]
     },
     {
         "ID": 250,
@@ -3896,11 +3548,9 @@
         "type": 1,
         "MFT_index": 245,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                85
-            ]
-        }
+        "encounters": [
+            85
+        ]
     },
     {
         "ID": 251,
@@ -3913,7 +3563,7 @@
         "type": 1,
         "MFT_index": 247,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 252,
@@ -3926,11 +3576,9 @@
         "type": 1,
         "MFT_index": 248,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                82
-            ]
-        }
+        "encounters": [
+            82
+        ]
     },
     {
         "ID": 253,
@@ -3943,7 +3591,7 @@
         "type": 1,
         "MFT_index": 249,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 254,
@@ -3956,11 +3604,9 @@
         "type": 1,
         "MFT_index": 250,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                82
-            ]
-        }
+        "encounters": [
+            82
+        ]
     },
     {
         "ID": 255,
@@ -3973,11 +3619,9 @@
         "type": 1,
         "MFT_index": 251,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                82
-            ]
-        }
+        "encounters": [
+            82
+        ]
     },
     {
         "ID": 256,
@@ -3990,27 +3634,10 @@
         "type": 1,
         "MFT_index": 252,
         "outdoor": 0,
-        "encounters": {
-            "3": [
-                82,
-                83
-            ],
-            "4": [
-                82,
-                83
-            ],
-            "8": [
-                82,
-                83
-            ],
-            "9": [
-                82,
-                83
-            ],
-            "all": [
-                83
-            ]
-        }
+        "encounters": [
+            82,
+            83
+        ]
     },
     {
         "ID": 257,
@@ -4023,17 +3650,10 @@
         "type": 1,
         "MFT_index": 253,
         "outdoor": 0,
-        "encounters": {
-            "5": [
-                83
-            ],
-            "7": [
-                83
-            ],
-            "all": [
-                82
-            ]
-        }
+        "encounters": [
+            82,
+            83
+        ]
     },
     {
         "ID": 258,
@@ -4046,11 +3666,9 @@
         "type": 1,
         "MFT_index": 254,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                83
-            ]
-        }
+        "encounters": [
+            83
+        ]
     },
     {
         "ID": 259,
@@ -4063,11 +3681,9 @@
         "type": 1,
         "MFT_index": 255,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                83
-            ]
-        }
+        "encounters": [
+            83
+        ]
     },
     {
         "ID": 260,
@@ -4080,11 +3696,9 @@
         "type": 1,
         "MFT_index": 256,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                84
-            ]
-        }
+        "encounters": [
+            84
+        ]
     },
     {
         "ID": 261,
@@ -4097,11 +3711,9 @@
         "type": 1,
         "MFT_index": 257,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                83
-            ]
-        }
+        "encounters": [
+            83
+        ]
     },
     {
         "ID": 262,
@@ -4114,11 +3726,9 @@
         "type": 1,
         "MFT_index": 258,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                84
-            ]
-        }
+        "encounters": [
+            84
+        ]
     },
     {
         "ID": 263,
@@ -4131,11 +3741,9 @@
         "type": 1,
         "MFT_index": 259,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                83
-            ]
-        }
+        "encounters": [
+            83
+        ]
     },
     {
         "ID": 264,
@@ -4148,7 +3756,7 @@
         "type": 1,
         "MFT_index": 260,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 265,
@@ -4161,7 +3769,7 @@
         "type": 1,
         "MFT_index": 260,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 266,
@@ -4174,7 +3782,7 @@
         "type": 2,
         "MFT_index": 261,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 267,
@@ -4187,7 +3795,7 @@
         "type": 2,
         "MFT_index": 262,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 268,
@@ -4200,11 +3808,9 @@
         "type": 1,
         "MFT_index": 263,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                91
-            ]
-        }
+        "encounters": [
+            91
+        ]
     },
     {
         "ID": 269,
@@ -4217,7 +3823,7 @@
         "type": 2,
         "MFT_index": 264,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 270,
@@ -4230,7 +3836,7 @@
         "type": 2,
         "MFT_index": 265,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 271,
@@ -4243,7 +3849,7 @@
         "type": 2,
         "MFT_index": 266,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 272,
@@ -4256,7 +3862,7 @@
         "type": 2,
         "MFT_index": 267,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 273,
@@ -4269,7 +3875,7 @@
         "type": 2,
         "MFT_index": 268,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 274,
@@ -4282,7 +3888,7 @@
         "type": 2,
         "MFT_index": 269,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 275,
@@ -4295,7 +3901,7 @@
         "type": 1,
         "MFT_index": 317,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 276,
@@ -4308,7 +3914,7 @@
         "type": 1,
         "MFT_index": 318,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 277,
@@ -4321,7 +3927,7 @@
         "type": 1,
         "MFT_index": 167,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 278,
@@ -4334,7 +3940,7 @@
         "type": 1,
         "MFT_index": 319,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 279,
@@ -4347,7 +3953,7 @@
         "type": 1,
         "MFT_index": 270,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 280,
@@ -4360,11 +3966,9 @@
         "type": 1,
         "MFT_index": 278,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                92
-            ]
-        }
+        "encounters": [
+            92
+        ]
     },
     {
         "ID": 281,
@@ -4377,11 +3981,9 @@
         "type": 1,
         "MFT_index": 279,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                92
-            ]
-        }
+        "encounters": [
+            92
+        ]
     },
     {
         "ID": 282,
@@ -4394,11 +3996,9 @@
         "type": 1,
         "MFT_index": 280,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                92
-            ]
-        }
+        "encounters": [
+            92
+        ]
     },
     {
         "ID": 283,
@@ -4411,11 +4011,9 @@
         "type": 1,
         "MFT_index": 281,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                92
-            ]
-        }
+        "encounters": [
+            92
+        ]
     },
     {
         "ID": 284,
@@ -4428,11 +4026,9 @@
         "type": 1,
         "MFT_index": 282,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                93
-            ]
-        }
+        "encounters": [
+            93
+        ]
     },
     {
         "ID": 285,
@@ -4445,11 +4041,9 @@
         "type": 1,
         "MFT_index": 283,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                93
-            ]
-        }
+        "encounters": [
+            93
+        ]
     },
     {
         "ID": 286,
@@ -4462,11 +4056,9 @@
         "type": 1,
         "MFT_index": 284,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                93
-            ]
-        }
+        "encounters": [
+            93
+        ]
     },
     {
         "ID": 287,
@@ -4479,11 +4071,9 @@
         "type": 1,
         "MFT_index": 277,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                93
-            ]
-        }
+        "encounters": [
+            93
+        ]
     },
     {
         "ID": 288,
@@ -4496,11 +4086,9 @@
         "type": 1,
         "MFT_index": 285,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 289,
@@ -4513,11 +4101,9 @@
         "type": 1,
         "MFT_index": 286,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 290,
@@ -4530,11 +4116,9 @@
         "type": 1,
         "MFT_index": 287,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 291,
@@ -4547,11 +4131,9 @@
         "type": 1,
         "MFT_index": 288,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 292,
@@ -4564,11 +4146,9 @@
         "type": 1,
         "MFT_index": 271,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 293,
@@ -4581,11 +4161,9 @@
         "type": 1,
         "MFT_index": 272,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 294,
@@ -4598,11 +4176,9 @@
         "type": 1,
         "MFT_index": 273,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 295,
@@ -4615,11 +4191,9 @@
         "type": 1,
         "MFT_index": 274,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                94
-            ]
-        }
+        "encounters": [
+            94
+        ]
     },
     {
         "ID": 296,
@@ -4632,7 +4206,7 @@
         "type": 1,
         "MFT_index": 276,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 297,
@@ -4645,7 +4219,7 @@
         "type": 1,
         "MFT_index": 275,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 298,
@@ -4658,11 +4232,9 @@
         "type": 1,
         "MFT_index": 309,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                80
-            ]
-        }
+        "encounters": [
+            80
+        ]
     },
     {
         "ID": 299,
@@ -4675,11 +4247,9 @@
         "type": 1,
         "MFT_index": 310,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                80
-            ]
-        }
+        "encounters": [
+            80
+        ]
     },
     {
         "ID": 300,
@@ -4692,11 +4262,9 @@
         "type": 1,
         "MFT_index": 311,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                80
-            ]
-        }
+        "encounters": [
+            80
+        ]
     },
     {
         "ID": 301,
@@ -4709,11 +4277,9 @@
         "type": 1,
         "MFT_index": 312,
         "outdoor": 1,
-        "encounters": {
-            "all": [
-                95
-            ]
-        }
+        "encounters": [
+            95
+        ]
     },
     {
         "ID": 302,
@@ -4726,7 +4292,7 @@
         "type": 1,
         "MFT_index": 313,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 303,
@@ -4739,7 +4305,7 @@
         "type": 1,
         "MFT_index": 237,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 304,
@@ -4752,11 +4318,9 @@
         "type": 1,
         "MFT_index": 238,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                100
-            ]
-        }
+        "encounters": [
+            100
+        ]
     },
     {
         "ID": 305,
@@ -4769,11 +4333,9 @@
         "type": 1,
         "MFT_index": 239,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                100
-            ]
-        }
+        "encounters": [
+            100
+        ]
     },
     {
         "ID": 306,
@@ -4786,17 +4348,10 @@
         "type": 1,
         "MFT_index": 240,
         "outdoor": 0,
-        "encounters": {
-            "1": [
-                100
-            ],
-            "2": [
-                100
-            ],
-            "all": [
-                101
-            ]
-        }
+        "encounters": [
+            100,
+            101
+        ]
     },
     {
         "ID": 307,
@@ -4809,11 +4364,9 @@
         "type": 1,
         "MFT_index": 241,
         "outdoor": 0,
-        "encounters": {
-            "all": [
-                101
-            ]
-        }
+        "encounters": [
+            101
+        ]
     },
     {
         "ID": 308,
@@ -4826,7 +4379,7 @@
         "type": 1,
         "MFT_index": 242,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 309,
@@ -4839,7 +4392,7 @@
         "type": 2,
         "MFT_index": 308,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 310,
@@ -4852,7 +4405,7 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 311,
@@ -4865,7 +4418,7 @@
         "type": 1,
         "MFT_index": 320,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 312,
@@ -4878,7 +4431,7 @@
         "type": 2,
         "MFT_index": 2,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 313,
@@ -4891,7 +4444,7 @@
         "type": 1,
         "MFT_index": 324,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 314,
@@ -4904,7 +4457,7 @@
         "type": 1,
         "MFT_index": 325,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 315,
@@ -4917,7 +4470,7 @@
         "type": 1,
         "MFT_index": 326,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 316,
@@ -4930,7 +4483,7 @@
         "type": 1,
         "MFT_index": 327,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 317,
@@ -4943,7 +4496,7 @@
         "type": 1,
         "MFT_index": 328,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 318,
@@ -4956,7 +4509,7 @@
         "type": 1,
         "MFT_index": 329,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 319,
@@ -4969,7 +4522,7 @@
         "type": 1,
         "MFT_index": 330,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 320,
@@ -4982,7 +4535,7 @@
         "type": 1,
         "MFT_index": 331,
         "outdoor": 1,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 321,
@@ -4996,7 +4549,7 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 322,
@@ -5009,7 +4562,7 @@
         "type": 1,
         "MFT_index": 322,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 323,
@@ -5022,7 +4575,7 @@
         "type": 1,
         "MFT_index": 322,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     },
     {
         "ID": 324,
@@ -5035,6 +4588,6 @@
         "type": 1,
         "MFT_index": 323,
         "outdoor": 0,
-        "encounters": {}
+        "encounters": []
     }
 ]

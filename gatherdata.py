@@ -88,7 +88,7 @@ with open(ROM1, "rb") as f:
             "type": read(1),
             "MFT_index": read(2),
             "outdoor": read(2),
-            "encounters": {},
+            "encounters": set(),
         })
 
     f.seek(0x0C5C38) # enemy group data
@@ -104,10 +104,10 @@ with open(ROM1, "rb") as f:
 
 
 for encounter in map_encounters1:
-    room = mapdata1[encounter["room"]]["encounters"]
+    room = mapdata1[encounter["room"]]
     door = encounter["door"]
     ids = list(filter(lambda x: x, encounter["encounter_ids"]))
-    room[door if door != 65535 else "all"] = ids
+    room["encounters"].update(ids)
 temp_areas = {}
 for room in room_references1:
     flag = room["door"] >> 15
@@ -118,8 +118,11 @@ for map_ in mapdata1:
     area = map_["area"]
     if area in temp_areas:
         map_["area_names"].add(temp_areas[area])
+for wmap in wmap_encounters1:
+    mapdata1[2]["encounters"].add(wmap["encounter_ids"])
 for map_ in mapdata1:
     map_["area_names"] = list(sorted(map_["area_names"]))
+    map_["encounters"] = list(sorted(map_["encounters"]))
 
 # Enemy Groups
 for group in enemygroupdata1:
@@ -378,7 +381,7 @@ with open(ROM2, "rb") as f:
             "type": read(1),
             "MFT_index": read(2),
             "outdoor": read(2),
-            "encounters": {},
+            "encounters": set(),
         })
 
     f.seek(0x12CE7C)  # enemy group data
@@ -484,10 +487,10 @@ for djinni in djinndata:
 
 # Map Names
 for encounter in map_encounters2:
-    room = mapdata2[encounter["room"]]["encounters"]
+    room = mapdata2[encounter["room"]]
     door = encounter["door"]
     ids = list(filter(lambda x: x, encounter["encounter_ids"]))
-    room[door if door != 65535 else "all"] = ids
+    room["encounters"].update(ids)
 temp_areas = {}
 for room in room_references2:
     flag = room["door"] >> 15
@@ -498,8 +501,11 @@ for map_ in mapdata2:
     area = map_["area"]
     if area in temp_areas:
         map_["area_names"].add(temp_areas[area])
+for wmap in wmap_encounters2:
+    mapdata2[2]["encounters"].add(wmap["encounter_ids"])
 for map_ in mapdata2:
     map_["area_names"] = list(sorted(map_["area_names"]))
+    map_["encounters"] = list(sorted(map_["encounters"]))
 
 
 # Enemy Groups
