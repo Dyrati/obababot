@@ -1,0 +1,5364 @@
+[
+    {
+        "ID": 0,
+        "name": "NPC",
+        "class_group": "NPC",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 1.0,
+        "ATK": 1.0,
+        "DEF": 1.0,
+        "AGI": 1.0,
+        "LCK": 1.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 1,
+        "name": "Squire",
+        "class_group": "Squire",
+        "elevels": [
+            5,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.1,
+        "PP": 0.8,
+        "ATK": 1.1,
+        "DEF": 1.0,
+        "AGI": 1.1,
+        "LCK": 1.0,
+        "abilities": {
+            "Ragnarok": 13,
+            "Quake": 2,
+            "Earthquake": 4,
+            "Quake Sphere": 14,
+            "Spire": 6,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26
+        },
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ]
+    },
+    {
+        "ID": 2,
+        "name": "Knight",
+        "class_group": "Squire",
+        "elevels": [
+            7,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.3,
+        "PP": 0.9,
+        "ATK": 1.2,
+        "DEF": 1.1,
+        "AGI": 1.2,
+        "LCK": 1.0,
+        "abilities": {
+            "Ragnarok": 13,
+            "Quake": 2,
+            "Earthquake": 4,
+            "Quake Sphere": 14,
+            "Spire": 6,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26
+        },
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ]
+    },
+    {
+        "ID": 3,
+        "name": "Gallant",
+        "class_group": "Squire",
+        "elevels": [
+            9,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.5,
+        "PP": 1.0,
+        "ATK": 1.3,
+        "DEF": 1.2,
+        "AGI": 1.3,
+        "LCK": 1.0,
+        "abilities": {
+            "Ragnarok": 13,
+            "Quake": 2,
+            "Earthquake": 4,
+            "Quake Sphere": 14,
+            "Spire": 6,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Gaia": 7,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19
+        },
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ]
+    },
+    {
+        "ID": 4,
+        "name": "Lord",
+        "class_group": "Squire",
+        "elevels": [
+            11,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.7,
+        "PP": 1.1,
+        "ATK": 1.4,
+        "DEF": 1.3,
+        "AGI": 1.4,
+        "LCK": 1.0,
+        "abilities": {
+            "Ragnarok": 13,
+            "Quake": 2,
+            "Earthquake": 4,
+            "Quake Sphere": 14,
+            "Spire": 6,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Gaia": 7,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19
+        },
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ]
+    },
+    {
+        "ID": 5,
+        "name": "Slayer",
+        "class_group": "Squire",
+        "elevels": [
+            13,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.9,
+        "PP": 1.2,
+        "ATK": 1.5,
+        "DEF": 1.4,
+        "AGI": 1.5,
+        "LCK": 1.0,
+        "abilities": {
+            "Ragnarok": 13,
+            "Quake": 2,
+            "Earthquake": 4,
+            "Quake Sphere": 14,
+            "Spire": 6,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Gaia": 7,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19
+        },
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ]
+    },
+    {
+        "ID": 6,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 7,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 8,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 9,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 10,
+        "name": "Guard",
+        "class_group": "Guard",
+        "elevels": [
+            0,
+            0,
+            5,
+            0
+        ],
+        "HP": 1.1,
+        "PP": 0.8,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 0.7,
+        "LCK": 1.0,
+        "abilities": {
+            "Heat Wave": 12,
+            "Flare": 1,
+            "Flare Wall": 6,
+            "Flare Storm": 18,
+            "Fire": 4,
+            "Fireball": 14,
+            "Inferno": 36,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48
+        },
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ]
+    },
+    {
+        "ID": 11,
+        "name": "Soldier",
+        "class_group": "Guard",
+        "elevels": [
+            0,
+            0,
+            7,
+            0
+        ],
+        "HP": 1.3,
+        "PP": 0.9,
+        "ATK": 1.1,
+        "DEF": 1.2,
+        "AGI": 0.8,
+        "LCK": 1.0,
+        "abilities": {
+            "Heat Wave": 12,
+            "Flare": 1,
+            "Flare Wall": 6,
+            "Flare Storm": 18,
+            "Fire": 4,
+            "Fireball": 14,
+            "Inferno": 36,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48
+        },
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ]
+    },
+    {
+        "ID": 12,
+        "name": "Warrior",
+        "class_group": "Guard",
+        "elevels": [
+            0,
+            0,
+            9,
+            0
+        ],
+        "HP": 1.5,
+        "PP": 1.0,
+        "ATK": 1.2,
+        "DEF": 1.3,
+        "AGI": 0.9,
+        "LCK": 1.0,
+        "abilities": {
+            "Heat Wave": 12,
+            "Flare": 1,
+            "Flare Wall": 6,
+            "Flare Storm": 18,
+            "Fire": 4,
+            "Fireball": 14,
+            "Inferno": 36,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Guard": 3,
+            "Protect": 15,
+            "Impair": 9,
+            "Debilitate": 26
+        },
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ]
+    },
+    {
+        "ID": 13,
+        "name": "Champion",
+        "class_group": "Guard",
+        "elevels": [
+            0,
+            0,
+            11,
+            0
+        ],
+        "HP": 1.7,
+        "PP": 1.1,
+        "ATK": 1.3,
+        "DEF": 1.4,
+        "AGI": 1.0,
+        "LCK": 1.0,
+        "abilities": {
+            "Heat Wave": 12,
+            "Flare": 1,
+            "Flare Wall": 6,
+            "Flare Storm": 18,
+            "Fire": 4,
+            "Fireball": 14,
+            "Inferno": 36,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Guard": 3,
+            "Protect": 15,
+            "Impair": 9,
+            "Debilitate": 26
+        },
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ]
+    },
+    {
+        "ID": 14,
+        "name": "Hero",
+        "class_group": "Guard",
+        "elevels": [
+            0,
+            0,
+            13,
+            0
+        ],
+        "HP": 1.9,
+        "PP": 1.2,
+        "ATK": 1.4,
+        "DEF": 1.5,
+        "AGI": 1.1,
+        "LCK": 1.0,
+        "abilities": {
+            "Heat Wave": 12,
+            "Flare": 1,
+            "Flare Wall": 6,
+            "Flare Storm": 18,
+            "Fire": 4,
+            "Fireball": 14,
+            "Inferno": 36,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Guard": 3,
+            "Protect": 15,
+            "Impair": 9,
+            "Debilitate": 26
+        },
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ]
+    },
+    {
+        "ID": 15,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 16,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 17,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 18,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 19,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 20,
+        "name": "Wind Seer",
+        "class_group": "Wind Seer",
+        "elevels": [
+            0,
+            0,
+            0,
+            5
+        ],
+        "HP": 0.8,
+        "PP": 1.4,
+        "ATK": 0.8,
+        "DEF": 0.9,
+        "AGI": 1.3,
+        "LCK": 1.1,
+        "abilities": {
+            "Ray": 4,
+            "Storm Ray": 14,
+            "Destruct Ray": 36,
+            "Whirlwind": 1,
+            "Tornado": 18,
+            "Tempest": 44,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Sleep": 12,
+            "Bind": 17
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 21,
+        "name": "Magician",
+        "class_group": "Wind Seer",
+        "elevels": [
+            0,
+            0,
+            0,
+            7
+        ],
+        "HP": 0.9,
+        "PP": 1.5,
+        "ATK": 0.9,
+        "DEF": 1.0,
+        "AGI": 1.4,
+        "LCK": 1.1,
+        "abilities": {
+            "Ray": 4,
+            "Storm Ray": 14,
+            "Destruct Ray": 36,
+            "Whirlwind": 1,
+            "Tornado": 18,
+            "Tempest": 44,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Impact": 5,
+            "High Impact": 21,
+            "Sleep": 12,
+            "Bind": 17
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 22,
+        "name": "Mage",
+        "class_group": "Wind Seer",
+        "elevels": [
+            0,
+            0,
+            0,
+            9
+        ],
+        "HP": 1.1,
+        "PP": 1.6,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 1.5,
+        "LCK": 1.1,
+        "abilities": {
+            "Ray": 4,
+            "Storm Ray": 14,
+            "Destruct Ray": 36,
+            "Whirlwind": 1,
+            "Tornado": 18,
+            "Tempest": 44,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Impact": 5,
+            "High Impact": 21,
+            "Ward": 6,
+            "Resist": 22,
+            "Sleep": 12,
+            "Bind": 17
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 23,
+        "name": "Magister",
+        "class_group": "Wind Seer",
+        "elevels": [
+            0,
+            0,
+            0,
+            11
+        ],
+        "HP": 1.3,
+        "PP": 1.7,
+        "ATK": 1.1,
+        "DEF": 1.2,
+        "AGI": 1.6,
+        "LCK": 1.1,
+        "abilities": {
+            "Ray": 4,
+            "Storm Ray": 14,
+            "Destruct Ray": 36,
+            "Whirlwind": 1,
+            "Tornado": 18,
+            "Tempest": 44,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Impact": 5,
+            "High Impact": 21,
+            "Ward": 6,
+            "Resist": 22,
+            "Sleep": 12,
+            "Bind": 17
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 24,
+        "name": "Sorcerer",
+        "class_group": "Wind Seer",
+        "elevels": [
+            0,
+            0,
+            0,
+            13
+        ],
+        "HP": 1.5,
+        "PP": 1.8,
+        "ATK": 1.2,
+        "DEF": 1.3,
+        "AGI": 1.7,
+        "LCK": 1.1,
+        "abilities": {
+            "Ray": 4,
+            "Storm Ray": 14,
+            "Destruct Ray": 36,
+            "Whirlwind": 1,
+            "Tornado": 18,
+            "Tempest": 44,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Impact": 5,
+            "High Impact": 21,
+            "Ward": 6,
+            "Resist": 22,
+            "Sleep": 12,
+            "Bind": 17
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 25,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 26,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 27,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 28,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 29,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 30,
+        "name": "Water Seer",
+        "class_group": "Water Seer",
+        "elevels": [
+            0,
+            5,
+            0,
+            0
+        ],
+        "HP": 0.9,
+        "PP": 1.3,
+        "ATK": 0.9,
+        "DEF": 1.0,
+        "AGI": 0.8,
+        "LCK": 1.3,
+        "abilities": {
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Frost": 2,
+            "Tundra": 9,
+            "Glacier": 24,
+            "Ice": 4,
+            "Ice Horn": 17,
+            "Ice Missile": 42,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 31,
+        "name": "Scribe",
+        "class_group": "Water Seer",
+        "elevels": [
+            0,
+            7,
+            0,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 1.4,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 0.9,
+        "LCK": 1.3,
+        "abilities": {
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Frost": 2,
+            "Tundra": 9,
+            "Glacier": 24,
+            "Ice": 4,
+            "Ice Horn": 17,
+            "Ice Missile": 42,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 32,
+        "name": "Cleric",
+        "class_group": "Water Seer",
+        "elevels": [
+            0,
+            9,
+            0,
+            0
+        ],
+        "HP": 1.2,
+        "PP": 1.5,
+        "ATK": 1.1,
+        "DEF": 1.2,
+        "AGI": 1.0,
+        "LCK": 1.3,
+        "abilities": {
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Frost": 2,
+            "Tundra": 9,
+            "Glacier": 24,
+            "Ice": 4,
+            "Ice Horn": 17,
+            "Ice Missile": 42,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 33,
+        "name": "Paragon",
+        "class_group": "Water Seer",
+        "elevels": [
+            0,
+            11,
+            0,
+            0
+        ],
+        "HP": 1.4,
+        "PP": 1.6,
+        "ATK": 1.2,
+        "DEF": 1.3,
+        "AGI": 1.1,
+        "LCK": 1.3,
+        "abilities": {
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Frost": 2,
+            "Tundra": 9,
+            "Glacier": 24,
+            "Ice": 4,
+            "Ice Horn": 17,
+            "Ice Missile": 42,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 34,
+        "name": "Angel",
+        "class_group": "Water Seer",
+        "elevels": [
+            0,
+            13,
+            0,
+            0
+        ],
+        "HP": 1.6,
+        "PP": 1.7,
+        "ATK": 1.3,
+        "DEF": 1.4,
+        "AGI": 1.2,
+        "LCK": 1.3,
+        "abilities": {
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Frost": 2,
+            "Tundra": 9,
+            "Glacier": 24,
+            "Ice": 4,
+            "Ice Horn": 17,
+            "Ice Missile": 42,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 35,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 36,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 37,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 38,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 39,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 40,
+        "name": "Swordsman (E)",
+        "class_group": "Swordsman",
+        "elevels": [
+            5,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 0.9,
+        "ATK": 1.1,
+        "DEF": 1.1,
+        "AGI": 0.9,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 14,
+            "Nettle": 36,
+            "Revive": 19,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 41,
+        "name": "Defender (E)",
+        "class_group": "Swordsman",
+        "elevels": [
+            5,
+            2,
+            0,
+            0
+        ],
+        "HP": 1.2,
+        "PP": 1.0,
+        "ATK": 1.2,
+        "DEF": 1.2,
+        "AGI": 1.0,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 14,
+            "Nettle": 36,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Revive": 19,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 42,
+        "name": "Cavalier (E)",
+        "class_group": "Swordsman",
+        "elevels": [
+            5,
+            4,
+            0,
+            0
+        ],
+        "HP": 1.4,
+        "PP": 1.1,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.1,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 14,
+            "Nettle": 36,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Revive": 19,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 43,
+        "name": "Guardian",
+        "class_group": "Swordsman",
+        "elevels": [
+            6,
+            6,
+            0,
+            0
+        ],
+        "HP": 1.7,
+        "PP": 1.3,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.3,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 14,
+            "Nettle": 36,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Revive": 19,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 44,
+        "name": "Protector",
+        "class_group": "Swordsman",
+        "elevels": [
+            7,
+            7,
+            0,
+            0
+        ],
+        "HP": 1.9,
+        "PP": 1.4,
+        "ATK": 1.5,
+        "DEF": 1.5,
+        "AGI": 1.4,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 14,
+            "Nettle": 36,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Revive": 19,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 45,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 46,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 47,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 48,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 49,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 50,
+        "name": "Swordsman (F)",
+        "class_group": "Swordsman",
+        "elevels": [
+            0,
+            0,
+            5,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 0.9,
+        "ATK": 1.1,
+        "DEF": 1.1,
+        "AGI": 0.9,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 28,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Guard": 3,
+            "Protect": 15,
+            "Break": 30
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 51,
+        "name": "Defender (F)",
+        "class_group": "Swordsman",
+        "elevels": [
+            0,
+            2,
+            5,
+            0
+        ],
+        "HP": 1.2,
+        "PP": 1.0,
+        "ATK": 1.2,
+        "DEF": 1.2,
+        "AGI": 1.0,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 28,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Guard": 3,
+            "Protect": 15,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 52,
+        "name": "Cavalier (F)",
+        "class_group": "Swordsman",
+        "elevels": [
+            0,
+            4,
+            5,
+            0
+        ],
+        "HP": 1.4,
+        "PP": 1.1,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.1,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 28,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Guard": 3,
+            "Protect": 15,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 53,
+        "name": "Luminier",
+        "class_group": "Swordsman",
+        "elevels": [
+            0,
+            6,
+            6,
+            0
+        ],
+        "HP": 1.7,
+        "PP": 1.3,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.3,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 28,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Guard": 3,
+            "Protect": 15,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 54,
+        "name": "Radiant",
+        "class_group": "Swordsman",
+        "elevels": [
+            0,
+            7,
+            7,
+            0
+        ],
+        "HP": 1.9,
+        "PP": 1.4,
+        "ATK": 1.5,
+        "DEF": 1.5,
+        "AGI": 1.4,
+        "LCK": 1.2,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 28,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Guard": 3,
+            "Protect": 15,
+            "Break": 30,
+            "Avoid": 6
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 55,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 56,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 57,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 58,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 59,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 60,
+        "name": "Dragoon",
+        "class_group": "Swordsman",
+        "elevels": [
+            3,
+            3,
+            3,
+            0
+        ],
+        "HP": 1.6,
+        "PP": 1.3,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.1,
+        "LCK": 1.3,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 17,
+            "Nettle": 36,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 27,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Avoid": 6
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 61,
+        "name": "Templar",
+        "class_group": "Swordsman",
+        "elevels": [
+            4,
+            4,
+            4,
+            0
+        ],
+        "HP": 1.8,
+        "PP": 1.4,
+        "ATK": 1.5,
+        "DEF": 1.5,
+        "AGI": 1.2,
+        "LCK": 1.3,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 17,
+            "Nettle": 36,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 27,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Avoid": 6
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 62,
+        "name": "Paladin",
+        "class_group": "Swordsman",
+        "elevels": [
+            4,
+            5,
+            4,
+            0
+        ],
+        "HP": 2.0,
+        "PP": 1.5,
+        "ATK": 1.6,
+        "DEF": 1.6,
+        "AGI": 1.3,
+        "LCK": 1.3,
+        "abilities": {
+            "Cutting Edge": 11,
+            "Thorn": 4,
+            "Briar": 17,
+            "Nettle": 36,
+            "Blast": 2,
+            "Mad Blast": 10,
+            "Fiery Blast": 27,
+            "Ply": 1,
+            "Ply Well": 16,
+            "Pure Ply": 34,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Avoid": 6
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 63,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 64,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 65,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 66,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 67,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 68,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 69,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 70,
+        "name": "Apprentice",
+        "class_group": "Apprentice",
+        "elevels": [
+            5,
+            0,
+            0,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 1.2,
+        "ATK": 1.1,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Gaia": 6,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Haunt": 17,
+            "Curse": 20,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 71,
+        "name": "Illusionist (E)",
+        "class_group": "Apprentice",
+        "elevels": [
+            5,
+            0,
+            0,
+            2
+        ],
+        "HP": 1.2,
+        "PP": 1.3,
+        "ATK": 1.2,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Gaia": 6,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Haunt": 17,
+            "Curse": 20,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 72,
+        "name": "Enchanter (E)",
+        "class_group": "Apprentice",
+        "elevels": [
+            5,
+            0,
+            0,
+            4
+        ],
+        "HP": 1.4,
+        "PP": 1.4,
+        "ATK": 1.3,
+        "DEF": 1.2,
+        "AGI": 1.4,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Gaia": 6,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Impact": 5,
+            "High Impact": 21,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Haunt": 17,
+            "Curse": 20,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 73,
+        "name": "Conjurer (E)",
+        "class_group": "Apprentice",
+        "elevels": [
+            6,
+            0,
+            0,
+            6
+        ],
+        "HP": 1.7,
+        "PP": 1.6,
+        "ATK": 1.4,
+        "DEF": 1.3,
+        "AGI": 1.6,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Gaia": 6,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Impact": 5,
+            "High Impact": 21,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Haunt": 17,
+            "Curse": 20,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 74,
+        "name": "War Adept (E)",
+        "class_group": "Apprentice",
+        "elevels": [
+            7,
+            0,
+            0,
+            7
+        ],
+        "HP": 1.9,
+        "PP": 1.7,
+        "ATK": 1.5,
+        "DEF": 1.4,
+        "AGI": 1.7,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Gaia": 6,
+            "Mother Gaia": 24,
+            "Grand Gaia": 54,
+            "Impact": 5,
+            "High Impact": 21,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Haunt": 17,
+            "Curse": 20,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 75,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 76,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 77,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 78,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 79,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 80,
+        "name": "Page",
+        "class_group": "Apprentice",
+        "elevels": [
+            0,
+            0,
+            5,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 1.2,
+        "ATK": 1.1,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 81,
+        "name": "Illusionist (F)",
+        "class_group": "Apprentice",
+        "elevels": [
+            0,
+            0,
+            5,
+            2
+        ],
+        "HP": 1.2,
+        "PP": 1.3,
+        "ATK": 1.2,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 82,
+        "name": "Enchanter (F)",
+        "class_group": "Apprentice",
+        "elevels": [
+            0,
+            0,
+            5,
+            4
+        ],
+        "HP": 1.4,
+        "PP": 1.4,
+        "ATK": 1.3,
+        "DEF": 1.2,
+        "AGI": 1.4,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Impact": 5,
+            "High Impact": 21,
+            "Guard": 3,
+            "Protect": 15,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 83,
+        "name": "Conjurer (F)",
+        "class_group": "Apprentice",
+        "elevels": [
+            0,
+            0,
+            6,
+            6
+        ],
+        "HP": 1.7,
+        "PP": 1.6,
+        "ATK": 1.4,
+        "DEF": 1.3,
+        "AGI": 1.6,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Impact": 5,
+            "High Impact": 21,
+            "Guard": 3,
+            "Protect": 15,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 84,
+        "name": "War Adept (F)",
+        "class_group": "Apprentice",
+        "elevels": [
+            0,
+            0,
+            7,
+            7
+        ],
+        "HP": 1.9,
+        "PP": 1.7,
+        "ATK": 1.5,
+        "DEF": 1.4,
+        "AGI": 1.7,
+        "LCK": 0.9,
+        "abilities": {
+            "Astral Blast": 11,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Impact": 5,
+            "High Impact": 21,
+            "Guard": 3,
+            "Protect": 15,
+            "Ward": 6,
+            "Resist": 22,
+            "Weaken": 9,
+            "Enfeeble": 25,
+            "Delude": 1,
+            "Sleep": 14,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 85,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 86,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 87,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 88,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 89,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 90,
+        "name": "Ninja",
+        "class_group": "Apprentice",
+        "elevels": [
+            3,
+            0,
+            3,
+            3
+        ],
+        "HP": 1.6,
+        "PP": 1.4,
+        "ATK": 1.5,
+        "DEF": 1.2,
+        "AGI": 1.7,
+        "LCK": 0.8,
+        "abilities": {
+            "Death Plunge": 12,
+            "Shuriken": 21,
+            "Annihilation": 31,
+            "Punji": 4,
+            "Punji Trap": 15,
+            "Punji Strike": 36,
+            "Fire Bomb": 6,
+            "Cluster Bomb": 16,
+            "Carpet Bomb": 40,
+            "Gale": 1,
+            "Typhoon": 18,
+            "Hurricane": 44,
+            "Thunderclap": 8,
+            "Thunderbolt": 26,
+            "Thunderstorm": 50,
+            "Mist": 7
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 91,
+        "name": "Disciple",
+        "class_group": "Apprentice",
+        "elevels": [
+            4,
+            0,
+            4,
+            4
+        ],
+        "HP": 1.8,
+        "PP": 1.5,
+        "ATK": 1.6,
+        "DEF": 1.3,
+        "AGI": 1.8,
+        "LCK": 0.8,
+        "abilities": {
+            "Death Plunge": 12,
+            "Shuriken": 21,
+            "Annihilation": 31,
+            "Punji": 4,
+            "Punji Trap": 15,
+            "Punji Strike": 36,
+            "Fire Bomb": 6,
+            "Cluster Bomb": 16,
+            "Carpet Bomb": 40,
+            "Gale": 1,
+            "Typhoon": 18,
+            "Hurricane": 44,
+            "Thunderclap": 8,
+            "Thunderbolt": 26,
+            "Thunderstorm": 50,
+            "Mist": 7
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 92,
+        "name": "Master",
+        "class_group": "Apprentice",
+        "elevels": [
+            4,
+            0,
+            4,
+            5
+        ],
+        "HP": 2.0,
+        "PP": 1.6,
+        "ATK": 1.7,
+        "DEF": 1.4,
+        "AGI": 1.9,
+        "LCK": 0.8,
+        "abilities": {
+            "Death Plunge": 12,
+            "Shuriken": 21,
+            "Annihilation": 31,
+            "Punji": 4,
+            "Punji Trap": 15,
+            "Punji Strike": 36,
+            "Fire Bomb": 6,
+            "Cluster Bomb": 16,
+            "Carpet Bomb": 40,
+            "Gale": 1,
+            "Typhoon": 18,
+            "Hurricane": 44,
+            "Thunderclap": 8,
+            "Thunderbolt": 26,
+            "Thunderstorm": 50,
+            "Mist": 7
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    },
+    {
+        "ID": 93,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 94,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 95,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 96,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 97,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 98,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 99,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 100,
+        "name": "Seer (W)",
+        "class_group": "Seer",
+        "elevels": [
+            0,
+            5,
+            0,
+            0
+        ],
+        "HP": 0.9,
+        "PP": 1.3,
+        "ATK": 0.9,
+        "DEF": 0.9,
+        "AGI": 1.1,
+        "LCK": 1.0,
+        "abilities": {
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 101,
+        "name": "Diviner (W)",
+        "class_group": "Seer",
+        "elevels": [
+            2,
+            5,
+            0,
+            0
+        ],
+        "HP": 1.1,
+        "PP": 1.4,
+        "ATK": 1.0,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 1.0,
+        "abilities": {
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 102,
+        "name": "Shaman (W)",
+        "class_group": "Seer",
+        "elevels": [
+            4,
+            5,
+            0,
+            0
+        ],
+        "HP": 1.2,
+        "PP": 1.5,
+        "ATK": 1.1,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 1.0,
+        "abilities": {
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 103,
+        "name": "Druid (W)",
+        "class_group": "Seer",
+        "elevels": [
+            6,
+            6,
+            0,
+            0
+        ],
+        "HP": 1.5,
+        "PP": 1.7,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.5,
+        "LCK": 1.0,
+        "abilities": {
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 104,
+        "name": "Oracle (W)",
+        "class_group": "Seer",
+        "elevels": [
+            7,
+            7,
+            0,
+            0
+        ],
+        "HP": 1.7,
+        "PP": 1.8,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.6,
+        "LCK": 1.0,
+        "abilities": {
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Wish": 8,
+            "Wish Well": 22,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 30
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 105,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 106,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 107,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 108,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 109,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 110,
+        "name": "Seer (A)",
+        "class_group": "Seer",
+        "elevels": [
+            0,
+            0,
+            0,
+            5
+        ],
+        "HP": 0.9,
+        "PP": 1.3,
+        "ATK": 0.9,
+        "DEF": 0.9,
+        "AGI": 1.1,
+        "LCK": 1.0,
+        "abilities": {
+            "Bolt": 2,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 111,
+        "name": "Diviner (A)",
+        "class_group": "Seer",
+        "elevels": [
+            2,
+            0,
+            0,
+            5
+        ],
+        "HP": 1.1,
+        "PP": 1.4,
+        "ATK": 1.0,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 1.0,
+        "abilities": {
+            "Bolt": 2,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 112,
+        "name": "Shaman (A)",
+        "class_group": "Seer",
+        "elevels": [
+            4,
+            0,
+            0,
+            5
+        ],
+        "HP": 1.2,
+        "PP": 1.5,
+        "ATK": 1.1,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 1.0,
+        "abilities": {
+            "Bolt": 2,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Ward": 7,
+            "Resist": 23,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 113,
+        "name": "Druid (A)",
+        "class_group": "Seer",
+        "elevels": [
+            6,
+            0,
+            0,
+            6
+        ],
+        "HP": 1.5,
+        "PP": 1.7,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.5,
+        "LCK": 1.0,
+        "abilities": {
+            "Bolt": 2,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Ward": 7,
+            "Resist": 23,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 114,
+        "name": "Oracle (A)",
+        "class_group": "Seer",
+        "elevels": [
+            7,
+            0,
+            0,
+            7
+        ],
+        "HP": 1.7,
+        "PP": 1.8,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.6,
+        "LCK": 1.0,
+        "abilities": {
+            "Bolt": 2,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Growth": 3,
+            "Mad Growth": 12,
+            "Wild Growth": 29,
+            "Cure": 1,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Ward": 7,
+            "Resist": 23,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39
+        },
+        "weaknesses": [
+            "May inflict Sleep"
+        ]
+    },
+    {
+        "ID": 115,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 116,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 117,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 118,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 119,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 120,
+        "name": "Medium",
+        "class_group": "Seer",
+        "elevels": [
+            3,
+            3,
+            0,
+            3
+        ],
+        "HP": 1.3,
+        "PP": 1.7,
+        "ATK": 1.2,
+        "DEF": 1.2,
+        "AGI": 1.5,
+        "LCK": 0.9,
+        "abilities": {
+            "Haunt": 17,
+            "Curse": 20,
+            "Condemn": 29,
+            "Bolt": 1,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Cure": 3,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Drain": 31,
+            "Psy Drain": 36
+        },
+        "weaknesses": [
+            "May inflict Stun"
+        ]
+    },
+    {
+        "ID": 121,
+        "name": "Dark Mage (M)",
+        "class_group": "Seer",
+        "elevels": [
+            4,
+            4,
+            0,
+            4
+        ],
+        "HP": 1.5,
+        "PP": 1.8,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.6,
+        "LCK": 0.9,
+        "abilities": {
+            "Haunt": 17,
+            "Curse": 20,
+            "Condemn": 29,
+            "Bolt": 1,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Cure": 3,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Drain": 31,
+            "Psy Drain": 36
+        },
+        "weaknesses": [
+            "May inflict Stun"
+        ]
+    },
+    {
+        "ID": 122,
+        "name": "Death Mage (M)",
+        "class_group": "Seer",
+        "elevels": [
+            5,
+            4,
+            0,
+            4
+        ],
+        "HP": 1.7,
+        "PP": 1.9,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.7,
+        "LCK": 0.9,
+        "abilities": {
+            "Haunt": 17,
+            "Curse": 20,
+            "Condemn": 29,
+            "Bolt": 1,
+            "Flash Bolt": 6,
+            "Blue Bolt": 22,
+            "Froth": 2,
+            "Froth Sphere": 14,
+            "Froth Spiral": 40,
+            "Cure": 3,
+            "Cure Well": 10,
+            "Potent Cure": 26,
+            "Revive": 19,
+            "Drain": 31,
+            "Psy Drain": 36
+        },
+        "weaknesses": [
+            "May inflict Stun"
+        ]
+    },
+    {
+        "ID": 123,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 124,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 125,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 126,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 127,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 128,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 129,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 130,
+        "name": "Pilgrim (W)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            5,
+            0,
+            0
+        ],
+        "HP": 0.9,
+        "PP": 1.2,
+        "ATK": 0.9,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 1.2,
+        "abilities": {
+            "Douse": 1,
+            "Drench": 12,
+            "Deluge": 30,
+            "Prism": 6,
+            "Hail Prism": 20,
+            "Freeze Prism": 52,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 131,
+        "name": "Wanderer (W)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            5,
+            2,
+            0
+        ],
+        "HP": 1.1,
+        "PP": 1.3,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 1.2,
+        "abilities": {
+            "Douse": 1,
+            "Drench": 12,
+            "Deluge": 30,
+            "Prism": 6,
+            "Hail Prism": 20,
+            "Freeze Prism": 52,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 132,
+        "name": "Ascetic (W)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            5,
+            4,
+            0
+        ],
+        "HP": 1.2,
+        "PP": 1.4,
+        "ATK": 1.1,
+        "DEF": 1.2,
+        "AGI": 1.4,
+        "LCK": 1.2,
+        "abilities": {
+            "Douse": 1,
+            "Drench": 12,
+            "Deluge": 30,
+            "Prism": 6,
+            "Hail Prism": 20,
+            "Freeze Prism": 52,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Wish": 9,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 133,
+        "name": "Water Monk",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            6,
+            6,
+            0
+        ],
+        "HP": 1.5,
+        "PP": 1.6,
+        "ATK": 1.3,
+        "DEF": 1.4,
+        "AGI": 1.6,
+        "LCK": 1.2,
+        "abilities": {
+            "Douse": 1,
+            "Drench": 12,
+            "Deluge": 30,
+            "Prism": 6,
+            "Hail Prism": 20,
+            "Freeze Prism": 52,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Wish": 9,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 134,
+        "name": "Guru (W)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            7,
+            7,
+            0
+        ],
+        "HP": 1.7,
+        "PP": 1.7,
+        "ATK": 1.4,
+        "DEF": 1.5,
+        "AGI": 1.7,
+        "LCK": 1.2,
+        "abilities": {
+            "Douse": 1,
+            "Drench": 12,
+            "Deluge": 30,
+            "Prism": 6,
+            "Hail Prism": 20,
+            "Freeze Prism": 52,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Wish": 9,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Cure Poison": 5,
+            "Restore": 13,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 135,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 136,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 137,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 138,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 139,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 140,
+        "name": "Pilgrim (A)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            0,
+            0,
+            5
+        ],
+        "HP": 0.9,
+        "PP": 1.2,
+        "ATK": 0.9,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Plasma": 9,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 141,
+        "name": "Wanderer (A)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            0,
+            2,
+            5
+        ],
+        "HP": 1.1,
+        "PP": 1.3,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Plasma": 9,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 142,
+        "name": "Ascetic (A)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            0,
+            4,
+            5
+        ],
+        "HP": 1.2,
+        "PP": 1.4,
+        "ATK": 1.1,
+        "DEF": 1.2,
+        "AGI": 1.4,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Plasma": 9,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 24,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 143,
+        "name": "Fire Monk",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            0,
+            6,
+            6
+        ],
+        "HP": 1.5,
+        "PP": 1.6,
+        "ATK": 1.3,
+        "DEF": 1.4,
+        "AGI": 1.6,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Plasma": 9,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 24,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 144,
+        "name": "Guru (A)",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            0,
+            7,
+            7
+        ],
+        "HP": 1.7,
+        "PP": 1.7,
+        "ATK": 1.4,
+        "DEF": 1.5,
+        "AGI": 1.7,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Plasma": 9,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 24,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 145,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 146,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 147,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 148,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 149,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 150,
+        "name": "Ranger",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            3,
+            3,
+            3
+        ],
+        "HP": 1.3,
+        "PP": 1.6,
+        "ATK": 1.2,
+        "DEF": 1.2,
+        "AGI": 1.6,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Douse": 2,
+            "Drench": 12,
+            "Deluge": 30,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 24,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 151,
+        "name": "Bard",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            4,
+            4,
+            4
+        ],
+        "HP": 1.5,
+        "PP": 1.7,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.7,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Douse": 2,
+            "Drench": 12,
+            "Deluge": 30,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 24,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 152,
+        "name": "Warlock",
+        "class_group": "Pilgrim",
+        "elevels": [
+            0,
+            4,
+            5,
+            4
+        ],
+        "HP": 1.7,
+        "PP": 1.8,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.8,
+        "LCK": 1.2,
+        "abilities": {
+            "Slash": 1,
+            "Wind Slash": 10,
+            "Sonic Slash": 30,
+            "Douse": 2,
+            "Drench": 12,
+            "Deluge": 30,
+            "Volcano": 8,
+            "Eruption": 22,
+            "Pyroclasm": 48,
+            "Ward": 6,
+            "Resist": 24,
+            "Bind": 18,
+            "Drain": 33,
+            "Psy Drain": 41,
+            "Break": 34
+        },
+        "weaknesses": [
+            "Inflict Delusion"
+        ]
+    },
+    {
+        "ID": 153,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 154,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 155,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 156,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 157,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 158,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 159,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 160,
+        "name": "Brute",
+        "class_group": "Brute",
+        "elevels": [
+            1,
+            0,
+            1,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 0.7,
+        "ATK": 1.2,
+        "DEF": 0.9,
+        "AGI": 1.1,
+        "LCK": 0.7,
+        "abilities": {
+            "Planet Diver": 13,
+            "Growth": 1,
+            "Mad Growth": 12,
+            "Wild Growth": 28,
+            "Blast": 6,
+            "Nova": 16,
+            "Supernova": 40,
+            "Haunt": 17,
+            "Curse": 24,
+            "Condemn": 29
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 161,
+        "name": "Ruffian",
+        "class_group": "Brute",
+        "elevels": [
+            2,
+            0,
+            2,
+            0
+        ],
+        "HP": 1.2,
+        "PP": 0.8,
+        "ATK": 1.3,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 0.7,
+        "abilities": {
+            "Planet Diver": 13,
+            "Growth": 1,
+            "Mad Growth": 12,
+            "Wild Growth": 28,
+            "Blast": 6,
+            "Nova": 16,
+            "Supernova": 40,
+            "Haunt": 17,
+            "Curse": 24,
+            "Condemn": 29
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 162,
+        "name": "Savage",
+        "class_group": "Brute",
+        "elevels": [
+            4,
+            0,
+            4,
+            0
+        ],
+        "HP": 1.4,
+        "PP": 0.9,
+        "ATK": 1.4,
+        "DEF": 1.1,
+        "AGI": 1.3,
+        "LCK": 0.7,
+        "abilities": {
+            "Planet Diver": 13,
+            "Spire": 7,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Growth": 1,
+            "Mad Growth": 12,
+            "Wild Growth": 28,
+            "Blast": 6,
+            "Nova": 16,
+            "Supernova": 40,
+            "Revive": 19,
+            "Impair": 9,
+            "Debilitate": 23,
+            "Haunt": 17,
+            "Curse": 24,
+            "Condemn": 29
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 163,
+        "name": "Barbarian",
+        "class_group": "Brute",
+        "elevels": [
+            5,
+            0,
+            5,
+            0
+        ],
+        "HP": 1.6,
+        "PP": 1.0,
+        "ATK": 1.5,
+        "DEF": 1.2,
+        "AGI": 1.4,
+        "LCK": 0.7,
+        "abilities": {
+            "Planet Diver": 13,
+            "Spire": 7,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Growth": 1,
+            "Mad Growth": 12,
+            "Wild Growth": 28,
+            "Blast": 6,
+            "Nova": 16,
+            "Supernova": 40,
+            "Revive": 19,
+            "Impair": 9,
+            "Debilitate": 23,
+            "Haunt": 17,
+            "Curse": 24,
+            "Condemn": 29
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 164,
+        "name": "Berserker",
+        "class_group": "Brute",
+        "elevels": [
+            6,
+            0,
+            6,
+            0
+        ],
+        "HP": 1.8,
+        "PP": 1.1,
+        "ATK": 1.6,
+        "DEF": 1.3,
+        "AGI": 1.5,
+        "LCK": 0.7,
+        "abilities": {
+            "Planet Diver": 13,
+            "Spire": 7,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Growth": 1,
+            "Mad Growth": 12,
+            "Wild Growth": 28,
+            "Blast": 6,
+            "Nova": 16,
+            "Supernova": 40,
+            "Revive": 19,
+            "Impair": 9,
+            "Debilitate": 23,
+            "Haunt": 17,
+            "Curse": 24,
+            "Condemn": 29
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 165,
+        "name": "Chaos Lord",
+        "class_group": "Brute",
+        "elevels": [
+            7,
+            0,
+            7,
+            0
+        ],
+        "HP": 2.0,
+        "PP": 1.2,
+        "ATK": 1.7,
+        "DEF": 1.4,
+        "AGI": 1.6,
+        "LCK": 0.7,
+        "abilities": {
+            "Planet Diver": 13,
+            "Spire": 7,
+            "Clay Spire": 20,
+            "Stone Spire": 42,
+            "Growth": 1,
+            "Mad Growth": 12,
+            "Wild Growth": 28,
+            "Blast": 6,
+            "Nova": 16,
+            "Supernova": 40,
+            "Revive": 19,
+            "Impair": 9,
+            "Debilitate": 23,
+            "Haunt": 17,
+            "Curse": 24,
+            "Condemn": 29
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 166,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 167,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 168,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 169,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 170,
+        "name": "Samurai",
+        "class_group": "Brute",
+        "elevels": [
+            4,
+            0,
+            4,
+            3
+        ],
+        "HP": 1.9,
+        "PP": 1.3,
+        "ATK": 1.5,
+        "DEF": 1.4,
+        "AGI": 1.4,
+        "LCK": 0.9,
+        "abilities": {
+            "Dragon Cloud": 12,
+            "Demon Night": 18,
+            "Helm Splitter": 33,
+            "Quick Strike": 40,
+            "Rockfall": 6,
+            "Rockslide": 24,
+            "Avalanche": 54,
+            "Lava Shower": 8,
+            "Molten Bath": 22,
+            "Magma Storm": 48,
+            "Demon Spear": 5,
+            "Angel Spear": 21,
+            "Guardian": 3,
+            "Protector": 15,
+            "Magic Shell": 10,
+            "Magic Shield": 27
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 171,
+        "name": "Ronin",
+        "class_group": "Brute",
+        "elevels": [
+            5,
+            0,
+            5,
+            4
+        ],
+        "HP": 2.1,
+        "PP": 1.4,
+        "ATK": 1.6,
+        "DEF": 1.5,
+        "AGI": 1.5,
+        "LCK": 0.9,
+        "abilities": {
+            "Dragon Cloud": 12,
+            "Demon Night": 18,
+            "Helm Splitter": 33,
+            "Quick Strike": 40,
+            "Rockfall": 6,
+            "Rockslide": 24,
+            "Avalanche": 54,
+            "Lava Shower": 8,
+            "Molten Bath": 22,
+            "Magma Storm": 48,
+            "Demon Spear": 5,
+            "Angel Spear": 21,
+            "Guardian": 3,
+            "Protector": 15,
+            "Magic Shell": 10,
+            "Magic Shield": 27
+        },
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ]
+    },
+    {
+        "ID": 172,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 173,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 174,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 175,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 176,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 177,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 178,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 179,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 180,
+        "name": "Hermit",
+        "class_group": "Hermit",
+        "elevels": [
+            0,
+            1,
+            0,
+            1
+        ],
+        "HP": 0.8,
+        "PP": 1.4,
+        "ATK": 0.8,
+        "DEF": 0.9,
+        "AGI": 1.3,
+        "LCK": 1.2,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Impact": 1,
+            "High Impact": 21,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39,
+            "Break": 30
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 181,
+        "name": "Elder",
+        "class_group": "Hermit",
+        "elevels": [
+            0,
+            2,
+            0,
+            2
+        ],
+        "HP": 0.9,
+        "PP": 1.5,
+        "ATK": 0.9,
+        "DEF": 1.0,
+        "AGI": 1.4,
+        "LCK": 1.2,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Impact": 1,
+            "High Impact": 21,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39,
+            "Break": 30
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 182,
+        "name": "Scholar",
+        "class_group": "Hermit",
+        "elevels": [
+            0,
+            4,
+            0,
+            4
+        ],
+        "HP": 1.1,
+        "PP": 1.6,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 1.5,
+        "LCK": 1.2,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Wish": 12,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Impact": 1,
+            "High Impact": 21,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39,
+            "Break": 30
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 183,
+        "name": "Savant",
+        "class_group": "Hermit",
+        "elevels": [
+            0,
+            5,
+            0,
+            5
+        ],
+        "HP": 1.3,
+        "PP": 1.7,
+        "ATK": 1.1,
+        "DEF": 1.2,
+        "AGI": 1.6,
+        "LCK": 1.2,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Wish": 12,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Impact": 1,
+            "High Impact": 21,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39,
+            "Break": 30
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 184,
+        "name": "Sage",
+        "class_group": "Hermit",
+        "elevels": [
+            0,
+            6,
+            0,
+            6
+        ],
+        "HP": 1.5,
+        "PP": 1.8,
+        "ATK": 1.2,
+        "DEF": 1.3,
+        "AGI": 1.7,
+        "LCK": 1.2,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Wish": 12,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Impact": 1,
+            "High Impact": 21,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39,
+            "Break": 30
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 185,
+        "name": "Wizard",
+        "class_group": "Hermit",
+        "elevels": [
+            0,
+            7,
+            0,
+            7
+        ],
+        "HP": 1.7,
+        "PP": 1.9,
+        "ATK": 1.3,
+        "DEF": 1.4,
+        "AGI": 1.8,
+        "LCK": 1.2,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 50,
+            "Wish": 12,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Impact": 1,
+            "High Impact": 21,
+            "Bind": 18,
+            "Drain": 31,
+            "Psy Drain": 39,
+            "Break": 30
+        },
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ]
+    },
+    {
+        "ID": 186,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 187,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 188,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 189,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 190,
+        "name": "White Mage",
+        "class_group": "Hermit",
+        "elevels": [
+            3,
+            4,
+            0,
+            4
+        ],
+        "HP": 1.5,
+        "PP": 1.8,
+        "ATK": 1.3,
+        "DEF": 1.3,
+        "AGI": 1.5,
+        "LCK": 1.3,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 46,
+            "Wish": 12,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Revive": 17,
+            "Cure Poison": 1,
+            "Restore": 13,
+            "Dull": 11,
+            "Blunt": 37,
+            "Ward": 9,
+            "Resist": 31
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 191,
+        "name": "Pure Mage",
+        "class_group": "Hermit",
+        "elevels": [
+            4,
+            5,
+            0,
+            5
+        ],
+        "HP": 1.7,
+        "PP": 1.9,
+        "ATK": 1.4,
+        "DEF": 1.4,
+        "AGI": 1.6,
+        "LCK": 1.3,
+        "abilities": {
+            "Prism": 6,
+            "Hail Prism": 22,
+            "Freeze Prism": 52,
+            "Plasma": 8,
+            "Shine Plasma": 26,
+            "Spark Plasma": 46,
+            "Wish": 12,
+            "Wish Well": 24,
+            "Pure Wish": 46,
+            "Revive": 17,
+            "Cure Poison": 1,
+            "Restore": 13,
+            "Dull": 11,
+            "Blunt": 37,
+            "Ward": 9,
+            "Resist": 31
+        },
+        "weaknesses": []
+    },
+    {
+        "ID": 192,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 193,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 194,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 195,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 196,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 197,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 198,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 199,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.0,
+        "PP": 0.0,
+        "ATK": 0.0,
+        "DEF": 0.0,
+        "AGI": 0.0,
+        "LCK": 0.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 200,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            5,
+            0,
+            0,
+            0
+        ],
+        "HP": 0.8,
+        "PP": 0.6,
+        "ATK": 1.1,
+        "DEF": 1.0,
+        "AGI": 1.1,
+        "LCK": 1.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 201,
+        "name": "?",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            5,
+            0
+        ],
+        "HP": 0.8,
+        "PP": 0.6,
+        "ATK": 1.0,
+        "DEF": 1.1,
+        "AGI": 0.7,
+        "LCK": 1.0,
+        "abilities": {},
+        "weaknesses": []
+    },
+    {
+        "ID": 202,
+        "name": "Flame User",
+        "class_group": "",
+        "elevels": [
+            0,
+            0,
+            5,
+            0
+        ],
+        "HP": 1.0,
+        "PP": 1.2,
+        "ATK": 1.1,
+        "DEF": 1.0,
+        "AGI": 1.2,
+        "LCK": 0.9,
+        "abilities": {
+            "Flare": 1,
+            "Flare Wall": 6,
+            "Flare Storm": 18
+        },
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ]
+    }
+]

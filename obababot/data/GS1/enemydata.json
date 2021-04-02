@@ -1,0 +1,8968 @@
+[
+    {
+        "ID": 0,
+        "name": "???",
+        "level": 0,
+        "HP": 18,
+        "PP": 0,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "eres": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 0,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing"
+        ],
+        "weaknesses": [],
+        "coins": 1,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 1
+    },
+    {
+        "ID": 1,
+        "name": "Vermin (1)",
+        "level": 1,
+        "HP": 20,
+        "PP": 0,
+        "ATK": 23,
+        "DEF": 7,
+        "AGI": 7,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 2,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 2
+    },
+    {
+        "ID": 2,
+        "name": "Vermin (2)",
+        "level": 3,
+        "HP": 36,
+        "PP": 0,
+        "ATK": 32,
+        "DEF": 7,
+        "AGI": 9,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Flee",
+            "Attack",
+            "Defend",
+            "Attack",
+            "Defend"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 4,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 4
+    },
+    {
+        "ID": 3,
+        "name": "Mad Vermin",
+        "level": 15,
+        "HP": 131,
+        "PP": 0,
+        "ATK": 164,
+        "DEF": 22,
+        "AGI": 67,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Onslaught",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 80,
+        "item_drop": "Herb",
+        "item_chance_class": 6,
+        "exp": 55
+    },
+    {
+        "ID": 4,
+        "name": "Bat (1)",
+        "level": 1,
+        "HP": 17,
+        "PP": 0,
+        "ATK": 21,
+        "DEF": 6,
+        "AGI": 13,
+        "LCK": 3,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 1,
+        "item_drop": "Herb",
+        "item_chance_class": 6,
+        "exp": 1
+    },
+    {
+        "ID": 5,
+        "name": "Bat (2)",
+        "level": 3,
+        "HP": 30,
+        "PP": 0,
+        "ATK": 30,
+        "DEF": 4,
+        "AGI": 20,
+        "LCK": 3,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Sonic Wave",
+            "Attack",
+            "Sonic Wave",
+            "Attack",
+            "Sonic Wave",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 3,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 2
+    },
+    {
+        "ID": 6,
+        "name": "Rabid Bat",
+        "level": 17,
+        "HP": 125,
+        "PP": 0,
+        "ATK": 190,
+        "DEF": 34,
+        "AGI": 84,
+        "LCK": 2,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Vampiric Fang",
+            "Vampiric Fang",
+            "Attack",
+            "Sonic Wave",
+            "Sonic Wave",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 82,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 5,
+        "exp": 61
+    },
+    {
+        "ID": 7,
+        "name": "Wild Mushroom (1)",
+        "level": 1,
+        "HP": 18,
+        "PP": 0,
+        "ATK": 22,
+        "DEF": 5,
+        "AGI": 10,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            105,
+            100,
+            80,
+            70
+        ],
+        "eres": [
+            48,
+            100,
+            7,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 7,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Contain",
+            "Attack",
+            "Attack",
+            "Contain",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 2,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 6,
+        "exp": 1
+    },
+    {
+        "ID": 8,
+        "name": "Wild Mushroom (2)",
+        "level": 3,
+        "HP": 34,
+        "PP": 0,
+        "ATK": 31,
+        "DEF": 5,
+        "AGI": 15,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            105,
+            100,
+            80,
+            70
+        ],
+        "eres": [
+            48,
+            100,
+            7,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 7,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Soothing Star",
+            "Attack",
+            "Soothing Star",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 3,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 6,
+        "exp": 3
+    },
+    {
+        "ID": 9,
+        "name": "Death Cap",
+        "level": 15,
+        "HP": 117,
+        "PP": 0,
+        "ATK": 159,
+        "DEF": 19,
+        "AGI": 90,
+        "LCK": 5,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            105,
+            100,
+            80,
+            70
+        ],
+        "eres": [
+            48,
+            100,
+            7,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 7,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Sleep Star",
+            "Sleep Star",
+            "Sleep Star",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 56,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 6,
+        "exp": 48
+    },
+    {
+        "ID": 10,
+        "name": "Slime (1)",
+        "level": 2,
+        "HP": 22,
+        "PP": 0,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 8,
+        "LCK": 1,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Flee",
+            "Attack",
+            "Attack",
+            "Flee",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep",
+            "May inflict Stun"
+        ],
+        "coins": 2,
+        "item_drop": "Herb",
+        "item_chance_class": 6,
+        "exp": 2
+    },
+    {
+        "ID": 11,
+        "name": "Slime (2)",
+        "level": 3,
+        "HP": 32,
+        "PP": 0,
+        "ATK": 34,
+        "DEF": 6,
+        "AGI": 10,
+        "LCK": 1,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Bone Chiller",
+            "Attack",
+            "Attack",
+            "Bone Chiller",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep",
+            "May inflict Stun"
+        ],
+        "coins": 4,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 4
+    },
+    {
+        "ID": 12,
+        "name": "Ooze",
+        "level": 9,
+        "HP": 72,
+        "PP": 0,
+        "ATK": 72,
+        "DEF": 19,
+        "AGI": 30,
+        "LCK": 1,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Sticky Goo",
+            "Sticky Goo",
+            "Attack",
+            "Speed Surge",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep",
+            "May inflict Stun"
+        ],
+        "coins": 40,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 26
+    },
+    {
+        "ID": 13,
+        "name": "Slime Beast",
+        "level": 13,
+        "HP": 99,
+        "PP": 0,
+        "ATK": 134,
+        "DEF": 27,
+        "AGI": 54,
+        "LCK": 2,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Sticky Poison",
+            "Sticky Poison",
+            "Attack",
+            "Speed Surge",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep",
+            "May inflict Stun"
+        ],
+        "coins": 77,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 51
+    },
+    {
+        "ID": 14,
+        "name": "Ghost",
+        "level": 5,
+        "HP": 56,
+        "PP": 6,
+        "ATK": 38,
+        "DEF": 12,
+        "AGI": 12,
+        "LCK": 2,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 64,
+        "abilities": [
+            "Attack",
+            "Rumble",
+            "Rumble",
+            "Impair",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Impair"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 9,
+        "item_drop": "Oil Drop",
+        "item_chance_class": 5,
+        "exp": 9
+    },
+    {
+        "ID": 15,
+        "name": "Ghost Mage",
+        "level": 15,
+        "HP": 161,
+        "PP": 19,
+        "ATK": 168,
+        "DEF": 43,
+        "AGI": 86,
+        "LCK": 9,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Spire",
+            "Spire",
+            "Whirlwind",
+            "Whirlwind",
+            "Haunting",
+            "Haunting",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 110,
+        "item_drop": "Bramble Seed",
+        "item_chance_class": 5,
+        "exp": 80
+    },
+    {
+        "ID": 16,
+        "name": "Horned Ghost",
+        "level": 23,
+        "HP": 236,
+        "PP": 32,
+        "ATK": 268,
+        "DEF": 78,
+        "AGI": 116,
+        "LCK": 5,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ice Horn",
+            "Attack",
+            "Hail Prism",
+            "Attack",
+            "Haunting",
+            "Haunting",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 166,
+        "item_drop": "Elixir",
+        "item_chance_class": 6,
+        "exp": 199
+    },
+    {
+        "ID": 17,
+        "name": "Lich",
+        "level": 23,
+        "HP": 900,
+        "PP": 52,
+        "ATK": 192,
+        "DEF": 48,
+        "AGI": 106,
+        "LCK": 15,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            72,
+            152,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 16,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Glacier",
+            "Revive",
+            "Curse",
+            "Attack",
+            "Enfeeble",
+            "Haunt",
+            "Debilitate",
+            "Bind"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 1200,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 263
+    },
+    {
+        "ID": 18,
+        "name": "Zombie (1)",
+        "level": 4,
+        "HP": 55,
+        "PP": 0,
+        "ATK": 41,
+        "DEF": 9,
+        "AGI": 5,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 8,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 7
+    },
+    {
+        "ID": 19,
+        "name": "Undead",
+        "level": 15,
+        "HP": 165,
+        "PP": 0,
+        "ATK": 180,
+        "DEF": 27,
+        "AGI": 58,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Decompose",
+            "Decompose",
+            "Ally Search",
+            "Ally Search",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 90,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 74
+    },
+    {
+        "ID": 20,
+        "name": "Wight",
+        "level": 18,
+        "HP": 192,
+        "PP": 0,
+        "ATK": 205,
+        "DEF": 55,
+        "AGI": 54,
+        "LCK": 2,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Decompose",
+            "Decompose",
+            "Rotten Blood",
+            "Rotten Blood",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 115,
+        "item_drop": "Elixir",
+        "item_chance_class": 5,
+        "exp": 92
+    },
+    {
+        "ID": 21,
+        "name": "Bandit",
+        "level": 7,
+        "HP": 244,
+        "PP": 0,
+        "ATK": 46,
+        "DEF": 8,
+        "AGI": 20,
+        "LCK": 3,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            72,
+            72,
+            72,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 1,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 78,
+        "abilities": [
+            "Slice",
+            "Slice",
+            "Slice",
+            "Slice",
+            "Threaten",
+            "Threaten",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 46,
+        "item_drop": "Bandit's Sword",
+        "item_chance_class": 1,
+        "exp": 36
+    },
+    {
+        "ID": 22,
+        "name": "Thief",
+        "level": 6,
+        "HP": 110,
+        "PP": 0,
+        "ATK": 42,
+        "DEF": 5,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            72,
+            72,
+            72,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 1,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 56,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Tremble",
+            "Tremble",
+            "Threaten",
+            "Threaten",
+            "Stand Ready"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 32,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 15
+    },
+    {
+        "ID": 23,
+        "name": "Brigand",
+        "level": 21,
+        "HP": 421,
+        "PP": 0,
+        "ATK": 251,
+        "DEF": 69,
+        "AGI": 104,
+        "LCK": 5,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            72,
+            72,
+            72,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 1,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 30,
+        "abilities": [
+            "Slice",
+            "Slice",
+            "Slice",
+            "Slice",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 190,
+        "item_drop": "Crystal Powder",
+        "item_chance_class": 6,
+        "exp": 162
+    },
+    {
+        "ID": 24,
+        "name": "Skeleton",
+        "level": 5,
+        "HP": 60,
+        "PP": 0,
+        "ATK": 46,
+        "DEF": 14,
+        "AGI": 18,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            127,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 14,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Bone Charge",
+            "Bone Charge",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 11,
+        "item_drop": "Herb",
+        "item_chance_class": 5,
+        "exp": 10
+    },
+    {
+        "ID": 25,
+        "name": "Bone Fighter",
+        "level": 11,
+        "HP": 122,
+        "PP": 0,
+        "ATK": 131,
+        "DEF": 35,
+        "AGI": 52,
+        "LCK": 3,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            127,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 14,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Undead Sword",
+            "Undead Sword",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 63,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 6,
+        "exp": 51
+    },
+    {
+        "ID": 26,
+        "name": "Skull Warrior",
+        "level": 26,
+        "HP": 283,
+        "PP": 16,
+        "ATK": 322,
+        "DEF": 112,
+        "AGI": 130,
+        "LCK": 5,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            127,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 14,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Dull",
+            "Dull",
+            "Bone Charge",
+            "Bone Charge",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 188,
+        "item_drop": "Vial",
+        "item_chance_class": 6,
+        "exp": 301
+    },
+    {
+        "ID": 27,
+        "name": "Will Head",
+        "level": 5,
+        "HP": 54,
+        "PP": 0,
+        "ATK": 42,
+        "DEF": 10,
+        "AGI": 10,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            127,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 14,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Mystic Flame",
+            "Attack",
+            "Mystic Flame",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 10,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 6,
+        "exp": 9
+    },
+    {
+        "ID": 28,
+        "name": "Death Head",
+        "level": 12,
+        "HP": 128,
+        "PP": 15,
+        "ATK": 130,
+        "DEF": 31,
+        "AGI": 47,
+        "LCK": 3,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            127,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 14,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Slash",
+            "Slash",
+            "Impair",
+            "Impair",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 73,
+        "item_drop": "Nut",
+        "item_chance_class": 5,
+        "exp": 55
+    },
+    {
+        "ID": 29,
+        "name": "Willowisp",
+        "level": 25,
+        "HP": 209,
+        "PP": 12,
+        "ATK": 279,
+        "DEF": 87,
+        "AGI": 121,
+        "LCK": 6,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            127,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 14,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Tundra",
+            "Blue Bolt",
+            "Attack",
+            "Drain",
+            "Haunting",
+            "Haunting",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 160,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 227
+    },
+    {
+        "ID": 30,
+        "name": "Rat",
+        "level": 6,
+        "HP": 49,
+        "PP": 0,
+        "ATK": 52,
+        "DEF": 27,
+        "AGI": 15,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fortify",
+            "Fortify",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 17,
+        "item_drop": "Herb",
+        "item_chance_class": 6,
+        "exp": 14
+    },
+    {
+        "ID": 31,
+        "name": "Armored Rat",
+        "level": 18,
+        "HP": 147,
+        "PP": 0,
+        "ATK": 193,
+        "DEF": 79,
+        "AGI": 60,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fortify",
+            "Fortify",
+            "Total Defense",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 100,
+        "item_drop": "Herb",
+        "item_chance_class": 6,
+        "exp": 77
+    },
+    {
+        "ID": 32,
+        "name": "Plated Rat",
+        "level": 25,
+        "HP": 203,
+        "PP": 0,
+        "ATK": 262,
+        "DEF": 130,
+        "AGI": 61,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Total Defense",
+            "Total Defense",
+            "Counterstrike",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 135,
+        "item_drop": "Elixir",
+        "item_chance_class": 6,
+        "exp": 208
+    },
+    {
+        "ID": 33,
+        "name": "Rat Soldier",
+        "level": 6,
+        "HP": 69,
+        "PP": 0,
+        "ATK": 56,
+        "DEF": 13,
+        "AGI": 19,
+        "LCK": 2,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            72,
+            100,
+            48,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 32,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flee",
+            "Flee",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 19,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 5,
+        "exp": 17
+    },
+    {
+        "ID": 34,
+        "name": "Rat Fighter",
+        "level": 13,
+        "HP": 143,
+        "PP": 0,
+        "ATK": 146,
+        "DEF": 39,
+        "AGI": 58,
+        "LCK": 3,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            72,
+            100,
+            48,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 32,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 28,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Flee",
+            "Slice",
+            "Slice",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 83,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 6,
+        "exp": 63
+    },
+    {
+        "ID": 35,
+        "name": "Rat Warrior",
+        "level": 20,
+        "HP": 208,
+        "PP": 0,
+        "ATK": 226,
+        "DEF": 49,
+        "AGI": 121,
+        "LCK": 3,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            72,
+            100,
+            48,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 32,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 28,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Flee",
+            "Slice",
+            "Slice",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 160,
+        "item_drop": "Bramble Seed",
+        "item_chance_class": 6,
+        "exp": 100
+    },
+    {
+        "ID": 36,
+        "name": "Drone Bee",
+        "level": 7,
+        "HP": 63,
+        "PP": 0,
+        "ATK": 68,
+        "DEF": 19,
+        "AGI": 36,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            2
+        ],
+        "epow": [
+            90,
+            90,
+            95,
+            105
+        ],
+        "eres": [
+            100,
+            48,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 9,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Numbing Sting",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 28,
+        "item_drop": "Elixir",
+        "item_chance_class": 5,
+        "exp": 19
+    },
+    {
+        "ID": 37,
+        "name": "Fighter Bee",
+        "level": 14,
+        "HP": 116,
+        "PP": 0,
+        "ATK": 155,
+        "DEF": 38,
+        "AGI": 74,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            2
+        ],
+        "epow": [
+            90,
+            90,
+            95,
+            105
+        ],
+        "eres": [
+            100,
+            48,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 9,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Numbing Sting",
+            "Attack",
+            "Ally Search",
+            "Ally Search",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 90,
+        "item_drop": "Elixir",
+        "item_chance_class": 6,
+        "exp": 67
+    },
+    {
+        "ID": 38,
+        "name": "Warrior Bee",
+        "level": 20,
+        "HP": 164,
+        "PP": 0,
+        "ATK": 221,
+        "DEF": 65,
+        "AGI": 102,
+        "LCK": 5,
+        "elevels": [
+            1,
+            0,
+            0,
+            2
+        ],
+        "epow": [
+            90,
+            90,
+            95,
+            105
+        ],
+        "eres": [
+            100,
+            48,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 9,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Numbing Sting",
+            "Attack",
+            "Attack",
+            "Ally Search",
+            "Mortal Blow",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 104,
+        "item_drop": "Elixir",
+        "item_chance_class": 5,
+        "exp": 65
+    },
+    {
+        "ID": 39,
+        "name": "Troll",
+        "level": 7,
+        "HP": 101,
+        "PP": 0,
+        "ATK": 73,
+        "DEF": 16,
+        "AGI": 14,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 10,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Brute Force",
+            "Brute Force",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ],
+        "coins": 34,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 30
+    },
+    {
+        "ID": 40,
+        "name": "Cave Troll",
+        "level": 16,
+        "HP": 212,
+        "PP": 0,
+        "ATK": 199,
+        "DEF": 45,
+        "AGI": 44,
+        "LCK": 3,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 20,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Brute Force",
+            "Brute Force",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ],
+        "coins": 134,
+        "item_drop": "Nut",
+        "item_chance_class": 5,
+        "exp": 106
+    },
+    {
+        "ID": 41,
+        "name": "Brutal Troll",
+        "level": 21,
+        "HP": 291,
+        "PP": 0,
+        "ATK": 273,
+        "DEF": 63,
+        "AGI": 76,
+        "LCK": 6,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 30,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Brute Force",
+            "Brute Force",
+            "Attack",
+            "Berserk",
+            "Berserk",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ],
+        "coins": 190,
+        "item_drop": "Nut",
+        "item_chance_class": 5,
+        "exp": 150
+    },
+    {
+        "ID": 42,
+        "name": "Spider",
+        "level": 8,
+        "HP": 69,
+        "PP": 0,
+        "ATK": 75,
+        "DEF": 22,
+        "AGI": 22,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            95,
+            85,
+            90,
+            85
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 5,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Spider Web",
+            "Spider Web",
+            "Spider Web",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 32,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 25
+    },
+    {
+        "ID": 43,
+        "name": "Tarantula",
+        "level": 13,
+        "HP": 108,
+        "PP": 0,
+        "ATK": 144,
+        "DEF": 30,
+        "AGI": 52,
+        "LCK": 5,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            95,
+            85,
+            90,
+            85
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 5,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Poison Fang",
+            "Poison Fang",
+            "Attack",
+            "Spider Web",
+            "Spider Web",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 81,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 58
+    },
+    {
+        "ID": 44,
+        "name": "Recluse",
+        "level": 27,
+        "HP": 221,
+        "PP": 0,
+        "ATK": 323,
+        "DEF": 122,
+        "AGI": 109,
+        "LCK": 4,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            95,
+            85,
+            90,
+            85
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 5,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Rabid Fang",
+            "Rabid Fang",
+            "Rabid Fang",
+            "Spider Web",
+            "Spider Web",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 153,
+        "item_drop": "Unicorn Ring",
+        "item_chance_class": 7,
+        "exp": 243
+    },
+    {
+        "ID": 45,
+        "name": "Gnome",
+        "level": 8,
+        "HP": 85,
+        "PP": 5,
+        "ATK": 73,
+        "DEF": 15,
+        "AGI": 38,
+        "LCK": 3,
+        "elevels": [
+            2,
+            2,
+            3,
+            2
+        ],
+        "epow": [
+            85,
+            85,
+            100,
+            85
+        ],
+        "eres": [
+            72,
+            48,
+            100,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 34,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flare",
+            "Flare",
+            "Guard",
+            "Bolt",
+            "Attack",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 40,
+        "item_drop": "Oil Drop",
+        "item_chance_class": 6,
+        "exp": 29
+    },
+    {
+        "ID": 46,
+        "name": "Gnome Mage",
+        "level": 18,
+        "HP": 162,
+        "PP": 24,
+        "ATK": 179,
+        "DEF": 50,
+        "AGI": 108,
+        "LCK": 8,
+        "elevels": [
+            2,
+            2,
+            2,
+            3
+        ],
+        "epow": [
+            85,
+            85,
+            85,
+            100
+        ],
+        "eres": [
+            48,
+            72,
+            72,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 36,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flash Bolt",
+            "Flash Bolt",
+            "Fireball",
+            "Fireball",
+            "Delude",
+            "Delude",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 126,
+        "item_drop": "Crystal Powder",
+        "item_chance_class": 5,
+        "exp": 86
+    },
+    {
+        "ID": 47,
+        "name": "Gnome Wizard",
+        "level": 24,
+        "HP": 215,
+        "PP": 32,
+        "ATK": 257,
+        "DEF": 74,
+        "AGI": 122,
+        "LCK": 8,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            72,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 30,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mother Gaia",
+            "Attack",
+            "Sleep",
+            "Sleep",
+            "Impact",
+            "Impact",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 176,
+        "item_drop": "Crystal Powder",
+        "item_chance_class": 6,
+        "exp": 219
+    },
+    {
+        "ID": 48,
+        "name": "Ghoul",
+        "level": 9,
+        "HP": 99,
+        "PP": 0,
+        "ATK": 93,
+        "DEF": 20,
+        "AGI": 16,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Cannibal Fang",
+            "Cannibal Fang",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 42,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 34
+    },
+    {
+        "ID": 49,
+        "name": "Fiendish Ghoul",
+        "level": 17,
+        "HP": 609,
+        "PP": 0,
+        "ATK": 199,
+        "DEF": 45,
+        "AGI": 69,
+        "LCK": 3,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Cannibal Fang",
+            "Cannibal Fang",
+            "Bacteria Rush",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 109,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 87
+    },
+    {
+        "ID": 50,
+        "name": "Cannibal Ghoul",
+        "level": 23,
+        "HP": 249,
+        "PP": 0,
+        "ATK": 274,
+        "DEF": 82,
+        "AGI": 80,
+        "LCK": 4,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Cannibal Fang",
+            "Attack",
+            "Decompose",
+            "Decompose",
+            "Ally Search",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 160,
+        "item_drop": "Antidote",
+        "item_chance_class": 6,
+        "exp": 194
+    },
+    {
+        "ID": 51,
+        "name": "Mauler",
+        "level": 9,
+        "HP": 109,
+        "PP": 0,
+        "ATK": 99,
+        "DEF": 27,
+        "AGI": 24,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Bear Claw",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 45,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 37
+    },
+    {
+        "ID": 52,
+        "name": "Ravager",
+        "level": 15,
+        "HP": 189,
+        "PP": 0,
+        "ATK": 185,
+        "DEF": 47,
+        "AGI": 60,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Bear Claw",
+            "Bear Claw",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 95,
+        "item_drop": "Elixir",
+        "item_chance_class": 6,
+        "exp": 90
+    },
+    {
+        "ID": 53,
+        "name": "Grisly",
+        "level": 23,
+        "HP": 800,
+        "PP": 0,
+        "ATK": 208,
+        "DEF": 63,
+        "AGI": 78,
+        "LCK": 13,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            72,
+            72,
+            25,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 4,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Bear Claw",
+            "Bear Claw",
+            "Attack",
+            "Berserk",
+            "Berserk",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 700,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 243
+    },
+    {
+        "ID": 54,
+        "name": "Cuttle",
+        "level": 10,
+        "HP": 80,
+        "PP": 0,
+        "ATK": 96,
+        "DEF": 22,
+        "AGI": 36,
+        "LCK": 1,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Poisonous Bite",
+            "Poisonous Bite",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 49,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 6,
+        "exp": 27
+    },
+    {
+        "ID": 55,
+        "name": "Calamar",
+        "level": 13,
+        "HP": 104,
+        "PP": 0,
+        "ATK": 130,
+        "DEF": 34,
+        "AGI": 46,
+        "LCK": 1,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Electric Bite",
+            "Attack",
+            "Attack",
+            "Ally Search",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 79,
+        "item_drop": "Elixir",
+        "item_chance_class": 5,
+        "exp": 59
+    },
+    {
+        "ID": 56,
+        "name": "Man o' War",
+        "level": 17,
+        "HP": 137,
+        "PP": 0,
+        "ATK": 193,
+        "DEF": 42,
+        "AGI": 70,
+        "LCK": 1,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            48,
+            127,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 24,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Poison Ink",
+            "Poison Ink",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 87,
+        "item_drop": "Antidote",
+        "item_chance_class": 6,
+        "exp": 55
+    },
+    {
+        "ID": 57,
+        "name": "Harpy",
+        "level": 10,
+        "HP": 105,
+        "PP": 0,
+        "ATK": 104,
+        "DEF": 25,
+        "AGI": 46,
+        "LCK": 4,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Shriek",
+            "Shriek",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 53,
+        "item_drop": "Elixir",
+        "item_chance_class": 5,
+        "exp": 38
+    },
+    {
+        "ID": 58,
+        "name": "Virago",
+        "level": 17,
+        "HP": 185,
+        "PP": 0,
+        "ATK": 199,
+        "DEF": 47,
+        "AGI": 89,
+        "LCK": 4,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Banshee Howl",
+            "Banshee Howl",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 120,
+        "item_drop": "Elixir",
+        "item_chance_class": 5,
+        "exp": 87
+    },
+    {
+        "ID": 59,
+        "name": "Harridan",
+        "level": 22,
+        "HP": 231,
+        "PP": 29,
+        "ATK": 261,
+        "DEF": 66,
+        "AGI": 118,
+        "LCK": 8,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            175,
+            100,
+            72,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 12,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Banshee Howl",
+            "Banshee Howl",
+            "Crazy Voice",
+            "Crazy Voice",
+            "Wind Slash",
+            "Wind Slash",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Sleep"
+        ],
+        "coins": 164,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 150
+    },
+    {
+        "ID": 60,
+        "name": "Siren",
+        "level": 10,
+        "HP": 116,
+        "PP": 12,
+        "ATK": 107,
+        "DEF": 27,
+        "AGI": 54,
+        "LCK": 9,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            127,
+            72,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 33,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Froth",
+            "Froth",
+            "Sleep",
+            "Sleep",
+            "Heartrender",
+            "Heartrender",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 56,
+        "item_drop": "Crystal Powder",
+        "item_chance_class": 5,
+        "exp": 45
+    },
+    {
+        "ID": 61,
+        "name": "Succubus",
+        "level": 17,
+        "HP": 529,
+        "PP": 56,
+        "ATK": 195,
+        "DEF": 49,
+        "AGI": 101,
+        "LCK": 12,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            127,
+            72,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 33,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Hail Prism",
+            "Hail Prism",
+            "Wind Slash",
+            "Wind Slash",
+            "Heartrender",
+            "Heartrender",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 143,
+        "item_drop": "Crystal Powder",
+        "item_chance_class": 5,
+        "exp": 101
+    },
+    {
+        "ID": 62,
+        "name": "Nightmare",
+        "level": 24,
+        "HP": 258,
+        "PP": 28,
+        "ATK": 287,
+        "DEF": 89,
+        "AGI": 138,
+        "LCK": 13,
+        "elevels": [
+            2,
+            2,
+            2,
+            3
+        ],
+        "epow": [
+            85,
+            85,
+            85,
+            100
+        ],
+        "eres": [
+            72,
+            100,
+            100,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 37,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Shine Plasma",
+            "Shine Plasma",
+            "Fireball",
+            "Fireball",
+            "Bind",
+            "Bind",
+            "Heartrender",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Seal",
+            "Inflicts Seal"
+        ],
+        "coins": 198,
+        "item_drop": "Healing Ring",
+        "item_chance_class": 7,
+        "exp": 241
+    },
+    {
+        "ID": 63,
+        "name": "Mole",
+        "level": 11,
+        "HP": 96,
+        "PP": 0,
+        "ATK": 119,
+        "DEF": 22,
+        "AGI": 36,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mad Spatter",
+            "Mad Spatter",
+            "Mad Spatter",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun",
+            "May inflict Sleep"
+        ],
+        "coins": 60,
+        "item_drop": "Bramble Seed",
+        "item_chance_class": 5,
+        "exp": 39
+    },
+    {
+        "ID": 64,
+        "name": "Mad Mole",
+        "level": 18,
+        "HP": 156,
+        "PP": 0,
+        "ATK": 197,
+        "DEF": 23,
+        "AGI": 62,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mad Spatter",
+            "Mad Spatter",
+            "Worms",
+            "Worms",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun",
+            "May inflict Sleep"
+        ],
+        "coins": 88,
+        "item_drop": "Bramble Seed",
+        "item_chance_class": 6,
+        "exp": 71
+    },
+    {
+        "ID": 65,
+        "name": "Mole Mage",
+        "level": 24,
+        "HP": 199,
+        "PP": 14,
+        "ATK": 265,
+        "DEF": 47,
+        "AGI": 74,
+        "LCK": 4,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mad Growth",
+            "Attack",
+            "Mad Spatter",
+            "Mad Spatter",
+            "Worms",
+            "Worms",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun",
+            "May inflict Sleep"
+        ],
+        "coins": 132,
+        "item_drop": "Antidote",
+        "item_chance_class": 6,
+        "exp": 191
+    },
+    {
+        "ID": 66,
+        "name": "Dirge",
+        "level": 11,
+        "HP": 91,
+        "PP": 0,
+        "ATK": 122,
+        "DEF": 32,
+        "AGI": 60,
+        "LCK": 2,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flying Attack",
+            "Flying Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Stun"
+        ],
+        "coins": 61,
+        "item_drop": "Nut",
+        "item_chance_class": 5,
+        "exp": 47
+    },
+    {
+        "ID": 67,
+        "name": "Foul Dirge",
+        "level": 18,
+        "HP": 149,
+        "PP": 0,
+        "ATK": 177,
+        "DEF": 46,
+        "AGI": 120,
+        "LCK": 2,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Swift Strike",
+            "Swift Strike",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Stun"
+        ],
+        "coins": 100,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 6,
+        "exp": 82
+    },
+    {
+        "ID": 68,
+        "name": "Vile Dirge",
+        "level": 21,
+        "HP": 173,
+        "PP": 0,
+        "ATK": 228,
+        "DEF": 56,
+        "AGI": 120,
+        "LCK": 2,
+        "elevels": [
+            1,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            95,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            127,
+            72,
+            48,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 11,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flying Attack",
+            "Attack",
+            "Wing Beat",
+            "Wing Beat",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Stun"
+        ],
+        "coins": 98,
+        "item_drop": "Weasel's Claw",
+        "item_chance_class": 5,
+        "exp": 75
+    },
+    {
+        "ID": 69,
+        "name": "Ape",
+        "level": 15,
+        "HP": 290,
+        "PP": 0,
+        "ATK": 128,
+        "DEF": 29,
+        "AGI": 49,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 3,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ransack",
+            "Ransack",
+            "Ransack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP",
+            "May inflict Sleep"
+        ],
+        "coins": 160,
+        "item_drop": "Vial",
+        "item_chance_class": 3,
+        "exp": 96
+    },
+    {
+        "ID": 70,
+        "name": "Killer Ape",
+        "level": 18,
+        "HP": 1000,
+        "PP": 45,
+        "ATK": 156,
+        "DEF": 49,
+        "AGI": 94,
+        "LCK": 26,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            72,
+            72,
+            25,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 4,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ransack",
+            "War Cry",
+            "Douse",
+            "Debilitate",
+            "Bind",
+            "Bind",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP",
+            "May inflict Sleep"
+        ],
+        "coins": 1500,
+        "item_drop": "Douse Drop",
+        "item_chance_class": 1,
+        "exp": 460
+    },
+    {
+        "ID": 71,
+        "name": "Dirty Ape",
+        "level": 20,
+        "HP": 230,
+        "PP": 0,
+        "ATK": 236,
+        "DEF": 57,
+        "AGI": 132,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            80,
+            70,
+            80
+        ],
+        "eres": [
+            72,
+            72,
+            25,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 4,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Freebite Rush",
+            "Attack",
+            "War Cry",
+            "War Cry",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP",
+            "May inflict Sleep"
+        ],
+        "coins": 149,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 114
+    },
+    {
+        "ID": 72,
+        "name": "Grub",
+        "level": 14,
+        "HP": 102,
+        "PP": 0,
+        "ATK": 154,
+        "DEF": 32,
+        "AGI": 52,
+        "LCK": 1,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            95,
+            85,
+            90,
+            85
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 5,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flee",
+            "Flee",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 88,
+        "item_drop": "Antidote",
+        "item_chance_class": 5,
+        "exp": 62
+    },
+    {
+        "ID": 73,
+        "name": "Worm",
+        "level": 18,
+        "HP": 132,
+        "PP": 0,
+        "ATK": 196,
+        "DEF": 51,
+        "AGI": 79,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            95,
+            85,
+            90,
+            85
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 5,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Search for Help",
+            "Search for Help",
+            "Search for Help",
+            "Search for Help",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 94,
+        "item_drop": "Herb",
+        "item_chance_class": 6,
+        "exp": 60
+    },
+    {
+        "ID": 74,
+        "name": "Acid Maggot",
+        "level": 22,
+        "HP": 160,
+        "PP": 0,
+        "ATK": 255,
+        "DEF": 60,
+        "AGI": 78,
+        "LCK": 2,
+        "elevels": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "epow": [
+            95,
+            85,
+            90,
+            85
+        ],
+        "eres": [
+            48,
+            48,
+            25,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 5,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Acid Bite",
+            "Acid Bite",
+            "Flee",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Stun"
+        ],
+        "coins": 102,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 6,
+        "exp": 86
+    },
+    {
+        "ID": 75,
+        "name": "Orc",
+        "level": 14,
+        "HP": 148,
+        "PP": 0,
+        "ATK": 156,
+        "DEF": 41,
+        "AGI": 54,
+        "LCK": 3,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            72,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 30,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Spasm",
+            "Spasm",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Haunt",
+            "May inflict Death Curse"
+        ],
+        "coins": 113,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 68
+    },
+    {
+        "ID": 76,
+        "name": "Orc Captain",
+        "level": 21,
+        "HP": 231,
+        "PP": 0,
+        "ATK": 248,
+        "DEF": 69,
+        "AGI": 90,
+        "LCK": 4,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            72,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 30,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 14,
+        "abilities": [
+            "Stand Ready",
+            "Stand Ready",
+            "Spasm",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Haunt",
+            "May inflict Death Curse"
+        ],
+        "coins": 142,
+        "item_drop": "Smoke Bomb",
+        "item_chance_class": 5,
+        "exp": 125
+    },
+    {
+        "ID": 77,
+        "name": "Orc Lord",
+        "level": 25,
+        "HP": 278,
+        "PP": 18,
+        "ATK": 302,
+        "DEF": 98,
+        "AGI": 70,
+        "LCK": 3,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            127,
+            100,
+            100,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 31,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 12,
+        "abilities": [
+            "Sleep",
+            "Sleep",
+            "Spasm",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Haunt",
+            "May inflict Death Curse"
+        ],
+        "coins": 198,
+        "item_drop": "Lucky Medal",
+        "item_chance_class": 8,
+        "exp": 260
+    },
+    {
+        "ID": 78,
+        "name": "Salamander",
+        "level": 14,
+        "HP": 212,
+        "PP": 18,
+        "ATK": 158,
+        "DEF": 49,
+        "AGI": 50,
+        "LCK": 6,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            193,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 27,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fire Blessing",
+            "Fire Blessing",
+            "Fireball",
+            "Fireball",
+            "Blast",
+            "Guard",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 190,
+        "item_drop": "Oil Drop",
+        "item_chance_class": 5,
+        "exp": 84
+    },
+    {
+        "ID": 79,
+        "name": "Earth Lizard",
+        "level": 28,
+        "HP": 1550,
+        "PP": 48,
+        "ATK": 278,
+        "DEF": 97,
+        "AGI": 102,
+        "LCK": 17,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Clay Spire",
+            "Acid Blessing",
+            "Acid Blessing",
+            "Quake Sphere",
+            "Mother Gaia",
+            "Cure Well",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 920,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 545
+    },
+    {
+        "ID": 80,
+        "name": "Thunder Lizard",
+        "level": 28,
+        "HP": 456,
+        "PP": 0,
+        "ATK": 347,
+        "DEF": 133,
+        "AGI": 134,
+        "LCK": 10,
+        "elevels": [
+            0,
+            2,
+            2,
+            6
+        ],
+        "epow": [
+            80,
+            95,
+            95,
+            120
+        ],
+        "eres": [
+            25,
+            100,
+            100,
+            193
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 29,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Storm Blessing",
+            "Storm Blessing",
+            "Storm Blessing",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 221,
+        "item_drop": "Blessed Mace",
+        "item_chance_class": 8,
+        "exp": 422
+    },
+    {
+        "ID": 81,
+        "name": "Manticore",
+        "level": 20,
+        "HP": 1700,
+        "PP": 83,
+        "ATK": 168,
+        "DEF": 48,
+        "AGI": 61,
+        "LCK": 36,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 2,
+        "attack_pattern": 3,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mad Blast",
+            "Poison Tail",
+            "Attack",
+            "Curse",
+            "Nova",
+            "Delude",
+            "Poison Tail",
+            "Impair"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 3400,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 590
+    },
+    {
+        "ID": 82,
+        "name": "Magicore",
+        "level": 22,
+        "HP": 321,
+        "PP": 34,
+        "ATK": 253,
+        "DEF": 74,
+        "AGI": 109,
+        "LCK": 11,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Nova",
+            "Nova",
+            "Poison Tail",
+            "Poison Tail",
+            "Sleep",
+            "Bind",
+            "Bind",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 208,
+        "item_drop": "Aura Gloves",
+        "item_chance_class": 8,
+        "exp": 169
+    },
+    {
+        "ID": 83,
+        "name": "Manticore King",
+        "level": 26,
+        "HP": 348,
+        "PP": 33,
+        "ATK": 317,
+        "DEF": 106,
+        "AGI": 134,
+        "LCK": 12,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Eruption",
+            "Attack",
+            "Poison Tail",
+            "Poison Tail",
+            "Lucid Prophecy",
+            "Bind",
+            "Bind",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 240,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 7,
+        "exp": 342
+    },
+    {
+        "ID": 84,
+        "name": "Kobold",
+        "level": 20,
+        "HP": 220,
+        "PP": 0,
+        "ATK": 230,
+        "DEF": 62,
+        "AGI": 75,
+        "LCK": 4,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            72,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 30,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 7,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 154,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 5,
+        "exp": 107
+    },
+    {
+        "ID": 85,
+        "name": "Goblin",
+        "level": 24,
+        "HP": 268,
+        "PP": 0,
+        "ATK": 289,
+        "DEF": 91,
+        "AGI": 83,
+        "LCK": 3,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            72,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 30,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 7,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 170,
+        "item_drop": "Vial",
+        "item_chance_class": 6,
+        "exp": 221
+    },
+    {
+        "ID": 86,
+        "name": "Hobgoblin",
+        "level": 23,
+        "HP": 650,
+        "PP": 0,
+        "ATK": 203,
+        "DEF": 54,
+        "AGI": 65,
+        "LCK": 9,
+        "elevels": [
+            3,
+            2,
+            2,
+            2
+        ],
+        "epow": [
+            100,
+            85,
+            85,
+            85
+        ],
+        "eres": [
+            127,
+            100,
+            100,
+            72
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 31,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 7,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 800,
+        "item_drop": "Lucky Medal",
+        "item_chance_class": 1,
+        "exp": 223
+    },
+    {
+        "ID": 87,
+        "name": "Gargoyle",
+        "level": 16,
+        "HP": 176,
+        "PP": 21,
+        "ATK": 181,
+        "DEF": 81,
+        "AGI": 59,
+        "LCK": 7,
+        "elevels": [
+            2,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            100,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 17,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Guard",
+            "Guard",
+            "Quake Sphere",
+            "Attack",
+            "Ice Blessing",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 119,
+        "item_drop": "Sleep Bomb",
+        "item_chance_class": 6,
+        "exp": 84
+    },
+    {
+        "ID": 88,
+        "name": "Clay Gargoyle",
+        "level": 18,
+        "HP": 209,
+        "PP": 24,
+        "ATK": 210,
+        "DEF": 90,
+        "AGI": 84,
+        "LCK": 7,
+        "elevels": [
+            2,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            100,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 17,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Guard",
+            "Guard",
+            "Spire",
+            "Spire",
+            "Sonic Wave",
+            "Sonic Wave",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 147,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 100
+    },
+    {
+        "ID": 89,
+        "name": "Ice Gargoyle",
+        "level": 26,
+        "HP": 304,
+        "PP": 21,
+        "ATK": 319,
+        "DEF": 150,
+        "AGI": 100,
+        "LCK": 7,
+        "elevels": [
+            2,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            100,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 17,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Guard",
+            "Guard",
+            "Mother Gaia",
+            "Attack",
+            "Ice Blessing",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 170,
+        "item_drop": "Potion",
+        "item_chance_class": 7,
+        "exp": 307
+    },
+    {
+        "ID": 90,
+        "name": "Gryphon",
+        "level": 23,
+        "HP": 1100,
+        "PP": 36,
+        "ATK": 213,
+        "DEF": 56,
+        "AGI": 98,
+        "LCK": 19,
+        "elevels": [
+            0,
+            2,
+            1,
+            4
+        ],
+        "epow": [
+            90,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            152,
+            110,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 43,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Wing Flutter",
+            "Tornado",
+            "Twin Beaks",
+            "Impact",
+            "Attack",
+            "Sonic Slash",
+            "Bind",
+            "Ward"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 1900,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 303
+    },
+    {
+        "ID": 91,
+        "name": "Wild Gryphon",
+        "level": 26,
+        "HP": 370,
+        "PP": 8,
+        "ATK": 332,
+        "DEF": 112,
+        "AGI": 170,
+        "LCK": 10,
+        "elevels": [
+            0,
+            2,
+            1,
+            4
+        ],
+        "epow": [
+            90,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            152,
+            110,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 43,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Wing Stroke",
+            "Attack",
+            "Twin Beaks",
+            "Twin Beaks",
+            "Bind",
+            "Bind",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 290,
+        "item_drop": "Feathered Robe",
+        "item_chance_class": 8,
+        "exp": 322
+    },
+    {
+        "ID": 92,
+        "name": "Wise Gryphon",
+        "level": 0,
+        "HP": 18,
+        "PP": 33,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            0,
+            2,
+            1,
+            4
+        ],
+        "epow": [
+            90,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            152,
+            110,
+            72,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 43,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Tornado",
+            "Tornado",
+            "Twin Beaks",
+            "Twin Beaks",
+            "Twin Beaks",
+            "Bind",
+            "Bind",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 1,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 1
+    },
+    {
+        "ID": 93,
+        "name": "Golem",
+        "level": 18,
+        "HP": 266,
+        "PP": 0,
+        "ATK": 217,
+        "DEF": 57,
+        "AGI": 40,
+        "LCK": 2,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Forcible Arm",
+            "Forcible Arm",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 161,
+        "item_drop": "Vial",
+        "item_chance_class": 7,
+        "exp": 105
+    },
+    {
+        "ID": 94,
+        "name": "Earth Golem",
+        "level": 23,
+        "HP": 298,
+        "PP": 0,
+        "ATK": 299,
+        "DEF": 114,
+        "AGI": 70,
+        "LCK": 5,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Truncheon Fist",
+            "Truncheon Fist",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 183,
+        "item_drop": "Giant Axe",
+        "item_chance_class": 8,
+        "exp": 218
+    },
+    {
+        "ID": 95,
+        "name": "Grand Golem",
+        "level": 28,
+        "HP": 476,
+        "PP": 0,
+        "ATK": 367,
+        "DEF": 149,
+        "AGI": 80,
+        "LCK": 5,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Truncheon Fist",
+            "Truncheon Fist",
+            "Truncheon Fist",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 208,
+        "item_drop": "Zodiac Wand",
+        "item_chance_class": 8,
+        "exp": 412
+    },
+    {
+        "ID": 96,
+        "name": "Dread Hound",
+        "level": 18,
+        "HP": 252,
+        "PP": 0,
+        "ATK": 211,
+        "DEF": 56,
+        "AGI": 90,
+        "LCK": 13,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fire Blessing",
+            "Fire Blessing",
+            "Double Fang",
+            "Double Fang",
+            "Wicked Howl",
+            "Wicked Howl",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 176,
+        "item_drop": "Prophet's Hat",
+        "item_chance_class": 7,
+        "exp": 116
+    },
+    {
+        "ID": 97,
+        "name": "Cerebus",
+        "level": 35,
+        "HP": 2200,
+        "PP": 42,
+        "ATK": 369,
+        "DEF": 130,
+        "AGI": 151,
+        "LCK": 22,
+        "elevels": [
+            2,
+            4,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            115,
+            85,
+            95
+        ],
+        "eres": [
+            100,
+            175,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 19,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ice Blessing",
+            "Double Fang",
+            "Double Fang",
+            "Restore",
+            "Wicked Howl",
+            "Attack",
+            "Attack",
+            "Ice Missile"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 3200,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 1863
+    },
+    {
+        "ID": 98,
+        "name": "Fenrir",
+        "level": 28,
+        "HP": 406,
+        "PP": 0,
+        "ATK": 357,
+        "DEF": 125,
+        "AGI": 141,
+        "LCK": 9,
+        "elevels": [
+            2,
+            4,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            115,
+            85,
+            95
+        ],
+        "eres": [
+            100,
+            175,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 19,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ice Blessing",
+            "Ice Blessing",
+            "Double Fang",
+            "Double Fang",
+            "Wicked Howl",
+            "Wicked Howl",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 212,
+        "item_drop": "Kikuichimonji",
+        "item_chance_class": 9,
+        "exp": 402
+    },
+    {
+        "ID": 99,
+        "name": "Stone Soldier",
+        "level": 22,
+        "HP": 179,
+        "PP": 6,
+        "ATK": 241,
+        "DEF": 105,
+        "AGI": 104,
+        "LCK": 5,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            48,
+            7,
+            127,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 26,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Blast",
+            "Blast",
+            "Mad Blast",
+            "Mad Blast",
+            "Headbutt",
+            "Headbutt",
+            "Dynamite",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Death"
+        ],
+        "coins": 98,
+        "item_drop": "Elixir",
+        "item_chance_class": 6,
+        "exp": 98
+    },
+    {
+        "ID": 100,
+        "name": "Boulder Beast",
+        "level": 27,
+        "HP": 211,
+        "PP": 14,
+        "ATK": 327,
+        "DEF": 137,
+        "AGI": 140,
+        "LCK": 6,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            193,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 27,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mad Blast",
+            "Mad Blast",
+            "Mad Blast",
+            "Attack",
+            "Headbutt",
+            "Headbutt",
+            "Dynamite",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Death"
+        ],
+        "coins": 164,
+        "item_drop": "Water of Life",
+        "item_chance_class": 8,
+        "exp": 278
+    },
+    {
+        "ID": 101,
+        "name": "Raging Rock",
+        "level": 0,
+        "HP": 18,
+        "PP": 14,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            193,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 27,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Mad Blast",
+            "Mad Blast",
+            "Mad Blast",
+            "Mad Blast",
+            "Headbutt",
+            "Headbutt",
+            "Dynamite",
+            "Attack"
+        ],
+        "weaknesses": [
+            "May inflict Death"
+        ],
+        "coins": 1,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 1
+    },
+    {
+        "ID": 102,
+        "name": "Chimera",
+        "level": 28,
+        "HP": 1350,
+        "PP": 48,
+        "ATK": 294,
+        "DEF": 90,
+        "AGI": 121,
+        "LCK": 18,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Rabid Fang",
+            "Mad Dash",
+            "Fire Blessing",
+            "Attack",
+            "Flare Storm",
+            "Guard",
+            "Impair",
+            "Bind"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ],
+        "coins": 800,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 465
+    },
+    {
+        "ID": 103,
+        "name": "Chimera Mage",
+        "level": 26,
+        "HP": 413,
+        "PP": 28,
+        "ATK": 326,
+        "DEF": 119,
+        "AGI": 145,
+        "LCK": 16,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fire Blessing",
+            "Fire Blessing",
+            "Rabid Fang",
+            "Mad Dash",
+            "Eruption",
+            "Recovery",
+            "Recovery",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ],
+        "coins": 300,
+        "item_drop": "Spiked Armor",
+        "item_chance_class": 7,
+        "exp": 362
+    },
+    {
+        "ID": 104,
+        "name": "?",
+        "level": 0,
+        "HP": 18,
+        "PP": 0,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fire Blessing",
+            "Fire Blessing",
+            "Rabid Fang",
+            "Mad Dash",
+            "Eruption",
+            "Recovery",
+            "Recovery",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take HP from target",
+            "User recovers 50% of damage to HP"
+        ],
+        "coins": 1,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 1
+    },
+    {
+        "ID": 105,
+        "name": "Amaze (1)",
+        "level": 2,
+        "HP": 28,
+        "PP": 0,
+        "ATK": 25,
+        "DEF": 8,
+        "AGI": 12,
+        "LCK": 2,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Rumble",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 3,
+        "item_drop": "Oil Drop",
+        "item_chance_class": 5,
+        "exp": 3
+    },
+    {
+        "ID": 106,
+        "name": "Amaze (2)",
+        "level": 3,
+        "HP": 39,
+        "PP": 0,
+        "ATK": 36,
+        "DEF": 10,
+        "AGI": 18,
+        "LCK": 2,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Rumble",
+            "Attack",
+            "Rumble",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 6,
+        "item_drop": "Oil Drop",
+        "item_chance_class": 5,
+        "exp": 5
+    },
+    {
+        "ID": 107,
+        "name": "Creeper",
+        "level": 8,
+        "HP": 89,
+        "PP": 6,
+        "ATK": 79,
+        "DEF": 19,
+        "AGI": 29,
+        "LCK": 2,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Frost",
+            "Attack",
+            "Douse",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 38,
+        "item_drop": "Weasel's Claw",
+        "item_chance_class": 6,
+        "exp": 32
+    },
+    {
+        "ID": 108,
+        "name": "Spirit",
+        "level": 11,
+        "HP": 116,
+        "PP": 11,
+        "ATK": 114,
+        "DEF": 30,
+        "AGI": 48,
+        "LCK": 6,
+        "elevels": [
+            0,
+            1,
+            1,
+            2
+        ],
+        "epow": [
+            100,
+            95,
+            95,
+            95
+        ],
+        "eres": [
+            48,
+            100,
+            72,
+            7
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 15,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ice",
+            "Ice",
+            "Douse",
+            "Douse",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 67,
+        "item_drop": "Crystal Powder",
+        "item_chance_class": 6,
+        "exp": 49
+    },
+    {
+        "ID": 109,
+        "name": "Zombie (2)",
+        "level": 4,
+        "HP": 55,
+        "PP": 0,
+        "ATK": 41,
+        "DEF": 9,
+        "AGI": 1,
+        "LCK": 1,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            100,
+            95,
+            80,
+            80
+        ],
+        "eres": [
+            25,
+            72,
+            7,
+            48
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 13,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 110,
+        "name": "?",
+        "level": 0,
+        "HP": 0,
+        "PP": 0,
+        "ATK": 0,
+        "DEF": 0,
+        "AGI": 0,
+        "LCK": 0,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "eres": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "turns": 0,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 0,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing"
+        ],
+        "weaknesses": [],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 111,
+        "name": "?",
+        "level": 0,
+        "HP": 0,
+        "PP": 0,
+        "ATK": 0,
+        "DEF": 0,
+        "AGI": 0,
+        "LCK": 0,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "eres": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "turns": 0,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 0,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing"
+        ],
+        "weaknesses": [],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 112,
+        "name": "?",
+        "level": 0,
+        "HP": 0,
+        "PP": 0,
+        "ATK": 0,
+        "DEF": 0,
+        "AGI": 0,
+        "LCK": 0,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "eres": [
+            100,
+            100,
+            100,
+            100
+        ],
+        "turns": 0,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 0,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing",
+            "Nothing"
+        ],
+        "weaknesses": [],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 113,
+        "name": "Kraken",
+        "level": 25,
+        "HP": 2400,
+        "PP": 46,
+        "ATK": 216,
+        "DEF": 60,
+        "AGI": 80,
+        "LCK": 21,
+        "elevels": [
+            2,
+            4,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            115,
+            85,
+            95
+        ],
+        "eres": [
+            100,
+            175,
+            25,
+            100
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 19,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Dark Blessing",
+            "Spinning Beat",
+            "Water Blessing",
+            "Poison Beat",
+            "Ply",
+            "Drench",
+            "Froth Sphere",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance",
+            "May inflict Sleep"
+        ],
+        "coins": 5200,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 711
+    },
+    {
+        "ID": 114,
+        "name": "Mystery Man",
+        "level": 10,
+        "HP": 3000,
+        "PP": 260,
+        "ATK": 63,
+        "DEF": 22,
+        "AGI": 9,
+        "LCK": 40,
+        "elevels": [
+            7,
+            5,
+            10,
+            7
+        ],
+        "epow": [
+            100,
+            90,
+            110,
+            100
+        ],
+        "eres": [
+            100,
+            72,
+            175,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 39,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fireball",
+            "Fireball",
+            "Eruption",
+            "Eruption",
+            "Heat Flash",
+            "Heat Flash",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 115,
+        "name": "Saturos (1)",
+        "level": 18,
+        "HP": 1200,
+        "PP": 160,
+        "ATK": 113,
+        "DEF": 35,
+        "AGI": 51,
+        "LCK": 40,
+        "elevels": [
+            7,
+            5,
+            10,
+            7
+        ],
+        "epow": [
+            100,
+            90,
+            110,
+            100
+        ],
+        "eres": [
+            100,
+            72,
+            175,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 39,
+        "IQ": 2,
+        "attack_pattern": 3,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Heat Flash",
+            "Fireball",
+            "Attack",
+            "Fireball",
+            "Heat Flash",
+            "Attack",
+            "Eruption",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 800,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 331
+    },
+    {
+        "ID": 116,
+        "name": "Saturos (2)",
+        "level": 38,
+        "HP": 3000,
+        "PP": 260,
+        "ATK": 409,
+        "DEF": 140,
+        "AGI": 160,
+        "LCK": 50,
+        "elevels": [
+            7,
+            5,
+            10,
+            7
+        ],
+        "epow": [
+            100,
+            90,
+            110,
+            100
+        ],
+        "eres": [
+            100,
+            72,
+            175,
+            127
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 39,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Heat Flash",
+            "Inferno",
+            "Break",
+            "Attack",
+            "Pyroclasm",
+            "Protect",
+            "Haunt",
+            "Potent Cure"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 3600,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 3000
+    },
+    {
+        "ID": 117,
+        "name": "Mystery Woman",
+        "level": 10,
+        "HP": 2600,
+        "PP": 300,
+        "ATK": 50,
+        "DEF": 20,
+        "AGI": 13,
+        "LCK": 40,
+        "elevels": [
+            8,
+            6,
+            11,
+            8
+        ],
+        "epow": [
+            100,
+            95,
+            105,
+            100
+        ],
+        "eres": [
+            127,
+            72,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 40,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flare Wall",
+            "Mad Blast",
+            "Nova",
+            "Nova",
+            "Death Size",
+            "Death Size",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 118,
+        "name": "Menardi",
+        "level": 38,
+        "HP": 2600,
+        "PP": 300,
+        "ATK": 389,
+        "DEF": 134,
+        "AGI": 220,
+        "LCK": 50,
+        "elevels": [
+            8,
+            6,
+            11,
+            8
+        ],
+        "epow": [
+            100,
+            95,
+            105,
+            100
+        ],
+        "eres": [
+            127,
+            72,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 40,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fiery Blast",
+            "Death Size",
+            "Impact",
+            "Flare Storm",
+            "Attack",
+            "Supernova",
+            "Resist",
+            "Wish"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 4200,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 3000
+    },
+    {
+        "ID": 119,
+        "name": "Lizard Man",
+        "level": 10,
+        "HP": 129,
+        "PP": 0,
+        "ATK": 106,
+        "DEF": 31,
+        "AGI": 30,
+        "LCK": 2,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            127,
+            72,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 33,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Water Blessing",
+            "Water Blessing",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense",
+            "May inflict Sleep"
+        ],
+        "coins": 52,
+        "item_drop": "Nut",
+        "item_chance_class": 6,
+        "exp": 42
+    },
+    {
+        "ID": 120,
+        "name": "Lizard Fighter",
+        "level": 17,
+        "HP": 212,
+        "PP": 0,
+        "ATK": 204,
+        "DEF": 61,
+        "AGI": 60,
+        "LCK": 2,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            127,
+            72,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 33,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Water Blessing",
+            "Water Blessing",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense",
+            "May inflict Sleep"
+        ],
+        "coins": 124,
+        "item_drop": "Nut",
+        "item_chance_class": 5,
+        "exp": 89
+    },
+    {
+        "ID": 121,
+        "name": "Lizard King",
+        "level": 28,
+        "HP": 2000,
+        "PP": 52,
+        "ATK": 285,
+        "DEF": 93,
+        "AGI": 92,
+        "LCK": 13,
+        "elevels": [
+            2,
+            3,
+            2,
+            2
+        ],
+        "epow": [
+            85,
+            100,
+            85,
+            85
+        ],
+        "eres": [
+            100,
+            127,
+            72,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 33,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Ice Blessing",
+            "Ice Blessing",
+            "Attack",
+            "Debilitate",
+            "High Impact",
+            "Hail Prism",
+            "Blunt",
+            "Bind"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense",
+            "May inflict Sleep"
+        ],
+        "coins": 1200,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 535
+    },
+    {
+        "ID": 122,
+        "name": "Living Statue",
+        "level": 17,
+        "HP": 540,
+        "PP": 34,
+        "ATK": 149,
+        "DEF": 44,
+        "AGI": 56,
+        "LCK": 20,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            100,
+            193,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 25,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Tundra",
+            "Tundra",
+            "Water Blessing",
+            "Water Blessing",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 900,
+        "item_drop": "Vial",
+        "item_chance_class": 1,
+        "exp": 377
+    },
+    {
+        "ID": 123,
+        "name": "Hydros Statue",
+        "level": 19,
+        "HP": 1300,
+        "PP": 80,
+        "ATK": 156,
+        "DEF": 53,
+        "AGI": 62,
+        "LCK": 30,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            100,
+            193,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 25,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Froth Sphere",
+            "Restore",
+            "Tundra",
+            "Water Blessing",
+            "Attack",
+            "Drench",
+            "Ice Horn",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 2400,
+        "item_drop": "Lucky Medal",
+        "item_chance_class": 1,
+        "exp": 496
+    },
+    {
+        "ID": 124,
+        "name": "Azart (1)",
+        "level": 25,
+        "HP": 450,
+        "PP": 0,
+        "ATK": 206,
+        "DEF": 20,
+        "AGI": 62,
+        "LCK": 9,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            90,
+            90,
+            90,
+            90
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 2,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 224,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 125,
+        "name": "Azart (2)",
+        "level": 25,
+        "HP": 450,
+        "PP": 0,
+        "ATK": 206,
+        "DEF": 2,
+        "AGI": 62,
+        "LCK": 9,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            90,
+            90,
+            90,
+            90
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 2,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 224,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 126,
+        "name": "Satrage (1)",
+        "level": 25,
+        "HP": 570,
+        "PP": 0,
+        "ATK": 228,
+        "DEF": 28,
+        "AGI": 73,
+        "LCK": 12,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            90,
+            90,
+            90,
+            90
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 2,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 224,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 127,
+        "name": "Satrage (2)",
+        "level": 25,
+        "HP": 570,
+        "PP": 0,
+        "ATK": 228,
+        "DEF": 6,
+        "AGI": 73,
+        "LCK": 12,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            90,
+            90,
+            90,
+            90
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 2,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 224,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 128,
+        "name": "Navampa (1)",
+        "level": 25,
+        "HP": 820,
+        "PP": 0,
+        "ATK": 274,
+        "DEF": 54,
+        "AGI": 84,
+        "LCK": 16,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            90,
+            90,
+            90,
+            90
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 2,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 224,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 129,
+        "name": "Navampa (2)",
+        "level": 25,
+        "HP": 820,
+        "PP": 0,
+        "ATK": 232,
+        "DEF": 54,
+        "AGI": 84,
+        "LCK": 16,
+        "elevels": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "epow": [
+            80,
+            80,
+            80,
+            80
+        ],
+        "eres": [
+            90,
+            90,
+            90,
+            90
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 2,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 224,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Defend",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 130,
+        "name": "Ant Lion",
+        "level": 16,
+        "HP": 400,
+        "PP": 32,
+        "ATK": 160,
+        "DEF": 45,
+        "AGI": 58,
+        "LCK": 19,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Sonic Wave",
+            "Sonic Wave",
+            "Earthquake",
+            "Earthquake",
+            "Flare Wall",
+            "Flare Wall",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 320,
+        "item_drop": "Vial",
+        "item_chance_class": 4,
+        "exp": 168
+    },
+    {
+        "ID": 131,
+        "name": "Roach",
+        "level": 22,
+        "HP": 211,
+        "PP": 27,
+        "ATK": 252,
+        "DEF": 72,
+        "AGI": 92,
+        "LCK": 4,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Sonic Wave",
+            "Sonic Wave",
+            "Quake Sphere",
+            "Quake Sphere",
+            "Flare Wall",
+            "Flare Wall",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 120,
+        "item_drop": "Bramble Seed",
+        "item_chance_class": 6,
+        "exp": 144
+    },
+    {
+        "ID": 132,
+        "name": "Doodle Bug",
+        "level": 0,
+        "HP": 18,
+        "PP": 0,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            2,
+            0,
+            4,
+            2
+        ],
+        "epow": [
+            95,
+            85,
+            115,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            175,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 20,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Defense",
+            "-12.5% Defense"
+        ],
+        "coins": 1,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 1
+    },
+    {
+        "ID": 133,
+        "name": "Toadonpa",
+        "level": 27,
+        "HP": 2800,
+        "PP": 0,
+        "ATK": 266,
+        "DEF": 52,
+        "AGI": 82,
+        "LCK": 18,
+        "elevels": [
+            2,
+            4,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            115,
+            85,
+            95
+        ],
+        "eres": [
+            100,
+            175,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 80,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 19,
+        "IQ": 0,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Dark Blessing",
+            "Dark Blessing",
+            "Thrash",
+            "Thrash",
+            "Rotten Blood",
+            "Sticky Poison",
+            "Rotten Blood",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 3200,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 999
+    },
+    {
+        "ID": 134,
+        "name": "Poison Toad",
+        "level": 34,
+        "HP": 2250,
+        "PP": 0,
+        "ATK": 363,
+        "DEF": 97,
+        "AGI": 93,
+        "LCK": 20,
+        "elevels": [
+            2,
+            4,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            115,
+            85,
+            95
+        ],
+        "eres": [
+            100,
+            175,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 19,
+        "IQ": 0,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Rabid Fang",
+            "Rabid Fang",
+            "Acid Blessing",
+            "Acid Blessing",
+            "Attack",
+            "Attack",
+            "Rotten Blood",
+            "Rotten Blood"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 2200,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 1732
+    },
+    {
+        "ID": 135,
+        "name": "?",
+        "level": 0,
+        "HP": 18,
+        "PP": 0,
+        "ATK": 22,
+        "DEF": 6,
+        "AGI": 9,
+        "LCK": 1,
+        "elevels": [
+            2,
+            4,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            115,
+            85,
+            95
+        ],
+        "eres": [
+            100,
+            175,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 19,
+        "IQ": 0,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "Inflict Delusion",
+            "May inflict Sleep"
+        ],
+        "coins": 1,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 1
+    },
+    {
+        "ID": 136,
+        "name": "Tornado Lizard",
+        "level": 25,
+        "HP": 530,
+        "PP": 37,
+        "ATK": 267,
+        "DEF": 74,
+        "AGI": 104,
+        "LCK": 18,
+        "elevels": [
+            0,
+            2,
+            2,
+            4
+        ],
+        "epow": [
+            90,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            48,
+            100,
+            100,
+            152
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 21,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Wing Flutter",
+            "Wind Slash",
+            "Attack",
+            "Storm Ray",
+            "Impact",
+            "Tornado",
+            "Ward",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 477,
+        "item_drop": "Weasel's Claw",
+        "item_chance_class": 4,
+        "exp": 620
+    },
+    {
+        "ID": 137,
+        "name": "Storm Lizard",
+        "level": 28,
+        "HP": 2900,
+        "PP": 42,
+        "ATK": 291,
+        "DEF": 86,
+        "AGI": 112,
+        "LCK": 22,
+        "elevels": [
+            0,
+            2,
+            2,
+            4
+        ],
+        "epow": [
+            90,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            48,
+            100,
+            100,
+            152
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 21,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Wing Stroke",
+            "Sonic Slash",
+            "Attack",
+            "Storm Ray",
+            "Impact",
+            "Tempest",
+            "Ward",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 6100,
+        "item_drop": "Psy Crystal",
+        "item_chance_class": 1,
+        "exp": 1300
+    },
+    {
+        "ID": 138,
+        "name": "Tempest Lizard",
+        "level": 28,
+        "HP": 3000,
+        "PP": 45,
+        "ATK": 295,
+        "DEF": 94,
+        "AGI": 114,
+        "LCK": 26,
+        "elevels": [
+            0,
+            2,
+            2,
+            4
+        ],
+        "epow": [
+            90,
+            95,
+            95,
+            110
+        ],
+        "eres": [
+            48,
+            100,
+            100,
+            152
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 21,
+        "IQ": 1,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Wing Stroke",
+            "Sonic Slash",
+            "Attack",
+            "Storm Ray",
+            "Impact",
+            "Tempest",
+            "Ward",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-25% Attack",
+            "-12.5% Attack"
+        ],
+        "coins": 6400,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 1360
+    },
+    {
+        "ID": 139,
+        "name": "Tret",
+        "level": 14,
+        "HP": 710,
+        "PP": 36,
+        "ATK": 89,
+        "DEF": 27,
+        "AGI": 30,
+        "LCK": 28,
+        "elevels": [
+            2,
+            1,
+            0,
+            0
+        ],
+        "epow": [
+            105,
+            100,
+            80,
+            70
+        ],
+        "eres": [
+            72,
+            175,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 8,
+        "IQ": 1,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Quake",
+            "Growth",
+            "Thorn",
+            "Thorn",
+            "Sleep Star",
+            "Sleep Star",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 700,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 226
+    },
+    {
+        "ID": 140,
+        "name": "Fusion Dragon",
+        "level": 39,
+        "HP": 5000,
+        "PP": 500,
+        "ATK": 439,
+        "DEF": 150,
+        "AGI": 190,
+        "LCK": 50,
+        "elevels": [
+            9,
+            7,
+            14,
+            9
+        ],
+        "epow": [
+            100,
+            95,
+            110,
+            100
+        ],
+        "eres": [
+            127,
+            72,
+            175,
+            127
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 41,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Outer Space",
+            "Attack",
+            "Evil Blessing",
+            "Dragon Driver",
+            "Break",
+            "Drain Fang",
+            "Deadly Gas",
+            "Severe Blow"
+        ],
+        "weaknesses": [],
+        "coins": 0,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 0
+    },
+    {
+        "ID": 141,
+        "name": "Deadbeard",
+        "level": 43,
+        "HP": 6000,
+        "PP": 600,
+        "ATK": 468,
+        "DEF": 178,
+        "AGI": 180,
+        "LCK": 60,
+        "elevels": [
+            4,
+            8,
+            6,
+            5
+        ],
+        "epow": [
+            100,
+            130,
+            120,
+            110
+        ],
+        "eres": [
+            72,
+            193,
+            127,
+            152
+        ],
+        "turns": 2,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 42,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Freeze Prism",
+            "Break",
+            "Impact",
+            "Ward",
+            "Inferno",
+            "Guard",
+            "Spark Plasma"
+        ],
+        "weaknesses": [],
+        "coins": 9000,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 8000
+    },
+    {
+        "ID": 142,
+        "name": "Mimic (1)",
+        "level": 13,
+        "HP": 468,
+        "PP": 24,
+        "ATK": 120,
+        "DEF": 33,
+        "AGI": 51,
+        "LCK": 8,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Debilitate",
+            "Debilitate",
+            "Sleep",
+            "Psy Drain",
+            "Psy Drain",
+            "Wind Slash"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 178,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 164
+    },
+    {
+        "ID": 143,
+        "name": "Mimic (2)",
+        "level": 14,
+        "HP": 506,
+        "PP": 26,
+        "ATK": 133,
+        "DEF": 36,
+        "AGI": 57,
+        "LCK": 10,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Debilitate",
+            "Debilitate",
+            "Sleep",
+            "Psy Drain",
+            "Psy Drain",
+            "Briar"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 207,
+        "item_drop": "Game Ticket",
+        "item_chance_class": 1,
+        "exp": 190
+    },
+    {
+        "ID": 144,
+        "name": "Mimic (3)",
+        "level": 16,
+        "HP": 579,
+        "PP": 32,
+        "ATK": 160,
+        "DEF": 44,
+        "AGI": 70,
+        "LCK": 12,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Debilitate",
+            "Debilitate",
+            "Sleep",
+            "Psy Drain",
+            "Psy Drain",
+            "Shine Plasma"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 267,
+        "item_drop": "Game Ticket",
+        "item_chance_class": 1,
+        "exp": 241
+    },
+    {
+        "ID": 145,
+        "name": "Mimic (4)",
+        "level": 19,
+        "HP": 690,
+        "PP": 42,
+        "ATK": 201,
+        "DEF": 56,
+        "AGI": 89,
+        "LCK": 13,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Debilitate",
+            "Debilitate",
+            "Sleep",
+            "Psy Drain",
+            "Psy Drain",
+            "Sonic Slash"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 356,
+        "item_drop": "Vial",
+        "item_chance_class": 1,
+        "exp": 321
+    },
+    {
+        "ID": 146,
+        "name": "Mimic (5)",
+        "level": 20,
+        "HP": 729,
+        "PP": 44,
+        "ATK": 214,
+        "DEF": 59,
+        "AGI": 97,
+        "LCK": 14,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Curse",
+            "Curse",
+            "Debilitate",
+            "Sleep",
+            "Psy Drain",
+            "Sonic Slash"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 386,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 347
+    },
+    {
+        "ID": 147,
+        "name": "Mimic (6)",
+        "level": 21,
+        "HP": 767,
+        "PP": 48,
+        "ATK": 227,
+        "DEF": 63,
+        "AGI": 104,
+        "LCK": 15,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Curse",
+            "Curse",
+            "Debilitate",
+            "Sleep",
+            "Psy Drain",
+            "Nettle"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 415,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 374
+    },
+    {
+        "ID": 148,
+        "name": "Mimic (7)",
+        "level": 26,
+        "HP": 997,
+        "PP": 60,
+        "ATK": 303,
+        "DEF": 94,
+        "AGI": 139,
+        "LCK": 17,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Curse",
+            "Debilitate",
+            "Condemn",
+            "Sleep",
+            "Psy Drain",
+            "Ice Missile"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 547,
+        "item_drop": "Water of Life",
+        "item_chance_class": 1,
+        "exp": 669
+    },
+    {
+        "ID": 149,
+        "name": "Mimic (8)",
+        "level": 30,
+        "HP": 1206,
+        "PP": 68,
+        "ATK": 367,
+        "DEF": 126,
+        "AGI": 167,
+        "LCK": 18,
+        "elevels": [
+            3,
+            3,
+            0,
+            4
+        ],
+        "epow": [
+            95,
+            100,
+            75,
+            105
+        ],
+        "eres": [
+            100,
+            127,
+            25,
+            152
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 38,
+        "IQ": 2,
+        "attack_pattern": 0,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Attack",
+            "Curse",
+            "Debilitate",
+            "Condemn",
+            "Sleep",
+            "Psy Drain",
+            "Spark Plasma"
+        ],
+        "weaknesses": [
+            "-40 Resistance",
+            "-20 Resistance"
+        ],
+        "coins": 643,
+        "item_drop": "Potion",
+        "item_chance_class": 1,
+        "exp": 1009
+    },
+    {
+        "ID": 150,
+        "name": "Venus Djinni (1)",
+        "level": 12,
+        "HP": 349,
+        "PP": 25,
+        "ATK": 127,
+        "DEF": 28,
+        "AGI": 76,
+        "LCK": 9,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Earthquake",
+            "Spire",
+            "Gaia",
+            "Mad Growth",
+            "Briar",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 201,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 172
+    },
+    {
+        "ID": 151,
+        "name": "Venus Djinni (2)",
+        "level": 15,
+        "HP": 421,
+        "PP": 30,
+        "ATK": 175,
+        "DEF": 45,
+        "AGI": 91,
+        "LCK": 10,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Gaia",
+            "Mad Growth",
+            "Quake Sphere",
+            "Briar",
+            "Clay Spire",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 277,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 230
+    },
+    {
+        "ID": 152,
+        "name": "Venus Djinni (3)",
+        "level": 23,
+        "HP": 623,
+        "PP": 51,
+        "ATK": 271,
+        "DEF": 71,
+        "AGI": 160,
+        "LCK": 18,
+        "elevels": [
+            6,
+            2,
+            2,
+            0
+        ],
+        "epow": [
+            120,
+            95,
+            95,
+            80
+        ],
+        "eres": [
+            193,
+            100,
+            100,
+            25
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 23,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Quake Sphere",
+            "Briar",
+            "Clay Spire",
+            "Mother Gaia",
+            "Wild Growth",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 464,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 534
+    },
+    {
+        "ID": 153,
+        "name": "Mercury Djinni (1)",
+        "level": 10,
+        "HP": 290,
+        "PP": 20,
+        "ATK": 107,
+        "DEF": 24,
+        "AGI": 58,
+        "LCK": 9,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            100,
+            193,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 25,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Attack",
+            "Prism",
+            "Tundra",
+            "Drench",
+            "Froth Sphere",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 151,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 130
+    },
+    {
+        "ID": 154,
+        "name": "Mercury Djinni (2)",
+        "level": 13,
+        "HP": 361,
+        "PP": 27,
+        "ATK": 140,
+        "DEF": 32,
+        "AGI": 84,
+        "LCK": 10,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            100,
+            193,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 25,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Tundra",
+            "Drench",
+            "Froth Sphere",
+            "Ice Horn",
+            "Hail Prism",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 226,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 190
+    },
+    {
+        "ID": 155,
+        "name": "Mercury Djinni (3)",
+        "level": 18,
+        "HP": 466,
+        "PP": 46,
+        "ATK": 207,
+        "DEF": 48,
+        "AGI": 116,
+        "LCK": 16,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            100,
+            193,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 25,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Tundra",
+            "Drench",
+            "Froth Sphere",
+            "Ice Horn",
+            "Hail Prism",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 340,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 279
+    },
+    {
+        "ID": 156,
+        "name": "Mercury Djinni (4)",
+        "level": 24,
+        "HP": 654,
+        "PP": 59,
+        "ATK": 281,
+        "DEF": 77,
+        "AGI": 172,
+        "LCK": 19,
+        "elevels": [
+            2,
+            6,
+            0,
+            2
+        ],
+        "epow": [
+            95,
+            125,
+            75,
+            95
+        ],
+        "eres": [
+            100,
+            193,
+            25,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 25,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Froth Sphere",
+            "Ice Horn",
+            "Hail Prism",
+            "Glacier",
+            "Deluge",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 484,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 606
+    },
+    {
+        "ID": 157,
+        "name": "Mars Djinni (1)",
+        "level": 5,
+        "HP": 172,
+        "PP": 14,
+        "ATK": 45,
+        "DEF": 9,
+        "AGI": 22,
+        "LCK": 6,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            193,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 27,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flare",
+            "Blast",
+            "Flare",
+            "Flare",
+            "Blast",
+            "Attack",
+            "Attack",
+            "Flee"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 85,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 28
+    },
+    {
+        "ID": 158,
+        "name": "Mars Djinni (2)",
+        "level": 13,
+        "HP": 355,
+        "PP": 24,
+        "ATK": 144,
+        "DEF": 41,
+        "AGI": 76,
+        "LCK": 8,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            193,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 27,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Flare Wall",
+            "Volcano",
+            "Mad Blast",
+            "Fireball",
+            "Nova",
+            "Attack",
+            "Attack",
+            "Flee"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 210,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 173
+    },
+    {
+        "ID": 159,
+        "name": "Mars Djinni (3)",
+        "level": 22,
+        "HP": 592,
+        "PP": 52,
+        "ATK": 253,
+        "DEF": 65,
+        "AGI": 151,
+        "LCK": 17,
+        "elevels": [
+            2,
+            0,
+            6,
+            2
+        ],
+        "epow": [
+            95,
+            75,
+            125,
+            95
+        ],
+        "eres": [
+            100,
+            25,
+            193,
+            100
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 27,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Fireball",
+            "Nova",
+            "Flare Storm",
+            "Eruption",
+            "Fiery Blast",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 445,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 460
+    },
+    {
+        "ID": 160,
+        "name": "Jupiter Djinni (1)",
+        "level": 8,
+        "HP": 243,
+        "PP": 22,
+        "ATK": 79,
+        "DEF": 20,
+        "AGI": 42,
+        "LCK": 7,
+        "elevels": [
+            0,
+            2,
+            2,
+            6
+        ],
+        "epow": [
+            80,
+            95,
+            95,
+            120
+        ],
+        "eres": [
+            25,
+            100,
+            100,
+            193
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 29,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Whirlwind",
+            "Ray",
+            "Flash Bolt",
+            "Plasma",
+            "Wind Slash",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 100,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 88
+    },
+    {
+        "ID": 161,
+        "name": "Jupiter Djinni (2)",
+        "level": 11,
+        "HP": 314,
+        "PP": 25,
+        "ATK": 115,
+        "DEF": 26,
+        "AGI": 68,
+        "LCK": 9,
+        "elevels": [
+            0,
+            2,
+            2,
+            6
+        ],
+        "epow": [
+            80,
+            95,
+            95,
+            120
+        ],
+        "eres": [
+            25,
+            100,
+            100,
+            193
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 29,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Whirlwind",
+            "Flash Bolt",
+            "Plasma",
+            "Wind Slash",
+            "Storm Ray",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 176,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 150
+    },
+    {
+        "ID": 162,
+        "name": "Jupiter Djinni (3)",
+        "level": 18,
+        "HP": 481,
+        "PP": 40,
+        "ATK": 205,
+        "DEF": 45,
+        "AGI": 120,
+        "LCK": 14,
+        "elevels": [
+            0,
+            2,
+            2,
+            6
+        ],
+        "epow": [
+            80,
+            95,
+            95,
+            120
+        ],
+        "eres": [
+            25,
+            100,
+            100,
+            193
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 29,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Plasma",
+            "Wind Slash",
+            "Storm Ray",
+            "Tornado",
+            "Blue Bolt",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 352,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 295
+    },
+    {
+        "ID": 163,
+        "name": "Jupiter Djinni (4)",
+        "level": 25,
+        "HP": 688,
+        "PP": 62,
+        "ATK": 302,
+        "DEF": 85,
+        "AGI": 177,
+        "LCK": 21,
+        "elevels": [
+            0,
+            2,
+            2,
+            6
+        ],
+        "epow": [
+            80,
+            95,
+            95,
+            120
+        ],
+        "eres": [
+            25,
+            100,
+            100,
+            193
+        ],
+        "turns": 1,
+        "HP_regen": 0,
+        "PP_regen": 0,
+        "inventory": {},
+        "elemental_stats_id": 29,
+        "IQ": 2,
+        "attack_pattern": 1,
+        "item_priority_flags": 0,
+        "abilities": [
+            "Wind Slash",
+            "Tornado",
+            "Blue Bolt",
+            "Shine Plasma",
+            "Destruct Ray",
+            "Flee",
+            "Attack",
+            "Attack"
+        ],
+        "weaknesses": [
+            "User may take PP from target",
+            "User may recover 10% of damage to PP"
+        ],
+        "coins": 506,
+        "item_drop": "???",
+        "item_chance_class": 0,
+        "exp": 677
+    }
+]

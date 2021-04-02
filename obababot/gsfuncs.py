@@ -292,10 +292,10 @@ ability_effects = get_ability_effects()
 
 class PlayerData:
 
-    def __init__(self, data=bytearray(0x14C)):
-        self.extract(data)
+    def __init__(self, data=bytearray(0x14C), game=""):
+        self.extract(data, f"GS{game}")
 
-    def extract(self, data):
+    def extract(self, data, game):
         read = lambda addr, size: int.from_bytes(data[addr:addr+size], "little")
         readsigned = lambda addr, size: (read(addr, size) ^ 2**(8*size)) - 2**(8*size)
         string = lambda addr, size: data[addr:addr+size].replace(b"\x00",b"").decode()
@@ -368,7 +368,7 @@ class PlayerData:
         self.ID = read(0x14A,2) or read(0x128,1)
         element = [0,2,3,1,0,2,3,1][self.ID]
         self.element = Text["elements"][element]
-        self.abilities = {Text["abilities"][i & 0x3FF]: i for i in self.abilities if i & 0x3FF}
+        self.abilities = {Text[game]["abilities"][i & 0x3FF]: i for i in self.abilities if i & 0x3FF}
         for k, v in self.abilities.items():
             metadata = []
             if v & 1<<15: metadata.append("class")
@@ -385,8 +385,8 @@ class PlayerData:
         self.weaknesses = DataTables.get("classdata", self.class_)["weaknesses"].copy()
         self.djinn = sum((d<<20*i for i,d in enumerate(self.djinn)))
         self.set_djinn = sum((d<<20*i for i,d in enumerate(self.set_djinn)))
-        self.djinn = [Text["djinn"][i] for i in range(80) if self.djinn & 2**i]
-        self.set_djinn = [Text["djinn"][i] for i in range(80) if self.set_djinn & 2**i]
+        self.djinn = [Text[game]["djinn"][i] for i in range(80) if self.djinn & 2**i]
+        self.set_djinn = [Text[game]["djinn"][i] for i in range(80) if self.set_djinn & 2**i]
         self.elevels = self.set_djinncounts.copy()
         self.elevels[element] += 5
 
@@ -639,7 +639,7 @@ def readsav(data):
             "map_number": read(0x400+offset, 2),
             "door_number": read(0x402+offset, 2),
             "party_positions": positions,
-            "party": [PlayerData(data[base:base+0x14C]) for base in addresses],
+            "party": [PlayerData(data[base:base+0x14C], GAME) for base in addresses],
         }
         summons = [s["name"] for s in DataTables["summondata"]]
         summons[24:26] = ["Daedalus"]

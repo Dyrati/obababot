@@ -1,0 +1,402 @@
+[
+    {
+        "ID": 0,
+        "ability": 380,
+        "djinn_cost": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.03,
+        "name": "Venus",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Venus",
+        "effect": "Nothing",
+        "icon": 140,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 30,
+        "description": "The elemental power of earth."
+    },
+    {
+        "ID": 1,
+        "ability": 386,
+        "djinn_cost": [
+            0,
+            1,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.03,
+        "name": "Mercury",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mercury",
+        "effect": "Nothing",
+        "icon": 144,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 30,
+        "description": "The elemental power of water."
+    },
+    {
+        "ID": 2,
+        "ability": 392,
+        "djinn_cost": [
+            0,
+            0,
+            1,
+            0
+        ],
+        "hp_multiplier": 0.03,
+        "name": "Mars",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mars",
+        "effect": "Nothing",
+        "icon": 148,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 30,
+        "description": "The elemental power of fire."
+    },
+    {
+        "ID": 3,
+        "ability": 398,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            1
+        ],
+        "hp_multiplier": 0.03,
+        "name": "Jupiter",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Jupiter",
+        "effect": "Nothing",
+        "icon": 152,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 30,
+        "description": "The elemental power of wind."
+    },
+    {
+        "ID": 4,
+        "ability": 381,
+        "djinn_cost": [
+            2,
+            0,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.06,
+        "name": "Ramses",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Venus",
+        "effect": "Nothing",
+        "icon": 141,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 60,
+        "description": "Guardian of an immortal pharaoh."
+    },
+    {
+        "ID": 5,
+        "ability": 387,
+        "djinn_cost": [
+            0,
+            2,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.06,
+        "name": "Nereid",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mercury",
+        "effect": "Nothing",
+        "icon": 145,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 60,
+        "description": "Princess of the sea spirits."
+    },
+    {
+        "ID": 6,
+        "ability": 393,
+        "djinn_cost": [
+            0,
+            0,
+            2,
+            0
+        ],
+        "hp_multiplier": 0.06,
+        "name": "Kirin",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mars",
+        "effect": "Nothing",
+        "icon": 149,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 60,
+        "description": "A mystical beast cloaked in flame."
+    },
+    {
+        "ID": 7,
+        "ability": 399,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            2
+        ],
+        "hp_multiplier": 0.06,
+        "name": "Atalanta",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Jupiter",
+        "effect": "Nothing",
+        "icon": 153,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 60,
+        "description": "The heavenly huntress."
+    },
+    {
+        "ID": 8,
+        "ability": 382,
+        "djinn_cost": [
+            3,
+            0,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.09,
+        "name": "Cybele",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Venus",
+        "effect": "Nothing",
+        "icon": 142,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 120,
+        "description": "The great mother of the earth."
+    },
+    {
+        "ID": 9,
+        "ability": 388,
+        "djinn_cost": [
+            0,
+            3,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.09,
+        "name": "Neptune",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mercury",
+        "effect": "Nothing",
+        "icon": 146,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 120,
+        "description": "An incarnation of the sea king."
+    },
+    {
+        "ID": 10,
+        "ability": 394,
+        "djinn_cost": [
+            0,
+            0,
+            3,
+            0
+        ],
+        "hp_multiplier": 0.09,
+        "name": "Tiamat",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mars",
+        "effect": "Nothing",
+        "icon": 150,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 120,
+        "description": "The queen of all dragons."
+    },
+    {
+        "ID": 11,
+        "ability": 400,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            3
+        ],
+        "hp_multiplier": 0.09,
+        "name": "Procne",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Jupiter",
+        "effect": "Nothing",
+        "icon": 154,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 120,
+        "description": "A goddess in bird form."
+    },
+    {
+        "ID": 12,
+        "ability": 383,
+        "djinn_cost": [
+            4,
+            0,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.12,
+        "name": "Judgment",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Venus",
+        "effect": "Nothing",
+        "icon": 143,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 240,
+        "description": "The might of the apocalypse."
+    },
+    {
+        "ID": 13,
+        "ability": 389,
+        "djinn_cost": [
+            0,
+            4,
+            0,
+            0
+        ],
+        "hp_multiplier": 0.12,
+        "name": "Boreas",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mercury",
+        "effect": "Nothing",
+        "icon": 147,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 240,
+        "description": "The god of the north wind."
+    },
+    {
+        "ID": 14,
+        "ability": 395,
+        "djinn_cost": [
+            0,
+            0,
+            4,
+            0
+        ],
+        "hp_multiplier": 0.12,
+        "name": "Meteor",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Mars",
+        "effect": "Nothing",
+        "icon": 151,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 240,
+        "description": "A meteorite from deep space."
+    },
+    {
+        "ID": 15,
+        "ability": 401,
+        "djinn_cost": [
+            0,
+            0,
+            0,
+            4
+        ],
+        "hp_multiplier": 0.12,
+        "name": "Thor",
+        "target": "Enemies",
+        "flags": [
+            "usable in battle"
+        ],
+        "damage_type": "Summon",
+        "element": "Jupiter",
+        "effect": "Nothing",
+        "icon": 155,
+        "utility": 0,
+        "range": 6,
+        "PP_cost": 0,
+        "power": 240,
+        "description": "The mighty god of thunder."
+    }
+]

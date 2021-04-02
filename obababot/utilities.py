@@ -86,27 +86,35 @@ def load_text():
     text = {}
     text["pcnames"] = ["Isaac", "Garet", "Ivan", "Mia", "Felix", "Jenna", "Sheba", "Piers"]
     text["elements"] = ["Venus", "Mercury", "Mars", "Jupiter", "Neutral"]
+    text["GS1"] = {}
+    text["GS2"] = {}
     mtoken = re.compile(r"{\d*}")
     dirname = os.path.dirname(__file__)
     path = lambda f: os.path.join(dirname, f)
     with open(path("text/GS1text.txt")) as f:
         lines = f.read().splitlines()
+        text["GS1"]["item_descriptions"] = lines[117:386]
         lines = list(map(lambda x: mtoken.sub("", x), lines))
-        text["enemynames1"] = lines[655:819]
-        text["areas1"] = lines[2459:2567]
-        text["maps1"] = lines[2567:2768]
+        text["GS1"]["items"] = lines[386:655]
+        text["GS1"]["abilities"] = lines[819:1338]
+        text["GS1"]["move_descriptions"] = lines[1338:1857]
+        text["GS1"]["classes"] = lines[1857:2060]
+        text["GS1"]["enemynames"] = lines[655:819]
+        text["GS1"]["areas"] = lines[2459:2567]
+        text["GS1"]["maps"] = lines[2567:2768]
+        text["GS1"]["djinn"] = lines[1119:1199]
     with open(path("text/GS2text.txt")) as f:
         lines = f.read().splitlines()
-        text["item_descriptions"] = lines[146:607]
+        text["GS2"]["item_descriptions"] = lines[146:607]
         lines = list(map(lambda x: mtoken.sub("", x), lines))
-        text["items"] = lines[607:1068]
-        text["enemynames2"] = lines[1068:1447]
-        text["abilities"] = lines[1447:2181]
-        text["move_descriptions"] = lines[2181:2915]
-        text["classes"] = lines[2915:3159]
-        text["areas2"] = lines[3672:3770]
-        text["maps2"] = lines[3770:4095]
-        text["djinn"] = lines[1747:1827]
+        text["GS2"]["items"] = lines[607:1068]
+        text["GS2"]["enemynames"] = lines[1068:1447]
+        text["GS2"]["abilities"] = lines[1447:2181]
+        text["GS2"]["move_descriptions"] = lines[2181:2915]
+        text["GS2"]["classes"] = lines[2915:3159]
+        text["GS2"]["areas"] = lines[3672:3770]
+        text["GS2"]["maps"] = lines[3770:4095]
+        text["GS2"]["djinn"] = lines[1747:1827]
     text.update(**textparser(path("text/customtext.txt")))
     return text
 
@@ -164,20 +172,23 @@ def load_data():
     print("Loading database...", end="\r")
     DataTables.clear(); Text.clear(), Emojis.clear(), Images.clear()
     for name in [
-            "djinndata", "summondata", "enemydata", "itemdata", "abilitydata", "pcdata",
-            "classdata", "elementdata", "encounterdata2", "encounterdata1", "mapdata1",
-            "mapdata2", "room_references1", "room_references2", "enemygroupdata2",
-            "enemygroupdata1"]:
-        with open(os.path.join(dirname, rf"data/{name}.json")) as f:
-            DataTables.new_table(name, json.load(f))
-            if name == "enemydata":
-                hard_enemies = deepcopy(DataTables["enemydata"])
-                for entry in hard_enemies:
-                    entry["HP"] = min(0x3FFF, int(1.5*entry["HP"]))
-                    entry["ATK"] = int(1.25*entry["ATK"])
-                    entry["DEF"] = int(1.25*entry["DEF"])
-                DataTables.new_table("enemydata-h", hard_enemies)
-    for k,v in load_text().items(): Text.new_table(k,v)
+        "djinndata", "enemydata", "itemdata", "abilitydata", "pcdata",
+        "summondata", "classdata", "elementdata", "encounterdata",
+        "mapdata", "room_references", "enemygroupdata"]:
+        for i in [2,1]:
+            with open(os.path.join(dirname, rf"data/GS{i}/{name}.json")) as f:
+                DataTables.new_table(f"{name}{i}", json.load(f))
+                if name == "enemydata":
+                    hard_enemies = deepcopy(DataTables[f"enemydata{i}"])
+                    for entry in hard_enemies:
+                        entry["HP"] = min(0x3FFF, int(1.5*entry["HP"]))
+                        entry["ATK"] = int(1.25*entry["ATK"])
+                        entry["DEF"] = int(1.25*entry["DEF"])
+                    DataTables.new_table(f"enemydata{i}-h", hard_enemies)
+    text_data = load_text()
+    for k,v in text_data.items(): Text.new_table(k,v)
+    for k,v in text_data["GS1"].items(): Text.new_table(k+"1",v)
+    for k,v in text_data["GS2"].items(): Text.new_table(k+"2",v)
     match_emoji = re.compile(r"<.*?:(.*?):(.*?)>")
     for emoji in client.emojis:
         m = match_emoji.match(str(emoji))

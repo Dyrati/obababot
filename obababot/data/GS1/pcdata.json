@@ -1,0 +1,522 @@
+[
+    {
+        "ID": 0,
+        "name": "Isaac",
+        "element": "Venus",
+        "HP_growths": [
+            30,
+            182,
+            334,
+            486,
+            638,
+            790
+        ],
+        "PP_growths": [
+            20,
+            80,
+            130,
+            170,
+            210,
+            250
+        ],
+        "ATK_growths": [
+            13,
+            86,
+            162,
+            237,
+            313,
+            388
+        ],
+        "DEF_growths": [
+            6,
+            38,
+            69,
+            102,
+            134,
+            166
+        ],
+        "AGI_growths": [
+            8,
+            86,
+            163,
+            241,
+            318,
+            396
+        ],
+        "LCK_growths": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "elevels": [
+            5.4,
+            0.3,
+            0.1,
+            0.2
+        ],
+        "starting_level": 1,
+        "starting_items": [
+            "Machete",
+            "Cotton Shirt",
+            "Padded Gloves",
+            "Herb",
+            "Herb",
+            "Herb"
+        ]
+    },
+    {
+        "ID": 1,
+        "name": "Garet",
+        "element": "Mars",
+        "HP_growths": [
+            33,
+            191,
+            351,
+            510,
+            670,
+            830
+        ],
+        "PP_growths": [
+            18,
+            76,
+            124,
+            162,
+            200,
+            238
+        ],
+        "ATK_growths": [
+            11,
+            83,
+            156,
+            228,
+            301,
+            373
+        ],
+        "DEF_growths": [
+            8,
+            41,
+            75,
+            110,
+            144,
+            179
+        ],
+        "AGI_growths": [
+            6,
+            76,
+            144,
+            212,
+            281,
+            349
+        ],
+        "LCK_growths": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "elevels": [
+            0.1,
+            0.2,
+            5.4,
+            0.3
+        ],
+        "starting_level": 1,
+        "starting_items": [
+            "Machete",
+            "Cotton Shirt",
+            "Padded Gloves",
+            "Herb",
+            "Herb"
+        ]
+    },
+    {
+        "ID": 2,
+        "name": "Ivan",
+        "element": "Jupiter",
+        "HP_growths": [
+            28,
+            166,
+            304,
+            442,
+            581,
+            719
+        ],
+        "PP_growths": [
+            24,
+            92,
+            150,
+            196,
+            242,
+            288
+        ],
+        "ATK_growths": [
+            8,
+            76,
+            144,
+            211,
+            277,
+            344
+        ],
+        "DEF_growths": [
+            4,
+            35,
+            65,
+            95,
+            124,
+            155
+        ],
+        "AGI_growths": [
+            11,
+            91,
+            173,
+            255,
+            337,
+            419
+        ],
+        "LCK_growths": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "elevels": [
+            0.2,
+            0.1,
+            0.3,
+            5.4
+        ],
+        "starting_level": 4,
+        "starting_items": [
+            "Wooden Stick",
+            "Travel Vest",
+            "Leather Armlet",
+            "Circlet",
+            "Herb"
+        ]
+    },
+    {
+        "ID": 3,
+        "name": "Mia",
+        "element": "Mercury",
+        "HP_growths": [
+            29,
+            173,
+            317,
+            462,
+            606,
+            751
+        ],
+        "PP_growths": [
+            23,
+            90,
+            146,
+            190,
+            235,
+            280
+        ],
+        "ATK_growths": [
+            9,
+            79,
+            150,
+            220,
+            289,
+            359
+        ],
+        "DEF_growths": [
+            5,
+            37,
+            68,
+            100,
+            131,
+            163
+        ],
+        "AGI_growths": [
+            7,
+            80,
+            152,
+            224,
+            296,
+            369
+        ],
+        "LCK_growths": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "elevels": [
+            0.3,
+            5.4,
+            0.2,
+            0.1
+        ],
+        "starting_level": 10,
+        "starting_items": [
+            "Witch's Wand",
+            "Travel Robe",
+            "Leather Gloves",
+            "Wooden Cap",
+            "Herb",
+            "Antidote",
+            "Elixir"
+        ]
+    },
+    {
+        "ID": 4,
+        "name": "Felix",
+        "element": "Venus",
+        "HP_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "PP_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "ATK_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "DEF_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "AGI_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "LCK_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "elevels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "starting_level": 0,
+        "starting_items": []
+    },
+    {
+        "ID": 5,
+        "name": "Jenna",
+        "element": "Mars",
+        "HP_growths": [
+            29,
+            182,
+            334,
+            486,
+            638,
+            790
+        ],
+        "PP_growths": [
+            19,
+            80,
+            130,
+            170,
+            210,
+            250
+        ],
+        "ATK_growths": [
+            10,
+            81,
+            153,
+            224,
+            295,
+            366
+        ],
+        "DEF_growths": [
+            7,
+            37,
+            68,
+            100,
+            131,
+            163
+        ],
+        "AGI_growths": [
+            9,
+            84,
+            160,
+            236,
+            312,
+            388
+        ],
+        "LCK_growths": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "elevels": [
+            0.1,
+            0.2,
+            5.4,
+            0.3
+        ],
+        "starting_level": 1,
+        "starting_items": [
+            "Wooden Stick",
+            "One-Piece Dress",
+            "Padded Gloves",
+            "Herb"
+        ]
+    },
+    {
+        "ID": 6,
+        "name": "Sheba",
+        "element": "Jupiter",
+        "HP_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "PP_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "ATK_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "DEF_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "AGI_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "LCK_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "elevels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "starting_level": 0,
+        "starting_items": []
+    },
+    {
+        "ID": 7,
+        "name": "Piers",
+        "element": "Mercury",
+        "HP_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "PP_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "ATK_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "DEF_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "AGI_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "LCK_growths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "elevels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "starting_level": 0,
+        "starting_items": []
+    }
+]
