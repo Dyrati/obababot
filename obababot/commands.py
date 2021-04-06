@@ -21,7 +21,7 @@ async def help(message, *args, **kwargs):
         docs = {k:v.split("\n",1)[0] for k,v in docs.items() if v and k.startswith(prefix)}
         out = dictstr(docs)
         out += "\n\n" + inspect.cleandoc(f"""
-        Type "{prefix}help funcname" for detailed information about funcname
+        Type "{prefix}help" followed by a command name for detailed info about the command
         
         Function arguments are words separated by spaces
             ex. {prefix}sort enemydata HP
