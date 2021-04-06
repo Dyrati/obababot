@@ -8,6 +8,7 @@ from .utilities import \
     reply, dictstr, mfuncs
 from . import gsfuncs
 from .safe_eval import safe_eval
+from . import thumbasm
 
 
 ### Register functions below ###
@@ -367,3 +368,17 @@ async def delete(message, *args, **kwargs):
     except IndexError: return
     for message in responses:
         await message.delete()
+
+
+@command
+async def asm(message, *args, **kwargs):
+    addr = int(kwargs.get("addr", "0"), 16)
+    output = thumbasm.asm(args[0].strip('"'), addr=addr)
+    f = "04X" if output < 0x10000 else "08X"
+    await reply(message, f"{output:{f}}")
+
+@command
+async def dasm(message, *args, **kwargs):
+    addr = int(kwargs.get("addr", "0"), 16)
+    args = [int(x,16) for x in args]
+    await reply(message, thumbasm.disasm(*args, addr=addr))
