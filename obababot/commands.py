@@ -261,7 +261,7 @@ async def getclass(message, *args, **kwargs):
 
 @command
 async def damage(message, *args, **kwargs):
-    """Damage Calculator
+    """Calculate damage
 
     Arguments:
         ability -- the name of the attack
@@ -372,13 +372,30 @@ async def delete(message, *args, **kwargs):
 
 @command
 async def asm(message, *args, **kwargs):
+    """Translate assembly instructions to hex code
+    
+    Arguments:
+        instr -- the assembly instruction to convert
+    
+    Keyword Arguments:
+        addr -- the address from which the instruction is executed
+    """
     addr = int(kwargs.get("addr", "0"), 16)
-    output = thumbasm.asm(args[0].strip('"'), addr=addr)
+    output = thumbasm.asm(" ".join(args).strip('"'), addr=addr)
     f = "04X" if output < 0x10000 else "08X"
     await reply(message, f"{output:{f}}")
 
 @command
 async def dasm(message, *args, **kwargs):
+    """Translate hex values to assembly instructions
+    
+    Arguments:
+        value  -- the hex code to convert
+        value2 -- (optional) the second half of a bl instruction
+    
+    Keyword Arguments:
+        addr -- the address of the hex code
+    """
     addr = int(kwargs.get("addr", "0"), 16)
     args = [int(x,16) for x in args]
     await reply(message, thumbasm.disasm(*args, addr=addr))
