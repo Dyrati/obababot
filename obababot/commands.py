@@ -305,8 +305,8 @@ async def textbox(message, *args, **kwargs):
     text = message.content[len(f"{prefix}textbox"):]
     padding = re.search(r"\s*padding *= *\"(.*?)\" *", text)
     if padding: text = text.replace(padding.group(), "", 1)
-    im = textbox(re.sub(r"^ *\n", "", text))
-    if padding: im = add_padding(im, [int(x) for x in padding.group(1).split(" ")])
+    im = textbox(re.sub(r"^ *\n?", "", text))
+    if padding: im = add_padding(im, [min(4096,int(x)) for x in padding.group(1).split(" ")])
     await message.channel.send(file=discord.File(to_buffer(im), "text.png"))
 
 
