@@ -298,9 +298,12 @@ async def damage(message, *args, **kwargs):
 async def textbox(message, *args, **kwargs):
     """Generate a Golden sun Text Box"""
 
-    from .textboxes import textbox, to_buffer
+    from .textboxes import textbox, to_buffer, add_padding
     text = message.content[len(f"{prefix}textbox "):]
+    padding = re.search(r"\s*padding\s*=\s*\"(.*?)\"", text)
+    if padding: text = text.replace(padding.group(), "", 1)
     im = textbox(text)
+    if padding: im = add_padding(im, [int(x) for x in padding.group(1).split(" ")])
     await message.channel.send(file=discord.File(to_buffer(im), "text.png"))
 
 
@@ -387,7 +390,7 @@ async def asm(message, *args, **kwargs):
 
 @command
 async def dasm(message, *args, **kwargs):
-    """Translate hex values to assembly instructions
+    """Translate hex code to assembly instructions
     
     Arguments:
         value  -- the hex code to convert
