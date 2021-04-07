@@ -33,7 +33,8 @@ def is_command(message):
     for alias in aliases:
         if message.content.startswith(alias): return True
     else:
-        if re.match("\S+", message.content).group() in usercommands: return True
+        com = re.match("\S+", message.content)
+        if com and com.group() in usercommands: return True
     return False
 
 

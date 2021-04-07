@@ -296,13 +296,16 @@ async def damage(message, *args, **kwargs):
 
 @command
 async def textbox(message, *args, **kwargs):
-    """Generate a Golden sun Text Box"""
-
+    """Generate a Golden sun Text Box
+    
+    Keyword Arguments:
+        padding -- "top right bottom left"
+    """
     from .textboxes import textbox, to_buffer, add_padding
-    text = message.content[len(f"{prefix}textbox "):]
-    padding = re.search(r"\s*padding\s*=\s*\"(.*?)\"", text)
+    text = message.content[len(f"{prefix}textbox"):]
+    padding = re.search(r"\s*padding *= *\"(.*?)\" *", text)
     if padding: text = text.replace(padding.group(), "", 1)
-    im = textbox(text)
+    im = textbox(re.sub(r"^ *\n", "", text))
     if padding: im = add_padding(im, [int(x) for x in padding.group(1).split(" ")])
     await message.channel.send(file=discord.File(to_buffer(im), "text.png"))
 
