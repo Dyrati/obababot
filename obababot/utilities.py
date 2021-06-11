@@ -186,6 +186,7 @@ def load_data():
                         entry["ATK"] = int(1.25*entry["ATK"])
                         entry["DEF"] = int(1.25*entry["DEF"])
                     DataTables.new_table(f"enemydata{i}-h", hard_enemies)
+        DataTables.new_table(name, DataTables[f"{name}2"])
     text_data = load_text()
     for k,v in text_data.items(): Text.new_table(k,v)
     for k,v in text_data["GS1"].items(): Text.new_table(k+"1",v)
