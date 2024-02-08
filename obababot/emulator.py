@@ -112,7 +112,10 @@ def terminal(on_ready=None, on_message=None, on_react=None):
         nonlocal user
         while True:
             try: text = input("> ")
-            except KeyboardInterrupt: return
+            except KeyboardInterrupt:
+                return
+            except EOFError:
+                return
             try:
                 args, kwargs = parse(text)
                 if text in ("quit", "exit"): return
