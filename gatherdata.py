@@ -385,8 +385,7 @@ for group in enemygroupdata:
 
 # Enounter Data
 for encounter in encounterdata:
-    encounter["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in encounter["enemygroups"] if e}
-    encounter["group_ratios"] = [g for g in encounter["group_ratios"] if g]
+    encounter["enemies"] = combined_lists(*(enemygroupdata[e]["enemies"] for e in encounter["enemygroups"]))
 
 # Map Names
 for encounter in map_encounters:
@@ -408,8 +407,6 @@ for map_ in mapdata:
     map_["encounters"] = list(sorted(map_["encounters"]))
     map_["enemygroups"] = combined_lists(*(encounterdata[e]["enemygroups"] for e in map_["encounters"]))
     map_["enemies"] = combined_lists(*(enemygroupdata[e]["enemies"] for e in map_["enemygroups"]))
-    map_["encounters"] = {e:list(encounterdata[e]["enemygroups"]) for e in map_["encounters"]}
-    map_["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in map_["enemygroups"]}
 
 
 for name in [
@@ -782,8 +779,7 @@ for group in enemygroupdata:
 
 # Enounter Data
 for encounter in encounterdata:
-    encounter["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in encounter["enemygroups"] if e}
-    encounter["group_ratios"] = [g for g in encounter["group_ratios"] if g]
+    encounter["enemies"] = combined_lists(*(enemygroupdata[e]["enemies"] for e in encounter["enemygroups"]))
 
 # Map Names
 for encounter in map_encounters:
@@ -805,8 +801,6 @@ for map_ in mapdata:
     map_["encounters"] = list(sorted(map_["encounters"]))
     map_["enemygroups"] = combined_lists(*(encounterdata[e]["enemygroups"] for e in map_["encounters"]))
     map_["enemies"] = combined_lists(*(enemygroupdata[e]["enemies"] for e in map_["enemygroups"]))
-    map_["encounters"] = {e:list(encounterdata[e]["enemygroups"]) for e in map_["encounters"]}
-    map_["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in map_["enemygroups"]}
 
 
 for name in [

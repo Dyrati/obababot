@@ -3,215 +3,228 @@
         "ID": 0,
         "rate": 0,
         "level": 0,
-        "enemygroups": {},
-        "group_ratios": []
+        "enemygroups": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "group_ratios": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": []
     },
     {
         "ID": 1,
         "rate": 37,
         "level": 1,
-        "enemygroups": {
-            "7": [
-                "Vermin"
-            ],
-            "8": [
-                "Bat"
-            ],
-            "9": [
-                "Wild Mushroom"
-            ],
-            "10": [
-                "Vermin",
-                "Wild Mushroom",
-                "Bat"
-            ]
-        },
+        "enemygroups": [
+            7,
+            8,
+            9,
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             4,
             8,
             8,
-            4
+            4,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
         "ID": 2,
         "rate": 35,
         "level": 1,
-        "enemygroups": {
-            "7": [
-                "Vermin"
-            ],
-            "8": [
-                "Bat"
-            ],
-            "9": [
-                "Wild Mushroom"
-            ],
-            "10": [
-                "Vermin",
-                "Wild Mushroom",
-                "Bat"
-            ]
-        },
+        "enemygroups": [
+            7,
+            8,
+            9,
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             8,
             4,
             4,
-            8
+            8,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
         "ID": 3,
         "rate": 35,
         "level": 1,
-        "enemygroups": {
-            "11": [
-                "Slime"
-            ],
-            "12": [
-                "Slime",
-                "Bat"
-            ],
-            "13": [
-                "Slime",
-                "Wild Mushroom"
-            ],
-            "14": [
-                "Slime",
-                "Vermin",
-                "Wild Mushroom",
-                "Bat"
-            ]
-        },
+        "enemygroups": [
+            11,
+            12,
+            13,
+            14,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             8,
             8,
             4,
-            4
+            4,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
         "ID": 4,
         "rate": 35,
         "level": 1,
-        "enemygroups": {
-            "11": [
-                "Slime"
-            ],
-            "12": [
-                "Slime",
-                "Bat"
-            ],
-            "13": [
-                "Slime",
-                "Wild Mushroom"
-            ],
-            "14": [
-                "Slime",
-                "Vermin",
-                "Wild Mushroom",
-                "Bat"
-            ]
-        },
+        "enemygroups": [
+            11,
+            12,
+            13,
+            14,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             4,
             4,
             8,
-            8
+            8,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
         "ID": 5,
         "rate": 35,
         "level": 2,
-        "enemygroups": {
-            "15": [
-                "Amaze"
-            ],
-            "16": [
-                "Amaze",
-                "Slime",
-                "Vermin"
-            ],
-            "17": [
-                "Amaze",
-                "Bat",
-                "Wild Mushroom"
-            ],
-            "18": [
-                "Amaze"
-            ]
-        },
+        "enemygroups": [
+            15,
+            16,
+            17,
+            18,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             12,
             8,
             4,
-            4
+            4,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
         "ID": 6,
         "rate": 35,
         "level": 2,
-        "enemygroups": {
-            "15": [
-                "Amaze"
-            ],
-            "16": [
-                "Amaze",
-                "Slime",
-                "Vermin"
-            ],
-            "17": [
-                "Amaze",
-                "Bat",
-                "Wild Mushroom"
-            ],
-            "18": [
-                "Amaze"
-            ]
-        },
+        "enemygroups": [
+            15,
+            16,
+            17,
+            18,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             4,
             4,
             12,
-            8
+            8,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
         "ID": 7,
         "rate": 25,
         "level": 3,
-        "enemygroups": {
-            "20": [
-                "Vermin"
-            ],
-            "21": [
-                "Bat"
-            ],
-            "22": [
-                "Wild Mushroom"
-            ],
-            "23": [
-                "Slime"
-            ],
-            "24": [
-                "Amaze"
-            ],
-            "25": [
-                "Zombie"
-            ],
-            "26": [
-                "Vermin",
-                "Bat",
-                "Wild Mushroom"
-            ],
-            "27": [
-                "Slime",
-                "Amaze",
-                "Bat"
-            ]
-        },
+        "enemygroups": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+        ],
         "group_ratios": [
             4,
             4,
@@ -221,42 +234,30 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Zombie"
         ]
     },
     {
         "ID": 8,
         "rate": 9,
         "level": 3,
-        "enemygroups": {
-            "20": [
-                "Vermin"
-            ],
-            "21": [
-                "Bat"
-            ],
-            "22": [
-                "Wild Mushroom"
-            ],
-            "23": [
-                "Slime"
-            ],
-            "24": [
-                "Amaze"
-            ],
-            "25": [
-                "Zombie"
-            ],
-            "26": [
-                "Vermin",
-                "Bat",
-                "Wild Mushroom"
-            ],
-            "27": [
-                "Slime",
-                "Amaze",
-                "Bat"
-            ]
-        },
+        "enemygroups": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+        ],
         "group_ratios": [
             2,
             2,
@@ -266,75 +267,64 @@
             7,
             2,
             3
+        ],
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Zombie"
         ]
     },
     {
         "ID": 9,
         "rate": 30,
         "level": 4,
-        "enemygroups": {
-            "31": [
-                "Ghost",
-                "Vermin",
-                "Wild Mushroom"
-            ],
-            "32": [
-                "Zombie",
-                "Bat",
-                "Slime"
-            ],
-            "33": [
-                "Zombie"
-            ],
-            "34": [
-                "Zombie",
-                "Ghost"
-            ],
-            "35": [
-                "Skeleton"
-            ]
-        },
+        "enemygroups": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             3,
             3,
             9,
             3,
-            6
+            6,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Skeleton",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Zombie"
         ]
     },
     {
         "ID": 10,
         "rate": 30,
         "level": 5,
-        "enemygroups": {
-            "31": [
-                "Ghost",
-                "Vermin",
-                "Wild Mushroom"
-            ],
-            "32": [
-                "Zombie",
-                "Bat",
-                "Slime"
-            ],
-            "33": [
-                "Zombie"
-            ],
-            "34": [
-                "Zombie",
-                "Ghost"
-            ],
-            "35": [
-                "Skeleton"
-            ],
-            "36": [
-                "Will Head"
-            ],
-            "37": [
-                "Skeleton",
-                "Ghost"
-            ]
-        },
+        "enemygroups": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            0
+        ],
         "group_ratios": [
             2,
             2,
@@ -342,42 +332,34 @@
             2,
             8,
             5,
-            2
+            2,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Skeleton",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
         "ID": 11,
         "rate": 30,
         "level": 5,
-        "enemygroups": {
-            "31": [
-                "Ghost",
-                "Vermin",
-                "Wild Mushroom"
-            ],
-            "32": [
-                "Zombie",
-                "Bat",
-                "Slime"
-            ],
-            "33": [
-                "Zombie"
-            ],
-            "34": [
-                "Zombie",
-                "Ghost"
-            ],
-            "35": [
-                "Skeleton"
-            ],
-            "36": [
-                "Will Head"
-            ],
-            "37": [
-                "Skeleton",
-                "Ghost"
-            ]
-        },
+        "enemygroups": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            0
+        ],
         "group_ratios": [
             2,
             2,
@@ -385,40 +367,34 @@
             2,
             8,
             8,
-            14
+            14,
+            0
+        ],
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Skeleton",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
         "ID": 12,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "1": [
-                "Vermin"
-            ],
-            "2": [
-                "Bat"
-            ],
-            "3": [
-                "Wild Mushroom"
-            ],
-            "4": [
-                "Vermin",
-                "Bat"
-            ],
-            "5": [
-                "Mystery Woman",
-                "Mystery Man"
-            ],
-            "29": [
-                "Bandit",
-                "Thief",
-                "Thief"
-            ],
-            "28": [
-                "Zombie"
-            ]
-        },
+        "enemygroups": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            29,
+            28,
+            0
+        ],
         "group_ratios": [
             10,
             10,
@@ -426,50 +402,34 @@
             10,
             10,
             10,
-            1
+            1,
+            0
+        ],
+        "enemies": [
+            "Bandit",
+            "Bat",
+            "Mystery Man",
+            "Mystery Woman",
+            "Thief",
+            "Vermin",
+            "Wild Mushroom",
+            "Zombie"
         ]
     },
     {
         "ID": 13,
         "rate": 25,
         "level": 6,
-        "enemygroups": {
-            "50": [
-                "Rat"
-            ],
-            "51": [
-                "Zombie",
-                "Skeleton"
-            ],
-            "52": [
-                "Ghost",
-                "Bat",
-                "Zombie"
-            ],
-            "53": [
-                "Skeleton",
-                "Bat",
-                "Rat Soldier"
-            ],
-            "54": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "55": [
-                "Rat Soldier",
-                "Rat",
-                "Bat"
-            ],
-            "56": [
-                "Zombie",
-                "Ghost"
-            ],
-            "57": [
-                "Skeleton",
-                "Ghost",
-                "Will Head"
-            ]
-        },
+        "enemygroups": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57
+        ],
         "group_ratios": [
             4,
             4,
@@ -479,49 +439,31 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
         "ID": 14,
         "rate": 9,
         "level": 6,
-        "enemygroups": {
-            "50": [
-                "Rat"
-            ],
-            "51": [
-                "Zombie",
-                "Skeleton"
-            ],
-            "52": [
-                "Ghost",
-                "Bat",
-                "Zombie"
-            ],
-            "53": [
-                "Skeleton",
-                "Bat",
-                "Rat Soldier"
-            ],
-            "54": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "55": [
-                "Rat Soldier",
-                "Rat",
-                "Bat"
-            ],
-            "56": [
-                "Zombie",
-                "Ghost"
-            ],
-            "57": [
-                "Skeleton",
-                "Ghost",
-                "Will Head"
-            ]
-        },
+        "enemygroups": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57
+        ],
         "group_ratios": [
             1,
             1,
@@ -531,49 +473,31 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
         "ID": 15,
         "rate": 35,
         "level": 6,
-        "enemygroups": {
-            "50": [
-                "Rat"
-            ],
-            "51": [
-                "Zombie",
-                "Skeleton"
-            ],
-            "52": [
-                "Ghost",
-                "Bat",
-                "Zombie"
-            ],
-            "53": [
-                "Skeleton",
-                "Bat",
-                "Rat Soldier"
-            ],
-            "54": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "55": [
-                "Rat Soldier",
-                "Rat",
-                "Bat"
-            ],
-            "56": [
-                "Zombie",
-                "Ghost"
-            ],
-            "57": [
-                "Skeleton",
-                "Ghost",
-                "Will Head"
-            ]
-        },
+        "enemygroups": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57
+        ],
         "group_ratios": [
             1,
             2,
@@ -583,87 +507,64 @@
             5,
             5,
             5
+        ],
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
         "ID": 16,
         "rate": 40,
         "level": 6,
-        "enemygroups": {
-            "59": [
-                "Drone Bee"
-            ],
-            "60": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "61": [
-                "Will Head",
-                "Rat Soldier"
-            ],
-            "62": [
-                "Skeleton"
-            ],
-            "63": [
-                "Drone Bee"
-            ],
-            "64": [
-                "Skeleton",
-                "Will Head"
-            ],
-            "65": [
-                "Drone Bee",
-                "Rat Soldier",
-                "Rat"
-            ],
-            "66": [
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ],
         "group_ratios": [
             10,
             5,
             1,
             1,
             1,
-            1
+            1,
+            0,
+            0
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
         "ID": 17,
         "rate": 40,
         "level": 7,
-        "enemygroups": {
-            "59": [
-                "Drone Bee"
-            ],
-            "60": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "61": [
-                "Will Head",
-                "Rat Soldier"
-            ],
-            "62": [
-                "Skeleton"
-            ],
-            "63": [
-                "Drone Bee"
-            ],
-            "64": [
-                "Skeleton",
-                "Will Head"
-            ],
-            "65": [
-                "Drone Bee",
-                "Rat Soldier",
-                "Rat"
-            ],
-            "66": [
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ],
         "group_ratios": [
             2,
             6,
@@ -673,43 +574,30 @@
             6,
             2,
             2
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
         "ID": 18,
         "rate": 40,
         "level": 7,
-        "enemygroups": {
-            "59": [
-                "Drone Bee"
-            ],
-            "60": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "61": [
-                "Will Head",
-                "Rat Soldier"
-            ],
-            "62": [
-                "Skeleton"
-            ],
-            "63": [
-                "Drone Bee"
-            ],
-            "64": [
-                "Skeleton",
-                "Will Head"
-            ],
-            "65": [
-                "Drone Bee",
-                "Rat Soldier",
-                "Rat"
-            ],
-            "66": [
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ],
         "group_ratios": [
             1,
             1,
@@ -719,43 +607,30 @@
             3,
             8,
             12
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
         "ID": 19,
         "rate": 40,
         "level": 7,
-        "enemygroups": {
-            "59": [
-                "Drone Bee"
-            ],
-            "60": [
-                "Rat",
-                "Rat Soldier"
-            ],
-            "61": [
-                "Will Head",
-                "Rat Soldier"
-            ],
-            "62": [
-                "Skeleton"
-            ],
-            "63": [
-                "Drone Bee"
-            ],
-            "64": [
-                "Skeleton",
-                "Will Head"
-            ],
-            "65": [
-                "Drone Bee",
-                "Rat Soldier",
-                "Rat"
-            ],
-            "66": [
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ],
         "group_ratios": [
             1,
             1,
@@ -765,48 +640,30 @@
             3,
             5,
             12
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
         "ID": 20,
         "rate": 45,
         "level": 7,
-        "enemygroups": {
-            "68": [
-                "Spider"
-            ],
-            "69": [
-                "Rat Soldier",
-                "Rat",
-                "Drone Bee"
-            ],
-            "70": [
-                "Spider",
-                "Drone Bee"
-            ],
-            "71": [
-                "Troll",
-                "Rat",
-                "Rat Soldier"
-            ],
-            "72": [
-                "Creeper"
-            ],
-            "73": [
-                "Spider",
-                "Troll"
-            ],
-            "74": [
-                "Gnome",
-                "Creeper",
-                "Creeper"
-            ],
-            "75": [
-                "Gnome",
-                "Troll",
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+        ],
         "group_ratios": [
             8,
             5,
@@ -816,97 +673,65 @@
             2,
             1,
             1
+        ],
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
         "ID": 21,
         "rate": 45,
         "level": 7,
-        "enemygroups": {
-            "68": [
-                "Spider"
-            ],
-            "69": [
-                "Rat Soldier",
-                "Rat",
-                "Drone Bee"
-            ],
-            "70": [
-                "Spider",
-                "Drone Bee"
-            ],
-            "71": [
-                "Troll",
-                "Rat",
-                "Rat Soldier"
-            ],
-            "72": [
-                "Creeper"
-            ],
-            "73": [
-                "Spider",
-                "Troll"
-            ],
-            "74": [
-                "Gnome",
-                "Creeper",
-                "Creeper"
-            ],
-            "75": [
-                "Gnome",
-                "Troll",
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+        ],
         "group_ratios": [
             6,
             6,
             6,
             3,
             2,
-            1
+            1,
+            0,
+            0
+        ],
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
         "ID": 22,
         "rate": 45,
         "level": 8,
-        "enemygroups": {
-            "68": [
-                "Spider"
-            ],
-            "69": [
-                "Rat Soldier",
-                "Rat",
-                "Drone Bee"
-            ],
-            "70": [
-                "Spider",
-                "Drone Bee"
-            ],
-            "71": [
-                "Troll",
-                "Rat",
-                "Rat Soldier"
-            ],
-            "72": [
-                "Creeper"
-            ],
-            "73": [
-                "Spider",
-                "Troll"
-            ],
-            "74": [
-                "Gnome",
-                "Creeper",
-                "Creeper"
-            ],
-            "75": [
-                "Gnome",
-                "Troll",
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+        ],
         "group_ratios": [
             3,
             5,
@@ -916,48 +741,31 @@
             2,
             1,
             1
+        ],
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
         "ID": 23,
         "rate": 45,
         "level": 8,
-        "enemygroups": {
-            "68": [
-                "Spider"
-            ],
-            "69": [
-                "Rat Soldier",
-                "Rat",
-                "Drone Bee"
-            ],
-            "70": [
-                "Spider",
-                "Drone Bee"
-            ],
-            "71": [
-                "Troll",
-                "Rat",
-                "Rat Soldier"
-            ],
-            "72": [
-                "Creeper"
-            ],
-            "73": [
-                "Spider",
-                "Troll"
-            ],
-            "74": [
-                "Gnome",
-                "Creeper",
-                "Creeper"
-            ],
-            "75": [
-                "Gnome",
-                "Troll",
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+        ],
         "group_ratios": [
             2,
             1,
@@ -967,48 +775,31 @@
             8,
             1,
             5
+        ],
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
         "ID": 24,
         "rate": 45,
         "level": 8,
-        "enemygroups": {
-            "68": [
-                "Spider"
-            ],
-            "69": [
-                "Rat Soldier",
-                "Rat",
-                "Drone Bee"
-            ],
-            "70": [
-                "Spider",
-                "Drone Bee"
-            ],
-            "71": [
-                "Troll",
-                "Rat",
-                "Rat Soldier"
-            ],
-            "72": [
-                "Creeper"
-            ],
-            "73": [
-                "Spider",
-                "Troll"
-            ],
-            "74": [
-                "Gnome",
-                "Creeper",
-                "Creeper"
-            ],
-            "75": [
-                "Gnome",
-                "Troll",
-                "Troll"
-            ]
-        },
+        "enemygroups": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+        ],
         "group_ratios": [
             1,
             1,
@@ -1018,44 +809,31 @@
             4,
             12,
             8
+        ],
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
         "ID": 25,
         "rate": 30,
         "level": 8,
-        "enemygroups": {
-            "77": [
-                "Ooze"
-            ],
-            "78": [
-                "Ghoul"
-            ],
-            "79": [
-                "Troll",
-                "Drone Bee",
-                "Rat Soldier"
-            ],
-            "80": [
-                "Ghoul",
-                "Ooze"
-            ],
-            "81": [
-                "Gnome",
-                "Troll"
-            ],
-            "82": [
-                "Gnome",
-                "Ooze"
-            ],
-            "83": [
-                "Ghoul",
-                "Gnome"
-            ],
-            "84": [
-                "Ghoul"
-            ]
-        },
+        "enemygroups": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+        ],
         "group_ratios": [
             6,
             6,
@@ -1065,44 +843,30 @@
             2,
             1,
             1
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Ghoul",
+            "Gnome",
+            "Ooze",
+            "Rat Soldier",
+            "Troll"
         ]
     },
     {
         "ID": 26,
         "rate": 30,
         "level": 8,
-        "enemygroups": {
-            "77": [
-                "Ooze"
-            ],
-            "78": [
-                "Ghoul"
-            ],
-            "79": [
-                "Troll",
-                "Drone Bee",
-                "Rat Soldier"
-            ],
-            "80": [
-                "Ghoul",
-                "Ooze"
-            ],
-            "81": [
-                "Gnome",
-                "Troll"
-            ],
-            "82": [
-                "Gnome",
-                "Ooze"
-            ],
-            "83": [
-                "Ghoul",
-                "Gnome"
-            ],
-            "84": [
-                "Ghoul"
-            ]
-        },
+        "enemygroups": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+        ],
         "group_ratios": [
             2,
             2,
@@ -1112,44 +876,30 @@
             5,
             7,
             7
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Ghoul",
+            "Gnome",
+            "Ooze",
+            "Rat Soldier",
+            "Troll"
         ]
     },
     {
         "ID": 27,
         "rate": 30,
         "level": 9,
-        "enemygroups": {
-            "77": [
-                "Ooze"
-            ],
-            "78": [
-                "Ghoul"
-            ],
-            "79": [
-                "Troll",
-                "Drone Bee",
-                "Rat Soldier"
-            ],
-            "80": [
-                "Ghoul",
-                "Ooze"
-            ],
-            "81": [
-                "Gnome",
-                "Troll"
-            ],
-            "82": [
-                "Gnome",
-                "Ooze"
-            ],
-            "83": [
-                "Ghoul",
-                "Gnome"
-            ],
-            "84": [
-                "Ghoul"
-            ]
-        },
+        "enemygroups": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+        ],
         "group_ratios": [
             1,
             1,
@@ -1159,44 +909,30 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Ghoul",
+            "Gnome",
+            "Ooze",
+            "Rat Soldier",
+            "Troll"
         ]
     },
     {
         "ID": 28,
         "rate": 30,
         "level": 9,
-        "enemygroups": {
-            "77": [
-                "Ooze"
-            ],
-            "78": [
-                "Ghoul"
-            ],
-            "79": [
-                "Troll",
-                "Drone Bee",
-                "Rat Soldier"
-            ],
-            "80": [
-                "Ghoul",
-                "Ooze"
-            ],
-            "81": [
-                "Gnome",
-                "Troll"
-            ],
-            "82": [
-                "Gnome",
-                "Ooze"
-            ],
-            "83": [
-                "Ghoul",
-                "Gnome"
-            ],
-            "84": [
-                "Ghoul"
-            ]
-        },
+        "enemygroups": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+        ],
         "group_ratios": [
             1,
             1,
@@ -1206,103 +942,90 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Drone Bee",
+            "Ghoul",
+            "Gnome",
+            "Ooze",
+            "Rat Soldier",
+            "Troll"
         ]
     },
     {
         "ID": 29,
         "rate": 25,
         "level": 9,
-        "enemygroups": {
-            "86": [
-                "Gnome"
-            ],
-            "87": [
-                "Ooze"
-            ],
-            "88": [
-                "Mauler",
-                "Ooze"
-            ],
-            "89": [
-                "Mauler",
-                "Gnome"
-            ],
-            "90": [
-                "Mauler"
-            ]
-        },
+        "enemygroups": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             3,
             3,
             5,
             5,
-            5
+            5,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Gnome",
+            "Mauler",
+            "Ooze"
         ]
     },
     {
         "ID": 30,
         "rate": 9,
         "level": 9,
-        "enemygroups": {
-            "86": [
-                "Gnome"
-            ],
-            "87": [
-                "Ooze"
-            ],
-            "88": [
-                "Mauler",
-                "Ooze"
-            ],
-            "89": [
-                "Mauler",
-                "Gnome"
-            ],
-            "90": [
-                "Mauler"
-            ]
-        },
+        "enemygroups": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             2,
             2,
             4,
             4,
-            4
+            4,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Gnome",
+            "Mauler",
+            "Ooze"
         ]
     },
     {
         "ID": 31,
         "rate": 40,
         "level": 9,
-        "enemygroups": {
-            "92": [
-                "Ooze"
-            ],
-            "93": [
-                "Cuttle",
-                "Ooze"
-            ],
-            "94": [
-                "Gnome",
-                "Ooze"
-            ],
-            "95": [
-                "Lizard Man"
-            ],
-            "96": [
-                "Mauler"
-            ],
-            "97": [
-                "Lizard Man",
-                "Cuttle"
-            ],
-            "98": [
-                "Ghoul"
-            ],
-            "99": [
-                "Siren"
-            ]
-        },
+        "enemygroups": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99
+        ],
         "group_ratios": [
             4,
             4,
@@ -1312,41 +1035,31 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Gnome",
+            "Lizard Man",
+            "Mauler",
+            "Ooze",
+            "Siren"
         ]
     },
     {
         "ID": 32,
         "rate": 40,
         "level": 9,
-        "enemygroups": {
-            "92": [
-                "Ooze"
-            ],
-            "93": [
-                "Cuttle",
-                "Ooze"
-            ],
-            "94": [
-                "Gnome",
-                "Ooze"
-            ],
-            "95": [
-                "Lizard Man"
-            ],
-            "96": [
-                "Mauler"
-            ],
-            "97": [
-                "Lizard Man",
-                "Cuttle"
-            ],
-            "98": [
-                "Ghoul"
-            ],
-            "99": [
-                "Siren"
-            ]
-        },
+        "enemygroups": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99
+        ],
         "group_ratios": [
             2,
             2,
@@ -1356,41 +1069,31 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Gnome",
+            "Lizard Man",
+            "Mauler",
+            "Ooze",
+            "Siren"
         ]
     },
     {
         "ID": 33,
         "rate": 40,
         "level": 10,
-        "enemygroups": {
-            "97": [
-                "Lizard Man",
-                "Cuttle"
-            ],
-            "98": [
-                "Ghoul"
-            ],
-            "99": [
-                "Siren"
-            ],
-            "100": [
-                "Lizard Man",
-                "Harpy"
-            ],
-            "101": [
-                "Cuttle"
-            ],
-            "102": [
-                "Harpy"
-            ],
-            "103": [
-                "Siren",
-                "Harpy"
-            ],
-            "104": [
-                "Siren"
-            ]
-        },
+        "enemygroups": [
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+        ],
         "group_ratios": [
             2,
             2,
@@ -1400,41 +1103,29 @@
             4,
             2,
             2
+        ],
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Harpy",
+            "Lizard Man",
+            "Siren"
         ]
     },
     {
         "ID": 34,
         "rate": 40,
         "level": 11,
-        "enemygroups": {
-            "97": [
-                "Lizard Man",
-                "Cuttle"
-            ],
-            "98": [
-                "Ghoul"
-            ],
-            "99": [
-                "Siren"
-            ],
-            "100": [
-                "Lizard Man",
-                "Harpy"
-            ],
-            "101": [
-                "Cuttle"
-            ],
-            "102": [
-                "Harpy"
-            ],
-            "103": [
-                "Siren",
-                "Harpy"
-            ],
-            "104": [
-                "Siren"
-            ]
-        },
+        "enemygroups": [
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+        ],
         "group_ratios": [
             1,
             1,
@@ -1444,41 +1135,29 @@
             2,
             4,
             4
+        ],
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Harpy",
+            "Lizard Man",
+            "Siren"
         ]
     },
     {
         "ID": 35,
         "rate": 40,
         "level": 11,
-        "enemygroups": {
-            "97": [
-                "Lizard Man",
-                "Cuttle"
-            ],
-            "98": [
-                "Ghoul"
-            ],
-            "99": [
-                "Siren"
-            ],
-            "100": [
-                "Lizard Man",
-                "Harpy"
-            ],
-            "101": [
-                "Cuttle"
-            ],
-            "102": [
-                "Harpy"
-            ],
-            "103": [
-                "Siren",
-                "Harpy"
-            ],
-            "104": [
-                "Siren"
-            ]
-        },
+        "enemygroups": [
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104
+        ],
         "group_ratios": [
             1,
             1,
@@ -1488,114 +1167,121 @@
             2,
             4,
             4
+        ],
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Harpy",
+            "Lizard Man",
+            "Siren"
         ]
     },
     {
         "ID": 36,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "106": [
-                "Tret"
-            ],
-            "107": [
-                "Lizard Man"
-            ],
-            "108": [
-                "Saturos"
-            ]
-        },
+        "enemygroups": [
+            106,
+            107,
+            108,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             10,
             10,
-            10
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Lizard Man",
+            "Saturos",
+            "Tret"
         ]
     },
     {
         "ID": 37,
         "rate": 20,
         "level": 11,
-        "enemygroups": {
-            "120": [
-                "Ooze"
-            ],
-            "121": [
-                "Mauler"
-            ],
-            "122": [
-                "Lizard Man"
-            ],
-            "123": [
-                "Mole",
-                "Ooze"
-            ]
-        },
+        "enemygroups": [
+            120,
+            121,
+            122,
+            123,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             3,
             3,
             3,
-            3
+            3,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze"
         ]
     },
     {
         "ID": 38,
         "rate": 9,
         "level": 11,
-        "enemygroups": {
-            "120": [
-                "Ooze"
-            ],
-            "121": [
-                "Mauler"
-            ],
-            "122": [
-                "Lizard Man"
-            ],
-            "123": [
-                "Mole",
-                "Ooze"
-            ]
-        },
+        "enemygroups": [
+            120,
+            121,
+            122,
+            123,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             1,
             1,
             1,
-            1
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze"
         ]
     },
     {
         "ID": 39,
         "rate": 38,
         "level": 11,
-        "enemygroups": {
-            "120": [
-                "Ooze"
-            ],
-            "121": [
-                "Mauler"
-            ],
-            "122": [
-                "Lizard Man"
-            ],
-            "123": [
-                "Mole",
-                "Ooze"
-            ],
-            "124": [
-                "Spirit"
-            ],
-            "125": [
-                "Dirge",
-                "Mole"
-            ],
-            "126": [
-                "Skeleton"
-            ],
-            "127": [
-                "Bone Fighter",
-                "Spirit"
-            ]
-        },
+        "enemygroups": [
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+        ],
         "group_ratios": [
             4,
             4,
@@ -1605,41 +1291,32 @@
             4,
             2,
             1
+        ],
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
         "ID": 40,
         "rate": 38,
         "level": 11,
-        "enemygroups": {
-            "120": [
-                "Ooze"
-            ],
-            "121": [
-                "Mauler"
-            ],
-            "122": [
-                "Lizard Man"
-            ],
-            "123": [
-                "Mole",
-                "Ooze"
-            ],
-            "124": [
-                "Spirit"
-            ],
-            "125": [
-                "Dirge",
-                "Mole"
-            ],
-            "126": [
-                "Skeleton"
-            ],
-            "127": [
-                "Bone Fighter",
-                "Spirit"
-            ]
-        },
+        "enemygroups": [
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+        ],
         "group_ratios": [
             1,
             2,
@@ -1649,41 +1326,32 @@
             6,
             3,
             2
+        ],
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
         "ID": 41,
         "rate": 38,
         "level": 11,
-        "enemygroups": {
-            "120": [
-                "Ooze"
-            ],
-            "121": [
-                "Mauler"
-            ],
-            "122": [
-                "Lizard Man"
-            ],
-            "123": [
-                "Mole",
-                "Ooze"
-            ],
-            "124": [
-                "Spirit"
-            ],
-            "125": [
-                "Dirge",
-                "Mole"
-            ],
-            "126": [
-                "Skeleton"
-            ],
-            "127": [
-                "Bone Fighter",
-                "Spirit"
-            ]
-        },
+        "enemygroups": [
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+        ],
         "group_ratios": [
             1,
             1,
@@ -1693,43 +1361,32 @@
             4,
             6,
             8
+        ],
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
         "ID": 42,
         "rate": 42,
         "level": 11,
-        "enemygroups": {
-            "129": [
-                "Mole"
-            ],
-            "130": [
-                "Mole",
-                "Dirge"
-            ],
-            "131": [
-                "Dirge",
-                "Spirit"
-            ],
-            "132": [
-                "Bone Fighter",
-                "Spirit"
-            ],
-            "133": [
-                "Bone Fighter"
-            ],
-            "134": [
-                "Death Head"
-            ],
-            "135": [
-                "Death Head",
-                "Spirit"
-            ],
-            "136": [
-                "Death Head",
-                "Bone Fighter"
-            ]
-        },
+        "enemygroups": [
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136
+        ],
         "group_ratios": [
             6,
             6,
@@ -1739,43 +1396,29 @@
             1,
             1,
             1
+        ],
+        "enemies": [
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
         "ID": 43,
         "rate": 42,
         "level": 12,
-        "enemygroups": {
-            "129": [
-                "Mole"
-            ],
-            "130": [
-                "Mole",
-                "Dirge"
-            ],
-            "131": [
-                "Dirge",
-                "Spirit"
-            ],
-            "132": [
-                "Bone Fighter",
-                "Spirit"
-            ],
-            "133": [
-                "Bone Fighter"
-            ],
-            "134": [
-                "Death Head"
-            ],
-            "135": [
-                "Death Head",
-                "Spirit"
-            ],
-            "136": [
-                "Death Head",
-                "Bone Fighter"
-            ]
-        },
+        "enemygroups": [
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136
+        ],
         "group_ratios": [
             1,
             1,
@@ -1785,43 +1428,29 @@
             3,
             1,
             1
+        ],
+        "enemies": [
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
         "ID": 44,
         "rate": 42,
         "level": 12,
-        "enemygroups": {
-            "129": [
-                "Mole"
-            ],
-            "130": [
-                "Mole",
-                "Dirge"
-            ],
-            "131": [
-                "Dirge",
-                "Spirit"
-            ],
-            "132": [
-                "Bone Fighter",
-                "Spirit"
-            ],
-            "133": [
-                "Bone Fighter"
-            ],
-            "134": [
-                "Death Head"
-            ],
-            "135": [
-                "Death Head",
-                "Spirit"
-            ],
-            "136": [
-                "Death Head",
-                "Bone Fighter"
-            ]
-        },
+        "enemygroups": [
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136
+        ],
         "group_ratios": [
             1,
             1,
@@ -1831,122 +1460,95 @@
             4,
             5,
             5
+        ],
+        "enemies": [
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
         "ID": 45,
         "rate": 25,
         "level": 12,
-        "enemygroups": {
-            "141": [
-                "Mole",
-                "Dirge"
-            ],
-            "142": [
-                "Ape",
-                "Mole"
-            ],
-            "143": [
-                "Bone Fighter",
-                "Spirit"
-            ],
-            "144": [
-                "Ape",
-                "Dirge"
-            ],
-            "145": [
-                "Death Head",
-                "Spirit"
-            ],
-            "146": [
-                "Death Head",
-                "Bone Fighter"
-            ]
-        },
+        "enemygroups": [
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            0,
+            0
+        ],
         "group_ratios": [
             3,
             3,
             1,
             3,
             1,
-            1
+            1,
+            0,
+            0
+        ],
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
         "ID": 46,
         "rate": 9,
         "level": 12,
-        "enemygroups": {
-            "141": [
-                "Mole",
-                "Dirge"
-            ],
-            "142": [
-                "Ape",
-                "Mole"
-            ],
-            "143": [
-                "Bone Fighter",
-                "Spirit"
-            ],
-            "144": [
-                "Ape",
-                "Dirge"
-            ],
-            "145": [
-                "Death Head",
-                "Spirit"
-            ],
-            "146": [
-                "Death Head",
-                "Bone Fighter"
-            ]
-        },
+        "enemygroups": [
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            0,
+            0
+        ],
         "group_ratios": [
             1,
             1,
             2,
             1,
             2,
-            2
+            2,
+            0,
+            0
+        ],
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
         "ID": 47,
         "rate": 45,
         "level": 12,
-        "enemygroups": {
-            "148": [
-                "Dirge",
-                "Bone Fighter"
-            ],
-            "149": [
-                "Slime Beast",
-                "Ape"
-            ],
-            "150": [
-                "Tarantula",
-                "Bone Fighter"
-            ],
-            "151": [
-                "Slime Beast",
-                "Calamar"
-            ],
-            "152": [
-                "Tarantula",
-                "Slime Beast"
-            ],
-            "153": [
-                "Calamar"
-            ],
-            "154": [
-                "Rat Fighter"
-            ],
-            "155": [
-                "Rat Fighter",
-                "Ape"
-            ]
-        },
+        "enemygroups": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+        ],
         "group_ratios": [
             6,
             6,
@@ -1956,44 +1558,31 @@
             1,
             1,
             1
+        ],
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
         "ID": 48,
         "rate": 45,
         "level": 13,
-        "enemygroups": {
-            "148": [
-                "Dirge",
-                "Bone Fighter"
-            ],
-            "149": [
-                "Slime Beast",
-                "Ape"
-            ],
-            "150": [
-                "Tarantula",
-                "Bone Fighter"
-            ],
-            "151": [
-                "Slime Beast",
-                "Calamar"
-            ],
-            "152": [
-                "Tarantula",
-                "Slime Beast"
-            ],
-            "153": [
-                "Calamar"
-            ],
-            "154": [
-                "Rat Fighter"
-            ],
-            "155": [
-                "Rat Fighter",
-                "Ape"
-            ]
-        },
+        "enemygroups": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+        ],
         "group_ratios": [
             1,
             1,
@@ -2003,44 +1592,31 @@
             4,
             2,
             2
+        ],
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
         "ID": 49,
         "rate": 42,
         "level": 13,
-        "enemygroups": {
-            "148": [
-                "Dirge",
-                "Bone Fighter"
-            ],
-            "149": [
-                "Slime Beast",
-                "Ape"
-            ],
-            "150": [
-                "Tarantula",
-                "Bone Fighter"
-            ],
-            "151": [
-                "Slime Beast",
-                "Calamar"
-            ],
-            "152": [
-                "Tarantula",
-                "Slime Beast"
-            ],
-            "153": [
-                "Calamar"
-            ],
-            "154": [
-                "Rat Fighter"
-            ],
-            "155": [
-                "Rat Fighter",
-                "Ape"
-            ]
-        },
+        "enemygroups": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+        ],
         "group_ratios": [
             1,
             1,
@@ -2050,44 +1626,31 @@
             4,
             8,
             8
+        ],
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
         "ID": 50,
         "rate": 40,
         "level": 13,
-        "enemygroups": {
-            "160": [
-                "Orc"
-            ],
-            "161": [
-                "Grub",
-                "Rat Fighter"
-            ],
-            "162": [
-                "Orc",
-                "Rat Fighter"
-            ],
-            "163": [
-                "Fighter Bee",
-                "Orc"
-            ],
-            "164": [
-                "Fighter Bee",
-                "Grub"
-            ],
-            "165": [
-                "Salamander",
-                "Grub"
-            ],
-            "166": [
-                "Salamander",
-                "Fighter Bee"
-            ],
-            "167": [
-                "Salamander"
-            ]
-        },
+        "enemygroups": [
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167
+        ],
         "group_ratios": [
             5,
             5,
@@ -2097,44 +1660,29 @@
             2,
             1,
             1
+        ],
+        "enemies": [
+            "Fighter Bee",
+            "Grub",
+            "Orc",
+            "Rat Fighter",
+            "Salamander"
         ]
     },
     {
         "ID": 51,
         "rate": 40,
         "level": 14,
-        "enemygroups": {
-            "160": [
-                "Orc"
-            ],
-            "161": [
-                "Grub",
-                "Rat Fighter"
-            ],
-            "162": [
-                "Orc",
-                "Rat Fighter"
-            ],
-            "163": [
-                "Fighter Bee",
-                "Orc"
-            ],
-            "164": [
-                "Fighter Bee",
-                "Grub"
-            ],
-            "165": [
-                "Salamander",
-                "Grub"
-            ],
-            "166": [
-                "Salamander",
-                "Fighter Bee"
-            ],
-            "167": [
-                "Salamander"
-            ]
-        },
+        "enemygroups": [
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167
+        ],
         "group_ratios": [
             1,
             2,
@@ -2144,44 +1692,29 @@
             4,
             2,
             1
+        ],
+        "enemies": [
+            "Fighter Bee",
+            "Grub",
+            "Orc",
+            "Rat Fighter",
+            "Salamander"
         ]
     },
     {
         "ID": 52,
         "rate": 40,
         "level": 14,
-        "enemygroups": {
-            "160": [
-                "Orc"
-            ],
-            "161": [
-                "Grub",
-                "Rat Fighter"
-            ],
-            "162": [
-                "Orc",
-                "Rat Fighter"
-            ],
-            "163": [
-                "Fighter Bee",
-                "Orc"
-            ],
-            "164": [
-                "Fighter Bee",
-                "Grub"
-            ],
-            "165": [
-                "Salamander",
-                "Grub"
-            ],
-            "166": [
-                "Salamander",
-                "Fighter Bee"
-            ],
-            "167": [
-                "Salamander"
-            ]
-        },
+        "enemygroups": [
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167
+        ],
         "group_ratios": [
             1,
             1,
@@ -2191,75 +1724,62 @@
             4,
             4,
             5
+        ],
+        "enemies": [
+            "Fighter Bee",
+            "Grub",
+            "Orc",
+            "Rat Fighter",
+            "Salamander"
         ]
     },
     {
         "ID": 53,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "138": [
-                "Ape"
-            ],
-            "139": [
-                "Killer Ape"
-            ],
-            "157": [
-                "Living Statue"
-            ],
-            "158": [
-                "Hydros Statue"
-            ],
-            "169": [
-                "Ant Lion"
-            ],
-            "170": [
-                "Manticore"
-            ]
-        },
+        "enemygroups": [
+            138,
+            139,
+            157,
+            158,
+            169,
+            170,
+            0,
+            0
+        ],
         "group_ratios": [
             10,
             10,
             10,
             10,
             10,
-            10
+            10,
+            0,
+            0
+        ],
+        "enemies": [
+            "Ant Lion",
+            "Ape",
+            "Hydros Statue",
+            "Killer Ape",
+            "Living Statue",
+            "Manticore"
         ]
     },
     {
         "ID": 54,
         "rate": 25,
         "level": 15,
-        "enemygroups": {
-            "180": [
-                "Mad Vermin"
-            ],
-            "181": [
-                "Fighter Bee"
-            ],
-            "182": [
-                "Death Cap"
-            ],
-            "183": [
-                "Mad Vermin",
-                "Fighter Bee"
-            ],
-            "184": [
-                "Mad Vermin",
-                "Death Cap"
-            ],
-            "185": [
-                "Undead"
-            ],
-            "186": [
-                "Undead",
-                "Fighter Bee"
-            ],
-            "187": [
-                "Undead",
-                "Death Cap"
-            ]
-        },
+        "enemygroups": [
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+        ],
         "group_ratios": [
             4,
             4,
@@ -2269,42 +1789,28 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Mad Vermin",
+            "Undead"
         ]
     },
     {
         "ID": 55,
         "rate": 9,
         "level": 15,
-        "enemygroups": {
-            "180": [
-                "Mad Vermin"
-            ],
-            "181": [
-                "Fighter Bee"
-            ],
-            "182": [
-                "Death Cap"
-            ],
-            "183": [
-                "Mad Vermin",
-                "Fighter Bee"
-            ],
-            "184": [
-                "Mad Vermin",
-                "Death Cap"
-            ],
-            "185": [
-                "Undead"
-            ],
-            "186": [
-                "Undead",
-                "Fighter Bee"
-            ],
-            "187": [
-                "Undead",
-                "Death Cap"
-            ]
-        },
+        "enemygroups": [
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+        ],
         "group_ratios": [
             2,
             2,
@@ -2314,44 +1820,28 @@
             4,
             4,
             4
+        ],
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Mad Vermin",
+            "Undead"
         ]
     },
     {
         "ID": 56,
         "rate": 40,
         "level": 15,
-        "enemygroups": {
-            "189": [
-                "Mad Vermin",
-                "Death Cap"
-            ],
-            "190": [
-                "Mad Vermin",
-                "Fighter Bee"
-            ],
-            "191": [
-                "Fighter Bee",
-                "Death Cap"
-            ],
-            "192": [
-                "Ravager"
-            ],
-            "193": [
-                "Undead",
-                "Death Cap"
-            ],
-            "194": [
-                "Ravager",
-                "Fighter Bee"
-            ],
-            "195": [
-                "Ghost Mage"
-            ],
-            "196": [
-                "Ghost Mage",
-                "Undead"
-            ]
-        },
+        "enemygroups": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196
+        ],
         "group_ratios": [
             6,
             6,
@@ -2361,44 +1851,30 @@
             1,
             1,
             1
+        ],
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Ghost Mage",
+            "Mad Vermin",
+            "Ravager",
+            "Undead"
         ]
     },
     {
         "ID": 57,
         "rate": 40,
         "level": 15,
-        "enemygroups": {
-            "189": [
-                "Mad Vermin",
-                "Death Cap"
-            ],
-            "190": [
-                "Mad Vermin",
-                "Fighter Bee"
-            ],
-            "191": [
-                "Fighter Bee",
-                "Death Cap"
-            ],
-            "192": [
-                "Ravager"
-            ],
-            "193": [
-                "Undead",
-                "Death Cap"
-            ],
-            "194": [
-                "Ravager",
-                "Fighter Bee"
-            ],
-            "195": [
-                "Ghost Mage"
-            ],
-            "196": [
-                "Ghost Mage",
-                "Undead"
-            ]
-        },
+        "enemygroups": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196
+        ],
         "group_ratios": [
             4,
             4,
@@ -2408,44 +1884,30 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Ghost Mage",
+            "Mad Vermin",
+            "Ravager",
+            "Undead"
         ]
     },
     {
         "ID": 58,
         "rate": 40,
         "level": 15,
-        "enemygroups": {
-            "189": [
-                "Mad Vermin",
-                "Death Cap"
-            ],
-            "190": [
-                "Mad Vermin",
-                "Fighter Bee"
-            ],
-            "191": [
-                "Fighter Bee",
-                "Death Cap"
-            ],
-            "192": [
-                "Ravager"
-            ],
-            "193": [
-                "Undead",
-                "Death Cap"
-            ],
-            "194": [
-                "Ravager",
-                "Fighter Bee"
-            ],
-            "195": [
-                "Ghost Mage"
-            ],
-            "196": [
-                "Ghost Mage",
-                "Undead"
-            ]
-        },
+        "enemygroups": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196
+        ],
         "group_ratios": [
             2,
             2,
@@ -2455,44 +1917,30 @@
             5,
             5,
             5
+        ],
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Ghost Mage",
+            "Mad Vermin",
+            "Ravager",
+            "Undead"
         ]
     },
     {
         "ID": 59,
         "rate": 40,
         "level": 15,
-        "enemygroups": {
-            "189": [
-                "Mad Vermin",
-                "Death Cap"
-            ],
-            "190": [
-                "Mad Vermin",
-                "Fighter Bee"
-            ],
-            "191": [
-                "Fighter Bee",
-                "Death Cap"
-            ],
-            "192": [
-                "Ravager"
-            ],
-            "193": [
-                "Undead",
-                "Death Cap"
-            ],
-            "194": [
-                "Ravager",
-                "Fighter Bee"
-            ],
-            "195": [
-                "Ghost Mage"
-            ],
-            "196": [
-                "Ghost Mage",
-                "Undead"
-            ]
-        },
+        "enemygroups": [
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196
+        ],
         "group_ratios": [
             1,
             1,
@@ -2502,43 +1950,30 @@
             5,
             5,
             5
+        ],
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Ghost Mage",
+            "Mad Vermin",
+            "Ravager",
+            "Undead"
         ]
     },
     {
         "ID": 60,
         "rate": 40,
         "level": 16,
-        "enemygroups": {
-            "201": [
-                "Fighter Bee",
-                "Death Cap"
-            ],
-            "202": [
-                "Ravager",
-                "Death Cap"
-            ],
-            "203": [
-                "Ravager",
-                "Fighter Bee"
-            ],
-            "204": [
-                "Ghost Mage",
-                "Undead"
-            ],
-            "205": [
-                "Ghost Mage"
-            ],
-            "206": [
-                "Gargoyle"
-            ],
-            "207": [
-                "Cave Troll",
-                "Gargoyle"
-            ],
-            "208": [
-                "Cave Troll"
-            ]
-        },
+        "enemygroups": [
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208
+        ],
         "group_ratios": [
             8,
             8,
@@ -2548,43 +1983,31 @@
             4,
             2,
             2
+        ],
+        "enemies": [
+            "Cave Troll",
+            "Death Cap",
+            "Fighter Bee",
+            "Gargoyle",
+            "Ghost Mage",
+            "Ravager",
+            "Undead"
         ]
     },
     {
         "ID": 61,
         "rate": 40,
         "level": 16,
-        "enemygroups": {
-            "201": [
-                "Fighter Bee",
-                "Death Cap"
-            ],
-            "202": [
-                "Ravager",
-                "Death Cap"
-            ],
-            "203": [
-                "Ravager",
-                "Fighter Bee"
-            ],
-            "204": [
-                "Ghost Mage",
-                "Undead"
-            ],
-            "205": [
-                "Ghost Mage"
-            ],
-            "206": [
-                "Gargoyle"
-            ],
-            "207": [
-                "Cave Troll",
-                "Gargoyle"
-            ],
-            "208": [
-                "Cave Troll"
-            ]
-        },
+        "enemygroups": [
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208
+        ],
         "group_ratios": [
             2,
             2,
@@ -2594,99 +2017,97 @@
             4,
             8,
             8
+        ],
+        "enemies": [
+            "Cave Troll",
+            "Death Cap",
+            "Fighter Bee",
+            "Gargoyle",
+            "Ghost Mage",
+            "Ravager",
+            "Undead"
         ]
     },
     {
         "ID": 62,
         "rate": 0,
         "level": 17,
-        "enemygroups": {
-            "210": [
-                "Man o' War"
-            ],
-            "211": [
-                "Lizard Fighter",
-                "Rabid Bat"
-            ],
-            "212": [
-                "Virago",
-                "Man o' War"
-            ],
-            "213": [
-                "Kraken"
-            ]
-        },
+        "enemygroups": [
+            210,
+            211,
+            212,
+            213,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             10,
             10,
             10,
-            10
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Kraken",
+            "Lizard Fighter",
+            "Man o' War",
+            "Rabid Bat",
+            "Virago"
         ]
     },
     {
         "ID": 63,
         "rate": 0,
         "level": 17,
-        "enemygroups": {
-            "291": [
-                "Hobgoblin",
-                "Virago"
-            ],
-            "292": [
-                "Grisly",
-                "Succubus"
-            ],
-            "293": [
-                "Lich",
-                "Fiendish Ghoul"
-            ],
-            "294": [
-                "Gryphon"
-            ]
-        },
+        "enemygroups": [
+            291,
+            292,
+            293,
+            294,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             10,
             10,
             10,
-            10
+            10,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Fiendish Ghoul",
+            "Grisly",
+            "Gryphon",
+            "Hobgoblin",
+            "Lich",
+            "Succubus",
+            "Virago"
         ]
     },
     {
         "ID": 64,
         "rate": 25,
         "level": 18,
-        "enemygroups": {
-            "220": [
-                "Mad Mole"
-            ],
-            "221": [
-                "Armored Rat",
-                "Rabid Bat"
-            ],
-            "222": [
-                "Mad Mole",
-                "Rabid Bat"
-            ],
-            "223": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "224": [
-                "Mad Mole",
-                "Foul Dirge"
-            ],
-            "225": [
-                "Gnome Mage"
-            ],
-            "226": [
-                "Gnome Mage",
-                "Mad Mole"
-            ],
-            "227": [
-                "Gnome Mage",
-                "Foul Dirge"
-            ]
-        },
+        "enemygroups": [
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227
+        ],
         "group_ratios": [
             6,
             6,
@@ -2696,44 +2117,29 @@
             3,
             3,
             3
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Mad Mole",
+            "Rabid Bat"
         ]
     },
     {
         "ID": 65,
         "rate": 9,
         "level": 18,
-        "enemygroups": {
-            "220": [
-                "Mad Mole"
-            ],
-            "221": [
-                "Armored Rat",
-                "Rabid Bat"
-            ],
-            "222": [
-                "Mad Mole",
-                "Rabid Bat"
-            ],
-            "223": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "224": [
-                "Mad Mole",
-                "Foul Dirge"
-            ],
-            "225": [
-                "Gnome Mage"
-            ],
-            "226": [
-                "Gnome Mage",
-                "Mad Mole"
-            ],
-            "227": [
-                "Gnome Mage",
-                "Foul Dirge"
-            ]
-        },
+        "enemygroups": [
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227
+        ],
         "group_ratios": [
             3,
             3,
@@ -2743,45 +2149,29 @@
             6,
             6,
             6
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Mad Mole",
+            "Rabid Bat"
         ]
     },
     {
         "ID": 66,
         "rate": 40,
         "level": 17,
-        "enemygroups": {
-            "229": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "230": [
-                "Mad Mole",
-                "Worm"
-            ],
-            "231": [
-                "Gnome Mage",
-                "Wight"
-            ],
-            "232": [
-                "Golem",
-                "Wight"
-            ],
-            "233": [
-                "Clay Gargoyle",
-                "Mad Mole"
-            ],
-            "234": [
-                "Golem",
-                "Clay Gargoyle"
-            ],
-            "235": [
-                "Dread Hound"
-            ],
-            "236": [
-                "Dread Hound",
-                "Golem"
-            ]
-        },
+        "enemygroups": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+        ],
         "group_ratios": [
             6,
             6,
@@ -2791,45 +2181,33 @@
             2,
             1,
             1
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
         "ID": 67,
         "rate": 40,
         "level": 17,
-        "enemygroups": {
-            "229": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "230": [
-                "Mad Mole",
-                "Worm"
-            ],
-            "231": [
-                "Gnome Mage",
-                "Wight"
-            ],
-            "232": [
-                "Golem",
-                "Wight"
-            ],
-            "233": [
-                "Clay Gargoyle",
-                "Mad Mole"
-            ],
-            "234": [
-                "Golem",
-                "Clay Gargoyle"
-            ],
-            "235": [
-                "Dread Hound"
-            ],
-            "236": [
-                "Dread Hound",
-                "Golem"
-            ]
-        },
+        "enemygroups": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+        ],
         "group_ratios": [
             4,
             4,
@@ -2839,45 +2217,33 @@
             4,
             2,
             1
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
         "ID": 68,
         "rate": 40,
         "level": 18,
-        "enemygroups": {
-            "229": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "230": [
-                "Mad Mole",
-                "Worm"
-            ],
-            "231": [
-                "Gnome Mage",
-                "Wight"
-            ],
-            "232": [
-                "Golem",
-                "Wight"
-            ],
-            "233": [
-                "Clay Gargoyle",
-                "Mad Mole"
-            ],
-            "234": [
-                "Golem",
-                "Clay Gargoyle"
-            ],
-            "235": [
-                "Dread Hound"
-            ],
-            "236": [
-                "Dread Hound",
-                "Golem"
-            ]
-        },
+        "enemygroups": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+        ],
         "group_ratios": [
             3,
             3,
@@ -2887,45 +2253,33 @@
             4,
             2,
             1
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
         "ID": 69,
         "rate": 40,
         "level": 18,
-        "enemygroups": {
-            "229": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "230": [
-                "Mad Mole",
-                "Worm"
-            ],
-            "231": [
-                "Gnome Mage",
-                "Wight"
-            ],
-            "232": [
-                "Golem",
-                "Wight"
-            ],
-            "233": [
-                "Clay Gargoyle",
-                "Mad Mole"
-            ],
-            "234": [
-                "Golem",
-                "Clay Gargoyle"
-            ],
-            "235": [
-                "Dread Hound"
-            ],
-            "236": [
-                "Dread Hound",
-                "Golem"
-            ]
-        },
+        "enemygroups": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+        ],
         "group_ratios": [
             2,
             2,
@@ -2935,45 +2289,33 @@
             5,
             5,
             3
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
         "ID": 70,
         "rate": 40,
         "level": 18,
-        "enemygroups": {
-            "229": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "230": [
-                "Mad Mole",
-                "Worm"
-            ],
-            "231": [
-                "Gnome Mage",
-                "Wight"
-            ],
-            "232": [
-                "Golem",
-                "Wight"
-            ],
-            "233": [
-                "Clay Gargoyle",
-                "Mad Mole"
-            ],
-            "234": [
-                "Golem",
-                "Clay Gargoyle"
-            ],
-            "235": [
-                "Dread Hound"
-            ],
-            "236": [
-                "Dread Hound",
-                "Golem"
-            ]
-        },
+        "enemygroups": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+        ],
         "group_ratios": [
             2,
             2,
@@ -2983,45 +2325,33 @@
             6,
             6,
             4
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
         "ID": 71,
         "rate": 40,
         "level": 18,
-        "enemygroups": {
-            "229": [
-                "Armored Rat",
-                "Foul Dirge"
-            ],
-            "230": [
-                "Mad Mole",
-                "Worm"
-            ],
-            "231": [
-                "Gnome Mage",
-                "Wight"
-            ],
-            "232": [
-                "Golem",
-                "Wight"
-            ],
-            "233": [
-                "Clay Gargoyle",
-                "Mad Mole"
-            ],
-            "234": [
-                "Golem",
-                "Clay Gargoyle"
-            ],
-            "235": [
-                "Dread Hound"
-            ],
-            "236": [
-                "Dread Hound",
-                "Golem"
-            ]
-        },
+        "enemygroups": [
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236
+        ],
         "group_ratios": [
             1,
             1,
@@ -3031,75 +2361,63 @@
             4,
             6,
             6
+        ],
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
         "ID": 72,
         "rate": 0,
         "level": 19,
-        "enemygroups": {
-            "238": [
-                "Azart"
-            ],
-            "239": [
-                "Azart"
-            ],
-            "240": [
-                "Satrage"
-            ],
-            "241": [
-                "Satrage"
-            ],
-            "242": [
-                "Navampa"
-            ],
-            "243": [
-                "Navampa"
-            ]
-        },
+        "enemygroups": [
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            0,
+            0
+        ],
         "group_ratios": [
             10,
             10,
             10,
             10,
             10,
-            10
+            10,
+            0,
+            0
+        ],
+        "enemies": [
+            "Azart",
+            "Navampa",
+            "Satrage"
         ]
     },
     {
         "ID": 73,
         "rate": 30,
         "level": 19,
-        "enemygroups": {
-            "250": [
-                "Rat Warrior"
-            ],
-            "251": [
-                "Rat Warrior",
-                "Warrior Bee"
-            ],
-            "252": [
-                "Dirty Ape"
-            ],
-            "253": [
-                "Kobold"
-            ],
-            "254": [
-                "Dirty Ape",
-                "Rat Warrior"
-            ],
-            "255": [
-                "Kobold",
-                "Rat Warrior"
-            ],
-            "256": [
-                "Dirty Ape",
-                "Warrior Bee"
-            ],
-            "257": [
-                "Kobold"
-            ]
-        },
+        "enemygroups": [
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257
+        ],
         "group_ratios": [
             3,
             3,
@@ -3109,42 +2427,28 @@
             5,
             6,
             6
+        ],
+        "enemies": [
+            "Dirty Ape",
+            "Kobold",
+            "Rat Warrior",
+            "Warrior Bee"
         ]
     },
     {
         "ID": 74,
         "rate": 30,
         "level": 20,
-        "enemygroups": {
-            "250": [
-                "Rat Warrior"
-            ],
-            "251": [
-                "Rat Warrior",
-                "Warrior Bee"
-            ],
-            "252": [
-                "Dirty Ape"
-            ],
-            "253": [
-                "Kobold"
-            ],
-            "254": [
-                "Dirty Ape",
-                "Rat Warrior"
-            ],
-            "255": [
-                "Kobold",
-                "Rat Warrior"
-            ],
-            "256": [
-                "Dirty Ape",
-                "Warrior Bee"
-            ],
-            "257": [
-                "Kobold"
-            ]
-        },
+        "enemygroups": [
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257
+        ],
         "group_ratios": [
             3,
             3,
@@ -3154,42 +2458,28 @@
             5,
             6,
             6
+        ],
+        "enemies": [
+            "Dirty Ape",
+            "Kobold",
+            "Rat Warrior",
+            "Warrior Bee"
         ]
     },
     {
         "ID": 75,
         "rate": 30,
         "level": 20,
-        "enemygroups": {
-            "250": [
-                "Rat Warrior"
-            ],
-            "251": [
-                "Rat Warrior",
-                "Warrior Bee"
-            ],
-            "252": [
-                "Dirty Ape"
-            ],
-            "253": [
-                "Kobold"
-            ],
-            "254": [
-                "Dirty Ape",
-                "Rat Warrior"
-            ],
-            "255": [
-                "Kobold",
-                "Rat Warrior"
-            ],
-            "256": [
-                "Dirty Ape",
-                "Warrior Bee"
-            ],
-            "257": [
-                "Kobold"
-            ]
-        },
+        "enemygroups": [
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257
+        ],
         "group_ratios": [
             3,
             3,
@@ -3199,42 +2489,28 @@
             5,
             6,
             6
+        ],
+        "enemies": [
+            "Dirty Ape",
+            "Kobold",
+            "Rat Warrior",
+            "Warrior Bee"
         ]
     },
     {
         "ID": 76,
         "rate": 30,
         "level": 20,
-        "enemygroups": {
-            "250": [
-                "Rat Warrior"
-            ],
-            "251": [
-                "Rat Warrior",
-                "Warrior Bee"
-            ],
-            "252": [
-                "Dirty Ape"
-            ],
-            "253": [
-                "Kobold"
-            ],
-            "254": [
-                "Dirty Ape",
-                "Rat Warrior"
-            ],
-            "255": [
-                "Kobold",
-                "Rat Warrior"
-            ],
-            "256": [
-                "Dirty Ape",
-                "Warrior Bee"
-            ],
-            "257": [
-                "Kobold"
-            ]
-        },
+        "enemygroups": [
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257
+        ],
         "group_ratios": [
             3,
             3,
@@ -3244,131 +2520,118 @@
             5,
             6,
             6
+        ],
+        "enemies": [
+            "Dirty Ape",
+            "Kobold",
+            "Rat Warrior",
+            "Warrior Bee"
         ]
     },
     {
         "ID": 77,
         "rate": 35,
         "level": 21,
-        "enemygroups": {
-            "259": [
-                "Rat Warrior",
-                "Vile Dirge"
-            ],
-            "260": [
-                "Kobold",
-                "Vile Dirge"
-            ],
-            "261": [
-                "Vile Dirge",
-                "Rat Warrior"
-            ],
-            "262": [
-                "Kobold",
-                "Rat Warrior"
-            ]
-        },
+        "enemygroups": [
+            259,
+            260,
+            261,
+            262,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             2,
             2,
             2,
-            2
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Kobold",
+            "Rat Warrior",
+            "Vile Dirge"
         ]
     },
     {
         "ID": 78,
         "rate": 35,
         "level": 21,
-        "enemygroups": {
-            "259": [
-                "Rat Warrior",
-                "Vile Dirge"
-            ],
-            "260": [
-                "Kobold",
-                "Vile Dirge"
-            ],
-            "261": [
-                "Vile Dirge",
-                "Rat Warrior"
-            ],
-            "262": [
-                "Kobold",
-                "Rat Warrior"
-            ]
-        },
+        "enemygroups": [
+            259,
+            260,
+            261,
+            262,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             2,
             2,
             2,
-            2
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Kobold",
+            "Rat Warrior",
+            "Vile Dirge"
         ]
     },
     {
         "ID": 79,
         "rate": 35,
         "level": 21,
-        "enemygroups": {
-            "259": [
-                "Rat Warrior",
-                "Vile Dirge"
-            ],
-            "260": [
-                "Kobold",
-                "Vile Dirge"
-            ],
-            "261": [
-                "Vile Dirge",
-                "Rat Warrior"
-            ],
-            "262": [
-                "Kobold",
-                "Rat Warrior"
-            ]
-        },
+        "enemygroups": [
+            259,
+            260,
+            261,
+            262,
+            0,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             2,
             2,
             2,
-            2
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Kobold",
+            "Rat Warrior",
+            "Vile Dirge"
         ]
     },
     {
         "ID": 80,
         "rate": 25,
         "level": 22,
-        "enemygroups": {
-            "268": [
-                "Orc Captain",
-                "Rat Warrior"
-            ],
-            "269": [
-                "Warrior Bee",
-                "Kobold"
-            ],
-            "270": [
-                "Dirty Ape",
-                "Rat Warrior"
-            ],
-            "271": [
-                "Dirty Ape",
-                "Warrior Bee"
-            ],
-            "272": [
-                "Kobold",
-                "Vile Dirge"
-            ],
-            "273": [
-                "Orc Captain",
-                "Vile Dirge"
-            ],
-            "274": [
-                "Orc Captain"
-            ],
-            "275": [
-                "Brutal Troll"
-            ]
-        },
+        "enemygroups": [
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275
+        ],
         "group_ratios": [
             4,
             4,
@@ -3378,44 +2641,31 @@
             3,
             3,
             3
+        ],
+        "enemies": [
+            "Brutal Troll",
+            "Dirty Ape",
+            "Kobold",
+            "Orc Captain",
+            "Rat Warrior",
+            "Vile Dirge",
+            "Warrior Bee"
         ]
     },
     {
         "ID": 81,
         "rate": 9,
         "level": 22,
-        "enemygroups": {
-            "268": [
-                "Orc Captain",
-                "Rat Warrior"
-            ],
-            "269": [
-                "Warrior Bee",
-                "Kobold"
-            ],
-            "270": [
-                "Dirty Ape",
-                "Rat Warrior"
-            ],
-            "271": [
-                "Dirty Ape",
-                "Warrior Bee"
-            ],
-            "272": [
-                "Kobold",
-                "Vile Dirge"
-            ],
-            "273": [
-                "Orc Captain",
-                "Vile Dirge"
-            ],
-            "274": [
-                "Orc Captain"
-            ],
-            "275": [
-                "Brutal Troll"
-            ]
-        },
+        "enemygroups": [
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275
+        ],
         "group_ratios": [
             2,
             2,
@@ -3425,43 +2675,31 @@
             4,
             4,
             4
+        ],
+        "enemies": [
+            "Brutal Troll",
+            "Dirty Ape",
+            "Kobold",
+            "Orc Captain",
+            "Rat Warrior",
+            "Vile Dirge",
+            "Warrior Bee"
         ]
     },
     {
         "ID": 82,
         "rate": 40,
         "level": 22,
-        "enemygroups": {
-            "277": [
-                "Acid Maggot",
-                "Kobold"
-            ],
-            "278": [
-                "Roach",
-                "Vile Dirge"
-            ],
-            "279": [
-                "Brutal Troll"
-            ],
-            "280": [
-                "Magicore"
-            ],
-            "281": [
-                "Harridan",
-                "Orc Captain"
-            ],
-            "282": [
-                "Stone Soldier"
-            ],
-            "284": [
-                "Harridan",
-                "Roach"
-            ],
-            "285": [
-                "Magicore",
-                "Vile Dirge"
-            ]
-        },
+        "enemygroups": [
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            284,
+            285
+        ],
         "group_ratios": [
             4,
             4,
@@ -3471,43 +2709,33 @@
             4,
             2,
             2
+        ],
+        "enemies": [
+            "Acid Maggot",
+            "Brutal Troll",
+            "Harridan",
+            "Kobold",
+            "Magicore",
+            "Orc Captain",
+            "Roach",
+            "Stone Soldier",
+            "Vile Dirge"
         ]
     },
     {
         "ID": 83,
         "rate": 40,
         "level": 22,
-        "enemygroups": {
-            "277": [
-                "Acid Maggot",
-                "Kobold"
-            ],
-            "278": [
-                "Roach",
-                "Vile Dirge"
-            ],
-            "279": [
-                "Brutal Troll"
-            ],
-            "280": [
-                "Magicore"
-            ],
-            "281": [
-                "Harridan",
-                "Orc Captain"
-            ],
-            "282": [
-                "Stone Soldier"
-            ],
-            "284": [
-                "Harridan",
-                "Roach"
-            ],
-            "285": [
-                "Magicore",
-                "Vile Dirge"
-            ]
-        },
+        "enemygroups": [
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            284,
+            285
+        ],
         "group_ratios": [
             2,
             2,
@@ -3517,82 +2745,69 @@
             4,
             4,
             4
+        ],
+        "enemies": [
+            "Acid Maggot",
+            "Brutal Troll",
+            "Harridan",
+            "Kobold",
+            "Magicore",
+            "Orc Captain",
+            "Roach",
+            "Stone Soldier",
+            "Vile Dirge"
         ]
     },
     {
         "ID": 84,
         "rate": 0,
         "level": 17,
-        "enemygroups": {
-            "296": [
-                "Lizard King",
-                "Harridan",
-                "Stone Soldier"
-            ],
-            "297": [
-                "Chimera"
-            ],
-            "298": [
-                "Earth Lizard"
-            ],
-            "300": [
-                "Poison Toad",
-                "Thunder Lizard"
-            ],
-            "301": [
-                "Cerebus"
-            ],
-            "302": [
-                "Deadbeard"
-            ]
-        },
+        "enemygroups": [
+            296,
+            297,
+            298,
+            300,
+            301,
+            302,
+            0,
+            0
+        ],
         "group_ratios": [
             10,
             10,
             10,
             10,
             10,
-            10
+            10,
+            0,
+            0
+        ],
+        "enemies": [
+            "Cerebus",
+            "Chimera",
+            "Deadbeard",
+            "Earth Lizard",
+            "Harridan",
+            "Lizard King",
+            "Poison Toad",
+            "Stone Soldier",
+            "Thunder Lizard"
         ]
     },
     {
         "ID": 85,
         "rate": 30,
         "level": 23,
-        "enemygroups": {
-            "310": [
-                "Cannibal Ghoul",
-                "Horned Ghost"
-            ],
-            "311": [
-                "Horned Ghost",
-                "Gnome Wizard"
-            ],
-            "312": [
-                "Earth Golem",
-                "Goblin"
-            ],
-            "313": [
-                "Mole Mage",
-                "Earth Golem"
-            ],
-            "314": [
-                "Nightmare",
-                "Horned Ghost"
-            ],
-            "315": [
-                "Gnome Wizard",
-                "Cannibal Ghoul"
-            ],
-            "316": [
-                "Goblin",
-                "Mole Mage"
-            ],
-            "317": [
-                "Nightmare",
-                "Earth Golem"
-            ]
-        },
+        "enemygroups": [
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317
+        ],
         "group_ratios": [
             6,
             6,
@@ -3602,46 +2817,31 @@
             2,
             2,
             2
+        ],
+        "enemies": [
+            "Cannibal Ghoul",
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Mole Mage",
+            "Nightmare"
         ]
     },
     {
         "ID": 86,
         "rate": 30,
         "level": 24,
-        "enemygroups": {
-            "310": [
-                "Cannibal Ghoul",
-                "Horned Ghost"
-            ],
-            "311": [
-                "Horned Ghost",
-                "Gnome Wizard"
-            ],
-            "312": [
-                "Earth Golem",
-                "Goblin"
-            ],
-            "313": [
-                "Mole Mage",
-                "Earth Golem"
-            ],
-            "314": [
-                "Nightmare",
-                "Horned Ghost"
-            ],
-            "315": [
-                "Gnome Wizard",
-                "Cannibal Ghoul"
-            ],
-            "316": [
-                "Goblin",
-                "Mole Mage"
-            ],
-            "317": [
-                "Nightmare",
-                "Earth Golem"
-            ]
-        },
+        "enemygroups": [
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317
+        ],
         "group_ratios": [
             2,
             3,
@@ -3651,46 +2851,31 @@
             3,
             3,
             3
+        ],
+        "enemies": [
+            "Cannibal Ghoul",
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Mole Mage",
+            "Nightmare"
         ]
     },
     {
         "ID": 87,
         "rate": 30,
         "level": 24,
-        "enemygroups": {
-            "310": [
-                "Cannibal Ghoul",
-                "Horned Ghost"
-            ],
-            "311": [
-                "Horned Ghost",
-                "Gnome Wizard"
-            ],
-            "312": [
-                "Earth Golem",
-                "Goblin"
-            ],
-            "313": [
-                "Mole Mage",
-                "Earth Golem"
-            ],
-            "314": [
-                "Nightmare",
-                "Horned Ghost"
-            ],
-            "315": [
-                "Gnome Wizard",
-                "Cannibal Ghoul"
-            ],
-            "316": [
-                "Goblin",
-                "Mole Mage"
-            ],
-            "317": [
-                "Nightmare",
-                "Earth Golem"
-            ]
-        },
+        "enemygroups": [
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317
+        ],
         "group_ratios": [
             1,
             1,
@@ -3700,46 +2885,31 @@
             3,
             3,
             3
+        ],
+        "enemies": [
+            "Cannibal Ghoul",
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Mole Mage",
+            "Nightmare"
         ]
     },
     {
         "ID": 88,
         "rate": 30,
         "level": 24,
-        "enemygroups": {
-            "310": [
-                "Cannibal Ghoul",
-                "Horned Ghost"
-            ],
-            "311": [
-                "Horned Ghost",
-                "Gnome Wizard"
-            ],
-            "312": [
-                "Earth Golem",
-                "Goblin"
-            ],
-            "313": [
-                "Mole Mage",
-                "Earth Golem"
-            ],
-            "314": [
-                "Nightmare",
-                "Horned Ghost"
-            ],
-            "315": [
-                "Gnome Wizard",
-                "Cannibal Ghoul"
-            ],
-            "316": [
-                "Goblin",
-                "Mole Mage"
-            ],
-            "317": [
-                "Nightmare",
-                "Earth Golem"
-            ]
-        },
+        "enemygroups": [
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317
+        ],
         "group_ratios": [
             2,
             2,
@@ -3749,116 +2919,95 @@
             6,
             6,
             6
+        ],
+        "enemies": [
+            "Cannibal Ghoul",
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Mole Mage",
+            "Nightmare"
         ]
     },
     {
         "ID": 89,
         "rate": 40,
         "level": 25,
-        "enemygroups": {
-            "319": [
-                "Horned Ghost",
-                "Nightmare"
-            ],
-            "320": [
-                "Earth Golem",
-                "Horned Ghost"
-            ],
-            "321": [
-                "Gnome Wizard",
-                "Earth Golem"
-            ],
-            "322": [
-                "Nightmare",
-                "Goblin"
-            ],
-            "323": [
-                "Nightmare",
-                "Earth Golem",
-                "Horned Ghost"
-            ]
-        },
+        "enemygroups": [
+            319,
+            320,
+            321,
+            322,
+            323,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             4,
             4,
             4,
             4,
-            4
+            4,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Nightmare"
         ]
     },
     {
         "ID": 90,
         "rate": 40,
         "level": 25,
-        "enemygroups": {
-            "319": [
-                "Horned Ghost",
-                "Nightmare"
-            ],
-            "320": [
-                "Earth Golem",
-                "Horned Ghost"
-            ],
-            "321": [
-                "Gnome Wizard",
-                "Earth Golem"
-            ],
-            "322": [
-                "Nightmare",
-                "Goblin"
-            ],
-            "323": [
-                "Nightmare",
-                "Earth Golem",
-                "Horned Ghost"
-            ]
-        },
+        "enemygroups": [
+            319,
+            320,
+            321,
+            322,
+            323,
+            0,
+            0,
+            0
+        ],
         "group_ratios": [
             4,
             4,
             4,
             4,
-            4
+            4,
+            0,
+            0,
+            0
+        ],
+        "enemies": [
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Nightmare"
         ]
     },
     {
         "ID": 91,
         "rate": 35,
         "level": 25,
-        "enemygroups": {
-            "328": [
-                "Gnome Wizard",
-                "Plated Rat"
-            ],
-            "329": [
-                "Skull Warrior",
-                "Willowisp"
-            ],
-            "330": [
-                "Orc Lord",
-                "Wild Gryphon"
-            ],
-            "331": [
-                "Ice Gargoyle",
-                "Nightmare"
-            ],
-            "332": [
-                "Wild Gryphon",
-                "Manticore King"
-            ],
-            "333": [
-                "Manticore King",
-                "Willowisp"
-            ],
-            "334": [
-                "Chimera Mage",
-                "Ice Gargoyle"
-            ],
-            "335": [
-                "Chimera Mage",
-                "Manticore King"
-            ]
-        },
+        "enemygroups": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335
+        ],
         "group_ratios": [
             6,
             6,
@@ -3868,46 +3017,34 @@
             4,
             2,
             2
+        ],
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 92,
         "rate": 35,
         "level": 25,
-        "enemygroups": {
-            "328": [
-                "Gnome Wizard",
-                "Plated Rat"
-            ],
-            "329": [
-                "Skull Warrior",
-                "Willowisp"
-            ],
-            "330": [
-                "Orc Lord",
-                "Wild Gryphon"
-            ],
-            "331": [
-                "Ice Gargoyle",
-                "Nightmare"
-            ],
-            "332": [
-                "Wild Gryphon",
-                "Manticore King"
-            ],
-            "333": [
-                "Manticore King",
-                "Willowisp"
-            ],
-            "334": [
-                "Chimera Mage",
-                "Ice Gargoyle"
-            ],
-            "335": [
-                "Chimera Mage",
-                "Manticore King"
-            ]
-        },
+        "enemygroups": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335
+        ],
         "group_ratios": [
             3,
             3,
@@ -3917,46 +3054,34 @@
             4,
             3,
             3
+        ],
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 93,
         "rate": 35,
         "level": 26,
-        "enemygroups": {
-            "328": [
-                "Gnome Wizard",
-                "Plated Rat"
-            ],
-            "329": [
-                "Skull Warrior",
-                "Willowisp"
-            ],
-            "330": [
-                "Orc Lord",
-                "Wild Gryphon"
-            ],
-            "331": [
-                "Ice Gargoyle",
-                "Nightmare"
-            ],
-            "332": [
-                "Wild Gryphon",
-                "Manticore King"
-            ],
-            "333": [
-                "Manticore King",
-                "Willowisp"
-            ],
-            "334": [
-                "Chimera Mage",
-                "Ice Gargoyle"
-            ],
-            "335": [
-                "Chimera Mage",
-                "Manticore King"
-            ]
-        },
+        "enemygroups": [
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335
+        ],
         "group_ratios": [
             3,
             3,
@@ -3966,46 +3091,34 @@
             4,
             6,
             6
+        ],
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 94,
         "rate": 34,
         "level": 27,
-        "enemygroups": {
-            "337": [
-                "Wild Gryphon",
-                "Grand Golem"
-            ],
-            "338": [
-                "Manticore King",
-                "Skull Warrior"
-            ],
-            "339": [
-                "Chimera Mage",
-                "Fenrir"
-            ],
-            "340": [
-                "Recluse",
-                "Willowisp"
-            ],
-            "341": [
-                "Boulder Beast",
-                "Thunder Lizard"
-            ],
-            "342": [
-                "Grand Golem",
-                "Boulder Beast"
-            ],
-            "343": [
-                "Fenrir",
-                "Ice Gargoyle"
-            ],
-            "344": [
-                "Thunder Lizard",
-                "Chimera Mage"
-            ]
-        },
+        "enemygroups": [
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+        ],
         "group_ratios": [
             4,
             4,
@@ -4015,46 +3128,35 @@
             3,
             2,
             2
+        ],
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 95,
         "rate": 32,
         "level": 28,
-        "enemygroups": {
-            "337": [
-                "Wild Gryphon",
-                "Grand Golem"
-            ],
-            "338": [
-                "Manticore King",
-                "Skull Warrior"
-            ],
-            "339": [
-                "Chimera Mage",
-                "Fenrir"
-            ],
-            "340": [
-                "Recluse",
-                "Willowisp"
-            ],
-            "341": [
-                "Boulder Beast",
-                "Thunder Lizard"
-            ],
-            "342": [
-                "Grand Golem",
-                "Boulder Beast"
-            ],
-            "343": [
-                "Fenrir",
-                "Ice Gargoyle"
-            ],
-            "344": [
-                "Thunder Lizard",
-                "Chimera Mage"
-            ]
-        },
+        "enemygroups": [
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+        ],
         "group_ratios": [
             3,
             3,
@@ -4064,46 +3166,35 @@
             3,
             2,
             2
+        ],
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 96,
         "rate": 30,
         "level": 29,
-        "enemygroups": {
-            "337": [
-                "Wild Gryphon",
-                "Grand Golem"
-            ],
-            "338": [
-                "Manticore King",
-                "Skull Warrior"
-            ],
-            "339": [
-                "Chimera Mage",
-                "Fenrir"
-            ],
-            "340": [
-                "Recluse",
-                "Willowisp"
-            ],
-            "341": [
-                "Boulder Beast",
-                "Thunder Lizard"
-            ],
-            "342": [
-                "Grand Golem",
-                "Boulder Beast"
-            ],
-            "343": [
-                "Fenrir",
-                "Ice Gargoyle"
-            ],
-            "344": [
-                "Thunder Lizard",
-                "Chimera Mage"
-            ]
-        },
+        "enemygroups": [
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+        ],
         "group_ratios": [
             2,
             2,
@@ -4113,46 +3204,35 @@
             4,
             3,
             3
+        ],
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 97,
         "rate": 30,
         "level": 30,
-        "enemygroups": {
-            "337": [
-                "Wild Gryphon",
-                "Grand Golem"
-            ],
-            "338": [
-                "Manticore King",
-                "Skull Warrior"
-            ],
-            "339": [
-                "Chimera Mage",
-                "Fenrir"
-            ],
-            "340": [
-                "Recluse",
-                "Willowisp"
-            ],
-            "341": [
-                "Boulder Beast",
-                "Thunder Lizard"
-            ],
-            "342": [
-                "Grand Golem",
-                "Boulder Beast"
-            ],
-            "343": [
-                "Fenrir",
-                "Ice Gargoyle"
-            ],
-            "344": [
-                "Thunder Lizard",
-                "Chimera Mage"
-            ]
-        },
+        "enemygroups": [
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+        ],
         "group_ratios": [
             2,
             2,
@@ -4162,39 +3242,35 @@
             3,
             4,
             4
+        ],
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
         "ID": 98,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "347": [
-                "Fusion Dragon"
-            ],
-            "346": [
-                "Menardi",
-                "Saturos"
-            ],
-            "264": [
-                "Brigand"
-            ],
-            "265": [
-                "Brigand"
-            ],
-            "266": [
-                "Toadonpa"
-            ],
-            "287": [
-                "Tornado Lizard"
-            ],
-            "288": [
-                "Storm Lizard"
-            ],
-            "289": [
-                "Tempest Lizard"
-            ]
-        },
+        "enemygroups": [
+            347,
+            346,
+            264,
+            265,
+            266,
+            287,
+            288,
+            289
+        ],
         "group_ratios": [
             10,
             10,
@@ -4204,38 +3280,32 @@
             80,
             10,
             10
+        ],
+        "enemies": [
+            "Brigand",
+            "Fusion Dragon",
+            "Menardi",
+            "Saturos",
+            "Storm Lizard",
+            "Tempest Lizard",
+            "Toadonpa",
+            "Tornado Lizard"
         ]
     },
     {
         "ID": 99,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "350": [
-                "Mimic"
-            ],
-            "351": [
-                "Mimic"
-            ],
-            "352": [
-                "Mimic"
-            ],
-            "353": [
-                "Mimic"
-            ],
-            "354": [
-                "Mimic"
-            ],
-            "355": [
-                "Mimic"
-            ],
-            "356": [
-                "Mimic"
-            ],
-            "357": [
-                "Mimic"
-            ]
-        },
+        "enemygroups": [
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357
+        ],
         "group_ratios": [
             10,
             10,
@@ -4245,23 +3315,25 @@
             10,
             10,
             10
+        ],
+        "enemies": [
+            "Mimic"
         ]
     },
     {
         "ID": 100,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "360": [
-                "Venus Djinni"
-            ],
-            "361": [
-                "Venus Djinni"
-            ],
-            "362": [
-                "Venus Djinni"
-            ]
-        },
+        "enemygroups": [
+            360,
+            360,
+            360,
+            361,
+            361,
+            361,
+            362,
+            0
+        ],
         "group_ratios": [
             10,
             10,
@@ -4269,27 +3341,27 @@
             10,
             10,
             10,
-            10
+            10,
+            0
+        ],
+        "enemies": [
+            "Venus Djinni"
         ]
     },
     {
         "ID": 101,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "365": [
-                "Mercury Djinni"
-            ],
-            "366": [
-                "Mercury Djinni"
-            ],
-            "367": [
-                "Mercury Djinni"
-            ],
-            "368": [
-                "Mercury Djinni"
-            ]
-        },
+        "enemygroups": [
+            365,
+            365,
+            365,
+            366,
+            367,
+            367,
+            368,
+            0
+        ],
         "group_ratios": [
             10,
             10,
@@ -4297,24 +3369,27 @@
             10,
             10,
             10,
-            10
+            10,
+            0
+        ],
+        "enemies": [
+            "Mercury Djinni"
         ]
     },
     {
         "ID": 102,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "371": [
-                "Mars Djinni"
-            ],
-            "372": [
-                "Mars Djinni"
-            ],
-            "373": [
-                "Mars Djinni"
-            ]
-        },
+        "enemygroups": [
+            371,
+            371,
+            372,
+            372,
+            372,
+            373,
+            373,
+            0
+        ],
         "group_ratios": [
             10,
             10,
@@ -4322,27 +3397,27 @@
             10,
             10,
             10,
-            10
+            10,
+            0
+        ],
+        "enemies": [
+            "Mars Djinni"
         ]
     },
     {
         "ID": 103,
         "rate": 0,
         "level": 0,
-        "enemygroups": {
-            "376": [
-                "Jupiter Djinni"
-            ],
-            "377": [
-                "Jupiter Djinni"
-            ],
-            "378": [
-                "Jupiter Djinni"
-            ],
-            "379": [
-                "Jupiter Djinni"
-            ]
-        },
+        "enemygroups": [
+            376,
+            376,
+            377,
+            377,
+            377,
+            378,
+            379,
+            0
+        ],
         "group_ratios": [
             10,
             10,
@@ -4350,7 +3425,11 @@
             10,
             10,
             10,
-            10
+            10,
+            0
+        ],
+        "enemies": [
+            "Jupiter Djinni"
         ]
     }
 ]
