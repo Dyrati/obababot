@@ -11,6 +11,7 @@ client = discord.Client()
 UserData = {}
 ReactMessages = {}
 RegisteredFuncs = {}
+character_limit = 2000
 
 
 def command(f=None, alias=None, prefix=prefix):
@@ -38,12 +39,37 @@ def is_command(message):
     return False
 
 
+def split_multiline(text, maxlen=float("inf")):
+    assert maxlen > 0, f"Cannot use length {maxlen}"
+    lines = text.splitlines()
+    response = []
+    length = 0
+    pos = 0
+    for i,line in enumerate(lines):
+        length += len(line) + 1
+        if length > maxlen:
+            response.append("\n".join(lines[pos:i]))
+            pos = i
+            length = len(line)
+    if pos < len(lines):
+        response.append("\n".join(lines[pos:]))
+    return response
+
+
 async def reply(message, text):
     ID = message.author.id
     if UserData[ID].temp.get("raw"):
         text = text.replace("`", "")
-    if len(str(text)) > 2000:
-        sent = await message.channel.send("output exceeded 2000 characters")
+    if len(text) > character_limit:
+        code_block = re.match(r"```\n?(.*?)\n?```$", text, re.DOTALL)
+        if code_block:
+            response = split_multiline(code_block.group(1), character_limit-8)
+            response = [f"```\n{r}\n```" for r in response]
+        else:
+            response = split_multiline(text, character_limit)
+        for msg in response:
+            sent = await message.channel.send(msg)
+            UserData[ID].responses[-1].append(sent)
     else:
         sent = await message.channel.send(text)
     UserData[ID].responses[-1].append(sent)

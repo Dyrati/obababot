@@ -33,7 +33,8 @@ async def on_message(message):
     if not UserData.get(ID): UserData[ID] = utilities.User(ID)
     UserData[ID].responses.append([])
     UserData[ID].temp["raw"] = kwargs.get("raw")
-    try: await utilities.usercommands[command](message, *args, **kwargs)
+    try:
+        await utilities.usercommands[command](message, *args, **kwargs)
     except Exception as e:
         args = f": {e.args[0]}" if e.args else ""
         if show_errors: await reply(message, traceback.format_exc())
