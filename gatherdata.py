@@ -27,6 +27,12 @@ def add_instance_numbers(array):
             namedict[obj["name"]] -= 1
             obj["name"] += f" ({count})"
 
+def combined_lists(*lists):
+    combined = []
+    for group in lists:
+        combined += group
+    return list(sorted(set(combined)))
+
 
 with open(ROM1, "rb") as f:
     def read(size):
@@ -217,7 +223,7 @@ with open(ROM1, "rb") as f:
             "ID": i,
             "rate": read(2),
             "level": read(2),
-            "enemy_groups": [read(2) for j in range(8)],
+            "enemygroups": [read(2) for j in range(8)],
             "group_ratios": [read(1) for j in range(8)],
         })
 
@@ -267,6 +273,8 @@ with open(ROM1, "rb") as f:
             "MFT_index": read(2),
             "outdoor": read(2),
             "encounters": set(),
+            "enemygroups": [],
+            "enemies": [],
         })
 
     f.seek(0x0C5C38) # enemy group data (16 bytes per entry)
@@ -367,12 +375,24 @@ for djinni in djinndata:
     djinni["power"] = move["power"]
     djinni["description"] = move["description"]
 
+# Enemy Groups
+for group in enemygroupdata:
+    group.pop("unused")
+    entries = [i for i in range(5) if group["enemies"][i] != "???"]
+    group["enemies"] = [group["enemies"][i] for i in entries]
+    group["min_amounts"] = [group["min_amounts"][i] for i in entries]
+    group["max_amounts"] = [group["max_amounts"][i] for i in entries]
+
+# Enounter Data
+for encounter in encounterdata:
+    encounter["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in encounter["enemygroups"] if e}
+    encounter["group_ratios"] = [g for g in encounter["group_ratios"] if g]
+
 # Map Names
 for encounter in map_encounters:
     room = mapdata[encounter["room"]]
-    door = encounter["door"]
-    ids = list(filter(lambda x: x, encounter["encounter_ids"]))
-    room["encounters"].update(ids)
+    room["encounters"].update((e for e in encounter["encounter_ids"] if e))
+mapdata[2]["encounters"] = set((e["encounter_ids"] for e in wmap_encounters if e))
 temp_areas = {}
 for room in room_references:
     flag = room["door"] >> 15
@@ -383,19 +403,14 @@ for map_ in mapdata:
     area = map_["area"]
     if area in temp_areas:
         map_["area_names"].add(temp_areas[area])
-for wmap in wmap_encounters:
-    mapdata[2]["encounters"].add(wmap["encounter_ids"])
 for map_ in mapdata:
     map_["area_names"] = list(sorted(map_["area_names"]))
     map_["encounters"] = list(sorted(map_["encounters"]))
+    map_["enemygroups"] = combined_lists(*(encounterdata[e]["enemygroups"] for e in map_["encounters"]))
+    map_["enemies"] = combined_lists(*(enemygroupdata[e]["enemies"] for e in map_["enemygroups"]))
+    map_["encounters"] = {e:list(encounterdata[e]["enemygroups"]) for e in map_["encounters"]}
+    map_["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in map_["enemygroups"]}
 
-# Enemy Groups
-for group in enemygroupdata:
-    group.pop("unused")
-    entries = [i for i in range(5) if group["enemies"][i] != "???"]
-    group["enemies"] = [group["enemies"][i] for i in entries]
-    group["min_amounts"] = [group["min_amounts"][i] for i in entries]
-    group["max_amounts"] = [group["max_amounts"][i] for i in entries]
 
 for name in [
         "djinndata", "enemydata", "itemdata", "abilitydata", "pcdata",
@@ -403,7 +418,6 @@ for name in [
         "mapdata", "room_references", "enemygroupdata"]:
     with open(f"obababot/data/GS1/{name}.json", "w") as f:
         json.dump(globals()[name], f, indent=4)
-
 
 
 with open(ROM2, "rb") as f:
@@ -603,7 +617,7 @@ with open(ROM2, "rb") as f:
             "ID": i,
             "rate": read(2),
             "level": read(2),
-            "enemy_groups": [read(2) for j in range(8)],
+            "enemygroups": [read(2) for j in range(8)],
             "group_ratios": [read(1) for j in range(8)],
         })
 
@@ -653,6 +667,8 @@ with open(ROM2, "rb") as f:
             "MFT_index": read(2),
             "outdoor": read(2),
             "encounters": set(),
+            "enemygroups": [],
+            "enemies": [],
         })
 
     f.seek(0x12CE7C)  # enemy group data (24 bytes per entry)
@@ -756,12 +772,24 @@ for djinni in djinndata:
     djinni["power"] = move["power"]
     djinni["description"] = move["description"]
 
+# Enemy Groups
+for group in enemygroupdata:
+    group.pop("unused")
+    entries = [i for i in range(5) if group["enemies"][i] != "???"]
+    group["enemies"] = [group["enemies"][i] for i in entries]
+    group["min_amounts"] = [group["min_amounts"][i] for i in entries]
+    group["max_amounts"] = [group["max_amounts"][i] for i in entries]
+
+# Enounter Data
+for encounter in encounterdata:
+    encounter["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in encounter["enemygroups"] if e}
+    encounter["group_ratios"] = [g for g in encounter["group_ratios"] if g]
+
 # Map Names
 for encounter in map_encounters:
     room = mapdata[encounter["room"]]
-    door = encounter["door"]
-    ids = list(filter(lambda x: x, encounter["encounter_ids"]))
-    room["encounters"].update(ids)
+    room["encounters"].update((e for e in encounter["encounter_ids"] if e))
+mapdata[2]["encounters"] = set((e["encounter_ids"] for e in wmap_encounters if e))
 temp_areas = {}
 for room in room_references:
     flag = room["door"] >> 15
@@ -772,20 +800,13 @@ for map_ in mapdata:
     area = map_["area"]
     if area in temp_areas:
         map_["area_names"].add(temp_areas[area])
-for wmap in wmap_encounters:
-    mapdata[2]["encounters"].add(wmap["encounter_ids"])
 for map_ in mapdata:
     map_["area_names"] = list(sorted(map_["area_names"]))
     map_["encounters"] = list(sorted(map_["encounters"]))
-
-
-# Enemy Groups
-for group in enemygroupdata:
-    group.pop("unused")
-    entries = [i for i in range(5) if group["enemies"][i] != "???"]
-    group["enemies"] = [group["enemies"][i] for i in entries]
-    group["min_amounts"] = [group["min_amounts"][i] for i in entries]
-    group["max_amounts"] = [group["max_amounts"][i] for i in entries]
+    map_["enemygroups"] = combined_lists(*(encounterdata[e]["enemygroups"] for e in map_["encounters"]))
+    map_["enemies"] = combined_lists(*(enemygroupdata[e]["enemies"] for e in map_["enemygroups"]))
+    map_["encounters"] = {e:list(encounterdata[e]["enemygroups"]) for e in map_["encounters"]}
+    map_["enemygroups"] = {e:enemygroupdata[e]["enemies"] for e in map_["enemygroups"]}
 
 
 for name in [

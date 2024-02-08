@@ -10,7 +10,9 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 1,
@@ -23,7 +25,9 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 2,
@@ -36,23 +40,395 @@
         "type": 1,
         "MFT_index": 1,
         "outdoor": 0,
-        "encounters": [
-            7,
-            8,
-            13,
-            14,
-            29,
-            30,
-            37,
-            38,
-            45,
-            46,
-            54,
-            55,
-            64,
-            65,
-            80,
-            81
+        "encounters": {
+            "7": [
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27
+            ],
+            "8": [
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27
+            ],
+            "13": [
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+            ],
+            "14": [
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+            ],
+            "29": [
+                86,
+                87,
+                88,
+                89,
+                90
+            ],
+            "30": [
+                86,
+                87,
+                88,
+                89,
+                90
+            ],
+            "37": [
+                120,
+                121,
+                122,
+                123
+            ],
+            "38": [
+                120,
+                121,
+                122,
+                123
+            ],
+            "45": [
+                141,
+                142,
+                143,
+                144,
+                145,
+                146
+            ],
+            "46": [
+                141,
+                142,
+                143,
+                144,
+                145,
+                146
+            ],
+            "54": [
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+            ],
+            "55": [
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+            ],
+            "64": [
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227
+            ],
+            "65": [
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227
+            ],
+            "80": [
+                268,
+                269,
+                270,
+                271,
+                272,
+                273,
+                274,
+                275
+            ],
+            "81": [
+                268,
+                269,
+                270,
+                271,
+                272,
+                273,
+                274,
+                275
+            ]
+        },
+        "enemygroups": {
+            "20": [
+                "Vermin"
+            ],
+            "21": [
+                "Bat"
+            ],
+            "22": [
+                "Wild Mushroom"
+            ],
+            "23": [
+                "Slime"
+            ],
+            "24": [
+                "Amaze"
+            ],
+            "25": [
+                "Zombie"
+            ],
+            "26": [
+                "Vermin",
+                "Bat",
+                "Wild Mushroom"
+            ],
+            "27": [
+                "Slime",
+                "Amaze",
+                "Bat"
+            ],
+            "50": [
+                "Rat"
+            ],
+            "51": [
+                "Zombie",
+                "Skeleton"
+            ],
+            "52": [
+                "Ghost",
+                "Bat",
+                "Zombie"
+            ],
+            "53": [
+                "Skeleton",
+                "Bat",
+                "Rat Soldier"
+            ],
+            "54": [
+                "Rat",
+                "Rat Soldier"
+            ],
+            "55": [
+                "Rat Soldier",
+                "Rat",
+                "Bat"
+            ],
+            "56": [
+                "Zombie",
+                "Ghost"
+            ],
+            "57": [
+                "Skeleton",
+                "Ghost",
+                "Will Head"
+            ],
+            "86": [
+                "Gnome"
+            ],
+            "87": [
+                "Ooze"
+            ],
+            "88": [
+                "Mauler",
+                "Ooze"
+            ],
+            "89": [
+                "Mauler",
+                "Gnome"
+            ],
+            "90": [
+                "Mauler"
+            ],
+            "120": [
+                "Ooze"
+            ],
+            "121": [
+                "Mauler"
+            ],
+            "122": [
+                "Lizard Man"
+            ],
+            "123": [
+                "Mole",
+                "Ooze"
+            ],
+            "141": [
+                "Mole",
+                "Dirge"
+            ],
+            "142": [
+                "Ape",
+                "Mole"
+            ],
+            "143": [
+                "Bone Fighter",
+                "Spirit"
+            ],
+            "144": [
+                "Ape",
+                "Dirge"
+            ],
+            "145": [
+                "Death Head",
+                "Spirit"
+            ],
+            "146": [
+                "Death Head",
+                "Bone Fighter"
+            ],
+            "180": [
+                "Mad Vermin"
+            ],
+            "181": [
+                "Fighter Bee"
+            ],
+            "182": [
+                "Death Cap"
+            ],
+            "183": [
+                "Mad Vermin",
+                "Fighter Bee"
+            ],
+            "184": [
+                "Mad Vermin",
+                "Death Cap"
+            ],
+            "185": [
+                "Undead"
+            ],
+            "186": [
+                "Undead",
+                "Fighter Bee"
+            ],
+            "187": [
+                "Undead",
+                "Death Cap"
+            ],
+            "220": [
+                "Mad Mole"
+            ],
+            "221": [
+                "Armored Rat",
+                "Rabid Bat"
+            ],
+            "222": [
+                "Mad Mole",
+                "Rabid Bat"
+            ],
+            "223": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "224": [
+                "Mad Mole",
+                "Foul Dirge"
+            ],
+            "225": [
+                "Gnome Mage"
+            ],
+            "226": [
+                "Gnome Mage",
+                "Mad Mole"
+            ],
+            "227": [
+                "Gnome Mage",
+                "Foul Dirge"
+            ],
+            "268": [
+                "Orc Captain",
+                "Rat Warrior"
+            ],
+            "269": [
+                "Warrior Bee",
+                "Kobold"
+            ],
+            "270": [
+                "Dirty Ape",
+                "Rat Warrior"
+            ],
+            "271": [
+                "Dirty Ape",
+                "Warrior Bee"
+            ],
+            "272": [
+                "Kobold",
+                "Vile Dirge"
+            ],
+            "273": [
+                "Orc Captain",
+                "Vile Dirge"
+            ],
+            "274": [
+                "Orc Captain"
+            ],
+            "275": [
+                "Brutal Troll"
+            ]
+        },
+        "enemies": [
+            "Amaze",
+            "Ape",
+            "Armored Rat",
+            "Bat",
+            "Bone Fighter",
+            "Brutal Troll",
+            "Death Cap",
+            "Death Head",
+            "Dirge",
+            "Dirty Ape",
+            "Fighter Bee",
+            "Foul Dirge",
+            "Ghost",
+            "Gnome",
+            "Gnome Mage",
+            "Kobold",
+            "Lizard Man",
+            "Mad Mole",
+            "Mad Vermin",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Orc Captain",
+            "Rabid Bat",
+            "Rat",
+            "Rat Soldier",
+            "Rat Warrior",
+            "Skeleton",
+            "Slime",
+            "Spirit",
+            "Undead",
+            "Vermin",
+            "Vile Dirge",
+            "Warrior Bee",
+            "Wild Mushroom",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
@@ -66,7 +442,9 @@
         "type": 2,
         "MFT_index": 2,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 4,
@@ -79,7 +457,9 @@
         "type": 2,
         "MFT_index": 3,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 5,
@@ -92,7 +472,9 @@
         "type": 2,
         "MFT_index": 4,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 6,
@@ -105,7 +487,9 @@
         "type": 2,
         "MFT_index": 5,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 7,
@@ -118,7 +502,9 @@
         "type": 2,
         "MFT_index": 6,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 8,
@@ -132,7 +518,9 @@
         "type": 2,
         "MFT_index": 7,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 9,
@@ -151,7 +539,9 @@
         "type": 2,
         "MFT_index": 8,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 10,
@@ -164,7 +554,9 @@
         "type": 2,
         "MFT_index": 9,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 11,
@@ -177,8 +569,38 @@
         "type": 1,
         "MFT_index": 11,
         "outdoor": 0,
-        "encounters": [
-            6
+        "encounters": {
+            "6": [
+                15,
+                16,
+                17,
+                18
+            ]
+        },
+        "enemygroups": {
+            "15": [
+                "Amaze"
+            ],
+            "16": [
+                "Amaze",
+                "Slime",
+                "Vermin"
+            ],
+            "17": [
+                "Amaze",
+                "Bat",
+                "Wild Mushroom"
+            ],
+            "18": [
+                "Amaze"
+            ]
+        },
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
@@ -192,7 +614,9 @@
         "type": 1,
         "MFT_index": 12,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 13,
@@ -205,7 +629,9 @@
         "type": 1,
         "MFT_index": 13,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 14,
@@ -218,8 +644,38 @@
         "type": 1,
         "MFT_index": 14,
         "outdoor": 0,
-        "encounters": [
-            4
+        "encounters": {
+            "4": [
+                11,
+                12,
+                13,
+                14
+            ]
+        },
+        "enemygroups": {
+            "11": [
+                "Slime"
+            ],
+            "12": [
+                "Slime",
+                "Bat"
+            ],
+            "13": [
+                "Slime",
+                "Wild Mushroom"
+            ],
+            "14": [
+                "Slime",
+                "Vermin",
+                "Wild Mushroom",
+                "Bat"
+            ]
+        },
+        "enemies": [
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
@@ -233,8 +689,34 @@
         "type": 1,
         "MFT_index": 15,
         "outdoor": 0,
-        "encounters": [
-            1
+        "encounters": {
+            "1": [
+                7,
+                8,
+                9,
+                10
+            ]
+        },
+        "enemygroups": {
+            "7": [
+                "Vermin"
+            ],
+            "8": [
+                "Bat"
+            ],
+            "9": [
+                "Wild Mushroom"
+            ],
+            "10": [
+                "Vermin",
+                "Wild Mushroom",
+                "Bat"
+            ]
+        },
+        "enemies": [
+            "Bat",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
@@ -248,10 +730,81 @@
         "type": 1,
         "MFT_index": 18,
         "outdoor": 0,
-        "encounters": [
-            2,
-            3,
-            5
+        "encounters": {
+            "2": [
+                7,
+                8,
+                9,
+                10
+            ],
+            "3": [
+                11,
+                12,
+                13,
+                14
+            ],
+            "5": [
+                15,
+                16,
+                17,
+                18
+            ]
+        },
+        "enemygroups": {
+            "7": [
+                "Vermin"
+            ],
+            "8": [
+                "Bat"
+            ],
+            "9": [
+                "Wild Mushroom"
+            ],
+            "10": [
+                "Vermin",
+                "Wild Mushroom",
+                "Bat"
+            ],
+            "11": [
+                "Slime"
+            ],
+            "12": [
+                "Slime",
+                "Bat"
+            ],
+            "13": [
+                "Slime",
+                "Wild Mushroom"
+            ],
+            "14": [
+                "Slime",
+                "Vermin",
+                "Wild Mushroom",
+                "Bat"
+            ],
+            "15": [
+                "Amaze"
+            ],
+            "16": [
+                "Amaze",
+                "Slime",
+                "Vermin"
+            ],
+            "17": [
+                "Amaze",
+                "Bat",
+                "Wild Mushroom"
+            ],
+            "18": [
+                "Amaze"
+            ]
+        },
+        "enemies": [
+            "Amaze",
+            "Bat",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom"
         ]
     },
     {
@@ -266,7 +819,9 @@
         "type": 1,
         "MFT_index": 16,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 18,
@@ -280,7 +835,9 @@
         "type": 1,
         "MFT_index": 17,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 19,
@@ -294,7 +851,9 @@
         "type": 1,
         "MFT_index": 10,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 20,
@@ -307,7 +866,9 @@
         "type": 2,
         "MFT_index": 19,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 21,
@@ -320,7 +881,9 @@
         "type": 2,
         "MFT_index": 20,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 22,
@@ -334,7 +897,9 @@
         "type": 2,
         "MFT_index": 21,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 23,
@@ -347,7 +912,9 @@
         "type": 2,
         "MFT_index": 19,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 24,
@@ -360,7 +927,9 @@
         "type": 2,
         "MFT_index": 20,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 25,
@@ -373,7 +942,9 @@
         "type": 1,
         "MFT_index": 22,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 26,
@@ -386,8 +957,45 @@
         "type": 1,
         "MFT_index": 23,
         "outdoor": 0,
-        "encounters": [
-            9
+        "encounters": {
+            "9": [
+                31,
+                32,
+                33,
+                34,
+                35
+            ]
+        },
+        "enemygroups": {
+            "31": [
+                "Ghost",
+                "Vermin",
+                "Wild Mushroom"
+            ],
+            "32": [
+                "Zombie",
+                "Bat",
+                "Slime"
+            ],
+            "33": [
+                "Zombie"
+            ],
+            "34": [
+                "Zombie",
+                "Ghost"
+            ],
+            "35": [
+                "Skeleton"
+            ]
+        },
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Skeleton",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Zombie"
         ]
     },
     {
@@ -401,8 +1009,55 @@
         "type": 1,
         "MFT_index": 24,
         "outdoor": 0,
-        "encounters": [
-            10
+        "encounters": {
+            "10": [
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+            ]
+        },
+        "enemygroups": {
+            "31": [
+                "Ghost",
+                "Vermin",
+                "Wild Mushroom"
+            ],
+            "32": [
+                "Zombie",
+                "Bat",
+                "Slime"
+            ],
+            "33": [
+                "Zombie"
+            ],
+            "34": [
+                "Zombie",
+                "Ghost"
+            ],
+            "35": [
+                "Skeleton"
+            ],
+            "36": [
+                "Will Head"
+            ],
+            "37": [
+                "Skeleton",
+                "Ghost"
+            ]
+        },
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Skeleton",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
@@ -416,8 +1071,55 @@
         "type": 1,
         "MFT_index": 25,
         "outdoor": 0,
-        "encounters": [
-            11
+        "encounters": {
+            "11": [
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+            ]
+        },
+        "enemygroups": {
+            "31": [
+                "Ghost",
+                "Vermin",
+                "Wild Mushroom"
+            ],
+            "32": [
+                "Zombie",
+                "Bat",
+                "Slime"
+            ],
+            "33": [
+                "Zombie"
+            ],
+            "34": [
+                "Zombie",
+                "Ghost"
+            ],
+            "35": [
+                "Skeleton"
+            ],
+            "36": [
+                "Will Head"
+            ],
+            "37": [
+                "Skeleton",
+                "Ghost"
+            ]
+        },
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Skeleton",
+            "Slime",
+            "Vermin",
+            "Wild Mushroom",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
@@ -431,7 +1133,9 @@
         "type": 1,
         "MFT_index": 26,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 30,
@@ -444,7 +1148,9 @@
         "type": 2,
         "MFT_index": 33,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 31,
@@ -457,7 +1163,9 @@
         "type": 2,
         "MFT_index": 34,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 32,
@@ -471,7 +1179,9 @@
         "type": 2,
         "MFT_index": 35,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 33,
@@ -484,7 +1194,9 @@
         "type": 2,
         "MFT_index": 38,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 34,
@@ -497,7 +1209,9 @@
         "type": 2,
         "MFT_index": 37,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 35,
@@ -510,7 +1224,9 @@
         "type": 1,
         "MFT_index": 36,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 36,
@@ -523,7 +1239,9 @@
         "type": 2,
         "MFT_index": 39,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 37,
@@ -536,7 +1254,9 @@
         "type": 2,
         "MFT_index": 40,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 38,
@@ -550,8 +1270,63 @@
         "type": 2,
         "MFT_index": 42,
         "outdoor": 0,
-        "encounters": [
-            15
+        "encounters": {
+            "15": [
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+            ]
+        },
+        "enemygroups": {
+            "50": [
+                "Rat"
+            ],
+            "51": [
+                "Zombie",
+                "Skeleton"
+            ],
+            "52": [
+                "Ghost",
+                "Bat",
+                "Zombie"
+            ],
+            "53": [
+                "Skeleton",
+                "Bat",
+                "Rat Soldier"
+            ],
+            "54": [
+                "Rat",
+                "Rat Soldier"
+            ],
+            "55": [
+                "Rat Soldier",
+                "Rat",
+                "Bat"
+            ],
+            "56": [
+                "Zombie",
+                "Ghost"
+            ],
+            "57": [
+                "Skeleton",
+                "Ghost",
+                "Will Head"
+            ]
+        },
+        "enemies": [
+            "Bat",
+            "Ghost",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Will Head",
+            "Zombie"
         ]
     },
     {
@@ -565,7 +1340,9 @@
         "type": 1,
         "MFT_index": 41,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 40,
@@ -578,8 +1355,56 @@
         "type": 1,
         "MFT_index": 43,
         "outdoor": 0,
-        "encounters": [
-            16
+        "encounters": {
+            "16": [
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66
+            ]
+        },
+        "enemygroups": {
+            "59": [
+                "Drone Bee"
+            ],
+            "60": [
+                "Rat",
+                "Rat Soldier"
+            ],
+            "61": [
+                "Will Head",
+                "Rat Soldier"
+            ],
+            "62": [
+                "Skeleton"
+            ],
+            "63": [
+                "Drone Bee"
+            ],
+            "64": [
+                "Skeleton",
+                "Will Head"
+            ],
+            "65": [
+                "Drone Bee",
+                "Rat Soldier",
+                "Rat"
+            ],
+            "66": [
+                "Troll"
+            ]
+        },
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
@@ -593,8 +1418,56 @@
         "type": 1,
         "MFT_index": 44,
         "outdoor": 0,
-        "encounters": [
-            17
+        "encounters": {
+            "17": [
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66
+            ]
+        },
+        "enemygroups": {
+            "59": [
+                "Drone Bee"
+            ],
+            "60": [
+                "Rat",
+                "Rat Soldier"
+            ],
+            "61": [
+                "Will Head",
+                "Rat Soldier"
+            ],
+            "62": [
+                "Skeleton"
+            ],
+            "63": [
+                "Drone Bee"
+            ],
+            "64": [
+                "Skeleton",
+                "Will Head"
+            ],
+            "65": [
+                "Drone Bee",
+                "Rat Soldier",
+                "Rat"
+            ],
+            "66": [
+                "Troll"
+            ]
+        },
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
@@ -608,8 +1481,56 @@
         "type": 1,
         "MFT_index": 45,
         "outdoor": 0,
-        "encounters": [
-            18
+        "encounters": {
+            "18": [
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66
+            ]
+        },
+        "enemygroups": {
+            "59": [
+                "Drone Bee"
+            ],
+            "60": [
+                "Rat",
+                "Rat Soldier"
+            ],
+            "61": [
+                "Will Head",
+                "Rat Soldier"
+            ],
+            "62": [
+                "Skeleton"
+            ],
+            "63": [
+                "Drone Bee"
+            ],
+            "64": [
+                "Skeleton",
+                "Will Head"
+            ],
+            "65": [
+                "Drone Bee",
+                "Rat Soldier",
+                "Rat"
+            ],
+            "66": [
+                "Troll"
+            ]
+        },
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
@@ -623,7 +1544,9 @@
         "type": 1,
         "MFT_index": 46,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 44,
@@ -636,8 +1559,56 @@
         "type": 1,
         "MFT_index": 47,
         "outdoor": 0,
-        "encounters": [
-            19
+        "encounters": {
+            "19": [
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66
+            ]
+        },
+        "enemygroups": {
+            "59": [
+                "Drone Bee"
+            ],
+            "60": [
+                "Rat",
+                "Rat Soldier"
+            ],
+            "61": [
+                "Will Head",
+                "Rat Soldier"
+            ],
+            "62": [
+                "Skeleton"
+            ],
+            "63": [
+                "Drone Bee"
+            ],
+            "64": [
+                "Skeleton",
+                "Will Head"
+            ],
+            "65": [
+                "Drone Bee",
+                "Rat Soldier",
+                "Rat"
+            ],
+            "66": [
+                "Troll"
+            ]
+        },
+        "enemies": [
+            "Drone Bee",
+            "Rat",
+            "Rat Soldier",
+            "Skeleton",
+            "Troll",
+            "Will Head"
         ]
     },
     {
@@ -651,10 +1622,82 @@
         "type": 1,
         "MFT_index": 48,
         "outdoor": 0,
-        "encounters": [
-            21,
-            22,
-            24
+        "encounters": {
+            "21": [
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75
+            ],
+            "22": [
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75
+            ],
+            "24": [
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75
+            ]
+        },
+        "enemygroups": {
+            "68": [
+                "Spider"
+            ],
+            "69": [
+                "Rat Soldier",
+                "Rat",
+                "Drone Bee"
+            ],
+            "70": [
+                "Spider",
+                "Drone Bee"
+            ],
+            "71": [
+                "Troll",
+                "Rat",
+                "Rat Soldier"
+            ],
+            "72": [
+                "Creeper"
+            ],
+            "73": [
+                "Spider",
+                "Troll"
+            ],
+            "74": [
+                "Gnome",
+                "Creeper",
+                "Creeper"
+            ],
+            "75": [
+                "Gnome",
+                "Troll",
+                "Troll"
+            ]
+        },
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
@@ -668,9 +1711,72 @@
         "type": 1,
         "MFT_index": 49,
         "outdoor": 0,
-        "encounters": [
-            20,
-            23
+        "encounters": {
+            "20": [
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75
+            ],
+            "23": [
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75
+            ]
+        },
+        "enemygroups": {
+            "68": [
+                "Spider"
+            ],
+            "69": [
+                "Rat Soldier",
+                "Rat",
+                "Drone Bee"
+            ],
+            "70": [
+                "Spider",
+                "Drone Bee"
+            ],
+            "71": [
+                "Troll",
+                "Rat",
+                "Rat Soldier"
+            ],
+            "72": [
+                "Creeper"
+            ],
+            "73": [
+                "Spider",
+                "Troll"
+            ],
+            "74": [
+                "Gnome",
+                "Creeper",
+                "Creeper"
+            ],
+            "75": [
+                "Gnome",
+                "Troll",
+                "Troll"
+            ]
+        },
+        "enemies": [
+            "Creeper",
+            "Drone Bee",
+            "Gnome",
+            "Rat",
+            "Rat Soldier",
+            "Spider",
+            "Troll"
         ]
     },
     {
@@ -684,9 +1790,67 @@
         "type": 1,
         "MFT_index": 52,
         "outdoor": 0,
-        "encounters": [
-            26,
-            28
+        "encounters": {
+            "26": [
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84
+            ],
+            "28": [
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84
+            ]
+        },
+        "enemygroups": {
+            "77": [
+                "Ooze"
+            ],
+            "78": [
+                "Ghoul"
+            ],
+            "79": [
+                "Troll",
+                "Drone Bee",
+                "Rat Soldier"
+            ],
+            "80": [
+                "Ghoul",
+                "Ooze"
+            ],
+            "81": [
+                "Gnome",
+                "Troll"
+            ],
+            "82": [
+                "Gnome",
+                "Ooze"
+            ],
+            "83": [
+                "Ghoul",
+                "Gnome"
+            ],
+            "84": [
+                "Ghoul"
+            ]
+        },
+        "enemies": [
+            "Drone Bee",
+            "Ghoul",
+            "Gnome",
+            "Ooze",
+            "Rat Soldier",
+            "Troll"
         ]
     },
     {
@@ -700,9 +1864,67 @@
         "type": 1,
         "MFT_index": 51,
         "outdoor": 0,
-        "encounters": [
-            25,
-            27
+        "encounters": {
+            "25": [
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84
+            ],
+            "27": [
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84
+            ]
+        },
+        "enemygroups": {
+            "77": [
+                "Ooze"
+            ],
+            "78": [
+                "Ghoul"
+            ],
+            "79": [
+                "Troll",
+                "Drone Bee",
+                "Rat Soldier"
+            ],
+            "80": [
+                "Ghoul",
+                "Ooze"
+            ],
+            "81": [
+                "Gnome",
+                "Troll"
+            ],
+            "82": [
+                "Gnome",
+                "Ooze"
+            ],
+            "83": [
+                "Ghoul",
+                "Gnome"
+            ],
+            "84": [
+                "Ghoul"
+            ]
+        },
+        "enemies": [
+            "Drone Bee",
+            "Ghoul",
+            "Gnome",
+            "Ooze",
+            "Rat Soldier",
+            "Troll"
         ]
     },
     {
@@ -716,7 +1938,9 @@
         "type": 1,
         "MFT_index": 50,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 50,
@@ -729,7 +1953,9 @@
         "type": 2,
         "MFT_index": 53,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 51,
@@ -743,7 +1969,9 @@
         "type": 2,
         "MFT_index": 54,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 52,
@@ -756,7 +1984,9 @@
         "type": 1,
         "MFT_index": 55,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 53,
@@ -769,8 +1999,55 @@
         "type": 1,
         "MFT_index": 56,
         "outdoor": 0,
-        "encounters": [
-            31
+        "encounters": {
+            "31": [
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+            ]
+        },
+        "enemygroups": {
+            "92": [
+                "Ooze"
+            ],
+            "93": [
+                "Cuttle",
+                "Ooze"
+            ],
+            "94": [
+                "Gnome",
+                "Ooze"
+            ],
+            "95": [
+                "Lizard Man"
+            ],
+            "96": [
+                "Mauler"
+            ],
+            "97": [
+                "Lizard Man",
+                "Cuttle"
+            ],
+            "98": [
+                "Ghoul"
+            ],
+            "99": [
+                "Siren"
+            ]
+        },
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Gnome",
+            "Lizard Man",
+            "Mauler",
+            "Ooze",
+            "Siren"
         ]
     },
     {
@@ -784,9 +2061,65 @@
         "type": 1,
         "MFT_index": 57,
         "outdoor": 0,
-        "encounters": [
-            31,
-            32
+        "encounters": {
+            "31": [
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+            ],
+            "32": [
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+            ]
+        },
+        "enemygroups": {
+            "92": [
+                "Ooze"
+            ],
+            "93": [
+                "Cuttle",
+                "Ooze"
+            ],
+            "94": [
+                "Gnome",
+                "Ooze"
+            ],
+            "95": [
+                "Lizard Man"
+            ],
+            "96": [
+                "Mauler"
+            ],
+            "97": [
+                "Lizard Man",
+                "Cuttle"
+            ],
+            "98": [
+                "Ghoul"
+            ],
+            "99": [
+                "Siren"
+            ]
+        },
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Gnome",
+            "Lizard Man",
+            "Mauler",
+            "Ooze",
+            "Siren"
         ]
     },
     {
@@ -800,9 +2133,83 @@
         "type": 1,
         "MFT_index": 58,
         "outdoor": 0,
-        "encounters": [
-            32,
-            33
+        "encounters": {
+            "32": [
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99
+            ],
+            "33": [
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104
+            ]
+        },
+        "enemygroups": {
+            "92": [
+                "Ooze"
+            ],
+            "93": [
+                "Cuttle",
+                "Ooze"
+            ],
+            "94": [
+                "Gnome",
+                "Ooze"
+            ],
+            "95": [
+                "Lizard Man"
+            ],
+            "96": [
+                "Mauler"
+            ],
+            "97": [
+                "Lizard Man",
+                "Cuttle"
+            ],
+            "98": [
+                "Ghoul"
+            ],
+            "99": [
+                "Siren"
+            ],
+            "100": [
+                "Lizard Man",
+                "Harpy"
+            ],
+            "101": [
+                "Cuttle"
+            ],
+            "102": [
+                "Harpy"
+            ],
+            "103": [
+                "Siren",
+                "Harpy"
+            ],
+            "104": [
+                "Siren"
+            ]
+        },
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Gnome",
+            "Harpy",
+            "Lizard Man",
+            "Mauler",
+            "Ooze",
+            "Siren"
         ]
     },
     {
@@ -816,9 +2223,63 @@
         "type": 1,
         "MFT_index": 59,
         "outdoor": 0,
-        "encounters": [
-            33,
-            34
+        "encounters": {
+            "33": [
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104
+            ],
+            "34": [
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104
+            ]
+        },
+        "enemygroups": {
+            "97": [
+                "Lizard Man",
+                "Cuttle"
+            ],
+            "98": [
+                "Ghoul"
+            ],
+            "99": [
+                "Siren"
+            ],
+            "100": [
+                "Lizard Man",
+                "Harpy"
+            ],
+            "101": [
+                "Cuttle"
+            ],
+            "102": [
+                "Harpy"
+            ],
+            "103": [
+                "Siren",
+                "Harpy"
+            ],
+            "104": [
+                "Siren"
+            ]
+        },
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Harpy",
+            "Lizard Man",
+            "Siren"
         ]
     },
     {
@@ -832,9 +2293,63 @@
         "type": 1,
         "MFT_index": 60,
         "outdoor": 0,
-        "encounters": [
-            34,
-            35
+        "encounters": {
+            "34": [
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104
+            ],
+            "35": [
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104
+            ]
+        },
+        "enemygroups": {
+            "97": [
+                "Lizard Man",
+                "Cuttle"
+            ],
+            "98": [
+                "Ghoul"
+            ],
+            "99": [
+                "Siren"
+            ],
+            "100": [
+                "Lizard Man",
+                "Harpy"
+            ],
+            "101": [
+                "Cuttle"
+            ],
+            "102": [
+                "Harpy"
+            ],
+            "103": [
+                "Siren",
+                "Harpy"
+            ],
+            "104": [
+                "Siren"
+            ]
+        },
+        "enemies": [
+            "Cuttle",
+            "Ghoul",
+            "Harpy",
+            "Lizard Man",
+            "Siren"
         ]
     },
     {
@@ -849,7 +2364,9 @@
         "type": 1,
         "MFT_index": 61,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 59,
@@ -862,7 +2379,9 @@
         "type": 1,
         "MFT_index": 61,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 60,
@@ -875,7 +2394,9 @@
         "type": 2,
         "MFT_index": 62,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 61,
@@ -890,7 +2411,9 @@
         "type": 2,
         "MFT_index": 63,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 62,
@@ -903,8 +2426,56 @@
         "type": 1,
         "MFT_index": 64,
         "outdoor": 0,
-        "encounters": [
-            39
+        "encounters": {
+            "39": [
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+            ]
+        },
+        "enemygroups": {
+            "120": [
+                "Ooze"
+            ],
+            "121": [
+                "Mauler"
+            ],
+            "122": [
+                "Lizard Man"
+            ],
+            "123": [
+                "Mole",
+                "Ooze"
+            ],
+            "124": [
+                "Spirit"
+            ],
+            "125": [
+                "Dirge",
+                "Mole"
+            ],
+            "126": [
+                "Skeleton"
+            ],
+            "127": [
+                "Bone Fighter",
+                "Spirit"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
@@ -918,8 +2489,56 @@
         "type": 1,
         "MFT_index": 65,
         "outdoor": 0,
-        "encounters": [
-            39
+        "encounters": {
+            "39": [
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+            ]
+        },
+        "enemygroups": {
+            "120": [
+                "Ooze"
+            ],
+            "121": [
+                "Mauler"
+            ],
+            "122": [
+                "Lizard Man"
+            ],
+            "123": [
+                "Mole",
+                "Ooze"
+            ],
+            "124": [
+                "Spirit"
+            ],
+            "125": [
+                "Dirge",
+                "Mole"
+            ],
+            "126": [
+                "Skeleton"
+            ],
+            "127": [
+                "Bone Fighter",
+                "Spirit"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
@@ -933,8 +2552,56 @@
         "type": 1,
         "MFT_index": 66,
         "outdoor": 0,
-        "encounters": [
-            40
+        "encounters": {
+            "40": [
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+            ]
+        },
+        "enemygroups": {
+            "120": [
+                "Ooze"
+            ],
+            "121": [
+                "Mauler"
+            ],
+            "122": [
+                "Lizard Man"
+            ],
+            "123": [
+                "Mole",
+                "Ooze"
+            ],
+            "124": [
+                "Spirit"
+            ],
+            "125": [
+                "Dirge",
+                "Mole"
+            ],
+            "126": [
+                "Skeleton"
+            ],
+            "127": [
+                "Bone Fighter",
+                "Spirit"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
@@ -948,7 +2615,9 @@
         "type": 1,
         "MFT_index": 67,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 66,
@@ -961,7 +2630,9 @@
         "type": 1,
         "MFT_index": 68,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 67,
@@ -974,8 +2645,56 @@
         "type": 1,
         "MFT_index": 69,
         "outdoor": 0,
-        "encounters": [
-            41
+        "encounters": {
+            "41": [
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127
+            ]
+        },
+        "enemygroups": {
+            "120": [
+                "Ooze"
+            ],
+            "121": [
+                "Mauler"
+            ],
+            "122": [
+                "Lizard Man"
+            ],
+            "123": [
+                "Mole",
+                "Ooze"
+            ],
+            "124": [
+                "Spirit"
+            ],
+            "125": [
+                "Dirge",
+                "Mole"
+            ],
+            "126": [
+                "Skeleton"
+            ],
+            "127": [
+                "Bone Fighter",
+                "Spirit"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Dirge",
+            "Lizard Man",
+            "Mauler",
+            "Mole",
+            "Ooze",
+            "Skeleton",
+            "Spirit"
         ]
     },
     {
@@ -989,8 +2708,55 @@
         "type": 1,
         "MFT_index": 70,
         "outdoor": 0,
-        "encounters": [
-            42
+        "encounters": {
+            "42": [
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136
+            ]
+        },
+        "enemygroups": {
+            "129": [
+                "Mole"
+            ],
+            "130": [
+                "Mole",
+                "Dirge"
+            ],
+            "131": [
+                "Dirge",
+                "Spirit"
+            ],
+            "132": [
+                "Bone Fighter",
+                "Spirit"
+            ],
+            "133": [
+                "Bone Fighter"
+            ],
+            "134": [
+                "Death Head"
+            ],
+            "135": [
+                "Death Head",
+                "Spirit"
+            ],
+            "136": [
+                "Death Head",
+                "Bone Fighter"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
@@ -1004,8 +2770,55 @@
         "type": 1,
         "MFT_index": 71,
         "outdoor": 0,
-        "encounters": [
-            43
+        "encounters": {
+            "43": [
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136
+            ]
+        },
+        "enemygroups": {
+            "129": [
+                "Mole"
+            ],
+            "130": [
+                "Mole",
+                "Dirge"
+            ],
+            "131": [
+                "Dirge",
+                "Spirit"
+            ],
+            "132": [
+                "Bone Fighter",
+                "Spirit"
+            ],
+            "133": [
+                "Bone Fighter"
+            ],
+            "134": [
+                "Death Head"
+            ],
+            "135": [
+                "Death Head",
+                "Spirit"
+            ],
+            "136": [
+                "Death Head",
+                "Bone Fighter"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
@@ -1019,8 +2832,55 @@
         "type": 1,
         "MFT_index": 72,
         "outdoor": 0,
-        "encounters": [
-            44
+        "encounters": {
+            "44": [
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136
+            ]
+        },
+        "enemygroups": {
+            "129": [
+                "Mole"
+            ],
+            "130": [
+                "Mole",
+                "Dirge"
+            ],
+            "131": [
+                "Dirge",
+                "Spirit"
+            ],
+            "132": [
+                "Bone Fighter",
+                "Spirit"
+            ],
+            "133": [
+                "Bone Fighter"
+            ],
+            "134": [
+                "Death Head"
+            ],
+            "135": [
+                "Death Head",
+                "Spirit"
+            ],
+            "136": [
+                "Death Head",
+                "Bone Fighter"
+            ]
+        },
+        "enemies": [
+            "Bone Fighter",
+            "Death Head",
+            "Dirge",
+            "Mole",
+            "Spirit"
         ]
     },
     {
@@ -1034,7 +2894,9 @@
         "type": 1,
         "MFT_index": 73,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 72,
@@ -1047,7 +2909,9 @@
         "type": 2,
         "MFT_index": 74,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 73,
@@ -1060,7 +2924,9 @@
         "type": 2,
         "MFT_index": 75,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 74,
@@ -1073,7 +2939,9 @@
         "type": 1,
         "MFT_index": 76,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 75,
@@ -1086,7 +2954,9 @@
         "type": 2,
         "MFT_index": 77,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 76,
@@ -1099,7 +2969,9 @@
         "type": 2,
         "MFT_index": 78,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 77,
@@ -1112,7 +2984,9 @@
         "type": 1,
         "MFT_index": 79,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 78,
@@ -1125,8 +2999,58 @@
         "type": 1,
         "MFT_index": 80,
         "outdoor": 0,
-        "encounters": [
-            47
+        "encounters": {
+            "47": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1140,8 +3064,58 @@
         "type": 1,
         "MFT_index": 81,
         "outdoor": 0,
-        "encounters": [
-            47
+        "encounters": {
+            "47": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1156,8 +3130,58 @@
         "type": 1,
         "MFT_index": 82,
         "outdoor": 0,
-        "encounters": [
-            47
+        "encounters": {
+            "47": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1171,8 +3195,58 @@
         "type": 1,
         "MFT_index": 83,
         "outdoor": 0,
-        "encounters": [
-            48
+        "encounters": {
+            "48": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1186,8 +3260,58 @@
         "type": 1,
         "MFT_index": 84,
         "outdoor": 0,
-        "encounters": [
-            48
+        "encounters": {
+            "48": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1201,8 +3325,58 @@
         "type": 1,
         "MFT_index": 85,
         "outdoor": 0,
-        "encounters": [
-            49
+        "encounters": {
+            "49": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1216,8 +3390,58 @@
         "type": 1,
         "MFT_index": 86,
         "outdoor": 0,
-        "encounters": [
-            49
+        "encounters": {
+            "49": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1231,8 +3455,58 @@
         "type": 1,
         "MFT_index": 87,
         "outdoor": 0,
-        "encounters": [
-            49
+        "encounters": {
+            "49": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1246,7 +3520,9 @@
         "type": 1,
         "MFT_index": 88,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 87,
@@ -1259,8 +3535,58 @@
         "type": 1,
         "MFT_index": 89,
         "outdoor": 0,
-        "encounters": [
-            49
+        "encounters": {
+            "49": [
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155
+            ]
+        },
+        "enemygroups": {
+            "148": [
+                "Dirge",
+                "Bone Fighter"
+            ],
+            "149": [
+                "Slime Beast",
+                "Ape"
+            ],
+            "150": [
+                "Tarantula",
+                "Bone Fighter"
+            ],
+            "151": [
+                "Slime Beast",
+                "Calamar"
+            ],
+            "152": [
+                "Tarantula",
+                "Slime Beast"
+            ],
+            "153": [
+                "Calamar"
+            ],
+            "154": [
+                "Rat Fighter"
+            ],
+            "155": [
+                "Rat Fighter",
+                "Ape"
+            ]
+        },
+        "enemies": [
+            "Ape",
+            "Bone Fighter",
+            "Calamar",
+            "Dirge",
+            "Rat Fighter",
+            "Slime Beast",
+            "Tarantula"
         ]
     },
     {
@@ -1274,7 +3600,9 @@
         "type": 2,
         "MFT_index": 91,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 89,
@@ -1287,8 +3615,56 @@
         "type": 1,
         "MFT_index": 92,
         "outdoor": 0,
-        "encounters": [
-            50
+        "encounters": {
+            "50": [
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167
+            ]
+        },
+        "enemygroups": {
+            "160": [
+                "Orc"
+            ],
+            "161": [
+                "Grub",
+                "Rat Fighter"
+            ],
+            "162": [
+                "Orc",
+                "Rat Fighter"
+            ],
+            "163": [
+                "Fighter Bee",
+                "Orc"
+            ],
+            "164": [
+                "Fighter Bee",
+                "Grub"
+            ],
+            "165": [
+                "Salamander",
+                "Grub"
+            ],
+            "166": [
+                "Salamander",
+                "Fighter Bee"
+            ],
+            "167": [
+                "Salamander"
+            ]
+        },
+        "enemies": [
+            "Fighter Bee",
+            "Grub",
+            "Orc",
+            "Rat Fighter",
+            "Salamander"
         ]
     },
     {
@@ -1302,8 +3678,56 @@
         "type": 1,
         "MFT_index": 93,
         "outdoor": 0,
-        "encounters": [
-            51
+        "encounters": {
+            "51": [
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167
+            ]
+        },
+        "enemygroups": {
+            "160": [
+                "Orc"
+            ],
+            "161": [
+                "Grub",
+                "Rat Fighter"
+            ],
+            "162": [
+                "Orc",
+                "Rat Fighter"
+            ],
+            "163": [
+                "Fighter Bee",
+                "Orc"
+            ],
+            "164": [
+                "Fighter Bee",
+                "Grub"
+            ],
+            "165": [
+                "Salamander",
+                "Grub"
+            ],
+            "166": [
+                "Salamander",
+                "Fighter Bee"
+            ],
+            "167": [
+                "Salamander"
+            ]
+        },
+        "enemies": [
+            "Fighter Bee",
+            "Grub",
+            "Orc",
+            "Rat Fighter",
+            "Salamander"
         ]
     },
     {
@@ -1317,8 +3741,56 @@
         "type": 1,
         "MFT_index": 94,
         "outdoor": 0,
-        "encounters": [
-            52
+        "encounters": {
+            "52": [
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167
+            ]
+        },
+        "enemygroups": {
+            "160": [
+                "Orc"
+            ],
+            "161": [
+                "Grub",
+                "Rat Fighter"
+            ],
+            "162": [
+                "Orc",
+                "Rat Fighter"
+            ],
+            "163": [
+                "Fighter Bee",
+                "Orc"
+            ],
+            "164": [
+                "Fighter Bee",
+                "Grub"
+            ],
+            "165": [
+                "Salamander",
+                "Grub"
+            ],
+            "166": [
+                "Salamander",
+                "Fighter Bee"
+            ],
+            "167": [
+                "Salamander"
+            ]
+        },
+        "enemies": [
+            "Fighter Bee",
+            "Grub",
+            "Orc",
+            "Rat Fighter",
+            "Salamander"
         ]
     },
     {
@@ -1332,7 +3804,9 @@
         "type": 1,
         "MFT_index": 90,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 93,
@@ -1345,7 +3819,9 @@
         "type": 1,
         "MFT_index": 30,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 94,
@@ -1358,9 +3834,67 @@
         "type": 1,
         "MFT_index": 31,
         "outdoor": 0,
-        "encounters": [
-            56,
-            57
+        "encounters": {
+            "56": [
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196
+            ],
+            "57": [
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196
+            ]
+        },
+        "enemygroups": {
+            "189": [
+                "Mad Vermin",
+                "Death Cap"
+            ],
+            "190": [
+                "Mad Vermin",
+                "Fighter Bee"
+            ],
+            "191": [
+                "Fighter Bee",
+                "Death Cap"
+            ],
+            "192": [
+                "Ravager"
+            ],
+            "193": [
+                "Undead",
+                "Death Cap"
+            ],
+            "194": [
+                "Ravager",
+                "Fighter Bee"
+            ],
+            "195": [
+                "Ghost Mage"
+            ],
+            "196": [
+                "Ghost Mage",
+                "Undead"
+            ]
+        },
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Ghost Mage",
+            "Mad Vermin",
+            "Ravager",
+            "Undead"
         ]
     },
     {
@@ -1374,9 +3908,67 @@
         "type": 1,
         "MFT_index": 32,
         "outdoor": 0,
-        "encounters": [
-            58,
-            59
+        "encounters": {
+            "58": [
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196
+            ],
+            "59": [
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196
+            ]
+        },
+        "enemygroups": {
+            "189": [
+                "Mad Vermin",
+                "Death Cap"
+            ],
+            "190": [
+                "Mad Vermin",
+                "Fighter Bee"
+            ],
+            "191": [
+                "Fighter Bee",
+                "Death Cap"
+            ],
+            "192": [
+                "Ravager"
+            ],
+            "193": [
+                "Undead",
+                "Death Cap"
+            ],
+            "194": [
+                "Ravager",
+                "Fighter Bee"
+            ],
+            "195": [
+                "Ghost Mage"
+            ],
+            "196": [
+                "Ghost Mage",
+                "Undead"
+            ]
+        },
+        "enemies": [
+            "Death Cap",
+            "Fighter Bee",
+            "Ghost Mage",
+            "Mad Vermin",
+            "Ravager",
+            "Undead"
         ]
     },
     {
@@ -1390,8 +3982,57 @@
         "type": 1,
         "MFT_index": 27,
         "outdoor": 0,
-        "encounters": [
-            60
+        "encounters": {
+            "60": [
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208
+            ]
+        },
+        "enemygroups": {
+            "201": [
+                "Fighter Bee",
+                "Death Cap"
+            ],
+            "202": [
+                "Ravager",
+                "Death Cap"
+            ],
+            "203": [
+                "Ravager",
+                "Fighter Bee"
+            ],
+            "204": [
+                "Ghost Mage",
+                "Undead"
+            ],
+            "205": [
+                "Ghost Mage"
+            ],
+            "206": [
+                "Gargoyle"
+            ],
+            "207": [
+                "Cave Troll",
+                "Gargoyle"
+            ],
+            "208": [
+                "Cave Troll"
+            ]
+        },
+        "enemies": [
+            "Cave Troll",
+            "Death Cap",
+            "Fighter Bee",
+            "Gargoyle",
+            "Ghost Mage",
+            "Ravager",
+            "Undead"
         ]
     },
     {
@@ -1405,8 +4046,57 @@
         "type": 1,
         "MFT_index": 28,
         "outdoor": 0,
-        "encounters": [
-            61
+        "encounters": {
+            "61": [
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208
+            ]
+        },
+        "enemygroups": {
+            "201": [
+                "Fighter Bee",
+                "Death Cap"
+            ],
+            "202": [
+                "Ravager",
+                "Death Cap"
+            ],
+            "203": [
+                "Ravager",
+                "Fighter Bee"
+            ],
+            "204": [
+                "Ghost Mage",
+                "Undead"
+            ],
+            "205": [
+                "Ghost Mage"
+            ],
+            "206": [
+                "Gargoyle"
+            ],
+            "207": [
+                "Cave Troll",
+                "Gargoyle"
+            ],
+            "208": [
+                "Cave Troll"
+            ]
+        },
+        "enemies": [
+            "Cave Troll",
+            "Death Cap",
+            "Fighter Bee",
+            "Gargoyle",
+            "Ghost Mage",
+            "Ravager",
+            "Undead"
         ]
     },
     {
@@ -1420,8 +4110,57 @@
         "type": 1,
         "MFT_index": 29,
         "outdoor": 0,
-        "encounters": [
-            61
+        "encounters": {
+            "61": [
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208
+            ]
+        },
+        "enemygroups": {
+            "201": [
+                "Fighter Bee",
+                "Death Cap"
+            ],
+            "202": [
+                "Ravager",
+                "Death Cap"
+            ],
+            "203": [
+                "Ravager",
+                "Fighter Bee"
+            ],
+            "204": [
+                "Ghost Mage",
+                "Undead"
+            ],
+            "205": [
+                "Ghost Mage"
+            ],
+            "206": [
+                "Gargoyle"
+            ],
+            "207": [
+                "Cave Troll",
+                "Gargoyle"
+            ],
+            "208": [
+                "Cave Troll"
+            ]
+        },
+        "enemies": [
+            "Cave Troll",
+            "Death Cap",
+            "Fighter Bee",
+            "Gargoyle",
+            "Ghost Mage",
+            "Ravager",
+            "Undead"
         ]
     },
     {
@@ -1435,7 +4174,9 @@
         "type": 2,
         "MFT_index": 95,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 100,
@@ -1448,7 +4189,9 @@
         "type": 2,
         "MFT_index": 96,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 101,
@@ -1462,7 +4205,9 @@
         "type": 2,
         "MFT_index": 97,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 102,
@@ -1475,7 +4220,9 @@
         "type": 2,
         "MFT_index": 98,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 103,
@@ -1488,7 +4235,9 @@
         "type": 2,
         "MFT_index": 99,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 104,
@@ -1501,7 +4250,9 @@
         "type": 2,
         "MFT_index": 100,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 105,
@@ -1516,7 +4267,9 @@
         "type": 2,
         "MFT_index": 101,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 106,
@@ -1529,7 +4282,9 @@
         "type": 1,
         "MFT_index": 102,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 107,
@@ -1542,7 +4297,9 @@
         "type": 2,
         "MFT_index": 103,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 108,
@@ -1556,7 +4313,9 @@
         "type": 2,
         "MFT_index": 104,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 109,
@@ -1569,7 +4328,9 @@
         "type": 1,
         "MFT_index": 105,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 110,
@@ -1582,7 +4343,9 @@
         "type": 1,
         "MFT_index": 106,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 111,
@@ -1595,7 +4358,9 @@
         "type": 1,
         "MFT_index": 107,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 112,
@@ -1608,7 +4373,9 @@
         "type": 2,
         "MFT_index": 108,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 113,
@@ -1622,7 +4389,9 @@
         "type": 1,
         "MFT_index": 109,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 114,
@@ -1635,7 +4404,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 115,
@@ -1648,7 +4419,9 @@
         "type": 1,
         "MFT_index": 110,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 116,
@@ -1661,7 +4434,9 @@
         "type": 1,
         "MFT_index": 111,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 117,
@@ -1674,7 +4449,9 @@
         "type": 1,
         "MFT_index": 112,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 118,
@@ -1687,7 +4464,9 @@
         "type": 1,
         "MFT_index": 113,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 119,
@@ -1700,7 +4479,9 @@
         "type": 1,
         "MFT_index": 114,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 120,
@@ -1713,7 +4494,9 @@
         "type": 1,
         "MFT_index": 115,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 121,
@@ -1726,7 +4509,9 @@
         "type": 1,
         "MFT_index": 116,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 122,
@@ -1739,7 +4524,9 @@
         "type": 1,
         "MFT_index": 117,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 123,
@@ -1752,7 +4539,9 @@
         "type": 1,
         "MFT_index": 118,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 124,
@@ -1765,7 +4554,9 @@
         "type": 1,
         "MFT_index": 119,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 125,
@@ -1779,7 +4570,9 @@
         "type": 1,
         "MFT_index": 120,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 126,
@@ -1792,7 +4585,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 127,
@@ -1805,7 +4600,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 128,
@@ -1818,7 +4615,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 129,
@@ -1831,7 +4630,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 130,
@@ -1844,7 +4645,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 131,
@@ -1857,7 +4660,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 132,
@@ -1870,7 +4675,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 133,
@@ -1883,7 +4690,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 134,
@@ -1896,7 +4705,9 @@
         "type": 1,
         "MFT_index": 121,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 135,
@@ -1909,7 +4720,9 @@
         "type": 2,
         "MFT_index": 122,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 136,
@@ -1923,7 +4736,9 @@
         "type": 2,
         "MFT_index": 123,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 137,
@@ -1936,7 +4751,9 @@
         "type": 2,
         "MFT_index": 124,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 138,
@@ -1949,7 +4766,9 @@
         "type": 2,
         "MFT_index": 126,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 139,
@@ -1962,7 +4781,9 @@
         "type": 2,
         "MFT_index": 125,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 140,
@@ -1976,7 +4797,9 @@
         "type": 1,
         "MFT_index": 128,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 141,
@@ -1989,7 +4812,9 @@
         "type": 1,
         "MFT_index": 127,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 142,
@@ -2002,7 +4827,9 @@
         "type": 1,
         "MFT_index": 129,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 143,
@@ -2015,7 +4842,9 @@
         "type": 1,
         "MFT_index": 130,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 144,
@@ -2028,7 +4857,9 @@
         "type": 1,
         "MFT_index": 131,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 145,
@@ -2041,7 +4872,9 @@
         "type": 1,
         "MFT_index": 132,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 146,
@@ -2054,8 +4887,61 @@
         "type": 1,
         "MFT_index": 133,
         "outdoor": 0,
-        "encounters": [
-            66
+        "encounters": {
+            "66": [
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+            ]
+        },
+        "enemygroups": {
+            "229": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "230": [
+                "Mad Mole",
+                "Worm"
+            ],
+            "231": [
+                "Gnome Mage",
+                "Wight"
+            ],
+            "232": [
+                "Golem",
+                "Wight"
+            ],
+            "233": [
+                "Clay Gargoyle",
+                "Mad Mole"
+            ],
+            "234": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "235": [
+                "Dread Hound"
+            ],
+            "236": [
+                "Dread Hound",
+                "Golem"
+            ]
+        },
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
@@ -2069,8 +4955,61 @@
         "type": 1,
         "MFT_index": 134,
         "outdoor": 0,
-        "encounters": [
-            67
+        "encounters": {
+            "67": [
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+            ]
+        },
+        "enemygroups": {
+            "229": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "230": [
+                "Mad Mole",
+                "Worm"
+            ],
+            "231": [
+                "Gnome Mage",
+                "Wight"
+            ],
+            "232": [
+                "Golem",
+                "Wight"
+            ],
+            "233": [
+                "Clay Gargoyle",
+                "Mad Mole"
+            ],
+            "234": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "235": [
+                "Dread Hound"
+            ],
+            "236": [
+                "Dread Hound",
+                "Golem"
+            ]
+        },
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
@@ -2084,8 +5023,61 @@
         "type": 1,
         "MFT_index": 135,
         "outdoor": 0,
-        "encounters": [
-            68
+        "encounters": {
+            "68": [
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+            ]
+        },
+        "enemygroups": {
+            "229": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "230": [
+                "Mad Mole",
+                "Worm"
+            ],
+            "231": [
+                "Gnome Mage",
+                "Wight"
+            ],
+            "232": [
+                "Golem",
+                "Wight"
+            ],
+            "233": [
+                "Clay Gargoyle",
+                "Mad Mole"
+            ],
+            "234": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "235": [
+                "Dread Hound"
+            ],
+            "236": [
+                "Dread Hound",
+                "Golem"
+            ]
+        },
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
@@ -2099,8 +5091,61 @@
         "type": 1,
         "MFT_index": 136,
         "outdoor": 0,
-        "encounters": [
-            69
+        "encounters": {
+            "69": [
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+            ]
+        },
+        "enemygroups": {
+            "229": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "230": [
+                "Mad Mole",
+                "Worm"
+            ],
+            "231": [
+                "Gnome Mage",
+                "Wight"
+            ],
+            "232": [
+                "Golem",
+                "Wight"
+            ],
+            "233": [
+                "Clay Gargoyle",
+                "Mad Mole"
+            ],
+            "234": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "235": [
+                "Dread Hound"
+            ],
+            "236": [
+                "Dread Hound",
+                "Golem"
+            ]
+        },
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
@@ -2114,8 +5159,61 @@
         "type": 1,
         "MFT_index": 137,
         "outdoor": 0,
-        "encounters": [
-            70
+        "encounters": {
+            "70": [
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+            ]
+        },
+        "enemygroups": {
+            "229": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "230": [
+                "Mad Mole",
+                "Worm"
+            ],
+            "231": [
+                "Gnome Mage",
+                "Wight"
+            ],
+            "232": [
+                "Golem",
+                "Wight"
+            ],
+            "233": [
+                "Clay Gargoyle",
+                "Mad Mole"
+            ],
+            "234": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "235": [
+                "Dread Hound"
+            ],
+            "236": [
+                "Dread Hound",
+                "Golem"
+            ]
+        },
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
@@ -2129,8 +5227,61 @@
         "type": 1,
         "MFT_index": 138,
         "outdoor": 0,
-        "encounters": [
-            71
+        "encounters": {
+            "71": [
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236
+            ]
+        },
+        "enemygroups": {
+            "229": [
+                "Armored Rat",
+                "Foul Dirge"
+            ],
+            "230": [
+                "Mad Mole",
+                "Worm"
+            ],
+            "231": [
+                "Gnome Mage",
+                "Wight"
+            ],
+            "232": [
+                "Golem",
+                "Wight"
+            ],
+            "233": [
+                "Clay Gargoyle",
+                "Mad Mole"
+            ],
+            "234": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "235": [
+                "Dread Hound"
+            ],
+            "236": [
+                "Dread Hound",
+                "Golem"
+            ]
+        },
+        "enemies": [
+            "Armored Rat",
+            "Clay Gargoyle",
+            "Dread Hound",
+            "Foul Dirge",
+            "Gnome Mage",
+            "Golem",
+            "Mad Mole",
+            "Wight",
+            "Worm"
         ]
     },
     {
@@ -2144,7 +5295,9 @@
         "type": 1,
         "MFT_index": 139,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 153,
@@ -2157,7 +5310,9 @@
         "type": 1,
         "MFT_index": 147,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 154,
@@ -2170,7 +5325,9 @@
         "type": 1,
         "MFT_index": 148,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 155,
@@ -2183,7 +5340,9 @@
         "type": 1,
         "MFT_index": 149,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 156,
@@ -2196,7 +5355,9 @@
         "type": 1,
         "MFT_index": 150,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 157,
@@ -2209,9 +5370,63 @@
         "type": 1,
         "MFT_index": 140,
         "outdoor": 0,
-        "encounters": [
-            74,
-            75
+        "encounters": {
+            "74": [
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257
+            ],
+            "75": [
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257
+            ]
+        },
+        "enemygroups": {
+            "250": [
+                "Rat Warrior"
+            ],
+            "251": [
+                "Rat Warrior",
+                "Warrior Bee"
+            ],
+            "252": [
+                "Dirty Ape"
+            ],
+            "253": [
+                "Kobold"
+            ],
+            "254": [
+                "Dirty Ape",
+                "Rat Warrior"
+            ],
+            "255": [
+                "Kobold",
+                "Rat Warrior"
+            ],
+            "256": [
+                "Dirty Ape",
+                "Warrior Bee"
+            ],
+            "257": [
+                "Kobold"
+            ]
+        },
+        "enemies": [
+            "Dirty Ape",
+            "Kobold",
+            "Rat Warrior",
+            "Warrior Bee"
         ]
     },
     {
@@ -2225,9 +5440,63 @@
         "type": 1,
         "MFT_index": 141,
         "outdoor": 0,
-        "encounters": [
-            73,
-            76
+        "encounters": {
+            "73": [
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257
+            ],
+            "76": [
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257
+            ]
+        },
+        "enemygroups": {
+            "250": [
+                "Rat Warrior"
+            ],
+            "251": [
+                "Rat Warrior",
+                "Warrior Bee"
+            ],
+            "252": [
+                "Dirty Ape"
+            ],
+            "253": [
+                "Kobold"
+            ],
+            "254": [
+                "Dirty Ape",
+                "Rat Warrior"
+            ],
+            "255": [
+                "Kobold",
+                "Rat Warrior"
+            ],
+            "256": [
+                "Dirty Ape",
+                "Warrior Bee"
+            ],
+            "257": [
+                "Kobold"
+            ]
+        },
+        "enemies": [
+            "Dirty Ape",
+            "Kobold",
+            "Rat Warrior",
+            "Warrior Bee"
         ]
     },
     {
@@ -2241,7 +5510,9 @@
         "type": 1,
         "MFT_index": 142,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 160,
@@ -2254,7 +5525,9 @@
         "type": 1,
         "MFT_index": 143,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 161,
@@ -2267,7 +5540,9 @@
         "type": 1,
         "MFT_index": 144,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 162,
@@ -2280,9 +5555,42 @@
         "type": 1,
         "MFT_index": 145,
         "outdoor": 0,
-        "encounters": [
-            77,
-            78
+        "encounters": {
+            "77": [
+                259,
+                260,
+                261,
+                262
+            ],
+            "78": [
+                259,
+                260,
+                261,
+                262
+            ]
+        },
+        "enemygroups": {
+            "259": [
+                "Rat Warrior",
+                "Vile Dirge"
+            ],
+            "260": [
+                "Kobold",
+                "Vile Dirge"
+            ],
+            "261": [
+                "Vile Dirge",
+                "Rat Warrior"
+            ],
+            "262": [
+                "Kobold",
+                "Rat Warrior"
+            ]
+        },
+        "enemies": [
+            "Kobold",
+            "Rat Warrior",
+            "Vile Dirge"
         ]
     },
     {
@@ -2296,8 +5604,36 @@
         "type": 1,
         "MFT_index": 146,
         "outdoor": 0,
-        "encounters": [
-            79
+        "encounters": {
+            "79": [
+                259,
+                260,
+                261,
+                262
+            ]
+        },
+        "enemygroups": {
+            "259": [
+                "Rat Warrior",
+                "Vile Dirge"
+            ],
+            "260": [
+                "Kobold",
+                "Vile Dirge"
+            ],
+            "261": [
+                "Vile Dirge",
+                "Rat Warrior"
+            ],
+            "262": [
+                "Kobold",
+                "Rat Warrior"
+            ]
+        },
+        "enemies": [
+            "Kobold",
+            "Rat Warrior",
+            "Vile Dirge"
         ]
     },
     {
@@ -2311,8 +5647,59 @@
         "type": 1,
         "MFT_index": 151,
         "outdoor": 0,
-        "encounters": [
-            82
+        "encounters": {
+            "82": [
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                284,
+                285
+            ]
+        },
+        "enemygroups": {
+            "277": [
+                "Acid Maggot",
+                "Kobold"
+            ],
+            "278": [
+                "Roach",
+                "Vile Dirge"
+            ],
+            "279": [
+                "Brutal Troll"
+            ],
+            "280": [
+                "Magicore"
+            ],
+            "281": [
+                "Harridan",
+                "Orc Captain"
+            ],
+            "282": [
+                "Stone Soldier"
+            ],
+            "284": [
+                "Harridan",
+                "Roach"
+            ],
+            "285": [
+                "Magicore",
+                "Vile Dirge"
+            ]
+        },
+        "enemies": [
+            "Acid Maggot",
+            "Brutal Troll",
+            "Harridan",
+            "Kobold",
+            "Magicore",
+            "Orc Captain",
+            "Roach",
+            "Stone Soldier",
+            "Vile Dirge"
         ]
     },
     {
@@ -2326,8 +5713,59 @@
         "type": 1,
         "MFT_index": 152,
         "outdoor": 0,
-        "encounters": [
-            83
+        "encounters": {
+            "83": [
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                284,
+                285
+            ]
+        },
+        "enemygroups": {
+            "277": [
+                "Acid Maggot",
+                "Kobold"
+            ],
+            "278": [
+                "Roach",
+                "Vile Dirge"
+            ],
+            "279": [
+                "Brutal Troll"
+            ],
+            "280": [
+                "Magicore"
+            ],
+            "281": [
+                "Harridan",
+                "Orc Captain"
+            ],
+            "282": [
+                "Stone Soldier"
+            ],
+            "284": [
+                "Harridan",
+                "Roach"
+            ],
+            "285": [
+                "Magicore",
+                "Vile Dirge"
+            ]
+        },
+        "enemies": [
+            "Acid Maggot",
+            "Brutal Troll",
+            "Harridan",
+            "Kobold",
+            "Magicore",
+            "Orc Captain",
+            "Roach",
+            "Stone Soldier",
+            "Vile Dirge"
         ]
     },
     {
@@ -2341,7 +5779,9 @@
         "type": 1,
         "MFT_index": 153,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 167,
@@ -2354,7 +5794,9 @@
         "type": 2,
         "MFT_index": 154,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 168,
@@ -2368,7 +5810,9 @@
         "type": 2,
         "MFT_index": 155,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 169,
@@ -2381,7 +5825,9 @@
         "type": 1,
         "MFT_index": 156,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 170,
@@ -2394,9 +5840,70 @@
         "type": 1,
         "MFT_index": 157,
         "outdoor": 0,
-        "encounters": [
-            85,
-            86
+        "encounters": {
+            "85": [
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316,
+                317
+            ],
+            "86": [
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316,
+                317
+            ]
+        },
+        "enemygroups": {
+            "310": [
+                "Cannibal Ghoul",
+                "Horned Ghost"
+            ],
+            "311": [
+                "Horned Ghost",
+                "Gnome Wizard"
+            ],
+            "312": [
+                "Earth Golem",
+                "Goblin"
+            ],
+            "313": [
+                "Mole Mage",
+                "Earth Golem"
+            ],
+            "314": [
+                "Nightmare",
+                "Horned Ghost"
+            ],
+            "315": [
+                "Gnome Wizard",
+                "Cannibal Ghoul"
+            ],
+            "316": [
+                "Goblin",
+                "Mole Mage"
+            ],
+            "317": [
+                "Nightmare",
+                "Earth Golem"
+            ]
+        },
+        "enemies": [
+            "Cannibal Ghoul",
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Mole Mage",
+            "Nightmare"
         ]
     },
     {
@@ -2411,9 +5918,70 @@
         "type": 1,
         "MFT_index": 158,
         "outdoor": 0,
-        "encounters": [
-            87,
-            88
+        "encounters": {
+            "87": [
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316,
+                317
+            ],
+            "88": [
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316,
+                317
+            ]
+        },
+        "enemygroups": {
+            "310": [
+                "Cannibal Ghoul",
+                "Horned Ghost"
+            ],
+            "311": [
+                "Horned Ghost",
+                "Gnome Wizard"
+            ],
+            "312": [
+                "Earth Golem",
+                "Goblin"
+            ],
+            "313": [
+                "Mole Mage",
+                "Earth Golem"
+            ],
+            "314": [
+                "Nightmare",
+                "Horned Ghost"
+            ],
+            "315": [
+                "Gnome Wizard",
+                "Cannibal Ghoul"
+            ],
+            "316": [
+                "Goblin",
+                "Mole Mage"
+            ],
+            "317": [
+                "Nightmare",
+                "Earth Golem"
+            ]
+        },
+        "enemies": [
+            "Cannibal Ghoul",
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Mole Mage",
+            "Nightmare"
         ]
     },
     {
@@ -2427,8 +5995,63 @@
         "type": 1,
         "MFT_index": 159,
         "outdoor": 0,
-        "encounters": [
-            92
+        "encounters": {
+            "92": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ]
+        },
+        "enemygroups": {
+            "328": [
+                "Gnome Wizard",
+                "Plated Rat"
+            ],
+            "329": [
+                "Skull Warrior",
+                "Willowisp"
+            ],
+            "330": [
+                "Orc Lord",
+                "Wild Gryphon"
+            ],
+            "331": [
+                "Ice Gargoyle",
+                "Nightmare"
+            ],
+            "332": [
+                "Wild Gryphon",
+                "Manticore King"
+            ],
+            "333": [
+                "Manticore King",
+                "Willowisp"
+            ],
+            "334": [
+                "Chimera Mage",
+                "Ice Gargoyle"
+            ],
+            "335": [
+                "Chimera Mage",
+                "Manticore King"
+            ]
+        },
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2443,10 +6066,83 @@
         "type": 1,
         "MFT_index": 160,
         "outdoor": 0,
-        "encounters": [
-            91,
-            92,
-            93
+        "encounters": {
+            "91": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ],
+            "92": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ],
+            "93": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ]
+        },
+        "enemygroups": {
+            "328": [
+                "Gnome Wizard",
+                "Plated Rat"
+            ],
+            "329": [
+                "Skull Warrior",
+                "Willowisp"
+            ],
+            "330": [
+                "Orc Lord",
+                "Wild Gryphon"
+            ],
+            "331": [
+                "Ice Gargoyle",
+                "Nightmare"
+            ],
+            "332": [
+                "Wild Gryphon",
+                "Manticore King"
+            ],
+            "333": [
+                "Manticore King",
+                "Willowisp"
+            ],
+            "334": [
+                "Chimera Mage",
+                "Ice Gargoyle"
+            ],
+            "335": [
+                "Chimera Mage",
+                "Manticore King"
+            ]
+        },
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2460,8 +6156,63 @@
         "type": 1,
         "MFT_index": 163,
         "outdoor": 0,
-        "encounters": [
-            91
+        "encounters": {
+            "91": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ]
+        },
+        "enemygroups": {
+            "328": [
+                "Gnome Wizard",
+                "Plated Rat"
+            ],
+            "329": [
+                "Skull Warrior",
+                "Willowisp"
+            ],
+            "330": [
+                "Orc Lord",
+                "Wild Gryphon"
+            ],
+            "331": [
+                "Ice Gargoyle",
+                "Nightmare"
+            ],
+            "332": [
+                "Wild Gryphon",
+                "Manticore King"
+            ],
+            "333": [
+                "Manticore King",
+                "Willowisp"
+            ],
+            "334": [
+                "Chimera Mage",
+                "Ice Gargoyle"
+            ],
+            "335": [
+                "Chimera Mage",
+                "Manticore King"
+            ]
+        },
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2475,8 +6226,63 @@
         "type": 1,
         "MFT_index": 162,
         "outdoor": 0,
-        "encounters": [
-            91
+        "encounters": {
+            "91": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ]
+        },
+        "enemygroups": {
+            "328": [
+                "Gnome Wizard",
+                "Plated Rat"
+            ],
+            "329": [
+                "Skull Warrior",
+                "Willowisp"
+            ],
+            "330": [
+                "Orc Lord",
+                "Wild Gryphon"
+            ],
+            "331": [
+                "Ice Gargoyle",
+                "Nightmare"
+            ],
+            "332": [
+                "Wild Gryphon",
+                "Manticore King"
+            ],
+            "333": [
+                "Manticore King",
+                "Willowisp"
+            ],
+            "334": [
+                "Chimera Mage",
+                "Ice Gargoyle"
+            ],
+            "335": [
+                "Chimera Mage",
+                "Manticore King"
+            ]
+        },
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2491,8 +6297,63 @@
         "type": 1,
         "MFT_index": 161,
         "outdoor": 0,
-        "encounters": [
-            91
+        "encounters": {
+            "91": [
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335
+            ]
+        },
+        "enemygroups": {
+            "328": [
+                "Gnome Wizard",
+                "Plated Rat"
+            ],
+            "329": [
+                "Skull Warrior",
+                "Willowisp"
+            ],
+            "330": [
+                "Orc Lord",
+                "Wild Gryphon"
+            ],
+            "331": [
+                "Ice Gargoyle",
+                "Nightmare"
+            ],
+            "332": [
+                "Wild Gryphon",
+                "Manticore King"
+            ],
+            "333": [
+                "Manticore King",
+                "Willowisp"
+            ],
+            "334": [
+                "Chimera Mage",
+                "Ice Gargoyle"
+            ],
+            "335": [
+                "Chimera Mage",
+                "Manticore King"
+            ]
+        },
+        "enemies": [
+            "Chimera Mage",
+            "Gnome Wizard",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Nightmare",
+            "Orc Lord",
+            "Plated Rat",
+            "Skull Warrior",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2507,7 +6368,9 @@
         "type": 1,
         "MFT_index": 167,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 178,
@@ -2520,7 +6383,9 @@
         "type": 2,
         "MFT_index": 164,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 179,
@@ -2534,7 +6399,9 @@
         "type": 2,
         "MFT_index": 165,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 180,
@@ -2547,7 +6414,9 @@
         "type": 2,
         "MFT_index": 166,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 181,
@@ -2560,7 +6429,9 @@
         "type": 1,
         "MFT_index": 168,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 182,
@@ -2574,9 +6445,51 @@
         "type": 1,
         "MFT_index": 169,
         "outdoor": 0,
-        "encounters": [
-            89,
-            90
+        "encounters": {
+            "89": [
+                319,
+                320,
+                321,
+                322,
+                323
+            ],
+            "90": [
+                319,
+                320,
+                321,
+                322,
+                323
+            ]
+        },
+        "enemygroups": {
+            "319": [
+                "Horned Ghost",
+                "Nightmare"
+            ],
+            "320": [
+                "Earth Golem",
+                "Horned Ghost"
+            ],
+            "321": [
+                "Gnome Wizard",
+                "Earth Golem"
+            ],
+            "322": [
+                "Nightmare",
+                "Goblin"
+            ],
+            "323": [
+                "Nightmare",
+                "Earth Golem",
+                "Horned Ghost"
+            ]
+        },
+        "enemies": [
+            "Earth Golem",
+            "Gnome Wizard",
+            "Goblin",
+            "Horned Ghost",
+            "Nightmare"
         ]
     },
     {
@@ -2590,9 +6503,74 @@
         "type": 1,
         "MFT_index": 170,
         "outdoor": 0,
-        "encounters": [
-            94,
-            95
+        "encounters": {
+            "94": [
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344
+            ],
+            "95": [
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344
+            ]
+        },
+        "enemygroups": {
+            "337": [
+                "Wild Gryphon",
+                "Grand Golem"
+            ],
+            "338": [
+                "Manticore King",
+                "Skull Warrior"
+            ],
+            "339": [
+                "Chimera Mage",
+                "Fenrir"
+            ],
+            "340": [
+                "Recluse",
+                "Willowisp"
+            ],
+            "341": [
+                "Boulder Beast",
+                "Thunder Lizard"
+            ],
+            "342": [
+                "Grand Golem",
+                "Boulder Beast"
+            ],
+            "343": [
+                "Fenrir",
+                "Ice Gargoyle"
+            ],
+            "344": [
+                "Thunder Lizard",
+                "Chimera Mage"
+            ]
+        },
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2606,8 +6584,64 @@
         "type": 1,
         "MFT_index": 171,
         "outdoor": 0,
-        "encounters": [
-            95
+        "encounters": {
+            "95": [
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344
+            ]
+        },
+        "enemygroups": {
+            "337": [
+                "Wild Gryphon",
+                "Grand Golem"
+            ],
+            "338": [
+                "Manticore King",
+                "Skull Warrior"
+            ],
+            "339": [
+                "Chimera Mage",
+                "Fenrir"
+            ],
+            "340": [
+                "Recluse",
+                "Willowisp"
+            ],
+            "341": [
+                "Boulder Beast",
+                "Thunder Lizard"
+            ],
+            "342": [
+                "Grand Golem",
+                "Boulder Beast"
+            ],
+            "343": [
+                "Fenrir",
+                "Ice Gargoyle"
+            ],
+            "344": [
+                "Thunder Lizard",
+                "Chimera Mage"
+            ]
+        },
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2621,8 +6655,64 @@
         "type": 1,
         "MFT_index": 172,
         "outdoor": 0,
-        "encounters": [
-            96
+        "encounters": {
+            "96": [
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344
+            ]
+        },
+        "enemygroups": {
+            "337": [
+                "Wild Gryphon",
+                "Grand Golem"
+            ],
+            "338": [
+                "Manticore King",
+                "Skull Warrior"
+            ],
+            "339": [
+                "Chimera Mage",
+                "Fenrir"
+            ],
+            "340": [
+                "Recluse",
+                "Willowisp"
+            ],
+            "341": [
+                "Boulder Beast",
+                "Thunder Lizard"
+            ],
+            "342": [
+                "Grand Golem",
+                "Boulder Beast"
+            ],
+            "343": [
+                "Fenrir",
+                "Ice Gargoyle"
+            ],
+            "344": [
+                "Thunder Lizard",
+                "Chimera Mage"
+            ]
+        },
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2636,8 +6726,64 @@
         "type": 1,
         "MFT_index": 173,
         "outdoor": 0,
-        "encounters": [
-            97
+        "encounters": {
+            "97": [
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344
+            ]
+        },
+        "enemygroups": {
+            "337": [
+                "Wild Gryphon",
+                "Grand Golem"
+            ],
+            "338": [
+                "Manticore King",
+                "Skull Warrior"
+            ],
+            "339": [
+                "Chimera Mage",
+                "Fenrir"
+            ],
+            "340": [
+                "Recluse",
+                "Willowisp"
+            ],
+            "341": [
+                "Boulder Beast",
+                "Thunder Lizard"
+            ],
+            "342": [
+                "Grand Golem",
+                "Boulder Beast"
+            ],
+            "343": [
+                "Fenrir",
+                "Ice Gargoyle"
+            ],
+            "344": [
+                "Thunder Lizard",
+                "Chimera Mage"
+            ]
+        },
+        "enemies": [
+            "Boulder Beast",
+            "Chimera Mage",
+            "Fenrir",
+            "Grand Golem",
+            "Ice Gargoyle",
+            "Manticore King",
+            "Recluse",
+            "Skull Warrior",
+            "Thunder Lizard",
+            "Wild Gryphon",
+            "Willowisp"
         ]
     },
     {
@@ -2652,7 +6798,9 @@
         "type": 1,
         "MFT_index": 174,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 188,
@@ -2665,7 +6813,9 @@
         "type": 2,
         "MFT_index": 175,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 189,
@@ -2678,7 +6828,9 @@
         "type": 2,
         "MFT_index": 176,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 190,
@@ -2691,7 +6843,9 @@
         "type": 2,
         "MFT_index": 177,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 191,
@@ -2704,7 +6858,9 @@
         "type": 1,
         "MFT_index": 178,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 192,
@@ -2717,7 +6873,9 @@
         "type": 1,
         "MFT_index": 179,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 193,
@@ -2730,7 +6888,9 @@
         "type": 1,
         "MFT_index": 180,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 194,
@@ -2743,7 +6903,9 @@
         "type": 1,
         "MFT_index": 181,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 195,
@@ -2756,7 +6918,9 @@
         "type": 1,
         "MFT_index": 182,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 196,
@@ -2769,7 +6933,9 @@
         "type": 1,
         "MFT_index": 183,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 197,
@@ -2782,7 +6948,9 @@
         "type": 1,
         "MFT_index": 184,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 198,
@@ -2795,7 +6963,9 @@
         "type": 1,
         "MFT_index": 185,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 199,
@@ -2808,7 +6978,9 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     },
     {
         "ID": 200,
@@ -2821,6 +6993,8 @@
         "type": 1,
         "MFT_index": 0,
         "outdoor": 0,
-        "encounters": []
+        "encounters": {},
+        "enemygroups": {},
+        "enemies": []
     }
 ]

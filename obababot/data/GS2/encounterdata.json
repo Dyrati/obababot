@@ -3,41 +3,39 @@
         "ID": 0,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        "group_ratios": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ]
+        "enemygroups": {},
+        "group_ratios": []
     },
     {
         "ID": 1,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8
-        ],
+        "enemygroups": {
+            "1": [
+                "Venus Djinni"
+            ],
+            "2": [
+                "Venus Djinni"
+            ],
+            "3": [
+                "Venus Djinni"
+            ],
+            "4": [
+                "Venus Djinni"
+            ],
+            "5": [
+                "Venus Djinni"
+            ],
+            "6": [
+                "Venus Djinni"
+            ],
+            "7": [
+                "Venus Djinni"
+            ],
+            "8": [
+                "Venus Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -53,41 +51,53 @@
         "ID": 2,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            9,
-            10,
-            11,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "9": [
+                "Venus Djinni"
+            ],
+            "10": [
+                "Venus Djinni"
+            ],
+            "11": [
+                "Venus Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
-            10,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 3,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20
-        ],
+        "enemygroups": {
+            "13": [
+                "Mercury Djinni"
+            ],
+            "14": [
+                "Mercury Djinni"
+            ],
+            "15": [
+                "Mercury Djinni"
+            ],
+            "16": [
+                "Mercury Djinni"
+            ],
+            "17": [
+                "Mercury Djinni"
+            ],
+            "18": [
+                "Mercury Djinni"
+            ],
+            "19": [
+                "Mercury Djinni"
+            ],
+            "20": [
+                "Mercury Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -103,41 +113,53 @@
         "ID": 4,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            21,
-            22,
-            23,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "21": [
+                "Mercury Djinni"
+            ],
+            "22": [
+                "Mercury Djinni"
+            ],
+            "23": [
+                "Mercury Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
-            10,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 5,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32
-        ],
+        "enemygroups": {
+            "25": [
+                "Mars Djinni"
+            ],
+            "26": [
+                "Mars Djinni"
+            ],
+            "27": [
+                "Mars Djinni"
+            ],
+            "28": [
+                "Mars Djinni"
+            ],
+            "29": [
+                "Mars Djinni"
+            ],
+            "30": [
+                "Mars Djinni"
+            ],
+            "31": [
+                "Mars Djinni"
+            ],
+            "32": [
+                "Mars Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -153,41 +175,53 @@
         "ID": 6,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            33,
-            34,
-            35,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "33": [
+                "Mars Djinni"
+            ],
+            "34": [
+                "Mars Djinni"
+            ],
+            "35": [
+                "Mars Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
-            10,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 7,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            37,
-            38,
-            39,
-            40,
-            41,
-            42,
-            43,
-            44
-        ],
+        "enemygroups": {
+            "37": [
+                "Jupiter Djinni"
+            ],
+            "38": [
+                "Jupiter Djinni"
+            ],
+            "39": [
+                "Jupiter Djinni"
+            ],
+            "40": [
+                "Jupiter Djinni"
+            ],
+            "41": [
+                "Jupiter Djinni"
+            ],
+            "42": [
+                "Jupiter Djinni"
+            ],
+            "43": [
+                "Jupiter Djinni"
+            ],
+            "44": [
+                "Jupiter Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -203,116 +237,118 @@
         "ID": 8,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            45,
-            46,
-            47,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "45": [
+                "Jupiter Djinni"
+            ],
+            "46": [
+                "Jupiter Djinni"
+            ],
+            "47": [
+                "Jupiter Djinni"
+            ]
+        },
         "group_ratios": [
             10,
             10,
-            10,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 9,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            49,
-            50,
-            51,
-            52,
-            53,
-            637,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "49": [
+                "Ruffian"
+            ],
+            "50": [
+                "Ruffian"
+            ],
+            "51": [
+                "Ruffian"
+            ],
+            "52": [
+                "Punch Ant"
+            ],
+            "53": [
+                "Chestbeater"
+            ],
+            "637": [
+                "Wild Wolf"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             10,
             10,
             10,
-            10,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 10,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            55,
-            56,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "55": [
+                "King Scorpion"
+            ],
+            "56": [
+                "Briggs",
+                "Sea Fighter"
+            ]
+        },
         "group_ratios": [
             10,
-            10,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 11,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            58,
-            59,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "58": [
+                "Aqua Jelly"
+            ],
+            "59": [
+                "Aqua Hydra"
+            ]
+        },
         "group_ratios": [
             50,
-            10,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 12,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            61,
-            62,
-            63,
-            64,
-            65,
-            66,
-            67,
-            0
-        ],
+        "enemygroups": {
+            "61": [
+                "Serpent"
+            ],
+            "62": [
+                "Serpent"
+            ],
+            "63": [
+                "Serpent"
+            ],
+            "64": [
+                "Serpent"
+            ],
+            "65": [
+                "Serpent"
+            ],
+            "66": [
+                "Avimander"
+            ],
+            "67": [
+                "Poseidon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -320,24 +356,52 @@
             10,
             10,
             10,
-            10,
-            0
+            10
         ]
     },
     {
         "ID": 13,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            69,
-            70,
-            71,
-            72,
-            73,
-            74,
-            75,
-            76
-        ],
+        "enemygroups": {
+            "69": [
+                "Moapa",
+                "Knight",
+                "Knight"
+            ],
+            "70": [
+                "Moapa",
+                "Knight",
+                "Knight"
+            ],
+            "71": [
+                "Moapa",
+                "Knight",
+                "Knight"
+            ],
+            "72": [
+                "Moapa",
+                "Knight",
+                "Knight"
+            ],
+            "73": [
+                "Moapa",
+                "Knight",
+                "Knight"
+            ],
+            "74": [
+                "Karst",
+                "Agatio"
+            ],
+            "75": [
+                "Karst",
+                "Agatio"
+            ],
+            "76": [
+                "Karst",
+                "Agatio"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -353,16 +417,37 @@
         "ID": 14,
         "rate": 35,
         "level": 4,
-        "enemy_groups": [
-            241,
-            242,
-            243,
-            244,
-            245,
-            246,
-            247,
-            248
-        ],
+        "enemygroups": {
+            "241": [
+                "Giant Bat"
+            ],
+            "242": [
+                "Punch Ant"
+            ],
+            "243": [
+                "Wild Wolf"
+            ],
+            "244": [
+                "Punch Ant"
+            ],
+            "245": [
+                "Punch Ant",
+                "Giant Bat"
+            ],
+            "246": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "247": [
+                "Wild Wolf",
+                "Punch Ant"
+            ],
+            "248": [
+                "Wild Wolf",
+                "Punch Ant",
+                "Giant Bat"
+            ]
+        },
         "group_ratios": [
             4,
             4,
@@ -378,16 +463,37 @@
         "ID": 15,
         "rate": 10,
         "level": 4,
-        "enemy_groups": [
-            241,
-            242,
-            243,
-            244,
-            245,
-            246,
-            247,
-            248
-        ],
+        "enemygroups": {
+            "241": [
+                "Giant Bat"
+            ],
+            "242": [
+                "Punch Ant"
+            ],
+            "243": [
+                "Wild Wolf"
+            ],
+            "244": [
+                "Punch Ant"
+            ],
+            "245": [
+                "Punch Ant",
+                "Giant Bat"
+            ],
+            "246": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "247": [
+                "Wild Wolf",
+                "Punch Ant"
+            ],
+            "248": [
+                "Wild Wolf",
+                "Punch Ant",
+                "Giant Bat"
+            ]
+        },
         "group_ratios": [
             1,
             1,
@@ -403,16 +509,37 @@
         "ID": 16,
         "rate": 50,
         "level": 4,
-        "enemy_groups": [
-            251,
-            252,
-            253,
-            254,
-            255,
-            256,
-            257,
-            258
-        ],
+        "enemygroups": {
+            "251": [
+                "Wild Wolf"
+            ],
+            "252": [
+                "Punch Ant",
+                "Giant Bat"
+            ],
+            "253": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "254": [
+                "Angle Worm"
+            ],
+            "255": [
+                "Wild Wolf",
+                "Punch Ant"
+            ],
+            "256": [
+                "Angle Worm",
+                "Giant Bat"
+            ],
+            "257": [
+                "Angle Worm",
+                "Punch Ant"
+            ],
+            "258": [
+                "Amaze"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -428,16 +555,37 @@
         "ID": 17,
         "rate": 50,
         "level": 4,
-        "enemy_groups": [
-            251,
-            252,
-            253,
-            254,
-            255,
-            256,
-            257,
-            258
-        ],
+        "enemygroups": {
+            "251": [
+                "Wild Wolf"
+            ],
+            "252": [
+                "Punch Ant",
+                "Giant Bat"
+            ],
+            "253": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "254": [
+                "Angle Worm"
+            ],
+            "255": [
+                "Wild Wolf",
+                "Punch Ant"
+            ],
+            "256": [
+                "Angle Worm",
+                "Giant Bat"
+            ],
+            "257": [
+                "Angle Worm",
+                "Punch Ant"
+            ],
+            "258": [
+                "Amaze"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -453,16 +601,37 @@
         "ID": 18,
         "rate": 50,
         "level": 4,
-        "enemy_groups": [
-            251,
-            252,
-            253,
-            254,
-            255,
-            256,
-            257,
-            258
-        ],
+        "enemygroups": {
+            "251": [
+                "Wild Wolf"
+            ],
+            "252": [
+                "Punch Ant",
+                "Giant Bat"
+            ],
+            "253": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "254": [
+                "Angle Worm"
+            ],
+            "255": [
+                "Wild Wolf",
+                "Punch Ant"
+            ],
+            "256": [
+                "Angle Worm",
+                "Giant Bat"
+            ],
+            "257": [
+                "Angle Worm",
+                "Punch Ant"
+            ],
+            "258": [
+                "Amaze"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -478,16 +647,37 @@
         "ID": 19,
         "rate": 50,
         "level": 5,
-        "enemy_groups": [
-            261,
-            262,
-            263,
-            264,
-            265,
-            266,
-            267,
-            268
-        ],
+        "enemygroups": {
+            "261": [
+                "Wild Wolf"
+            ],
+            "262": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "263": [
+                "Angle Worm"
+            ],
+            "264": [
+                "Angle Worm",
+                "Giant Bat"
+            ],
+            "265": [
+                "Ghost"
+            ],
+            "266": [
+                "Angle Worm",
+                "Wild Wolf"
+            ],
+            "267": [
+                "Ghost",
+                "Wild Wolf"
+            ],
+            "268": [
+                "Ghost",
+                "Angle Worm"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -503,16 +693,37 @@
         "ID": 20,
         "rate": 50,
         "level": 5,
-        "enemy_groups": [
-            261,
-            262,
-            263,
-            264,
-            265,
-            266,
-            267,
-            268
-        ],
+        "enemygroups": {
+            "261": [
+                "Wild Wolf"
+            ],
+            "262": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "263": [
+                "Angle Worm"
+            ],
+            "264": [
+                "Angle Worm",
+                "Giant Bat"
+            ],
+            "265": [
+                "Ghost"
+            ],
+            "266": [
+                "Angle Worm",
+                "Wild Wolf"
+            ],
+            "267": [
+                "Ghost",
+                "Wild Wolf"
+            ],
+            "268": [
+                "Ghost",
+                "Angle Worm"
+            ]
+        },
         "group_ratios": [
             8,
             8,
@@ -528,16 +739,37 @@
         "ID": 21,
         "rate": 50,
         "level": 5,
-        "enemy_groups": [
-            261,
-            262,
-            263,
-            264,
-            265,
-            266,
-            267,
-            268
-        ],
+        "enemygroups": {
+            "261": [
+                "Wild Wolf"
+            ],
+            "262": [
+                "Wild Wolf",
+                "Giant Bat"
+            ],
+            "263": [
+                "Angle Worm"
+            ],
+            "264": [
+                "Angle Worm",
+                "Giant Bat"
+            ],
+            "265": [
+                "Ghost"
+            ],
+            "266": [
+                "Angle Worm",
+                "Wild Wolf"
+            ],
+            "267": [
+                "Ghost",
+                "Wild Wolf"
+            ],
+            "268": [
+                "Ghost",
+                "Angle Worm"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -553,16 +785,33 @@
         "ID": 22,
         "rate": 45,
         "level": 6,
-        "enemy_groups": [
-            271,
-            272,
-            273,
-            274,
-            275,
-            276,
-            277,
-            274
-        ],
+        "enemygroups": {
+            "271": [
+                "Angle Worm"
+            ],
+            "272": [
+                "Angle Worm",
+                "Ghost"
+            ],
+            "273": [
+                "Skeleton",
+                "Ghost"
+            ],
+            "274": [
+                "Skeleton",
+                "Angle Worm"
+            ],
+            "275": [
+                "Mini-Goblin"
+            ],
+            "276": [
+                "Mini-Goblin",
+                "Angle Worm"
+            ],
+            "277": [
+                "Rat Soldier"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -578,16 +827,33 @@
         "ID": 23,
         "rate": 45,
         "level": 6,
-        "enemy_groups": [
-            271,
-            272,
-            273,
-            274,
-            275,
-            276,
-            277,
-            274
-        ],
+        "enemygroups": {
+            "271": [
+                "Angle Worm"
+            ],
+            "272": [
+                "Angle Worm",
+                "Ghost"
+            ],
+            "273": [
+                "Skeleton",
+                "Ghost"
+            ],
+            "274": [
+                "Skeleton",
+                "Angle Worm"
+            ],
+            "275": [
+                "Mini-Goblin"
+            ],
+            "276": [
+                "Mini-Goblin",
+                "Angle Worm"
+            ],
+            "277": [
+                "Rat Soldier"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -603,16 +869,33 @@
         "ID": 24,
         "rate": 45,
         "level": 6,
-        "enemy_groups": [
-            271,
-            272,
-            273,
-            274,
-            275,
-            276,
-            277,
-            274
-        ],
+        "enemygroups": {
+            "271": [
+                "Angle Worm"
+            ],
+            "272": [
+                "Angle Worm",
+                "Ghost"
+            ],
+            "273": [
+                "Skeleton",
+                "Ghost"
+            ],
+            "274": [
+                "Skeleton",
+                "Angle Worm"
+            ],
+            "275": [
+                "Mini-Goblin"
+            ],
+            "276": [
+                "Mini-Goblin",
+                "Angle Worm"
+            ],
+            "277": [
+                "Rat Soldier"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -628,16 +911,36 @@
         "ID": 25,
         "rate": 35,
         "level": 7,
-        "enemy_groups": [
-            281,
-            282,
-            283,
-            284,
-            285,
-            286,
-            287,
-            288
-        ],
+        "enemygroups": {
+            "281": [
+                "Rat Soldier",
+                "Angle Worm"
+            ],
+            "282": [
+                "Mini-Goblin",
+                "Wild Wolf"
+            ],
+            "283": [
+                "Mini-Goblin",
+                "Angle Worm"
+            ],
+            "284": [
+                "Mini-Goblin",
+                "Rat Soldier"
+            ],
+            "285": [
+                "Rat"
+            ],
+            "286": [
+                "Skeleton"
+            ],
+            "287": [
+                "Will Head"
+            ],
+            "288": [
+                "Troll"
+            ]
+        },
         "group_ratios": [
             9,
             9,
@@ -653,16 +956,36 @@
         "ID": 26,
         "rate": 10,
         "level": 7,
-        "enemy_groups": [
-            281,
-            282,
-            283,
-            284,
-            285,
-            286,
-            287,
-            288
-        ],
+        "enemygroups": {
+            "281": [
+                "Rat Soldier",
+                "Angle Worm"
+            ],
+            "282": [
+                "Mini-Goblin",
+                "Wild Wolf"
+            ],
+            "283": [
+                "Mini-Goblin",
+                "Angle Worm"
+            ],
+            "284": [
+                "Mini-Goblin",
+                "Rat Soldier"
+            ],
+            "285": [
+                "Rat"
+            ],
+            "286": [
+                "Skeleton"
+            ],
+            "287": [
+                "Will Head"
+            ],
+            "288": [
+                "Troll"
+            ]
+        },
         "group_ratios": [
             2,
             2,
@@ -678,66 +1001,114 @@
         "ID": 27,
         "rate": 50,
         "level": 8,
-        "enemy_groups": [
-            291,
-            292,
-            293,
-            294,
-            295,
-            296,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "291": [
+                "Mini-Goblin",
+                "Drone Bee"
+            ],
+            "292": [
+                "Mini-Goblin",
+                "Drone Bee"
+            ],
+            "293": [
+                "Rat Soldier",
+                "Drone Bee"
+            ],
+            "294": [
+                "Rat Soldier",
+                "Mini-Goblin"
+            ],
+            "295": [
+                "Troll",
+                "Rat"
+            ],
+            "296": [
+                "Troll"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             15,
             10,
             10,
-            10,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 28,
         "rate": 50,
         "level": 8,
-        "enemy_groups": [
-            291,
-            292,
-            293,
-            294,
-            295,
-            296,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "291": [
+                "Mini-Goblin",
+                "Drone Bee"
+            ],
+            "292": [
+                "Mini-Goblin",
+                "Drone Bee"
+            ],
+            "293": [
+                "Rat Soldier",
+                "Drone Bee"
+            ],
+            "294": [
+                "Rat Soldier",
+                "Mini-Goblin"
+            ],
+            "295": [
+                "Troll",
+                "Rat"
+            ],
+            "296": [
+                "Troll"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             15,
             20,
             20,
-            20,
-            0,
-            0
+            20
         ]
     },
     {
         "ID": 29,
         "rate": 35,
         "level": 9,
-        "enemy_groups": [
-            301,
-            302,
-            303,
-            304,
-            305,
-            306,
-            307,
-            308
-        ],
+        "enemygroups": {
+            "301": [
+                "Momonga"
+            ],
+            "302": [
+                "Dino"
+            ],
+            "303": [
+                "Kobold"
+            ],
+            "304": [
+                "Dino",
+                "Momonga"
+            ],
+            "305": [
+                "Dino",
+                "Momonga"
+            ],
+            "306": [
+                "Kobold",
+                "Dino"
+            ],
+            "307": [
+                "Kobold",
+                "Dino",
+                "Momonga"
+            ],
+            "308": [
+                "Troll",
+                "Kobold"
+            ]
+        },
         "group_ratios": [
             4,
             4,
@@ -753,16 +1124,38 @@
         "ID": 30,
         "rate": 10,
         "level": 9,
-        "enemy_groups": [
-            301,
-            302,
-            303,
-            304,
-            305,
-            306,
-            307,
-            308
-        ],
+        "enemygroups": {
+            "301": [
+                "Momonga"
+            ],
+            "302": [
+                "Dino"
+            ],
+            "303": [
+                "Kobold"
+            ],
+            "304": [
+                "Dino",
+                "Momonga"
+            ],
+            "305": [
+                "Dino",
+                "Momonga"
+            ],
+            "306": [
+                "Kobold",
+                "Dino"
+            ],
+            "307": [
+                "Kobold",
+                "Dino",
+                "Momonga"
+            ],
+            "308": [
+                "Troll",
+                "Kobold"
+            ]
+        },
         "group_ratios": [
             2,
             2,
@@ -778,16 +1171,38 @@
         "ID": 31,
         "rate": 60,
         "level": 9,
-        "enemy_groups": [
-            311,
-            312,
-            313,
-            314,
-            315,
-            316,
-            317,
-            318
-        ],
+        "enemygroups": {
+            "311": [
+                "Kobold",
+                "Momonga"
+            ],
+            "312": [
+                "Kobold",
+                "Dino"
+            ],
+            "313": [
+                "Emu",
+                "Momonga"
+            ],
+            "314": [
+                "Emu"
+            ],
+            "315": [
+                "Spider",
+                "Momonga"
+            ],
+            "316": [
+                "Spider",
+                "Dino"
+            ],
+            "317": [
+                "Gnome"
+            ],
+            "318": [
+                "Gnome",
+                "Dino"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -795,24 +1210,45 @@
             10,
             10,
             5,
-            5,
-            0
+            5
         ]
     },
     {
         "ID": 32,
         "rate": 60,
         "level": 9,
-        "enemy_groups": [
-            311,
-            312,
-            313,
-            314,
-            315,
-            316,
-            317,
-            318
-        ],
+        "enemygroups": {
+            "311": [
+                "Kobold",
+                "Momonga"
+            ],
+            "312": [
+                "Kobold",
+                "Dino"
+            ],
+            "313": [
+                "Emu",
+                "Momonga"
+            ],
+            "314": [
+                "Emu"
+            ],
+            "315": [
+                "Spider",
+                "Momonga"
+            ],
+            "316": [
+                "Spider",
+                "Dino"
+            ],
+            "317": [
+                "Gnome"
+            ],
+            "318": [
+                "Gnome",
+                "Dino"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -828,16 +1264,38 @@
         "ID": 33,
         "rate": 60,
         "level": 9,
-        "enemy_groups": [
-            311,
-            312,
-            313,
-            314,
-            315,
-            316,
-            317,
-            318
-        ],
+        "enemygroups": {
+            "311": [
+                "Kobold",
+                "Momonga"
+            ],
+            "312": [
+                "Kobold",
+                "Dino"
+            ],
+            "313": [
+                "Emu",
+                "Momonga"
+            ],
+            "314": [
+                "Emu"
+            ],
+            "315": [
+                "Spider",
+                "Momonga"
+            ],
+            "316": [
+                "Spider",
+                "Dino"
+            ],
+            "317": [
+                "Gnome"
+            ],
+            "318": [
+                "Gnome",
+                "Dino"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -853,16 +1311,36 @@
         "ID": 34,
         "rate": 55,
         "level": 10,
-        "enemy_groups": [
-            321,
-            322,
-            323,
-            324,
-            325,
-            326,
-            327,
-            0
-        ],
+        "enemygroups": {
+            "321": [
+                "Kobold",
+                "Dino"
+            ],
+            "322": [
+                "Emu",
+                "Dino"
+            ],
+            "323": [
+                "Emu",
+                "Kobold"
+            ],
+            "324": [
+                "Emu",
+                "Kobold"
+            ],
+            "325": [
+                "Ghoul",
+                "Dino"
+            ],
+            "326": [
+                "Harpy",
+                "Kobold"
+            ],
+            "327": [
+                "Harpy",
+                "Emu"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -870,24 +1348,43 @@
             12,
             10,
             8,
-            5,
-            0
+            5
         ]
     },
     {
         "ID": 35,
         "rate": 55,
         "level": 10,
-        "enemy_groups": [
-            321,
-            322,
-            323,
-            324,
-            325,
-            326,
-            327,
-            0
-        ],
+        "enemygroups": {
+            "321": [
+                "Kobold",
+                "Dino"
+            ],
+            "322": [
+                "Emu",
+                "Dino"
+            ],
+            "323": [
+                "Emu",
+                "Kobold"
+            ],
+            "324": [
+                "Emu",
+                "Kobold"
+            ],
+            "325": [
+                "Ghoul",
+                "Dino"
+            ],
+            "326": [
+                "Harpy",
+                "Kobold"
+            ],
+            "327": [
+                "Harpy",
+                "Emu"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -895,49 +1392,94 @@
             14,
             16,
             20,
-            20,
-            0
+            20
         ]
     },
     {
         "ID": 36,
         "rate": 65,
         "level": 11,
-        "enemy_groups": [
-            331,
-            332,
-            333,
-            334,
-            335,
-            336,
-            337,
-            338
-        ],
+        "enemygroups": {
+            "331": [
+                "Emu"
+            ],
+            "332": [
+                "Emu",
+                "Ghoul"
+            ],
+            "333": [
+                "Harpy",
+                "Emu",
+                "Ghoul"
+            ],
+            "334": [
+                "Creeper",
+                "Emu"
+            ],
+            "335": [
+                "Mummy",
+                "Ghoul"
+            ],
+            "336": [
+                "Mummy",
+                "Harpy"
+            ],
+            "337": [
+                "Creeper",
+                "Harpy"
+            ],
+            "338": [
+                "Harpy",
+                "Mummy"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             10,
             10,
             5,
-            5,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 37,
         "rate": 65,
         "level": 12,
-        "enemy_groups": [
-            331,
-            332,
-            333,
-            334,
-            335,
-            336,
-            337,
-            338
-        ],
+        "enemygroups": {
+            "331": [
+                "Emu"
+            ],
+            "332": [
+                "Emu",
+                "Ghoul"
+            ],
+            "333": [
+                "Harpy",
+                "Emu",
+                "Ghoul"
+            ],
+            "334": [
+                "Creeper",
+                "Emu"
+            ],
+            "335": [
+                "Mummy",
+                "Ghoul"
+            ],
+            "336": [
+                "Mummy",
+                "Harpy"
+            ],
+            "337": [
+                "Creeper",
+                "Harpy"
+            ],
+            "338": [
+                "Harpy",
+                "Mummy"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -953,16 +1495,40 @@
         "ID": 38,
         "rate": 65,
         "level": 12,
-        "enemy_groups": [
-            331,
-            332,
-            333,
-            334,
-            335,
-            336,
-            337,
-            338
-        ],
+        "enemygroups": {
+            "331": [
+                "Emu"
+            ],
+            "332": [
+                "Emu",
+                "Ghoul"
+            ],
+            "333": [
+                "Harpy",
+                "Emu",
+                "Ghoul"
+            ],
+            "334": [
+                "Creeper",
+                "Emu"
+            ],
+            "335": [
+                "Mummy",
+                "Ghoul"
+            ],
+            "336": [
+                "Mummy",
+                "Harpy"
+            ],
+            "337": [
+                "Creeper",
+                "Harpy"
+            ],
+            "338": [
+                "Harpy",
+                "Mummy"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -978,16 +1544,37 @@
         "ID": 39,
         "rate": 50,
         "level": 13,
-        "enemy_groups": [
-            511,
-            512,
-            513,
-            514,
-            515,
-            516,
-            517,
-            518
-        ],
+        "enemygroups": {
+            "511": [
+                "Ooze"
+            ],
+            "512": [
+                "Ooze",
+                "Gnome"
+            ],
+            "513": [
+                "Ghoul"
+            ],
+            "514": [
+                "Ghoul",
+                "Ooze"
+            ],
+            "515": [
+                "Ghoul",
+                "Gnome"
+            ],
+            "516": [
+                "Harpy",
+                "Ooze"
+            ],
+            "517": [
+                "Harpy",
+                "Ghoul"
+            ],
+            "518": [
+                "Harpy"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1003,16 +1590,36 @@
         "ID": 40,
         "rate": 45,
         "level": 14,
-        "enemy_groups": [
-            341,
-            342,
-            343,
-            344,
-            345,
-            346,
-            347,
-            348
-        ],
+        "enemygroups": {
+            "341": [
+                "Flash Ant"
+            ],
+            "342": [
+                "Wyvern Chick"
+            ],
+            "343": [
+                "Flash Ant",
+                "Wyvern Chick"
+            ],
+            "344": [
+                "Wyvern Chick",
+                "Flash Ant"
+            ],
+            "345": [
+                "Wolfkin Cub"
+            ],
+            "346": [
+                "Wolfkin Cub",
+                "Wyvern Chick"
+            ],
+            "347": [
+                "Wild Gorilla"
+            ],
+            "348": [
+                "Wild Gorilla",
+                "Wolfkin Cub"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -1028,16 +1635,36 @@
         "ID": 41,
         "rate": 45,
         "level": 14,
-        "enemy_groups": [
-            341,
-            342,
-            343,
-            344,
-            345,
-            346,
-            347,
-            348
-        ],
+        "enemygroups": {
+            "341": [
+                "Flash Ant"
+            ],
+            "342": [
+                "Wyvern Chick"
+            ],
+            "343": [
+                "Flash Ant",
+                "Wyvern Chick"
+            ],
+            "344": [
+                "Wyvern Chick",
+                "Flash Ant"
+            ],
+            "345": [
+                "Wolfkin Cub"
+            ],
+            "346": [
+                "Wolfkin Cub",
+                "Wyvern Chick"
+            ],
+            "347": [
+                "Wild Gorilla"
+            ],
+            "348": [
+                "Wild Gorilla",
+                "Wolfkin Cub"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1053,16 +1680,39 @@
         "ID": 42,
         "rate": 35,
         "level": 16,
-        "enemy_groups": [
-            351,
-            352,
-            353,
-            354,
-            355,
-            356,
-            357,
-            358
-        ],
+        "enemygroups": {
+            "351": [
+                "Flash Ant"
+            ],
+            "352": [
+                "Flash Ant",
+                "Wyvern Chick"
+            ],
+            "353": [
+                "Wyvern Chick",
+                "Mole"
+            ],
+            "354": [
+                "Wyvern Chick",
+                "Flash Ant"
+            ],
+            "355": [
+                "Bone Fighter",
+                "Mole"
+            ],
+            "356": [
+                "Bone Fighter",
+                "Death Head"
+            ],
+            "357": [
+                "Wolfkin Cub",
+                "Wyvern Chick"
+            ],
+            "358": [
+                "Wolfkin Cub",
+                "Bone Fighter"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1078,16 +1728,39 @@
         "ID": 43,
         "rate": 10,
         "level": 16,
-        "enemy_groups": [
-            351,
-            352,
-            353,
-            354,
-            355,
-            356,
-            357,
-            358
-        ],
+        "enemygroups": {
+            "351": [
+                "Flash Ant"
+            ],
+            "352": [
+                "Flash Ant",
+                "Wyvern Chick"
+            ],
+            "353": [
+                "Wyvern Chick",
+                "Mole"
+            ],
+            "354": [
+                "Wyvern Chick",
+                "Flash Ant"
+            ],
+            "355": [
+                "Bone Fighter",
+                "Mole"
+            ],
+            "356": [
+                "Bone Fighter",
+                "Death Head"
+            ],
+            "357": [
+                "Wolfkin Cub",
+                "Wyvern Chick"
+            ],
+            "358": [
+                "Wolfkin Cub",
+                "Bone Fighter"
+            ]
+        },
         "group_ratios": [
             2,
             2,
@@ -1103,16 +1776,39 @@
         "ID": 44,
         "rate": 35,
         "level": 16,
-        "enemy_groups": [
-            361,
-            362,
-            363,
-            364,
-            365,
-            366,
-            367,
-            368
-        ],
+        "enemygroups": {
+            "361": [
+                "Wild Gorilla",
+                "Dirge"
+            ],
+            "362": [
+                "Wild Gorilla",
+                "Pixie"
+            ],
+            "363": [
+                "Pixie",
+                "Spirit"
+            ],
+            "364": [
+                "Pixie",
+                "Wild Gorilla"
+            ],
+            "365": [
+                "Dirge",
+                "Pixie"
+            ],
+            "366": [
+                "Assassin",
+                "Pixie"
+            ],
+            "367": [
+                "Assassin",
+                "Wild Gorilla"
+            ],
+            "368": [
+                "Pixie"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -1128,16 +1824,39 @@
         "ID": 45,
         "rate": 35,
         "level": 16,
-        "enemy_groups": [
-            361,
-            362,
-            363,
-            364,
-            365,
-            366,
-            367,
-            368
-        ],
+        "enemygroups": {
+            "361": [
+                "Wild Gorilla",
+                "Dirge"
+            ],
+            "362": [
+                "Wild Gorilla",
+                "Pixie"
+            ],
+            "363": [
+                "Pixie",
+                "Spirit"
+            ],
+            "364": [
+                "Pixie",
+                "Wild Gorilla"
+            ],
+            "365": [
+                "Dirge",
+                "Pixie"
+            ],
+            "366": [
+                "Assassin",
+                "Pixie"
+            ],
+            "367": [
+                "Assassin",
+                "Wild Gorilla"
+            ],
+            "368": [
+                "Pixie"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1153,41 +1872,81 @@
         "ID": 46,
         "rate": 50,
         "level": 17,
-        "enemy_groups": [
-            371,
-            372,
-            373,
-            374,
-            375,
-            376,
-            377,
-            378
-        ],
+        "enemygroups": {
+            "371": [
+                "Bone Fighter"
+            ],
+            "372": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "373": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "374": [
+                "Salamander"
+            ],
+            "375": [
+                "Death Head",
+                "Bone Fighter"
+            ],
+            "376": [
+                "Salamander",
+                "Spirit"
+            ],
+            "377": [
+                "Red Demon",
+                "Doomsayer"
+            ],
+            "378": [
+                "Red Demon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             10,
             10,
             5,
-            5,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 47,
         "rate": 50,
         "level": 17,
-        "enemy_groups": [
-            371,
-            372,
-            373,
-            374,
-            375,
-            376,
-            377,
-            378
-        ],
+        "enemygroups": {
+            "371": [
+                "Bone Fighter"
+            ],
+            "372": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "373": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "374": [
+                "Salamander"
+            ],
+            "375": [
+                "Death Head",
+                "Bone Fighter"
+            ],
+            "376": [
+                "Salamander",
+                "Spirit"
+            ],
+            "377": [
+                "Red Demon",
+                "Doomsayer"
+            ],
+            "378": [
+                "Red Demon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1203,16 +1962,37 @@
         "ID": 48,
         "rate": 50,
         "level": 17,
-        "enemy_groups": [
-            371,
-            372,
-            373,
-            374,
-            375,
-            376,
-            377,
-            378
-        ],
+        "enemygroups": {
+            "371": [
+                "Bone Fighter"
+            ],
+            "372": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "373": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "374": [
+                "Salamander"
+            ],
+            "375": [
+                "Death Head",
+                "Bone Fighter"
+            ],
+            "376": [
+                "Salamander",
+                "Spirit"
+            ],
+            "377": [
+                "Red Demon",
+                "Doomsayer"
+            ],
+            "378": [
+                "Red Demon"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1228,16 +2008,37 @@
         "ID": 49,
         "rate": 50,
         "level": 18,
-        "enemy_groups": [
-            521,
-            522,
-            523,
-            524,
-            525,
-            526,
-            527,
-            528
-        ],
+        "enemygroups": {
+            "521": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "522": [
+                "Death Head"
+            ],
+            "523": [
+                "Bone Fighter",
+                "Death Head"
+            ],
+            "524": [
+                "Salamander"
+            ],
+            "525": [
+                "Spirit",
+                "Bone Fighter"
+            ],
+            "526": [
+                "Death Head",
+                "Spirit"
+            ],
+            "527": [
+                "Red Demon",
+                "Doomsayer"
+            ],
+            "528": [
+                "Red Demon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -1253,16 +2054,37 @@
         "ID": 50,
         "rate": 50,
         "level": 18,
-        "enemy_groups": [
-            521,
-            522,
-            523,
-            524,
-            525,
-            526,
-            527,
-            528
-        ],
+        "enemygroups": {
+            "521": [
+                "Doomsayer",
+                "Bone Fighter"
+            ],
+            "522": [
+                "Death Head"
+            ],
+            "523": [
+                "Bone Fighter",
+                "Death Head"
+            ],
+            "524": [
+                "Salamander"
+            ],
+            "525": [
+                "Spirit",
+                "Bone Fighter"
+            ],
+            "526": [
+                "Death Head",
+                "Spirit"
+            ],
+            "527": [
+                "Red Demon",
+                "Doomsayer"
+            ],
+            "528": [
+                "Red Demon"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1278,41 +2100,61 @@
         "ID": 51,
         "rate": 45,
         "level": 18,
-        "enemy_groups": [
-            381,
-            382,
-            383,
-            384,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "381": [
+                "Conch Shell"
+            ],
+            "382": [
+                "Conch Shell"
+            ],
+            "383": [
+                "Conch Shell"
+            ],
+            "384": [
+                "Conch Shell"
+            ]
+        },
         "group_ratios": [
             5,
             10,
             8,
-            6,
-            0,
-            0,
-            0,
-            0
+            6
         ]
     },
     {
         "ID": 52,
         "rate": 65,
         "level": 20,
-        "enemy_groups": [
-            391,
-            392,
-            393,
-            394,
-            395,
-            396,
-            397,
-            398
-        ],
+        "enemygroups": {
+            "391": [
+                "Urchin Beast"
+            ],
+            "392": [
+                "Urchin Beast",
+                "Calamar"
+            ],
+            "393": [
+                "Seabird"
+            ],
+            "394": [
+                "Seabird",
+                "Urchin Beast"
+            ],
+            "395": [
+                "Fighter Bee"
+            ],
+            "396": [
+                "Fighter Bee",
+                "Seabird"
+            ],
+            "397": [
+                "Merman",
+                "Calamar"
+            ],
+            "398": [
+                "Merman"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1328,16 +2170,39 @@
         "ID": 53,
         "rate": 35,
         "level": 21,
-        "enemy_groups": [
-            401,
-            402,
-            403,
-            404,
-            405,
-            406,
-            407,
-            408
-        ],
+        "enemygroups": {
+            "401": [
+                "Mad Vermin",
+                "Dire Wolf"
+            ],
+            "402": [
+                "Numb Ant",
+                "Death Cap"
+            ],
+            "403": [
+                "Dire Wolf"
+            ],
+            "404": [
+                "Dire Wolf",
+                "Numb Ant"
+            ],
+            "405": [
+                "Alec Goblin",
+                "Ravager"
+            ],
+            "406": [
+                "Alec Goblin",
+                "Dire Wolf"
+            ],
+            "407": [
+                "Ghost Mage",
+                "Undead"
+            ],
+            "408": [
+                "Undead",
+                "Numb Ant"
+            ]
+        },
         "group_ratios": [
             6,
             6,
@@ -1353,16 +2218,39 @@
         "ID": 54,
         "rate": 10,
         "level": 21,
-        "enemy_groups": [
-            401,
-            402,
-            403,
-            404,
-            405,
-            406,
-            407,
-            408
-        ],
+        "enemygroups": {
+            "401": [
+                "Mad Vermin",
+                "Dire Wolf"
+            ],
+            "402": [
+                "Numb Ant",
+                "Death Cap"
+            ],
+            "403": [
+                "Dire Wolf"
+            ],
+            "404": [
+                "Dire Wolf",
+                "Numb Ant"
+            ],
+            "405": [
+                "Alec Goblin",
+                "Ravager"
+            ],
+            "406": [
+                "Alec Goblin",
+                "Dire Wolf"
+            ],
+            "407": [
+                "Ghost Mage",
+                "Undead"
+            ],
+            "408": [
+                "Undead",
+                "Numb Ant"
+            ]
+        },
         "group_ratios": [
             2,
             2,
@@ -1378,16 +2266,38 @@
         "ID": 55,
         "rate": 50,
         "level": 21,
-        "enemy_groups": [
-            411,
-            412,
-            413,
-            414,
-            415,
-            416,
-            417,
-            418
-        ],
+        "enemygroups": {
+            "411": [
+                "Mad Vermin",
+                "Death Cap"
+            ],
+            "412": [
+                "Cave Troll"
+            ],
+            "413": [
+                "Dire Wolf"
+            ],
+            "414": [
+                "Dire Wolf",
+                "Ghost Mage"
+            ],
+            "415": [
+                "Undead",
+                "Cave Troll"
+            ],
+            "416": [
+                "Death Cap",
+                "Dire Wolf"
+            ],
+            "417": [
+                "Faery",
+                "Dire Wolf"
+            ],
+            "418": [
+                "Faery",
+                "Mad Vermin"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -1395,24 +2305,45 @@
             10,
             5,
             5,
-            5,
-            0
+            5
         ]
     },
     {
         "ID": 56,
         "rate": 50,
         "level": 21,
-        "enemy_groups": [
-            411,
-            412,
-            413,
-            414,
-            415,
-            416,
-            417,
-            418
-        ],
+        "enemygroups": {
+            "411": [
+                "Mad Vermin",
+                "Death Cap"
+            ],
+            "412": [
+                "Cave Troll"
+            ],
+            "413": [
+                "Dire Wolf"
+            ],
+            "414": [
+                "Dire Wolf",
+                "Ghost Mage"
+            ],
+            "415": [
+                "Undead",
+                "Cave Troll"
+            ],
+            "416": [
+                "Death Cap",
+                "Dire Wolf"
+            ],
+            "417": [
+                "Faery",
+                "Dire Wolf"
+            ],
+            "418": [
+                "Faery",
+                "Mad Vermin"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1428,16 +2359,38 @@
         "ID": 57,
         "rate": 50,
         "level": 21,
-        "enemy_groups": [
-            411,
-            412,
-            413,
-            414,
-            415,
-            416,
-            417,
-            418
-        ],
+        "enemygroups": {
+            "411": [
+                "Mad Vermin",
+                "Death Cap"
+            ],
+            "412": [
+                "Cave Troll"
+            ],
+            "413": [
+                "Dire Wolf"
+            ],
+            "414": [
+                "Dire Wolf",
+                "Ghost Mage"
+            ],
+            "415": [
+                "Undead",
+                "Cave Troll"
+            ],
+            "416": [
+                "Death Cap",
+                "Dire Wolf"
+            ],
+            "417": [
+                "Faery",
+                "Dire Wolf"
+            ],
+            "418": [
+                "Faery",
+                "Mad Vermin"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1453,91 +2406,170 @@
         "ID": 58,
         "rate": 50,
         "level": 22,
-        "enemy_groups": [
-            421,
-            422,
-            423,
-            424,
-            425,
-            426,
-            427,
-            428
-        ],
+        "enemygroups": {
+            "421": [
+                "Man o' War",
+                "Faery"
+            ],
+            "422": [
+                "Roc",
+                "Faery"
+            ],
+            "423": [
+                "Roc"
+            ],
+            "424": [
+                "Virago",
+                "Faery"
+            ],
+            "425": [
+                "Virago",
+                "Ghost Mage"
+            ],
+            "426": [
+                "Sea Dragon",
+                "Lizard Fighter"
+            ],
+            "427": [
+                "Sea Dragon",
+                "Roc"
+            ],
+            "428": [
+                "Sea Dragon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             5,
-            5,
-            0,
-            0,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 59,
         "rate": 50,
         "level": 22,
-        "enemy_groups": [
-            421,
-            422,
-            423,
-            424,
-            425,
-            426,
-            427,
-            428
-        ],
+        "enemygroups": {
+            "421": [
+                "Man o' War",
+                "Faery"
+            ],
+            "422": [
+                "Roc",
+                "Faery"
+            ],
+            "423": [
+                "Roc"
+            ],
+            "424": [
+                "Virago",
+                "Faery"
+            ],
+            "425": [
+                "Virago",
+                "Ghost Mage"
+            ],
+            "426": [
+                "Sea Dragon",
+                "Lizard Fighter"
+            ],
+            "427": [
+                "Sea Dragon",
+                "Roc"
+            ],
+            "428": [
+                "Sea Dragon"
+            ]
+        },
         "group_ratios": [
             10,
             20,
             20,
             5,
-            5,
-            0,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 60,
         "rate": 50,
         "level": 22,
-        "enemy_groups": [
-            421,
-            422,
-            423,
-            424,
-            425,
-            426,
-            427,
-            428
-        ],
+        "enemygroups": {
+            "421": [
+                "Man o' War",
+                "Faery"
+            ],
+            "422": [
+                "Roc",
+                "Faery"
+            ],
+            "423": [
+                "Roc"
+            ],
+            "424": [
+                "Virago",
+                "Faery"
+            ],
+            "425": [
+                "Virago",
+                "Ghost Mage"
+            ],
+            "426": [
+                "Sea Dragon",
+                "Lizard Fighter"
+            ],
+            "427": [
+                "Sea Dragon",
+                "Roc"
+            ],
+            "428": [
+                "Sea Dragon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             20,
             20,
             5,
-            5,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 61,
         "rate": 50,
         "level": 22,
-        "enemy_groups": [
-            421,
-            422,
-            423,
-            424,
-            425,
-            426,
-            427,
-            428
-        ],
+        "enemygroups": {
+            "421": [
+                "Man o' War",
+                "Faery"
+            ],
+            "422": [
+                "Roc",
+                "Faery"
+            ],
+            "423": [
+                "Roc"
+            ],
+            "424": [
+                "Virago",
+                "Faery"
+            ],
+            "425": [
+                "Virago",
+                "Ghost Mage"
+            ],
+            "426": [
+                "Sea Dragon",
+                "Lizard Fighter"
+            ],
+            "427": [
+                "Sea Dragon",
+                "Roc"
+            ],
+            "428": [
+                "Sea Dragon"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1553,16 +2585,38 @@
         "ID": 62,
         "rate": 50,
         "level": 22,
-        "enemy_groups": [
-            421,
-            422,
-            423,
-            424,
-            425,
-            426,
-            427,
-            428
-        ],
+        "enemygroups": {
+            "421": [
+                "Man o' War",
+                "Faery"
+            ],
+            "422": [
+                "Roc",
+                "Faery"
+            ],
+            "423": [
+                "Roc"
+            ],
+            "424": [
+                "Virago",
+                "Faery"
+            ],
+            "425": [
+                "Virago",
+                "Ghost Mage"
+            ],
+            "426": [
+                "Sea Dragon",
+                "Lizard Fighter"
+            ],
+            "427": [
+                "Sea Dragon",
+                "Roc"
+            ],
+            "428": [
+                "Sea Dragon"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1578,91 +2632,174 @@
         "ID": 63,
         "rate": 55,
         "level": 23,
-        "enemy_groups": [
-            431,
-            432,
-            433,
-            434,
-            435,
-            436,
-            437,
-            438
-        ],
+        "enemygroups": {
+            "431": [
+                "Fire Worm"
+            ],
+            "432": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "433": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "434": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "435": [
+                "Dread Hound",
+                "Fire Worm"
+            ],
+            "436": [
+                "Wood Walker",
+                "Mad Vermin",
+                "Fire Worm"
+            ],
+            "437": [
+                "Wood Walker",
+                "Clay Gargoyle"
+            ],
+            "438": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             5,
-            5,
-            0,
-            0,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 64,
         "rate": 55,
         "level": 23,
-        "enemy_groups": [
-            431,
-            432,
-            433,
-            434,
-            435,
-            436,
-            437,
-            438
-        ],
+        "enemygroups": {
+            "431": [
+                "Fire Worm"
+            ],
+            "432": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "433": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "434": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "435": [
+                "Dread Hound",
+                "Fire Worm"
+            ],
+            "436": [
+                "Wood Walker",
+                "Mad Vermin",
+                "Fire Worm"
+            ],
+            "437": [
+                "Wood Walker",
+                "Clay Gargoyle"
+            ],
+            "438": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
             10,
             20,
             20,
             5,
-            5,
-            0,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 65,
         "rate": 55,
         "level": 23,
-        "enemy_groups": [
-            431,
-            432,
-            433,
-            434,
-            435,
-            436,
-            437,
-            438
-        ],
+        "enemygroups": {
+            "431": [
+                "Fire Worm"
+            ],
+            "432": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "433": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "434": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "435": [
+                "Dread Hound",
+                "Fire Worm"
+            ],
+            "436": [
+                "Wood Walker",
+                "Mad Vermin",
+                "Fire Worm"
+            ],
+            "437": [
+                "Wood Walker",
+                "Clay Gargoyle"
+            ],
+            "438": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             20,
             20,
             5,
-            5,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 66,
         "rate": 55,
         "level": 23,
-        "enemy_groups": [
-            431,
-            432,
-            433,
-            434,
-            435,
-            436,
-            437,
-            438
-        ],
+        "enemygroups": {
+            "431": [
+                "Fire Worm"
+            ],
+            "432": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "433": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "434": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "435": [
+                "Dread Hound",
+                "Fire Worm"
+            ],
+            "436": [
+                "Wood Walker",
+                "Mad Vermin",
+                "Fire Worm"
+            ],
+            "437": [
+                "Wood Walker",
+                "Clay Gargoyle"
+            ],
+            "438": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1678,19 +2815,40 @@
         "ID": 67,
         "rate": 55,
         "level": 23,
-        "enemy_groups": [
-            431,
-            432,
-            433,
-            434,
-            435,
-            436,
-            437,
-            438
-        ],
+        "enemygroups": {
+            "431": [
+                "Fire Worm"
+            ],
+            "432": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "433": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "434": [
+                "Golem",
+                "Clay Gargoyle"
+            ],
+            "435": [
+                "Dread Hound",
+                "Fire Worm"
+            ],
+            "436": [
+                "Wood Walker",
+                "Mad Vermin",
+                "Fire Worm"
+            ],
+            "437": [
+                "Wood Walker",
+                "Clay Gargoyle"
+            ],
+            "438": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
-            0,
-            0,
             5,
             5,
             10,
@@ -1703,16 +2861,38 @@
         "ID": 68,
         "rate": 50,
         "level": 24,
-        "enemy_groups": [
-            531,
-            532,
-            533,
-            534,
-            535,
-            536,
-            537,
-            538
-        ],
+        "enemygroups": {
+            "531": [
+                "Fire Worm"
+            ],
+            "532": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "533": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "534": [
+                "Golem",
+                "Wight"
+            ],
+            "535": [
+                "Gnome Mage",
+                "Clay Gargoyle"
+            ],
+            "536": [
+                "Gressil",
+                "Dread Hound"
+            ],
+            "537": [
+                "Gressil",
+                "Wood Walker"
+            ],
+            "538": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -1728,16 +2908,38 @@
         "ID": 69,
         "rate": 50,
         "level": 24,
-        "enemy_groups": [
-            531,
-            532,
-            533,
-            534,
-            535,
-            536,
-            537,
-            538
-        ],
+        "enemygroups": {
+            "531": [
+                "Fire Worm"
+            ],
+            "532": [
+                "Wight",
+                "Fire Worm"
+            ],
+            "533": [
+                "Gnome Mage",
+                "Fire Worm"
+            ],
+            "534": [
+                "Golem",
+                "Wight"
+            ],
+            "535": [
+                "Gnome Mage",
+                "Clay Gargoyle"
+            ],
+            "536": [
+                "Gressil",
+                "Dread Hound"
+            ],
+            "537": [
+                "Gressil",
+                "Wood Walker"
+            ],
+            "538": [
+                "Wood Walker"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1753,16 +2955,36 @@
         "ID": 70,
         "rate": 50,
         "level": 25,
-        "enemy_groups": [
-            541,
-            542,
-            543,
-            544,
-            545,
-            546,
-            547,
-            548
-        ],
+        "enemygroups": {
+            "541": [
+                "Harridan"
+            ],
+            "542": [
+                "Magicore"
+            ],
+            "543": [
+                "Magicore",
+                "Stone Soldier"
+            ],
+            "544": [
+                "Squirrelfang"
+            ],
+            "545": [
+                "Squirrelfang",
+                "Harridan"
+            ],
+            "546": [
+                "Squirrelfang",
+                "Magicore"
+            ],
+            "547": [
+                "Dinox",
+                "Squirrelfang"
+            ],
+            "548": [
+                "Dinox"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1778,16 +3000,36 @@
         "ID": 71,
         "rate": 60,
         "level": 25,
-        "enemy_groups": [
-            441,
-            442,
-            443,
-            444,
-            445,
-            446,
-            447,
-            448
-        ],
+        "enemygroups": {
+            "441": [
+                "Squirrelfang"
+            ],
+            "442": [
+                "Dinox"
+            ],
+            "443": [
+                "Wood Walker",
+                "Squirrelfang"
+            ],
+            "444": [
+                "Minotaurus",
+                "Squirrelfang"
+            ],
+            "445": [
+                "Minotaurus",
+                "Dinox"
+            ],
+            "446": [
+                "Harridan"
+            ],
+            "447": [
+                "Living Armor",
+                "Minotaurus"
+            ],
+            "448": [
+                "Living Armor"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -1795,24 +3037,43 @@
             10,
             10,
             5,
-            5,
-            0
+            5
         ]
     },
     {
         "ID": 72,
         "rate": 60,
         "level": 25,
-        "enemy_groups": [
-            441,
-            442,
-            443,
-            444,
-            445,
-            446,
-            447,
-            448
-        ],
+        "enemygroups": {
+            "441": [
+                "Squirrelfang"
+            ],
+            "442": [
+                "Dinox"
+            ],
+            "443": [
+                "Wood Walker",
+                "Squirrelfang"
+            ],
+            "444": [
+                "Minotaurus",
+                "Squirrelfang"
+            ],
+            "445": [
+                "Minotaurus",
+                "Dinox"
+            ],
+            "446": [
+                "Harridan"
+            ],
+            "447": [
+                "Living Armor",
+                "Minotaurus"
+            ],
+            "448": [
+                "Living Armor"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1820,24 +3081,43 @@
             15,
             15,
             10,
-            10,
-            0
+            10
         ]
     },
     {
         "ID": 73,
         "rate": 60,
         "level": 25,
-        "enemy_groups": [
-            441,
-            442,
-            443,
-            444,
-            445,
-            446,
-            447,
-            448
-        ],
+        "enemygroups": {
+            "441": [
+                "Squirrelfang"
+            ],
+            "442": [
+                "Dinox"
+            ],
+            "443": [
+                "Wood Walker",
+                "Squirrelfang"
+            ],
+            "444": [
+                "Minotaurus",
+                "Squirrelfang"
+            ],
+            "445": [
+                "Minotaurus",
+                "Dinox"
+            ],
+            "446": [
+                "Harridan"
+            ],
+            "447": [
+                "Living Armor",
+                "Minotaurus"
+            ],
+            "448": [
+                "Living Armor"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1853,16 +3133,37 @@
         "ID": 74,
         "rate": 50,
         "level": 26,
-        "enemy_groups": [
-            451,
-            452,
-            453,
-            454,
-            455,
-            456,
-            457,
-            458
-        ],
+        "enemygroups": {
+            "451": [
+                "Squirrelfang"
+            ],
+            "452": [
+                "Needle Egg"
+            ],
+            "453": [
+                "Needle Egg",
+                "Squirrelfang"
+            ],
+            "454": [
+                "Dinox",
+                "Squirrelfang"
+            ],
+            "455": [
+                "Minotaurus"
+            ],
+            "456": [
+                "Living Armor",
+                "Harridan"
+            ],
+            "457": [
+                "Magicore",
+                "Squirrelfang"
+            ],
+            "458": [
+                "Stone Soldier",
+                "Needle Egg"
+            ]
+        },
         "group_ratios": [
             15,
             15,
@@ -1878,16 +3179,37 @@
         "ID": 75,
         "rate": 50,
         "level": 26,
-        "enemy_groups": [
-            451,
-            452,
-            453,
-            454,
-            455,
-            456,
-            457,
-            458
-        ],
+        "enemygroups": {
+            "451": [
+                "Squirrelfang"
+            ],
+            "452": [
+                "Needle Egg"
+            ],
+            "453": [
+                "Needle Egg",
+                "Squirrelfang"
+            ],
+            "454": [
+                "Dinox",
+                "Squirrelfang"
+            ],
+            "455": [
+                "Minotaurus"
+            ],
+            "456": [
+                "Living Armor",
+                "Harridan"
+            ],
+            "457": [
+                "Magicore",
+                "Squirrelfang"
+            ],
+            "458": [
+                "Stone Soldier",
+                "Needle Egg"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1903,16 +3225,37 @@
         "ID": 76,
         "rate": 50,
         "level": 26,
-        "enemy_groups": [
-            451,
-            452,
-            453,
-            454,
-            455,
-            456,
-            457,
-            458
-        ],
+        "enemygroups": {
+            "451": [
+                "Squirrelfang"
+            ],
+            "452": [
+                "Needle Egg"
+            ],
+            "453": [
+                "Needle Egg",
+                "Squirrelfang"
+            ],
+            "454": [
+                "Dinox",
+                "Squirrelfang"
+            ],
+            "455": [
+                "Minotaurus"
+            ],
+            "456": [
+                "Living Armor",
+                "Harridan"
+            ],
+            "457": [
+                "Magicore",
+                "Squirrelfang"
+            ],
+            "458": [
+                "Stone Soldier",
+                "Needle Egg"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -1928,16 +3271,38 @@
         "ID": 77,
         "rate": 60,
         "level": 29,
-        "enemy_groups": [
-            461,
-            462,
-            463,
-            464,
-            465,
-            466,
-            467,
-            468
-        ],
+        "enemygroups": {
+            "461": [
+                "Spiral Shell"
+            ],
+            "462": [
+                "Gillman",
+                "Spiral Shell"
+            ],
+            "463": [
+                "Gillman",
+                "Seafowl"
+            ],
+            "464": [
+                "Vile Dirge",
+                "Seafowl"
+            ],
+            "465": [
+                "Hydra",
+                "Seafowl"
+            ],
+            "466": [
+                "Hydra",
+                "Gillman"
+            ],
+            "467": [
+                "Turtle Dragon"
+            ],
+            "468": [
+                "Turtle Dragon",
+                "Hydra"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -1953,16 +3318,38 @@
         "ID": 78,
         "rate": 35,
         "level": 30,
-        "enemy_groups": [
-            471,
-            472,
-            473,
-            474,
-            475,
-            476,
-            477,
-            478
-        ],
+        "enemygroups": {
+            "471": [
+                "Pteranodon"
+            ],
+            "472": [
+                "Wargold",
+                "Pteranodon"
+            ],
+            "473": [
+                "Talon Runner",
+                "Pteranodon"
+            ],
+            "474": [
+                "Talon Runner"
+            ],
+            "475": [
+                "Wolfkin",
+                "Pteranodon"
+            ],
+            "476": [
+                "Wolfkin",
+                "Wargold"
+            ],
+            "477": [
+                "Slayer",
+                "Wargold"
+            ],
+            "478": [
+                "Slayer",
+                "Wolfkin"
+            ]
+        },
         "group_ratios": [
             6,
             6,
@@ -1978,16 +3365,38 @@
         "ID": 79,
         "rate": 10,
         "level": 30,
-        "enemy_groups": [
-            471,
-            472,
-            473,
-            474,
-            475,
-            476,
-            477,
-            478
-        ],
+        "enemygroups": {
+            "471": [
+                "Pteranodon"
+            ],
+            "472": [
+                "Wargold",
+                "Pteranodon"
+            ],
+            "473": [
+                "Talon Runner",
+                "Pteranodon"
+            ],
+            "474": [
+                "Talon Runner"
+            ],
+            "475": [
+                "Wolfkin",
+                "Pteranodon"
+            ],
+            "476": [
+                "Wolfkin",
+                "Wargold"
+            ],
+            "477": [
+                "Slayer",
+                "Wargold"
+            ],
+            "478": [
+                "Slayer",
+                "Wolfkin"
+            ]
+        },
         "group_ratios": [
             2,
             2,
@@ -2003,16 +3412,36 @@
         "ID": 80,
         "rate": 50,
         "level": 29,
-        "enemy_groups": [
-            551,
-            552,
-            553,
-            554,
-            555,
-            556,
-            557,
-            558
-        ],
+        "enemygroups": {
+            "551": [
+                "Harridan"
+            ],
+            "552": [
+                "Turtle Dragon"
+            ],
+            "553": [
+                "Stone Soldier"
+            ],
+            "554": [
+                "Horned Ghost",
+                "Cannibal Ghoul"
+            ],
+            "555": [
+                "Harridan",
+                "Turtle Dragon"
+            ],
+            "556": [
+                "Stone Soldier"
+            ],
+            "557": [
+                "Earth Golem",
+                "Cannibal Ghoul"
+            ],
+            "558": [
+                "Earth Golem",
+                "Stone Soldier"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2028,16 +3457,38 @@
         "ID": 81,
         "rate": 50,
         "level": 29,
-        "enemy_groups": [
-            561,
-            562,
-            563,
-            564,
-            565,
-            566,
-            567,
-            568
-        ],
+        "enemygroups": {
+            "561": [
+                "Talon Runner"
+            ],
+            "562": [
+                "Wargold",
+                "Wolfkin"
+            ],
+            "563": [
+                "Wargold",
+                "Pteranodon"
+            ],
+            "564": [
+                "Wolfkin",
+                "Wargold"
+            ],
+            "565": [
+                "Talon Runner",
+                "Pteranodon"
+            ],
+            "566": [
+                "Slayer",
+                "Wolfkin"
+            ],
+            "567": [
+                "Slayer",
+                "Wargold"
+            ],
+            "568": [
+                "Wild Gryphon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2053,41 +3504,80 @@
         "ID": 82,
         "rate": 55,
         "level": 30,
-        "enemy_groups": [
-            481,
-            482,
-            483,
-            484,
-            485,
-            486,
-            487,
-            488
-        ],
+        "enemygroups": {
+            "481": [
+                "Devil Scorpion"
+            ],
+            "482": [
+                "Foul Mummy",
+                "Devil Scorpion"
+            ],
+            "483": [
+                "Macetail",
+                "Devil Scorpion"
+            ],
+            "484": [
+                "Wyvern"
+            ],
+            "485": [
+                "Ghost Army",
+                "Wyvern"
+            ],
+            "486": [
+                "Ghost Army",
+                "Foul Mummy"
+            ],
+            "487": [
+                "Blue Dragon",
+                "Wyvern"
+            ],
+            "488": [
+                "Blue Dragon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             10,
             10,
-            5,
-            0,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 83,
         "rate": 55,
         "level": 30,
-        "enemy_groups": [
-            481,
-            482,
-            483,
-            484,
-            485,
-            486,
-            487,
-            488
-        ],
+        "enemygroups": {
+            "481": [
+                "Devil Scorpion"
+            ],
+            "482": [
+                "Foul Mummy",
+                "Devil Scorpion"
+            ],
+            "483": [
+                "Macetail",
+                "Devil Scorpion"
+            ],
+            "484": [
+                "Wyvern"
+            ],
+            "485": [
+                "Ghost Army",
+                "Wyvern"
+            ],
+            "486": [
+                "Ghost Army",
+                "Foul Mummy"
+            ],
+            "487": [
+                "Blue Dragon",
+                "Wyvern"
+            ],
+            "488": [
+                "Blue Dragon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2095,24 +3585,44 @@
             20,
             20,
             5,
-            5,
-            0
+            5
         ]
     },
     {
         "ID": 84,
         "rate": 55,
         "level": 30,
-        "enemy_groups": [
-            481,
-            482,
-            483,
-            484,
-            485,
-            486,
-            487,
-            488
-        ],
+        "enemygroups": {
+            "481": [
+                "Devil Scorpion"
+            ],
+            "482": [
+                "Foul Mummy",
+                "Devil Scorpion"
+            ],
+            "483": [
+                "Macetail",
+                "Devil Scorpion"
+            ],
+            "484": [
+                "Wyvern"
+            ],
+            "485": [
+                "Ghost Army",
+                "Wyvern"
+            ],
+            "486": [
+                "Ghost Army",
+                "Foul Mummy"
+            ],
+            "487": [
+                "Blue Dragon",
+                "Wyvern"
+            ],
+            "488": [
+                "Blue Dragon"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -2128,16 +3638,37 @@
         "ID": 85,
         "rate": 50,
         "level": 30,
-        "enemy_groups": [
-            571,
-            572,
-            573,
-            574,
-            575,
-            576,
-            577,
-            578
-        ],
+        "enemygroups": {
+            "571": [
+                "Pteranodon"
+            ],
+            "572": [
+                "Pteranodon"
+            ],
+            "573": [
+                "Wolfkin",
+                "Wargold"
+            ],
+            "574": [
+                "Wolfkin",
+                "Mole Mage"
+            ],
+            "575": [
+                "Wargold",
+                "Wolfkin"
+            ],
+            "576": [
+                "Wargold",
+                "Pteranodon"
+            ],
+            "577": [
+                "Nightmare",
+                "Pteranodon"
+            ],
+            "578": [
+                "Nightmare"
+            ]
+        },
         "group_ratios": [
             2,
             2,
@@ -2153,66 +3684,127 @@
         "ID": 86,
         "rate": 55,
         "level": 31,
-        "enemy_groups": [
-            491,
-            492,
-            493,
-            494,
-            495,
-            496,
-            497,
-            498
-        ],
+        "enemygroups": {
+            "491": [
+                "Raging Rock"
+            ],
+            "492": [
+                "Wise Gryphon",
+                "Raging Rock"
+            ],
+            "493": [
+                "Lich",
+                "Wise Gryphon"
+            ],
+            "494": [
+                "Little Death",
+                "Lich"
+            ],
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             10,
             5,
-            5,
-            0,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 87,
         "rate": 55,
         "level": 31,
-        "enemy_groups": [
-            491,
-            492,
-            493,
-            494,
-            495,
-            496,
-            497,
-            498
-        ],
+        "enemygroups": {
+            "491": [
+                "Raging Rock"
+            ],
+            "492": [
+                "Wise Gryphon",
+                "Raging Rock"
+            ],
+            "493": [
+                "Lich",
+                "Wise Gryphon"
+            ],
+            "494": [
+                "Little Death",
+                "Lich"
+            ],
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ]
+        },
         "group_ratios": [
             10,
             20,
             20,
             5,
             5,
-            5,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 88,
         "rate": 55,
         "level": 31,
-        "enemy_groups": [
-            491,
-            492,
-            493,
-            494,
-            495,
-            496,
-            497,
-            498
-        ],
+        "enemygroups": {
+            "491": [
+                "Raging Rock"
+            ],
+            "492": [
+                "Wise Gryphon",
+                "Raging Rock"
+            ],
+            "493": [
+                "Lich",
+                "Wise Gryphon"
+            ],
+            "494": [
+                "Little Death",
+                "Lich"
+            ],
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ]
+        },
         "group_ratios": [
             10,
             15,
@@ -2220,24 +3812,45 @@
             5,
             5,
             5,
-            10,
-            0
+            10
         ]
     },
     {
         "ID": 89,
         "rate": 55,
         "level": 32,
-        "enemy_groups": [
-            491,
-            492,
-            493,
-            494,
-            495,
-            496,
-            497,
-            498
-        ],
+        "enemygroups": {
+            "491": [
+                "Raging Rock"
+            ],
+            "492": [
+                "Wise Gryphon",
+                "Raging Rock"
+            ],
+            "493": [
+                "Lich",
+                "Wise Gryphon"
+            ],
+            "494": [
+                "Little Death",
+                "Lich"
+            ],
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -2253,16 +3866,38 @@
         "ID": 90,
         "rate": 55,
         "level": 32,
-        "enemy_groups": [
-            491,
-            492,
-            493,
-            494,
-            495,
-            496,
-            497,
-            498
-        ],
+        "enemygroups": {
+            "491": [
+                "Raging Rock"
+            ],
+            "492": [
+                "Wise Gryphon",
+                "Raging Rock"
+            ],
+            "493": [
+                "Lich",
+                "Wise Gryphon"
+            ],
+            "494": [
+                "Little Death",
+                "Lich"
+            ],
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -2278,16 +3913,35 @@
         "ID": 91,
         "rate": 40,
         "level": 32,
-        "enemy_groups": [
-            581,
-            582,
-            583,
-            584,
-            585,
-            586,
-            587,
-            588
-        ],
+        "enemygroups": {
+            "581": [
+                "Spiral Shell"
+            ],
+            "582": [
+                "Hydra"
+            ],
+            "583": [
+                "Turtle Dragon"
+            ],
+            "584": [
+                "Grand Chimera"
+            ],
+            "585": [
+                "Grand Chimera",
+                "Turtle Dragon"
+            ],
+            "586": [
+                "Phoenix"
+            ],
+            "587": [
+                "Phoenix",
+                "Grand Chimera"
+            ],
+            "588": [
+                "Phoenix",
+                "Turtle Dragon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2303,41 +3957,77 @@
         "ID": 92,
         "rate": 50,
         "level": 33,
-        "enemy_groups": [
-            501,
-            502,
-            503,
-            504,
-            505,
-            506,
-            507,
-            508
-        ],
+        "enemygroups": {
+            "501": [
+                "Doodle Bug"
+            ],
+            "502": [
+                "Fire Bird"
+            ],
+            "503": [
+                "Raptor"
+            ],
+            "504": [
+                "Devil Frog",
+                "Raptor"
+            ],
+            "505": [
+                "Minos Warrior",
+                "Fire Bird"
+            ],
+            "506": [
+                "Minos Warrior"
+            ],
+            "507": [
+                "Aka Manah",
+                "Minos Warrior"
+            ],
+            "508": [
+                "Aka Manah"
+            ]
+        },
         "group_ratios": [
             20,
             5,
             20,
             5,
             5,
-            5,
-            0,
-            0
+            5
         ]
     },
     {
         "ID": 93,
         "rate": 50,
         "level": 33,
-        "enemy_groups": [
-            501,
-            502,
-            503,
-            504,
-            505,
-            506,
-            507,
-            508
-        ],
+        "enemygroups": {
+            "501": [
+                "Doodle Bug"
+            ],
+            "502": [
+                "Fire Bird"
+            ],
+            "503": [
+                "Raptor"
+            ],
+            "504": [
+                "Devil Frog",
+                "Raptor"
+            ],
+            "505": [
+                "Minos Warrior",
+                "Fire Bird"
+            ],
+            "506": [
+                "Minos Warrior"
+            ],
+            "507": [
+                "Aka Manah",
+                "Minos Warrior"
+            ],
+            "508": [
+                "Aka Manah"
+            ]
+        },
         "group_ratios": [
             10,
             5,
@@ -2353,16 +4043,35 @@
         "ID": 94,
         "rate": 50,
         "level": 33,
-        "enemy_groups": [
-            501,
-            502,
-            503,
-            504,
-            505,
-            506,
-            507,
-            508
-        ],
+        "enemygroups": {
+            "501": [
+                "Doodle Bug"
+            ],
+            "502": [
+                "Fire Bird"
+            ],
+            "503": [
+                "Raptor"
+            ],
+            "504": [
+                "Devil Frog",
+                "Raptor"
+            ],
+            "505": [
+                "Minos Warrior",
+                "Fire Bird"
+            ],
+            "506": [
+                "Minos Warrior"
+            ],
+            "507": [
+                "Aka Manah",
+                "Minos Warrior"
+            ],
+            "508": [
+                "Aka Manah"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -2378,16 +4087,37 @@
         "ID": 95,
         "rate": 45,
         "level": 35,
-        "enemy_groups": [
-            591,
-            592,
-            593,
-            594,
-            595,
-            596,
-            597,
-            598
-        ],
+        "enemygroups": {
+            "591": [
+                "Sea Hedgehog"
+            ],
+            "592": [
+                "Great Seagull",
+                "Sea Hedgehog"
+            ],
+            "593": [
+                "Gillman Lord",
+                "Puppet Warrior"
+            ],
+            "594": [
+                "Puppet Warrior"
+            ],
+            "595": [
+                "Pyrodra",
+                "Great Seagull"
+            ],
+            "596": [
+                "Pyrodra",
+                "Sea Hedgehog"
+            ],
+            "597": [
+                "Ocean Dragon",
+                "Pyrodra"
+            ],
+            "598": [
+                "Ocean Dragon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2403,16 +4133,36 @@
         "ID": 96,
         "rate": 45,
         "level": 37,
-        "enemy_groups": [
-            601,
-            602,
-            603,
-            604,
-            605,
-            606,
-            607,
-            608
-        ],
+        "enemygroups": {
+            "601": [
+                "Sand Scorpion"
+            ],
+            "602": [
+                "Winged Lizard"
+            ],
+            "603": [
+                "Minos Knight",
+                "Sand Scorpion"
+            ],
+            "604": [
+                "Minos Knight",
+                "Winged Lizard"
+            ],
+            "605": [
+                "Soul Army",
+                "Sand Scorpion"
+            ],
+            "606": [
+                "Soul Army"
+            ],
+            "607": [
+                "Fire Dragon",
+                "Winged Lizard"
+            ],
+            "608": [
+                "Fire Dragon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -2428,16 +4178,36 @@
         "ID": 97,
         "rate": 45,
         "level": 37,
-        "enemy_groups": [
-            601,
-            602,
-            603,
-            604,
-            605,
-            606,
-            607,
-            608
-        ],
+        "enemygroups": {
+            "601": [
+                "Sand Scorpion"
+            ],
+            "602": [
+                "Winged Lizard"
+            ],
+            "603": [
+                "Minos Knight",
+                "Sand Scorpion"
+            ],
+            "604": [
+                "Minos Knight",
+                "Winged Lizard"
+            ],
+            "605": [
+                "Soul Army",
+                "Sand Scorpion"
+            ],
+            "606": [
+                "Soul Army"
+            ],
+            "607": [
+                "Fire Dragon",
+                "Winged Lizard"
+            ],
+            "608": [
+                "Fire Dragon"
+            ]
+        },
         "group_ratios": [
             5,
             5,
@@ -2453,16 +4223,37 @@
         "ID": 98,
         "rate": 15,
         "level": 38,
-        "enemy_groups": [
-            611,
-            612,
-            613,
-            614,
-            615,
-            616,
-            617,
-            618
-        ],
+        "enemygroups": {
+            "611": [
+                "Chimera Worm"
+            ],
+            "612": [
+                "Chimera Worm",
+                "Druj"
+            ],
+            "613": [
+                "Wonder Bird",
+                "Chimera Worm"
+            ],
+            "614": [
+                "Wonder Bird"
+            ],
+            "615": [
+                "Druj",
+                "Chimera Worm"
+            ],
+            "616": [
+                "Druj",
+                "Cruel Dragon"
+            ],
+            "617": [
+                "Cruel Dragon",
+                "Wonder Bird"
+            ],
+            "618": [
+                "Cruel Dragon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -2478,16 +4269,37 @@
         "ID": 99,
         "rate": 15,
         "level": 38,
-        "enemy_groups": [
-            611,
-            612,
-            613,
-            614,
-            615,
-            616,
-            617,
-            618
-        ],
+        "enemygroups": {
+            "611": [
+                "Chimera Worm"
+            ],
+            "612": [
+                "Chimera Worm",
+                "Druj"
+            ],
+            "613": [
+                "Wonder Bird",
+                "Chimera Worm"
+            ],
+            "614": [
+                "Wonder Bird"
+            ],
+            "615": [
+                "Druj",
+                "Chimera Worm"
+            ],
+            "616": [
+                "Druj",
+                "Cruel Dragon"
+            ],
+            "617": [
+                "Cruel Dragon",
+                "Wonder Bird"
+            ],
+            "618": [
+                "Cruel Dragon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2503,16 +4315,37 @@
         "ID": 100,
         "rate": 35,
         "level": 42,
-        "enemy_groups": [
-            621,
-            622,
-            623,
-            624,
-            625,
-            626,
-            627,
-            628
-        ],
+        "enemygroups": {
+            "621": [
+                "Grave Wight"
+            ],
+            "622": [
+                "Grave Wight",
+                "Bombander"
+            ],
+            "623": [
+                "Bombander",
+                "Sky Dragon"
+            ],
+            "624": [
+                "Bombander",
+                "Mad Demon"
+            ],
+            "625": [
+                "Sky Dragon",
+                "Grave Wight"
+            ],
+            "626": [
+                "Sky Dragon"
+            ],
+            "627": [
+                "Mad Demon",
+                "Sky Dragon"
+            ],
+            "628": [
+                "Mad Demon"
+            ]
+        },
         "group_ratios": [
             20,
             20,
@@ -2528,16 +4361,37 @@
         "ID": 101,
         "rate": 35,
         "level": 42,
-        "enemy_groups": [
-            621,
-            622,
-            623,
-            624,
-            625,
-            626,
-            627,
-            628
-        ],
+        "enemygroups": {
+            "621": [
+                "Grave Wight"
+            ],
+            "622": [
+                "Grave Wight",
+                "Bombander"
+            ],
+            "623": [
+                "Bombander",
+                "Sky Dragon"
+            ],
+            "624": [
+                "Bombander",
+                "Mad Demon"
+            ],
+            "625": [
+                "Sky Dragon",
+                "Grave Wight"
+            ],
+            "626": [
+                "Sky Dragon"
+            ],
+            "627": [
+                "Mad Demon",
+                "Sky Dragon"
+            ],
+            "628": [
+                "Mad Demon"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2553,66 +4407,96 @@
         "ID": 102,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            77,
-            78,
-            635,
-            636,
-            638,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "77": [
+                "Flame Dragon",
+                "Flame Dragon"
+            ],
+            "78": [
+                "Doom Dragon"
+            ],
+            "635": [
+                "Navampa",
+                "Azart",
+                "Satrage"
+            ],
+            "636": [
+                "Bandit",
+                "Thief",
+                "Thief"
+            ],
+            "638": [
+                "Agatio",
+                "Karst"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             10,
             10,
-            10,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 103,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            631,
-            632,
-            633,
-            634,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "631": [
+                "Star Magician",
+                "Refresh Ball",
+                "Guardian Ball",
+                "Thunder Ball",
+                "Anger Ball"
+            ],
+            "632": [
+                "Valukar"
+            ],
+            "633": [
+                "Sentinel"
+            ],
+            "634": [
+                "Dullahan"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             10,
-            10,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 104,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            651,
-            652,
-            653,
-            654,
-            655,
-            656,
-            657,
-            658
-        ],
+        "enemygroups": {
+            "651": [
+                "Mimic"
+            ],
+            "652": [
+                "Mimic"
+            ],
+            "653": [
+                "Mimic"
+            ],
+            "654": [
+                "Mimic"
+            ],
+            "655": [
+                "Mimic"
+            ],
+            "656": [
+                "Mimic"
+            ],
+            "657": [
+                "Mimic"
+            ],
+            "658": [
+                "Mimic"
+            ]
+        },
         "group_ratios": [
             10,
             10,
@@ -2628,91 +4512,120 @@
         "ID": 105,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            659,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "659": [
+                "Mimic"
+            ]
+        },
         "group_ratios": [
-            10,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 106,
         "rate": 0,
         "level": 0,
-        "enemy_groups": [
-            641,
-            642,
-            643,
-            644,
-            645,
-            0,
-            0,
-            0
-        ],
+        "enemygroups": {
+            "641": [
+                "Mad Plant"
+            ],
+            "642": [
+                "Mad Plant"
+            ],
+            "643": [
+                "Mad Plant"
+            ],
+            "644": [
+                "Mad Plant"
+            ],
+            "645": [
+                "Mad Plant"
+            ]
+        },
         "group_ratios": [
             10,
             10,
             10,
             10,
-            10,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 107,
         "rate": 35,
         "level": 27,
-        "enemy_groups": [
-            451,
-            452,
-            453,
-            454,
-            455,
-            456,
-            457,
-            458
-        ],
+        "enemygroups": {
+            "451": [
+                "Squirrelfang"
+            ],
+            "452": [
+                "Needle Egg"
+            ],
+            "453": [
+                "Needle Egg",
+                "Squirrelfang"
+            ],
+            "454": [
+                "Dinox",
+                "Squirrelfang"
+            ],
+            "455": [
+                "Minotaurus"
+            ],
+            "456": [
+                "Living Armor",
+                "Harridan"
+            ],
+            "457": [
+                "Magicore",
+                "Squirrelfang"
+            ],
+            "458": [
+                "Stone Soldier",
+                "Needle Egg"
+            ]
+        },
         "group_ratios": [
             20,
             20,
             20,
-            10,
-            0,
-            0,
-            0,
-            0
+            10
         ]
     },
     {
         "ID": 108,
         "rate": 35,
         "level": 34,
-        "enemy_groups": [
-            495,
-            496,
-            497,
-            498,
-            501,
-            502,
-            503,
-            504
-        ],
+        "enemygroups": {
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ],
+            "501": [
+                "Doodle Bug"
+            ],
+            "502": [
+                "Fire Bird"
+            ],
+            "503": [
+                "Raptor"
+            ],
+            "504": [
+                "Devil Frog",
+                "Raptor"
+            ]
+        },
         "group_ratios": [
             5,
             3,
@@ -2728,16 +4641,36 @@
         "ID": 109,
         "rate": 10,
         "level": 34,
-        "enemy_groups": [
-            495,
-            496,
-            497,
-            498,
-            501,
-            502,
-            503,
-            504
-        ],
+        "enemygroups": {
+            "495": [
+                "Phoenix",
+                "Little Death",
+                "Lich"
+            ],
+            "496": [
+                "Phoenix"
+            ],
+            "497": [
+                "Lesser Demon",
+                "Little Death"
+            ],
+            "498": [
+                "Grand Chimera"
+            ],
+            "501": [
+                "Doodle Bug"
+            ],
+            "502": [
+                "Fire Bird"
+            ],
+            "503": [
+                "Raptor"
+            ],
+            "504": [
+                "Devil Frog",
+                "Raptor"
+            ]
+        },
         "group_ratios": [
             5,
             3,
